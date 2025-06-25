@@ -1,0 +1,124 @@
+{
+  "title": "Dasar Privasi",
+  "lastUpdated": "Kemaskini Terakhir: 25 Jun 2025",
+  "description": "Kami menghargai privasi anda. Dasar privasi ini menerangkan bagaimana AI Image Splitter mengendalikan maklumat anda.",
+  
+  "sections": {
+    "introduction": {
+      "title": "Pengenalan",
+      "content": "Selamat datang ke AI Image Splitter (\"kami,\" \"milik kami,\" atau \"perkhidmatan\"). Kami komited untuk melindungi privasi anda, dan dasar privasi ini menerangkan bagaimana kami mengumpul, menggunakan, dan melindungi maklumat anda semasa anda menggunakan laman web dan perkhidmatan kami."
+    },
+    
+    "dataCollection": {
+      "title": "Maklumat Yang Kami Kumpulkan",
+      "overview": "Prinsip utama kami adalah untuk memaksimumkan perlindungan privasi anda. Inilah cara kami mengendalikan data:",
+      "subsections": {
+        "imageProcessing": {
+          "title": "Pemprosesan Imej",
+          "content": "Semua imej yang anda muat naik ke AI Image Splitter diproses secara tempatan dalam pelayar anda. Ini bermakna imej anda tidak pernah dimuat naik ke pelayan kami atau meninggalkan peranti anda. Kami tidak boleh mengakses, melihat, atau menyimpan sebarang kandungan imej anda."
+        },
+        "technicalData": {
+          "title": "Data Teknikal",
+          "content": "Untuk menambah baik perkhidmatan kami, kami mungkin mengumpul maklumat teknikal tanpa nama, termasuk:",
+          "items": [
+            "Jenis dan versi pelayar",
+            "Maklumat sistem operasi",
+            "Statistik lawatan halaman (melalui Google Analytics)",
+            "Log ralat asas (tidak mengandungi maklumat peribadi)"
+          ]
+        },
+        "noPersonalData": {
+          "title": "Tiada Pengumpulan Maklumat Peribadi",
+          "content": "Kami tidak mengumpul, menyimpan, atau memproses sebarang maklumat yang boleh mengenal pasti secara peribadi, termasuk tetapi tidak terhad kepada:",
+          "items": [
+            "Nama, alamat e-mel, atau maklumat hubungan",
+            "Maklumat akaun (kerana kami tidak memerlukan pendaftaran)",
+            "Maklumat pembayaran (kerana perkhidmatan kami sepenuhnya percuma)",
+            "Imej atau kandungan fail yang anda muat naik"
+          ]
+        }
+      }
+    },
+    
+    "dataUsage": {
+      "title": "Bagaimana Kami Menggunakan Maklumat",
+      "content": "Data tanpa nama terhad yang kami kumpulkan hanya digunakan untuk:",
+      "items": [
+        "Menambah baik prestasi laman web dan pengalaman pengguna",
+        "Memahami corak penggunaan untuk mengoptimumkan ciri",
+        "Mendiagnosis dan membaiki masalah teknikal",
+        "Memastikan keselamatan dan kestabilan perkhidmatan"
+      ]
+    },
+    
+    "dataSharing": {
+      "title": "Perkongsian Maklumat",
+      "content": "Kami tidak menjual, berdagang, atau memindahkan maklumat anda kepada pihak ketiga. Satu-satunya perkhidmatan pihak ketiga yang kami gunakan ialah:",
+      "thirdPartyServices": {
+        "googleAnalytics": {
+          "title": "Google Analytics",
+          "content": "Kami menggunakan Google Analytics untuk memahami penggunaan laman web. Perkhidmatan ini mengumpul data penggunaan tanpa nama untuk membantu kami menambah baik laman web. Anda boleh memilih keluar dengan memasang tambahan pelayar opt-out Google Analytics."
+        }
+      }
+    },
+    
+    "dataSecurity": {
+      "title": "Keselamatan Data",
+      "content": "Kami melaksanakan langkah-langkah berikut untuk melindungi privasi anda:",
+      "measures": [
+        "Semua pemprosesan imej berlaku di bahagian klien, tidak pernah dimuat naik ke pelayan",
+        "Laman web menggunakan penyulitan HTTPS untuk melindungi penghantaran data",
+        "Kami tidak menyimpan sebarang kandungan yang dijana pengguna",
+        "Kemas kini keselamatan berkala untuk mencegah ancaman berpotensi"
+      ]
+    },
+    
+    "cookies": {
+      "title": "Kuki dan Storan Tempatan",
+      "content": "Kami menggunakan kuki dan storan tempatan minimum untuk:",
+      "items": [
+        "Mengingati pilihan bahasa anda",
+        "Menyimpan tetapan antara muka pengguna asas",
+        "Menyokong statistik tanpa nama Google Analytics"
+      ],
+      "note": "Anda boleh menguruskan atau melumpuhkan kuki melalui tetapan pelayar anda, tetapi ini mungkin menjejaskan operasi normal ciri-ciri tertentu."
+    },
+    
+    "userRights": {
+      "title": "Hak Anda",
+      "content": "Memandangkan kami tidak mengumpul maklumat peribadi, tiada data peribadi untuk dipadamkan atau diubah suai. Walau bagaimanapun, anda sentiasa mempunyai hak berikut:",
+      "rights": [
+        "Berhenti menggunakan perkhidmatan kami pada bila-bila masa",
+        "Mengawal kuki melalui tetapan pelayar",
+        "Menghubungi kami dengan soalan berkaitan privasi"
+      ]
+    },
+    
+    "minorProtection": {
+      "title": "Perlindungan Privasi Kanak-Kanak",
+      "content": "Perkhidmatan kami tidak ditujukan kepada kanak-kanak di bawah umur 13 tahun. Kami tidak secara sedar mengumpul maklumat peribadi daripada kanak-kanak di bawah umur 13 tahun. Jika anda adalah ibu bapa atau penjaga dan mendapati bahawa anak anda telah memberikan maklumat peribadi kepada kami, sila hubungi kami, dan kami akan segera memadamkan maklumat tersebut."
+    },
+    
+    "internationalUsers": {
+      "title": "Pengguna Antarabangsa",
+      "content": "AI Image Splitter tersedia untuk pengguna di seluruh dunia. Disebabkan pendekatan pemprosesan bahagian klien kami, data anda tidak merentasi sempadan. Kami mematuhi undang-undang perlindungan data yang berkenaan, termasuk GDPR, CCPA, dan lain-lain."
+    },
+    
+    "policyChanges": {
+      "title": "Perubahan Dasar Privasi",
+      "content": "Kami mungkin mengemas kini dasar privasi ini dari semasa ke semasa. Sebarang perubahan akan disiarkan di halaman ini dan tarikh \"Kemaskini Terakhir\" akan dikemas kini. Kami menggalakkan anda untuk menyemak dasar ini secara berkala untuk kekal terkini tentang sebarang perubahan."
+    },
+    
+    "contact": {
+      "title": "Hubungi Kami",
+      "content": "Jika anda mempunyai sebarang soalan atau kebimbangan tentang dasar privasi ini, sila hubungi kami:",
+      "email": "E-mel: aiimagesplitter@proton.me",
+      "response": "Kami akan membalas pertanyaan anda dalam masa 48 jam selepas diterima."
+    }
+  },
+  
+  "navigation": {
+    "backToHome": "Kembali ke Laman Utama",
+    "tableOfContents": "Senarai Kandungan"
+  }
+} 

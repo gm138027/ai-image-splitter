@@ -1,0 +1,124 @@
+{
+  "title": "Patakaran sa Privacy",
+  "lastUpdated": "Huling Na-update: Hunyo 25, 2025",
+  "description": "Pinahahalagahan namin ang inyong privacy. Ipinaliwanag ng patakaran sa privacy na ito kung paano hinahawakan ng AI Image Splitter ang inyong impormasyon.",
+  
+  "sections": {
+    "introduction": {
+      "title": "Panimula",
+      "content": "Maligayang pagdating sa AI Image Splitter (\"kami,\" \"amin,\" o \"ang serbisyo\"). Nakatuon kami sa pagprotekta sa inyong privacy, at ipinaliwanag ng patakaran sa privacy na ito kung paano namin kinokolekta, ginagamit, at pinoprotektahan ang inyong impormasyon kapag ginagamit ninyo ang aming website at mga serbisyo."
+    },
+    
+    "dataCollection": {
+      "title": "Impormasyong Kinokolekta Namin",
+      "overview": "Ang aming pangunahing prinsipyo ay ang pagpapalaki ng proteksyon sa inyong privacy. Narito kung paano namin hinahawakan ang data:",
+      "subsections": {
+        "imageProcessing": {
+          "title": "Pagpoproseso ng Mga Larawan",
+          "content": "Lahat ng mga larawang ini-upload ninyo sa AI Image Splitter ay pinoproseso nang lokal sa inyong browser. Ibig sabihin nito na hindi kailanman naa-upload ang inyong mga larawan sa aming mga server o umaalis sa inyong device. Hindi namin ma-access, makita, o ma-store ang anumang nilalaman ng inyong mga larawan."
+        },
+        "technicalData": {
+          "title": "Technical Data",
+          "content": "Para mapabuti ang aming serbisyo, maaari kaming mangolekta ng anonymous na technical information, kasama ang:",
+          "items": [
+            "Uri at bersyon ng browser",
+            "Impormasyon ng operating system",
+            "Mga estadistika ng pagbisita sa mga pahina (sa pamamagitan ng Google Analytics)",
+            "Mga pangunahing error log (walang personal na impormasyon)"
+          ]
+        },
+        "noPersonalData": {
+          "title": "Walang Pagkolekta ng Personal na Impormasyon",
+          "content": "Hindi namin kinokolekta, iniimbak, o pinoproseso ang anumang personal na makikilalang impormasyon, kasama pero hindi limitado sa:",
+          "items": [
+            "Mga pangalan, email address, o contact information",
+            "Impormasyon ng account (dahil hindi namin kailangan ang pagregister)",
+            "Impormasyon ng bayad (dahil libre ang aming serbisyo)",
+            "Inyong mga na-upload na larawan o nilalaman ng file"
+          ]
+        }
+      }
+    },
+    
+    "dataUsage": {
+      "title": "Paano Namin Ginagamit ang Impormasyon",
+      "content": "Ang limitadong anonymous data na kinokolekta namin ay ginagamit lamang para sa:",
+      "items": [
+        "Pagpapabuti ng performance ng website at karanasan ng user",
+        "Pag-unawa sa mga pattern ng paggamit para ma-optimize ang mga feature",
+        "Pagdiagnose at pagaayos ng mga technical na problema",
+        "Pagsiguro sa security at stability ng serbisyo"
+      ]
+    },
+    
+    "dataSharing": {
+      "title": "Pagbabahagi ng Impormasyon",
+      "content": "Hindi namin binebenta, ipinagpapalit, o inilipat ang inyong impormasyon sa mga third party. Ang tanging third-party service na ginagamit namin ay:",
+      "thirdPartyServices": {
+        "googleAnalytics": {
+          "title": "Google Analytics",
+          "content": "Ginagamit namin ang Google Analytics para maintindihan ang paggamit ng website. Kinokolekta ng serbisyong ito ang anonymous usage data para matulungan kaming mapabuti ang website. Maaari kayong mag-opt out sa pag-install ng Google Analytics opt-out browser add-on."
+        }
+      }
+    },
+    
+    "dataSecurity": {
+      "title": "Data Security",
+      "content": "Ipinapatupad namin ang mga sumusunod na hakbang para protektahan ang inyong privacy:",
+      "measures": [
+        "Lahat ng image processing ay nangyayari sa client-side, hindi kailanman na-upload sa mga server",
+        "Ginagamit ng website ang HTTPS encryption para protektahan ang data transmission",
+        "Hindi namin iniimbak ang anumang user-generated content",
+        "Regular na security updates para maiwasan ang mga potensyal na banta"
+      ]
+    },
+    
+    "cookies": {
+      "title": "Mga Cookie at Local Storage",
+      "content": "Ginagamit namin ang minimal na cookies at local storage para sa:",
+      "items": [
+        "Pagtanda sa inyong mga language preference",
+        "Pag-save ng mga basic user interface settings",
+        "Pagsuporta sa Google Analytics anonymous statistics"
+      ],
+      "note": "Maaari ninyong i-manage o i-disable ang mga cookie sa pamamagitan ng inyong browser settings, pero maaaring makaapekto ito sa normal na operasyon ng ilang mga feature."
+    },
+    
+    "userRights": {
+      "title": "Inyong mga Karapatan",
+      "content": "Dahil hindi namin kinokolekta ang personal na impormasyon, walang personal data na dapat i-delete o baguhin. Gayunpaman, lagi kayong may mga sumusunod na karapatan:",
+      "rights": [
+        "Tumigil sa paggamit ng aming serbisyo anumang oras",
+        "Kontrolin ang mga cookie sa pamamagitan ng browser settings",
+        "Makipag-ugnayan sa amin tungkol sa mga tanong na may kaugnayan sa privacy"
+      ]
+    },
+    
+    "minorProtection": {
+      "title": "Proteksyon ng Privacy ng mga Bata",
+      "content": "Ang aming serbisyo ay hindi nakatuon sa mga batang wala pang 13 taong gulang. Hindi namin sinasadyang kinokolekta ang personal na impormasyon mula sa mga batang wala pang 13 taong gulang. Kung kayo ay magulang o guardian at natuklasan na nagbigay ang inyong anak ng personal na impormasyon sa amin, makipag-ugnayan sa amin, at agad naming tatanggalin ang ganoong impormasyon."
+    },
+    
+    "internationalUsers": {
+      "title": "Mga International User",
+      "content": "Available ang AI Image Splitter sa mga user sa buong mundo. Dahil sa aming client-side processing approach, hindi tumatawid ng mga border ang inyong data. Sumusunod kami sa mga naaangkop na data protection law, kasama ang GDPR, CCPA, at iba pa."
+    },
+    
+    "policyChanges": {
+      "title": "Mga Pagbabago sa Privacy Policy",
+      "content": "Maaari naming i-update ang privacy policy na ito paminsan-minsan. Anumang mga pagbabago ay ipo-post sa pahinang ito at ang \"Huling Na-update\" na petsa ay ma-uupdate. Hinihikayat namin kayong suriin ang policy na ito nang pana-panahon para manatiling informed sa anumang mga pagbabago."
+    },
+    
+    "contact": {
+      "title": "Makipag-ugnayan sa Amin",
+      "content": "Kung mayroon kayong mga tanong o alalahanin tungkol sa privacy policy na ito, makipag-ugnayan sa amin:",
+      "email": "Email: aiimagesplitter@proton.me",
+      "response": "Tutugon namin sa inyong pagtatanong sa loob ng 48 oras matapos matanggap."
+    }
+  },
+  
+  "navigation": {
+    "backToHome": "Bumalik sa Home",
+    "tableOfContents": "Talaan ng mga Nilalaman"
+  }
+} 

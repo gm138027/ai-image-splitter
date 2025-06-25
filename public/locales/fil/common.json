@@ -1,0 +1,162 @@
+{
+  "seo": {
+    "title": "Online Image Splitter at Grid Maker - Hatiin ang Larawan para sa Instagram",
+    "description": "AI Image Splitter ay isang libreng online image splitting tool na nagbibigay-daan sa inyo na hatiin ang mga larawan nang vertical, horizontal, at grid para sa Instagram grid layouts at carousel posts.",
+    "keywords": "image splitter, online image splitter, hatiin ang larawan, grid maker, instagram grid maker, image splitter instagram, social media, carousel"
+  },
+  "nav": {
+    "features": "Home",
+    "howItWorks": "Paano Ito Gumagana",
+    "faq": "Mga Madalas na Itanong",
+    "about": "Blog"
+  },
+  "hero": {
+    "title": "Online Image Splitter at Grid Maker",
+    "description": "Kung naghahanap kayo ng \"paano hatiin ang mga larawan sa Instagram grids\", nasa tamang lugar na kayo. Ang aming image splitter ay perpekto hindi lamang para sa online image splitting kundi pati na rin para sa Instagram grid creation, walang kinakailangang registration at lubos na libre."
+  },
+  "features": {
+    "upload": "Mag-upload ng Larawan",
+    "split": "Hatiin at Grid",
+    "download": "I-download Lahat",
+    "fast": "Napakabilis"
+  },
+  "tool": {
+    "comingSoon": "Image Splitter Tool",
+    "description": "Ang advanced na functionality ng paghiwalay sa larawan ay magiging available dito sa lalong madaling panahon. I-upload ang inyong larawan at hatiin ito sa mga perpektong grid para sa social media.",
+    "uploadPrompt": "I-drag ang mga file dito o i-click para mag-upload",
+    "uploadButton": "Pumili ng Larawan",
+    "uploadSupport": "Sumusuporta sa JPG, PNG, GIF formats, hanggang 10MB",
+    "controlPanelDescription": "Gamitin ang kaliwang control panel para sa pag-configure ng split options",
+    "splitModeTitle": "Pumili ng Image Split Mode",
+    "splitModeDescription": "Perfect ang vertical split para sa carousel posts, horizontal split para sa landscape displays, at grid split para sa Instagram grid layouts",
+    "gridLineWidthLabel": "Grid Line Width",
+    "gridLineWidthHint": "I-adjust ang spacing sa pagitan ng mga nahahating larawan",
+    "splitModes": {
+      "vertical": "Vertical",
+      "horizontal": "Horizontal",
+      "grid": "Grid"
+    },
+    "gridSettings": {
+      "rows": "Mga Hilera",
+      "columns": "Mga Kolum"
+    },
+    "gridLineWidth": "Grid Line Width",
+    "outputFormat": "Output Format",
+    "formats": {
+      "jpg": "JPG",
+      "png": "PNG",
+      "webp": "WebP",
+      "bmp": "BMP"
+    },
+    "buttons": {
+      "split": "Hatiin ang Larawan",
+      "splitting": "Hinahati...",
+      "download": "I-download",
+      "downloadAll": "I-download ang mga Larawan",
+      "reset": "I-reset ang Selection",
+      "selectImage": "Pumili ng Larawan",
+      "reuploadImage": "Mag-upload Ulit ng Larawan",
+      "reupload": "Mag-upload Ulit ng Larawan"
+    },
+    "preview": {
+      "title": "Preview Area",
+      "instruction": "I-click ang split image para makita ang split results"
+    },
+    "alerts": {
+      "invalidFile": "Pumili ng valid na image file",
+      "invalidFileType": "Pumili ng valid na image file (JPG, PNG, GIF, WebP)",
+      "fileTooLarge": "Ang laki ng file ay lumampas sa 10MB na limitasyon. Pumili ng mas maliit na larawan",
+      "imageTooLarge": "Ang mga dimensyon ng larawan ay lumampas sa 4096x4096 pixels. Pumili ng mas maliit na larawan",
+      "downloadFailed": "Nabigo ang pag-download. Subukan ulit"
+    }
+  },
+  "howItWorks": {
+    "title": "Paano Gumagana",
+    "step1Title": "1. I-upload ang Inyong Larawan",
+    "step1Description": "Pumili at mag-upload ng anumang larawan mula sa inyong device. Sumusuporta sa JPG, PNG, at iba pang common na mga format.",
+    "step2Title": "2. Pumili ng Grid Size",
+    "step2Description": "Piliin ang inyong gustong grid layout - 3x3, 2x3, 4x4, o custom na mga dimensyon para sa inyong mga pangangailangan.",
+    "step3Title": "3. I-download at I-share",
+    "step3Description": "I-download ang lahat ng nahiwalay na mga larawan nang sabay-sabay at simulan ang pag-post ng inyong perpektong carousel o grid layout."
+  },
+  "footer": {
+    "madeWith": "Ginawa gamit ang",
+    "forUsers": "para sa mga content creator sa buong mundo",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "advantages": {
+    "title": "Mga Bentahe ng AI Image Splitter",
+    "freeOnline": {
+      "title": "Ganap na Libreng Online Image Splitter",
+      "description": "Gamitin ang aming online image splitter tool nang hindi na kailangan mag-download o mag-install ng anumang software. Bisitahin lang ang <a href=\"/\" class=\"text-primary-600 hover:text-primary-700 underline font-medium\">aiimagesplitter.com</a> sa inyong browser para hatiin ang mga larawan online. Ganap na libre, walang nakatagong bayad at walang kinakailangang account registration."
+    },
+    "easyInstagram": {
+      "title": "Madaling Gumawa ng Instagram Grid at Carousel Posts",
+      "description": "Ang aming image splitter ay specially designed para sa mga social media professionals at e-commerce users. Gamitin ang aming libreng Instagram grid maker para makagawa ng perpektong Instagram grid layouts at carousel images sa isang click, na gagawing mas engaging ang inyong content."
+    }
+  },
+  "language": {
+    "switchLanguage": "Palitan ang Wika"
+  },
+  "images": {
+    "gridExampleAlt": "Instagram grid effect na ginawa gamit ang Image Splitter",
+    "carouselExampleAlt": "Instagram carousel post effect na ginawa gamit ang Image Splitter",
+    "originalPlaceholder": "Orihinal",
+    "gridEffectPlaceholder": "Grid Effect",
+    "carouselEffectPlaceholder": "Carousel Effect"
+  },
+  "faq": {
+    "title": "Mga Madalas na Itanong",
+    "description": "Kumpletong gabay tungkol sa mga image splitter at Instagram grid maker.",
+    "whatIsImageSplitter": {
+      "question": "Ano ang image splitter at paano ito gumagana?",
+      "answer": "Ang image splitter ay isang digital na kasangkapan na naghahati-hati ng isang larawan sa ilang mas maliliit na bahagi. Ang aming web-based image splitter ay gumagamit ng mga advanced na algorithm upang hatiin ang inyong mga larawan sa mga perpektong grid o segment. Mag-upload lamang ng larawan, piliin ang inyong image splitting method, at i-download ang mga resulta. Lahat ng prosesong ito ay nangyayari mismo sa inyong browser, na nagsisiguro ng privacy at seguridad ng larawan."
+    },
+    "howToSplitImage": {
+      "question": "Paano hatiin ang larawan sa maraming bahagi?",
+      "answer": "Napakadaling gawin: 1) Mag-upload ng inyong larawan (sumusuporta sa JPG, PNG, GIF, atbp., maximum na 10MB), 2) Piliin ang gusto ninyong splitting mode - vertical split, horizontal split, o grid split, 3) I-adjust ang mga hilera at kolum, 4) I-click ang split image button, 5) I-download ang mga indibidwal na segment o kunin ang ZIP package."
+    },
+    "instagramGridMaker": {
+      "question": "Pwede ko bang gamitin ang tool na ito para sa Instagram grid posts?",
+      "answer": "Oo naman! Ang aming image splitter ay perpekto para sa paggawa ng Instagram grid layouts at carousel posts. Kasama sa mga sikat na format ang 3x3 grids para sa feed puzzles, mga strip para sa carousel stories, at mga custom dimensions para sa mga natatanging layout. Ang output ay nagsisiguro ng perpektong compatibility sa mga requirement ng Instagram."
+    },
+    "splitImage3x3": {
+      "question": "Paano gumawa ng 3x3 grid para sa Instagram?",
+      "answer": "Para gumawa ng perpektong 3x3 Instagram grid: 1) Mag-upload ng square na larawan para sa pinakamahusay na resulta, 2) Piliin ang 'Grid' mode sa mga options, 3) I-set ang parehong hilera at kolum sa 3, 4) Hatiin ang larawan. Gumagawa ito ng 9 pantay na segment na bumubuo ng kumpletong puzzle kapag na-post nang sunod-sunod sa Instagram."
+    },
+    "supportedFormats": {
+      "question": "Anong mga file format ang sinusuportahan?",
+      "answer": "Sinusuportahan ng aming image splitter ang lahat ng karaniwang image format, kasama ang JPG, PNG, GIF, at WebP. Pwede din ninyong i-export ang mga split image sa JPG, PNG, WebP, o BMP format. Ang maximum file size ay 10MB na may dimension hanggang 4096x4096 pixels para sa optimal na performance."
+    },
+    "freeToUse": {
+      "question": "Libre ba talaga ang tool na ito?",
+      "answer": "Oo, ang aming image splitter ay 100% libre nang walang mga nakatagong bayad. Walang watermark sa inyong mga larawan, hindi kailangan ang account registration, at walang mga limitasyon sa paggamit. Gamitin nang malaya para sa mga personal na proyekto, commercial content, o business purposes."
+    },
+    "imageQuality": {
+      "question": "Maapektuhan ba ang kalidad ng split image?",
+      "answer": "Hindi talaga! Ginagamit namin ang mga lossless processing technique upang panatilihin ang original na kalidad ng inyong larawan. Ang mga split image ay napapanatili ang parehong resolution at linaw tulad ng inyong source image, na nagsisiguro na ang inyong social media content ay mukhang propesyonal."
+    },
+    "privacySecurity": {
+      "question": "Secure ba ang aking na-upload na content?",
+      "answer": "Ang inyong privacy ang aming pangunahing priyoridad. Gamit ang aming image splitter, lahat ng image processing ay nangyayari mismo sa inyong browser - walang na-upload sa aming mga server. Hindi kailanman umaalis ang inyong mga larawan sa inyong device, at hindi namin sine-store o ina-access ang anumang inyong content. Lubhang private at secure."
+    },
+    "mobileFriendly": {
+      "question": "Gumagana ba ang tool na ito sa mga mobile device?",
+      "answer": "Oo naman! Ang aming image splitter ay fully responsive at gumagana nang perpekto sa mga smartphone at tablet. Pwede kayong mag-upload ng mga larawan mula sa inyong photo gallery, i-process ang mga ito, at i-download ang mga resulta direkta sa inyong device. Ang interface ay kusang nag-a-adapt sa lahat ng screen size para sa smooth na experience."
+    },
+    "batchProcessing": {
+      "question": "Pwede ko bang hatiin ang maraming larawan nang sabay-sabay?",
+      "answer": "Sa kasalukuyan, ang tool ay nag-process ng isang larawan sa isang pagkakataon upang masiguro ang optimal na performance at kalidad. Gayunpaman, mabilis ang processing - pwede kayong mabilis na maghati ng maraming larawan sa pamamagitan ng pag-uulit ng mga simpleng upload at process steps."
+    },
+    "customDimensions": {
+      "question": "Pwede ko bang gumawa ng custom grid dimensions gamit ang inyong image splitter?",
+      "answer": "Oo naman! Bukod sa mga sikat na preset tulad ng 3x3 at 2x3, pwede kayong gumawa ng custom grid dimensions hanggang 10x10. I-adjust lang ang mga hilera at kolum upang matugunan ang inyong mga specific na pangangailangan, maging para sa mga natatanging social media layout o mga special na proyekto."
+    },
+    "cta": {
+      "title": "Handa na Bang Gumawa ng Kamangha-manghang Grid Layouts?",
+      "description": "Simulan ang paghahati ng inyong mga larawan at gumawa ng nakaakit na social media content.",
+      "button": "Simulan ang Paggawa Ngayon"
+    }
+  }
+} 

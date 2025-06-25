@@ -1,0 +1,124 @@
+{
+  "title": "Privacy Policy",
+  "lastUpdated": "Last Updated: June 25, 2025",
+  "description": "We value your privacy. This privacy policy explains how AI Image Splitter handles your information.",
+  
+  "sections": {
+    "introduction": {
+      "title": "Introduction",
+      "content": "Welcome to AI Image Splitter (\"we,\" \"our,\" or \"the service\"). We are committed to protecting your privacy, and this privacy policy explains how we collect, use, and protect your information when you use our website and services."
+    },
+    
+    "dataCollection": {
+      "title": "Information We Collect",
+      "overview": "Our core principle is to maximize protection of your privacy. Here's how we handle data:",
+      "subsections": {
+        "imageProcessing": {
+          "title": "Image Processing",
+          "content": "All images you upload to AI Image Splitter are processed locally in your browser. This means your images are never uploaded to our servers or leave your device. We cannot access, view, or store any of your image content."
+        },
+        "technicalData": {
+          "title": "Technical Data",
+          "content": "To improve our service, we may collect anonymous technical information, including:",
+          "items": [
+            "Browser type and version",
+            "Operating system information",
+            "Page visit statistics (via Google Analytics)",
+            "Basic error logs (containing no personal information)"
+          ]
+        },
+        "noPersonalData": {
+          "title": "No Personal Information Collection",
+          "content": "We do not collect, store, or process any personally identifiable information, including but not limited to:",
+          "items": [
+            "Names, email addresses, or contact information",
+            "Account information (since we require no registration)",
+            "Payment information (since our service is completely free)",
+            "Your uploaded images or file content"
+          ]
+        }
+      }
+    },
+    
+    "dataUsage": {
+      "title": "How We Use Information",
+      "content": "The limited anonymous data we collect is used solely for:",
+      "items": [
+        "Improving website performance and user experience",
+        "Understanding usage patterns to optimize features",
+        "Diagnosing and fixing technical issues",
+        "Ensuring service security and stability"
+      ]
+    },
+    
+    "dataSharing": {
+      "title": "Information Sharing",
+      "content": "We do not sell, trade, or otherwise transfer your information to third parties. The only third-party service we use is:",
+      "thirdPartyServices": {
+        "googleAnalytics": {
+          "title": "Google Analytics",
+          "content": "We use Google Analytics to understand website usage. This service collects anonymous usage data to help us improve the website. You can opt out by installing the Google Analytics opt-out browser add-on."
+        }
+      }
+    },
+    
+    "dataSecurity": {
+      "title": "Data Security",
+      "content": "We implement the following measures to protect your privacy:",
+      "measures": [
+        "All image processing occurs client-side, never uploaded to servers",
+        "Website uses HTTPS encryption to protect data transmission",
+        "We do not store any user-generated content",
+        "Regular security updates to prevent potential threats"
+      ]
+    },
+    
+    "cookies": {
+      "title": "Cookies and Local Storage",
+      "content": "We use minimal cookies and local storage to:",
+      "items": [
+        "Remember your language preferences",
+        "Save basic user interface settings",
+        "Support Google Analytics anonymous statistics"
+      ],
+      "note": "You can manage or disable cookies through your browser settings, but this may affect the normal operation of certain features."
+    },
+    
+    "userRights": {
+      "title": "Your Rights",
+      "content": "Since we don't collect personal information, there is no personal data to delete or modify. However, you always have the following rights:",
+      "rights": [
+        "Stop using our service at any time",
+        "Control cookies through browser settings",
+        "Contact us with privacy-related questions"
+      ]
+    },
+    
+    "minorProtection": {
+      "title": "Children's Privacy Protection",
+      "content": "Our service is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and discover that your child has provided us with personal information, please contact us, and we will immediately delete such information."
+    },
+    
+    "internationalUsers": {
+      "title": "International Users",
+      "content": "AI Image Splitter is available to users worldwide. Due to our client-side processing approach, your data does not cross borders. We comply with applicable data protection laws, including GDPR, CCPA, and others."
+    },
+    
+    "policyChanges": {
+      "title": "Privacy Policy Changes",
+      "content": "We may update this privacy policy from time to time. Any changes will be posted on this page and the \"Last Updated\" date will be updated. We encourage you to review this policy periodically to stay informed of any changes."
+    },
+    
+    "contact": {
+      "title": "Contact Us",
+      "content": "If you have any questions or concerns about this privacy policy, please contact us:",
+      "email": "Email: aiimagesplitter@proton.me",
+      "response": "We will respond to your inquiry within 48 hours of receipt."
+    }
+  },
+  
+  "navigation": {
+    "backToHome": "Back to Home",
+    "tableOfContents": "Table of Contents"
+  }
+} 

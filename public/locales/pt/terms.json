@@ -1,0 +1,124 @@
+{
+  "title": "Termos de Serviço",
+  "lastUpdated": "Última Atualização: 25 de Junho de 2025",
+  "description": "Estes Termos de Serviço regem o uso do AI Image Splitter. Por favor, leia com atenção.",
+  
+  "sections": {
+    "agreement": {
+      "title": "Acordo com os Termos",
+      "content": "Ao acessar e usar o AI Image Splitter (\"o Serviço\"), você aceita e concorda em estar vinculado aos termos e disposições deste acordo. Se você não concordar com estes termos, não deve usar este serviço."
+    },
+    
+    "serviceDescription": {
+      "title": "Descrição do Serviço",
+      "content": "O AI Image Splitter é uma ferramenta online gratuita que permite aos usuários dividir imagens em grades ou segmentos para uso em mídias sociais, especialmente para carrosséis do Instagram e posts em grade.",
+      "features": [
+        "Processamento de imagem do lado cliente para proteção de privacidade",
+        "Múltiplos tamanhos de grade (3x3, 2x3, 4x4, personalizado)",
+        "Sem marcas d'água nas imagens de saída",
+        "Acesso gratuito a todos os recursos",
+        "Suporte a múltiplos idiomas",
+        "Compatibilidade com dispositivos móveis e desktop"
+      ]
+    },
+    
+    "userResponsibilities": {
+      "title": "Responsabilidades do Usuário",
+      "content": "Ao usar nosso serviço, você concorda em:",
+      "responsibilities": [
+        "Usar o serviço apenas para fins legais",
+        "Não carregar conteúdo protegido por direitos autorais sem autorização adequada",
+        "Não tentar danificar ou interromper o serviço",
+        "Não usar o serviço para criar conteúdo prejudicial, ofensivo ou inadequado",
+        "Respeitar os direitos de propriedade intelectual",
+        "Cumprir todas as leis e regulamentos aplicáveis"
+      ]
+    },
+    
+    "intellectualProperty": {
+      "title": "Direitos de Propriedade Intelectual",
+      "ownership": {
+        "title": "Seu Conteúdo",
+        "content": "Você mantém todos os direitos sobre as imagens que carrega e processa através do nosso serviço. Não reivindicamos propriedade sobre seu conteúdo."
+      },
+      "serviceIP": {
+        "title": "Propriedade Intelectual do Serviço",
+        "content": "O site AI Image Splitter, design, software e materiais relacionados são protegidos por direitos autorais e outras leis de propriedade intelectual. Você não pode copiar, modificar ou distribuir nosso serviço sem permissão."
+      }
+    },
+    
+    "prohibited": {
+      "title": "Usos Proibidos",
+      "content": "Você não pode usar nosso serviço para:",
+      "items": [
+        "Carregar ou processar conteúdo ilegal, prejudicial ou ofensivo",
+        "Infringir direitos de propriedade intelectual de outros",
+        "Distribuir malware ou código prejudicial",
+        "Tentar obter acesso não autorizado aos nossos sistemas",
+        "Usar ferramentas automatizadas para acessar o serviço excessivamente",
+        "Violar qualquer lei ou regulamento aplicável"
+      ]
+    },
+    
+    "privacy": {
+      "title": "Privacidade e Proteção de Dados",
+      "content": "Sua privacidade é importante para nós. Todo o processamento de imagem ocorre do lado cliente em seu navegador, significando que suas imagens nunca saem do seu dispositivo. Por favor, consulte nossa Política de Privacidade para informações detalhadas sobre como lidamos com seus dados."
+    },
+    
+    "serviceAvailability": {
+      "title": "Disponibilidade do Serviço",
+      "content": "Nos esforçamos para manter a disponibilidade do serviço, mas não garantimos acesso ininterrupto. O serviço pode ficar temporariamente indisponível devido a:",
+      "reasons": [
+        "Manutenção programada",
+        "Dificuldades técnicas",
+        "Atualizações do servidor",
+        "Circunstâncias além do nosso controle"
+      ],
+      "disclaimer": "Não somos responsáveis por qualquer perda ou dano resultante de interrupções do serviço."
+    },
+    
+    "disclaimers": {
+      "title": "Isenções de Responsabilidade",
+      "content": "Nosso serviço é fornecido \"como está\" sem garantias de qualquer tipo. Isentamo-nos de todas as garantias, expressas ou implícitas, incluindo, mas não limitado a:",
+      "items": [
+        "Comercialização e adequação para um propósito específico",
+        "Não violação de direitos de terceiros",
+        "Precisão, integridade ou confiabilidade do serviço",
+        "Operação ininterrupta ou livre de erros"
+      ]
+    },
+    
+    "limitation": {
+      "title": "Limitação de Responsabilidade",
+      "content": "Na máxima extensão permitida por lei, não seremos responsáveis por quaisquer danos indiretos, incidentais, especiais, consequenciais ou punitivos, incluindo, mas não limitado à perda de lucros, dados ou outras perdas intangíveis resultantes do seu uso do serviço."
+    },
+    
+    "termination": {
+      "title": "Rescisão",
+      "content": "Reservamo-nos o direito de terminar ou suspender o acesso ao nosso serviço imediatamente, sem aviso prévio, por qualquer motivo, incluindo violação destes termos. Após a rescisão, seu direito de usar o serviço cessará imediatamente."
+    },
+    
+    "modifications": {
+      "title": "Modificações dos Termos",
+      "content": "Reservamo-nos o direito de modificar estes termos a qualquer momento. As alterações entrarão em vigor imediatamente após serem publicadas nesta página. Seu uso continuado do serviço após as alterações constitui aceitação dos novos termos.",
+      "notification": "Atualizaremos a data \"Última Atualização\" para refletir as alterações."
+    },
+    
+    "governingLaw": {
+      "title": "Lei Aplicável",
+      "content": "Estes termos serão regidos e interpretados de acordo com as leis internacionais aplicáveis. Quaisquer disputas decorrentes destes termos ou do uso do serviço serão resolvidas através de arbitragem vinculativa."
+    },
+    
+    "contact": {
+      "title": "Informações de Contato",
+      "content": "Se você tiver alguma dúvida sobre estes Termos de Serviço, entre em contato conosco:",
+      "email": "Email: aiimagesplitter@proton.me",
+      "response": "Responderemos à sua consulta dentro de 48 horas."
+    }
+  },
+  
+  "navigation": {
+    "backToHome": "Voltar ao Início",
+    "tableOfContents": "Índice"
+  }
+} 

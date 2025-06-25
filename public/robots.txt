@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# 主要页面
+Allow: /blog
+Allow: /privacy
+Allow: /terms
+
+# 静态资源
+Allow: /images/
+Allow: /icons/
+Allow: /_next/static/
+
+# 不允许索引的目录
+Disallow: /_next/
+Disallow: /api/
+Disallow: /node_modules/
+
+# 站点地图
+Sitemap: https://aiimagesplitter.com/sitemap.xml
+
+# 首选域名
+Host: aiimagesplitter.com 

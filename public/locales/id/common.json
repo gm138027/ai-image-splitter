@@ -1,0 +1,160 @@
+{
+  "seo": {
+    "title": "Pemisah Gambar Online & Pembuat Grid - Pisahkan Gambar untuk Instagram",
+    "description": "AI Image Splitter adalah tool gratis pemisahan gambar online yang memungkinkan Anda memisahkan gambar secara vertikal, horizontal, dan grid untuk layout grid Instagram dan post carousel.",
+    "keywords": "pemisah gambar, pemisah gambar online, pisahkan gambar, pembuat grid, pembuat grid instagram, pemisah gambar instagram, media sosial, carousel"
+  },
+  "nav": {
+    "features": "Beranda",
+    "howItWorks": "Cara Kerja",
+    "faq": "Pertanyaan yang Sering Diajukan",
+    "about": "Blog"
+  },
+  "hero": {
+    "title": "Pembagi Gambar Online & Pembuat Grid",
+    "description": "Jika Anda mencari \"cara membagi gambar ke dalam grid Instagram\", Anda datang ke tempat yang tepat. Pembagi gambar kami tidak hanya sempurna untuk pembagian gambar online tetapi juga untuk pembuatan grid Instagram, tanpa registrasi dan sepenuhnya gratis."
+  },
+  "features": {
+    "upload": "Unggah Gambar",
+    "split": "Pisah & Grid",
+    "download": "Unduh Semua",
+    "fast": "Sangat Cepat"
+  },
+  "tool": {
+    "uploadPrompt": "Seret file ke sini atau klik untuk mengunggah",
+    "uploadButton": "Pilih Gambar",
+    "uploadSupport": "Mendukung format JPG, PNG, GIF, maksimal 10MB",
+    "controlPanelDescription": "Gunakan panel kontrol kiri untuk mengonfigurasi opsi pemisahan",
+    "splitModeTitle": "Pilih Mode Pemisahan Gambar",
+    "splitModeDescription": "Pemisahan vertikal cocok untuk postingan carousel, pemisahan horizontal untuk tampilan lanskap, dan pemisahan grid untuk tata letak grid Instagram",
+    "gridLineWidthLabel": "Lebar Garis Grid",
+    "gridLineWidthHint": "Sesuaikan jarak antar gambar yang terpisah",
+    "splitModes": {
+      "vertical": "Vertikal",
+      "horizontal": "Horizontal",
+      "grid": "Grid"
+    },
+    "gridSettings": {
+      "rows": "Baris",
+      "columns": "Kolom"
+    },
+    "gridLineWidth": "Lebar Garis Grid",
+    "outputFormat": "Format Output",
+    "formats": {
+      "jpg": "JPG",
+      "png": "PNG",
+      "webp": "WebP",
+      "bmp": "BMP"
+    },
+    "buttons": {
+      "split": "Pisahkan Gambar",
+      "splitting": "Memisahkan...",
+      "download": "Unduh",
+      "downloadAll": "Unduh Gambar",
+      "reset": "Reset Pilihan",
+      "selectImage": "Pilih Gambar",
+      "reuploadImage": "Unggah Ulang Gambar",
+      "reupload": "Unggah Ulang Gambar"
+    },
+    "preview": {
+      "title": "Area Pratinjau",
+      "instruction": "Klik pisahkan gambar untuk melihat hasil pemisahan"
+    },
+    "alerts": {
+      "invalidFile": "Silakan pilih file gambar yang valid",
+      "invalidFileType": "Silakan pilih file gambar yang valid (JPG, PNG, GIF, WebP)",
+      "fileTooLarge": "Ukuran file melebihi batas 10MB. Silakan pilih gambar yang lebih kecil",
+      "imageTooLarge": "Dimensi gambar melebihi 4096x4096 piksel. Silakan pilih gambar yang lebih kecil",
+      "downloadFailed": "Unduhan gagal. Silakan coba lagi"
+    }
+  },
+  "howItWorks": {
+    "title": "Cara Kerja",
+    "step1Title": "1. Unggah Gambar Anda",
+    "step1Description": "Pilih dan unggah gambar apa pun dari perangkat Anda. Mendukung JPG, PNG, dan format umum lainnya.",
+    "step2Title": "2. Pilih Ukuran Grid",
+    "step2Description": "Pilih tata letak grid yang Anda sukai - 3x3, 2x3, 4x4, atau dimensi khusus sesuai kebutuhan Anda.",
+    "step3Title": "3. Unduh & Bagikan",
+    "step3Description": "Unduh semua gambar terpisah sekaligus dan mulai posting carousel atau tata letak grid yang sempurna."
+  },
+  "footer": {
+    "madeWith": "Dibuat dengan",
+    "forUsers": "untuk kreator konten di seluruh dunia",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Syarat Layanan"
+  },
+  "advantages": {
+    "title": "Keunggulan AI Image Splitter",
+    "freeOnline": {
+      "title": "Pemisah Gambar Online Sepenuhnya Gratis",
+      "description": "Gunakan tool pemisah gambar online kami tanpa perlu mengunduh atau menginstal software apa pun. Cukup kunjungi <a href=\"/\" class=\"text-primary-600 hover:text-primary-700 underline font-medium\">aiimagesplitter.com</a> di browser Anda untuk memisahkan gambar secara online. Sepenuhnya gratis tanpa biaya tersembunyi dan tidak perlu registrasi akun."
+    },
+    "easyInstagram": {
+      "title": "Mudah Membuat Grid Instagram Dan Post Carousel",
+      "description": "Pemisah gambar kami dirancang khusus untuk profesional media sosial dan pengguna e-commerce. Gunakan pembuat grid Instagram gratis kami untuk menghasilkan tata letak grid Instagram yang sempurna dan gambar carousel dengan satu klik, membuat konten Anda lebih menarik."
+    }
+  },
+  "language": {
+    "switchLanguage": "Ganti Bahasa"
+  },
+  "images": {
+    "gridExampleAlt": "Efek grid Instagram yang dibuat dengan Image Splitter",
+    "carouselExampleAlt": "Efek post carousel Instagram yang dibuat dengan Image Splitter",
+    "originalPlaceholder": "Asli",
+    "gridEffectPlaceholder": "Efek Grid",
+    "carouselEffectPlaceholder": "Efek Carousel"
+  },
+  "faq": {
+    "title": "Pertanyaan yang Sering Diajukan",
+    "description": "Panduan lengkap tentang pembagi gambar dan pembuat grid Instagram.",
+    "whatIsImageSplitter": {
+      "question": "Apa itu pembagi gambar dan bagaimana cara kerjanya?",
+      "answer": "Pembagi gambar adalah alat digital yang membagi satu gambar menjadi beberapa bagian yang lebih kecil. Pembagi gambar berbasis web kami menggunakan algoritma canggih untuk membagi gambar Anda menjadi grid atau segmen yang sempurna. Cukup unggah gambar Anda, pilih metode pembagi gambar, dan unduh hasilnya. Semua pemrosesan terjadi langsung di browser Anda, memastikan privasi dan keamanan gambar."
+    },
+    "howToSplitImage": {
+      "question": "Bagaimana cara membagi gambar menjadi beberapa bagian?",
+      "answer": "Sangat mudah: 1) Unggah gambar Anda (mendukung JPG, PNG, GIF, dll., maksimal 10MB), 2) Pilih mode pembagi yang diinginkan - pembagi vertikal, pembagi horizontal, atau pembagi grid, 3) Sesuaikan baris dan kolom, 4) Klik tombol bagi gambar, 5) Unduh segmen individual atau dapatkan paket ZIP."
+    },
+    "instagramGridMaker": {
+      "question": "Bisakah saya menggunakan alat ini untuk membuat postingan grid Instagram?",
+      "answer": "Tentu saja! Pembagi gambar kami sempurna untuk membuat layout grid Instagram dan postingan carousel. Format populer termasuk grid 3x3 untuk puzzle feed, strip untuk carousel stories, dan dimensi kustom untuk layout unik. Output memastikan kompatibilitas sempurna dengan persyaratan Instagram."
+    },
+    "splitImage3x3": {
+      "question": "Bagaimana cara membuat grid 3x3 untuk Instagram?",
+      "answer": "Untuk membuat grid 3x3 Instagram yang sempurna: 1) Unggah gambar persegi untuk hasil terbaik, 2) Pilih mode 'Grid' dari opsi, 3) Atur baris dan kolom menjadi 3, 4) Bagi gambar. Ini menciptakan 9 segmen yang sama yang membentuk puzzle lengkap ketika diposting secara berurutan di Instagram."
+    },
+    "supportedFormats": {
+      "question": "Format file apa yang didukung?",
+      "answer": "Pembagi gambar kami mendukung semua format gambar umum, termasuk JPG, PNG, GIF, dan WebP. Anda juga dapat mengekspor gambar yang dibagi dalam format JPG, PNG, WebP, atau BMP. Ukuran file maksimal adalah 10MB dengan dimensi hingga 4096x4096 piksel untuk kinerja optimal."
+    },
+    "freeToUse": {
+      "question": "Apakah alat ini benar-benar gratis?",
+      "answer": "Ya, pembagi gambar kami 100% gratis tanpa biaya tersembunyi. Tidak ada watermark pada gambar Anda, tidak perlu registrasi akun, dan tidak ada batasan penggunaan. Gunakan secara bebas untuk proyek pribadi, konten komersial, atau tujuan bisnis."
+    },
+    "imageQuality": {
+      "question": "Apakah kualitas gambar yang dibagi akan terpengaruh?",
+      "answer": "Sama sekali tidak! Kami menggunakan teknik pemrosesan lossless untuk mempertahankan kualitas gambar asli Anda. Gambar yang dibagi mempertahankan resolusi dan kejernihan yang sama dengan gambar sumber Anda, memastikan konten media sosial Anda terlihat profesional."
+    },
+    "privacySecurity": {
+      "question": "Apakah konten yang saya unggah aman?",
+      "answer": "Privasi Anda adalah prioritas utama kami. Menggunakan pembagi gambar kami, semua pemrosesan gambar terjadi langsung di browser Anda - tidak ada yang diunggah ke server kami. Gambar Anda tidak pernah meninggalkan perangkat Anda, dan kami tidak menyimpan atau mengakses konten Anda. Sepenuhnya pribadi dan aman."
+    },
+    "mobileFriendly": {
+      "question": "Apakah alat ini berfungsi di perangkat mobile?",
+      "answer": "Tentu saja! Pembagi gambar kami sepenuhnya responsif dan bekerja sempurna di smartphone dan tablet. Anda dapat mengunggah gambar dari galeri foto, memprosesnya, dan mengunduh hasil langsung ke perangkat Anda. Antarmuka secara otomatis menyesuaikan dengan semua ukuran layar untuk pengalaman yang lancar."
+    },
+    "batchProcessing": {
+      "question": "Bisakah saya membagi beberapa gambar sekaligus?",
+      "answer": "Saat ini, alat memproses satu gambar pada satu waktu untuk memastikan kinerja dan kualitas optimal. Namun, pemrosesan cepat - Anda dapat dengan cepat membagi beberapa gambar dengan mengulangi langkah unggah dan proses yang sederhana."
+    },
+    "customDimensions": {
+      "question": "Bisakah saya membuat dimensi grid kustom dengan pembagi gambar Anda?",
+      "answer": "Tentu saja! Selain preset populer seperti 3x3 dan 2x3, Anda dapat membuat dimensi grid kustom hingga 10x10. Cukup sesuaikan baris dan kolom untuk memenuhi kebutuhan spesifik Anda, baik untuk layout media sosial yang unik atau proyek khusus."
+    },
+    "cta": {
+      "title": "Siap Membuat Layout Grid yang Menakjubkan?",
+      "description": "Mulai membagi gambar Anda dan buat konten media sosial yang menarik.",
+      "button": "Mulai Membuat Sekarang"
+    }
+  }
+} 

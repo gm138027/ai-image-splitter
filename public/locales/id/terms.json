@@ -1,0 +1,124 @@
+{
+  "title": "Syarat Layanan",
+  "lastUpdated": "Terakhir Diperbarui: 25 Juni 2025",
+  "description": "Syarat Layanan ini mengatur penggunaan Anda terhadap AI Image Splitter. Harap baca dengan cermat.",
+  
+  "sections": {
+    "agreement": {
+      "title": "Persetujuan Syarat",
+      "content": "Dengan mengakses dan menggunakan AI Image Splitter (\"Layanan\"), Anda menerima dan setuju untuk terikat dengan syarat dan ketentuan perjanjian ini. Jika Anda tidak setuju dengan syarat-syarat ini, Anda tidak boleh menggunakan layanan ini."
+    },
+    
+    "serviceDescription": {
+      "title": "Deskripsi Layanan",
+      "content": "AI Image Splitter adalah alat online gratis yang memungkinkan pengguna membagi gambar menjadi grid atau segmen untuk penggunaan media sosial, khususnya untuk carousel Instagram dan postingan grid.",
+      "features": [
+        "Pemrosesan gambar sisi klien untuk perlindungan privasi",
+        "Berbagai ukuran grid (3x3, 2x3, 4x4, kustom)",
+        "Tidak ada watermark pada gambar output",
+        "Akses gratis ke semua fitur",
+        "Dukungan multi-bahasa",
+        "Kompatibilitas mobile dan desktop"
+      ]
+    },
+    
+    "userResponsibilities": {
+      "title": "Tanggung Jawab Pengguna",
+      "content": "Saat menggunakan layanan kami, Anda setuju untuk:",
+      "responsibilities": [
+        "Menggunakan layanan hanya untuk tujuan yang sah",
+        "Tidak mengunggah konten berhak cipta tanpa otorisasi yang tepat",
+        "Tidak mencoba merusak atau mengganggu layanan",
+        "Tidak menggunakan layanan untuk membuat konten yang berbahaya, menyinggung, atau tidak pantas",
+        "Menghormati hak kekayaan intelektual",
+        "Mematuhi semua hukum dan peraturan yang berlaku"
+      ]
+    },
+    
+    "intellectualProperty": {
+      "title": "Hak Kekayaan Intelektual",
+      "ownership": {
+        "title": "Konten Anda",
+        "content": "Anda mempertahankan semua hak atas gambar yang Anda unggah dan proses melalui layanan kami. Kami tidak mengklaim kepemilikan atas konten Anda."
+      },
+      "serviceIP": {
+        "title": "Kekayaan Intelektual Layanan",
+        "content": "Situs web AI Image Splitter, desain, perangkat lunak, dan materi terkait dilindungi oleh hak cipta dan hukum kekayaan intelektual lainnya. Anda tidak boleh menyalin, memodifikasi, atau mendistribusikan layanan kami tanpa izin."
+      }
+    },
+    
+    "prohibited": {
+      "title": "Penggunaan yang Dilarang",
+      "content": "Anda tidak boleh menggunakan layanan kami untuk:",
+      "items": [
+        "Mengunggah atau memproses konten ilegal, berbahaya, atau menyinggung",
+        "Melanggar hak kekayaan intelektual orang lain",
+        "Mendistribusikan malware atau kode berbahaya",
+        "Mencoba mendapatkan akses tidak sah ke sistem kami",
+        "Menggunakan alat otomatis untuk mengakses layanan secara berlebihan",
+        "Melanggar hukum atau peraturan yang berlaku"
+      ]
+    },
+    
+    "privacy": {
+      "title": "Privasi dan Perlindungan Data",
+      "content": "Privasi Anda penting bagi kami. Semua pemrosesan gambar terjadi di sisi klien di browser Anda, yang berarti gambar Anda tidak pernah meninggalkan perangkat Anda. Silakan merujuk ke Kebijakan Privasi kami untuk informasi detail tentang bagaimana kami menangani data Anda."
+    },
+    
+    "serviceAvailability": {
+      "title": "Ketersediaan Layanan",
+      "content": "Kami berusaha mempertahankan ketersediaan layanan, tetapi kami tidak menjamin akses tanpa gangguan. Layanan mungkin sementara tidak tersedia karena:",
+      "reasons": [
+        "Pemeliharaan terjadwal",
+        "Kesulitan teknis",
+        "Pembaruan server",
+        "Keadaan di luar kendali kami"
+      ],
+      "disclaimer": "Kami tidak bertanggung jawab atas kerugian atau kerusakan yang diakibatkan oleh gangguan layanan."
+    },
+    
+    "disclaimers": {
+      "title": "Penafian",
+      "content": "Layanan kami disediakan \"sebagaimana adanya\" tanpa jaminan apa pun. Kami menafikan semua jaminan, tersurat atau tersirat, termasuk tetapi tidak terbatas pada:",
+      "items": [
+        "Kelayakan komersial dan kesesuaian untuk tujuan tertentu",
+        "Non-pelanggaran hak pihak ketiga",
+        "Akurasi, kelengkapan, atau keandalan layanan",
+        "Operasi tanpa gangguan atau bebas kesalahan"
+      ]
+    },
+    
+    "limitation": {
+      "title": "Pembatasan Tanggung Jawab",
+      "content": "Sejauh maksimum yang diizinkan oleh hukum, kami tidak bertanggung jawab atas kerusakan tidak langsung, insidental, khusus, konsekuensial, atau hukuman, termasuk tetapi tidak terbatas pada kehilangan keuntungan, data, atau kerugian tidak berwujud lainnya yang diakibatkan oleh penggunaan layanan Anda."
+    },
+    
+    "termination": {
+      "title": "Penghentian",
+      "content": "Kami berhak untuk menghentikan atau menangguhkan akses ke layanan kami segera, tanpa pemberitahuan sebelumnya, untuk alasan apa pun, termasuk pelanggaran syarat-syarat ini. Setelah penghentian, hak Anda untuk menggunakan layanan akan segera berhenti."
+    },
+    
+    "modifications": {
+      "title": "Modifikasi Syarat",
+      "content": "Kami berhak untuk memodifikasi syarat-syarat ini kapan saja. Perubahan akan berlaku segera setelah diposting di halaman ini. Penggunaan layanan yang berkelanjutan setelah perubahan merupakan penerimaan syarat-syarat baru.",
+      "notification": "Kami akan memperbarui tanggal \"Terakhir Diperbarui\" untuk mencerminkan perubahan."
+    },
+    
+    "governingLaw": {
+      "title": "Hukum yang Berlaku",
+      "content": "Syarat-syarat ini diatur dan ditafsirkan sesuai dengan hukum internasional yang berlaku. Setiap sengketa yang timbul dari syarat-syarat ini atau penggunaan layanan akan diselesaikan melalui arbitrase yang mengikat."
+    },
+    
+    "contact": {
+      "title": "Informasi Kontak",
+      "content": "Jika Anda memiliki pertanyaan tentang Syarat Layanan ini, silakan hubungi kami:",
+      "email": "Email: aiimagesplitter@proton.me",
+      "response": "Kami akan merespons pertanyaan Anda dalam 48 jam."
+    }
+  },
+  
+  "navigation": {
+    "backToHome": "Kembali ke Beranda",
+    "tableOfContents": "Daftar Isi"
+  }
+} 

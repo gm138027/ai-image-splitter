@@ -1,0 +1,155 @@
+{
+  "title": "AI Image Splitter 博客",
+  "description": "AI图像分割器使用技巧、教程和最佳实践指南",
+  "backToHome": "返回首页",
+  "readMore": "阅读更多",
+  "publishedOn": "发布于",
+  "lastUpdated": "最后更新",
+  "tableOfContents": "目录",
+  "relatedPosts": "相关文章",
+  "shareThisPost": "分享本文",
+  "blogCoverPlaceholder": "教程封面图片",
+  "tipLabel": "提示：",
+  "startUsingTool": "立即开始使用 AI Image Splitter",
+  "imageAlt": {
+    "guideComplete": "图片切割完整操作指南",
+    "thumbnailImage": "图片切割完整操作指南缩略图",
+    "coverImage": "图片切割完整操作指南封面图"
+  },
+  
+  "posts": {
+    "complete-guide": {
+      "title": "AI Image Splitter 完整操作指南：2025年Instagram网格制作教程",
+      "description": "详细的AI图像分割器使用教程，学会制作完美的Instagram网格布局和社交媒体轮播图，提升您的内容创作效率。",
+      "keywords": "AI图像分割器,Instagram网格,图片分割教程,社交媒体工具,轮播图制作",
+      "readingTime": "5分钟阅读",
+      "category": "教程指南",
+      
+      "intro": {
+        "title": "什么是AI Image Splitter？",
+        "content": "AI Image Splitter是一款专业的在线图像分割工具，专为社交媒体内容创作者设计。无论您是想制作Instagram网格布局、Facebook轮播帖子，还是其他平台的多图展示，我们的工具都能帮您轻松实现。"
+      },
+      
+      "stepByStep": {
+        "title": "完整操作步骤",
+        "subtitle": "跟随这个详细指南，5分钟学会专业图片分割",
+        
+        "step1": {
+          "title": "第一步：访问网站并上传图片",
+          "content": "在浏览器中输入 {domainLink}，进入我们的网站首页。您可以通过以下两种方式上传图片：",
+          "method1": "拖拽上传：直接将图片文件拖拽到上传区域",
+          "method2": "点击上传：点击选择图片按钮，从设备中选择图片",
+          "note": "支持 JPG、PNG、GIF 等主流格式，最大文件大小 10MB"
+        },
+        
+        "step2": {
+          "title": "第二步：选择分割模式",
+          "content": "根据您的需求选择合适的分割方式：",
+          "modes": {
+            "vertical": {
+              "name": "垂直分割",
+              "description": "适用于制作轮播帖子，将图片垂直切分成多个条状部分",
+              "useCase": "完美适配Instagram、Facebook轮播展示"
+            },
+            "horizontal": {
+              "name": "水平分割", 
+              "description": "将图片水平切分，适用于横向展示需求",
+              "useCase": "适合制作时间线效果或步骤展示"
+            },
+            "grid": {
+              "name": "网格分割",
+              "description": "将图片分割成网格布局，最受欢迎的Instagram展示方式",
+              "useCase": "打造专业的Instagram网格效果"
+            }
+          }
+        },
+        
+        "step3": {
+          "title": "第三步：设置分割参数",
+          "content": "根据选择的模式调整相应参数：",
+          "setting1": "垂直分割：设置列数（建议3-6列）",
+          "setting2": "水平分割：设置行数（建议2-4行）", 
+          "setting3": "网格分割：自定义行数和列数（推荐3×3最受欢迎）",
+          "preview": "右侧预览区会实时显示分割效果，帮助您调整到最佳状态"
+        },
+        
+        "step4": {
+          "title": "第四步：调整分割线宽度",
+          "content": "使用分割线宽度滑块调整网格线的粗细程度：",
+          "tip1": "细线条（1-2px）：适合精致、简约的设计风格",
+          "tip2": "中等线条（3-4px）：平衡视觉效果，适合大多数情况",
+          "tip3": "粗线条（5-6px）：强调分割效果，适合艺术创作"
+        },
+        
+        "step5": {
+          "title": "第五步：选择输出格式",
+          "content": "根据使用场景选择合适的图片格式：",
+          "formats": {
+            "jpg": "文件较小，适合网络分享",
+            "png": "支持透明背景，质量更高",
+            "webp": "新一代格式，文件更小",
+            "bmp": "无损格式，适合打印"
+          }
+        },
+        
+        "step6": {
+          "title": "第六步：下载分割结果",
+          "content": "完成分割后，您有两种下载方式：",
+          "option1": "单张下载：将鼠标悬停在任意网格上，点击下载按钮获取单张图片",
+          "option2": "批量下载：点击下载图片按钮，一次性下载所有分割结果的ZIP压缩包"
+        },
+        
+        "step7": {
+          "title": "第七步：重新上传或继续处理",
+          "content": "如需处理其他图片，点击重新上传图片按钮即可开始新的分割任务。"
+        }
+      },
+      
+      "bestPractices": {
+        "title": "专业使用技巧",
+        "subtitle": "提升您的社交媒体内容质量",
+        "tip1": {
+          "title": "选择高质量原图",
+          "content": "使用分辨率至少1080×1080的图片，确保分割后每个部分都清晰可见"
+        },
+        "tip2": {
+          "title": "考虑构图完整性",
+          "content": "分割前预想每个网格的内容，避免重要元素被切断"
+        },
+        "tip3": {
+          "title": "保持一致的发布顺序",
+          "content": "Instagram网格按从左到右、从上到下的顺序发布，效果最佳"
+        },
+        "tip4": {
+          "title": "测试不同分割方案",
+          "content": "尝试不同的行列组合，找到最适合您图片的分割方式"
+        }
+      },
+      
+      "faq": {
+        "title": "常见问题解答",
+        "q1": {
+          "question": "支持哪些图片格式？",
+          "answer": "支持JPG、PNG、GIF、WebP、BMP等所有主流图片格式，最大文件大小10MB。"
+        },
+        "q2": {
+          "question": "分割后的图片质量会下降吗？",
+          "answer": "不会。我们使用先进的图像处理技术，确保分割后的图片保持原始质量。"
+        },
+        "q3": {
+          "question": "可以商用吗？",
+          "answer": "完全可以！我们的工具免费提供，生成的图片无水印，可用于任何商业用途。"
+        },
+        "q4": {
+          "question": "手机上可以使用吗？",
+          "answer": "当然可以！我们的网站采用响应式设计，在手机、平板、电脑上都能完美使用。"
+        }
+      },
+      
+      "conclusion": {
+        "title": "开始创建您的专业内容",
+        "content": "现在您已经掌握了AI Image Splitter的完整使用方法。这个强大的工具将帮助您创建引人注目的社交媒体内容，提升您的品牌形象和用户参与度。立即开始使用，让您的创意无限绽放！"
+      }
+    }
+  }
+} 

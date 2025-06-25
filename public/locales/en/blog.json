@@ -1,0 +1,155 @@
+{
+  "title": "AI Image Splitter Blog",
+  "description": "Tips, tutorials, and best practices for AI Image Splitter",
+  "backToHome": "Back to Home",
+  "readMore": "Read More",
+  "publishedOn": "Published on",
+  "lastUpdated": "Last updated",
+  "tableOfContents": "Table of Contents",
+  "relatedPosts": "Related Posts",
+  "shareThisPost": "Share This Post",
+  "blogCoverPlaceholder": "Tutorial Cover Image",
+  "tipLabel": "Tip:",
+  "startUsingTool": "Start Using AI Image Splitter Now",
+  "imageAlt": {
+    "guideComplete": "Complete Image Splitting Operation Guide",
+    "thumbnailImage": "Complete Image Splitting Operation Guide Thumbnail",
+    "coverImage": "Complete Image Splitting Operation Guide Cover"
+  },
+  
+  "posts": {
+    "complete-guide": {
+      "title": "AI Image Splitter Complete Guide: 2025 Instagram Grid Tutorial",
+      "description": "Complete tutorial for AI Image Splitter. Learn how to create perfect Instagram grid layouts and social media carousels to boost your content creation efficiency.",
+      "keywords": "AI Image Splitter,Instagram grid,image splitting tutorial,social media tools,carousel maker",
+      "readingTime": "5 min read",
+      "category": "Tutorial Guide",
+      
+      "intro": {
+        "title": "What is AI Image Splitter?",
+        "content": "AI Image Splitter is a professional online image splitting tool designed specifically for social media content creators. Whether you want to create Instagram grid layouts, Facebook carousel posts, or other platforms' multi-image displays, our tool helps you achieve it effortlessly."
+      },
+      
+      "stepByStep": {
+        "title": "Complete Operation Steps",
+        "subtitle": "Follow this detailed guide to master professional image splitting in 5 minutes",
+        
+        "step1": {
+          "title": "Step 1: Visit Website and Upload Image",
+          "content": "Enter {domainLink} in your browser to access our homepage. You can upload images through these two methods:",
+          "method1": "**Drag & Drop**: Directly drag image files to the upload area",
+          "method2": "**Click Upload**: Click the 'Choose Image' button to select from your device",
+          "note": "Supports JPG, PNG, GIF and other mainstream formats, maximum file size 10MB"
+        },
+        
+        "step2": {
+          "title": "Step 2: Select Splitting Mode",
+          "content": "Choose the appropriate splitting method based on your needs:",
+          "modes": {
+            "vertical": {
+              "name": "Vertical Split",
+              "description": "Suitable for creating carousel posts, vertically splits images into multiple strip parts",
+              "useCase": "Perfect for Instagram and Facebook carousel displays"
+            },
+            "horizontal": {
+              "name": "Horizontal Split", 
+              "description": "Horizontally splits images, suitable for horizontal display needs",
+              "useCase": "Ideal for creating timeline effects or step-by-step displays"
+            },
+            "grid": {
+              "name": "Grid Split",
+              "description": "Splits images into grid layouts, the most popular Instagram display method",
+              "useCase": "Create professional Instagram grid effects"
+            }
+          }
+        },
+        
+        "step3": {
+          "title": "Step 3: Set Splitting Parameters",
+          "content": "Adjust corresponding parameters based on the selected mode:",
+          "setting1": "**Vertical Split**: Set number of columns (recommended 3-6 columns)",
+          "setting2": "**Horizontal Split**: Set number of rows (recommended 2-4 rows)", 
+          "setting3": "**Grid Split**: Customize rows and columns (3×3 is most popular)",
+          "preview": "The right preview area displays splitting effects in real-time, helping you adjust to the optimal state"
+        },
+        
+        "step4": {
+          "title": "Step 4: Adjust Split Line Width",
+          "content": "Use the split line width slider to adjust the thickness of grid lines:",
+          "tip1": "**Thin lines (1-2px)**: Suitable for refined, minimalist design styles",
+          "tip2": "**Medium lines (3-4px)**: Balanced visual effects, suitable for most situations",
+          "tip3": "**Thick lines (5-6px)**: Emphasizes splitting effects, suitable for artistic creation"
+        },
+        
+        "step5": {
+          "title": "Step 5: Select Output Format",
+          "content": "Choose the appropriate image format based on usage scenarios:",
+          "formats": {
+            "jpg": "Smaller file size, suitable for web sharing",
+            "png": "Supports transparent backgrounds, higher quality",
+            "webp": "Next-generation format, smaller file size",
+            "bmp": "Lossless format, suitable for printing"
+          }
+        },
+        
+        "step6": {
+          "title": "Step 6: Download Split Results",
+          "content": "After completing the split, you have two download options:",
+          "option1": "**Single Download**: Hover over any grid and click the download button to get a single image",
+          "option2": "**Batch Download**: Click the 'Download Images' button to download all split results as a ZIP archive"
+        },
+        
+        "step7": {
+          "title": "Step 7: Re-upload or Continue Processing",
+          "content": "To process other images, click the 'Re-upload Image' button to start a new splitting task."
+        }
+      },
+      
+      "bestPractices": {
+        "title": "Professional Usage Tips",
+        "subtitle": "Enhance your social media content quality",
+        "tip1": {
+          "title": "Choose High-Quality Original Images",
+          "content": "Use images with at least 1080×1080 resolution to ensure each split part remains clear and visible"
+        },
+        "tip2": {
+          "title": "Consider Composition Integrity",
+          "content": "Pre-visualize each grid's content before splitting to avoid cutting important elements"
+        },
+        "tip3": {
+          "title": "Maintain Consistent Publishing Order",
+          "content": "Instagram grids work best when published in order from left to right, top to bottom"
+        },
+        "tip4": {
+          "title": "Test Different Splitting Schemes",
+          "content": "Try different row and column combinations to find the best splitting method for your images"
+        }
+      },
+      
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "q1": {
+          "question": "What image formats are supported?",
+          "answer": "Supports all mainstream image formats including JPG, PNG, GIF, WebP, BMP, with a maximum file size of 10MB."
+        },
+        "q2": {
+          "question": "Will the image quality decrease after splitting?",
+          "answer": "No. We use advanced image processing technology to ensure split images maintain original quality."
+        },
+        "q3": {
+          "question": "Can I use this for commercial purposes?",
+          "answer": "Absolutely! Our tool is free to use, generates watermark-free images, and can be used for any commercial purpose."
+        },
+        "q4": {
+          "question": "Can I use this on mobile devices?",
+          "answer": "Of course! Our website uses responsive design and works perfectly on phones, tablets, and computers."
+        }
+      },
+      
+      "conclusion": {
+        "title": "Start Creating Your Professional Content",
+        "content": "Now you've mastered the complete usage of AI Image Splitter. This powerful tool will help you create eye-catching social media content, enhance your brand image and user engagement. Start using it now and let your creativity flourish!"
+      }
+    }
+  }
+} 

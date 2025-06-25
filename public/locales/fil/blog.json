@@ -1,0 +1,155 @@
+{
+  "title": "AI Image Splitter Blog",
+  "description": "Mga tip, tutorial, at pinakamahusay na gawi para sa AI Image Splitter",
+  "backToHome": "Bumalik sa Tahanan",
+  "readMore": "Basahin pa",
+  "publishedOn": "Nalathala noong",
+  "lastUpdated": "Huling na-update",
+  "tableOfContents": "Talaan ng Nilalaman",
+  "relatedPosts": "Mga Kaugnay na Post",
+  "shareThisPost": "Ibahagi ang Post na Ito",
+  "blogCoverPlaceholder": "Larawan ng Cover ng Tutorial",
+  "tipLabel": "Tip:",
+  "startUsingTool": "Simulan ang Paggamit ng AI Image Splitter Ngayon",
+  "imageAlt": {
+    "guideComplete": "Kumpletong Gabay sa Operasyon ng Paghahati ng Larawan",
+    "thumbnailImage": "Thumbnail ng Kumpletong Gabay sa Operasyon ng Paghahati ng Larawan",
+    "coverImage": "Cover ng Kumpletong Gabay sa Operasyon ng Paghahati ng Larawan"
+  },
+  
+  "posts": {
+    "complete-guide": {
+      "title": "Kumpletong Gabay sa AI Image Splitter: 2025 Instagram Grid Tutorial",
+      "description": "Kumpletong tutorial para sa AI Image Splitter. Matuto kung paano gumawa ng perpektong Instagram grid layouts at social media carousels upang mapahusay ang inyong content creation efficiency.",
+      "keywords": "AI Image Splitter,Instagram grid,tutorial sa paghati ng larawan,social media tools,carousel maker",
+      "readingTime": "5 minutong pagbasa",
+      "category": "Tutorial Guide",
+      
+      "intro": {
+        "title": "Ano ang AI Image Splitter?",
+        "content": "Ang AI Image Splitter ay isang propesyonal na online image splitting tool na dinisenyo para sa mga social media content creator. Maging gumagawa kayo ng Instagram grid layouts, Facebook carousel posts, o multi-image displays ng ibang platforms, tutulong sa inyo ang aming tool na makamit ito nang walang hirap."
+      },
+      
+      "stepByStep": {
+        "title": "Kumpletong Mga Hakbang sa Operasyon",
+        "subtitle": "Sundin ang detalyadong gabay na ito upang ma-master ang propesyonal na image splitting sa loob ng 5 minuto",
+        
+        "step1": {
+          "title": "Hakbang 1: Bisitahin ang Website at Mag-upload ng Larawan",
+          "content": "I-type ang {domainLink} sa inyong browser upang ma-access ang aming homepage. Maaari kayong mag-upload ng mga larawan sa pamamagitan ng dalawang paraan:",
+          "method1": "Drag & Drop: Direktang i-drag ang mga image file sa upload area",
+          "method2": "Click Upload: I-click ang 'Pumili ng Larawan' button upang pumili mula sa inyong device",
+          "note": "Sumusuporta sa JPG, PNG, GIF at iba pang mainstream formats, maximum file size na 10MB"
+        },
+        
+        "step2": {
+          "title": "Hakbang 2: Pumili ng Splitting Mode",
+          "content": "Pumili ng naaangkop na splitting method base sa inyong pangangailangan:",
+          "modes": {
+            "vertical": {
+              "name": "Vertical Split",
+              "description": "Angkop para sa paggawa ng carousel posts, naghahati ng mga larawan nang patayo sa maraming strip parts",
+              "useCase": "Perpekto para sa Instagram at Facebook carousel displays"
+            },
+            "horizontal": {
+              "name": "Horizontal Split", 
+              "description": "Naghahati ng mga larawan nang pahalang, angkop para sa horizontal display needs",
+              "useCase": "Ideal para sa paggawa ng timeline effects o step-by-step displays"
+            },
+            "grid": {
+              "name": "Grid Split",
+              "description": "Naghahati ng mga larawan sa grid layouts, ang pinakasikat na Instagram display method",
+              "useCase": "Gumawa ng propesyonal na Instagram grid effects"
+            }
+          }
+        },
+        
+        "step3": {
+          "title": "Hakbang 3: I-set ang Splitting Parameters",
+          "content": "I-adjust ang mga kaukulang parameter base sa napiling mode:",
+          "setting1": "Vertical Split: I-set ang bilang ng columns (inirerekomenda na 3-6 columns)",
+          "setting2": "Horizontal Split: I-set ang bilang ng rows (inirerekomenda na 2-4 rows)", 
+          "setting3": "Grid Split: I-customize ang rows at columns (3×3 ang pinakasikat)",
+          "preview": "Ang right preview area ay nagpapakita ng splitting effects sa real-time, tumutulong sa inyong mag-adjust sa optimal state"
+        },
+        
+        "step4": {
+          "title": "Hakbang 4: I-adjust ang Split Line Width",
+          "content": "Gamitin ang split line width slider upang i-adjust ang kapal ng grid lines:",
+          "tip1": "Manipis na linya (1-2px): Angkop para sa pinong, minimalist design styles",
+          "tip2": "Katamtamang linya (3-4px): Balanced visual effects, angkop para sa karamihan ng sitwasyon",
+          "tip3": "Makapal na linya (5-6px): Binibigyang-diin ang splitting effects, angkop para sa artistic creation"
+        },
+        
+        "step5": {
+          "title": "Hakbang 5: Pumili ng Output Format",
+          "content": "Pumili ng naaangkop na image format base sa usage scenarios:",
+          "formats": {
+            "jpg": "Mas maliit na file size, angkop para sa web sharing",
+            "png": "Sumusuporta sa transparent backgrounds, mas mataas na kalidad",
+            "webp": "Next-generation format, mas maliit na file size",
+            "bmp": "Lossless format, angkop para sa printing"
+          }
+        },
+        
+        "step6": {
+          "title": "Hakbang 6: I-download ang Splitting Results",
+          "content": "Pagkatapos makumpleto ang splitting, mayroon kayong dalawang download options:",
+          "option1": "Single Download: I-hover ang mouse sa kahit anong grid at i-click ang download button upang makuha ang single image",
+          "option2": "Batch Download: I-click ang 'Download Images' button upang i-download ang lahat ng splitting results bilang ZIP archive"
+        },
+        
+        "step7": {
+          "title": "Hakbang 7: Mag-re-upload o Magpatuloy sa Processing",
+          "content": "Upang mag-process ng ibang mga larawan, i-click ang 'Re-upload Image' button upang magsimula ng bagong splitting task."
+        }
+      },
+      
+      "bestPractices": {
+        "title": "Mga Propesyonal na Tips sa Paggamit",
+        "subtitle": "Pahusayin ang kalidad ng inyong social media content",
+        "tip1": {
+          "title": "Pumili ng Mataas na Kalidad na Original Images",
+          "content": "Gumamit ng mga larawan na may hindi bababa sa 1080×1080 resolution upang matiyak na ang bawat nahating bahagi ay manatiling malinaw at nakikita"
+        },
+        "tip2": {
+          "title": "Isaalang-alang ang Composition Integrity",
+          "content": "I-pre-visualize ang content ng bawat grid bago mag-split upang maiwasan ang pagkakaputol ng mga mahalagang elemento"
+        },
+        "tip3": {
+          "title": "Panatilihin ang Consistent Publishing Order",
+          "content": "Ang mga Instagram grid ay pinakamahusay kapag na-post nang sunod-sunod mula kaliwa hanggang kanan, taas hanggang baba"
+        },
+        "tip4": {
+          "title": "Subukan ang Iba't ibang Splitting Schemes",
+          "content": "Subukan ang iba't ibang kombinasyon ng rows at columns upang mahanap ang pinakamahusay na splitting method para sa inyong mga larawan"
+        }
+      },
+      
+      "faq": {
+        "title": "Mga Madalas na Tanong",
+        "q1": {
+          "question": "Anong mga image format ang sinusuportahan?",
+          "answer": "Sinusuportahan ang lahat ng mainstream image formats kabilang ang JPG, PNG, GIF, WebP, BMP, na may maximum file size na 10MB."
+        },
+        "q2": {
+          "question": "Bababa ba ang kalidad ng larawan pagkatapos ng splitting?",
+          "answer": "Hindi. Ginagamit namin ang advanced na image processing technology upang matiyak na ang mga nahating larawan ay napapanatili ang orihinal na kalidad."
+        },
+        "q3": {
+          "question": "Maaari ko bang gamitin ito para sa commercial purposes?",
+          "answer": "Tiyak! Ang aming tool ay libre gamitin, gumagawa ng mga larawan na walang watermark, at maaaring gamitin para sa anumang commercial purpose."
+        },
+        "q4": {
+          "question": "Maaari ko bang gamitin ito sa mobile devices?",
+          "answer": "Syempre! Ang aming website ay gumagamit ng responsive design at perpektong gumagana sa mga telepono, tablet, at computer."
+        }
+      },
+      
+      "conclusion": {
+        "title": "Simulan ang Paggawa ng Inyong Propesyonal na Content",
+        "content": "Ngayon na-master ninyo na ang kumpletong paggamit ng AI Image Splitter. Ang malakas na tool na ito ay tutulong sa inyong gumawa ng nakaakit na social media content, mapahusay ang inyong brand image at user engagement. Simulan na gamitin ngayon at hayaang umunlad ang inyong creativity!"
+      }
+    }
+  }
+} 

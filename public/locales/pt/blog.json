@@ -1,0 +1,155 @@
+{
+  "title": "Blog AI Image Splitter",
+  "description": "Dicas, tutoriais e melhores práticas para AI Image Splitter",
+  "backToHome": "Voltar ao Início",
+  "readMore": "Leia Mais",
+  "publishedOn": "Publicado em",
+  "lastUpdated": "Última atualização",
+  "tableOfContents": "Índice",
+  "relatedPosts": "Posts Relacionados",
+  "shareThisPost": "Compartilhar Este Post",
+  "blogCoverPlaceholder": "Imagem de Capa do Tutorial",
+  "tipLabel": "Dica:",
+  "startUsingTool": "Comece a Usar o AI Image Splitter Agora",
+  "imageAlt": {
+    "guideComplete": "Guia Completo de Operações de Divisão de Imagem",
+    "thumbnailImage": "Miniatura do Guia Completo de Operações de Divisão de Imagem",
+    "coverImage": "Capa do Guia Completo de Operações de Divisão de Imagem"
+  },
+  
+  "posts": {
+    "complete-guide": {
+      "title": "Guia Completo do AI Image Splitter: Tutorial de Grade do Instagram 2025",
+      "description": "Tutorial completo do AI Image Splitter. Aprenda como criar layouts de grade perfeitos do Instagram e carrosséis de mídia social para aumentar sua eficiência de criação de conteúdo.",
+      "keywords": "AI Image Splitter,grade Instagram,tutorial divisor de imagem,ferramentas de mídia social,criador de carrossel",
+      "readingTime": "5 min de leitura",
+      "category": "Guia Tutorial",
+      
+      "intro": {
+        "title": "O que é o AI Image Splitter?",
+        "content": "O AI Image Splitter é uma ferramenta profissional online de divisão de imagens projetada especificamente para criadores de conteúdo de mídia social. Seja para criar layouts de grade do Instagram, posts de carrossel do Facebook ou exibições multi-imagem de outras plataformas, nossa ferramenta ajuda você a alcançar isso sem esforço."
+      },
+      
+      "stepByStep": {
+        "title": "Passos Completos de Operação",
+        "subtitle": "Siga este guia detalhado para dominar a divisão profissional de imagens em 5 minutos",
+        
+        "step1": {
+          "title": "Passo 1: Visite o Site e Carregue a Imagem",
+          "content": "Digite {domainLink} no seu navegador para acessar nossa página inicial. Você pode carregar imagens através destes dois métodos:",
+          "method1": "Arrastar e Soltar: Arraste diretamente os arquivos de imagem para a área de upload",
+          "method2": "Clique para Carregar: Clique no botão Escolher Imagem para selecionar do seu dispositivo",
+          "note": "Suporta formatos JPG, PNG, GIF e outros formatos principais, tamanho máximo de arquivo 10MB"
+        },
+        
+        "step2": {
+          "title": "Passo 2: Selecione o Modo de Divisão",
+          "content": "Escolha o método de divisão apropriado baseado em suas necessidades:",
+          "modes": {
+            "vertical": {
+              "name": "Divisão Vertical",
+              "description": "Adequado para criar posts de carrossel, divide verticalmente imagens em múltiplas partes em tiras",
+              "useCase": "Perfeito para exibições de carrossel do Instagram e Facebook"
+            },
+            "horizontal": {
+              "name": "Divisão Horizontal", 
+              "description": "Divide imagens horizontalmente, adequado para necessidades de exibição horizontal",
+              "useCase": "Ideal para criar efeitos de linha do tempo ou exibições passo a passo"
+            },
+            "grid": {
+              "name": "Divisão em Grade",
+              "description": "Divide imagens em layouts de grade, o método de exibição mais popular do Instagram",
+              "useCase": "Criar efeitos de grade profissionais do Instagram"
+            }
+          }
+        },
+        
+        "step3": {
+          "title": "Passo 3: Definir Parâmetros de Divisão",
+          "content": "Ajuste os parâmetros correspondentes baseados no modo selecionado:",
+          "setting1": "Divisão Vertical: Defina o número de colunas (recomendado 3-6 colunas)",
+          "setting2": "Divisão Horizontal: Defina o número de linhas (recomendado 2-4 linhas)", 
+          "setting3": "Divisão em Grade: Personalize linhas e colunas (3×3 é mais popular)",
+          "preview": "A área de visualização à direita exibe efeitos de divisão em tempo real, ajudando você a ajustar para o estado ideal"
+        },
+        
+        "step4": {
+          "title": "Passo 4: Ajustar Largura da Linha de Divisão",
+          "content": "Use o controle deslizante de largura da linha de divisão para ajustar a espessura das linhas da grade:",
+          "tip1": "Linhas finas (1-2px): Adequado para estilos de design refinados e minimalistas",
+          "tip2": "Linhas médias (3-4px): Efeitos visuais equilibrados, adequado para a maioria das situações",
+          "tip3": "Linhas grossas (5-6px): Enfatiza efeitos de divisão, adequado para criação artística"
+        },
+        
+        "step5": {
+          "title": "Passo 5: Selecionar Formato de Saída",
+          "content": "Escolha o formato de imagem apropriado baseado nos cenários de uso:",
+          "formats": {
+            "jpg": "Tamanho de arquivo menor, adequado para compartilhamento web",
+            "png": "Suporta fundos transparentes, qualidade superior",
+            "webp": "Formato de próxima geração, tamanho de arquivo menor",
+            "bmp": "Formato sem perdas, adequado para impressão"
+          }
+        },
+        
+        "step6": {
+          "title": "Passo 6: Baixar Resultados da Divisão",
+          "content": "Após completar a divisão, você tem duas opções de download:",
+          "option1": "Download Único: Passe o mouse sobre qualquer grade e clique no botão de download para obter uma única imagem",
+          "option2": "Download em Lote: Clique no botão Baixar Imagens para baixar todos os resultados da divisão como um arquivo ZIP"
+        },
+        
+        "step7": {
+          "title": "Passo 7: Re-upload ou Continuar Processamento",
+          "content": "Para processar outras imagens, clique no botão Re-upload de Imagem para iniciar uma nova tarefa de divisão."
+        }
+      },
+      
+      "bestPractices": {
+        "title": "Dicas de Uso Profissional",
+        "subtitle": "Melhore a qualidade do seu conteúdo de mídia social",
+        "tip1": {
+          "title": "Escolha Imagens Originais de Alta Qualidade",
+          "content": "Use imagens com pelo menos 1080×1080 de resolução para garantir que cada parte dividida permaneça clara e visível"
+        },
+        "tip2": {
+          "title": "Considere a Integridade da Composição",
+          "content": "Pré-visualize o conteúdo de cada grade antes da divisão para evitar cortar elementos importantes"
+        },
+        "tip3": {
+          "title": "Mantenha Ordem de Postagem Consistente",
+          "content": "As grades do Instagram funcionam melhor quando postadas em ordem da esquerda para a direita, de cima para baixo"
+        },
+        "tip4": {
+          "title": "Teste Diferentes Esquemas de Divisão",
+          "content": "Experimente diferentes combinações de linhas e colunas para encontrar o melhor método de divisão para suas imagens"
+        }
+      },
+      
+      "faq": {
+        "title": "Perguntas Frequentes",
+        "q1": {
+          "question": "Quais formatos de imagem são suportados?",
+          "answer": "Suporta todos os formatos de imagem principais incluindo JPG, PNG, GIF, WebP, BMP, com tamanho máximo de arquivo de 10MB."
+        },
+        "q2": {
+          "question": "A qualidade da imagem diminuirá após a divisão?",
+          "answer": "Não. Usamos tecnologia avançada de processamento de imagem para garantir que as imagens divididas mantenham a qualidade original."
+        },
+        "q3": {
+          "question": "Posso usar isso para fins comerciais?",
+          "answer": "Absolutamente! Nossa ferramenta é gratuita para usar, gera imagens sem marca d'água e pode ser usada para qualquer propósito comercial."
+        },
+        "q4": {
+          "question": "Posso usar isso em dispositivos móveis?",
+          "answer": "Claro! Nosso site usa design responsivo e funciona perfeitamente em telefones, tablets e computadores."
+        }
+      },
+      
+      "conclusion": {
+        "title": "Comece a Criar Seu Conteúdo Profissional",
+        "content": "Agora você dominou o uso completo do AI Image Splitter. Esta ferramenta poderosa ajudará você a criar conteúdo de mídia social atraente, melhorar sua imagem de marca e engajamento do usuário. Comece a usar agora e deixe sua criatividade florescer!"
+      }
+    }
+  }
+} 

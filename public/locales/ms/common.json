@@ -1,0 +1,162 @@
+{
+  "seo": {
+    "title": "Pembelah Imej Online & Pembuat Grid - Belah Imej untuk Instagram",
+    "description": "AI Image Splitter adalah alat percuma pemisahan imej online yang membolehkan anda memisahkan imej secara menegak, mendatar, dan grid untuk susun atur grid Instagram dan siaran carousel.",
+    "keywords": "pembelah imej, pembelah imej online, belah imej, pembuat grid, pembuat grid instagram, pembelah imej instagram, media sosial, carousel"
+  },
+  "nav": {
+    "features": "Utama",
+    "howItWorks": "Cara Ia Berfungsi",
+    "faq": "Soalan Lazim",
+    "about": "Blog"
+  },
+  "hero": {
+    "title": "Pemisah Imej Online & Pembuat Grid",
+    "description": "Jika anda sedang mencari \"cara memisahkan imej ke dalam grid Instagram\", anda telah datang ke tempat yang betul. Pemisah imej kami tidak hanya sempurna untuk pemisahan imej online tetapi juga untuk pembuatan grid Instagram, tanpa pendaftaran dan sepenuhnya percuma."
+  },
+  "features": {
+    "upload": "Muat Naik Imej",
+    "split": "Pisah & Grid",
+    "download": "Muat Turun Semua",
+    "fast": "Pantas Kilat"
+  },
+  "tool": {
+    "comingSoon": "Alat Pemisah Imej",
+    "description": "Fungsi pemisahan imej lanjutan akan tersedia di sini tidak lama lagi. Muat naik imej anda dan pisahkannya menjadi grid yang sempurna untuk media sosial.",
+    "uploadPrompt": "Seret fail ke sini atau klik untuk muat naik",
+    "uploadButton": "Pilih Imej",
+    "uploadSupport": "Menyokong format JPG, PNG, GIF, maksimum 10MB",
+    "controlPanelDescription": "Gunakan panel kawalan kiri untuk mengkonfigurasi pilihan pemisahan",
+    "splitModeTitle": "Pilih Mod Pemisahan Imej",
+    "splitModeDescription": "Pemisahan menegak sesuai untuk siaran karusel, pemisahan mendatar untuk paparan landskap, dan pemisahan grid untuk susun atur grid Instagram",
+    "gridLineWidthLabel": "Lebar Garisan Grid",
+    "gridLineWidthHint": "Laraskan jarak antara imej yang dipisahkan",
+    "splitModes": {
+      "vertical": "Menegak",
+      "horizontal": "Mendatar",
+      "grid": "Grid"
+    },
+    "gridSettings": {
+      "rows": "Baris",
+      "columns": "Lajur"
+    },
+    "gridLineWidth": "Lebar Garisan Grid",
+    "outputFormat": "Format Output",
+    "formats": {
+      "jpg": "JPG",
+      "png": "PNG",
+      "webp": "WebP",
+      "bmp": "BMP"
+    },
+    "buttons": {
+      "split": "Pisahkan Imej",
+      "splitting": "Memisahkan...",
+      "download": "Muat Turun",
+      "downloadAll": "Muat Turun Imej",
+      "reset": "Set Semula Pilihan",
+      "selectImage": "Pilih Imej",
+      "reuploadImage": "Muat Naik Semula Imej",
+      "reupload": "Muat Naik Semula Imej"
+    },
+    "preview": {
+      "title": "Kawasan Pratonton",
+      "instruction": "Klik pisahkan imej untuk melihat hasil pemisahan"
+    },
+    "alerts": {
+      "invalidFile": "Sila pilih fail imej yang sah",
+      "invalidFileType": "Sila pilih fail imej yang sah (JPG, PNG, GIF, WebP)",
+      "fileTooLarge": "Saiz fail melebihi had 10MB. Sila pilih imej yang lebih kecil",
+      "imageTooLarge": "Dimensi imej melebihi 4096x4096 piksel. Sila pilih imej yang lebih kecil",
+      "downloadFailed": "Muat turun gagal. Sila cuba lagi"
+    }
+  },
+  "howItWorks": {
+    "title": "Cara Ia Berfungsi",
+    "step1Title": "1. Muat Naik Imej Anda",
+    "step1Description": "Pilih dan muat naik sebarang imej dari peranti anda. Menyokong JPG, PNG, dan format biasa yang lain.",
+    "step2Title": "2. Pilih Saiz Grid",
+    "step2Description": "Pilih susun atur grid pilihan anda - 3x3, 2x3, 4x4, atau dimensi khusus untuk keperluan anda.",
+    "step3Title": "3. Muat Turun & Kongsi",
+    "step3Description": "Muat turun semua imej yang dipisahkan sekaligus dan mula posting karosel atau susun atur grid yang sempurna anda."
+  },
+  "footer": {
+    "madeWith": "Dibuat dengan",
+    "forUsers": "untuk pencipta kandungan di seluruh dunia",
+    "privacy": "Dasar Privasi",
+    "terms": "Syarat Perkhidmatan"
+  },
+  "advantages": {
+    "title": "Kelebihan AI Image Splitter",
+    "freeOnline": {
+      "title": "Pembelah Imej Online Percuma Sepenuhnya",
+      "description": "Gunakan alat pembelah imej online kami tanpa perlu memuat turun atau memasang sebarang perisian. Cuma layari <a href=\"/\" class=\"text-primary-600 hover:text-primary-700 underline font-medium\">aiimagesplitter.com</a> dalam pelayar anda untuk membelah imej secara online. Percuma sepenuhnya tanpa caj tersembunyi dan tiada pendaftaran akaun diperlukan."
+    },
+    "easyInstagram": {
+      "title": "Mudah Cipta Grid Instagram Dan Siaran Carousel",
+      "description": "Pembelah imej kami direka khusus untuk profesional media sosial dan pengguna e-commerce. Gunakan pembuat grid Instagram percuma kami untuk menjana susun atur grid Instagram yang sempurna dan imej carousel dengan satu klik, menjadikan kandungan anda lebih menarik."
+    }
+  },
+  "language": {
+    "switchLanguage": "Tukar Bahasa"
+  },
+  "images": {
+    "gridExampleAlt": "Kesan grid Instagram yang dicipta dengan Image Splitter",
+    "carouselExampleAlt": "Kesan siaran carousel Instagram yang dicipta dengan Image Splitter",
+    "originalPlaceholder": "Asal",
+    "gridEffectPlaceholder": "Kesan Grid",
+    "carouselEffectPlaceholder": "Kesan Carousel"
+  },
+  "faq": {
+    "title": "Soalan Lazim",
+    "description": "Panduan lengkap tentang pemisah imej dan pencipta grid Instagram.",
+    "whatIsImageSplitter": {
+      "question": "Apakah pemisah imej dan bagaimana ia berfungsi?",
+      "answer": "Pemisah imej adalah alat digital yang membahagikan satu imej kepada beberapa bahagian yang lebih kecil. Pemisah imej berasaskan web kami menggunakan algoritma canggih untuk memisahkan imej anda kepada grid atau segmen yang sempurna. Hanya muat naik imej anda, pilih kaedah pemisahan imej anda, dan muat turun hasilnya. Semua pemprosesan berlaku terus di pelayar anda, memastikan privasi dan keselamatan imej."
+    },
+    "howToSplitImage": {
+      "question": "Bagaimana untuk memisahkan imej kepada beberapa bahagian?",
+      "answer": "Sangat mudah: 1) Muat naik imej anda (menyokong JPG, PNG, GIF, dll., maksimum 10MB), 2) Pilih mod pemisahan pilihan anda - pemisahan menegak, pemisahan mendatar, atau pemisahan grid, 3) Laraskan baris dan lajur, 4) Klik butang pisah imej, 5) Muat turun segmen individu atau dapatkan pakej ZIP."
+    },
+    "instagramGridMaker": {
+      "question": "Bolehkah saya menggunakan alat ini untuk mencipta pos grid Instagram?",
+      "answer": "Sudah tentu! Pemisah imej kami sempurna untuk mencipta susun atur grid Instagram dan pos karusel. Format popular termasuk grid 3x3 untuk teka-teki suapan, jalur untuk cerita karusel, dan dimensi tersuai untuk susun atur unik. Output memastikan keserasian sempurna dengan keperluan Instagram."
+    },
+    "splitImage3x3": {
+      "question": "Bagaimana untuk mencipta grid 3x3 untuk Instagram?",
+      "answer": "Untuk mencipta grid 3x3 Instagram yang sempurna: 1) Muat naik imej segi empat sama untuk hasil terbaik, 2) Pilih mod 'Grid' dari pilihan, 3) Tetapkan kedua-dua baris dan lajur kepada 3, 4) Pisahkan imej. Ini mencipta 9 segmen yang sama yang membentuk teka-teki lengkap apabila dipos secara berturut-turut di Instagram."
+    },
+    "supportedFormats": {
+      "question": "Format fail apa yang disokong?",
+      "answer": "Pemisah imej kami menyokong semua format imej biasa, termasuk JPG, PNG, GIF, dan WebP. Anda juga boleh mengeksport imej yang dipisahkan dalam format JPG, PNG, WebP, atau BMP. Saiz fail maksimum ialah 10MB dengan dimensi sehingga 4096x4096 piksel untuk prestasi optimum."
+    },
+    "freeToUse": {
+      "question": "Adakah alat ini sepenuhnya percuma?",
+      "answer": "Ya, pemisah imej kami 100% percuma tanpa kos tersembunyi. Tiada tanda air pada imej anda, tiada pendaftaran akaun diperlukan, dan tiada had penggunaan. Gunakan dengan bebas untuk projek peribadi, kandungan komersial, atau tujuan perniagaan."
+    },
+    "imageQuality": {
+      "question": "Adakah kualiti imej yang dipisahkan akan terjejas?",
+      "answer": "Langsung tidak! Kami menggunakan teknik pemprosesan tanpa kehilangan untuk mengekalkan kualiti imej asal anda. Imej yang dipisahkan mengekalkan resolusi dan kejelasan yang sama seperti imej sumber anda, memastikan kandungan media sosial anda kelihatan profesional."
+    },
+    "privacySecurity": {
+      "question": "Adakah kandungan yang saya muat naik selamat?",
+      "answer": "Privasi anda adalah keutamaan utama kami. Menggunakan pemisah imej kami, semua pemprosesan imej berlaku terus di pelayar anda - tiada apa yang dimuat naik ke pelayan kami. Imej anda tidak pernah meninggalkan peranti anda, dan kami tidak menyimpan atau mengakses mana-mana kandungan anda. Sepenuhnya peribadi dan selamat."
+    },
+    "mobileFriendly": {
+      "question": "Adakah alat ini berfungsi pada peranti mudah alih?",
+      "answer": "Sudah tentu! Pemisah imej kami sepenuhnya responsif dan berfungsi dengan sempurna pada telefon pintar dan tablet. Anda boleh muat naik imej dari galeri foto anda, memprosesnya, dan muat turun hasil terus ke peranti anda. Antara muka secara automatik menyesuaikan dengan semua saiz skrin untuk pengalaman yang lancar."
+    },
+    "batchProcessing": {
+      "question": "Bolehkah saya memisahkan beberapa imej sekaligus?",
+      "answer": "Pada masa ini, alat memproses satu imej pada satu masa untuk memastikan prestasi dan kualiti optimum. Walau bagaimanapun, pemprosesan adalah pantas - anda boleh memisahkan beberapa imej dengan cepat dengan mengulangi langkah muat naik dan proses yang mudah."
+    },
+    "customDimensions": {
+      "question": "Bolehkah saya mencipta dimensi grid tersuai dengan pemisah imej anda?",
+      "answer": "Sudah tentu! Selain preset popular seperti 3x3 dan 2x3, anda boleh mencipta dimensi grid tersuai sehingga 10x10. Hanya laraskan baris dan lajur untuk memenuhi keperluan khusus anda, sama ada untuk susun atur media sosial yang unik atau projek khas."
+    },
+    "cta": {
+      "title": "Bersedia untuk Mencipta Susun Atur Grid yang Menakjubkan?",
+      "description": "Mula memisahkan imej anda dan cipta kandungan media sosial yang menarik.",
+      "button": "Mula Mencipta Sekarang"
+    }
+  }
+} 

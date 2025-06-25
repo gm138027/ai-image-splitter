@@ -1,0 +1,75 @@
+import React, { useState } from 'react'
+import { useRouter } from 'next/router'
+import { Globe, ChevronDown } from 'lucide-react'
+import { useTranslation } from 'next-i18next'
+
+const languages = [
+  { code: 'en', name: 'English', flag: '🇺🇸' },
+  { code: 'zh-CN', name: '简体中文', flag: '🇨🇳' },
+  { code: 'id', name: 'Bahasa Indonesia', flag: '🇮🇩' },
+  { code: 'pt', name: 'Português', flag: '🇵🇹' },
+  { code: 'fil', name: 'Filipino', flag: '🇵🇭' },
+  { code: 'ms', name: 'Bahasa Melayu', flag: '🇲🇾' },
+  { code: 'hi', name: 'हिन्दी', flag: '🇮🇳' },
+  { code: 'vi', name: 'Tiếng Việt', flag: '🇻🇳' },
+  { code: 'kk', name: 'Қазақша', flag: '🇰🇿' },
+  { code: 'ru', name: 'Русский', flag: '🇷🇺' },
+]
+
+const LanguageSwitcher: React.FC = () => {
+  const { t } = useTranslation('common')
+  const router = useRouter()
+  const [isOpen, setIsOpen] = useState(false)
+
+  const currentLanguage = languages.find(lang => lang.code === router.locale)
+
+  const handleLanguageChange = (locale: string) => {
+    router.push(router.asPath, router.asPath, { locale })
+    setIsOpen(false)
+  }
+
+  return (
+    <div className="relative">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="flex items-center space-x-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
+        aria-label={t('language.switchLanguage')}
+      >
+        <Globe className="w-4 h-4 text-gray-600" />
+        <span className="text-sm font-medium text-gray-700">
+          {currentLanguage?.flag} {currentLanguage?.name}
+        </span>
+        <ChevronDown className="w-4 h-4 text-gray-600" />
+      </button>
+
+      {isOpen && (
+        <>
+          <div 
+            className="fixed inset-0 z-10" 
+            onClick={() => setIsOpen(false)}
+          />
+          <div className="absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 z-20">
+            <div className="py-2">
+              {languages.map((language) => (
+                <button
+                  key={language.code}
+                  onClick={() => handleLanguageChange(language.code)}
+                  className={`w-full flex items-center space-x-3 px-4 py-2 text-sm hover:bg-gray-50 transition-colors ${
+                    language.code === router.locale 
+                      ? 'bg-primary-50 text-primary-600' 
+                      : 'text-gray-700'
+                  }`}
+                >
+                  <span className="text-lg">{language.flag}</span>
+                  <span>{language.name}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        </>
+      )}
+    </div>
+  )
+}
+
+export default LanguageSwitcher 

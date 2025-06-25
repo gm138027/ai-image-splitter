@@ -1,0 +1,124 @@
+{
+  "title": "Điều Khoản Dịch Vụ",
+  "lastUpdated": "Cập Nhật Lần Cuối: 25 Tháng 6, 2025",
+  "description": "Các Điều Khoản Dịch Vụ này điều chỉnh việc sử dụng AI Image Splitter của bạn. Vui lòng đọc kỹ.",
+  
+  "sections": {
+    "agreement": {
+      "title": "Đồng Ý Với Các Điều Khoản",
+      "content": "Bằng cách truy cập và sử dụng AI Image Splitter (\"Dịch Vụ\"), bạn chấp nhận và đồng ý bị ràng buộc bởi các điều khoản và điều kiện của thỏa thuận này. Nếu bạn không đồng ý với các điều khoản này, bạn không nên sử dụng dịch vụ này."
+    },
+    
+    "serviceDescription": {
+      "title": "Mô Tả Dịch Vụ",
+      "content": "AI Image Splitter là một công cụ trực tuyến miễn phí cho phép người dùng chia hình ảnh thành lưới hoặc các phân đoạn để sử dụng trên mạng xã hội, đặc biệt cho carousel Instagram và bài đăng lưới.",
+      "features": [
+        "Xử lý hình ảnh phía client để bảo vệ quyền riêng tư",
+        "Nhiều kích thước lưới (3x3, 2x3, 4x4, tùy chỉnh)",
+        "Không có watermark trên hình ảnh đầu ra",
+        "Truy cập miễn phí tất cả các tính năng",
+        "Hỗ trợ đa ngôn ngữ",
+        "Tương thích với di động và máy tính để bàn"
+      ]
+    },
+    
+    "userResponsibilities": {
+      "title": "Trách Nhiệm Của Người Dùng",
+      "content": "Khi sử dụng dịch vụ của chúng tôi, bạn đồng ý:",
+      "responsibilities": [
+        "Chỉ sử dụng dịch vụ cho các mục đích hợp pháp",
+        "Không tải lên nội dung có bản quyền mà không có sự ủy quyền thích hợp",
+        "Không cố gắng làm hỏng hoặc làm gián đoạn dịch vụ",
+        "Không sử dụng dịch vụ để tạo nội dung có hại, xúc phạm hoặc không phù hợp",
+        "Tôn trọng quyền sở hữu trí tuệ",
+        "Tuân thủ tất cả các luật và quy định có liên quan"
+      ]
+    },
+    
+    "intellectualProperty": {
+      "title": "Quyền Sở Hữu Trí Tuệ",
+      "ownership": {
+        "title": "Nội Dung Của Bạn",
+        "content": "Bạn giữ lại tất cả các quyền đối với hình ảnh bạn tải lên và xử lý thông qua dịch vụ của chúng tôi. Chúng tôi không tuyên bố quyền sở hữu đối với nội dung của bạn."
+      },
+      "serviceIP": {
+        "title": "Sở Hữu Trí Tuệ Của Dịch Vụ",
+        "content": "Trang web AI Image Splitter, thiết kế, phần mềm và các tài liệu liên quan được bảo vệ bởi bản quyền và các luật sở hữu trí tuệ khác. Bạn không được sao chép, sửa đổi hoặc phân phối dịch vụ của chúng tôi mà không có sự cho phép."
+      }
+    },
+    
+    "prohibited": {
+      "title": "Các Cách Sử Dụng Bị Cấm",
+      "content": "Bạn không được sử dụng dịch vụ của chúng tôi để:",
+      "items": [
+        "Tải lên hoặc xử lý nội dung bất hợp pháp, có hại hoặc xúc phạm",
+        "Vi phạm quyền sở hữu trí tuệ của người khác",
+        "Phân phối phần mềm độc hại hoặc mã có hại",
+        "Cố gắng có được quyền truy cập trái phép vào hệ thống của chúng tôi",
+        "Sử dụng các công cụ tự động để truy cập dịch vụ một cách quá mức",
+        "Vi phạm bất kỳ luật hoặc quy định nào có liên quan"
+      ]
+    },
+    
+    "privacy": {
+      "title": "Quyền Riêng Tư và Bảo Vệ Dữ Liệu",
+      "content": "Quyền riêng tư của bạn rất quan trọng đối với chúng tôi. Tất cả việc xử lý hình ảnh xảy ra ở phía client trong trình duyệt của bạn, có nghĩa là hình ảnh của bạn không bao giờ rời khỏi thiết bị của bạn. Vui lòng tham khảo Chính Sách Bảo Mật của chúng tôi để biết thông tin chi tiết về cách chúng tôi xử lý dữ liệu của bạn."
+    },
+    
+    "serviceAvailability": {
+      "title": "Tính Khả Dụng Của Dịch Vụ",
+      "content": "Chúng tôi cố gắng duy trì tính khả dụng của dịch vụ, nhưng chúng tôi không đảm bảo quyền truy cập không bị gián đoạn. Dịch vụ có thể tạm thời không khả dụng do:",
+      "reasons": [
+        "Bảo trì theo lịch",
+        "Khó khăn kỹ thuật",
+        "Cập nhật máy chủ",
+        "Các tình huống ngoài tầm kiểm soát của chúng tôi"
+      ],
+      "disclaimer": "Chúng tôi không chịu trách nhiệm cho bất kỳ tổn thất hoặc thiệt hại nào do gián đoạn dịch vụ."
+    },
+    
+    "disclaimers": {
+      "title": "Tuyên Bố Từ Chối Trách Nhiệm",
+      "content": "Dịch vụ của chúng tôi được cung cấp \"như hiện tại\" mà không có bất kỳ bảo đảm nào. Chúng tôi từ chối tất cả các bảo đảm, rõ ràng hoặc ngụ ý, bao gồm nhưng không giới hạn ở:",
+      "items": [
+        "Khả năng bán được và phù hợp cho một mục đích cụ thể",
+        "Không vi phạm quyền của bên thứ ba",
+        "Độ chính xác, đầy đủ hoặc độ tin cậy của dịch vụ",
+        "Hoạt động không bị gián đoạn hoặc không có lỗi"
+      ]
+    },
+    
+    "limitation": {
+      "title": "Giới Hạn Trách Nhiệm",
+      "content": "Trong phạm vi tối đa được pháp luật cho phép, chúng tôi sẽ không chịu trách nhiệm cho bất kỳ thiệt hại gián tiếp, ngẫu nhiên, đặc biệt, hậu quả hoặc trừng phạt nào, bao gồm nhưng không giới hạn ở mất lợi nhuận, dữ liệu hoặc những tổn thất vô hình khác do việc sử dụng dịch vụ của bạn."
+    },
+    
+    "termination": {
+      "title": "Chấm Dứt",
+      "content": "Chúng tôi bảo lưu quyền chấm dứt hoặc tạm ngừng quyền truy cập vào dịch vụ của chúng tôi ngay lập tức, mà không cần thông báo trước, vì bất kỳ lý do gì, bao gồm vi phạm các điều khoản này. Sau khi chấm dứt, quyền sử dụng dịch vụ của bạn sẽ ngừng ngay lập tức."
+    },
+    
+    "modifications": {
+      "title": "Sửa Đổi Điều Khoản",
+      "content": "Chúng tôi bảo lưu quyền sửa đổi các điều khoản này bất cứ lúc nào. Những thay đổi sẽ có hiệu lực ngay lập tức sau khi được đăng trên trang này. Việc tiếp tục sử dụng dịch vụ sau những thay đổi cấu thành sự chấp nhận các điều khoản mới.",
+      "notification": "Chúng tôi sẽ cập nhật ngày \"Cập Nhật Lần Cuối\" để phản ánh những thay đổi."
+    },
+    
+    "governingLaw": {
+      "title": "Luật Điều Chỉnh",
+      "content": "Các điều khoản này sẽ được điều chỉnh và giải thích theo luật quốc tế có liên quan. Bất kỳ tranh chấp nào phát sinh từ các điều khoản này hoặc việc sử dụng dịch vụ sẽ được giải quyết thông qua trọng tài ràng buộc."
+    },
+    
+    "contact": {
+      "title": "Thông Tin Liên Hệ",
+      "content": "Nếu bạn có bất kỳ câu hỏi nào về các Điều Khoản Dịch Vụ này, vui lòng liên hệ với chúng tôi:",
+      "email": "Email: aiimagesplitter@proton.me",
+      "response": "Chúng tôi sẽ trả lời câu hỏi của bạn trong vòng 48 giờ."
+    }
+  },
+  
+  "navigation": {
+    "backToHome": "Trở Về Trang Chủ",
+    "tableOfContents": "Mục Lục"
+  }
+} 

@@ -1,0 +1,155 @@
+{
+  "title": "Blog AI Image Splitter",
+  "description": "Tips, tutorial, dan amalan terbaik untuk AI Image Splitter",
+  "backToHome": "Kembali ke Laman Utama",
+  "readMore": "Baca Lagi",
+  "publishedOn": "Diterbitkan pada",
+  "lastUpdated": "Terakhir dikemas kini",
+  "tableOfContents": "Senarai Kandungan",
+  "relatedPosts": "Pos Berkaitan",
+  "shareThisPost": "Kongsi Pos Ini",
+  "blogCoverPlaceholder": "Imej Kulit Tutorial",
+  "tipLabel": "Tip:",
+  "startUsingTool": "Mula Gunakan AI Image Splitter Sekarang",
+  "imageAlt": {
+    "guideComplete": "Panduan Lengkap Operasi Pemisahan Imej",
+    "thumbnailImage": "Thumbnail Panduan Lengkap Operasi Pemisahan Imej",
+    "coverImage": "Cover Panduan Lengkap Operasi Pemisahan Imej"
+  },
+  
+  "posts": {
+    "complete-guide": {
+      "title": "Panduan Lengkap AI Image Splitter: Tutorial Grid Instagram 2025",
+      "description": "Tutorial lengkap AI Image Splitter. Belajar cara membuat susun atur grid Instagram yang sempurna dan karusel media sosial untuk meningkatkan kecekapan penciptaan kandungan anda.",
+      "keywords": "AI Image Splitter,grid Instagram,tutorial pemisah imej,alat media sosial,pembuat karusel",
+      "readingTime": "5 minit bacaan",
+      "category": "Panduan Tutorial",
+      
+      "intro": {
+        "title": "Apakah AI Image Splitter?",
+        "content": "AI Image Splitter adalah alat pemisah imej dalam talian profesional yang direka khas untuk pencipta kandungan media sosial. Sama ada anda ingin membuat susun atur grid Instagram, pos karusel Facebook, atau paparan multi-imej platform lain, alat kami membantu anda mencapainya dengan mudah."
+      },
+      
+      "stepByStep": {
+        "title": "Langkah-Langkah Operasi Lengkap",
+        "subtitle": "Ikuti panduan terperinci ini untuk menguasai pemisahan imej profesional dalam 5 minit",
+        
+        "step1": {
+          "title": "Langkah 1: Lawati Laman Web dan Muat Naik Imej",
+          "content": "Masukkan {domainLink} dalam pelayar anda untuk mengakses laman utama kami. Anda boleh memuat naik imej melalui dua kaedah ini:",
+          "method1": "Seret & Lepas: Langsung seret fail imej ke kawasan muat naik",
+          "method2": "Klik Muat Naik: Klik butang 'Pilih Imej' untuk memilih dari peranti anda",
+          "note": "Menyokong format JPG, PNG, GIF dan format arus perdana lain, saiz fail maksimum 10MB"
+        },
+        
+        "step2": {
+          "title": "Langkah 2: Pilih Mod Pemisahan",
+          "content": "Pilih kaedah pemisahan yang sesuai berdasarkan keperluan anda:",
+          "modes": {
+            "vertical": {
+              "name": "Pemisahan Menegak",
+              "description": "Sesuai untuk membuat pos karusel, memisahkan imej secara menegak menjadi beberapa bahagian jalur",
+              "useCase": "Sempurna untuk paparan karusel Instagram dan Facebook"
+            },
+            "horizontal": {
+              "name": "Pemisahan Mendatar", 
+              "description": "Memisahkan imej secara mendatar, sesuai untuk keperluan paparan mendatar",
+              "useCase": "Ideal untuk membuat kesan garis masa atau paparan langkah demi langkah"
+            },
+            "grid": {
+              "name": "Pemisahan Grid",
+              "description": "Memisahkan imej menjadi susun atur grid, kaedah paparan Instagram yang paling popular",
+              "useCase": "Mencipta kesan grid Instagram yang profesional"
+            }
+          }
+        },
+        
+        "step3": {
+          "title": "Langkah 3: Tetapkan Parameter Pemisahan",
+          "content": "Laraskan parameter yang sepadan berdasarkan mod yang dipilih:",
+          "setting1": "Pemisahan Menegak: Tetapkan bilangan lajur (disyorkan 3-6 lajur)",
+          "setting2": "Pemisahan Mendatar: Tetapkan bilangan baris (disyorkan 2-4 baris)", 
+          "setting3": "Pemisahan Grid: Sesuaikan baris dan lajur (3×3 paling popular)",
+          "preview": "Kawasan pratonton kanan memaparkan kesan pemisahan secara masa nyata, membantu anda melaraskan ke keadaan optimum"
+        },
+        
+        "step4": {
+          "title": "Langkah 4: Laraskan Lebar Garis Pemisah",
+          "content": "Gunakan peluncur lebar garis pemisah untuk melaraskan ketebalan garis grid:",
+          "tip1": "Garis nipis (1-2px): Sesuai untuk gaya reka bentuk yang halus dan minimalis",
+          "tip2": "Garis sederhana (3-4px): Kesan visual seimbang, sesuai untuk kebanyakan situasi",
+          "tip3": "Garis tebal (5-6px): Menekankan kesan pemisahan, sesuai untuk penciptaan artistik"
+        },
+        
+        "step5": {
+          "title": "Langkah 5: Pilih Format Output",
+          "content": "Pilih format imej yang sesuai berdasarkan senario penggunaan:",
+          "formats": {
+            "jpg": "Saiz fail lebih kecil, sesuai untuk perkongsian web",
+            "png": "Menyokong latar belakang telus, kualiti lebih tinggi",
+            "webp": "Format generasi terbaru, saiz fail lebih kecil",
+            "bmp": "Format tanpa kehilangan, sesuai untuk percetakan"
+          }
+        },
+        
+        "step6": {
+          "title": "Langkah 6: Muat Turun Hasil Pemisahan",
+          "content": "Selepas melengkapkan pemisahan, anda mempunyai dua pilihan muat turun:",
+          "option1": "Muat Turun Tunggal: Arahkan tetikus ke mana-mana grid dan klik butang muat turun untuk mendapatkan imej tunggal",
+          "option2": "Muat Turun Berkelompok: Klik butang 'Muat Turun Imej' untuk memuat turun semua hasil pemisahan sebagai arkib ZIP"
+        },
+        
+        "step7": {
+          "title": "Langkah 7: Muat Naik Semula atau Teruskan Pemprosesan",
+          "content": "Untuk memproses imej lain, klik butang 'Muat Naik Semula Imej' untuk memulakan tugas pemisahan baru."
+        }
+      },
+      
+      "bestPractices": {
+        "title": "Tips Penggunaan Profesional",
+        "subtitle": "Tingkatkan kualiti kandungan media sosial anda",
+        "tip1": {
+          "title": "Pilih Imej Asal Berkualiti Tinggi",
+          "content": "Gunakan imej dengan resolusi sekurang-kurangnya 1080×1080 untuk memastikan setiap bahagian yang dipisahkan kekal jelas dan kelihatan"
+        },
+        "tip2": {
+          "title": "Pertimbangkan Integriti Komposisi",
+          "content": "Pra-visualisasikan kandungan setiap grid sebelum pemisahan untuk mengelakkan pemotongan elemen penting"
+        },
+        "tip3": {
+          "title": "Kekalkan Susunan Penerbitan yang Konsisten",
+          "content": "Grid Instagram berfungsi terbaik apabila diterbitkan mengikut urutan dari kiri ke kanan, atas ke bawah"
+        },
+        "tip4": {
+          "title": "Uji Skim Pemisahan yang Berbeza",
+          "content": "Cuba kombinasi baris dan lajur yang berbeza untuk mencari kaedah pemisahan terbaik untuk imej anda"
+        }
+      },
+      
+      "faq": {
+        "title": "Soalan Lazim",
+        "q1": {
+          "question": "Format imej apakah yang disokong?",
+          "answer": "Menyokong semua format imej arus perdana termasuk JPG, PNG, GIF, WebP, BMP, dengan saiz fail maksimum 10MB."
+        },
+        "q2": {
+          "question": "Adakah kualiti imej akan menurun selepas pemisahan?",
+          "answer": "Tidak. Kami menggunakan teknologi pemprosesan imej canggih untuk memastikan imej yang dipisahkan mengekalkan kualiti asal."
+        },
+        "q3": {
+          "question": "Bolehkah saya menggunakan ini untuk tujuan komersial?",
+          "answer": "Sudah tentu! Alat kami percuma untuk digunakan, menghasilkan imej tanpa tanda air, dan boleh digunakan untuk sebarang tujuan komersial."
+        },
+        "q4": {
+          "question": "Bolehkah saya menggunakan ini pada peranti mudah alih?",
+          "answer": "Sudah tentu! Laman web kami menggunakan reka bentuk responsif dan berfungsi dengan sempurna pada telefon, tablet, dan komputer."
+        }
+      },
+      
+      "conclusion": {
+        "title": "Mulakan Mencipta Kandungan Profesional Anda",
+        "content": "Kini anda telah menguasai penggunaan lengkap AI Image Splitter. Alat yang berkuasa ini akan membantu anda mencipta kandungan media sosial yang menarik perhatian, meningkatkan imej jenama dan penglibatan pengguna anda. Mulakan gunakan sekarang dan biarkan kreativiti anda berkembang!"
+      }
+    }
+  }
+} 

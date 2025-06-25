@@ -1,0 +1,49 @@
+{
+  "name": "ai-image-splitter",
+  "version": "1.0.0",
+  "description": "Online Image Splitter for Social Media Carousels and Grid Images",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "clsx": "^2.0.0",
+    "critters": "^0.0.23",
+    "fabric": "^5.3.0",
+    "i18next": "^23.7.0",
+    "jszip": "^3.10.1",
+    "lucide-react": "^0.294.0",
+    "next": "^14.0.0",
+    "next-i18next": "^15.2.0",
+    "postcss": "^8.4.32",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^13.5.0",
+    "tailwindcss": "^3.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.42",
+    "@types/react-dom": "^18.2.17",
+    "eslint": "^8.54.0",
+    "eslint-config-next": "^14.0.0",
+    "sharp": "^0.34.2",
+    "typescript": "^5.3.0"
+  },
+  "keywords": [
+    "image-splitter",
+    "social-media",
+    "carousel",
+    "grid-images",
+    "next.js",
+    "react"
+  ],
+  "author": "AI Image Splitter",
+  "license": "MIT"
+}

@@ -1,0 +1,124 @@
+{
+  "title": "Syarat Perkhidmatan",
+  "lastUpdated": "Terakhir Dikemas Kini: 25 Jun 2025",
+  "description": "Syarat Perkhidmatan ini mengawal penggunaan anda terhadap AI Image Splitter. Sila baca dengan teliti.",
+  
+  "sections": {
+    "agreement": {
+      "title": "Persetujuan Terhadap Syarat",
+      "content": "Dengan mengakses dan menggunakan AI Image Splitter (\"Perkhidmatan\"), anda menerima dan bersetuju untuk terikat dengan syarat dan peruntukan perjanjian ini. Jika anda tidak bersetuju dengan syarat-syarat ini, anda tidak patut menggunakan perkhidmatan ini."
+    },
+    
+    "serviceDescription": {
+      "title": "Penerangan Perkhidmatan",
+      "content": "AI Image Splitter ialah alat dalam talian percuma yang membolehkan pengguna membahagikan imej kepada grid atau segmen untuk kegunaan media sosial, terutamanya untuk karusel Instagram dan siaran grid.",
+      "features": [
+        "Pemprosesan imej sebelah pelanggan untuk perlindungan privasi",
+        "Pelbagai saiz grid (3x3, 2x3, 4x4, tersuai)",
+        "Tiada tanda air pada imej keluaran",
+        "Akses percuma kepada semua ciri",
+        "Sokongan berbilang bahasa",
+        "Keserasian mudah alih dan desktop"
+      ]
+    },
+    
+    "userResponsibilities": {
+      "title": "Tanggungjawab Pengguna",
+      "content": "Apabila menggunakan perkhidmatan kami, anda bersetuju untuk:",
+      "responsibilities": [
+        "Menggunakan perkhidmatan hanya untuk tujuan yang sah",
+        "Tidak memuat naik kandungan berhak cipta tanpa kebenaran yang sewajarnya",
+        "Tidak cuba merosakkan atau mengganggu perkhidmatan",
+        "Tidak menggunakan perkhidmatan untuk mencipta kandungan yang berbahaya, menyinggung, atau tidak sesuai",
+        "Menghormati hak harta intelek",
+        "Mematuhi semua undang-undang dan peraturan yang berkenaan"
+      ]
+    },
+    
+    "intellectualProperty": {
+      "title": "Hak Harta Intelek",
+      "ownership": {
+        "title": "Kandungan Anda",
+        "content": "Anda mengekalkan semua hak terhadap imej yang anda muat naik dan proses melalui perkhidmatan kami. Kami tidak menuntut pemilikan terhadap kandungan anda."
+      },
+      "serviceIP": {
+        "title": "Harta Intelek Perkhidmatan",
+        "content": "Laman web AI Image Splitter, reka bentuk, perisian, dan bahan berkaitan dilindungi oleh hak cipta dan undang-undang harta intelek lain. Anda tidak boleh menyalin, mengubah suai, atau mengedarkan perkhidmatan kami tanpa kebenaran."
+      }
+    },
+    
+    "prohibited": {
+      "title": "Kegunaan yang Dilarang",
+      "content": "Anda tidak boleh menggunakan perkhidmatan kami untuk:",
+      "items": [
+        "Memuat naik atau memproses kandungan yang haram, berbahaya, atau menyinggung",
+        "Melanggar hak harta intelek orang lain",
+        "Mengedarkan perisian hasad atau kod berbahaya",
+        "Cuba mendapat akses tanpa kebenaran kepada sistem kami",
+        "Menggunakan alat automatik untuk mengakses perkhidmatan secara berlebihan",
+        "Melanggar mana-mana undang-undang atau peraturan yang berkenaan"
+      ]
+    },
+    
+    "privacy": {
+      "title": "Privasi dan Perlindungan Data",
+      "content": "Privasi anda penting kepada kami. Semua pemprosesan imej berlaku di sebelah pelanggan dalam pelayar anda, bermakna imej anda tidak pernah meninggalkan peranti anda. Sila rujuk Dasar Privasi kami untuk maklumat terperinci tentang cara kami mengendalikan data anda."
+    },
+    
+    "serviceAvailability": {
+      "title": "Ketersediaan Perkhidmatan",
+      "content": "Kami berusaha untuk mengekalkan ketersediaan perkhidmatan, tetapi kami tidak menjamin akses tanpa gangguan. Perkhidmatan mungkin tidak tersedia buat sementara waktu kerana:",
+      "reasons": [
+        "Penyelenggaraan berjadual",
+        "Kesukaran teknikal",
+        "Kemas kini pelayan",
+        "Keadaan di luar kawalan kami"
+      ],
+      "disclaimer": "Kami tidak bertanggungjawab terhadap sebarang kerugian atau kerosakan akibat gangguan perkhidmatan."
+    },
+    
+    "disclaimers": {
+      "title": "Penafian",
+      "content": "Perkhidmatan kami disediakan \"sebagaimana adanya\" tanpa jaminan apa-apa jenis. Kami menafikan semua jaminan, tersurat atau tersirat, termasuk tetapi tidak terhad kepada:",
+      "items": [
+        "Kebolehdagangan dan kesesuaian untuk tujuan tertentu",
+        "Tidak melanggar hak pihak ketiga",
+        "Ketepatan, kelengkapan, atau kebolehpercayaan perkhidmatan",
+        "Operasi tanpa gangguan atau bebas ralat"
+      ]
+    },
+    
+    "limitation": {
+      "title": "Had Liabiliti",
+      "content": "Setakat maksimum yang dibenarkan oleh undang-undang, kami tidak akan bertanggungjawab terhadap sebarang kerosakan tidak langsung, sampingan, khas, berbangkit, atau hukuman, termasuk tetapi tidak terhad kepada kehilangan keuntungan, data, atau kerugian tidak ketara lain yang terhasil daripada penggunaan perkhidmatan anda."
+    },
+    
+    "termination": {
+      "title": "Penamatan",
+      "content": "Kami berhak untuk menamatkan atau menggantung akses kepada perkhidmatan kami serta-merta, tanpa notis awal, atas sebarang sebab, termasuk pelanggaran syarat-syarat ini. Setelah penamatan, hak anda untuk menggunakan perkhidmatan akan berhenti serta-merta."
+    },
+    
+    "modifications": {
+      "title": "Pengubahsuaian Syarat",
+      "content": "Kami berhak untuk mengubah suai syarat-syarat ini pada bila-bila masa. Perubahan akan berkuat kuasa serta-merta setelah disiarkan di halaman ini. Penggunaan perkhidmatan yang berterusan selepas perubahan menandakan penerimaan syarat-syarat baharu.",
+      "notification": "Kami akan mengemaskini tarikh \"Terakhir Dikemas Kini\" untuk mencerminkan perubahan."
+    },
+    
+    "governingLaw": {
+      "title": "Undang-undang yang Mentadbir",
+      "content": "Syarat-syarat ini akan ditadbir dan ditafsir mengikut undang-undang antarabangsa yang berkenaan. Sebarang pertikaian yang timbul daripada syarat-syarat ini atau penggunaan perkhidmatan akan diselesaikan melalui timbang tara yang mengikat."
+    },
+    
+    "contact": {
+      "title": "Maklumat Hubungan",
+      "content": "Jika anda mempunyai sebarang soalan tentang Syarat Perkhidmatan ini, sila hubungi kami:",
+      "email": "E-mel: aiimagesplitter@proton.me",
+      "response": "Kami akan membalas pertanyaan anda dalam masa 48 jam."
+    }
+  },
+  
+  "navigation": {
+    "backToHome": "Kembali ke Laman Utama",
+    "tableOfContents": "Senarai Kandungan"
+  }
+} 

@@ -1,0 +1,160 @@
+{
+  "seo": {
+    "title": "Divisor de Imagem Online e Criador de Grade - Dividir Imagens para Instagram",
+    "description": "AI Image Splitter é uma ferramenta gratuita online de divisão de imagens que permite dividir imagens vertical, horizontal e em grades para layouts de grade do Instagram e posts de carrossel.",
+    "keywords": "divisor de imagem, divisor de imagem online, dividir imagem, criador de grade, criador de grade instagram, divisor de imagem instagram, redes sociais, carrossel"
+  },
+  "nav": {
+    "features": "Início",
+    "howItWorks": "Como Funciona",
+    "faq": "Perguntas Frequentes",
+    "about": "Blog"
+  },
+  "hero": {
+    "title": "Divisor de Imagens Online e Criador de Grade",
+    "description": "Se você está procurando \"como dividir imagens em grades do Instagram\", você veio ao lugar certo. Nosso divisor de imagens é perfeito não apenas para divisão online de imagens, mas também para criação de grades do Instagram, sem necessidade de registro e completamente gratuito."
+  },
+  "features": {
+    "upload": "Carregar Imagem",
+    "split": "Dividir e Grade",
+    "download": "Baixar Tudo",
+    "fast": "Super Rápido"
+  },
+  "tool": {
+    "uploadPrompt": "Arraste arquivos aqui ou clique para carregar",
+    "uploadButton": "Escolher Imagem",
+    "uploadSupport": "Suporta formatos JPG, PNG, GIF, até 10MB",
+    "controlPanelDescription": "Use o painel de controle esquerdo para configurar opções de divisão",
+    "splitModeTitle": "Escolha o Modo de Divisão de Imagem",
+    "splitModeDescription": "Divisão vertical é perfeita para postagens de carrossel, divisão horizontal para exibições paisagem, e divisão em grade para layouts de grade do Instagram",
+    "gridLineWidthLabel": "Largura da Linha de Grade",
+    "gridLineWidthHint": "Ajuste o espaçamento entre as imagens divididas",
+    "splitModes": {
+      "vertical": "Vertical",
+      "horizontal": "Horizontal",
+      "grid": "Grade"
+    },
+    "gridSettings": {
+      "rows": "Linhas",
+      "columns": "Colunas"
+    },
+    "gridLineWidth": "Largura da Linha de Grade",
+    "outputFormat": "Formato de Saída",
+    "formats": {
+      "jpg": "JPG",
+      "png": "PNG",
+      "webp": "WebP",
+      "bmp": "BMP"
+    },
+    "buttons": {
+      "split": "Dividir Imagem",
+      "splitting": "Dividindo...",
+      "download": "Baixar",
+      "downloadAll": "Baixar Imagens",
+      "reset": "Redefinir Seleção",
+      "selectImage": "Selecionar Imagem",
+      "reuploadImage": "Carregar Nova Imagem",
+      "reupload": "Carregar Nova Imagem"
+    },
+    "preview": {
+      "title": "Área de Pré-visualização",
+      "instruction": "Clique dividir imagem para ver os resultados da divisão"
+    },
+    "alerts": {
+      "invalidFile": "Por favor, selecione um arquivo de imagem válido",
+      "invalidFileType": "Por favor, selecione um arquivo de imagem válido (JPG, PNG, GIF, WebP)",
+      "fileTooLarge": "O tamanho do arquivo excede o limite de 10MB. Por favor, escolha uma imagem menor",
+      "imageTooLarge": "As dimensões da imagem excedem 4096x4096 pixels. Por favor, escolha uma imagem menor",
+      "downloadFailed": "Falha no download. Por favor, tente novamente"
+    }
+  },
+  "howItWorks": {
+    "title": "Como Funciona",  
+    "step1Title": "1. Carregue Sua Imagem",
+    "step1Description": "Selecione e carregue qualquer imagem do seu dispositivo. Suporta JPG, PNG e outros formatos comuns.",
+    "step2Title": "2. Escolha o Tamanho da Grade",
+    "step2Description": "Selecione seu layout de grade preferido - 3x3, 2x3, 4x4 ou dimensões personalizadas para suas necessidades.",
+    "step3Title": "3. Baixe e Compartilhe",
+    "step3Description": "Baixe todas as imagens divididas de uma vez e comece a postar seu carrossel ou layout de grade perfeito."
+  },
+  "footer": {
+    "madeWith": "Feito com",
+    "forUsers": "para criadores de conteúdo do mundo todo",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço"
+  },
+  "advantages": {
+    "title": "Vantagens do AI Image Splitter",
+    "freeOnline": {
+      "title": "Divisor de Imagem Online Completamente Gratuito",
+      "description": "Use nossa ferramenta divisor de imagem online sem baixar ou instalar qualquer software. Simplesmente visite <a href=\"/\" class=\"text-primary-600 hover:text-primary-700 underline font-medium\">aiimagesplitter.com</a> no seu navegador para dividir imagens online. Completamente gratuito, sem taxas ocultas e sem necessidade de registro de conta."
+    },
+    "easyInstagram": {
+      "title": "Crie Facilmente Grades Instagram e Posts de Carrossel",
+      "description": "Nosso divisor de imagem é projetado especificamente para profissionais de mídias sociais e usuários de e-commerce. Use nosso criador de grade Instagram gratuito para gerar layouts de grade Instagram perfeitos e imagens de carrossel com um clique, tornando seu conteúdo mais envolvente."
+    }
+  },
+  "language": {
+    "switchLanguage": "Mudar Idioma"
+  },
+  "images": {
+    "gridExampleAlt": "Efeito de grade Instagram criado com Image Splitter",
+    "carouselExampleAlt": "Efeito de post carrossel Instagram criado com Image Splitter",
+    "originalPlaceholder": "Original",
+    "gridEffectPlaceholder": "Efeito Grade",
+    "carouselEffectPlaceholder": "Efeito Carrossel"
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "description": "Guia completo sobre divisores de imagem e criadores de grade do Instagram.",
+    "whatIsImageSplitter": {
+      "question": "O que é um divisor de imagens e como funciona?",
+      "answer": "Um divisor de imagens é uma ferramenta digital que divide uma única imagem em várias partes menores. Nosso divisor de imagens baseado na web usa algoritmos avançados para dividir suas imagens em grades ou segmentos perfeitos. Basta fazer upload da sua imagem, escolher seu método de divisão de imagem e baixar os resultados. Todo processamento acontece diretamente no seu navegador, garantindo privacidade e segurança da imagem."
+    },
+    "howToSplitImage": {
+      "question": "Como dividir uma imagem em várias partes?",
+      "answer": "É simples: 1) Faça upload da sua imagem (suporta JPG, PNG, GIF, etc., máximo 10MB), 2) Escolha seu modo de divisão preferido - divisão vertical, divisão horizontal ou divisão em grade, 3) Ajuste linhas e colunas, 4) Clique no botão dividir imagem, 5) Baixe segmentos individuais ou obtenha um pacote ZIP."
+    },
+    "instagramGridMaker": {
+      "question": "Posso usar esta ferramenta para criar posts em grade do Instagram?",
+      "answer": "Claro! Nosso divisor de imagens é perfeito para criar layouts de grade do Instagram e posts em carrossel. Formatos populares incluem grades 3x3 para quebra-cabeças do feed, tiras para stories em carrossel e dimensões personalizadas para layouts únicos. A saída garante compatibilidade perfeita com os requisitos do Instagram."
+    },
+    "splitImage3x3": {
+      "question": "Como criar uma grade 3x3 para o Instagram?",
+      "answer": "Para criar grades 3x3 perfeitas do Instagram: 1) Faça upload de uma imagem quadrada para melhores resultados, 2) Selecione o modo 'Grade' das opções, 3) Defina tanto linhas quanto colunas como 3, 4) Divida a imagem. Isso cria 9 segmentos iguais que formam um quebra-cabeça completo quando postados sequencialmente no Instagram."
+    },
+    "supportedFormats": {
+      "question": "Quais formatos de arquivo são suportados?",
+      "answer": "Nosso divisor de imagens suporta todos os formatos de imagem comuns, incluindo JPG, PNG, GIF e WebP. Você também pode exportar imagens divididas nos formatos JPG, PNG, WebP ou BMP. Tamanho máximo de arquivo é 10MB com dimensões até 4096x4096 pixels para desempenho ideal."
+    },
+    "freeToUse": {
+      "question": "Esta ferramenta é completamente gratuita?",
+      "answer": "Sim, nosso divisor de imagens é 100% gratuito sem custos ocultos. Não há marcas d'água nas suas imagens, não é necessário registro de conta e não há limites de uso. Use livremente para projetos pessoais, conteúdo comercial ou propósitos empresariais."
+    },
+    "imageQuality": {
+      "question": "A qualidade da imagem dividida será afetada?",
+      "answer": "De forma alguma! Usamos técnicas de processamento sem perdas para manter a qualidade original da sua imagem. Imagens divididas mantêm a mesma resolução e claridade da sua imagem fonte, garantindo que seu conteúdo de mídia social pareça profissional."
+    },
+    "privacySecurity": {
+      "question": "Meu conteúdo enviado é seguro?",
+      "answer": "Sua privacidade é nossa principal prioridade. Usando nosso divisor de imagens, todo processamento de imagem acontece diretamente no seu navegador - nada é enviado para nossos servidores. Suas imagens nunca deixam seu dispositivo, e não armazenamos ou acessamos qualquer do seu conteúdo. Completamente privado e seguro."
+    },
+    "mobileFriendly": {
+      "question": "Esta ferramenta funciona em dispositivos móveis?",
+      "answer": "Claro! Nosso divisor de imagens é totalmente responsivo e funciona perfeitamente em smartphones e tablets. Você pode fazer upload de imagens da sua galeria de fotos, processá-las e baixar resultados diretamente no seu dispositivo. A interface se adapta automaticamente a todos os tamanhos de tela para uma experiência suave."
+    },
+    "batchProcessing": {
+      "question": "Posso dividir várias imagens ao mesmo tempo?",
+      "answer": "Atualmente, a ferramenta processa uma imagem por vez para garantir desempenho e qualidade ideais. No entanto, o processamento é rápido - você pode dividir rapidamente várias imagens repetindo os passos simples de upload e processamento."
+    },
+    "customDimensions": {
+      "question": "Posso criar dimensões de grade personalizadas com seu divisor de imagens?",
+      "answer": "Claro! Além de predefinições populares como 3x3 e 2x3, você pode criar dimensões de grade personalizadas até 10x10. Simplesmente ajuste as linhas e colunas para atender suas necessidades específicas, seja para layouts únicos de mídia social ou projetos especiais."
+    },
+    "cta": {
+      "title": "Pronto para Criar Layouts de Grade Incríveis?",
+      "description": "Comece a dividir suas imagens e crie conteúdo envolvente para mídias sociais.",
+      "button": "Começar a Criar Agora"
+    }
+  }
+} 

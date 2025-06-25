@@ -1,0 +1,155 @@
+{
+  "title": "Blog AI Image Splitter",
+  "description": "Mẹo, hướng dẫn và thực hành tốt nhất cho AI Image Splitter",
+  "backToHome": "Quay về Trang chủ",
+  "readMore": "Đọc thêm",
+  "publishedOn": "Đã xuất bản vào",
+  "lastUpdated": "Cập nhật lần cuối",
+  "tableOfContents": "Mục lục",
+  "relatedPosts": "Bài viết liên quan",
+  "shareThisPost": "Chia sẻ bài viết này",
+  "blogCoverPlaceholder": "Hình bìa hướng dẫn",
+  "tipLabel": "Mẹo:",
+  "startUsingTool": "Bắt đầu sử dụng AI Image Splitter ngay",
+  "imageAlt": {
+    "guideComplete": "Hướng dẫn hoàn chỉnh vận hành chia hình ảnh",
+    "thumbnailImage": "Thumbnail hướng dẫn hoàn chỉnh vận hành chia hình ảnh",
+    "coverImage": "Cover hướng dẫn hoàn chỉnh vận hành chia hình ảnh"
+  },
+  
+  "posts": {
+    "complete-guide": {
+      "title": "Hướng dẫn hoàn chỉnh AI Image Splitter: Tutorial Instagram Grid 2025",
+      "description": "Hướng dẫn đầy đủ về AI Image Splitter. Học cách tạo bố cục lưới Instagram hoàn hảo và carousel mạng xã hội để nâng cao hiệu quả tạo nội dung của bạn.",
+      "keywords": "AI Image Splitter,lưới Instagram,hướng dẫn chia hình ảnh,công cụ mạng xã hội,trình tạo carousel",
+      "readingTime": "5 phút đọc",
+      "category": "Hướng dẫn Tutorial",
+      
+      "intro": {
+        "title": "AI Image Splitter là gì?",
+        "content": "AI Image Splitter là một công cụ chia hình ảnh trực tuyến chuyên nghiệp được thiết kế dành riêng cho các nhà sáng tạo nội dung mạng xã hội. Cho dù bạn muốn tạo bố cục lưới Instagram, bài đăng carousel Facebook hay hiển thị nhiều hình ảnh trên các nền tảng khác, công cụ của chúng tôi sẽ giúp bạn thực hiện điều đó một cách dễ dàng."
+      },
+      
+      "stepByStep": {
+        "title": "Các bước thao tác hoàn chỉnh",
+        "subtitle": "Làm theo hướng dẫn chi tiết này để thành thạo việc chia hình ảnh chuyên nghiệp trong 5 phút",
+        
+        "step1": {
+          "title": "Bước 1: Truy cập website và tải hình ảnh lên",
+          "content": "Nhập {domainLink} vào trình duyệt của bạn để truy cập trang chủ của chúng tôi. Bạn có thể tải hình ảnh lên thông qua hai phương pháp sau:",
+          "method1": "Kéo & Thả: Kéo trực tiếp các tệp hình ảnh vào khu vực tải lên",
+          "method2": "Nhấp để tải lên: Nhấp vào nút 'Chọn hình ảnh' để chọn từ thiết bị của bạn",
+          "note": "Hỗ trợ các định dạng JPG, PNG, GIF và các định dạng chính thống khác, kích thước tệp tối đa 10MB"
+        },
+        
+        "step2": {
+          "title": "Bước 2: Chọn chế độ chia",
+          "content": "Chọn phương pháp chia phù hợp dựa trên nhu cầu của bạn:",
+          "modes": {
+            "vertical": {
+              "name": "Chia dọc",
+              "description": "Phù hợp để tạo bài đăng carousel, chia hình ảnh theo chiều dọc thành nhiều phần dải",
+              "useCase": "Hoàn hảo cho hiển thị carousel Instagram và Facebook"
+            },
+            "horizontal": {
+              "name": "Chia ngang", 
+              "description": "Chia hình ảnh theo chiều ngang, phù hợp cho nhu cầu hiển thị ngang",
+              "useCase": "Lý tưởng để tạo hiệu ứng timeline hoặc hiển thị từng bước"
+            },
+            "grid": {
+              "name": "Chia lưới",
+              "description": "Chia hình ảnh thành bố cục lưới, phương pháp hiển thị Instagram phổ biến nhất",
+              "useCase": "Tạo hiệu ứng lưới Instagram chuyên nghiệp"
+            }
+          }
+        },
+        
+        "step3": {
+          "title": "Bước 3: Thiết lập tham số chia",
+          "content": "Điều chỉnh các tham số tương ứng dựa trên chế độ đã chọn:",
+          "setting1": "Chia dọc: Thiết lập số cột (khuyến nghị 3-6 cột)",
+          "setting2": "Chia ngang: Thiết lập số hàng (khuyến nghị 2-4 hàng)", 
+          "setting3": "Chia lưới: Tùy chỉnh hàng và cột (3×3 phổ biến nhất)",
+          "preview": "Khu vực xem trước bên phải hiển thị hiệu ứng chia theo thời gian thực, giúp bạn điều chỉnh đến trạng thái tối ưu"
+        },
+        
+        "step4": {
+          "title": "Bước 4: Điều chỉnh độ rộng đường chia",
+          "content": "Sử dụng thanh trượt độ rộng đường chia để điều chỉnh độ dày của các đường lưới:",
+          "tip1": "Đường mỏng (1-2px): Phù hợp cho kiểu thiết kế tinh tế, tối giản",
+          "tip2": "Đường trung bình (3-4px): Hiệu ứng thị giác cân bằng, phù hợp cho hầu hết các tình huống",
+          "tip3": "Đường dày (5-6px): Nhấn mạnh hiệu ứng chia, phù hợp cho sáng tạo nghệ thuật"
+        },
+        
+        "step5": {
+          "title": "Bước 5: Chọn định dạng đầu ra",
+          "content": "Chọn định dạng hình ảnh phù hợp dựa trên kịch bản sử dụng:",
+          "formats": {
+            "jpg": "Kích thước tệp nhỏ hơn, phù hợp cho chia sẻ web",
+            "png": "Hỗ trợ nền trong suốt, chất lượng cao hơn",
+            "webp": "Định dạng thế hệ tiếp theo, kích thước tệp nhỏ hơn",
+            "bmp": "Định dạng không mất dữ liệu, phù hợp cho in ấn"
+          }
+        },
+        
+        "step6": {
+          "title": "Bước 6: Tải xuống kết quả chia",
+          "content": "Sau khi hoàn thành việc chia, bạn có hai tùy chọn tải xuống:",
+          "option1": "Tải xuống đơn: Di chuột qua bất kỳ lưới nào và nhấp vào nút tải xuống để lấy hình ảnh đơn",
+          "option2": "Tải xuống hàng loạt: Nhấp vào nút 'Tải xuống hình ảnh' để tải xuống tất cả kết quả chia dưới dạng tệp ZIP"
+        },
+        
+        "step7": {
+          "title": "Bước 7: Tải lại hoặc tiếp tục xử lý",
+          "content": "Để xử lý các hình ảnh khác, nhấp vào nút 'Tải lại hình ảnh' để bắt đầu tác vụ chia mới."
+        }
+      },
+      
+      "bestPractices": {
+        "title": "Mẹo sử dụng chuyên nghiệp",
+        "subtitle": "Nâng cao chất lượng nội dung mạng xã hội của bạn",
+        "tip1": {
+          "title": "Chọn hình ảnh gốc chất lượng cao",
+          "content": "Sử dụng hình ảnh có độ phân giải ít nhất 1080×1080 để đảm bảo mỗi phần được chia vẫn rõ ràng và hiển thị tốt"
+        },
+        "tip2": {
+          "title": "Xem xét tính toàn vẹn của bố cục",
+          "content": "Trước khi chia, hãy hình dung trước nội dung của mỗi lưới để tránh cắt các yếu tố quan trọng"
+        },
+        "tip3": {
+          "title": "Duy trì thứ tự đăng nhất quán",
+          "content": "Lưới Instagram hoạt động tốt nhất khi được đăng theo thứ tự từ trái sang phải, từ trên xuống dưới"
+        },
+        "tip4": {
+          "title": "Thử nghiệm các sơ đồ chia khác nhau",
+          "content": "Thử các kết hợp hàng và cột khác nhau để tìm phương pháp chia tốt nhất cho hình ảnh của bạn"
+        }
+      },
+      
+      "faq": {
+        "title": "Câu hỏi thường gặp",
+        "q1": {
+          "question": "Những định dạng hình ảnh nào được hỗ trợ?",
+          "answer": "Hỗ trợ tất cả các định dạng hình ảnh chính bao gồm JPG, PNG, GIF, WebP, BMP, với kích thước tệp tối đa 10MB."
+        },
+        "q2": {
+          "question": "Chất lượng hình ảnh có bị giảm sau khi chia không?",
+          "answer": "Không. Chúng tôi sử dụng công nghệ xử lý hình ảnh tiên tiến để đảm bảo hình ảnh được chia vẫn giữ chất lượng gốc."
+        },
+        "q3": {
+          "question": "Tôi có thể sử dụng này cho mục đích thương mại không?",
+          "answer": "Hoàn toàn được! Công cụ của chúng tôi miễn phí sử dụng, tạo ra hình ảnh không có watermark và có thể được sử dụng cho bất kỳ mục đích thương mại nào."
+        },
+        "q4": {
+          "question": "Tôi có thể sử dụng này trên thiết bị di động không?",
+          "answer": "Chắc chắn rồi! Website của chúng tôi sử dụng thiết kế responsive và hoạt động hoàn hảo trên điện thoại, máy tính bảng và máy tính."
+        }
+      },
+      
+      "conclusion": {
+        "title": "Bắt đầu tạo nội dung chuyên nghiệp của bạn",
+        "content": "Giờ đây bạn đã thành thạo việc sử dụng hoàn chỉnh AI Image Splitter. Công cụ mạnh mẽ này sẽ giúp bạn tạo ra nội dung mạng xã hội hấp dẫn, cải thiện hình ảnh thương hiệu và sự tương tác của người dùng. Hãy bắt đầu sử dụng ngay bây giờ và để sự sáng tạo của bạn nở rộ!"
+      }
+    }
+  }
+} 

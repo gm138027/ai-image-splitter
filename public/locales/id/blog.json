@@ -1,0 +1,155 @@
+{
+  "title": "Blog AI Image Splitter",
+  "description": "Tips, tutorial, dan praktik terbaik untuk AI Image Splitter",
+  "backToHome": "Kembali ke Beranda",
+  "readMore": "Baca Selengkapnya",
+  "publishedOn": "Diterbitkan pada",
+  "lastUpdated": "Terakhir diperbarui",
+  "tableOfContents": "Daftar Isi",
+  "relatedPosts": "Artikel Terkait",
+  "shareThisPost": "Bagikan Artikel Ini",
+  "blogCoverPlaceholder": "Gambar Sampul Tutorial",
+  "tipLabel": "Tips:",
+  "startUsingTool": "Mulai Gunakan AI Image Splitter Sekarang",
+  "imageAlt": {
+    "guideComplete": "Panduan Lengkap Operasi Pemisahan Gambar",
+    "thumbnailImage": "Thumbnail Panduan Lengkap Operasi Pemisahan Gambar",
+    "coverImage": "Cover Panduan Lengkap Operasi Pemisahan Gambar"
+  },
+  
+  "posts": {
+    "complete-guide": {
+      "title": "Panduan Lengkap AI Image Splitter: Tutorial Membuat Grid Instagram 2025",
+      "description": "Tutorial lengkap AI Image Splitter. Pelajari cara membuat layout grid Instagram yang sempurna dan carousel media sosial untuk meningkatkan efisiensi pembuatan konten Anda.",
+      "keywords": "AI Image Splitter,grid Instagram,tutorial pemisah gambar,alat media sosial,pembuat carousel",
+      "readingTime": "5 menit baca",
+      "category": "Panduan Tutorial",
+      
+      "intro": {
+        "title": "Apa itu AI Image Splitter?",
+        "content": "AI Image Splitter adalah alat pemisah gambar online profesional yang dirancang khusus untuk kreator konten media sosial. Baik Anda ingin membuat layout grid Instagram, postingan carousel Facebook, atau tampilan multi-gambar platform lain, alat kami membantu Anda mencapainya dengan mudah."
+      },
+      
+      "stepByStep": {
+        "title": "Langkah-Langkah Operasi Lengkap",
+        "subtitle": "Ikuti panduan detail ini untuk menguasai pemisahan gambar profesional dalam 5 menit",
+        
+        "step1": {
+          "title": "Langkah 1: Kunjungi Website dan Upload Gambar",
+          "content": "Masukkan {domainLink} di browser Anda untuk mengakses halaman utama kami. Anda dapat mengupload gambar melalui dua metode berikut:",
+          "method1": "Drag & Drop: Langsung seret file gambar ke area upload",
+          "method2": "Klik Upload: Klik tombol Pilih Gambar untuk memilih dari perangkat Anda",
+          "note": "Mendukung format JPG, PNG, GIF dan format mainstream lainnya, ukuran file maksimum 10MB"
+        },
+        
+        "step2": {
+          "title": "Langkah 2: Pilih Mode Pemisahan",
+          "content": "Pilih metode pemisahan yang sesuai berdasarkan kebutuhan Anda:",
+          "modes": {
+            "vertical": {
+              "name": "Pemisahan Vertikal",
+              "description": "Cocok untuk membuat postingan carousel, memisahkan gambar secara vertikal menjadi beberapa bagian strip",
+              "useCase": "Sempurna untuk tampilan carousel Instagram dan Facebook"
+            },
+            "horizontal": {
+              "name": "Pemisahan Horizontal", 
+              "description": "Memisahkan gambar secara horizontal, cocok untuk kebutuhan tampilan horizontal",
+              "useCase": "Ideal untuk membuat efek timeline atau tampilan langkah demi langkah"
+            },
+            "grid": {
+              "name": "Pemisahan Grid",
+              "description": "Memisahkan gambar menjadi layout grid, metode tampilan Instagram paling populer",
+              "useCase": "Membuat efek grid Instagram yang profesional"
+            }
+          }
+        },
+        
+        "step3": {
+          "title": "Langkah 3: Atur Parameter Pemisahan",
+          "content": "Sesuaikan parameter yang sesuai berdasarkan mode yang dipilih:",
+          "setting1": "Pemisahan Vertikal: Atur jumlah kolom (disarankan 3-6 kolom)",
+          "setting2": "Pemisahan Horizontal: Atur jumlah baris (disarankan 2-4 baris)", 
+          "setting3": "Pemisahan Grid: Kustomisasi baris dan kolom (3×3 paling populer)",
+          "preview": "Area preview kanan menampilkan efek pemisahan secara real-time, membantu Anda menyesuaikan ke kondisi optimal"
+        },
+        
+        "step4": {
+          "title": "Langkah 4: Sesuaikan Lebar Garis Pemisah",
+          "content": "Gunakan slider lebar garis pemisah untuk menyesuaikan ketebalan garis grid:",
+          "tip1": "Garis tipis (1-2px): Cocok untuk gaya desain yang halus dan minimalis",
+          "tip2": "Garis sedang (3-4px): Efek visual seimbang, cocok untuk sebagian besar situasi",
+          "tip3": "Garis tebal (5-6px): Menekankan efek pemisahan, cocok untuk kreasi artistik"
+        },
+        
+        "step5": {
+          "title": "Langkah 5: Pilih Format Output",
+          "content": "Pilih format gambar yang sesuai berdasarkan skenario penggunaan:",
+          "formats": {
+            "jpg": "Ukuran file lebih kecil, cocok untuk berbagi web",
+            "png": "Mendukung background transparan, kualitas lebih tinggi",
+            "webp": "Format generasi terbaru, ukuran file lebih kecil",
+            "bmp": "Format lossless, cocok untuk pencetakan"
+          }
+        },
+        
+        "step6": {
+          "title": "Langkah 6: Download Hasil Pemisahan",
+          "content": "Setelah menyelesaikan pemisahan, Anda memiliki dua opsi download:",
+          "option1": "Download Tunggal: Arahkan kursor ke grid mana pun dan klik tombol download untuk mendapatkan gambar tunggal",
+          "option2": "Download Batch: Klik tombol Download Gambar untuk mendownload semua hasil pemisahan sebagai arsip ZIP"
+        },
+        
+        "step7": {
+          "title": "Langkah 7: Upload Ulang atau Lanjutkan Pemrosesan",
+          "content": "Untuk memproses gambar lain, klik tombol Upload Ulang Gambar untuk memulai tugas pemisahan baru."
+        }
+      },
+      
+      "bestPractices": {
+        "title": "Tips Penggunaan Profesional",
+        "subtitle": "Tingkatkan kualitas konten media sosial Anda",
+        "tip1": {
+          "title": "Pilih Gambar Asli Berkualitas Tinggi",
+          "content": "Gunakan gambar dengan resolusi minimal 1080×1080 untuk memastikan setiap bagian yang dipisah tetap jelas dan terlihat"
+        },
+        "tip2": {
+          "title": "Pertimbangkan Integritas Komposisi",
+          "content": "Bayangkan terlebih dahulu konten setiap grid sebelum pemisahan untuk menghindari pemotongan elemen penting"
+        },
+        "tip3": {
+          "title": "Pertahankan Urutan Posting yang Konsisten",
+          "content": "Grid Instagram bekerja paling baik ketika diposting berurutan dari kiri ke kanan, atas ke bawah"
+        },
+        "tip4": {
+          "title": "Uji Skema Pemisahan yang Berbeda",
+          "content": "Coba kombinasi baris dan kolom yang berbeda untuk menemukan metode pemisahan terbaik untuk gambar Anda"
+        }
+      },
+      
+      "faq": {
+        "title": "Pertanyaan yang Sering Diajukan",
+        "q1": {
+          "question": "Format gambar apa yang didukung?",
+          "answer": "Mendukung semua format gambar mainstream termasuk JPG, PNG, GIF, WebP, BMP, dengan ukuran file maksimum 10MB."
+        },
+        "q2": {
+          "question": "Apakah kualitas gambar akan menurun setelah pemisahan?",
+          "answer": "Tidak. Kami menggunakan teknologi pemrosesan gambar canggih untuk memastikan gambar yang dipisah mempertahankan kualitas aslinya."
+        },
+        "q3": {
+          "question": "Bisakah saya menggunakan ini untuk tujuan komersial?",
+          "answer": "Tentu saja! Alat kami gratis digunakan, menghasilkan gambar tanpa watermark, dan dapat digunakan untuk tujuan komersial apa pun."
+        },
+        "q4": {
+          "question": "Bisakah saya menggunakan ini di perangkat mobile?",
+          "answer": "Tentu saja! Website kami menggunakan desain responsif dan bekerja sempurna di ponsel, tablet, dan komputer."
+        }
+      },
+      
+      "conclusion": {
+        "title": "Mulai Membuat Konten Profesional Anda",
+        "content": "Sekarang Anda telah menguasai penggunaan lengkap AI Image Splitter. Alat yang kuat ini akan membantu Anda membuat konten media sosial yang menarik perhatian, meningkatkan citra merek dan keterlibatan pengguna Anda. Mulai gunakan sekarang dan biarkan kreativitas Anda berkembang!"
+      }
+    }
+  }
+} 

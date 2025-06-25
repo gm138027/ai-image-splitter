@@ -1,0 +1,162 @@
+{
+  "seo": {
+    "title": "在线图像分割器和网格制作器 - Instagram图片分割工具",
+    "description": "AI Image Splitter是一款免费的在线图片分割工具，您可以使用它将图片进行垂直、水平和网格分割，用于Instagram网格布局和轮播帖子。",
+    "keywords": "图片分割器, 在线图像分割器, 分割图片, 网格制作器, Instagram网格制作器, Instagram图片分割器, 社交媒体, 轮播图, 在线工具"
+  },
+  "nav": {
+    "features": "首页",
+    "howItWorks": "使用方法",
+    "faq": "常见问题",
+    "about": "博客"
+  },
+  "hero": {
+    "title": "在线图像分割器和网格制作器",
+    "description": "如果您正在寻找\"如何将图像分割到instagram网格中\"，那么您来对地方了。我们的图像分割器不仅适用于在线分割图像也适用于instagram网格制作，且无需注册、完全免费。"
+  },
+  "features": {
+    "upload": "上传图片",
+    "split": "智能分割",
+    "download": "批量下载",
+    "fast": "极速处理"
+  },
+  "tool": {
+    "comingSoon": "图片分割工具",
+    "description": "专业的在线图像分割器和Instagram网格制作器。上传您的图片，轻松分割图片为适合社交媒体轮播的完美网格布局。",
+    "uploadPrompt": "拖拽文件到此处或点击上传",
+    "uploadButton": "选择图片",
+    "uploadSupport": "支持 JPG, PNG, GIF 格式，最大 10MB",
+    "controlPanelDescription": "使用左侧控制面板配置分割选项",
+    "splitModeTitle": "选择分割图像方式",
+    "splitModeDescription": "垂直分割适用于轮播帖子，水平分割适用于横向展示，网格分割适用于Instagram网格布局",
+    "gridLineWidthLabel": "分割线宽度",
+    "gridLineWidthHint": "调节分割后图片之间的间距",
+    "splitModes": {
+      "vertical": "垂直分割",
+      "horizontal": "水平分割",
+      "grid": "网格分割"
+    },
+    "gridSettings": {
+      "rows": "行",
+      "columns": "列"
+    },
+    "gridLineWidth": "分割线宽度",
+    "outputFormat": "输出格式",
+    "formats": {
+      "jpg": "JPG",
+      "png": "PNG", 
+      "webp": "WebP",
+      "bmp": "BMP"
+    },
+    "buttons": {
+      "split": "分割图片",
+      "splitting": "分割中...",
+      "download": "下载",
+      "downloadAll": "下载图片",
+      "reset": "重新选择图片",
+      "selectImage": "选择图片",
+      "reuploadImage": "重新上传图片",
+      "reupload": "重新上传图片"
+    },
+    "preview": {
+      "title": "预览区域",
+      "instruction": "点击分割图片查看分割效果"
+    },
+    "alerts": {
+      "invalidFile": "请选择有效的图片文件",
+      "invalidFileType": "请选择有效的图片文件 (JPG, PNG, GIF, WebP)",
+      "fileTooLarge": "文件大小超过10MB限制，请选择更小的图片",
+      "imageTooLarge": "图片尺寸超过4096x4096像素，请选择更小的图片",
+      "downloadFailed": "下载失败，请重试"
+    }
+  },
+  "howItWorks": {
+    "title": "图像分割器使用方法",
+    "step1Title": "1. 上传图片",
+    "step1Description": "选择您要分割的图片，支持多种格式，适用于Instagram网格制作器",
+    "step2Title": "2. 设置分割",
+    "step2Description": "选择分割图片的方式 - 网格布局、行列设置，打造完美Instagram帖子",
+    "step3Title": "3. 下载结果",
+    "step3Description": "单独下载分割后的图片或打包下载所有图片，方便分享使用"
+  },
+  "footer": {
+    "madeWith": "用",
+    "forUsers": "为全世界的内容创作者制作",
+    "privacy": "隐私政策",
+    "terms": "服务条款"
+  },
+  "advantages": {
+    "title": "选择AI Image Splitter的优势",
+    "freeOnline": {
+      "title": "完全免费的在线图像分割器",
+      "description": "使用我们的图像分割器，您无需下载安装任何软件，打开浏览器输入<a href=\"/\" class=\"text-primary-600 hover:text-primary-700 underline font-medium\">aiimagesplitter.com</a>即可在线使用。完全免费，无隐藏费用，也无需注册账号。"
+    },
+    "easyInstagram": {
+      "title": "轻松创建Instagram网格和轮播帖子",
+      "description": "我们的图像分割器专为社交媒体从业者和电商从业者设计，您可以使用我们的免费工具一键生成完美的Instagram网格布局和轮播图片，让您的内容更具吸引力。"
+    }
+  },
+  "language": {
+    "switchLanguage": "切换语言"
+  },
+  "images": {
+    "gridExampleAlt": "使用Image Splitter创建Instagram网格效果图",
+    "carouselExampleAlt": "使用Image Splitter创建Instagram轮播帖子效果图",
+    "originalPlaceholder": "原图",
+    "gridEffectPlaceholder": "网格效果",
+    "carouselEffectPlaceholder": "轮播效果"
+  },
+  "faq": {
+    "title": "常见问题",
+    "description": "关于图片分割器和Instagram网格制作器的完整指南。",
+    "whatIsImageSplitter": {
+      "question": "什么是图片分割工具，它是如何工作的？",
+      "answer": "图片分割工具是一种数字化工具，可以将单张图片分割成多个较小的部分。我们的网页版图像分割器使用先进算法将您的图像分割成完美的网格或片段。只需上传图片，选择图像分割方式，然后下载结果。所有处理都在您的浏览器中完成，确保图片隐私安全。"
+    },
+    "howToSplitImage": {
+      "question": "如何将图片分割成多个部分？",
+      "answer": "操作很简单：1）上传您的图片（支持JPG、PNG、GIF等，最大10MB），2）选择您喜欢的分割模式 - 垂直分割、水平分割或网格分割，3）调整行数和列数，4）点击分割图像按钮，5）下载单个片段或获取ZIP打包文件。"
+    },
+    "instagramGridMaker": {
+      "question": "我可以用这个工具制作Instagram网格帖子吗？",
+      "answer": "当然可以！我们的图像分割器非常适合制作Instagram网格布局和轮播帖子。热门格式包括用于动态拼图的3x3网格、用于轮播故事的条带，以及适合独特布局的自定义尺寸。输出确保完美符合Instagram的要求。"
+    },
+    "splitImage3x3": {
+      "question": "如何为Instagram制作3x3网格？",
+      "answer": "制作完美的3x3 Instagram网格：1）为获得最佳效果请上传方形图片，2）从选项中选择「网格」模式，3）将行数和列数都设置为3，4）选择分割图片。这会创建9个相等的片段，在Instagram上按顺序发布时形成完整拼图。"
+    },
+    "supportedFormats": {
+      "question": "支持哪些文件格式？",
+      "answer": "我们的图像分割器支持所有常见的图片格式，包括JPG、PNG、GIF和WebP等。您也可以将分割后的图片导出为JPG、PNG、WebP或BMP格式。最大文件大小为10MB，尺寸最高支持4096x4096像素以获得最佳性能。"
+    },
+    "freeToUse": {
+      "question": "这个工具完全免费吗？",
+      "answer": "是的，我们图像分割器100%免费，没有任何隐藏费用。您的图片上不会有水印，无需注册账户，也没有使用限制。无论是个人项目、商业内容还是商用目的，都可以无限制使用。"
+    },
+    "imageQuality": {
+      "question": "分割后的图片质量会受到影响吗？",
+      "answer": "完全不会！我们使用无损处理技术来保持您的原始图片质量。分割后的图片保持与源图片相同的分辨率和清晰度，确保您的社交媒体内容看起来专业。"
+    },
+    "privacySecurity": {
+      "question": "我上传的内容安全吗？",
+      "answer": "您的隐私是我们的首要考虑。使用我们的图像分割器，所有图片处理都直接在您的浏览器中进行 - 没有任何内容上传到我们的服务器。您的图片永远不会离开您的设备，我们不会存储或访问您的任何内容。完全私密和安全。"
+    },
+    "mobileFriendly": {
+      "question": "这个工具在移动设备上能用吗？",
+      "answer": "当然可以！我们的图像分割器完全响应式，在智能手机和平板电脑上都能完美运行。您可以从手机相册上传图片，进行处理，并直接下载结果到您的设备。界面会自动适应所有屏幕尺寸，提供流畅体验。"
+    },
+    "batchProcessing": {
+      "question": "我可以同时分割多张图片吗？",
+      "answer": "目前，工具一次处理一张图片以确保最佳性能和质量。不过处理速度很快 - 您可以通过重复简单的上传和处理步骤来快速分割多张图片。"
+    },
+    "customDimensions": {
+      "question": "我可以用你们的图像分割器创建自定义网格尺寸吗？",
+      "answer": "绝对可以！除了提供3x3和2x3等热门预设，您还可以创建最高10x10的自定义网格尺寸。只需调整行数和列数来满足您的具体需求，无论是独特的社交媒体布局还是特殊项目。"
+    },
+    "cta": {
+      "title": "准备创建精彩的网格布局了吗？",
+      "description": "开始分割您的图片，创建引人注目的社交媒体内容。",
+      "button": "立即开始创作"
+    }
+  }
+} 
