@@ -125,6 +125,18 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
   const faqData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "name": t('faq.title'),
+    "description": t('faq.description'),
+    "url": currentUrl,
+    "about": {
+      "@type": "Thing",
+      "name": t('structuredData.creativeWorkName')
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AI Image Splitter",
+      "url": "https://aiimagesplitter.com"
+    },
     "mainEntity": [
       {
         "@type": "Question",
