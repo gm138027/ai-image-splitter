@@ -81,7 +81,8 @@
         "Salvar configurações básicas da interface do usuário",
         "Suportar estatísticas anônimas do Google Analytics"
       ],
-      "note": "Você pode gerenciar ou desabilitar cookies através das configurações do seu navegador, mas isso pode afetar o funcionamento normal de certas funcionalidades."
+      "note": "Você pode gerenciar ou desabilitar cookies através das configurações do seu navegador, mas isso pode afetar o funcionamento normal de certas funcionalidades.",
+      "note_label": "Nota:"
     },
     
     "userRights": {

@@ -11,11 +11,12 @@
     
     "serviceDescription": {
       "title": "Penerangan Perkhidmatan",
-      "content": "AI Image Splitter ialah alat dalam talian percuma yang membolehkan pengguna membahagikan imej kepada grid atau segmen untuk kegunaan media sosial, terutamanya untuk karusel Instagram dan siaran grid.",
+      "content": "AI Image Splitter ialah alat dalam talian percuma yang membolehkan pengguna membahagikan imej kepada grid atau segmen untuk kegunaan media sosial, terutamanya untuk karusel Instagram dan pos grid.",
+      "features_title": "Ciri-ciri Utama",
       "features": [
-        "Pemprosesan imej sebelah pelanggan untuk perlindungan privasi",
+        "Pemprosesan imej bahagian klien untuk perlindungan privasi",
         "Pelbagai saiz grid (3x3, 2x3, 4x4, tersuai)",
-        "Tiada tanda air pada imej keluaran",
+        "Tiada tanda air pada imej output",
         "Akses percuma kepada semua ciri",
         "Sokongan berbilang bahasa",
         "Keserasian mudah alih dan desktop"

@@ -268,7 +268,7 @@ const PrivacyPolicy: NextPage = () => {
                       </ul>
                       <div className="bg-amber-50 border-l-4 border-amber-400 p-4">
                         <p className="text-amber-700">
-                          <strong>注意：</strong> {t('privacy:sections.cookies.note')}
+                          <strong>{t('privacy:sections.cookies.note_label')}</strong> {t('privacy:sections.cookies.note')}
                         </p>
                       </div>
                     </section>

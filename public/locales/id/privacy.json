@@ -81,7 +81,8 @@
         "Menyimpan pengaturan antarmuka pengguna dasar",
         "Mendukung statistik anonim Google Analytics"
       ],
-      "note": "Anda dapat mengelola atau menonaktifkan cookie melalui pengaturan browser, tetapi ini mungkin mempengaruhi pengoperasian normal fitur tertentu."
+      "note": "Anda dapat mengelola atau menonaktifkan cookie melalui pengaturan browser, tetapi ini mungkin mempengaruhi pengoperasian normal fitur tertentu.",
+      "note_label": "Catatan:"
     },
     
     "userRights": {

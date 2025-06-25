@@ -11,14 +11,15 @@
     
     "serviceDescription": {
       "title": "Descrição do Serviço",
-      "content": "O AI Image Splitter é uma ferramenta online gratuita que permite aos usuários dividir imagens em grades ou segmentos para uso em mídias sociais, especialmente para carrosséis do Instagram e posts em grade.",
+      "content": "O AI Image Splitter é uma ferramenta online gratuita que permite aos usuários dividir imagens em grades ou segmentos para uso em redes sociais, particularmente para carrosséis do Instagram e posts em grade.",
+      "features_title": "Características Principais",
       "features": [
-        "Processamento de imagem do lado cliente para proteção de privacidade",
+        "Processamento de imagem no lado do cliente para proteção de privacidade",
         "Múltiplos tamanhos de grade (3x3, 2x3, 4x4, personalizado)",
         "Sem marcas d'água nas imagens de saída",
         "Acesso gratuito a todos os recursos",
-        "Suporte a múltiplos idiomas",
-        "Compatibilidade com dispositivos móveis e desktop"
+        "Suporte multi-idioma",
+        "Compatibilidade móvel e desktop"
       ]
     },
     

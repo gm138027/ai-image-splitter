@@ -81,7 +81,8 @@
         "Save basic user interface settings",
         "Support Google Analytics anonymous statistics"
       ],
-      "note": "You can manage or disable cookies through your browser settings, but this may affect the normal operation of certain features."
+      "note": "You can manage or disable cookies through your browser settings, but this may affect the normal operation of certain features.",
+      "note_label": "Note:"
     },
     
     "userRights": {

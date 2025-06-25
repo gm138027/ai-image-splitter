@@ -12,6 +12,7 @@
     "serviceDescription": {
       "title": "Service Description",
       "content": "AI Image Splitter is a free online tool that allows users to split images into grids or segments for social media use, particularly for Instagram carousels and grid posts.",
+      "features_title": "Key Features",
       "features": [
         "Client-side image processing for privacy protection",
         "Multiple grid sizes (3x3, 2x3, 4x4, custom)",

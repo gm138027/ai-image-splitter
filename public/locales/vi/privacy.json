@@ -81,7 +81,8 @@
         "Lưu cài đặt giao diện người dùng cơ bản",
         "Hỗ trợ thống kê ẩn danh của Google Analytics"
       ],
-      "note": "Bạn có thể quản lý hoặc vô hiệu hóa cookie thông qua cài đặt trình duyệt của mình, nhưng điều này có thể ảnh hưởng đến hoạt động bình thường của một số tính năng."
+      "note": "Bạn có thể quản lý hoặc vô hiệu hóa cookie thông qua cài đặt trình duyệt của mình, nhưng điều này có thể ảnh hưởng đến hoạt động bình thường của một số tính năng.",
+      "note_label": "Lưu ý:"
     },
     
     "userRights": {

@@ -165,7 +165,7 @@ const TermsOfService: NextPage = () => {
                       
                       <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
                         <h3 className="text-lg font-semibold text-blue-800 mb-3">
-                          主要功能特性
+                          {t('terms:sections.serviceDescription.features_title')}
                         </h3>
                         <ul className="list-disc list-inside space-y-2 text-blue-700">
                           {(t('terms:sections.serviceDescription.features', { returnObjects: true }) as string[]).map((feature, index) => (

@@ -81,7 +81,8 @@
         "Pag-save ng mga basic user interface settings",
         "Pagsuporta sa Google Analytics anonymous statistics"
       ],
-      "note": "Maaari ninyong i-manage o i-disable ang mga cookie sa pamamagitan ng inyong browser settings, pero maaaring makaapekto ito sa normal na operasyon ng ilang mga feature."
+      "note": "Maaari ninyong i-manage o i-disable ang mga cookie sa pamamagitan ng inyong browser settings, pero maaaring makaapekto ito sa normal na operasyon ng ilang mga feature.",
+      "note_label": "Paalala:"
     },
     
     "userRights": {

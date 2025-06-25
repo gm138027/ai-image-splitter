@@ -81,7 +81,8 @@
         "Menyimpan tetapan antara muka pengguna asas",
         "Menyokong statistik tanpa nama Google Analytics"
       ],
-      "note": "Anda boleh menguruskan atau melumpuhkan kuki melalui tetapan pelayar anda, tetapi ini mungkin menjejaskan operasi normal ciri-ciri tertentu."
+      "note": "Anda boleh menguruskan atau melumpuhkan kuki melalui tetapan pelayar anda, tetapi ini mungkin menjejaskan operasi normal ciri-ciri tertentu.",
+      "note_label": "Nota:"
     },
     
     "userRights": {

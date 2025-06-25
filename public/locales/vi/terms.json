@@ -12,6 +12,7 @@
     "serviceDescription": {
       "title": "Mô Tả Dịch Vụ",
       "content": "AI Image Splitter là một công cụ trực tuyến miễn phí cho phép người dùng chia hình ảnh thành lưới hoặc các phân đoạn để sử dụng trên mạng xã hội, đặc biệt cho carousel Instagram và bài đăng lưới.",
+      "features_title": "Tính Năng Chính",
       "features": [
         "Xử lý hình ảnh phía client để bảo vệ quyền riêng tư",
         "Nhiều kích thước lưới (3x3, 2x3, 4x4, tùy chỉnh)",
