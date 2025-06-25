@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import { useTranslation } from 'next-i18next'
 
 interface StructuredDataProps {
   locale?: string
@@ -8,6 +9,7 @@ interface StructuredDataProps {
 const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => {
   const router = useRouter()
   const currentUrl = `https://aiimagesplitter.com${router.asPath}`
+  const { t } = useTranslation('common')
   
   // 组织结构化数据 - 这是Google显示logo的关键
   const organizationData = {
@@ -35,7 +37,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
   const websiteData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": locale === 'zh-CN' ? "AI Image Splitter - 在线图像分割器" : "AI Image Splitter - Online Image Splitter Tool",
+    "name": t('structuredData.websiteName'),
     "url": "https://aiimagesplitter.com",
     "publisher": {
       "@type": "Organization",
@@ -58,10 +60,8 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
   const applicationData = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": locale === 'zh-CN' ? "AI Image Splitter - 在线图像分割器" : "AI Image Splitter - Online Image Splitter Tool",
-    "description": locale === 'zh-CN' 
-      ? "免费在线图片分割工具，专业的图像分割器帮您轻松分割图片为Instagram网格布局。最佳的Instagram网格制作器，支持社交媒体轮播图分割，快速、简单、无水印。"
-      : "Free image splitter online tool to split images into perfect grids for Instagram, social media carousels and posts. The best image splitter for Instagram grid maker needs - fast, easy, no watermarks.",
+    "name": t('structuredData.appName'),
+    "description": t('structuredData.appDescription'),
     "url": currentUrl,
     "applicationCategory": "MultimediaApplication",
     "operatingSystem": "Any",
@@ -93,11 +93,11 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
       }
     },
     "featureList": [
-      locale === 'zh-CN' ? "图片分割" : "Split Images",
-      locale === 'zh-CN' ? "Instagram网格制作" : "Instagram Grid Maker", 
-      locale === 'zh-CN' ? "轮播图制作" : "Carousel Image Creation",
-      locale === 'zh-CN' ? "批量下载" : "Batch Download",
-      locale === 'zh-CN' ? "免费使用" : "Free to Use"
+      t('structuredData.features.splitImages'),
+      t('structuredData.features.instagramGrid'),
+      t('structuredData.features.carouselCreation'),
+      t('structuredData.features.batchDownload'),
+      t('structuredData.features.freeToUse')
     ],
     "screenshot": "https://aiimagesplitter.com/images/screenshot.png"
   }
@@ -106,10 +106,8 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
   const creativeWorkData = {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
-    "name": locale === 'zh-CN' ? "图像分割工具" : "Image Splitter Tool",
-    "description": locale === 'zh-CN'
-      ? "专业的在线图像分割器，帮助用户将图片分割成完美的网格布局，特别适用于Instagram和社交媒体内容创作。"
-      : "Professional online image splitter tool that helps users split images into perfect grid layouts, especially designed for Instagram and social media content creation.",
+    "name": t('structuredData.creativeWorkName'),
+    "description": t('structuredData.creativeWorkDescription'),
     "creator": {
       "@type": "Organization",
       "name": "AI Image Splitter",
@@ -118,46 +116,102 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
         "url": "https://aiimagesplitter.com/android-chrome-512x512.png"
       }
     },
-    "keywords": locale === 'zh-CN' 
-      ? "图片分割器, 在线图像分割器, 分割图片, 网格制作器, Instagram网格制作器, Instagram图片分割器, 社交媒体, 轮播图, 在线工具"
-      : "image splitter, image splitter online, split image, split image online, grid maker, instagram grid maker, image splitter instagram, image splitter for instagram, social media, carousel",
-    "genre": locale === 'zh-CN' ? "图像处理工具" : "Image Processing Tool",
+    "keywords": t('structuredData.keywords'),
+    "genre": t('structuredData.genre'),
     "inLanguage": locale === 'zh-CN' ? "zh-CN" : "en-US"
   }
 
-  // 常见问题结构化数据 - 简化版，避免"未命名的项"错误
+  // 常见问题结构化数据 - 使用翻译文件中的完整内容
   const faqData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
       {
         "@type": "Question",
-        "name": locale === 'zh-CN' ? "如何使用AI Image Splitter分割图片？" : "How to use AI Image Splitter to split images?",
+        "name": t('faq.whatIsImageSplitter.question'),
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": locale === 'zh-CN' 
-            ? "使用我们的在线图像分割器工具很简单：1）上传您的图片，2）选择分割模式（垂直、水平或网格），3）设置分割参数，4）点击分割按钮，5）下载分割后的图片。整个过程完全免费，无需注册。"
-            : "Using our image splitter online tool is simple: 1) Upload your image, 2) Choose split mode (vertical, horizontal, or grid), 3) Set split parameters, 4) Click the split button, 5) Download the split images. The entire process is completely free with no registration required."
-        }
-      },
-      {
-        "@type": "Question", 
-        "name": locale === 'zh-CN' ? "支持哪些图片格式？" : "What image formats are supported?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": locale === 'zh-CN'
-            ? "我们的图像分割器支持所有主流图片格式，包括JPG、PNG、GIF、WebP和BMP格式。支持的最大文件大小为10MB。"
-            : "Our image splitter supports all mainstream image formats including JPG, PNG, GIF, WebP, and BMP formats. Maximum file size supported is 10MB."
+          "text": t('faq.whatIsImageSplitter.answer')
         }
       },
       {
         "@type": "Question",
-        "name": locale === 'zh-CN' ? "能否用于制作Instagram网格帖子？" : "Can the split images be used for Instagram?",
+        "name": t('faq.howToSplitImage.question'),
         "acceptedAnswer": {
-          "@type": "Answer", 
-          "text": locale === 'zh-CN'
-            ? "当然可以！我们的工具专门为Instagram设计，支持创建完美的Instagram网格布局和轮播帖子。分割后的图片可以直接上传到Instagram。"
-            : "Absolutely! Our tool is specifically designed for Instagram, supporting the creation of perfect Instagram grid layouts and carousel posts. Split images can be directly uploaded to Instagram."
+          "@type": "Answer",
+          "text": t('faq.howToSplitImage.answer')
+        }
+      },
+      {
+        "@type": "Question",
+        "name": t('faq.instagramGridMaker.question'),
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": t('faq.instagramGridMaker.answer')
+        }
+      },
+      {
+        "@type": "Question",
+        "name": t('faq.splitImage3x3.question'),
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": t('faq.splitImage3x3.answer')
+        }
+      },
+      {
+        "@type": "Question",
+        "name": t('faq.supportedFormats.question'),
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": t('faq.supportedFormats.answer')
+        }
+      },
+      {
+        "@type": "Question",
+        "name": t('faq.freeToUse.question'),
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": t('faq.freeToUse.answer')
+        }
+      },
+      {
+        "@type": "Question",
+        "name": t('faq.imageQuality.question'),
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": t('faq.imageQuality.answer')
+        }
+      },
+      {
+        "@type": "Question",
+        "name": t('faq.privacySecurity.question'),
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": t('faq.privacySecurity.answer')
+        }
+      },
+      {
+        "@type": "Question",
+        "name": t('faq.mobileFriendly.question'),
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": t('faq.mobileFriendly.answer')
+        }
+      },
+      {
+        "@type": "Question",
+        "name": t('faq.batchProcessing.question'),
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": t('faq.batchProcessing.answer')
+        }
+      },
+      {
+        "@type": "Question",
+        "name": t('faq.customDimensions.question'),
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": t('faq.customDimensions.answer')
         }
       }
     ]

@@ -99,6 +99,22 @@
   "language": {
     "switchLanguage": "Chuyển Ngôn Ngữ"
   },
+  "structuredData": {
+    "websiteName": "AI Image Splitter - Công Cụ Tách Ảnh Online",
+    "appName": "AI Image Splitter - Công Cụ Tách Ảnh Online",
+    "appDescription": "Công cụ tách ảnh online miễn phí để tạo lưới hoàn hảo cho Instagram, mạng xã hội carousel và bài đăng. Công cụ tách ảnh tốt nhất cho nhu cầu tạo lưới Instagram - nhanh, dễ, không watermark.",
+    "creativeWorkName": "Công Cụ Tách Ảnh",
+    "creativeWorkDescription": "Công cụ tách ảnh online chuyên nghiệp giúp người dùng tách ảnh thành bố cục lưới hoàn hảo, được thiết kế đặc biệt cho Instagram và tạo nội dung mạng xã hội.",
+    "features": {
+      "splitImages": "Tách Ảnh",
+      "instagramGrid": "Tạo Lưới Instagram",
+      "carouselCreation": "Tạo Carousel",
+      "batchDownload": "Tải Về Hàng Loạt",
+      "freeToUse": "Miễn Phí Sử Dụng"
+    },
+    "keywords": "tách ảnh, công cụ tách ảnh online, tạo lưới, tạo lưới instagram, tách ảnh instagram, mạng xã hội, carousel",
+    "genre": "Công Cụ Xử Lý Hình Ảnh"
+  },
   "images": {
     "gridExampleAlt": "Hiệu ứng lưới Instagram được tạo bằng Image Splitter",
     "carouselExampleAlt": "Hiệu ứng bài đăng carousel Instagram được tạo bằng Image Splitter",

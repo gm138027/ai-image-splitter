@@ -99,6 +99,22 @@
   "language": {
     "switchLanguage": "Palitan ang Wika"
   },
+  "structuredData": {
+    "websiteName": "AI Image Splitter - Online Image Splitter Tool",
+    "appName": "AI Image Splitter - Online Image Splitter Tool",
+    "appDescription": "Libreng online image splitter tool para gumawa ng perpektong grids para sa Instagram, social media carousels at posts. Ang pinakamahusay na image splitter para sa Instagram grid maker pangangailangan - mabilis, madali, walang watermark.",
+    "creativeWorkName": "Image Splitter Tool",
+    "creativeWorkDescription": "Propesyonal na online image splitter tool na tumutulong sa mga user na hatiin ang mga larawan sa perpektong grid layout, na specially na dinisenyo para sa Instagram at social media content creation.",
+    "features": {
+      "splitImages": "Hatiin ang mga Larawan",
+      "instagramGrid": "Instagram Grid Maker",
+      "carouselCreation": "Carousel Image Creation",
+      "batchDownload": "Batch Download",
+      "freeToUse": "Libre ang Paggamit"
+    },
+    "keywords": "image splitter, online image splitter, hatiin ang larawan, grid maker, instagram grid maker, image splitter instagram, social media, carousel",
+    "genre": "Image Processing Tool"
+  },
   "images": {
     "gridExampleAlt": "Instagram grid effect na ginawa gamit ang Image Splitter",
     "carouselExampleAlt": "Instagram carousel post effect na ginawa gamit ang Image Splitter",

@@ -97,6 +97,22 @@
   "language": {
     "switchLanguage": "Mudar Idioma"
   },
+  "structuredData": {
+    "websiteName": "AI Image Splitter - Ferramenta Online de Divisão de Imagens",
+    "appName": "AI Image Splitter - Ferramenta Online de Divisão de Imagens",
+    "appDescription": "Ferramenta gratuita online de divisão de imagens para criar grades perfeitas para Instagram, carrosséis de redes sociais e posts. O melhor divisor de imagens para necessidades do criador de grade do Instagram - rápido, fácil, sem marca d'água.",
+    "creativeWorkName": "Ferramenta de Divisão de Imagens",
+    "creativeWorkDescription": "Ferramenta profissional online de divisão de imagens que ajuda usuários a dividir imagens em layouts de grade perfeitos, especialmente projetada para Instagram e criação de conteúdo de redes sociais.",
+    "features": {
+      "splitImages": "Dividir Imagens",
+      "instagramGrid": "Criador de Grade do Instagram",
+      "carouselCreation": "Criação de Carrossel",
+      "batchDownload": "Download em Lote",
+      "freeToUse": "Gratuito para Usar"
+    },
+    "keywords": "divisor de imagem, divisor de imagem online, dividir imagem, criador de grade, criador de grade instagram, divisor de imagem instagram, redes sociais, carrossel",
+    "genre": "Ferramenta de Processamento de Imagem"
+  },
   "images": {
     "gridExampleAlt": "Efeito de grade Instagram criado com Image Splitter",
     "carouselExampleAlt": "Efeito de post carrossel Instagram criado com Image Splitter",

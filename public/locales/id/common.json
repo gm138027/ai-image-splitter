@@ -97,6 +97,22 @@
   "language": {
     "switchLanguage": "Ganti Bahasa"
   },
+  "structuredData": {
+    "websiteName": "AI Image Splitter - Alat Pemisah Gambar Online",
+    "appName": "AI Image Splitter - Alat Pemisah Gambar Online",
+    "appDescription": "Alat pemisah gambar online gratis untuk membuat grid sempurna untuk Instagram, carousel media sosial dan postingan. Pemisah gambar terbaik untuk kebutuhan pembuat grid Instagram - cepat, mudah, tanpa watermark.",
+    "creativeWorkName": "Alat Pemisah Gambar",
+    "creativeWorkDescription": "Alat pemisah gambar online profesional yang membantu pengguna memisahkan gambar menjadi tata letak grid sempurna, dirancang khusus untuk Instagram dan pembuatan konten media sosial.",
+    "features": {
+      "splitImages": "Pisahkan Gambar",
+      "instagramGrid": "Pembuat Grid Instagram",
+      "carouselCreation": "Pembuatan Carousel",
+      "batchDownload": "Download Batch",
+      "freeToUse": "Gratis Digunakan"
+    },
+    "keywords": "pemisah gambar, pemisah gambar online, pisahkan gambar, pembuat grid, pembuat grid instagram, pemisah gambar instagram, media sosial, carousel",
+    "genre": "Alat Pemrosesan Gambar"
+  },
   "images": {
     "gridExampleAlt": "Efek grid Instagram yang dibuat dengan Image Splitter",
     "carouselExampleAlt": "Efek post carousel Instagram yang dibuat dengan Image Splitter",

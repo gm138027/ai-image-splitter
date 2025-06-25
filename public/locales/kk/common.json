@@ -99,6 +99,22 @@
   "language": {
     "switchLanguage": "Тілді ауыстыру"
   },
+  "structuredData": {
+    "websiteName": "AI Image Splitter - Онлайн Сурет Бөлу Құралы",
+    "appName": "AI Image Splitter - Онлайн Сурет Бөлу Құралы",
+    "appDescription": "Instagram, әлеуметтік медиа карусельдері мен посттар үшін тамаша торларды жасау үшін тегін онлайн сурет бөлу құралы. Instagram тор жасаушы қажеттіліктері үшін ең жақсы сурет бөлгіші - жылдам, оңай, су белгісіз.",
+    "creativeWorkName": "Сурет Бөлу Құралы",
+    "creativeWorkDescription": "Пайдаланушыларға суреттерді тамаша тор макеттеріне бөлуге көмектесетін кәсіби онлайн сурет бөлу құралы, әсіресе Instagram және әлеуметтік медиа мазмұнын жасау үшін арнайы жасалған.",
+    "features": {
+      "splitImages": "Суреттерді Бөлу",
+      "instagramGrid": "Instagram Тор Жасаушысы",
+      "carouselCreation": "Карусель Жасау",
+      "batchDownload": "Топтық Жүктеп Алу",
+      "freeToUse": "Тегін Пайдалану"
+    },
+    "keywords": "сурет бөлгіші, онлайн сурет бөлгіші, суретті бөлу, тор жасаушысы, instagram тор жасаушысы, instagram сурет бөлгіші, әлеуметтік медиа, карусель",
+    "genre": "Сурет Өңдеу Құралы"
+  },
   "images": {
     "gridExampleAlt": "Image Splitter арқылы жасалған Instagram тор эффектісі",
     "carouselExampleAlt": "Image Splitter арқылы жасалған Instagram карусель жазба эффектісі",

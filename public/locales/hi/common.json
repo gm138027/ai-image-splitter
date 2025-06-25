@@ -99,6 +99,22 @@
   "language": {
     "switchLanguage": "भाषा बदलें"
   },
+  "structuredData": {
+    "websiteName": "AI Image Splitter - ऑनलाइन इमेज स्प्लिटर टूल",
+    "appName": "AI Image Splitter - ऑनलाइन इमेज स्प्लिटर टूल",
+    "appDescription": "Instagram, सोशल मीडिया कैरोसेल और पोस्ट के लिए परफेक्ट ग्रिड बनाने हेतु फ्री ऑनलाइन इमेज स्प्लिटर टूल। Instagram ग्रिड मेकर जरूरतों के लिए सबसे अच्छा इमेज स्प्लिटर - तेज़, आसान, बिना वॉटरमार्क।",
+    "creativeWorkName": "इमेज स्प्लिटर टूल",
+    "creativeWorkDescription": "प्रोफेशनल ऑनलाइन इमेज स्प्लिटर टूल जो यूजर्स को इमेज को परफेक्ट ग्रिड लेआउट में स्प्लिट करने में मदद करता है, खास तौर पर Instagram और सोशल मीडिया कंटेंट क्रिएशन के लिए डिज़ाइन किया गया।",
+    "features": {
+      "splitImages": "इमेज स्प्लिट करें",
+      "instagramGrid": "Instagram ग्रिड मेकर",
+      "carouselCreation": "कैरोसेल इमेज क्रिएशन",
+      "batchDownload": "बैच डाउनलोड",
+      "freeToUse": "फ्री यूज़"
+    },
+    "keywords": "इमेज स्प्लिटर, ऑनलाइन इमेज स्प्लिटर, इमेज स्प्लिट, ग्रिड मेकर, instagram ग्रिड मेकर, instagram इमेज स्प्लिटर, सोशल मीडिया, कैरोसेल",
+    "genre": "इमेज प्रोसेसिंग टूल"
+  },
   "images": {
     "gridExampleAlt": "Image Splitter के साथ बनाया गया Instagram ग्रिड इफेक्ट",
     "carouselExampleAlt": "Image Splitter के साथ बनाया गया Instagram कैरोसेल पोस्ट इफेक्ट",

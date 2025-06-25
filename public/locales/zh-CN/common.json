@@ -99,6 +99,22 @@
   "language": {
     "switchLanguage": "切换语言"
   },
+  "structuredData": {
+    "websiteName": "AI Image Splitter - 在线图像分割器",
+    "appName": "AI Image Splitter - 在线图像分割器",
+    "appDescription": "免费在线图片分割工具，专业的图像分割器帮您轻松分割图片为Instagram网格布局。最佳的Instagram网格制作器，支持社交媒体轮播图分割，快速、简单、无水印。",
+    "creativeWorkName": "图像分割工具",
+    "creativeWorkDescription": "专业的在线图像分割器，帮助用户将图片分割成完美的网格布局，特别适用于Instagram和社交媒体内容创作。",
+    "features": {
+      "splitImages": "图片分割",
+      "instagramGrid": "Instagram网格制作",
+      "carouselCreation": "轮播图制作",
+      "batchDownload": "批量下载",
+      "freeToUse": "免费使用"
+    },
+    "keywords": "图片分割器, 在线图像分割器, 分割图片, 网格制作器, Instagram网格制作器, Instagram图片分割器, 社交媒体, 轮播图, 在线工具",
+    "genre": "图像处理工具"
+  },
   "images": {
     "gridExampleAlt": "使用Image Splitter创建Instagram网格效果图",
     "carouselExampleAlt": "使用Image Splitter创建Instagram轮播帖子效果图",
