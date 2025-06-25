@@ -132,35 +132,67 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
     "mainEntity": locale === 'zh-CN' ? [
       {
         "@type": "Question",
-        "name": "如何使用AI Image Splitter分割图片？",
+        "name": "什么是图片分割工具，它是如何工作的？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "使用我们的在线图像分割器非常简单：1) 上传您的图片，2) 选择分割模式（垂直、水平或网格），3) 设置分割参数，4) 点击分割按钮，5) 下载分割后的图片。整个过程完全免费，无需注册。"
-        }
-      },
-      {
-        "@type": "Question", 
-        "name": "支持哪些图片格式？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "我们的图像分割器支持所有主流图片格式，包括JPG、PNG、GIF、WebP和BMP格式。最大支持10MB的图片文件。"
+          "text": "图片分割工具是一种数字化工具，可以将单张图片分割成多个较小的部分。我们的网页版图像分割器使用先进算法将您的图像分割成完美的网格或片段。只需上传图片，选择图像分割方式，然后下载结果。所有处理都在您的浏览器中完成，确保图片隐私安全。"
         }
       },
       {
         "@type": "Question",
-        "name": "分割后的图片可以用于Instagram吗？",
+        "name": "如何将图片分割成多个部分？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "当然可以！我们的工具专为Instagram设计，支持创建完美的Instagram网格布局和轮播帖子。分割后的图片可以直接上传到Instagram使用。"
+          "text": "操作很简单：1）上传您的图片（支持JPG、PNG、GIF等，最大10MB），2）选择您喜欢的分割模式 - 垂直分割、水平分割或网格分割，3）调整行数和列数，4）点击分割图像按钮，5）下载单个片段或获取ZIP打包文件。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "我可以用这个工具制作Instagram网格帖子吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "当然可以！我们的图像分割器非常适合制作Instagram网格布局和轮播帖子。热门格式包括用于动态拼图的3x3网格、用于轮播故事的条带，以及适合独特布局的自定义尺寸。输出确保完美符合Instagram的要求。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "支持哪些文件格式？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "我们的图像分割器支持所有常见的图片格式，包括JPG、PNG、GIF和WebP等。您也可以将分割后的图片导出为JPG、PNG、WebP或BMP格式。最大文件大小为10MB，尺寸最高支持4096x4096像素以获得最佳性能。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "这个工具完全免费吗？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "是的，我们图像分割器100%免费，没有任何隐藏费用。您的图片上不会有水印，无需注册账户，也没有使用限制。无论是个人项目、商业内容还是商用目的，都可以无限制使用。"
         }
       }
     ] : [
       {
         "@type": "Question",
-        "name": "How to use AI Image Splitter to split images?",
+        "name": "What is an image splitter and how does it work?",
         "acceptedAnswer": {
-          "@type": "Answer", 
-          "text": "Using our image splitter online tool is simple: 1) Upload your image, 2) Choose split mode (vertical, horizontal, or grid), 3) Set split parameters, 4) Click the split button, 5) Download the split images. The entire process is completely free with no registration required."
+          "@type": "Answer",
+          "text": "An image splitter is a digital tool that divides a single image into multiple smaller parts. Our web-based image splitter uses advanced algorithms to split your images into perfect grids or segments. Simply upload your image, choose your image splitting method, and download the results. All processing happens directly in your browser, ensuring your image privacy and security."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I split an image into multiple parts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It's simple: 1) Upload your image (supports JPG, PNG, GIF, etc., max 10MB), 2) Choose your preferred splitting mode - vertical split, horizontal split, or grid split, 3) Adjust rows and columns, 4) Click the split image button, 5) Download individual segments or get a ZIP package."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use this tool to create Instagram grid posts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! Our image splitter is perfect for creating Instagram grid layouts and carousel posts. Popular formats include 3x3 grids for feed puzzles, strips for carousel stories, and custom dimensions for unique layouts. The output ensures perfect compatibility with Instagram requirements."
         }
       },
       {
@@ -172,11 +204,11 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
         }
       },
       {
-        "@type": "Question", 
-        "name": "Can the split images be used for Instagram?",
+        "@type": "Question",
+        "name": "Is this tool completely free?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Absolutely! Our tool is specifically designed for Instagram, supporting the creation of perfect Instagram grid layouts and carousel posts. Split images can be directly uploaded to Instagram."
+          "text": "Yes, our image splitter is 100% free with no hidden costs. There are no watermarks on your images, no account registration required, and no usage limits. Whether for personal projects, commercial content, or business purposes, you can use it unlimited."
         }
       }
     ]

@@ -79,28 +79,8 @@ const FAQ: React.FC = () => {
     }
   ]
 
-  // 结构化数据 for SEO
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqData.map(item => ({
-      "@type": "Question",
-      "name": item.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": item.answer
-      }
-    }))
-  }
-
   return (
     <section className="py-16 bg-gradient-to-b from-gray-50 to-white" id="faq">
-      {/* Structured Data for SEO */}
-      <script 
-        type="application/ld+json" 
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} 
-      />
-      
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
@@ -115,7 +95,7 @@ const FAQ: React.FC = () => {
         </div>
 
         {/* FAQ Items */}
-        <div className="space-y-4">
+        <div className="space-y-6 mb-16">
           {faqData.map((item) => (
             <div 
               key={item.id}
@@ -151,7 +131,7 @@ const FAQ: React.FC = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="mt-12 text-center">
+        <div className="mt-16">
           <div className="bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-4">
               {t('faq.cta.title')}
