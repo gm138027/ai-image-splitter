@@ -125,9 +125,14 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
   const faqData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": `${currentUrl}#faqpage`,
     "name": t('faq.title'),
     "description": t('faq.description'),
     "url": currentUrl,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": currentUrl
+    },
     "about": {
       "@type": "Thing",
       "name": t('structuredData.creativeWorkName')
@@ -140,6 +145,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
     "mainEntity": [
       {
         "@type": "Question",
+        "@id": `${currentUrl}#faq-question-1`,
         "name": t('faq.whatIsImageSplitter.question'),
         "acceptedAnswer": {
           "@type": "Answer",
@@ -148,6 +154,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
       },
       {
         "@type": "Question",
+        "@id": `${currentUrl}#faq-question-2`,
         "name": t('faq.howToSplitImage.question'),
         "acceptedAnswer": {
           "@type": "Answer",
@@ -156,6 +163,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
       },
       {
         "@type": "Question",
+        "@id": `${currentUrl}#faq-question-3`,
         "name": t('faq.instagramGridMaker.question'),
         "acceptedAnswer": {
           "@type": "Answer",
@@ -164,6 +172,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
       },
       {
         "@type": "Question",
+        "@id": `${currentUrl}#faq-question-4`,
         "name": t('faq.splitImage3x3.question'),
         "acceptedAnswer": {
           "@type": "Answer",
@@ -172,6 +181,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
       },
       {
         "@type": "Question",
+        "@id": `${currentUrl}#faq-question-5`,
         "name": t('faq.supportedFormats.question'),
         "acceptedAnswer": {
           "@type": "Answer",
@@ -180,6 +190,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
       },
       {
         "@type": "Question",
+        "@id": `${currentUrl}#faq-question-6`,
         "name": t('faq.freeToUse.question'),
         "acceptedAnswer": {
           "@type": "Answer",
@@ -188,6 +199,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
       },
       {
         "@type": "Question",
+        "@id": `${currentUrl}#faq-question-7`,
         "name": t('faq.imageQuality.question'),
         "acceptedAnswer": {
           "@type": "Answer",
@@ -196,6 +208,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
       },
       {
         "@type": "Question",
+        "@id": `${currentUrl}#faq-question-8`,
         "name": t('faq.privacySecurity.question'),
         "acceptedAnswer": {
           "@type": "Answer",
@@ -204,6 +217,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
       },
       {
         "@type": "Question",
+        "@id": `${currentUrl}#faq-question-9`,
         "name": t('faq.mobileFriendly.question'),
         "acceptedAnswer": {
           "@type": "Answer",
@@ -212,6 +226,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
       },
       {
         "@type": "Question",
+        "@id": `${currentUrl}#faq-question-10`,
         "name": t('faq.batchProcessing.question'),
         "acceptedAnswer": {
           "@type": "Answer",
@@ -220,6 +235,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
       },
       {
         "@type": "Question",
+        "@id": `${currentUrl}#faq-question-11`,
         "name": t('faq.customDimensions.question'),
         "acceptedAnswer": {
           "@type": "Answer",
