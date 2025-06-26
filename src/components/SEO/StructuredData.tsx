@@ -15,9 +15,21 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
   const organizationData = {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://aiimagesplitter.com/#organization",
     "name": "AI Image Splitter",
+    "alternateName": "AI图像分割器",
     "url": "https://aiimagesplitter.com",
     "logo": {
+      "@type": "ImageObject",
+      "@id": "https://aiimagesplitter.com/#logo",
+      "url": "https://aiimagesplitter.com/android-chrome-512x512.png",
+      "contentUrl": "https://aiimagesplitter.com/android-chrome-512x512.png",
+      "width": 512,
+      "height": 512,
+      "caption": "AI Image Splitter Logo",
+      "inLanguage": locale === 'zh-CN' ? "zh-CN" : "en-US"
+    },
+    "image": {
       "@type": "ImageObject",
       "url": "https://aiimagesplitter.com/android-chrome-512x512.png",
       "width": 512,
@@ -26,10 +38,19 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
     "sameAs": [
       "https://aiimagesplitter.com"
     ],
+    "description": t('structuredData.appDescription'),
+    "foundingDate": "2025-06-20",
+    "knowsAbout": [
+      "Image Splitting",
+      "Instagram Grid Making",
+      "Image Processing",
+      "Social Media Tools"
+    ],
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "customer service",
-      "url": "https://aiimagesplitter.com"
+      "url": "https://aiimagesplitter.com",
+      "availableLanguage": ["en", "zh-CN", "vi", "ru", "pt", "ms", "kk", "id", "hi", "fil"]
     }
   }
 
