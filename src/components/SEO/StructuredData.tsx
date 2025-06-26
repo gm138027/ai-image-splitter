@@ -160,10 +160,10 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
       },
       {
         "@type": "Question",
-        "name": t('faq.downloadSplitImages.question'),
+        "name": t('faq.supportedFormats.question'),
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": t('faq.downloadSplitImages.answer')
+          "text": t('faq.supportedFormats.answer')
         }
       },
       {
@@ -176,18 +176,42 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
       },
       {
         "@type": "Question",
-        "name": t('faq.onlineProcessing.question'),
+        "name": t('faq.imageQuality.question'),
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": t('faq.onlineProcessing.answer')
+          "text": t('faq.imageQuality.answer')
         }
       },
       {
         "@type": "Question",
-        "name": t('faq.qualityLoss.question'),
+        "name": t('faq.privacySecurity.question'),
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": t('faq.qualityLoss.answer')
+          "text": t('faq.privacySecurity.answer')
+        }
+      },
+      {
+        "@type": "Question",
+        "name": t('faq.mobileFriendly.question'),
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": t('faq.mobileFriendly.answer')
+        }
+      },
+      {
+        "@type": "Question",
+        "name": t('faq.batchProcessing.question'),
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": t('faq.batchProcessing.answer')
+        }
+      },
+      {
+        "@type": "Question",
+        "name": t('faq.customDimensions.question'),
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": t('faq.customDimensions.answer')
         }
       }
     ]
