@@ -121,191 +121,73 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
     "inLanguage": locale === 'zh-CN' ? "zh-CN" : "en-US"
   }
 
-  // 常见问题结构化数据 - 改用QAPage以适应非权威网站
+  // 常见问题结构化数据 - 回到FAQPage但采用最简化结构
   const faqData = {
     "@context": "https://schema.org",
-    "@type": "QAPage",
-    "@id": `${currentUrl}#qapage`,
-    "name": t('faq.title'),
-    "description": t('faq.description'),
-    "url": currentUrl,
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": currentUrl
-    },
-    "about": {
-      "@type": "Thing",
-      "name": t('structuredData.creativeWorkName')
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "AI Image Splitter",
-      "url": "https://aiimagesplitter.com"
-    },
+    "@type": "FAQPage",
     "mainEntity": [
       {
         "@type": "Question",
-        "@id": `${currentUrl}#qa-question-1`,
         "name": t('faq.whatIsImageSplitter.question'),
-        "answerCount": 1,
         "acceptedAnswer": {
           "@type": "Answer",
-          "@id": `${currentUrl}#qa-answer-1`,
-          "text": t('faq.whatIsImageSplitter.answer'),
-          "author": {
-            "@type": "Organization",
-            "name": "AI Image Splitter"
-          }
+          "text": t('faq.whatIsImageSplitter.answer')
         }
       },
       {
         "@type": "Question",
-        "@id": `${currentUrl}#qa-question-2`,
         "name": t('faq.howToSplitImage.question'),
-        "answerCount": 1,
         "acceptedAnswer": {
           "@type": "Answer",
-          "@id": `${currentUrl}#qa-answer-2`,
-          "text": t('faq.howToSplitImage.answer'),
-          "author": {
-            "@type": "Organization",
-            "name": "AI Image Splitter"
-          }
+          "text": t('faq.howToSplitImage.answer')
         }
       },
       {
         "@type": "Question",
-        "@id": `${currentUrl}#qa-question-3`,
         "name": t('faq.instagramGridMaker.question'),
-        "answerCount": 1,
         "acceptedAnswer": {
           "@type": "Answer",
-          "@id": `${currentUrl}#qa-answer-3`,
-          "text": t('faq.instagramGridMaker.answer'),
-          "author": {
-            "@type": "Organization",
-            "name": "AI Image Splitter"
-          }
+          "text": t('faq.instagramGridMaker.answer')
         }
       },
       {
         "@type": "Question",
-        "@id": `${currentUrl}#qa-question-4`,
         "name": t('faq.splitImage3x3.question'),
-        "answerCount": 1,
         "acceptedAnswer": {
           "@type": "Answer",
-          "@id": `${currentUrl}#qa-answer-4`,
-          "text": t('faq.splitImage3x3.answer'),
-          "author": {
-            "@type": "Organization",
-            "name": "AI Image Splitter"
-          }
+          "text": t('faq.splitImage3x3.answer')
         }
       },
       {
         "@type": "Question",
-        "@id": `${currentUrl}#qa-question-5`,
-        "name": t('faq.supportedFormats.question'),
-        "answerCount": 1,
+        "name": t('faq.downloadSplitImages.question'),
         "acceptedAnswer": {
           "@type": "Answer",
-          "@id": `${currentUrl}#qa-answer-5`,
-          "text": t('faq.supportedFormats.answer'),
-          "author": {
-            "@type": "Organization",
-            "name": "AI Image Splitter"
-          }
+          "text": t('faq.downloadSplitImages.answer')
         }
       },
       {
         "@type": "Question",
-        "@id": `${currentUrl}#qa-question-6`,
         "name": t('faq.freeToUse.question'),
-        "answerCount": 1,
         "acceptedAnswer": {
           "@type": "Answer",
-          "@id": `${currentUrl}#qa-answer-6`,
-          "text": t('faq.freeToUse.answer'),
-          "author": {
-            "@type": "Organization",
-            "name": "AI Image Splitter"
-          }
+          "text": t('faq.freeToUse.answer')
         }
       },
       {
         "@type": "Question",
-        "@id": `${currentUrl}#qa-question-7`,
-        "name": t('faq.imageQuality.question'),
-        "answerCount": 1,
+        "name": t('faq.onlineProcessing.question'),
         "acceptedAnswer": {
           "@type": "Answer",
-          "@id": `${currentUrl}#qa-answer-7`,
-          "text": t('faq.imageQuality.answer'),
-          "author": {
-            "@type": "Organization",
-            "name": "AI Image Splitter"
-          }
+          "text": t('faq.onlineProcessing.answer')
         }
       },
       {
         "@type": "Question",
-        "@id": `${currentUrl}#qa-question-8`,
-        "name": t('faq.privacySecurity.question'),
-        "answerCount": 1,
+        "name": t('faq.qualityLoss.question'),
         "acceptedAnswer": {
           "@type": "Answer",
-          "@id": `${currentUrl}#qa-answer-8`,
-          "text": t('faq.privacySecurity.answer'),
-          "author": {
-            "@type": "Organization",
-            "name": "AI Image Splitter"
-          }
-        }
-      },
-      {
-        "@type": "Question",
-        "@id": `${currentUrl}#qa-question-9`,
-        "name": t('faq.mobileFriendly.question'),
-        "answerCount": 1,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "@id": `${currentUrl}#qa-answer-9`,
-          "text": t('faq.mobileFriendly.answer'),
-          "author": {
-            "@type": "Organization",
-            "name": "AI Image Splitter"
-          }
-        }
-      },
-      {
-        "@type": "Question",
-        "@id": `${currentUrl}#qa-question-10`,
-        "name": t('faq.batchProcessing.question'),
-        "answerCount": 1,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "@id": `${currentUrl}#qa-answer-10`,
-          "text": t('faq.batchProcessing.answer'),
-          "author": {
-            "@type": "Organization",
-            "name": "AI Image Splitter"
-          }
-        }
-      },
-      {
-        "@type": "Question",
-        "@id": `${currentUrl}#qa-question-11`,
-        "name": t('faq.customDimensions.question'),
-        "answerCount": 1,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "@id": `${currentUrl}#qa-answer-11`,
-          "text": t('faq.customDimensions.answer'),
-          "author": {
-            "@type": "Organization",
-            "name": "AI Image Splitter"
-          }
+          "text": t('faq.qualityLoss.answer')
         }
       }
     ]
