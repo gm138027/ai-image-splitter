@@ -60,6 +60,19 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
     "@type": "WebSite",
     "name": t('structuredData.websiteName'),
     "url": "https://aiimagesplitter.com",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://aiimagesplitter.com/images/penguin-split.png",
+      "width": 600,
+      "height": 400,
+      "caption": "AI Image Splitter in action"
+    },
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://aiimagesplitter.com/images/penguin-split.png",
+      "width": 600,
+      "height": 400
+    },
     "publisher": {
       "@type": "Organization",
       "name": "AI Image Splitter",
@@ -84,6 +97,14 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
     "name": t('structuredData.appName'),
     "description": t('structuredData.appDescription'),
     "url": currentUrl,
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://aiimagesplitter.com/android-chrome-512x512.png",
+      "width": 512,
+      "height": 512,
+      "caption": "AI Image Splitter - Free Online Image Splitter Tool",
+      "contentUrl": "https://aiimagesplitter.com/android-chrome-512x512.png"
+    },
     "applicationCategory": "MultimediaApplication",
     "operatingSystem": "Any",
     "permissions": "browser",
@@ -101,7 +122,9 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
       "url": "https://aiimagesplitter.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://aiimagesplitter.com/android-chrome-512x512.png"
+        "url": "https://aiimagesplitter.com/android-chrome-512x512.png",
+        "width": 512,
+        "height": 512
       }
     },
     "publisher": {
@@ -110,7 +133,9 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
       "url": "https://aiimagesplitter.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://aiimagesplitter.com/android-chrome-512x512.png"
+        "url": "https://aiimagesplitter.com/android-chrome-512x512.png",
+        "width": 512,
+        "height": 512
       }
     },
     "featureList": [
@@ -238,6 +263,43 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
     ]
   }
 
+  // 文章结构化数据 - 有助于图片在搜索结果中显示
+  const articleData = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": t('structuredData.appName'),
+    "description": t('structuredData.appDescription'),
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://aiimagesplitter.com/android-chrome-512x512.png",
+      "width": 512,
+      "height": 512,
+      "caption": "AI Image Splitter Logo"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "AI Image Splitter",
+      "url": "https://aiimagesplitter.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AI Image Splitter",
+      "url": "https://aiimagesplitter.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aiimagesplitter.com/android-chrome-512x512.png",
+        "width": 512,
+        "height": 512
+      }
+    },
+    "datePublished": "2025-01-01",
+    "dateModified": new Date().toISOString().split('T')[0],
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": currentUrl
+    }
+  }
+
   return (
     <Head>
       <script
@@ -259,6 +321,10 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleData) }}
       />
     </Head>
   )

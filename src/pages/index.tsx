@@ -52,17 +52,19 @@ const Home: NextPage = () => {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://aiimagesplitter.com" />
         <meta property="og:site_name" content="AI Image Splitter" />
-        <meta property="og:image" content="https://aiimagesplitter.com/android-chrome-512x512.png" />
-        <meta property="og:image:width" content="512" />
-        <meta property="og:image:height" content="512" />
+        <meta property="og:image" content="https://aiimagesplitter.com/images/penguin-split.png" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="400" />
         <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:alt" content="AI Image Splitter - Free Online Image Splitting Tool" />
         <meta property="og:locale" content={router.locale === 'zh-CN' ? 'zh_CN' : 'en_US'} />
         
         {/* Twitter Card 元数据 */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={t('seo.title')} />
         <meta name="twitter:description" content={t('seo.description')} />
-        <meta name="twitter:image" content="https://aiimagesplitter.com/android-chrome-512x512.png" />
+        <meta name="twitter:image" content="https://aiimagesplitter.com/images/penguin-split.png" />
+        <meta name="twitter:image:alt" content="AI Image Splitter - Free Online Image Splitting Tool" />
         <meta name="twitter:site" content="@aiimagesplitter" />
         
         {/* 搜索引擎优化 */}
