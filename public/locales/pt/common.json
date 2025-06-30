@@ -11,14 +11,8 @@
     "about": "Blog"
   },
   "hero": {
-    "title": "Divisor de Imagens Online e Criador de Grade",
-    "description": "Se você está procurando \"como dividir imagens em grades do Instagram\", você veio ao lugar certo. Nosso divisor de imagens é perfeito não apenas para divisão online de imagens, mas também para criação de grades do Instagram, sem necessidade de registro e completamente gratuito."
-  },
-  "features": {
-    "upload": "Carregar Imagem",
-    "split": "Dividir e Grade",
-    "download": "Baixar Tudo",
-    "fast": "Super Rápido"
+    "title": "Divisor de Imagem Online e Criador de Grade",
+    "description": "Se você está procurando \"como dividir uma imagem em várias imagens?\", você veio ao lugar certo. Nosso divisor de imagem é perfeito não apenas para divisão de imagem online, mas também para criação de grade do Instagram, sem necessidade de registro e completamente gratuito."
   },
   "tool": {
     "uploadPrompt": "Arraste arquivos aqui ou clique para carregar",

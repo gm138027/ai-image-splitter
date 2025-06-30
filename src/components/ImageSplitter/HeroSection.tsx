@@ -52,34 +52,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
             {t('hero.description')}
           </p>
-          
-          {/* Feature Icons */}
-          <div className="flex flex-wrap justify-center gap-6 mb-16">
-            <div className="flex items-center space-x-3 bg-white/60 backdrop-blur-sm px-6 py-3 rounded-2xl shadow-modern hover:shadow-modern-lg transition-shadow duration-300">
-              <div className="w-8 h-8 bg-gradient-blue rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                <Upload className="w-4 h-4 text-white" />
-              </div>
-              <span className="font-medium text-gray-700">{t('features.upload')}</span>
-            </div>
-            <div className="flex items-center space-x-3 bg-white/60 backdrop-blur-sm px-6 py-3 rounded-2xl shadow-modern hover:shadow-modern-lg transition-shadow duration-300">
-              <div className="w-8 h-8 bg-gradient-purple rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                <Grid3X3 className="w-4 h-4 text-white" />
-              </div>
-              <span className="font-medium text-gray-700">{t('features.split')}</span>
-            </div>
-            <div className="flex items-center space-x-3 bg-white/60 backdrop-blur-sm px-6 py-3 rounded-2xl shadow-modern hover:shadow-modern-lg transition-shadow duration-300">
-              <div className="w-8 h-8 bg-gradient-blue rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                <Download className="w-4 h-4 text-white" />
-              </div>
-              <span className="font-medium text-gray-700">{t('features.download')}</span>
-            </div>
-            <div className="flex items-center space-x-3 bg-white/60 backdrop-blur-sm px-6 py-3 rounded-2xl shadow-modern hover:shadow-modern-lg transition-shadow duration-300">
-              <div className="w-8 h-8 bg-gradient-modern rounded-lg flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                <Zap className="w-4 h-4 text-white" />
-              </div>
-              <span className="font-medium text-gray-700">{t('features.fast')}</span>
-            </div>
-          </div>
         </div>
 
         {/* Upload Area */}
