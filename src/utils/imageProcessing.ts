@@ -1,15 +1,15 @@
 import type { SplitImage, SplitConfig } from '@/types'
 
 /**
- * 验证文件是否为有效的图像文件
+ * Validate if file is a valid image file
  */
 export const validateImageFile = (file: File): { isValid: boolean; error?: string } => {
-  // 检查文件类型
+  // Check file type
   if (!file.type.startsWith('image/')) {
     return { isValid: false, error: 'invalidFileType' }
   }
   
-  // 检查文件大小 (最大10MB)
+  // Check file size (max 10MB)
   const maxSize = 10 * 1024 * 1024 // 10MB
   if (file.size > maxSize) {
     return { isValid: false, error: 'fileTooLarge' }
@@ -19,7 +19,7 @@ export const validateImageFile = (file: File): { isValid: boolean; error?: strin
 }
 
 /**
- * 创建图像对象从文件
+ * Create image object from file
  */
 export const createImageFromFile = (file: File): Promise<HTMLImageElement> => {
   return new Promise((resolve, reject) => {
@@ -31,7 +31,7 @@ export const createImageFromFile = (file: File): Promise<HTMLImageElement> => {
 
     const img = new Image()
     img.onload = () => {
-      // 检查图片尺寸 (最大4096x4096)
+      // Check image dimensions (max 4096x4096)
       const maxDimension = 4096
       if (img.width > maxDimension || img.height > maxDimension) {
         reject(new Error('imageTooLarge'))
@@ -45,7 +45,7 @@ export const createImageFromFile = (file: File): Promise<HTMLImageElement> => {
 }
 
 /**
- * 计算分割参数
+ * Calculate split parameters
  */
 export const calculateSplitParams = (
   image: HTMLImageElement,
@@ -81,7 +81,7 @@ export const calculateSplitParams = (
 }
 
 /**
- * 计算分割位置
+ * Calculate split position
  */
 export const calculateSplitPosition = (
   index: number,
@@ -112,7 +112,7 @@ export const calculateSplitPosition = (
 }
 
 /**
- * 创建分割图像
+ * Create split image
  */
 export const createSplitImage = async (
   sourceImage: HTMLImageElement,
@@ -128,14 +128,14 @@ export const createSplitImage = async (
 
   const { sx, sy } = calculateSplitPosition(index, config, splitWidth, splitHeight)
 
-  // 绘制图片
+  // Draw image
   tempCtx.drawImage(
     sourceImage,
     sx, sy, splitWidth, splitHeight,
     0, 0, splitWidth, splitHeight
   )
 
-  // 转换为Blob
+  // Convert to Blob
   const blob = await new Promise<Blob>((resolve) => {
     tempCanvas.toBlob((blob) => resolve(blob!), `image/${config.outputFormat}`)
   })
@@ -148,7 +148,7 @@ export const createSplitImage = async (
 }
 
 /**
- * 主要的图像分割函数
+ * Main image splitting function
  */
 export const splitImage = async (
   sourceImage: HTMLImageElement,
@@ -172,7 +172,7 @@ export const splitImage = async (
 }
 
 /**
- * 下载单个图像
+ * Download single image
  */
 export const downloadSingleImage = (
   splitImage: SplitImage,
@@ -187,14 +187,14 @@ export const downloadSingleImage = (
   link.click()
   document.body.removeChild(link)
   
-  // 清理内存
+  // Clean up memory
   setTimeout(() => {
     URL.revokeObjectURL(link.href)
   }, 100)
 }
 
 /**
- * 批量下载图像（ZIP格式）
+ * Batch download images (ZIP format)
  */
 export const downloadAllImages = async (
   splitImages: SplitImage[],
@@ -203,7 +203,7 @@ export const downloadAllImages = async (
   if (splitImages.length === 0) return
 
   try {
-    // 动态导入JSZip以减小初始包大小
+    // Dynamically import JSZip to reduce initial bundle size
     const JSZip = (await import('jszip')).default
     const zip = new JSZip()
 

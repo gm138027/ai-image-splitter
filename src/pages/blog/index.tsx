@@ -7,6 +7,8 @@ import { useRouter } from 'next/router'
 import Layout from '@/components/Layout'
 import Image from 'next/image'
 import { Calendar, Clock, ArrowRight } from 'lucide-react'
+import HreflangTags from '@/components/SEO/HreflangTags'
+import LanguageSEO from '@/components/SEO/LanguageSEO'
 
 interface BlogPost {
   id: string;
@@ -36,11 +38,14 @@ const BlogIndex: NextPage = () => {
 
   return (
     <>
+      {/* Use LanguageSEO component to replace basic SEO tags */}
+      <LanguageSEO 
+        title={`${t('blog:title')} - AI Image Splitter`}
+        description={t('blog:description')}
+        keywords="AI image splitter blog, tutorials, tips, Instagram grid, social media"
+      />
+      
       <Head>
-        <title>{t('blog:title')} - AI Image Splitter</title>
-        <meta name="description" content={t('blog:description')} />
-        <meta name="keywords" content="AI image splitter blog, tutorials, tips, Instagram grid, social media" />
-        <link rel="canonical" href="https://aiimagesplitter.com/blog" />
         
         {/* Open Graph */}
         <meta property="og:title" content={`${t('blog:title')} - AI Image Splitter`} />
@@ -53,6 +58,9 @@ const BlogIndex: NextPage = () => {
         <meta name="twitter:title" content={`${t('blog:title')} - AI Image Splitter`} />
         <meta name="twitter:description" content={t('blog:description')} />
       </Head>
+      
+      {/* hreflang和canonical标记 */}
+      <HreflangTags />
 
       <Layout>
         <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-primary-50/30">

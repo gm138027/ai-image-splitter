@@ -9,6 +9,8 @@ import Layout from '@/components/Layout'
 import Image from 'next/image'
 import { Calendar, Clock, ArrowLeft, ExternalLink } from 'lucide-react'
 import DomainLink from '@/components/UI/DomainLink'
+import HreflangTags from '@/components/SEO/HreflangTags'
+import LanguageSEO from '@/components/SEO/LanguageSEO'
 
 // 用于解析翻译文本中的{domainLink}占位符的函数
 const parseTextWithDomainLink = (text: string): React.ReactNode => {
@@ -32,11 +34,14 @@ const CompleteGuide: NextPage = () => {
 
   return (
     <>
+      {/* Use LanguageSEO component to replace basic SEO tags */}
+      <LanguageSEO 
+        title={`${t('blog:posts.complete-guide.title')} - AI Image Splitter`}
+        description={t('blog:posts.complete-guide.description')}
+        keywords={t('blog:posts.complete-guide.keywords')}
+      />
+      
       <Head>
-        <title>{t('blog:posts.complete-guide.title')} - AI Image Splitter</title>
-        <meta name="description" content={t('blog:posts.complete-guide.description')} />
-        <meta name="keywords" content={t('blog:posts.complete-guide.keywords')} />
-        <link rel="canonical" href="https://aiimagesplitter.com/blog/complete-guide" />
         
         {/* Open Graph */}
         <meta property="og:title" content={`${t('blog:posts.complete-guide.title')} - AI Image Splitter`} />
@@ -86,6 +91,9 @@ const CompleteGuide: NextPage = () => {
           }}
         />
       </Head>
+      
+      {/* hreflang和canonical标记 */}
+      <HreflangTags />
 
       <Layout>
         <article className="min-h-screen bg-white">

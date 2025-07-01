@@ -7,6 +7,8 @@ import { useRouter } from 'next/router'
 import Layout from '@/components/Layout'
 import ImageSplitter from '@/components/ImageSplitter'
 import StructuredData from '@/components/SEO/StructuredData'
+import HreflangTags from '@/components/SEO/HreflangTags'
+import LanguageSEO from '@/components/SEO/LanguageSEO'
 
 const Home: NextPage = () => {
   const { t } = useTranslation('common')
@@ -15,9 +17,9 @@ const Home: NextPage = () => {
   const [isInToolMode, setIsInToolMode] = useState(false)
 
   const handleLogoClick = () => {
-    // 通过改变key来强制重新渲染ImageSplitter组件，从而重置状态
+    // Force re-render of ImageSplitter component by changing key to reset state
     setResetKey(prev => prev + 1)
-    // 重置工具模式状态
+    // Reset tool mode state
     setIsInToolMode(false)
   }
 
@@ -27,12 +29,12 @@ const Home: NextPage = () => {
 
   return (
     <>
+      {/* Use new LanguageSEO component to replace original basic SEO tags */}
+      <LanguageSEO />
+      
       <Head>
-        <title>{t('seo.title')}</title>
-        <meta name="description" content={t('seo.description')} />
-        <meta name="keywords" content={t('seo.keywords')} />
         
-        {/* 网站图标配置 - 解决浏览器标签页显示问题 */}
+        {/* Website icon configuration - solve browser tab display issue */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -42,11 +44,11 @@ const Home: NextPage = () => {
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#3b82f6" />
         
-        {/* 添加更多logo相关的meta标签 */}
+        {/* Add more logo-related meta tags */}
         <meta name="msapplication-TileImage" content="/android-chrome-512x512.png" />
         <meta name="msapplication-TileColor" content="#3b82f6" />
         
-        {/* Open Graph 元数据 */}
+        {/* Open Graph metadata */}
         <meta property="og:title" content={t('seo.title')} />
         <meta property="og:description" content={t('seo.description')} />
         <meta property="og:type" content="website" />
@@ -59,7 +61,7 @@ const Home: NextPage = () => {
         <meta property="og:image:alt" content="AI Image Splitter - Free Online Image Splitting Tool" />
         <meta property="og:locale" content={router.locale === 'zh-CN' ? 'zh_CN' : 'en_US'} />
         
-        {/* Twitter Card 元数据 */}
+        {/* Twitter Card metadata */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={t('seo.title')} />
         <meta name="twitter:description" content={t('seo.description')} />
@@ -67,17 +69,19 @@ const Home: NextPage = () => {
         <meta name="twitter:image:alt" content="AI Image Splitter - Free Online Image Splitting Tool" />
         <meta name="twitter:site" content="@aiimagesplitter" />
         
-        {/* 搜索引擎优化 */}
-        <link rel="canonical" href="https://aiimagesplitter.com" />
+        {/* Search engine optimization */}
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         
-        {/* 预加载重要图片 */}
+        {/* Preload important images */}
         <link rel="preload" href="/images/penguin-original.png" as="image" />
         <link rel="preload" href="/images/penguin-split.png" as="image" />
       </Head>
       
-      {/* 结构化数据 */}
+      {/* hreflang and canonical tags - solve multilingual website alternate page issue */}
+      <HreflangTags />
+      
+      {/* Structured data */}
       <StructuredData locale={router.locale} />
       
       <Layout onLogoClick={handleLogoClick} isInToolMode={isInToolMode}>

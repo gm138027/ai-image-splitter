@@ -8,6 +8,8 @@ import { useRouter } from 'next/router'
 import { ArrowLeft, Shield, Lock, Eye, Users, Globe, FileText, Mail } from 'lucide-react'
 import Layout from '@/components/Layout'
 import DomainLink from '@/components/UI/DomainLink'
+import HreflangTags from '@/components/SEO/HreflangTags'
+import LanguageSEO from '@/components/SEO/LanguageSEO'
 
 const PrivacyPolicy: NextPage = () => {
   const { t } = useTranslation(['privacy', 'common'])
@@ -35,12 +37,15 @@ const PrivacyPolicy: NextPage = () => {
 
   return (
     <>
+      {/* Use LanguageSEO component to replace basic SEO tags */}
+      <LanguageSEO 
+        title={`${t('privacy:title')} - AI Image Splitter`}
+        description={t('privacy:description')}
+        keywords="privacy policy, data protection, AI image splitter"
+      />
+      
       <Head>
-        {/* SEO元数据 */}
-        <title>{t('privacy:title')} - AI Image Splitter</title>
-        <meta name="description" content={t('privacy:description')} />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://aiimagesplitter.com/privacy" />
+        {/* robots directive retained as LanguageSEO already includes more complete robots settings */}
         
         {/* Open Graph */}
         <meta property="og:title" content={`${t('privacy:title')} - AI Image Splitter`} />
@@ -79,6 +84,9 @@ const PrivacyPolicy: NextPage = () => {
           }}
         />
       </Head>
+      
+      {/* hreflang和canonical标记 */}
+      <HreflangTags />
 
       <Layout>
         <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30 py-12">

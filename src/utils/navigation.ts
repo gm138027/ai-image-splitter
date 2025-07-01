@@ -1,16 +1,16 @@
 import { NextRouter } from 'next/router'
 
 /**
- * 全局导航工具类 - 提供统一的跨页面导航功能
- * 遵循SOLID原则，单一职责处理导航逻辑
+ * Global navigation utility class - provides unified cross-page navigation functionality
+ * Follows SOLID principles, single responsibility for handling navigation logic
  */
 export class NavigationUtils {
   /**
-   * 智能导航到首页的指定锚点
-   * @param router Next.js路由器实例
-   * @param targetId 目标锚点ID
-   * @param onLogoClick 重置工具状态的回调函数（可选）
-   * @param isInToolMode 是否在工具模式（可选）
+   * Smart navigation to specified anchor on homepage
+   * @param router Next.js router instance
+   * @param targetId Target anchor ID
+   * @param onLogoClick Callback function to reset tool state (optional)
+   * @param isInToolMode Whether in tool mode (optional)
    */
   static async navigateToHomeSection(
     router: NextRouter,
@@ -21,26 +21,26 @@ export class NavigationUtils {
     const currentPath = router.pathname
     
     try {
-      // 如果当前在首页
+      // If currently on homepage
       if (currentPath === '/') {
-        // 如果在工具模式，先重置状态
+        // If in tool mode, reset state first
         if (isInToolMode && onLogoClick) {
           onLogoClick()
-          // 等待状态重置
+          // Wait for state reset
           await this.scrollToElementWithRetry(targetId, 100)
         } else {
-          // 直接滚动到目标元素
+          // Scroll directly to target element
           await this.scrollToElementWithRetry(targetId, 0)
         }
       } else {
-        // 如果不在首页，先导航到首页，然后滚动到目标
+        // If not on homepage, navigate to homepage first, then scroll to target
         await router.push('/')
-        // 等待页面加载完成后滚动
+        // Wait for page load completion then scroll
         await this.scrollToElementWithRetry(targetId, 100)
       }
     } catch (error) {
       console.warn('Navigation error:', error)
-      // 出错时至少导航到首页
+      // At least navigate to homepage on error
       if (currentPath !== '/') {
         await router.push('/')
       }
@@ -48,10 +48,10 @@ export class NavigationUtils {
   }
 
   /**
-   * 智能导航到首页顶部
-   * @param router Next.js路由器实例
-   * @param onLogoClick 重置工具状态的回调函数（可选）
-   * @param isInToolMode 是否在工具模式（可选）
+   * Smart navigation to homepage top
+   * @param router Next.js router instance
+   * @param onLogoClick Callback function to reset tool state (optional)
+   * @param isInToolMode Whether in tool mode (optional)
    */
   static async navigateToHome(
     router: NextRouter,
@@ -62,16 +62,16 @@ export class NavigationUtils {
     
     try {
       if (currentPath === '/') {
-        // 如果在首页，处理工具模式或滚动到顶部
+        // If on homepage, handle tool mode or scroll to top
         if (isInToolMode && onLogoClick) {
-          onLogoClick() // 重置到首页状态
+          onLogoClick() // Reset to homepage state
         } else {
           this.scrollToTop()
         }
       } else {
-        // 如果不在首页，导航到首页
+        // If not on homepage, navigate to homepage
         await router.push('/')
-        // 页面加载后滚动到顶部
+        // Scroll to top after page load
         setTimeout(() => {
           this.scrollToTop()
         }, 100)
@@ -82,17 +82,17 @@ export class NavigationUtils {
   }
 
   /**
-   * 滚动到页面顶部
+   * Scroll to page top
    */
   static scrollToTop(): void {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   /**
-   * 滚动到指定元素，支持重试机制
-   * @param targetId 目标元素ID
-   * @param delay 延迟时间（毫秒）
-   * @param maxRetries 最大重试次数
+   * Scroll to specified element with retry mechanism
+   * @param targetId Target element ID
+   * @param delay Delay time in milliseconds
+   * @param maxRetries Maximum retry attempts
    */
   static async scrollToElementWithRetry(
     targetId: string,
@@ -107,13 +107,13 @@ export class NavigationUtils {
             element.scrollIntoView({ behavior: 'smooth' })
             resolve()
           } else if (attempt < maxRetries) {
-            // 递归重试
+            // Recursive retry
             attemptScroll(attempt + 1).then(resolve)
           } else {
             console.warn(`Element with id "${targetId}" not found after ${maxRetries} attempts`)
             resolve()
           }
-        }, delay + (attempt * 100)) // 每次重试增加100ms延迟
+        }, delay + (attempt * 100)) // Increase delay by 100ms for each retry
       })
     }
 
@@ -121,23 +121,23 @@ export class NavigationUtils {
   }
 
   /**
-   * 检查当前是否在首页
-   * @param router Next.js路由器实例
+   * Check if currently on homepage
+   * @param router Next.js router instance
    */
   static isOnHomePage(router: NextRouter): boolean {
     return router.pathname === '/'
   }
 
   /**
-   * 检查指定锚点是否存在于当前页面
-   * @param targetId 目标锚点ID
+   * Check if specified anchor exists on current page
+   * @param targetId Target anchor ID
    */
   static isElementExists(targetId: string): boolean {
     return document.getElementById(targetId) !== null
   }
 
   /**
-   * 获取所有首页导航目标的配置
+   * Get configuration for all homepage navigation targets
    */
   static getHomeNavigationTargets() {
     return {
@@ -149,9 +149,9 @@ export class NavigationUtils {
   }
 
   /**
-   * 智能LOGO导航处理
-   * @param router Next.js路由器实例
-   * @param onLogoClick 重置工具状态的回调函数（可选）
+   * Smart LOGO navigation handler
+   * @param router Next.js router instance
+   * @param onLogoClick Callback function to reset tool state (optional)
    */
   static async handleLogoNavigation(
     router: NextRouter,
@@ -161,28 +161,28 @@ export class NavigationUtils {
     
     try {
       if (currentPath === '/') {
-        // 如果在首页，重置状态并滚动到顶部
+        // If on homepage, reset state and scroll to top
         if (onLogoClick) {
           onLogoClick()
-          // 等待状态重置后滚动到顶部
+          // Scroll to top after state reset
           setTimeout(() => {
             this.scrollToTop()
           }, 100)
         } else {
-          // 直接滚动到顶部
+          // Scroll directly to top
           this.scrollToTop()
         }
       } else {
-        // 如果不在首页，导航到首页
+        // If not on homepage, navigate to homepage
         await router.push('/')
-        // 页面加载后滚动到顶部
+        // Scroll to top after page load
         setTimeout(() => {
           this.scrollToTop()
         }, 100)
       }
     } catch (error) {
       console.warn('Logo navigation error:', error)
-      // 出错时至少尝试导航到首页
+      // At least try to navigate to homepage on error
       if (currentPath !== '/') {
         try {
           await router.push('/')

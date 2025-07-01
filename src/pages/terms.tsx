@@ -7,6 +7,8 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useRouter } from 'next/router'
 import { ArrowLeft, Scale, FileText, Users, Shield, AlertTriangle, Globe, Settings, Phone } from 'lucide-react'
 import Layout from '@/components/Layout'
+import HreflangTags from '@/components/SEO/HreflangTags'
+import LanguageSEO from '@/components/SEO/LanguageSEO'
 
 const TermsOfService: NextPage = () => {
   const { t } = useTranslation(['terms', 'common'])
@@ -39,12 +41,15 @@ const TermsOfService: NextPage = () => {
 
   return (
     <>
+      {/* Use LanguageSEO component to replace basic SEO tags */}
+      <LanguageSEO 
+        title={`${t('terms:title')} - AI Image Splitter`}
+        description={t('terms:description')}
+        keywords="terms of service, user agreement, AI image splitter"
+      />
+      
       <Head>
-        {/* SEO元数据 */}
-        <title>{t('terms:title')} - AI Image Splitter</title>
-        <meta name="description" content={t('terms:description')} />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://aiimagesplitter.com/terms" />
+        {/* robots directive retained as LanguageSEO already includes more complete robots settings */}
         
         {/* Open Graph */}
         <meta property="og:title" content={`${t('terms:title')} - AI Image Splitter`} />
@@ -83,6 +88,9 @@ const TermsOfService: NextPage = () => {
           }}
         />
       </Head>
+      
+      {/* hreflang和canonical标记 */}
+      <HreflangTags />
 
       <Layout>
         <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30 py-12">
