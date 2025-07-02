@@ -34,6 +34,16 @@ const Home: NextPage = () => {
       
       <Head>
         
+        {/* 关键LCP图片预加载 - 最高优先级 */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/penguin-split.png"
+          type="image/png"
+          imageSizes="192px"
+          imageSrcSet="/images/penguin-split.png"
+        />
+        
         {/* Website icon configuration - solve browser tab display issue */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -73,7 +83,8 @@ const Home: NextPage = () => {
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         
-        {/* Critical image preloading handled by Next.js Image component with priority prop */}
+        {/* 关键CSS内联优化提示 */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
       </Head>
       
       {/* hreflang and canonical tags - solve multilingual website alternate page issue */}
