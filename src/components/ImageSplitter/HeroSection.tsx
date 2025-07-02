@@ -13,25 +13,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 }) => {
   const { t } = useTranslation('common')
   
-  // 图片加载状态管理 - 改为记录加载失败的图片
-  const [imageErrorStates, setImageErrorStates] = useState({
-    penguinSplit: false,
-    penguinOriginal: false,
-    citySplit: false,
-    cityOriginal: false
-  })
-
-  const handleImageLoad = (imageKey: keyof typeof imageErrorStates) => {
-    console.log(`${imageKey} 图片加载成功`)
-    // 如果之前标记为错误，现在清除错误状态
-    setImageErrorStates(prev => ({ ...prev, [imageKey]: false }))
-  }
-
-  const handleImageError = (imageKey: keyof typeof imageErrorStates) => {
-    console.error(`${imageKey} 图片加载失败`)
-    // 标记为加载失败
-    setImageErrorStates(prev => ({ ...prev, [imageKey]: true }))
-  }
+  // Simplified error handling - no complex state management needed
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-primary-50/30 to-secondary-50/30 relative overflow-hidden">
@@ -157,15 +139,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
-                        style={{ display: imageErrorStates.penguinOriginal ? 'none' : 'block' }}
-                        onLoad={() => handleImageLoad('penguinOriginal')}
-                        onError={() => handleImageError('penguinOriginal')}
                       />
-                      {imageErrorStates.penguinOriginal && (
-                        <div className="absolute inset-0 flex items-center justify-center text-blue-700 text-sm font-medium bg-gradient-to-br from-blue-100 to-blue-300">
-                          {t('images.originalPlaceholder')}
-                        </div>
-                      )}
                     </div>
                   </div>
                   
@@ -189,15 +163,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                         fetchPriority="high"
                         placeholder="blur"
                         blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
-                        style={{ display: imageErrorStates.penguinSplit ? 'none' : 'block' }}
-                        onLoad={() => handleImageLoad('penguinSplit')}
-                        onError={() => handleImageError('penguinSplit')}
                       />
-                      {imageErrorStates.penguinSplit && (
-                        <div className="absolute inset-0 flex items-center justify-center text-blue-800 font-semibold text-sm bg-gradient-to-br from-blue-200 to-blue-400">
-                          {t('images.gridEffectPlaceholder')}
-                        </div>
-                      )}
                     </div>
                   </div>
                 </div>
@@ -237,15 +203,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
-                        style={{ display: imageErrorStates.citySplit ? 'none' : 'block' }}
-                        onLoad={() => handleImageLoad('citySplit')}
-                        onError={() => handleImageError('citySplit')}
                       />
-                      {imageErrorStates.citySplit && (
-                        <div className="absolute inset-0 flex items-center justify-center text-purple-800 font-semibold text-sm bg-gradient-to-br from-purple-200 to-purple-400">
-                          {t('images.carouselEffectPlaceholder')}
-                        </div>
-                      )}
                     </div>
                   </div>
                   
@@ -269,15 +227,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
-                        style={{ display: imageErrorStates.cityOriginal ? 'none' : 'block' }}
-                        onLoad={() => handleImageLoad('cityOriginal')}
-                        onError={() => handleImageError('cityOriginal')}
                       />
-                      {imageErrorStates.cityOriginal && (
-                        <div className="absolute inset-0 flex items-center justify-center text-purple-700 text-sm font-medium bg-gradient-to-br from-purple-100 to-purple-300">
-                          {t('images.originalPlaceholder')}
-                        </div>
-                      )}
                     </div>
                   </div>
                 </div>

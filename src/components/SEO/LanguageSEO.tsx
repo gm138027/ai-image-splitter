@@ -90,7 +90,6 @@ const LanguageSEO: React.FC<LanguageSEOProps> = ({
       
       {/* Language declaration */}
       <meta httpEquiv="content-language" content={currentLocale} />
-      <html lang={currentLocale} />
       
       {/* Open Graph tags - language specific */}
       <meta property="og:title" content={getLocalizedTitle()} />

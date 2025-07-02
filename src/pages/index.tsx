@@ -34,7 +34,7 @@ const Home: NextPage = () => {
       
       <Head>
         
-        {/* 关键LCP图片预加载 - 最高优先级 */}
+        {/* 关键LCP图片预加载 - 防止布局偏移的关键配置 */}
         <link
           rel="preload"
           as="image"
@@ -58,32 +58,9 @@ const Home: NextPage = () => {
         <meta name="msapplication-TileImage" content="/android-chrome-512x512.png" />
         <meta name="msapplication-TileColor" content="#3b82f6" />
         
-        {/* Open Graph metadata */}
-        <meta property="og:title" content={t('seo.title')} />
-        <meta property="og:description" content={t('seo.description')} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://aiimagesplitter.com" />
-        <meta property="og:site_name" content="AI Image Splitter" />
-        <meta property="og:image" content="https://aiimagesplitter.com/images/penguin-split.png" />
-        <meta property="og:image:width" content="600" />
-        <meta property="og:image:height" content="400" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:alt" content="AI Image Splitter - Free Online Image Splitting Tool" />
-        <meta property="og:locale" content={router.locale === 'zh-CN' ? 'zh_CN' : 'en_US'} />
+        {/* Remove duplicate Open Graph and Twitter metadata - handled by LanguageSEO */}
         
-        {/* Twitter Card metadata */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={t('seo.title')} />
-        <meta name="twitter:description" content={t('seo.description')} />
-        <meta name="twitter:image" content="https://aiimagesplitter.com/images/penguin-split.png" />
-        <meta name="twitter:image:alt" content="AI Image Splitter - Free Online Image Splitting Tool" />
-        <meta name="twitter:site" content="@aiimagesplitter" />
-        
-        {/* Search engine optimization */}
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" />
-        
-        {/* 关键CSS内联优化提示 */}
+        {/* Basic viewport */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
       </Head>
       
