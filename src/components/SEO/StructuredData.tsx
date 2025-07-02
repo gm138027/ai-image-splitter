@@ -11,7 +11,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
   const currentUrl = `https://aiimagesplitter.com${router.asPath}`
   const { t } = useTranslation('common')
   
-  // 组织结构化数据 - 这是Google显示logo的关键
+  // Organization structured data - key for Google to display logo
   const organizationData = {
     "@context": "https://schema.org",
     "@type": "Organization",

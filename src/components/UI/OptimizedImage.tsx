@@ -42,7 +42,7 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
     onLoad?.()
   }
 
-  // 如果WebP加载失败，使用原格式
+        // If WebP loading fails, use original format
   const finalSrc = webpError ? src : webpSrc
 
   return (

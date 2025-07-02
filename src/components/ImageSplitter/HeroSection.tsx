@@ -17,14 +17,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-primary-50/30 to-secondary-50/30 relative overflow-hidden">
-      {/* Background decorative elements - 延迟加载 */}
+              {/* Background decorative elements - lazy loaded */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-purple rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float"></div>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-blue rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float" style={{animationDelay: '1s'}}></div>
       </div>
       
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        {/* Hero Section - 关键首屏内容 */}
+        {/* Hero Section - critical above-the-fold content */}
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-7xl font-bold mb-8">
             <span className="bg-gradient-to-r from-gray-900 via-primary-600 to-secondary-600 bg-clip-text text-transparent">
@@ -110,7 +110,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           </div>
         </div>
 
-        {/* Advantages Section - 优化图片加载策略 */}
+        {/* Advantages Section - optimized image loading strategy */}
         <div className="mt-24" id="advantages">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
             <span className="bg-gradient-to-r from-gray-900 to-primary-600 bg-clip-text text-transparent">
@@ -182,7 +182,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
           </div>
 
-          {/* Easy Instagram Advantage - 延迟加载这部分图片 */}
+                      {/* Easy Instagram Advantage - lazy load these images */}
           <div className="mb-20">
             <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
               {/* Right side - Images */}

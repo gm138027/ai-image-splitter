@@ -32,18 +32,16 @@ const nextConfig = {
   experimental: {
     optimizeCss: true,
   },
-  // 优化生产构建 - 但保留 console.log 用于调试
+  // 优化生产构建
   compiler: {
-    removeConsole: false, // 暂时保留 console.log 用于生产环境调试
+    removeConsole: process.env.NODE_ENV === 'production', // 生产环境移除console.log
   },
-  // 保持原有的代码分割配置
+  // 简化代码分割配置 - 减少网络请求
   webpack: (config, { isServer }) => {
-    // 只在客户端构建时优化包大小
+    // 只在客户端构建时进行基础优化
     if (!isServer) {
       config.optimization.splitChunks = {
         chunks: 'all',
-        minSize: 20000,
-        maxSize: 244000,
         cacheGroups: {
           default: {
             minChunks: 2,
@@ -54,29 +52,6 @@ const nextConfig = {
             test: /[\\/]node_modules[\\/]/,
             name: 'vendors',
             priority: -10,
-            chunks: 'all',
-            enforce: true,
-            maxSize: 200000, // 限制vendor chunk大小
-          },
-          // 分离React相关
-          react: {
-            test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
-            name: 'react',
-            priority: 20,
-            chunks: 'all',
-          },
-          // 分离图标库
-          icons: {
-            test: /[\\/]node_modules[\\/](lucide-react)[\\/]/,
-            name: 'icons',
-            priority: 15,
-            chunks: 'all',
-          },
-          // 分离i18n相关
-          i18n: {
-            test: /[\\/]node_modules[\\/](next-i18next|react-i18next|i18next)[\\/]/,
-            name: 'i18n',
-            priority: 15,
             chunks: 'all',
           },
         },

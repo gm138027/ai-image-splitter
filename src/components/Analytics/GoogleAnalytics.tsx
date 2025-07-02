@@ -6,7 +6,7 @@ const GoogleAnalytics: React.FC = () => {
   const [shouldLoad, setShouldLoad] = useState(false)
 
   useEffect(() => {
-    // 延迟5秒加载GA，优先保证页面渲染性能
+    // Delay GA loading by 5 seconds to prioritize page rendering performance
     const timer = setTimeout(() => setShouldLoad(true), 5000)
     
     const handleInteraction = () => {
@@ -14,7 +14,7 @@ const GoogleAnalytics: React.FC = () => {
       clearTimeout(timer)
     }
 
-    // 延迟添加事件监听器，避免初始渲染阻塞
+          // Delay adding event listeners to avoid blocking initial rendering
     const addListeners = () => {
       document.addEventListener('click', handleInteraction, { once: true })
       document.addEventListener('scroll', handleInteraction, { once: true })

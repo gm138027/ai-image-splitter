@@ -8,7 +8,7 @@ interface DomainLinkProps {
 }
 
 /**
- * 域名链接组件 - SEO优化的内链
+ * Domain link component - SEO optimized internal link
  * 
  * 作用：
  * 1. 将域名作为锚文本链接到首页

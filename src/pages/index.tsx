@@ -34,7 +34,7 @@ const Home: NextPage = () => {
       
       <Head>
         
-        {/* 关键LCP图片预加载 - 防止布局偏移的关键配置 */}
+        {/* Critical LCP image preload - key configuration to prevent layout shifts */}
         <link
           rel="preload"
           as="image"

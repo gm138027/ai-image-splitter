@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic'
 import { useImageSplitter } from '@/hooks/useImageSplitter'
 import HeroSection from './HeroSection'
 
-// 动态导入工具组件，减少初始加载bundle大小
+// Dynamic import tool components to reduce initial bundle size
 const SplitControls = dynamic(() => import('./SplitControls'), {
   loading: () => <div className="w-80 h-96 bg-gray-100 animate-pulse rounded-l-2xl" />,
   ssr: false,
@@ -48,7 +48,7 @@ const ImageSplitter: React.FC<ImageSplitterProps> = ({ onToolModeChange }) => {
     }
   }, [uploadedImage, onToolModeChange])
 
-  // 如果没有上传图片，显示Hero区域
+      // If no image uploaded, show Hero section
   if (!uploadedImage) {
     return (
       <HeroSection

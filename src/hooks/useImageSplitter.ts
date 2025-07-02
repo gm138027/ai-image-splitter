@@ -40,7 +40,7 @@ export const useImageSplitter = () => {
   const handleFileUpload = useCallback(async (file: File) => {
     try {
       const img = await createImageFromFile(file)
-      hasEverSplitRef.current = false // 重置分割标记
+      hasEverSplitRef.current = false // Reset split flag
       setState(prev => ({
         ...prev,
         uploadedImage: img,
@@ -49,7 +49,7 @@ export const useImageSplitter = () => {
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : 'invalidFile'
       
-      // 根据错误类型显示不同的提示信息
+      // Display different tip messages based on error type
       switch (errorMessage) {
         case 'invalidFileType':
           alert(t('tool.alerts.invalidFileType'))
@@ -79,7 +79,7 @@ export const useImageSplitter = () => {
   const handleFileInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files
     if (files && files.length > 0) {
-      // 重置分割结果，加载新图片
+      // Reset split results and load new image
       setState(prev => ({
         ...prev,
         splitImages: []
@@ -96,14 +96,14 @@ export const useImageSplitter = () => {
     }))
   }, [])
 
-  // 优化：延迟自动重新分割，避免阻塞渲染
+      // Optimization: delay auto re-split to avoid blocking rendering
   useEffect(() => {
     const autoReSplit = async () => {
       // 只有在曾经分割过、有上传图片且不在处理中的情况下才自动重新分割
       if (hasEverSplitRef.current && state.uploadedImage && !state.isProcessing) {
-        // 使用setTimeout延迟执行，避免阻塞渲染
+        // Use setTimeout for delayed execution to avoid blocking rendering
         setTimeout(async () => {
-          // 再次检查状态，确保图片仍然存在
+          // Check state again to ensure image still exists
           if (state.uploadedImage) {
             try {
               const splitImages = await splitImageUtil(state.uploadedImage, state.config)
@@ -117,7 +117,7 @@ export const useImageSplitter = () => {
               }
             }
           }
-        }, 100) // 100ms延迟，让渲染优先完成
+        }, 100) // 100ms delay to let rendering complete first
       }
     }
 
@@ -164,7 +164,7 @@ export const useImageSplitter = () => {
 
   // 重新上传 - 直接触发文件选择
   const handleReupload = useCallback(() => {
-    // 清空之前的文件输入值，确保可以选择相同文件
+          // Clear previous file input value to ensure same file can be selected
     if (fileInputRef.current) {
       fileInputRef.current.value = ''
       fileInputRef.current.click()

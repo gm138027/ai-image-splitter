@@ -1,4 +1,4 @@
-// 图像分割相关类型定义
+// Image splitting related type definitions
 export interface SplitImage {
   id: string
   canvas: HTMLCanvasElement
@@ -23,7 +23,7 @@ export interface ImageSplitterState {
   config: SplitConfig
 }
 
-// 组件Props类型定义
+// Component Props type definitions
 export interface ImageUploaderProps {
   onFileUpload: (file: File) => void
   onDrop: (e: React.DragEvent) => void
