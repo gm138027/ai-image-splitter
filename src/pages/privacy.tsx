@@ -75,7 +75,7 @@ const PrivacyPolicy: NextPage = () => {
                 "name": "AI Image Splitter",
                 "url": "https://aiimagesplitter.com"
               },
-              "lastReviewed": "2025-07-02",
+              "lastReviewed": "2025-07-02T12:00:00Z",
               "reviewedBy": {
                 "@type": "Organization",
                 "name": "AI Image Splitter"

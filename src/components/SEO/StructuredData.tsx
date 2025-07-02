@@ -39,7 +39,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
       "https://aiimagesplitter.com"
     ],
     "description": t('structuredData.appDescription'),
-    "foundingDate": "2025-06-26",
+    "foundingDate": "2025-06-26T00:00:00Z",
     "knowsAbout": [
       "Image Splitting",
       "Instagram Grid Making",
@@ -292,8 +292,8 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
         "height": 512
       }
     },
-    "datePublished": "2025-06-26",
-    "dateModified": new Date().toISOString().split('T')[0],
+    "datePublished": "2025-06-26T00:00:00Z",
+    "dateModified": "2025-07-02T12:00:00Z",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": currentUrl
