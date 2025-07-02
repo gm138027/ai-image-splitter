@@ -29,7 +29,7 @@ const BlogIndex: NextPage = () => {
       id: 'complete-guide',
       title: t('blog:posts.complete-guide.title'),
       description: t('blog:posts.complete-guide.description'),
-      publishedAt: '2025-06-25',
+      publishedAt: '2025-06-27',
       readingTime: t('blog:posts.complete-guide.readingTime'),
       category: t('blog:posts.complete-guide.category'),
       href: '/blog/complete-guide'

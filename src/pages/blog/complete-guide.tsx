@@ -80,8 +80,8 @@ const CompleteGuide: NextPage = () => {
                   "url": "https://aiimagesplitter.com/android-chrome-512x512.png"
                 }
               },
-              "datePublished": "2024-01-01T00:00:00Z",
-              "dateModified": "2024-01-01T00:00:00Z",
+              "datePublished": "2025-06-27T00:00:00Z",
+              "dateModified": "2025-07-02T00:00:00Z",
               "mainEntityOfPage": {
                 "@type": "WebPage",
                 "@id": "https://aiimagesplitter.com/blog/complete-guide"
@@ -118,7 +118,7 @@ const CompleteGuide: NextPage = () => {
                 <div className="flex items-center justify-center gap-6 text-gray-500">
                   <div className="flex items-center">
                     <Calendar className="w-4 h-4 mr-2" />
-                    <span>{t('blog:publishedOn')} 2025-06-25</span>
+                    <span>{t('blog:publishedOn')} 2025-06-27</span>
                   </div>
                   <div className="flex items-center">
                     <Clock className="w-4 h-4 mr-2" />
