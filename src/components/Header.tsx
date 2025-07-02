@@ -54,6 +54,9 @@ const Header: React.FC<HeaderProps> = ({ onLogoClick, isInToolMode = false }) =>
                 width={40}
                 height={40}
                 className="w-full h-full object-cover"
+                priority={true}
+                quality={95}
+                sizes="40px"
               />
             </div>
             <h1 className="text-xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">

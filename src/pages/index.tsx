@@ -73,9 +73,7 @@ const Home: NextPage = () => {
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         
-        {/* Preload important images */}
-        <link rel="preload" href="/images/penguin-original.png" as="image" />
-        <link rel="preload" href="/images/penguin-split.png" as="image" />
+        {/* Critical image preloading handled by Next.js Image component with priority prop */}
       </Head>
       
       {/* hreflang and canonical tags - solve multilingual website alternate page issue */}

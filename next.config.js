@@ -6,10 +6,14 @@ const nextConfig = {
   swcMinify: true,
   i18n,
   images: {
-    // 移除 localhost 限制，允许所有域名的图片
-    domains: [],
+    // 启用自动图片优化，支持WebP和AVIF格式
     formats: ['image/webp', 'image/avif'],
-    unoptimized: true, // 允许未优化的图片，支持本地PNG文件
+    domains: [],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    minimumCacheTTL: 31536000, // 1年缓存
+    dangerouslyAllowSVG: false,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   // 确保静态文件可以被正确服务
   async headers() {

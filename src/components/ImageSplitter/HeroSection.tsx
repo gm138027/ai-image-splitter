@@ -145,14 +145,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   {/* Original image (small, left side) */}
                   <div className="relative">
                     <div className="w-32 h-32 bg-gradient-to-br from-blue-100 to-blue-300 shadow-md overflow-hidden relative">
-                      <img
+                      <Image
                         src="/images/penguin-original.png"
                         alt={t('images.gridExampleAlt')}
                         width={128}
                         height={128}
-                        loading="lazy"
-                        decoding="async"
                         className="object-cover w-full h-full"
+                        priority={false}
+                        quality={85}
+                        sizes="128px"
                         style={{ display: imageErrorStates.penguinOriginal ? 'none' : 'block' }}
                         onLoad={() => handleImageLoad('penguinOriginal')}
                         onError={() => handleImageError('penguinOriginal')}
@@ -173,14 +174,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   {/* Split grid image (large, right side) */}
                   <div className="relative">
                     <div className="w-48 h-48 bg-gradient-to-br from-blue-200 to-blue-400 shadow-lg overflow-hidden relative">
-                      <img
+                      <Image
                         src="/images/penguin-split.png"
                         alt={t('images.gridExampleAlt')}
                         width={192}
                         height={192}
-                        loading="lazy"
-                        decoding="async"
                         className="object-cover w-full h-full"
+                        priority={true}
+                        quality={90}
+                        sizes="192px"
                         style={{ display: imageErrorStates.penguinSplit ? 'none' : 'block' }}
                         onLoad={() => handleImageLoad('penguinSplit')}
                         onError={() => handleImageError('penguinSplit')}
@@ -217,14 +219,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   {/* Split grid image (large, left side) */}
                   <div className="relative">
                     <div className="w-48 h-48 bg-gradient-to-br from-purple-200 to-purple-400 shadow-lg overflow-hidden relative">
-                      <img
+                      <Image
                         src="/images/city-split.png"
                         alt={t('images.carouselExampleAlt')}
                         width={192}
                         height={192}
-                        loading="lazy"
-                        decoding="async"
                         className="object-cover w-full h-full"
+                        priority={false}
+                        quality={85}
+                        sizes="192px"
                         style={{ display: imageErrorStates.citySplit ? 'none' : 'block' }}
                         onLoad={() => handleImageLoad('citySplit')}
                         onError={() => handleImageError('citySplit')}
@@ -245,14 +248,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   {/* Original image (small, right side) */}
                   <div className="relative">
                     <div className="w-32 h-32 bg-gradient-to-br from-purple-100 to-purple-300 shadow-md overflow-hidden relative">
-                      <img
+                      <Image
                         src="/images/city-original.png"
                         alt={t('images.carouselExampleAlt')}
                         width={128}
                         height={128}
-                        loading="lazy"
-                        decoding="async"
                         className="object-cover w-full h-full"
+                        priority={false}
+                        quality={85}
+                        sizes="128px"
                         style={{ display: imageErrorStates.cityOriginal ? 'none' : 'block' }}
                         onLoad={() => handleImageLoad('cityOriginal')}
                         onError={() => handleImageError('cityOriginal')}
