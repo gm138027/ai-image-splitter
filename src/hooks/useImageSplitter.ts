@@ -96,22 +96,28 @@ export const useImageSplitter = () => {
     }))
   }, [])
 
-  // 监听配置变化，自动重新分割
+  // 优化：延迟自动重新分割，避免阻塞渲染
   useEffect(() => {
     const autoReSplit = async () => {
       // 只有在曾经分割过、有上传图片且不在处理中的情况下才自动重新分割
       if (hasEverSplitRef.current && state.uploadedImage && !state.isProcessing) {
-        try {
-          const splitImages = await splitImageUtil(state.uploadedImage, state.config)
-          setState(prev => ({
-            ...prev,
-            splitImages
-          }))
-        } catch (error) {
-          if (process.env.NODE_ENV === 'development') {
-            console.error('Auto re-split error:', error)
+        // 使用setTimeout延迟执行，避免阻塞渲染
+        setTimeout(async () => {
+          // 再次检查状态，确保图片仍然存在
+          if (state.uploadedImage) {
+            try {
+              const splitImages = await splitImageUtil(state.uploadedImage, state.config)
+              setState(prev => ({
+                ...prev,
+                splitImages
+              }))
+            } catch (error) {
+              if (process.env.NODE_ENV === 'development') {
+                console.error('Auto re-split error:', error)
+              }
+            }
           }
-        }
+        }, 100) // 100ms延迟，让渲染优先完成
       }
     }
 

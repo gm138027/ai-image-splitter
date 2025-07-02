@@ -7,7 +7,7 @@ export default function Document() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         
-        {/* 最小化字体优化 - 只保留基础连接 */}
+        {/* 字体优化 - 解决渲染延迟 */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link
@@ -18,11 +18,18 @@ export default function Document() {
         <meta name="theme-color" content="#3b82f6" />
         <meta name="format-detection" content="telephone=no" />
         
-        {/* 最小化内联CSS - 只保留字体 */}
+        {/* 最小CSS + 渲染优化 */}
         <style dangerouslySetInnerHTML={{
           __html: `
-            body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
-            .text-gradient { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+            body { 
+              font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
+              font-display: swap;
+            }
+            .text-gradient { 
+              background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+              -webkit-background-clip: text; 
+              -webkit-text-fill-color: transparent; 
+            }
           `
         }} />
       </Head>

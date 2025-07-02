@@ -6,21 +6,27 @@ const GoogleAnalytics: React.FC = () => {
   const [shouldLoad, setShouldLoad] = useState(false)
 
   useEffect(() => {
-    // 延迟3秒加载GA，或用户交互后立即加载
-    const timer = setTimeout(() => setShouldLoad(true), 3000)
+    // 延迟5秒加载GA，优先保证页面渲染性能
+    const timer = setTimeout(() => setShouldLoad(true), 5000)
     
     const handleInteraction = () => {
       setShouldLoad(true)
       clearTimeout(timer)
     }
 
-    // 监听用户交互事件
-    document.addEventListener('click', handleInteraction, { once: true })
-    document.addEventListener('scroll', handleInteraction, { once: true })
-    document.addEventListener('keydown', handleInteraction, { once: true })
+    // 延迟添加事件监听器，避免初始渲染阻塞
+    const addListeners = () => {
+      document.addEventListener('click', handleInteraction, { once: true })
+      document.addEventListener('scroll', handleInteraction, { once: true })
+      document.addEventListener('keydown', handleInteraction, { once: true })
+    }
+    
+    // 1秒后再添加事件监听器
+    const listenerTimer = setTimeout(addListeners, 1000)
 
     return () => {
       clearTimeout(timer)
+      clearTimeout(listenerTimer)
       document.removeEventListener('click', handleInteraction)
       document.removeEventListener('scroll', handleInteraction) 
       document.removeEventListener('keydown', handleInteraction)
