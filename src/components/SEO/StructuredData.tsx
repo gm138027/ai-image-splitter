@@ -54,7 +54,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
     }
   }
 
-  // 网站结构化数据
+  // 网站结构化数据 - 移除不适用于WebSite类型的primaryImageOfPage属性
   const websiteData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -66,12 +66,6 @@ const StructuredData: React.FC<StructuredDataProps> = ({ locale = 'zh-CN' }) => 
       "width": 600,
       "height": 400,
       "caption": "AI Image Splitter in action"
-    },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "https://aiimagesplitter.com/images/penguin-split.png",
-      "width": 600,
-      "height": 400
     },
     "publisher": {
       "@type": "Organization",
