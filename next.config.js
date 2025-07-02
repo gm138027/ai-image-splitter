@@ -6,7 +6,8 @@ const nextConfig = {
   swcMinify: true,
   i18n,
   images: {
-    domains: ['localhost'],
+    // 移除 localhost 限制，允许所有域名的图片
+    domains: [],
     formats: ['image/webp', 'image/avif'],
     unoptimized: true, // 允许未优化的图片，支持本地PNG文件
   },
@@ -27,9 +28,9 @@ const nextConfig = {
   experimental: {
     optimizeCss: true,
   },
-  // 优化生产构建
+  // 优化生产构建 - 但保留 console.log 用于调试
   compiler: {
-    removeConsole: process.env.NODE_ENV === 'production',
+    removeConsole: false, // 暂时保留 console.log 用于生产环境调试
   },
   // 优化包大小
   webpack: (config, { isServer }) => {
@@ -50,6 +51,10 @@ const nextConfig = {
     }
     return config
   },
+  // 添加输出配置，确保静态导出正确
+  trailingSlash: true,
+  // 处理图片和静态资源
+  assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
 }
 
 module.exports = nextConfig 
