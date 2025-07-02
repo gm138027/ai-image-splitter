@@ -121,6 +121,6 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    // 移除未使用的typography插件
   ],
 } 
