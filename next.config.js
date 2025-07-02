@@ -36,16 +36,10 @@ const nextConfig = {
   compiler: {
     removeConsole: false, // 暂时保留 console.log 用于生产环境调试
   },
-  // 优化包大小和代码分割 - 专门针对LCP优化
+  // 保持原有的代码分割配置
   webpack: (config, { isServer }) => {
     // 只在客户端构建时优化包大小
     if (!isServer) {
-      // 优化模块解析速度
-      config.resolve.alias = {
-        ...config.resolve.alias,
-        '@': require('path').resolve(__dirname, 'src'),
-      }
-      
       config.optimization.splitChunks = {
         chunks: 'all',
         minSize: 20000,
@@ -87,10 +81,6 @@ const nextConfig = {
           },
         },
       }
-      
-      // 优化模块解析以减少主线程阻塞
-      config.optimization.moduleIds = 'deterministic'
-      config.optimization.chunkIds = 'deterministic'
     }
     return config
   },
