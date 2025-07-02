@@ -1,6 +1,11 @@
 import type { SplitImage, SplitConfig } from '@/types'
 
 /**
+ * Check if we're running in browser environment
+ */
+const isBrowser = typeof window !== 'undefined' && typeof document !== 'undefined'
+
+/**
  * Validate if file is a valid image file
  */
 export const validateImageFile = (file: File): { isValid: boolean; error?: string } => {
@@ -23,6 +28,12 @@ export const validateImageFile = (file: File): { isValid: boolean; error?: strin
  */
 export const createImageFromFile = (file: File): Promise<HTMLImageElement> => {
   return new Promise((resolve, reject) => {
+    // Only run in browser environment
+    if (!isBrowser) {
+      reject(new Error('This function can only run in browser environment'))
+      return
+    }
+
     const validation = validateImageFile(file)
     if (!validation.isValid) {
       reject(new Error(validation.error || 'Invalid file'))
@@ -121,6 +132,11 @@ export const createSplitImage = async (
   splitWidth: number,
   splitHeight: number
 ): Promise<SplitImage> => {
+  // Only run in browser environment
+  if (!isBrowser) {
+    throw new Error('This function can only run in browser environment')
+  }
+
   const tempCanvas = document.createElement('canvas')
   tempCanvas.width = splitWidth
   tempCanvas.height = splitHeight
@@ -154,6 +170,11 @@ export const splitImage = async (
   sourceImage: HTMLImageElement,
   config: SplitConfig
 ): Promise<SplitImage[]> => {
+  // Only run in browser environment
+  if (!isBrowser) {
+    throw new Error('This function can only run in browser environment')
+  }
+
   const { splitCount, splitWidth, splitHeight } = calculateSplitParams(sourceImage, config)
   const splitImages: SplitImage[] = []
 
@@ -179,6 +200,12 @@ export const downloadSingleImage = (
   index: number,
   format: string
 ) => {
+  // Only run in browser environment
+  if (!isBrowser) {
+    console.warn('Download function can only run in browser environment')
+    return
+  }
+
   const link = document.createElement('a')
   link.download = `split-image-${index + 1}.${format}`
   link.href = URL.createObjectURL(splitImage.blob)
@@ -200,40 +227,35 @@ export const downloadAllImages = async (
   splitImages: SplitImage[],
   format: string
 ) => {
-  if (splitImages.length === 0) return
-
-  try {
-    // Dynamically import JSZip to reduce initial bundle size
-    const JSZip = (await import('jszip')).default
-    const zip = new JSZip()
-
-    // 将所有分割图片添加到压缩包
-    splitImages.forEach((img, index) => {
-      zip.file(`split-image-${index + 1}.${format}`, img.blob)
-    })
-
-    // 生成压缩包并下载
-    const content = await zip.generateAsync({ 
-      type: 'blob',
-      compression: 'DEFLATE',
-      compressionOptions: {
-        level: 6
-      }
-    })
-    
-    const link = document.createElement('a')
-    link.download = 'split-images.zip'
-    link.href = URL.createObjectURL(content)
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
-    
-    // 清理内存
-    URL.revokeObjectURL(link.href)
-  } catch (error) {
-    if (process.env.NODE_ENV === 'development') {
-      console.error('Download all images error:', error)
-    }
-    throw new Error('downloadFailed')
+  // Only run in browser environment
+  if (!isBrowser) {
+    throw new Error('This function can only run in browser environment')
   }
+
+  // Import JSZip dynamically to avoid SSR issues
+  const JSZip = (await import('jszip')).default
+  
+  const zip = new JSZip()
+  
+  // Add each split image to zip
+  splitImages.forEach((splitImage, index) => {
+    zip.file(`split-image-${index + 1}.${format}`, splitImage.blob)
+  })
+  
+  // Generate zip file
+  const zipBlob = await zip.generateAsync({ type: 'blob' })
+  
+  // Download zip file
+  const link = document.createElement('a')
+  link.download = `split-images.zip`
+  link.href = URL.createObjectURL(zipBlob)
+  
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+  
+  // Clean up memory
+  setTimeout(() => {
+    URL.revokeObjectURL(link.href)
+  }, 100)
 } 
