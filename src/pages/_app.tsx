@@ -3,12 +3,17 @@ import React from 'react'
 import { appWithTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
-import Script from 'next/script'
 import nextI18NextConfig from '../../next-i18next.config.js'
 import '@/styles/globals.css'
 
-// 导入Google Analytics工具函数
-import { GA_TRACKING_ID, pageview } from '@/lib/gtag'
+// 导入Google Analytics工具函数和组件
+import { pageview } from '@/lib/gtag'
+import dynamic from 'next/dynamic'
+
+// 动态导入Google Analytics组件以减少初始bundle大小
+const GoogleAnalytics = dynamic(() => import('@/components/Analytics/GoogleAnalytics'), {
+  ssr: false,
+})
 
 // 错误边界组件
 class ErrorBoundary extends React.Component<
@@ -101,25 +106,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ErrorBoundary>
-      {/* Google Analytics */}
-      <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-      />
-      <Script
-        id="google-analytics"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });
-          `,
-        }}
-      />
+      {/* 优化后的Google Analytics组件 */}
+      <GoogleAnalytics />
       
       <Component {...pageProps} />
     </ErrorBoundary>

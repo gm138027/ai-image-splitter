@@ -1,8 +1,18 @@
 import React, { useEffect } from 'react'
+import dynamic from 'next/dynamic'
 import { useImageSplitter } from '@/hooks/useImageSplitter'
 import HeroSection from './HeroSection'
-import SplitControls from './SplitControls'
-import ImagePreview from './ImagePreview'
+
+// 动态导入工具组件，减少初始加载bundle大小
+const SplitControls = dynamic(() => import('./SplitControls'), {
+  loading: () => <div className="w-80 h-96 bg-gray-100 animate-pulse rounded-l-2xl" />,
+  ssr: false,
+})
+
+const ImagePreview = dynamic(() => import('./ImagePreview'), {
+  loading: () => <div className="flex-1 h-96 bg-gray-50 animate-pulse rounded-r-2xl" />,
+  ssr: false,
+})
 
 interface ImageSplitterProps {
   onToolModeChange?: (inToolMode: boolean) => void

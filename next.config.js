@@ -36,19 +36,48 @@ const nextConfig = {
   compiler: {
     removeConsole: false, // 暂时保留 console.log 用于生产环境调试
   },
-  // 优化包大小
+  // 优化包大小和代码分割
   webpack: (config, { isServer }) => {
     // 只在客户端构建时优化包大小
     if (!isServer) {
       config.optimization.splitChunks = {
-        ...config.optimization.splitChunks,
+        chunks: 'all',
+        minSize: 20000,
+        maxSize: 244000,
         cacheGroups: {
-          ...config.optimization.splitChunks.cacheGroups,
+          default: {
+            minChunks: 2,
+            priority: -20,
+            reuseExistingChunk: true,
+          },
           vendor: {
             test: /[\\/]node_modules[\\/]/,
             name: 'vendors',
+            priority: -10,
             chunks: 'all',
-            priority: 10,
+            enforce: true,
+            maxSize: 200000, // 限制vendor chunk大小
+          },
+          // 分离React相关
+          react: {
+            test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
+            name: 'react',
+            priority: 20,
+            chunks: 'all',
+          },
+          // 分离图标库
+          icons: {
+            test: /[\\/]node_modules[\\/](lucide-react)[\\/]/,
+            name: 'icons',
+            priority: 15,
+            chunks: 'all',
+          },
+          // 分离i18n相关
+          i18n: {
+            test: /[\\/]node_modules[\\/](next-i18next|react-i18next|i18next)[\\/]/,
+            name: 'i18n',
+            priority: 15,
+            chunks: 'all',
           },
         },
       }
