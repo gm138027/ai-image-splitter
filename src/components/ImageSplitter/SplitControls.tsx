@@ -50,15 +50,15 @@ const SplitControls: React.FC<SplitControlsProps> = ({
   }
 
   return (
-    <div className="w-full lg:w-1/3 p-6 border-r border-gray-200 bg-gray-50">
-      <div className="mb-6">
+    <div className="w-full lg:w-1/3 p-4 sm:p-6 border-r-0 lg:border-r border-gray-200 bg-gray-50">
+      <div className="mb-4 sm:mb-6">
         <p className="text-sm text-gray-600 mb-4">
           {t('tool.splitModeTitle')}：{t('tool.splitModeDescription')}。
         </p>
       </div>
 
       {/* Split Mode Selection */}
-      <div className="mb-6">
+      <div className="mb-4 sm:mb-6">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mb-4">
           <button
             onClick={() => handleModeChange('vertical')}
@@ -94,7 +94,7 @@ const SplitControls: React.FC<SplitControlsProps> = ({
       </div>
 
       {/* Grid Settings */}
-      <div className="mb-6">
+      <div className="mb-4 sm:mb-6">
         <div className="space-y-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -184,7 +184,7 @@ const SplitControls: React.FC<SplitControlsProps> = ({
       </div>
 
       {/* Grid Line Width Slider */}
-      <div className="mb-6">
+      <div className="mb-4 sm:mb-6">
         <label className="block text-sm font-medium text-gray-700 mb-2">
           {t('tool.gridLineWidthLabel')}: {config.gridLineWidth}px
         </label>
@@ -200,7 +200,7 @@ const SplitControls: React.FC<SplitControlsProps> = ({
       </div>
 
       {/* Output Format */}
-      <div className="mb-6">
+      <div className="mb-4 sm:mb-6">
         <label className="block text-sm font-medium text-gray-700 mb-2">
           {t('tool.outputFormat')}
         </label>

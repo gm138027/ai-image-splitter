@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import { Upload, Download } from 'lucide-react'
 import type { ImagePreviewProps } from '@/types'
@@ -12,8 +12,25 @@ const ImagePreview: React.FC<ImagePreviewProps> = ({
   fileInputRef
 }) => {
   const { t } = useTranslation('common')
+  const containerRef = useRef<HTMLDivElement>(null)
+  const [containerSize, setContainerSize] = useState({ width: 0, height: 0 })
 
-  // 网格线功能已移除，保持界面干净简洁
+  // 监听容器尺寸变化
+  useEffect(() => {
+    const updateContainerSize = () => {
+      if (containerRef.current) {
+        const rect = containerRef.current.getBoundingClientRect()
+        // 减去padding (20px * 2)
+        const availableWidth = rect.width - 40
+        const availableHeight = rect.height - 40
+        setContainerSize({ width: availableWidth, height: availableHeight })
+      }
+    }
+
+    updateContainerSize()
+    window.addEventListener('resize', updateContainerSize)
+    return () => window.removeEventListener('resize', updateContainerSize)
+  }, [])
 
   // 渲染原图预览
   const renderOriginalImage = () => (
@@ -39,21 +56,22 @@ const ImagePreview: React.FC<ImagePreviewProps> = ({
           style={{ 
             maxWidth: '100%',
             maxHeight: '100%',
-            objectFit: 'contain'
+            objectFit: 'contain', // 保持原图比例
+            width: 'auto',
+            height: 'auto'
           }}
         />
-        {/* 移除网格线显示 */}
       </div>
     </div>
   )
 
   // 渲染分割结果
   const renderSplitImages = () => {
-    if (!uploadedImage) return null;
+    if (!uploadedImage || containerSize.width === 0 || containerSize.height === 0) return null;
 
-    // 计算原图的显示尺寸以保持相同的缩放比例
-    const containerWidth = 520; // 预览容器宽度减去padding
-    const containerHeight = 520; // 预览容器高度减去padding
+    // 使用实际容器尺寸计算显示尺寸
+    const containerWidth = containerSize.width;
+    const containerHeight = containerSize.height;
     
     const imageAspectRatio = uploadedImage.width / uploadedImage.height;
     const containerAspectRatio = containerWidth / containerHeight;
@@ -70,6 +88,18 @@ const ImagePreview: React.FC<ImagePreviewProps> = ({
       displayWidth = containerHeight * imageAspectRatio;
     }
 
+    // 计算切割网格的行列数
+    const actualRows = config.mode === 'horizontal' ? config.rows : 
+                      config.mode === 'vertical' ? 1 : config.rows;
+    const actualCols = config.mode === 'horizontal' ? 1 : 
+                      config.mode === 'vertical' ? config.cols : config.cols;
+
+    // 计算每个切片的尺寸（不包括网格线）
+    const totalGridLineWidth = (actualCols - 1) * config.gridLineWidth;
+    const totalGridLineHeight = (actualRows - 1) * config.gridLineWidth;
+    const cellWidth = (displayWidth - totalGridLineWidth) / actualCols;
+    const cellHeight = (displayHeight - totalGridLineHeight) / actualRows;
+
     return (
       <div style={{ 
         width: '100%', 
@@ -84,42 +114,31 @@ const ImagePreview: React.FC<ImagePreviewProps> = ({
           width: `${displayWidth}px`,
           height: `${displayHeight}px`,
           backgroundColor: config.gridLineWidth > 0 ? '#ffffff' : 'transparent',
-          padding: config.gridLineWidth > 0 ? `${config.gridLineWidth}px` : '0',
-          boxSizing: 'content-box'
+          display: 'flex',
+          flexDirection: 'column',
+          gap: `${config.gridLineWidth}px`
         }}>
           {/* Create rows */}
-          {Array.from({ 
-            length: config.mode === 'horizontal' ? config.rows : 
-                   config.mode === 'vertical' ? 1 : config.rows 
-          }, (_, rowIndex) => (
+          {Array.from({ length: actualRows }, (_, rowIndex) => (
             <div key={rowIndex} style={{
               display: 'flex',
-              height: `${displayHeight / (config.mode === 'horizontal' ? config.rows : 
-                                         config.mode === 'vertical' ? 1 : config.rows)}px`,
-              marginBottom: rowIndex < (config.mode === 'horizontal' ? config.rows : 
-                                       config.mode === 'vertical' ? 1 : config.rows) - 1 
-                           ? `${config.gridLineWidth}px` : '0'
+              height: `${cellHeight}px`,
+              gap: `${config.gridLineWidth}px`
             }}>
               {/* Create columns in each row */}
-              {Array.from({ 
-                length: config.mode === 'horizontal' ? 1 : 
-                       config.mode === 'vertical' ? config.cols : config.cols 
-              }, (_, colIndex) => {
+              {Array.from({ length: actualCols }, (_, colIndex) => {
                 const imageIndex = config.mode === 'horizontal' ? rowIndex : 
                                   config.mode === 'vertical' ? colIndex :
-                                  rowIndex * config.cols + colIndex;
+                                  rowIndex * actualCols + colIndex;
                 const img = splitImages[imageIndex];
                 
                 if (!img) return null;
                 
                 return (
                   <div key={img.id} className="relative group" style={{
-                    width: `${displayWidth / (config.mode === 'horizontal' ? 1 : 
-                                             config.mode === 'vertical' ? config.cols : config.cols)}px`,
-                    height: '100%',
-                    marginRight: colIndex < (config.mode === 'horizontal' ? 1 : 
-                                            config.mode === 'vertical' ? config.cols : config.cols) - 1 
-                                ? `${config.gridLineWidth}px` : '0'
+                    width: `${cellWidth}px`,
+                    height: `${cellHeight}px`,
+                    flexShrink: 0
                   }}>
                     <img
                       src={img.canvas.toDataURL()}
@@ -127,16 +146,16 @@ const ImagePreview: React.FC<ImagePreviewProps> = ({
                       style={{
                         width: '100%',
                         height: '100%',
-                        objectFit: 'cover',
+                        objectFit: 'contain', // 改为contain，保持图片比例
                         display: 'block'
                       }}
                     />
                     <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-200 flex items-center justify-center opacity-0 group-hover:opacity-100">
                       <button
                         onClick={() => onDownloadSingle(img, imageIndex)}
-                        className="bg-white text-gray-700 px-3 py-1 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors shadow-lg"
+                        className="bg-white text-gray-700 px-2 py-1 rounded-lg text-xs font-medium hover:bg-gray-100 transition-colors shadow-lg"
                       >
-                        <Download className="w-4 h-4 inline mr-1" />
+                        <Download className="w-3 h-3 inline mr-1" />
                         {t('tool.buttons.download')}
                       </button>
                     </div>
@@ -152,12 +171,17 @@ const ImagePreview: React.FC<ImagePreviewProps> = ({
 
   return (
     <div className="flex-1 p-6 relative">
-      {/* Fixed Size Preview Container */}
+      {/* 响应式预览容器 */}
       <div 
-        className="border border-gray-200 rounded-lg bg-gray-50 relative" 
-        style={{ height: '560px', overflow: 'hidden' }}
+        ref={containerRef}
+        className="border border-gray-200 rounded-lg bg-gray-50 relative w-full"
+        style={{ 
+          height: 'min(70vh, 600px)', // 限制最大高度，在移动端更合适
+          minHeight: '300px', // 减少最小高度
+          overflow: 'hidden'
+        }}
       >
-        {/* Original Image Preview with Grid Overlay */}
+        {/* Original Image Preview */}
         {splitImages.length === 0 && uploadedImage && renderOriginalImage()}
 
         {/* Split Images Display */}

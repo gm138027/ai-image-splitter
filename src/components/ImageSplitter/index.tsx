@@ -5,7 +5,7 @@ import HeroSection from './HeroSection'
 
 // Dynamic import tool components to reduce initial bundle size
 const SplitControls = dynamic(() => import('./SplitControls'), {
-  loading: () => <div className="w-80 h-96 bg-gray-100 animate-pulse rounded-l-2xl" />,
+  loading: () => <div className="w-full lg:w-1/3 h-96 bg-gray-100 animate-pulse rounded-l-2xl" />,
   ssr: false,
 })
 
@@ -48,7 +48,7 @@ const ImageSplitter: React.FC<ImageSplitterProps> = ({ onToolModeChange }) => {
     }
   }, [uploadedImage, onToolModeChange])
 
-      // If no image uploaded, show Hero section
+  // If no image uploaded, show Hero section
   if (!uploadedImage) {
     return (
       <HeroSection
@@ -62,9 +62,9 @@ const ImageSplitter: React.FC<ImageSplitterProps> = ({ onToolModeChange }) => {
 
   // 有图片时显示工作区域
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
       <div className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col lg:flex-row min-h-[600px]">
           {/* Left Control Panel */}
           <SplitControls
             config={config}
