@@ -23,37 +23,37 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-blue rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float" style={{animationDelay: '1s'}}></div>
       </div>
       
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-20">
         {/* Hero Section - critical above-the-fold content */}
-        <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-7xl font-bold mb-8">
+        <div className="text-center mb-8 sm:mb-16">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-8">
             <span className="bg-gradient-to-r from-gray-900 via-primary-600 to-secondary-600 bg-clip-text text-transparent">
               {t('hero.title')}
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed">
             {t('hero.description')}
           </p>
         </div>
 
         {/* Upload Area */}
-        <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-modern-lg border border-white/20 p-10 mb-16 hover:shadow-purple-lg transition-all duration-500">
+        <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-modern-lg border border-white/20 p-6 sm:p-10 mb-16 hover:shadow-purple-lg transition-all duration-500">
           <div
-            className="border-2 border-dashed border-primary-300/50 rounded-2xl p-16 text-center hover:border-primary-400 hover:bg-primary-50/30 transition-all duration-300 cursor-pointer group"
+            className="border-2 border-dashed border-primary-300/50 rounded-2xl p-8 sm:p-16 text-center hover:border-primary-400 hover:bg-primary-50/30 transition-all duration-300 cursor-pointer group"
             onDrop={onDrop}
             onDragOver={(e) => e.preventDefault()}
             onClick={() => fileInputRef.current?.click()}
           >
-            <div className="w-20 h-20 bg-gradient-blue rounded-2xl flex items-center justify-center mx-auto mb-8 hover:scale-110 transition-transform duration-300">
-              <Upload className="w-10 h-10 text-white" />
+            <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-blue rounded-2xl flex items-center justify-center mx-auto mb-6 sm:mb-8 hover:scale-110 transition-transform duration-300">
+              <Upload className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
               {t('tool.uploadPrompt')}
             </h3>
-            <button className="bg-gradient-blue text-white px-8 py-4 rounded-xl font-semibold hover:bg-primary-700 transition-colors duration-300 mb-6">
+            <button className="bg-gradient-blue text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold hover:bg-primary-700 transition-colors duration-300 mb-4 sm:mb-6">
               {t('tool.uploadButton')}
             </button>
-            <p className="text-gray-500 text-lg">
+            <p className="text-gray-500 text-base sm:text-lg">
               {t('tool.uploadSupport')}
             </p>
           </div>
@@ -67,43 +67,43 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
 
         {/* How It Works Section */}
-        <div className="mt-24" id="how-it-works">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+        <div className="mt-16 sm:mt-24" id="how-it-works">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-16">
             <span className="bg-gradient-to-r from-gray-900 to-primary-600 bg-clip-text text-transparent">
               {t('howItWorks.title')}
             </span>
           </h2>
-          <div className="grid md:grid-cols-3 gap-10">
+          <div className="grid md:grid-cols-3 gap-6 sm:gap-10">
             <div className="text-center">
-              <div className="w-20 h-20 bg-gradient-blue rounded-2xl flex items-center justify-center mx-auto mb-6 hover:scale-110 transition-transform duration-300">
-                <Upload className="w-10 h-10 text-white" />
+              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-blue rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 hover:scale-110 transition-transform duration-300">
+                <Upload className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <h3 className="text-lg sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
                 {t('howItWorks.step1Title')}
               </h3>
-              <p className="text-gray-600 text-lg leading-relaxed">
+              <p className="text-gray-600 text-sm sm:text-lg leading-relaxed">
                 {t('howItWorks.step1Description')}
               </p>
             </div>
             <div className="text-center">
-              <div className="w-20 h-20 bg-gradient-purple rounded-2xl flex items-center justify-center mx-auto mb-6 hover:scale-110 transition-transform duration-300">
-                <Grid3X3 className="w-10 h-10 text-white" />
+              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-purple rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 hover:scale-110 transition-transform duration-300">
+                <Grid3X3 className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <h3 className="text-lg sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
                 {t('howItWorks.step2Title')}
               </h3>
-              <p className="text-gray-600 text-lg leading-relaxed">
+              <p className="text-gray-600 text-sm sm:text-lg leading-relaxed">
                 {t('howItWorks.step2Description')}
               </p>
             </div>
             <div className="text-center">
-              <div className="w-20 h-20 bg-gradient-modern rounded-2xl flex items-center justify-center mx-auto mb-6 hover:scale-110 transition-transform duration-300">
-                <Download className="w-10 h-10 text-white" />
+              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-modern rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 hover:scale-110 transition-transform duration-300">
+                <Download className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <h3 className="text-lg sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
                 {t('howItWorks.step3Title')}
               </h3>
-              <p className="text-gray-600 text-lg leading-relaxed">
+              <p className="text-gray-600 text-sm sm:text-lg leading-relaxed">
                 {t('howItWorks.step3Description')}
               </p>
             </div>
@@ -111,22 +111,22 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
 
         {/* Advantages Section - optimized image loading strategy */}
-        <div className="mt-24" id="advantages">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+        <div className="mt-16 sm:mt-24" id="advantages">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-16">
             <span className="bg-gradient-to-r from-gray-900 to-primary-600 bg-clip-text text-transparent">
               {t('advantages.title')}
             </span>
           </h2>
           
           {/* Free Online Advantage */}
-          <div className="mb-20">
-            <div className="flex flex-col lg:flex-row items-center gap-12">
+          <div className="mb-12 sm:mb-20">
+            <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-12">
               {/* Left side - Images */}
               <div className="lg:w-1/2 flex justify-center">
-                <div className="flex gap-8 items-center">
+                <div className="flex gap-4 sm:gap-8 items-center">
                   {/* Original image (small, left side) */}
                   <div className="relative">
-                    <div className="w-32 h-32 bg-gradient-to-br from-blue-100 to-blue-300 shadow-md overflow-hidden relative">
+                    <div className="w-20 h-20 sm:w-32 sm:h-32 bg-gradient-to-br from-blue-100 to-blue-300 shadow-md overflow-hidden relative">
                       <Image
                         src="/images/penguin-original.png"
                         alt={t('images.gridExampleAlt')}
@@ -135,7 +135,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                         className="object-cover w-full h-full"
                         priority={false}
                         quality={75}
-                        sizes="128px"
+                        sizes="(max-width: 640px) 80px, 128px"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
@@ -144,13 +144,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   </div>
                   
                   {/* Arrow with gradient color */}
-                  <div className="flex items-center justify-center w-14 h-14 bg-gradient-modern rounded-full shadow-modern-lg animate-pulse-slow">
-                    <ArrowRight className="w-7 h-7 text-white" />
+                  <div className="flex items-center justify-center w-10 h-10 sm:w-14 sm:h-14 bg-gradient-modern rounded-full shadow-modern-lg animate-pulse-slow">
+                    <ArrowRight className="w-5 h-5 sm:w-7 sm:h-7 text-white" />
                   </div>
                   
                   {/* Split grid image (large, right side) - 这是LCP元素，需要最高优先级 */}
                   <div className="relative">
-                    <div className="w-48 h-48 bg-gradient-to-br from-blue-200 to-blue-400 shadow-lg overflow-hidden relative">
+                    <div className="w-32 h-32 sm:w-48 sm:h-48 bg-gradient-to-br from-blue-200 to-blue-400 shadow-lg overflow-hidden relative">
                       <Image
                         src="/images/penguin-split.png"
                         alt={t('images.gridExampleAlt')}
@@ -159,7 +159,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                         className="object-cover w-full h-full"
                         priority={true}
                         quality={80}
-                        sizes="(max-width: 768px) 192px, 192px"
+                        sizes="(max-width: 640px) 128px, 192px"
                         fetchPriority="high"
                         placeholder="blur"
                         blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
@@ -171,11 +171,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               
               {/* Right side - Text */}
               <div className="lg:w-1/2">
-                <h3 className="text-3xl font-bold text-gray-900 mb-6">
+                <h3 className="text-xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">
                   {t('advantages.freeOnline.title')}
                 </h3>
                 <p 
-                  className="text-xl text-gray-600 leading-relaxed"
+                  className="text-base sm:text-xl text-gray-600 leading-relaxed"
                   dangerouslySetInnerHTML={{ __html: t('advantages.freeOnline.description') }}
                 />
               </div>
@@ -183,14 +183,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           </div>
 
                       {/* Easy Instagram Advantage - lazy load these images */}
-          <div className="mb-20">
-            <div className="flex flex-col lg:flex-row-reverse items-center gap-12">
+          <div className="mb-12 sm:mb-20">
+            <div className="flex flex-col lg:flex-row-reverse items-center gap-6 sm:gap-12">
               {/* Right side - Images */}
               <div className="lg:w-1/2 flex justify-center">
-                <div className="flex gap-8 items-center">
+                <div className="flex gap-4 sm:gap-8 items-center">
                   {/* Split grid image (large, left side) */}
                   <div className="relative">
-                    <div className="w-48 h-48 bg-gradient-to-br from-purple-200 to-purple-400 shadow-lg overflow-hidden relative">
+                    <div className="w-32 h-32 sm:w-48 sm:h-48 bg-gradient-to-br from-purple-200 to-purple-400 shadow-lg overflow-hidden relative">
                       <Image
                         src="/images/city-split.png"
                         alt={t('images.carouselExampleAlt')}
@@ -199,7 +199,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                         className="object-cover w-full h-full"
                         priority={false}
                         quality={75}
-                        sizes="192px"
+                        sizes="(max-width: 640px) 128px, 192px"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
@@ -208,13 +208,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                   </div>
                   
                   {/* Arrow with gradient color */}
-                  <div className="flex items-center justify-center w-14 h-14 bg-gradient-modern rounded-full shadow-modern-lg animate-pulse-slow">
-                    <ArrowLeft className="w-7 h-7 text-white" />
+                  <div className="flex items-center justify-center w-10 h-10 sm:w-14 sm:h-14 bg-gradient-modern rounded-full shadow-modern-lg animate-pulse-slow">
+                    <ArrowLeft className="w-5 h-5 sm:w-7 sm:h-7 text-white" />
                   </div>
                   
                   {/* Original image (small, right side) */}
                   <div className="relative">
-                    <div className="w-32 h-32 bg-gradient-to-br from-purple-100 to-purple-300 shadow-md overflow-hidden relative">
+                    <div className="w-20 h-20 sm:w-32 sm:h-32 bg-gradient-to-br from-purple-100 to-purple-300 shadow-md overflow-hidden relative">
                       <Image
                         src="/images/city-original.png"
                         alt={t('images.carouselExampleAlt')}
@@ -223,7 +223,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                         className="object-cover w-full h-full"
                         priority={false}
                         quality={75}
-                        sizes="128px"
+                        sizes="(max-width: 640px) 80px, 128px"
                         loading="lazy"
                         placeholder="blur"
                         blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
@@ -235,10 +235,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               
               {/* Left side - Text */}
               <div className="lg:w-1/2">
-                <h3 className="text-3xl font-bold text-gray-900 mb-6">
+                <h3 className="text-xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">
                   {t('advantages.easyInstagram.title')}
                 </h3>
-                <p className="text-xl text-gray-600 leading-relaxed">
+                <p className="text-base sm:text-xl text-gray-600 leading-relaxed">
                   {t('advantages.easyInstagram.description')}
                 </p>
               </div>

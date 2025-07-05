@@ -33,37 +33,59 @@ const ImagePreview: React.FC<ImagePreviewProps> = ({
   }, [])
 
   // 渲染原图预览
-  const renderOriginalImage = () => (
-    <div style={{ 
-      width: '100%', 
-      height: '100%', 
-      display: 'flex', 
-      alignItems: 'center', 
-      justifyContent: 'center',
-      padding: '20px',
-      boxSizing: 'border-box'
-    }}>
-      <div className="relative" style={{ 
-        width: '100%',
-        height: '100%',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center'
+  const renderOriginalImage = () => {
+    if (!uploadedImage || containerSize.width === 0 || containerSize.height === 0) return null;
+
+    // 计算原图的显示尺寸，保持比例
+    const containerWidth = containerSize.width;
+    const containerHeight = containerSize.height;
+    
+    const imageAspectRatio = uploadedImage.width / uploadedImage.height;
+    const containerAspectRatio = containerWidth / containerHeight;
+    
+    let displayWidth, displayHeight;
+    
+    if (imageAspectRatio > containerAspectRatio) {
+      // 图片更宽，以宽度为准
+      displayWidth = containerWidth;
+      displayHeight = containerWidth / imageAspectRatio;
+    } else {
+      // 图片更高，以高度为准
+      displayHeight = containerHeight;
+      displayWidth = containerHeight * imageAspectRatio;
+    }
+
+    return (
+      <div style={{ 
+        width: '100%', 
+        height: '100%', 
+        display: 'flex', 
+        alignItems: 'center', 
+        justifyContent: 'center',
+        padding: '20px',
+        boxSizing: 'border-box'
       }}>
-        <img
-          src={uploadedImage!.src}
-          alt="Upload preview"
-          style={{ 
-            maxWidth: '100%',
-            maxHeight: '100%',
-            objectFit: 'contain', // 保持原图比例
-            width: 'auto',
-            height: 'auto'
-          }}
-        />
+        <div className="relative" style={{ 
+          width: `${displayWidth}px`,
+          height: `${displayHeight}px`,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}>
+          <img
+            src={uploadedImage!.src}
+            alt="Upload preview"
+            style={{ 
+              width: '100%',
+              height: '100%',
+              objectFit: 'contain', // 保持原图比例
+              display: 'block'
+            }}
+          />
+        </div>
       </div>
-    </div>
-  )
+    )
+  }
 
   // 渲染分割结果
   const renderSplitImages = () => {
