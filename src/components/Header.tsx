@@ -43,23 +43,23 @@ const Header: React.FC<HeaderProps> = ({ onLogoClick, isInToolMode = false }) =>
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div 
-            className="flex items-center space-x-3 cursor-pointer hover:opacity-90 transition-opacity duration-300"
+            className="flex items-center space-x-2 sm:space-x-3 cursor-pointer hover:opacity-90 transition-opacity duration-300"
             onClick={handleLogoClick}
             title="返回首页"
           >
-            <div className="flex items-center justify-center w-10 h-10 rounded-xl shadow-modern overflow-hidden">
+            <div className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl shadow-modern overflow-hidden bg-white">
               <Image 
                 src="/android-chrome-192x192.png"
                 alt="AI Image Splitter Logo"
                 width={40}
                 height={40}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
                 priority={true}
                 quality={95}
-                sizes="40px"
+                sizes="(max-width: 640px) 32px, 40px"
               />
             </div>
-            <h1 className="text-xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+            <h1 className="text-lg sm:text-xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
               AI Image Splitter
             </h1>
           </div>

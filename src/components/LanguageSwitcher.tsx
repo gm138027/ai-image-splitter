@@ -32,14 +32,15 @@ const LanguageSwitcher: React.FC = () => {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center space-x-2 px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
+        className="flex items-center space-x-1 sm:space-x-2 px-2 sm:px-3 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
         aria-label={t('language.switchLanguage')}
       >
         <Globe className="w-4 h-4 text-gray-600" />
         <span className="text-sm font-medium text-gray-700">
-          {currentLanguage?.flag} {currentLanguage?.name}
+          {currentLanguage?.flag}
+          <span className="hidden sm:inline ml-1">{currentLanguage?.name}</span>
         </span>
-        <ChevronDown className="w-4 h-4 text-gray-600" />
+        <ChevronDown className="w-3 h-3 sm:w-4 sm:h-4 text-gray-600" />
       </button>
 
       {isOpen && (
@@ -48,20 +49,20 @@ const LanguageSwitcher: React.FC = () => {
             className="fixed inset-0 z-10" 
             onClick={() => setIsOpen(false)}
           />
-          <div className="absolute right-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 z-20">
+          <div className="absolute right-0 mt-2 w-48 sm:w-56 bg-white rounded-lg shadow-lg border border-gray-200 z-20 max-h-80 overflow-y-auto">
             <div className="py-2">
               {languages.map((language) => (
                 <button
                   key={language.code}
                   onClick={() => handleLanguageChange(language.code)}
-                  className={`w-full flex items-center space-x-3 px-4 py-2 text-sm hover:bg-gray-50 transition-colors ${
+                  className={`w-full flex items-center space-x-3 px-3 sm:px-4 py-2 text-sm hover:bg-gray-50 transition-colors ${
                     language.code === router.locale 
                       ? 'bg-primary-50 text-primary-600' 
                       : 'text-gray-700'
                   }`}
                 >
-                  <span className="text-lg">{language.flag}</span>
-                  <span>{language.name}</span>
+                  <span className="text-lg flex-shrink-0">{language.flag}</span>
+                  <span className="truncate">{language.name}</span>
                 </button>
               ))}
             </div>
