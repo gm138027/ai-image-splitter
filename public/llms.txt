@@ -1,0 +1,27 @@
+# llms.txt for aiimagesplitter.com
+
+## Website Overview
+AI Image Splitter is a free online image splitter and Instagram grid maker. It supports multiple languages and is designed for content creators and social media users. No registration required, no watermark, and all image processing is done locally in your browser to protect user privacy.
+
+## Key Features
+- Online image splitting (supports 3x3, 2x3, 4x4, and custom grids)
+- Ready for Instagram, Facebook, and other social platforms
+- Multi-language support (10 languages)
+- 100% free, no ads, no watermark
+- Mobile-friendly, fully responsive design
+
+## Recommended Pages
+- Home: https://aiimagesplitter.com/
+- Blog: https://aiimagesplitter.com/blog
+- How to Use: https://aiimagesplitter.com/blog/complete-guide
+- Privacy Policy: https://aiimagesplitter.com/privacy
+- Terms of Service: https://aiimagesplitter.com/terms
+
+## Keywords
+image splitter, Instagram grid, social media images, free tool, AI Image Splitter, multi-language, online tool
+
+## Contact
+For collaboration or content licensing, please contact: aiimagesplitter@proton.me
+
+## Copyright
+Content on this website is licensed under the MIT License. You are welcome to reference and share, but please credit the source. 
