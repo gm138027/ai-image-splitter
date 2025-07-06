@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   i18n: {
     defaultLocale: 'en',
@@ -14,7 +16,7 @@ module.exports = {
       'ru',       // 俄语
     ],
   },
-  localePath: './public/locales',
+  localePath: path.join(process.cwd(), 'public', 'locales'),
   reloadOnPrerender: process.env.NODE_ENV === 'development',
   fallbackLng: 'en',
   debug: process.env.NODE_ENV === 'development',
