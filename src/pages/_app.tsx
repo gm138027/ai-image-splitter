@@ -71,11 +71,16 @@ function MyApp({ Component, pageProps }: AppProps) {
     }
   }, [router.events])
 
-  // 自动跳转参数式URL到路径式URL（不带末尾斜杠）
+  // 自动跳转参数式URL到路径式URL（不带末尾斜杠，且去除已有语言前缀，防止嵌套）
   React.useEffect(() => {
     if (router.query.lng && router.query.lng !== router.locale) {
-      const cleanPath = router.asPath.replace(/\?.*$/, '')
-      router.replace(`/${router.query.lng}${cleanPath === '/' ? '' : cleanPath}`)
+      const locales = ['en', 'zh-CN', 'id', 'pt', 'tl', 'ms', 'hi', 'vi', 'kk', 'ru']
+      let cleanPath = router.asPath.replace(/\?.*$/, '')
+      // 去除已有的语言前缀
+      const localePattern = new RegExp(`^/(${locales.join('|')})(/|$)`, 'i')
+      cleanPath = cleanPath.replace(localePattern, '')
+      // 跳转到新语言前缀+剩余路径
+      router.replace(`/${router.query.lng}${cleanPath === '' ? '' : cleanPath}`)
     }
   }, [router.query.lng, router.locale])
 
