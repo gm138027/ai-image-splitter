@@ -24,7 +24,7 @@ const LanguageSwitcher: React.FC = () => {
   const currentLanguage = languages.find(lang => lang.code === router.locale)
 
   const handleLanguageChange = (lng: string) => {
-    router.push(lng === 'en' ? '/' : `/${lng}`)
+    router.push('/', '/', { locale: lng })
     setIsOpen(false)
   }
 
