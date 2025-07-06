@@ -45,7 +45,6 @@ const Header: React.FC<HeaderProps> = ({ onLogoClick, isInToolMode = false }) =>
           <div 
             className="flex items-center space-x-2 sm:space-x-3 cursor-pointer hover:opacity-90 transition-opacity duration-300"
             onClick={handleLogoClick}
-            title="返回首页"
           >
             <div className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl shadow-modern overflow-hidden bg-white">
               <Image 
