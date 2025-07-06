@@ -1,4 +1,4 @@
-import type { NextPage, GetServerSideProps } from 'next'
+import type { NextPage, GetStaticProps } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
@@ -156,7 +156,7 @@ const BlogIndex: NextPage = () => {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
       ...(await serverSideTranslations(locale ?? 'en', ['common', 'blog'])),

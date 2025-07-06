@@ -1,4 +1,4 @@
-import type { NextPage, GetServerSideProps } from 'next'
+import type { NextPage, GetStaticProps } from 'next'
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -362,7 +362,7 @@ const PrivacyPolicy: NextPage = () => {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
       ...(await serverSideTranslations(locale ?? 'en', ['common', 'privacy'])),
