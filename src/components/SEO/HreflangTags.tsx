@@ -23,7 +23,7 @@ const HreflangTags: React.FC<HreflangTagsProps> = ({ baseUrl = 'https://aiimages
     'zh-CN',    // Simplified Chinese
     'id',       // Indonesian
     'pt',       // Portuguese
-    'fil',      // Filipino
+    'tl',       // Tagalog (Filipino)
     'ms',       // Malay
     'hi',       // Hindi
     'vi',       // Vietnamese
@@ -52,6 +52,8 @@ const HreflangTags: React.FC<HreflangTagsProps> = ({ baseUrl = 'https://aiimages
   const getLocalizedUrl = (locale: string) => {
     if (locale === 'en') {
       return `${baseUrl}`
+    } else if (locale === 'tl') {
+      return `${baseUrl}/tl`
     } else {
       return `${baseUrl}/${locale}`
     }

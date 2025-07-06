@@ -8,7 +8,7 @@ const languages = [
   { code: 'zh-CN', name: '简体中文', flag: '🇨🇳' },
   { code: 'id', name: 'Bahasa Indonesia', flag: '🇮🇩' },
   { code: 'pt', name: 'Português', flag: '🇵🇹' },
-  { code: 'fil', name: 'Filipino', flag: '🇵🇭' },
+  { code: 'tl', name: 'Filipino', flag: '🇵🇭' },
   { code: 'ms', name: 'Bahasa Melayu', flag: '🇲🇾' },
   { code: 'hi', name: 'हिन्दी', flag: '🇮🇳' },
   { code: 'vi', name: 'Tiếng Việt', flag: '🇻🇳' },
