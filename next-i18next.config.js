@@ -8,7 +8,7 @@ module.exports = {
       'zh-CN',    // 简体中文
       'id',       // 印尼语
       'pt',       // 葡萄牙语
-      'fil',      // 菲律宾语
+      'tl',       // Tagalog（菲律宾语）
       'ms',       // 马来语
       'hi',       // 印地语
       'vi',       // 越南语
