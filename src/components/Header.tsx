@@ -59,9 +59,9 @@ const Header: React.FC<HeaderProps> = ({ onLogoClick, isInToolMode = false }) =>
                 sizes="(max-width: 640px) 32px, 40px"
               />
             </div>
-            <h1 className="text-lg sm:text-xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+            <span className="text-lg sm:text-xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent" role="presentation">
               AI Image Splitter
-            </h1>
+            </span>
           </div>
 
           {/* Desktop Navigation */}
