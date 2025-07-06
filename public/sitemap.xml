@@ -9,15 +9,15 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://aiimagesplitter.com/" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aiimagesplitter.com/?lng=zh-CN" />
-    <xhtml:link rel="alternate" hreflang="vi" href="https://aiimagesplitter.com/?lng=vi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://aiimagesplitter.com/?lng=ru" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://aiimagesplitter.com/?lng=pt" />
-    <xhtml:link rel="alternate" hreflang="ms" href="https://aiimagesplitter.com/?lng=ms" />
-    <xhtml:link rel="alternate" hreflang="kk" href="https://aiimagesplitter.com/?lng=kk" />
-    <xhtml:link rel="alternate" hreflang="id" href="https://aiimagesplitter.com/?lng=id" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://aiimagesplitter.com/?lng=hi" />
-    <xhtml:link rel="alternate" hreflang="fil" href="https://aiimagesplitter.com/?lng=fil" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aiimagesplitter.com/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://aiimagesplitter.com/vi/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aiimagesplitter.com/ru/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aiimagesplitter.com/pt/" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://aiimagesplitter.com/ms/" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://aiimagesplitter.com/kk/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://aiimagesplitter.com/id/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aiimagesplitter.com/hi/" />
+    <xhtml:link rel="alternate" hreflang="fil" href="https://aiimagesplitter.com/fil/" />
   </url>
 
   <!-- 博客首页 -->
@@ -27,15 +27,15 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://aiimagesplitter.com/blog" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aiimagesplitter.com/blog?lng=zh-CN" />
-    <xhtml:link rel="alternate" hreflang="vi" href="https://aiimagesplitter.com/blog?lng=vi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://aiimagesplitter.com/blog?lng=ru" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://aiimagesplitter.com/blog?lng=pt" />
-    <xhtml:link rel="alternate" hreflang="ms" href="https://aiimagesplitter.com/blog?lng=ms" />
-    <xhtml:link rel="alternate" hreflang="kk" href="https://aiimagesplitter.com/blog?lng=kk" />
-    <xhtml:link rel="alternate" hreflang="id" href="https://aiimagesplitter.com/blog?lng=id" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://aiimagesplitter.com/blog?lng=hi" />
-    <xhtml:link rel="alternate" hreflang="fil" href="https://aiimagesplitter.com/blog?lng=fil" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aiimagesplitter.com/zh-CN/blog" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://aiimagesplitter.com/vi/blog" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aiimagesplitter.com/ru/blog" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aiimagesplitter.com/pt/blog" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://aiimagesplitter.com/ms/blog" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://aiimagesplitter.com/kk/blog" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://aiimagesplitter.com/id/blog" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aiimagesplitter.com/hi/blog" />
+    <xhtml:link rel="alternate" hreflang="fil" href="https://aiimagesplitter.com/fil/blog" />
   </url>
 
   <!-- 博客完整指南 -->
@@ -45,15 +45,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://aiimagesplitter.com/blog/complete-guide" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aiimagesplitter.com/blog/complete-guide?lng=zh-CN" />
-    <xhtml:link rel="alternate" hreflang="vi" href="https://aiimagesplitter.com/blog/complete-guide?lng=vi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://aiimagesplitter.com/blog/complete-guide?lng=ru" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://aiimagesplitter.com/blog/complete-guide?lng=pt" />
-    <xhtml:link rel="alternate" hreflang="ms" href="https://aiimagesplitter.com/blog/complete-guide?lng=ms" />
-    <xhtml:link rel="alternate" hreflang="kk" href="https://aiimagesplitter.com/blog/complete-guide?lng=kk" />
-    <xhtml:link rel="alternate" hreflang="id" href="https://aiimagesplitter.com/blog/complete-guide?lng=id" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://aiimagesplitter.com/blog/complete-guide?lng=hi" />
-    <xhtml:link rel="alternate" hreflang="fil" href="https://aiimagesplitter.com/blog/complete-guide?lng=fil" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aiimagesplitter.com/zh-CN/blog/complete-guide" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://aiimagesplitter.com/vi/blog/complete-guide" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aiimagesplitter.com/ru/blog/complete-guide" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aiimagesplitter.com/pt/blog/complete-guide" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://aiimagesplitter.com/ms/blog/complete-guide" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://aiimagesplitter.com/kk/blog/complete-guide" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://aiimagesplitter.com/id/blog/complete-guide" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aiimagesplitter.com/hi/blog/complete-guide" />
+    <xhtml:link rel="alternate" hreflang="fil" href="https://aiimagesplitter.com/fil/blog/complete-guide" />
   </url>
 
   <!-- 隐私政策 -->
@@ -63,15 +63,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://aiimagesplitter.com/privacy" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aiimagesplitter.com/privacy?lng=zh-CN" />
-    <xhtml:link rel="alternate" hreflang="vi" href="https://aiimagesplitter.com/privacy?lng=vi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://aiimagesplitter.com/privacy?lng=ru" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://aiimagesplitter.com/privacy?lng=pt" />
-    <xhtml:link rel="alternate" hreflang="ms" href="https://aiimagesplitter.com/privacy?lng=ms" />
-    <xhtml:link rel="alternate" hreflang="kk" href="https://aiimagesplitter.com/privacy?lng=kk" />
-    <xhtml:link rel="alternate" hreflang="id" href="https://aiimagesplitter.com/privacy?lng=id" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://aiimagesplitter.com/privacy?lng=hi" />
-    <xhtml:link rel="alternate" hreflang="fil" href="https://aiimagesplitter.com/privacy?lng=fil" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aiimagesplitter.com/zh-CN/privacy" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://aiimagesplitter.com/vi/privacy" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aiimagesplitter.com/ru/privacy" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aiimagesplitter.com/pt/privacy" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://aiimagesplitter.com/ms/privacy" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://aiimagesplitter.com/kk/privacy" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://aiimagesplitter.com/id/privacy" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aiimagesplitter.com/hi/privacy" />
+    <xhtml:link rel="alternate" hreflang="fil" href="https://aiimagesplitter.com/fil/privacy" />
   </url>
 
   <!-- 服务条款 -->
@@ -81,15 +81,15 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://aiimagesplitter.com/terms" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aiimagesplitter.com/terms?lng=zh-CN" />
-    <xhtml:link rel="alternate" hreflang="vi" href="https://aiimagesplitter.com/terms?lng=vi" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://aiimagesplitter.com/terms?lng=ru" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://aiimagesplitter.com/terms?lng=pt" />
-    <xhtml:link rel="alternate" hreflang="ms" href="https://aiimagesplitter.com/terms?lng=ms" />
-    <xhtml:link rel="alternate" hreflang="kk" href="https://aiimagesplitter.com/terms?lng=kk" />
-    <xhtml:link rel="alternate" hreflang="id" href="https://aiimagesplitter.com/terms?lng=id" />
-    <xhtml:link rel="alternate" hreflang="hi" href="https://aiimagesplitter.com/terms?lng=hi" />
-    <xhtml:link rel="alternate" hreflang="fil" href="https://aiimagesplitter.com/terms?lng=fil" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://aiimagesplitter.com/zh-CN/terms" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://aiimagesplitter.com/vi/terms" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aiimagesplitter.com/ru/terms" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://aiimagesplitter.com/pt/terms" />
+    <xhtml:link rel="alternate" hreflang="ms" href="https://aiimagesplitter.com/ms/terms" />
+    <xhtml:link rel="alternate" hreflang="kk" href="https://aiimagesplitter.com/kk/terms" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://aiimagesplitter.com/id/terms" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://aiimagesplitter.com/hi/terms" />
+    <xhtml:link rel="alternate" hreflang="fil" href="https://aiimagesplitter.com/fil/terms" />
   </url>
 
 </urlset> 
