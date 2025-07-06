@@ -59,8 +59,6 @@ const nextConfig = {
     }
     return config
   },
-  // 添加输出配置，确保静态导出正确
-  trailingSlash: true,
   // 处理图片和静态资源
   assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
 }
