@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server'
 // 支持的语言列表，根据你的实际配置调整
 const supportedLocales = ['en', 'zh-CN', 'id', 'pt', 'th', 'hi', 'ru', 'vi', 'ja']
 
-export function middleware(request: NextRequest) {
+export default function middleware(request: NextRequest) {
   const { searchParams, pathname, origin } = request.nextUrl
   const lng = searchParams.get('lng')
 
@@ -23,7 +23,7 @@ export function middleware(request: NextRequest) {
   return NextResponse.next()
 }
 
-// 可选：只在页面请求时生效
+// 只在页面请求时生效
 export const config = {
   matcher: ['/((?!_next|api|static|favicon.ico).*)'],
 } 
