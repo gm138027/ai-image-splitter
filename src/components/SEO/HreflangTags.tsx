@@ -51,23 +51,19 @@ const HreflangTags: React.FC<HreflangTagsProps> = ({ baseUrl = 'https://aiimages
   // Generate complete URL for each language - fixed version
   const getLocalizedUrl = (locale: string) => {
     if (locale === 'en') {
-      return `${baseUrl}${cleanPath}`
+      return `${baseUrl}`
     } else {
-      return `${baseUrl}/${locale}${cleanPath}`
+      return `${baseUrl}/${locale}`
     }
   }
   
   // Get canonical URL for current page
   const getCanonicalUrl = () => {
     const currentLocale = getCurrentLocale()
-    
-    // If default language or no language parameter, return clean URL
     if (currentLocale === 'en') {
-      return `${baseUrl}${cleanPath}`
+      return `${baseUrl}`
     }
-    
-    // Otherwise return URL with language parameter
-    return `${baseUrl}/${currentLocale}${cleanPath}`
+    return `${baseUrl}/${currentLocale}`
   }
 
   return (

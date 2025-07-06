@@ -40,9 +40,9 @@ const LanguageSEO: React.FC<LanguageSEOProps> = ({
   const getCurrentUrl = () => {
     const cleanPath = router.pathname
     if (currentLocale === 'en') {
-      return `${baseUrl}${cleanPath}`
+      return `${baseUrl}`
     }
-    return `${baseUrl}${cleanPath}?lng=${currentLocale}`
+    return `${baseUrl}/${currentLocale}`
   }
   
   // Generate language-specific title
