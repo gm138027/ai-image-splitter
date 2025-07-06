@@ -27,9 +27,6 @@ const LanguageSEO: React.FC<LanguageSEOProps> = ({
   
   // Get current language
   const getCurrentLocale = () => {
-    if (router.query.lng && typeof router.query.lng === 'string') {
-      return router.query.lng
-    }
     return router.locale || 'en'
   }
   

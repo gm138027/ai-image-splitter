@@ -34,18 +34,9 @@ const HreflangTags: React.FC<HreflangTagsProps> = ({ baseUrl = 'https://aiimages
   // Get clean path (excluding any query parameters)
   const cleanPath = router.pathname
   
-  // Get current language (from query parameters or router.locale)
+  // Get current language (只用router.locale，不再检测query.lng)
   const getCurrentLocale = () => {
-    // Priority: get language from URL parameters
-    if (router.query.lng && typeof router.query.lng === 'string') {
-      return router.query.lng
-    }
-    // Fallback: get from router.locale
-    if (router.locale) {
-      return router.locale
-    }
-    // Default: return English
-    return 'en'
+    return router.locale || 'en'
   }
   
   // 获取当前页面的路径（去除语言前缀，保留 slug 和子路径）
@@ -53,31 +44,29 @@ const HreflangTags: React.FC<HreflangTagsProps> = ({ baseUrl = 'https://aiimages
     // 以 /zh-CN/blog/xxx、/tl/privacy、/blog/xxx 形式处理
     const path = router.asPath.split('?')[0]
     const localePattern = new RegExp(`^/(${locales.join('|')})(/|$)`, 'i')
-    const clean = path.replace(localePattern, '/')
-    // 保证首页为 /，其它为 /xxx
-    return clean === '' ? '/' : clean
+    const clean = path.replace(localePattern, '')
+    // 保证首页为 ''，其它为 '/xxx'
+    return clean === '' || clean === '/' ? '' : clean
   }
   
-  // 生成每种语言的完整 URL，指向同一路径的多语言版本
+  // 生成每种语言的完整 URL，指向同一路径的多语言版本（不带末尾斜杠）
   const getLocalizedUrl = (locale: string) => {
     const path = getPathWithoutLocale()
     if (locale === 'en') {
-      return `${baseUrl}${path === '/' ? '' : path}`
+      return `${baseUrl}${path}`
     } else {
-      return `${baseUrl}/${locale}${path === '/' ? '' : path}`
+      return `${baseUrl}/${locale}${path}`
     }
   }
   
-  // Get canonical URL for current page（Next.js 最稳妥方案：pathname + locale 组合，兼容所有 SSR/CSR 场景）
+  // Get canonical URL for current page（不带末尾斜杠）
   const getCanonicalUrl = () => {
-    // 首页
     if (router.pathname === '/' && router.locale && router.locale !== 'en') {
       return `${baseUrl}/${router.locale}`
     }
     if (router.pathname === '/') {
       return baseUrl
     }
-    // 其它页面
     return `${baseUrl}${router.locale === 'en' ? '' : '/' + router.locale}${router.pathname}`
   }
 

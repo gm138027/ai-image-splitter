@@ -71,6 +71,14 @@ function MyApp({ Component, pageProps }: AppProps) {
     }
   }, [router.events])
 
+  // 自动跳转参数式URL到路径式URL（不带末尾斜杠）
+  React.useEffect(() => {
+    if (router.query.lng && router.query.lng !== router.locale) {
+      const cleanPath = router.asPath.replace(/\?.*$/, '')
+      router.replace(`/${router.query.lng}${cleanPath === '/' ? '' : cleanPath}`)
+    }
+  }, [router.query.lng, router.locale])
+
   return (
     <ErrorBoundary>
               {/* Optimized Google Analytics component */}
