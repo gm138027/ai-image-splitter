@@ -68,9 +68,13 @@ const HreflangTags: React.FC<HreflangTagsProps> = ({ baseUrl = 'https://aiimages
     }
   }
   
-  // Get canonical URL for current page（最稳妥：直接用当前访问路径，无论什么语言都100%准确）
+  // Get canonical URL for current page（兼容多语言首页，最稳妥）
   const getCanonicalUrl = () => {
-    const path = router.asPath.split('?')[0].split('#')[0]
+    let path = router.asPath.split('?')[0].split('#')[0]
+    // 如果是多语言首页，asPath 可能是 '/'，但 locale 不是 'en'，需要拼接 /locale
+    if (path === '/' && router.locale && router.locale !== 'en') {
+      path = `/${router.locale}`
+    }
     return `${baseUrl}${path === '/' ? '' : path}`
   }
 
