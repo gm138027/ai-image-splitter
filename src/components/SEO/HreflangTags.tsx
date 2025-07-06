@@ -48,14 +48,21 @@ const HreflangTags: React.FC<HreflangTagsProps> = ({ baseUrl = 'https://aiimages
     return 'en'
   }
   
-  // Generate complete URL for each language - fixed version
+  // 获取当前页面的路径（去除语言前缀）
+  const getPathWithoutLocale = () => {
+    // 以 /zh-CN/blog、/tl/privacy、/blog 形式处理
+    const path = router.asPath.split('?')[0]
+    const localePattern = new RegExp(`^/(${locales.join('|')})(/|$)`, 'i')
+    return path.replace(localePattern, '/')
+  }
+  
+  // 生成每种语言的完整 URL，指向同一路径的多语言版本
   const getLocalizedUrl = (locale: string) => {
+    const path = getPathWithoutLocale()
     if (locale === 'en') {
-      return `${baseUrl}`
-    } else if (locale === 'tl') {
-      return `${baseUrl}/tl`
+      return `${baseUrl}${path === '/' ? '' : path}`
     } else {
-      return `${baseUrl}/${locale}`
+      return `${baseUrl}/${locale}${path === '/' ? '' : path}`
     }
   }
   
