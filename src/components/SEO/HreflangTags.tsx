@@ -48,12 +48,14 @@ const HreflangTags: React.FC<HreflangTagsProps> = ({ baseUrl = 'https://aiimages
     return 'en'
   }
   
-  // 获取当前页面的路径（去除语言前缀）
+  // 获取当前页面的路径（去除语言前缀，保留 slug 和子路径）
   const getPathWithoutLocale = () => {
-    // 以 /zh-CN/blog、/tl/privacy、/blog 形式处理
+    // 以 /zh-CN/blog/xxx、/tl/privacy、/blog/xxx 形式处理
     const path = router.asPath.split('?')[0]
     const localePattern = new RegExp(`^/(${locales.join('|')})(/|$)`, 'i')
-    return path.replace(localePattern, '/')
+    const clean = path.replace(localePattern, '/')
+    // 保证首页为 /，其它为 /xxx
+    return clean === '' ? '/' : clean
   }
   
   // 生成每种语言的完整 URL，指向同一路径的多语言版本
@@ -66,13 +68,14 @@ const HreflangTags: React.FC<HreflangTagsProps> = ({ baseUrl = 'https://aiimages
     }
   }
   
-  // Get canonical URL for current page
+  // Get canonical URL for current page（拼接完整路径）
   const getCanonicalUrl = () => {
     const currentLocale = getCurrentLocale()
+    const path = getPathWithoutLocale()
     if (currentLocale === 'en') {
-      return `${baseUrl}`
+      return `${baseUrl}${path === '/' ? '' : path}`
     }
-    return `${baseUrl}/${currentLocale}`
+    return `${baseUrl}/${currentLocale}${path === '/' ? '' : path}`
   }
 
   return (
