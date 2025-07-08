@@ -5,40 +5,9 @@ const { locales } = i18n
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  i18n,
-  async redirects() {
-    // Generate a redirect for each supported locale (except the default 'en')
-    // This will handle the legacy ?lng=... URLs and fix the SEO issue.
-    const languageRedirects = locales
-      .filter(locale => locale !== 'en')
-      .map(locale => ({
-        source: '/:path*',
-        has: [
-          {
-            type: 'query',
-            key: 'lng',
-            value: locale,
-          },
-        ],
-        destination: `/${locale}/:path*`,
-        permanent: true, // Use 301 redirect for SEO
-      }))
-
-    // Add a specific redirect for ?lng=en to the path without a prefix
-    const enRedirect = {
-      source: '/:path*',
-      has: [
-        {
-          type: 'query',
-          key: 'lng',
-          value: 'en',
-        },
-      ],
-      destination: '/:path*',
-      permanent: true,
-    }
-
-    return [...languageRedirects, enRedirect]
+  i18n: {
+    ...i18n,
+    localeDetection: false,
   },
   images: {
     // 启用自动图片优化，支持WebP和AVIF格式
