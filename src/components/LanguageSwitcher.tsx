@@ -24,7 +24,8 @@ const LanguageSwitcher: React.FC = () => {
   const currentLanguage = languages.find(lang => lang.code === router.locale)
 
   const handleLanguageChange = (lng: string) => {
-    router.push('/', '/', { locale: lng })
+    // 使用Next.js官方locale切换机制，保证路径永远只有一个前缀
+    router.push(router.pathname, router.asPath, { locale: lng })
     setIsOpen(false)
   }
 
