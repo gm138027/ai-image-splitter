@@ -4,6 +4,7 @@ const { i18n } = require('./next-i18next.config.js');
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  trailingSlash: false,
   i18n,
   images: {
     // 启用自动图片优化，支持WebP和AVIF格式
