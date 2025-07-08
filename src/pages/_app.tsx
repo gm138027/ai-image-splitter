@@ -6,11 +6,11 @@ import { useEffect } from 'react'
 import nextI18NextConfig from '../../next-i18next.config.js'
 import '@/styles/globals.css'
 
-// 导入Google Analytics工具函数和组件
+// Import Google Analytics utility functions and components
 import { pageview } from '@/lib/gtag'
 import dynamic from 'next/dynamic'
 
-// 动态导入Google Analytics组件以减少初始bundle大小
+// Dynamically import Google Analytics component to reduce initial bundle size
 const GoogleAnalytics = dynamic(() => import('@/components/Analytics/GoogleAnalytics'), {
   ssr: false,
 })
@@ -73,7 +73,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ErrorBoundary>
-              {/* Optimized Google Analytics component */}
+      {/* Optimized Google Analytics component */}
       <GoogleAnalytics />
       
       <Component {...pageProps} />

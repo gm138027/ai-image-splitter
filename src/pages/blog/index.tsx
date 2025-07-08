@@ -59,7 +59,7 @@ const BlogIndex: NextPage = () => {
         <meta name="twitter:description" content={t('blog:description')} />
       </Head>
       
-      {/* hreflang和canonical标记 */}
+      {/* hreflang and canonical tags */}
       <HreflangTags />
 
       <Layout>

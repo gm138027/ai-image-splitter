@@ -1,23 +1,45 @@
 User-agent: *
 Allow: /
 
-# 主要页面
+# Block query parameter format multilingual URLs - Fix "alternate page" issue
+Disallow: /*?lng=*
+Disallow: /*?*lng=*
+
+# Block incorrect language code URLs
+Disallow: /fil
+
+# Allow correct multilingual paths (no trailing slash)
+Allow: /zh-CN
+Allow: /id
+Allow: /pt
+Allow: /tl
+Allow: /ms
+Allow: /hi
+Allow: /vi
+Allow: /kk
+Allow: /ru
+
+# Standard blocks
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Main pages
 Allow: /blog
 Allow: /privacy
 Allow: /terms
 
-# 静态资源
+# Static assets
 Allow: /images/
 Allow: /icons/
 Allow: /_next/static/
 
-# 不允许索引的目录
+# Block indexing of directories
 Disallow: /_next/
-Disallow: /api/
 Disallow: /node_modules/
 
-# 站点地图
+# Sitemap
 Sitemap: https://aiimagesplitter.com/sitemap.xml
 
-# 首选域名
+# Preferred domain
 Host: aiimagesplitter.com 

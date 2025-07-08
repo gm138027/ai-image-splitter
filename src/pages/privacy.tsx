@@ -15,7 +15,7 @@ const PrivacyPolicy: NextPage = () => {
   const { t } = useTranslation(['privacy', 'common'])
   const router = useRouter()
 
-  // 目录导航项
+  // Table of contents navigation items
   const tableOfContents = [
     { id: 'introduction', title: t('privacy:sections.introduction.title'), icon: Shield },
     { id: 'dataCollection', title: t('privacy:sections.dataCollection.title'), icon: Eye },
@@ -27,7 +27,7 @@ const PrivacyPolicy: NextPage = () => {
     { id: 'contact', title: t('privacy:sections.contact.title'), icon: Mail }
   ]
 
-  // 滚动到指定部分
+  // Scroll to specified section
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
     if (element) {
@@ -60,7 +60,7 @@ const PrivacyPolicy: NextPage = () => {
         <meta name="twitter:title" content={`${t('privacy:title')} - AI Image Splitter`} />
         <meta name="twitter:description" content={t('privacy:description')} />
         
-        {/* 结构化数据 */}
+        {/* Structured data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -85,14 +85,14 @@ const PrivacyPolicy: NextPage = () => {
         />
       </Head>
       
-      {/* hreflang和canonical标记 */}
+      {/* hreflang and canonical tags */}
       <HreflangTags />
 
       <Layout>
         <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30 py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            {/* 返回链接 */}
+            {/* Back to home link */}
             <div className="mb-8">
               <Link 
                 href="/" 
@@ -105,7 +105,7 @@ const PrivacyPolicy: NextPage = () => {
 
             <div className="flex flex-col lg:flex-row gap-8">
               
-              {/* 目录导航 - 桌面端固定，移动端可收起 */}
+              {/* Table of contents navigation - Fixed on desktop, collapsible on mobile */}
               <div className="lg:w-80 lg:flex-shrink-0">
                 <div className="lg:sticky lg:top-24">
                   <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
@@ -129,11 +129,11 @@ const PrivacyPolicy: NextPage = () => {
                 </div>
               </div>
 
-              {/* 主要内容 */}
+              {/* Main content */}
               <div className="flex-1 max-w-4xl">
                 <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
                   
-                  {/* 页眉 */}
+                  {/* Header */}
                   <div className="bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-12 text-white">
                     <div className="flex items-center mb-4">
                       <Shield className="mr-4 h-8 w-8" />
@@ -143,10 +143,10 @@ const PrivacyPolicy: NextPage = () => {
                     <p className="text-blue-200 text-sm">{t('privacy:lastUpdated')}</p>
                   </div>
 
-                  {/* 内容区域 */}
+                  {/* Content area */}
                   <div className="px-8 py-8 space-y-12">
 
-                    {/* 简介 */}
+                    {/* Introduction */}
                     <section id="introduction">
                       <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                         <Shield className="mr-3 h-6 w-6 text-blue-600" />
@@ -157,7 +157,7 @@ const PrivacyPolicy: NextPage = () => {
                       </p>
                     </section>
 
-                    {/* 我们收集的信息 */}
+                    {/* Information we collect */}
                     <section id="dataCollection">
                       <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                         <Eye className="mr-3 h-6 w-6 text-blue-600" />
@@ -167,7 +167,7 @@ const PrivacyPolicy: NextPage = () => {
                         {t('privacy:sections.dataCollection.overview')}
                       </p>
 
-                      {/* 图像处理 */}
+                      {/* Image processing */}
                       <div className="bg-green-50 border border-green-200 rounded-lg p-6 mb-6">
                         <h3 className="text-lg font-semibold text-green-800 mb-3">
                           {t('privacy:sections.dataCollection.subsections.imageProcessing.title')}
@@ -177,7 +177,7 @@ const PrivacyPolicy: NextPage = () => {
                         </p>
                       </div>
 
-                      {/* 技术数据 */}
+                      {/* Technical data */}
                       <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-6">
                         <h3 className="text-lg font-semibold text-gray-800 mb-3">
                           {t('privacy:sections.dataCollection.subsections.technicalData.title')}
@@ -192,7 +192,7 @@ const PrivacyPolicy: NextPage = () => {
                         </ul>
                       </div>
 
-                      {/* 不收集个人信息 */}
+                      {/* No personal information collected */}
                       <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
                         <h3 className="text-lg font-semibold text-blue-800 mb-3">
                           {t('privacy:sections.dataCollection.subsections.noPersonalData.title')}
@@ -208,7 +208,7 @@ const PrivacyPolicy: NextPage = () => {
                       </div>
                     </section>
 
-                    {/* 信息使用方式 */}
+                    {/* How we use information */}
                     <section id="dataUsage">
                       <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                         <Users className="mr-3 h-6 w-6 text-blue-600" />
@@ -224,7 +224,7 @@ const PrivacyPolicy: NextPage = () => {
                       </ul>
                     </section>
 
-                    {/* 信息共享 */}
+                    {/* Information sharing */}
                     <section id="dataSharing">
                       <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                         <Globe className="mr-3 h-6 w-6 text-blue-600" />
@@ -244,7 +244,7 @@ const PrivacyPolicy: NextPage = () => {
                       </div>
                     </section>
 
-                    {/* 数据安全 */}
+                    {/* Data security */}
                     <section id="dataSecurity">
                       <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                         <Lock className="mr-3 h-6 w-6 text-blue-600" />
@@ -260,7 +260,7 @@ const PrivacyPolicy: NextPage = () => {
                       </ul>
                     </section>
 
-                    {/* Cookie和本地存储 */}
+                    {/* Cookies and local storage */}
                     <section id="cookies">
                       <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                         <FileText className="mr-3 h-6 w-6 text-blue-600" />
@@ -281,7 +281,7 @@ const PrivacyPolicy: NextPage = () => {
                       </div>
                     </section>
 
-                    {/* 您的权利 */}
+                    {/* Your rights */}
                     <section id="userRights">
                       <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                         <Users className="mr-3 h-6 w-6 text-blue-600" />
@@ -297,7 +297,7 @@ const PrivacyPolicy: NextPage = () => {
                       </ul>
                     </section>
 
-                    {/* 儿童隐私保护 */}
+                    {/* Children's privacy protection */}
                     <section>
                       <h2 className="text-2xl font-bold text-gray-900 mb-4">
                         {t('privacy:sections.minorProtection.title')}
@@ -307,7 +307,7 @@ const PrivacyPolicy: NextPage = () => {
                       </p>
                     </section>
 
-                    {/* 国际用户 */}
+                    {/* International users */}
                     <section>
                       <h2 className="text-2xl font-bold text-gray-900 mb-4">
                         {t('privacy:sections.internationalUsers.title')}
@@ -317,7 +317,7 @@ const PrivacyPolicy: NextPage = () => {
                       </p>
                     </section>
 
-                    {/* 隐私政策变更 */}
+                    {/* Privacy policy changes */}
                     <section>
                       <h2 className="text-2xl font-bold text-gray-900 mb-4">
                         {t('privacy:sections.policyChanges.title')}
@@ -327,7 +327,7 @@ const PrivacyPolicy: NextPage = () => {
                       </p>
                     </section>
 
-                    {/* 联系我们 */}
+                    {/* Contact us */}
                     <section id="contact" className="bg-gray-50 rounded-lg p-8">
                       <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                         <Mail className="mr-3 h-6 w-6 text-blue-600" />
@@ -346,7 +346,7 @@ const PrivacyPolicy: NextPage = () => {
                       </div>
                     </section>
 
-                    {/* 回到顶部链接 */}
+                    {/* Back to top link */}
                     <div className="text-center pt-8 border-t border-gray-200">
                       <DomainLink className="text-blue-600 hover:text-blue-800 font-medium" />
                     </div>

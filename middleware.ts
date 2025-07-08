@@ -1,31 +1,31 @@
 import { NextRequest, NextResponse } from 'next/server'
-
-// 只允许的语言前缀
-const locales = ['en', 'zh-CN', 'id', 'pt', 'tl', 'ms', 'hi', 'vi', 'kk', 'ru']
+import { SUPPORTED_LOCALES } from './src/lib/urlUtils'
 
 export function middleware(request: NextRequest) {
-  console.log('中间件已运行', request.nextUrl.href)
+  console.log('Middleware executed', request.nextUrl.href)
   const { pathname, searchParams } = request.nextUrl
   const lngParam = searchParams.get('lng')
 
-  // 只要有?lng=xxx参数，且xxx是受支持的语言
-  if (lngParam && locales.includes(lngParam)) {
-    // 构造新路径：/zh-CN/xxx
+  // If there's a ?lng=xxx parameter and xxx is a supported language
+  if (lngParam && SUPPORTED_LOCALES.includes(lngParam as any)) {
+    // Construct new path: /zh-CN/xxx
     let newPath = pathname
-    // 避免重复前缀
+    // Avoid duplicate prefixes
     if (!pathname.startsWith(`/${lngParam}`) && lngParam !== 'en') {
       newPath = `/${lngParam}${pathname === '/' ? '' : pathname}`
     }
-    // 构造新URL，去掉lng参数，保留其它参数
+    // Construct new URL, remove lng parameter, keep other parameters
     const url = request.nextUrl.clone()
     url.pathname = newPath
     url.searchParams.delete('lng')
     return NextResponse.redirect(url, 301)
   }
 
-  // 处理多重前缀（如 /zh-CN/hi/xxx），只保留第一个前缀
+  // Handle multiple prefixes (like /zh-CN/hi/xxx), only keep the first prefix
   const pathParts = pathname.split('/').filter(Boolean)
-  if (pathParts.length >= 2 && locales.includes(pathParts[0]) && locales.includes(pathParts[1])) {
+  if (pathParts.length >= 2 && 
+      SUPPORTED_LOCALES.includes(pathParts[0] as any) && 
+      SUPPORTED_LOCALES.includes(pathParts[1] as any)) {
     const url = request.nextUrl.clone()
     url.pathname = `/${pathParts[0]}/${pathParts.slice(2).join('/')}`
     return NextResponse.redirect(url, 301)
@@ -34,10 +34,15 @@ export function middleware(request: NextRequest) {
   return NextResponse.next()
 }
 
-// 最终 matcher 配置，确保根路径和所有子路径都被拦截
 export const config = {
   matcher: [
-    '/',
-    '/:path*',
+    /*
+     * Match all request paths except:
+     * - api routes
+     * - _next/static (static files)
+     * - _next/image (image optimization files)  
+     * - favicon.ico (icon)
+     */
+    '/((?!api|_next/static|_next/image|favicon.ico|images|locales|icons|android-chrome|apple-touch|favicon|site\\.webmanifest|robots\\.txt|sitemap\\.xml).*)',
   ],
 } 

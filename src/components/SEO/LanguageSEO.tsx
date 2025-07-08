@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
+import { usePageUrls } from '@/lib/urlUtils'
 
 interface LanguageSEOProps {
   title?: string
@@ -9,13 +10,13 @@ interface LanguageSEOProps {
 }
 
 /**
- * LanguageSEO Component - Multilingual page SEO optimization
+ * LanguageSEO Component - Multilingual SEO optimization with unified URL management
  * 
  * Features:
  * 1. Generate unique title and description for each language version
- * 2. Add language-related robots directives
+ * 2. Use unified URL management to ensure correct og:url
  * 3. Optimize Open Graph and Twitter Card tags
- * 4. Ensure each language version is recognized as an independent page
+ * 4. Ensure each language version is recognized as independent page
  */
 const LanguageSEO: React.FC<LanguageSEOProps> = ({ 
   title, 
@@ -24,23 +25,11 @@ const LanguageSEO: React.FC<LanguageSEOProps> = ({
 }) => {
   const router = useRouter()
   const { t } = useTranslation('common')
+  const { currentUrl } = usePageUrls(router)
   
   // Get current language
-  const getCurrentLocale = () => {
-    return router.locale || 'en'
-  }
-  
-  const currentLocale = getCurrentLocale()
+  const currentLocale = router.locale || 'en'
   const baseUrl = 'https://aiimagesplitter.com'
-  
-  // Generate complete URL for current page
-  const getCurrentUrl = () => {
-    const cleanPath = router.pathname
-    if (currentLocale === 'en') {
-      return `${baseUrl}`
-    }
-    return `${baseUrl}/${currentLocale}`
-  }
   
   // Generate language-specific title
   const getLocalizedTitle = () => {
@@ -60,13 +49,13 @@ const LanguageSEO: React.FC<LanguageSEOProps> = ({
     return t('seo.keywords')
   }
   
-  // Language mapping - for Open Graph locale
+  // Language mapping for Open Graph locale
   const localeMapping: Record<string, string> = {
     'en': 'en_US',
     'zh-CN': 'zh_CN',
     'id': 'id_ID',
     'pt': 'pt_PT',
-    'fil': 'fil_PH',
+    'tl': 'tl_PH', // Fix: Use tl consistently instead of fil
     'ms': 'ms_MY',
     'hi': 'hi_IN',
     'vi': 'vi_VN',
@@ -91,7 +80,7 @@ const LanguageSEO: React.FC<LanguageSEOProps> = ({
       {/* Open Graph tags - language specific */}
       <meta property="og:title" content={getLocalizedTitle()} />
       <meta property="og:description" content={getLocalizedDescription()} />
-      <meta property="og:url" content={getCurrentUrl()} />
+      <meta property="og:url" content={currentUrl} />
       <meta property="og:locale" content={localeMapping[currentLocale] || 'en_US'} />
       <meta property="og:site_name" content="AI Image Splitter" />
       <meta property="og:type" content="website" />
@@ -125,7 +114,7 @@ const getRegionForLocale = (locale: string): string => {
     'zh-CN': 'CN',
     'id': 'ID',
     'pt': 'PT',
-    'fil': 'PH',
+    'tl': 'PH', // Fix: Use tl consistently
     'ms': 'MY',
     'hi': 'IN',
     'vi': 'VN',
@@ -140,7 +129,7 @@ const getPlaceForLocale = (locale: string): string => {
     'zh-CN': 'China',
     'id': 'Indonesia',
     'pt': 'Portugal',
-    'fil': 'Philippines',
+    'tl': 'Philippines', // Fix: Use tl consistently
     'ms': 'Malaysia',
     'hi': 'India',
     'vi': 'Vietnam',

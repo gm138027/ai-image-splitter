@@ -14,7 +14,7 @@ const TermsOfService: NextPage = () => {
   const { t } = useTranslation(['terms', 'common'])
   const router = useRouter()
 
-  // 目录导航项
+  // Table of contents navigation items
   const tableOfContents = [
     { id: 'agreement', title: t('terms:sections.agreement.title'), icon: Scale },
     { id: 'serviceDescription', title: t('terms:sections.serviceDescription.title'), icon: FileText },
@@ -31,7 +31,7 @@ const TermsOfService: NextPage = () => {
     { id: 'contact', title: t('terms:sections.contact.title'), icon: Phone }
   ]
 
-  // 滚动到指定部分
+  // Scroll to specified section
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
     if (element) {
@@ -64,7 +64,7 @@ const TermsOfService: NextPage = () => {
         <meta name="twitter:title" content={`${t('terms:title')} - AI Image Splitter`} />
         <meta name="twitter:description" content={t('terms:description')} />
         
-        {/* 结构化数据 */}
+        {/* Structured data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -89,14 +89,14 @@ const TermsOfService: NextPage = () => {
         />
       </Head>
       
-      {/* hreflang和canonical标记 */}
+      {/* hreflang and canonical tags */}
       <HreflangTags />
 
       <Layout>
         <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30 py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            {/* 返回链接 */}
+            {/* Back to home link */}
             <div className="mb-8">
               <Link 
                 href="/" 
@@ -109,7 +109,7 @@ const TermsOfService: NextPage = () => {
 
             <div className="flex flex-col lg:flex-row gap-8">
               
-              {/* 目录导航 - 桌面端固定，移动端可收起 */}
+              {/* Table of contents navigation - Fixed on desktop, collapsible on mobile */}
               <div className="lg:w-80 lg:flex-shrink-0">
                 <div className="lg:sticky lg:top-24">
                   <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
@@ -133,11 +133,11 @@ const TermsOfService: NextPage = () => {
                 </div>
               </div>
 
-              {/* 主要内容 */}
+              {/* Main content */}
               <div className="flex-1 max-w-4xl">
                 <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
                   
-                  {/* 页眉 */}
+                  {/* Header */}
                   <div className="bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-12 text-white">
                     <div className="flex items-center mb-4">
                       <Scale className="mr-4 h-8 w-8" />
@@ -147,10 +147,10 @@ const TermsOfService: NextPage = () => {
                     <p className="text-blue-200 text-sm">{t('terms:lastUpdated')}</p>
                   </div>
 
-                  {/* 内容区域 */}
+                  {/* Content area */}
                   <div className="px-8 py-8 space-y-12">
 
-                    {/* 条款同意 */}
+                    {/* Terms agreement */}
                     <section id="agreement">
                       <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                         <Scale className="mr-3 h-6 w-6 text-blue-600" />
@@ -161,7 +161,7 @@ const TermsOfService: NextPage = () => {
                       </p>
                     </section>
 
-                    {/* 服务描述 */}
+                    {/* Service description */}
                     <section id="serviceDescription">
                       <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                         <FileText className="mr-3 h-6 w-6 text-blue-600" />
@@ -183,7 +183,7 @@ const TermsOfService: NextPage = () => {
                       </div>
                     </section>
 
-                    {/* 用户责任 */}
+                    {/* User responsibilities */}
                     <section id="userResponsibilities">
                       <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                         <Users className="mr-3 h-6 w-6 text-blue-600" />
@@ -200,14 +200,14 @@ const TermsOfService: NextPage = () => {
                       </ul>
                     </section>
 
-                    {/* 知识产权 */}
+                    {/* Intellectual property */}
                     <section id="intellectualProperty">
                       <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                         <Shield className="mr-3 h-6 w-6 text-blue-600" />
                         {t('terms:sections.intellectualProperty.title')}
                       </h2>
                       
-                      {/* 您的内容 */}
+                      {/* Your content */}
                       <div className="bg-green-50 border border-green-200 rounded-lg p-6 mb-6">
                         <h3 className="text-lg font-semibold text-green-800 mb-3">
                           {t('terms:sections.intellectualProperty.ownership.title')}
@@ -217,7 +217,7 @@ const TermsOfService: NextPage = () => {
                         </p>
                       </div>
 
-                      {/* 服务知识产权 */}
+                      {/* Service intellectual property */}
                       <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
                         <h3 className="text-lg font-semibold text-yellow-800 mb-3">
                           {t('terms:sections.intellectualProperty.serviceIP.title')}
@@ -228,7 +228,7 @@ const TermsOfService: NextPage = () => {
                       </div>
                     </section>
 
-                    {/* 禁止使用 */}
+                    {/* Prohibited use */}
                     <section id="prohibited">
                       <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                         <AlertTriangle className="mr-3 h-6 w-6 text-red-600" />
@@ -247,7 +247,7 @@ const TermsOfService: NextPage = () => {
                       </div>
                     </section>
 
-                    {/* 隐私和数据保护 */}
+                    {/* Privacy and data protection */}
                     <section id="privacy">
                       <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                         <Shield className="mr-3 h-6 w-6 text-blue-600" />
@@ -258,7 +258,7 @@ const TermsOfService: NextPage = () => {
                       </p>
                     </section>
 
-                    {/* 服务可用性 */}
+                    {/* Service availability */}
                     <section id="serviceAvailability">
                       <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                         <Globe className="mr-3 h-6 w-6 text-blue-600" />
@@ -281,7 +281,7 @@ const TermsOfService: NextPage = () => {
                       </div>
                     </section>
 
-                    {/* 免责声明 */}
+                    {/* Disclaimers */}
                     <section id="disclaimers">
                       <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                         <AlertTriangle className="mr-3 h-6 w-6 text-orange-600" />
@@ -298,7 +298,7 @@ const TermsOfService: NextPage = () => {
                       </ul>
                     </section>
 
-                    {/* 责任限制 */}
+                    {/* Limitation of liability */}
                     <section id="limitation">
                       <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                         <Scale className="mr-3 h-6 w-6 text-blue-600" />
@@ -309,7 +309,7 @@ const TermsOfService: NextPage = () => {
                       </p>
                     </section>
 
-                    {/* 终止 */}
+                    {/* Termination */}
                     <section id="termination">
                       <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                         <Settings className="mr-3 h-6 w-6 text-blue-600" />
@@ -320,7 +320,7 @@ const TermsOfService: NextPage = () => {
                       </p>
                     </section>
 
-                    {/* 条款修改 */}
+                    {/* Terms modification */}
                     <section id="modifications">
                       <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                         <FileText className="mr-3 h-6 w-6 text-blue-600" />
@@ -336,7 +336,7 @@ const TermsOfService: NextPage = () => {
                       </div>
                     </section>
 
-                    {/* 适用法律 */}
+                    {/* Governing law */}
                     <section id="governingLaw">
                       <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                         <Scale className="mr-3 h-6 w-6 text-blue-600" />
@@ -347,7 +347,7 @@ const TermsOfService: NextPage = () => {
                       </p>
                     </section>
 
-                    {/* 联系信息 */}
+                    {/* Contact information */}
                     <section id="contact">
                       <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
                         <Phone className="mr-3 h-6 w-6 text-blue-600" />

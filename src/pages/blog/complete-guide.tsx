@@ -12,7 +12,7 @@ import DomainLink from '@/components/UI/DomainLink'
 import HreflangTags from '@/components/SEO/HreflangTags'
 import LanguageSEO from '@/components/SEO/LanguageSEO'
 
-// 用于解析翻译文本中的{domainLink}占位符的函数
+// Function to parse {domainLink} placeholders in translation text
 const parseTextWithDomainLink = (text: string): React.ReactNode => {
   if (!text.includes('{domainLink}')) {
     return text
@@ -58,7 +58,7 @@ const CompleteGuide: NextPage = () => {
         <meta name="twitter:description" content={t('blog:posts.complete-guide.description')} />
         <meta name="twitter:image" content="https://aiimagesplitter.com/images/blog/complete-guide-cover.jpg" />
         
-        {/* 结构化数据 */}
+        {/* Structured data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -92,7 +92,7 @@ const CompleteGuide: NextPage = () => {
         />
       </Head>
       
-      {/* hreflang和canonical标记 */}
+      {/* hreflang and canonical tags */}
       <HreflangTags />
 
       <Layout>

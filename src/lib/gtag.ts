@@ -1,8 +1,8 @@
-// Google Analytics配置和工具函数
+// Google Analytics configuration and utility functions
 
 export const GA_TRACKING_ID = 'G-TRZWPW2BJL'
 
-// Google Analytics页面浏览跟踪
+// Google Analytics page view tracking
 export const pageview = (url: string) => {
   if (typeof window !== 'undefined' && (window as any).gtag) {
     (window as any).gtag('config', GA_TRACKING_ID, {
@@ -11,7 +11,7 @@ export const pageview = (url: string) => {
   }
 }
 
-// Google Analytics事件跟踪
+// Google Analytics event tracking
 export const event = ({ action, category, label, value }: {
   action: string
   category: string
@@ -27,7 +27,7 @@ export const event = ({ action, category, label, value }: {
   }
 }
 
-// 常用事件跟踪函数
+// Common event tracking functions
 export const trackImageUpload = () => {
   event({
     action: 'upload_image',
