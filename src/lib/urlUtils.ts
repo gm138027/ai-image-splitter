@@ -122,13 +122,19 @@ export class URLManager {
  * React Hook: Get current page URL information
  */
 export const usePageUrls = (router: any) => {
-  const currentLocale = router.locale || 'en'
-  const pathname = router.pathname
+  const { pathname, query, locale: renderedLocale } = router
+  const lngParam = query.lng as string | undefined
+
+  // The "effective" locale must prioritize the `lng` query parameter to fix legacy SEO issues.
+  // If `lng` exists and is valid, use it. Otherwise, fall back to the locale of the rendered page.
+  const effectiveLocale = (lngParam && URLManager.isValidLocale(lngParam))
+    ? lngParam
+    : renderedLocale || 'en'
 
   return {
-    canonical: URLManager.getCanonicalUrl(pathname, currentLocale),
+    canonical: URLManager.getCanonicalUrl(pathname, effectiveLocale),
     alternates: URLManager.getAllLocalizedUrls(pathname),
     hreflang: URLManager.getHreflangMapping(pathname),
-    currentUrl: URLManager.getCanonicalUrl(pathname, currentLocale)
+    currentUrl: URLManager.getCanonicalUrl(pathname, effectiveLocale)
   }
 } 
