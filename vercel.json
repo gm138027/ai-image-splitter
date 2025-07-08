@@ -6,7 +6,7 @@
       "permanent": true
     },
     {
-      "source": "/:lang([a-zA-Z-]+)/?lng=:lng",
+      "source": "/:lang/?lng=:lng",
       "destination": "/:lng",
       "permanent": true
     }
