@@ -6,8 +6,19 @@
 const fs = require('fs')
 const path = require('path')
 
-// Import language list from configuration file (unified source)
-const { SUPPORTED_LOCALES } = require(path.resolve(__dirname, '..', 'src', 'lib', 'urlUtils'))
+// Language list is defined directly in the script to avoid dependency on uncompiled TS files during prebuild
+const SUPPORTED_LOCALES = [
+  'en',       // English (default)
+  'zh-CN',    // Simplified Chinese
+  'id',       // Indonesian
+  'pt',       // Portuguese
+  'tl',       // Tagalog (Filipino) - Note: Use tl consistently, not fil
+  'ms',       // Malay
+  'hi',       // Hindi
+  'vi',       // Vietnamese
+  'kk',       // Kazakh
+  'ru',       // Russian
+]
 
 const BASE_URL = 'https://aiimagesplitter.com'
 
