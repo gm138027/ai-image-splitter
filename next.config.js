@@ -1,23 +1,10 @@
 /** @type {import('next').NextConfig} */
+const { i18n } = require('./next-i18next.config.js');
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  i18n: {
-    locales: [
-      'en',
-      'zh-CN',
-      'id',
-      'pt',
-      'tl',
-      'ms',
-      'hi',
-      'vi',
-      'kk',
-      'ru',
-    ],
-    defaultLocale: 'en',
-    localeDetection: false,
-  },
+  i18n,
   images: {
     // 启用自动图片优化，支持WebP和AVIF格式
     formats: ['image/webp', 'image/avif'],
