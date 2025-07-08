@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/?lng=:lng",
+      "destination": "/:lng",
+      "permanent": true
+    },
+    {
+      "source": "/:lang([a-zA-Z-]+)/?lng=:lng",
+      "destination": "/:lng",
+      "permanent": true
+    }
+  ]
+} 
