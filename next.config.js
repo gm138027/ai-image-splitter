@@ -1,12 +1,21 @@
 /** @type {import('next').NextConfig} */
-const { i18n } = require('./next-i18next.config')
-const { locales } = i18n
-
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   i18n: {
-    ...i18n,
+    locales: [
+      'en',
+      'zh-CN',
+      'id',
+      'pt',
+      'tl',
+      'ms',
+      'hi',
+      'vi',
+      'kk',
+      'ru',
+    ],
+    defaultLocale: 'en',
     localeDetection: false,
   },
   images: {
