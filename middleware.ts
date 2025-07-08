@@ -4,7 +4,7 @@ import { SUPPORTED_LOCALES } from './src/lib/urlUtils'
 export function middleware(request: NextRequest) {
   console.log('Middleware executed', request.nextUrl.href)
   const { pathname, searchParams } = request.nextUrl
-  const lngParam = searchParams.get('lng')
+  const lngParam = searchParams.get('lng')?.trim()
 
   // If there's a ?lng=xxx parameter and xxx is a supported language
   if (lngParam && SUPPORTED_LOCALES.includes(lngParam as any)) {
