@@ -123,7 +123,12 @@ export class URLManager {
  */
 export const usePageUrls = (router: any) => {
   const { pathname, query, locale: renderedLocale } = router
-  const lngParam = query.lng as string | undefined
+  let lngParam = query.lng as string | undefined
+
+  // BUG FIX: Handle specific known legacy aliases before validation.
+  if (lngParam === 'fil') {
+    lngParam = 'tl'; // Correct 'fil' to its official code 'tl'.
+  }
 
   // The "effective" locale must prioritize the `lng` query parameter to fix legacy SEO issues.
   // If `lng` exists and is valid, use it. Otherwise, fall back to the locale of the rendered page.
