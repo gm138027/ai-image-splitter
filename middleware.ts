@@ -4,6 +4,7 @@ import { NextRequest, NextResponse } from 'next/server'
 const locales = ['en', 'zh-CN', 'id', 'pt', 'tl', 'ms', 'hi', 'vi', 'kk', 'ru']
 
 export function middleware(request: NextRequest) {
+  console.log('中间件已运行', request.nextUrl.href)
   const { pathname, searchParams } = request.nextUrl
   const lngParam = searchParams.get('lng')
 
