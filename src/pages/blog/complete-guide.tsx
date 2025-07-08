@@ -364,7 +364,9 @@ const CompleteGuide: NextPage = () => {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  context.res.setHeader('Cache-Control', 'no-store');
+  const { locale } = context;
   return {
     props: {
       ...(await serverSideTranslations(locale ?? 'en', ['common', 'blog'])),
