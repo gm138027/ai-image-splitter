@@ -1,26 +1,24 @@
 import { NextRequest, NextResponse } from 'next/server'
 
-// 支持的语言前缀
+// 只允许的语言前缀
 const locales = ['en', 'zh-CN', 'id', 'pt', 'tl', 'ms', 'hi', 'vi', 'kk', 'ru']
 
 export function middleware(request: NextRequest) {
   const { pathname, searchParams } = request.nextUrl
 
-  // 1. 处理 ?lng=xxx 兼容入口
+  // 1. 只要有?lng=xxx参数，且xxx是受支持的语言，强制跳转到/xxx
   const lngParam = searchParams.get('lng')
   if (lngParam && locales.includes(lngParam)) {
-    // 跳转到 /xxx
     return NextResponse.redirect(new URL(`/${lngParam}`, request.url), 301)
   }
 
-  // 2. 处理多重前缀（如 /zh-CN/hi、/en/fil）
+  // 2. 处理多重前缀（如 /zh-CN/hi、/en/pt），只保留最后一个前缀
   const pathParts = pathname.split('/').filter(Boolean)
   if (pathParts.length >= 2 && locales.includes(pathParts[0]) && locales.includes(pathParts[1])) {
-    // 只保留最后一个前缀
     return NextResponse.redirect(new URL(`/${pathParts[1]}`, request.url), 301)
   }
 
-  // 3. 其它情况不处理，正常放行
+  // 3. 其它情况全部放行
   return NextResponse.next()
 }
 
