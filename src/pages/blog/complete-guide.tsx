@@ -9,7 +9,6 @@ import Layout from '@/components/Layout'
 import Image from 'next/image'
 import { Calendar, Clock, ArrowLeft, ExternalLink } from 'lucide-react'
 import DomainLink from '@/components/UI/DomainLink'
-import HreflangTags from '@/components/SEO/HreflangTags'
 import LanguageSEO from '@/components/SEO/LanguageSEO'
 
 // Function to parse {domainLink} placeholders in translation text
@@ -92,9 +91,6 @@ const CompleteGuide: NextPage = () => {
         />
       </Head>
       
-      {/* hreflang and canonical tags */}
-      <HreflangTags />
-
       <Layout>
         <article className="min-h-screen bg-white">
           {/* 文章头部 */}

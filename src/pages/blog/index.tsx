@@ -7,7 +7,6 @@ import { useRouter } from 'next/router'
 import Layout from '@/components/Layout'
 import Image from 'next/image'
 import { Calendar, Clock, ArrowRight } from 'lucide-react'
-import HreflangTags from '@/components/SEO/HreflangTags'
 import LanguageSEO from '@/components/SEO/LanguageSEO'
 
 interface BlogPost {
@@ -59,9 +58,6 @@ const BlogIndex: NextPage = () => {
         <meta name="twitter:description" content={t('blog:description')} />
       </Head>
       
-      {/* hreflang and canonical tags */}
-      <HreflangTags />
-
       <Layout>
         <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-primary-50/30">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

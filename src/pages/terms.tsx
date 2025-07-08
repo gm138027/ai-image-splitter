@@ -7,7 +7,6 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useRouter } from 'next/router'
 import { ArrowLeft, Scale, FileText, Users, Shield, AlertTriangle, Globe, Settings, Phone } from 'lucide-react'
 import Layout from '@/components/Layout'
-import HreflangTags from '@/components/SEO/HreflangTags'
 import LanguageSEO from '@/components/SEO/LanguageSEO'
 
 const TermsOfService: NextPage = () => {
@@ -89,9 +88,6 @@ const TermsOfService: NextPage = () => {
         />
       </Head>
       
-      {/* hreflang and canonical tags */}
-      <HreflangTags />
-
       <Layout>
         <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50/30 py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

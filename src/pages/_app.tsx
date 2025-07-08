@@ -10,6 +10,9 @@ import '@/styles/globals.css'
 import { pageview } from '@/lib/gtag'
 import dynamic from 'next/dynamic'
 
+// Import the centralized SEO tags component
+import HreflangTags from '@/components/SEO/HreflangTags'
+
 // Dynamically import Google Analytics component to reduce initial bundle size
 const GoogleAnalytics = dynamic(() => import('@/components/Analytics/GoogleAnalytics'), {
   ssr: false,
@@ -75,6 +78,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ErrorBoundary>
       {/* Optimized Google Analytics component */}
       <GoogleAnalytics />
+      
+      {/* Centralized SEO tags for all pages */}
+      <HreflangTags />
       
       <Component {...pageProps} />
     </ErrorBoundary>

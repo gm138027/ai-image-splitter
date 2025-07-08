@@ -7,7 +7,6 @@ import { useRouter } from 'next/router'
 import Layout from '@/components/Layout'
 import ImageSplitter from '@/components/ImageSplitter'
 import StructuredData from '@/components/SEO/StructuredData'
-import HreflangTags from '@/components/SEO/HreflangTags'
 import LanguageSEO from '@/components/SEO/LanguageSEO'
 
 const Home: NextPage = () => {
@@ -63,9 +62,6 @@ const Home: NextPage = () => {
         {/* Basic viewport */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
       </Head>
-      
-      {/* hreflang and canonical tags - solve multilingual website alternate page issue */}
-      <HreflangTags />
       
       {/* Structured data */}
       <StructuredData locale={router.locale} />
