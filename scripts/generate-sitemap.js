@@ -7,7 +7,7 @@ const fs = require('fs')
 const path = require('path')
 
 // Import language list from configuration file (unified source)
-const { SUPPORTED_LOCALES } = require('../src/lib/urlUtils')
+const { SUPPORTED_LOCALES } = require(path.resolve(__dirname, '..', 'src', 'lib', 'urlUtils'))
 
 const BASE_URL = 'https://aiimagesplitter.com'
 
