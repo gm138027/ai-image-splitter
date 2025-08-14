@@ -19,7 +19,7 @@
     "description": "专业的在线图像分割器和Instagram网格制作器。上传您的图片，轻松分割图片为适合社交媒体轮播的完美网格布局。",
     "uploadPrompt": "拖拽文件到此处或点击上传",
     "uploadButton": "选择图片",
-    "uploadSupport": "支持 JPG, PNG, GIF 格式，最大 10MB",
+    "uploadSupport": "支持 JPG, PNG, GIF 格式，最大 50MB",
     "controlPanelDescription": "使用左侧控制面板配置分割选项",
     "splitModeTitle": "选择分割图像方式",
     "splitModeDescription": "垂直分割适用于轮播帖子，水平分割适用于横向展示，网格分割适用于Instagram网格布局",
@@ -38,7 +38,7 @@
     "outputFormat": "输出格式",
     "formats": {
       "jpg": "JPG",
-      "png": "PNG", 
+      "png": "PNG",
       "webp": "WebP",
       "bmp": "BMP"
     },
@@ -59,8 +59,8 @@
     "alerts": {
       "invalidFile": "请选择有效的图片文件",
       "invalidFileType": "请选择有效的图片文件 (JPG, PNG, GIF, WebP)",
-      "fileTooLarge": "文件大小超过10MB限制，请选择更小的图片",
-      "imageTooLarge": "图片尺寸超过4096x4096像素，请选择更小的图片",
+      "fileTooLarge": "文件大小超过50MB限制，请选择更小的图片",
+      "imageTooLarge": "图片尺寸超过8192x8192像素，请选择更小的图片",
       "downloadFailed": "下载失败，请重试"
     }
   },
@@ -125,7 +125,7 @@
     },
     "howToSplitImage": {
       "question": "如何将图片分割成多个部分？",
-      "answer": "操作很简单：1）上传您的图片（支持JPG、PNG、GIF等，最大10MB），2）选择您喜欢的分割模式 - 垂直分割、水平分割或网格分割，3）调整行数和列数，4）点击分割图像按钮，5）下载单个片段或获取ZIP打包文件。"
+      "answer": "操作很简单：1）上传您的图片（支持JPG、PNG、GIF等，最大50MB），2）选择您喜欢的分割模式 - 垂直分割、水平分割或网格分割，3）调整行数和列数，4）点击分割图像按钮，5）下载单个片段或获取ZIP打包文件。"
     },
     "instagramGridMaker": {
       "question": "我可以用这个工具制作Instagram网格帖子吗？",
@@ -137,7 +137,7 @@
     },
     "supportedFormats": {
       "question": "支持哪些文件格式？",
-      "answer": "我们的图像分割器支持所有常见的图片格式，包括JPG、PNG、GIF和WebP等。您也可以将分割后的图片导出为JPG、PNG、WebP或BMP格式。最大文件大小为10MB，尺寸最高支持4096x4096像素以获得最佳性能。"
+      "answer": "我们的图像分割器支持所有常见的图片格式，包括JPG、PNG、GIF和WebP等。您也可以将分割后的图片导出为JPG、PNG、WebP或BMP格式。最大文件大小为50MB，尺寸最高支持8192x8192像素以获得最佳性能。"
     },
     "freeToUse": {
       "question": "这个工具完全免费吗？",
@@ -169,4 +169,4 @@
       "button": "立即开始创作"
     }
   }
-} 
+}

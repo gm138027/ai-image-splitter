@@ -19,7 +19,7 @@
     "description": "Ang advanced na functionality ng paghiwalay sa larawan ay magiging available dito sa lalong madaling panahon. I-upload ang inyong larawan at hatiin ito sa mga perpektong grid para sa social media.",
     "uploadPrompt": "I-drag ang mga file dito o i-click para mag-upload",
     "uploadButton": "Pumili ng Larawan",
-    "uploadSupport": "Sumusuporta sa JPG, PNG, GIF formats, hanggang 10MB",
+    "uploadSupport": "Sumusuporta sa JPG, PNG, GIF formats, hanggang 50MB",
     "controlPanelDescription": "Gamitin ang kaliwang control panel para sa pag-configure ng split options",
     "splitModeTitle": "Pumili ng Image Split Mode",
     "splitModeDescription": "Perfect ang vertical split para sa carousel posts, horizontal split para sa landscape displays, at grid split para sa Instagram grid layouts",
@@ -59,8 +59,8 @@
     "alerts": {
       "invalidFile": "Pumili ng valid na image file",
       "invalidFileType": "Pumili ng valid na image file (JPG, PNG, GIF, WebP)",
-      "fileTooLarge": "Ang laki ng file ay lumampas sa 10MB na limitasyon. Pumili ng mas maliit na larawan",
-      "imageTooLarge": "Ang mga dimensyon ng larawan ay lumampas sa 4096x4096 pixels. Pumili ng mas maliit na larawan",
+      "fileTooLarge": "Ang laki ng file ay lumampas sa 50MB na limitasyon. Pumili ng mas maliit na larawan",
+      "imageTooLarge": "Ang mga dimensyon ng larawan ay lumampas sa 8192x8192 pixels. Pumili ng mas maliit na larawan",
       "downloadFailed": "Nabigo ang pag-download. Subukan ulit"
     }
   },
@@ -125,7 +125,7 @@
     },
     "howToSplitImage": {
       "question": "Paano hatiin ang larawan sa maraming bahagi?",
-      "answer": "Napakadaling gawin: 1) Mag-upload ng inyong larawan (sumusuporta sa JPG, PNG, GIF, atbp., maximum na 10MB), 2) Piliin ang gusto ninyong splitting mode - vertical split, horizontal split, o grid split, 3) I-adjust ang mga hilera at kolum, 4) I-click ang split image button, 5) I-download ang mga indibidwal na segment o kunin ang ZIP package."
+      "answer": "Napakadaling gawin: 1) Mag-upload ng inyong larawan (sumusuporta sa JPG, PNG, GIF, atbp., maximum na 50MB), 2) Piliin ang gusto ninyong splitting mode - vertical split, horizontal split, o grid split, 3) I-adjust ang mga hilera at kolum, 4) I-click ang split image button, 5) I-download ang mga indibidwal na segment o kunin ang ZIP package."
     },
     "instagramGridMaker": {
       "question": "Pwede ko bang gamitin ang tool na ito para sa Instagram grid posts?",
@@ -137,7 +137,7 @@
     },
     "supportedFormats": {
       "question": "Anong mga file format ang sinusuportahan?",
-      "answer": "Sinusuportahan ng aming image splitter ang lahat ng karaniwang image format, kasama ang JPG, PNG, GIF, at WebP. Pwede din ninyong i-export ang mga split image sa JPG, PNG, WebP, o BMP format. Ang maximum file size ay 10MB na may dimension hanggang 4096x4096 pixels para sa optimal na performance."
+      "answer": "Sinusuportahan ng aming image splitter ang lahat ng karaniwang image format, kasama ang JPG, PNG, GIF, at WebP. Pwede din ninyong i-export ang mga split image sa JPG, PNG, WebP, o BMP format. Ang maximum file size ay 50MB na may dimension hanggang 8192x8192 pixels para sa optimal na performance."
     },
     "freeToUse": {
       "question": "Libre ba talaga ang tool na ito?",

@@ -19,7 +19,7 @@
     "description": "Fungsi pemisahan imej lanjutan akan tersedia di sini tidak lama lagi. Muat naik imej anda dan pisahkannya menjadi grid yang sempurna untuk media sosial.",
     "uploadPrompt": "Seret fail ke sini atau klik untuk muat naik",
     "uploadButton": "Pilih Imej",
-    "uploadSupport": "Menyokong format JPG, PNG, GIF, maksimum 10MB",
+    "uploadSupport": "Menyokong format JPG, PNG, GIF, maksimum 50MB",
     "controlPanelDescription": "Gunakan panel kawalan kiri untuk mengkonfigurasi pilihan pemisahan",
     "splitModeTitle": "Pilih Mod Pemisahan Imej",
     "splitModeDescription": "Pemisahan menegak sesuai untuk siaran karusel, pemisahan mendatar untuk paparan landskap, dan pemisahan grid untuk susun atur grid Instagram",
@@ -59,8 +59,8 @@
     "alerts": {
       "invalidFile": "Sila pilih fail imej yang sah",
       "invalidFileType": "Sila pilih fail imej yang sah (JPG, PNG, GIF, WebP)",
-      "fileTooLarge": "Saiz fail melebihi had 10MB. Sila pilih imej yang lebih kecil",
-      "imageTooLarge": "Dimensi imej melebihi 4096x4096 piksel. Sila pilih imej yang lebih kecil",
+      "fileTooLarge": "Saiz fail melebihi had 50MB. Sila pilih imej yang lebih kecil",
+      "imageTooLarge": "Dimensi imej melebihi 8192x8192 piksel. Sila pilih imej yang lebih kecil",
       "downloadFailed": "Muat turun gagal. Sila cuba lagi"
     }
   },
@@ -125,7 +125,7 @@
     },
     "howToSplitImage": {
       "question": "Bagaimana untuk memisahkan imej kepada beberapa bahagian?",
-      "answer": "Sangat mudah: 1) Muat naik imej anda (menyokong JPG, PNG, GIF, dll., maksimum 10MB), 2) Pilih mod pemisahan pilihan anda - pemisahan menegak, pemisahan mendatar, atau pemisahan grid, 3) Laraskan baris dan lajur, 4) Klik butang pisah imej, 5) Muat turun segmen individu atau dapatkan pakej ZIP."
+      "answer": "Sangat mudah: 1) Muat naik imej anda (menyokong JPG, PNG, GIF, dll., maksimum 50MB), 2) Pilih mod pemisahan pilihan anda - pemisahan menegak, pemisahan mendatar, atau pemisahan grid, 3) Laraskan baris dan lajur, 4) Klik butang pisah imej, 5) Muat turun segmen individu atau dapatkan pakej ZIP."
     },
     "instagramGridMaker": {
       "question": "Bolehkah saya menggunakan alat ini untuk mencipta pos grid Instagram?",
@@ -137,7 +137,7 @@
     },
     "supportedFormats": {
       "question": "Format fail apa yang disokong?",
-      "answer": "Pemisah imej kami menyokong semua format imej biasa, termasuk JPG, PNG, GIF, dan WebP. Anda juga boleh mengeksport imej yang dipisahkan dalam format JPG, PNG, WebP, atau BMP. Saiz fail maksimum ialah 10MB dengan dimensi sehingga 4096x4096 piksel untuk prestasi optimum."
+      "answer": "Pemisah imej kami menyokong semua format imej biasa, termasuk JPG, PNG, GIF, dan WebP. Anda juga boleh mengeksport imej yang dipisahkan dalam format JPG, PNG, WebP, atau BMP. Saiz fail maksimum ialah 50MB dengan dimensi sehingga 8192x8192 piksel untuk prestasi optimum."
     },
     "freeToUse": {
       "question": "Adakah alat ini sepenuhnya percuma?",

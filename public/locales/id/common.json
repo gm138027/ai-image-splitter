@@ -17,7 +17,7 @@
   "tool": {
     "uploadPrompt": "Seret file ke sini atau klik untuk mengunggah",
     "uploadButton": "Pilih Gambar",
-    "uploadSupport": "Mendukung format JPG, PNG, GIF, maksimal 10MB",
+    "uploadSupport": "Mendukung format JPG, PNG, GIF, maksimal 50MB",
     "controlPanelDescription": "Gunakan panel kontrol kiri untuk mengonfigurasi opsi pemisahan",
     "splitModeTitle": "Pilih Mode Pemisahan Gambar",
     "splitModeDescription": "Pemisahan vertikal cocok untuk postingan carousel, pemisahan horizontal untuk tampilan lanskap, dan pemisahan grid untuk tata letak grid Instagram",
@@ -57,8 +57,8 @@
     "alerts": {
       "invalidFile": "Silakan pilih file gambar yang valid",
       "invalidFileType": "Silakan pilih file gambar yang valid (JPG, PNG, GIF, WebP)",
-      "fileTooLarge": "Ukuran file melebihi batas 10MB. Silakan pilih gambar yang lebih kecil",
-      "imageTooLarge": "Dimensi gambar melebihi 4096x4096 piksel. Silakan pilih gambar yang lebih kecil",
+      "fileTooLarge": "Ukuran file melebihi batas 50MB. Silakan pilih gambar yang lebih kecil",
+      "imageTooLarge": "Dimensi gambar melebihi 8192x8192 piksel. Silakan pilih gambar yang lebih kecil",
       "downloadFailed": "Unduhan gagal. Silakan coba lagi"
     }
   },
@@ -123,7 +123,7 @@
     },
     "howToSplitImage": {
       "question": "Bagaimana cara membagi gambar menjadi beberapa bagian?",
-      "answer": "Sangat mudah: 1) Unggah gambar Anda (mendukung JPG, PNG, GIF, dll., maksimal 10MB), 2) Pilih mode pembagi yang diinginkan - pembagi vertikal, pembagi horizontal, atau pembagi grid, 3) Sesuaikan baris dan kolom, 4) Klik tombol bagi gambar, 5) Unduh segmen individual atau dapatkan paket ZIP."
+      "answer": "Sangat mudah: 1) Unggah gambar Anda (mendukung JPG, PNG, GIF, dll., maksimal 50MB), 2) Pilih mode pembagi yang diinginkan - pembagi vertikal, pembagi horizontal, atau pembagi grid, 3) Sesuaikan baris dan kolom, 4) Klik tombol bagi gambar, 5) Unduh segmen individual atau dapatkan paket ZIP."
     },
     "instagramGridMaker": {
       "question": "Bisakah saya menggunakan alat ini untuk membuat postingan grid Instagram?",
@@ -135,7 +135,7 @@
     },
     "supportedFormats": {
       "question": "Format file apa yang didukung?",
-      "answer": "Pembagi gambar kami mendukung semua format gambar umum, termasuk JPG, PNG, GIF, dan WebP. Anda juga dapat mengekspor gambar yang dibagi dalam format JPG, PNG, WebP, atau BMP. Ukuran file maksimal adalah 10MB dengan dimensi hingga 4096x4096 piksel untuk kinerja optimal."
+      "answer": "Pembagi gambar kami mendukung semua format gambar umum, termasuk JPG, PNG, GIF, dan WebP. Anda juga dapat mengekspor gambar yang dibagi dalam format JPG, PNG, WebP, atau BMP. Ukuran file maksimal adalah 50MB dengan dimensi hingga 8192x8192 piksel untuk kinerja optimal."
     },
     "freeToUse": {
       "question": "Apakah alat ini benar-benar gratis?",

@@ -19,7 +19,7 @@
     "description": "Advanced image splitter online tool for Instagram grid maker needs. Upload your image and split images into perfect grids for social media carousels.",
     "uploadPrompt": "Drag files here or click to upload",
     "uploadButton": "Choose Image",
-    "uploadSupport": "Supports JPG, PNG, GIF formats, up to 10MB",
+    "uploadSupport": "Supports JPG, PNG, GIF formats, up to 50MB",
     "controlPanelDescription": "Use the left control panel to configure split options",
     "splitModeTitle": "Choose Split Image Mode",
     "splitModeDescription": "Vertical split is perfect for carousel posts, horizontal split for landscape displays, and grid split for Instagram grid layouts",
@@ -59,8 +59,8 @@
     "alerts": {
       "invalidFile": "Please select a valid image file",
       "invalidFileType": "Please select a valid image file (JPG, PNG, GIF, WebP)",
-      "fileTooLarge": "File size exceeds 10MB limit. Please choose a smaller image",
-      "imageTooLarge": "Image dimensions exceed 4096x4096 pixels. Please choose a smaller image",
+      "fileTooLarge": "File size exceeds 50MB limit. Please choose a smaller image",
+      "imageTooLarge": "Image dimensions exceed 8192x8192 pixels. Please choose a smaller image",
       "downloadFailed": "Download failed. Please try again"
     }
   },
@@ -137,7 +137,7 @@
     },
     "supportedFormats": {
       "question": "What file formats are supported?",
-      "answer": "Our image splitter supports all common image formats, including JPG, PNG, GIF, and WebP. You can also export split images as JPG, PNG, WebP, or BMP formats. Maximum file size is 10MB with dimensions up to 4096x4096 pixels for optimal performance."
+      "answer": "Our image splitter supports all common image formats, including JPG, PNG, GIF, and WebP. You can also export split images as JPG, PNG, WebP, or BMP formats. Maximum file size is 50MB with dimensions up to 8192x8192 pixels for optimal performance."
     },
     "freeToUse": {
       "question": "Is this tool completely free?",

@@ -59,8 +59,8 @@
     "alerts": {
       "invalidFile": "Vui lòng chọn file ảnh hợp lệ",
       "invalidFileType": "Vui lòng chọn file ảnh hợp lệ (JPG, PNG, GIF, WebP)",
-      "fileTooLarge": "Kích thước file vượt quá giới hạn 10MB. Vui lòng chọn ảnh nhỏ hơn",
-      "imageTooLarge": "Kích thước ảnh vượt quá 4096x4096 pixel. Vui lòng chọn ảnh nhỏ hơn",
+      "fileTooLarge": "Kích thước file vượt quá giới hạn 50MB. Vui lòng chọn ảnh nhỏ hơn",
+      "imageTooLarge": "Kích thước ảnh vượt quá 8192x8192 pixel. Vui lòng chọn ảnh nhỏ hơn",
       "downloadFailed": "Tải về thất bại. Vui lòng thử lại"
     }
   },
@@ -169,4 +169,4 @@
       "button": "Bắt Đầu Tạo Ngay"
     }
   }
-} 
+}

@@ -30,6 +30,8 @@ export const useImageSplitter = () => {
     isProcessing: false,
     config: defaultConfig
   })
+  
+
 
   // Refs
   const fileInputRef = useRef<HTMLInputElement>(null)

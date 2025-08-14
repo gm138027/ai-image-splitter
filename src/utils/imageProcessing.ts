@@ -14,8 +14,8 @@ export const validateImageFile = (file: File): { isValid: boolean; error?: strin
     return { isValid: false, error: 'invalidFileType' }
   }
   
-  // Check file size (max 10MB)
-  const maxSize = 10 * 1024 * 1024 // 10MB
+  // Check file size (max 50MB)
+  const maxSize = 50 * 1024 * 1024 // 50MB
   if (file.size > maxSize) {
     return { isValid: false, error: 'fileTooLarge' }
   }
@@ -42,8 +42,8 @@ export const createImageFromFile = (file: File): Promise<HTMLImageElement> => {
 
     const img = new Image()
     img.onload = () => {
-      // Check image dimensions (max 4096x4096)
-      const maxDimension = 4096
+      // Check image dimensions (max 8192x8192)
+      const maxDimension = 8192
       if (img.width > maxDimension || img.height > maxDimension) {
         reject(new Error('imageTooLarge'))
         return

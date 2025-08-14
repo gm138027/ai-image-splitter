@@ -17,7 +17,7 @@
   "tool": {
     "uploadPrompt": "Arraste arquivos aqui ou clique para carregar",
     "uploadButton": "Escolher Imagem",
-    "uploadSupport": "Suporta formatos JPG, PNG, GIF, até 10MB",
+    "uploadSupport": "Suporta formatos JPG, PNG, GIF, até 50MB",
     "controlPanelDescription": "Use o painel de controle esquerdo para configurar opções de divisão",
     "splitModeTitle": "Escolha o Modo de Divisão de Imagem",
     "splitModeDescription": "Divisão vertical é perfeita para postagens de carrossel, divisão horizontal para exibições paisagem, e divisão em grade para layouts de grade do Instagram",
@@ -57,8 +57,8 @@
     "alerts": {
       "invalidFile": "Por favor, selecione um arquivo de imagem válido",
       "invalidFileType": "Por favor, selecione um arquivo de imagem válido (JPG, PNG, GIF, WebP)",
-      "fileTooLarge": "O tamanho do arquivo excede o limite de 10MB. Por favor, escolha uma imagem menor",
-      "imageTooLarge": "As dimensões da imagem excedem 4096x4096 pixels. Por favor, escolha uma imagem menor",
+      "fileTooLarge": "O tamanho do arquivo excede o limite de 50MB. Por favor, escolha uma imagem menor",
+      "imageTooLarge": "As dimensões da imagem excedem 8192x8192 pixels. Por favor, escolha uma imagem menor",
       "downloadFailed": "Falha no download. Por favor, tente novamente"
     }
   },
@@ -123,7 +123,7 @@
     },
     "howToSplitImage": {
       "question": "Como dividir uma imagem em várias partes?",
-      "answer": "É simples: 1) Faça upload da sua imagem (suporta JPG, PNG, GIF, etc., máximo 10MB), 2) Escolha seu modo de divisão preferido - divisão vertical, divisão horizontal ou divisão em grade, 3) Ajuste linhas e colunas, 4) Clique no botão dividir imagem, 5) Baixe segmentos individuais ou obtenha um pacote ZIP."
+      "answer": "É simples: 1) Faça upload da sua imagem (suporta JPG, PNG, GIF, etc., máximo 50MB), 2) Escolha seu modo de divisão preferido - divisão vertical, divisão horizontal ou divisão em grade, 3) Ajuste linhas e colunas, 4) Clique no botão dividir imagem, 5) Baixe segmentos individuais ou obtenha um pacote ZIP."
     },
     "instagramGridMaker": {
       "question": "Posso usar esta ferramenta para criar posts em grade do Instagram?",
@@ -135,7 +135,7 @@
     },
     "supportedFormats": {
       "question": "Quais formatos de arquivo são suportados?",
-      "answer": "Nosso divisor de imagens suporta todos os formatos de imagem comuns, incluindo JPG, PNG, GIF e WebP. Você também pode exportar imagens divididas nos formatos JPG, PNG, WebP ou BMP. Tamanho máximo de arquivo é 10MB com dimensões até 4096x4096 pixels para desempenho ideal."
+      "answer": "Nosso divisor de imagens suporta todos os formatos de imagem comuns, incluindo JPG, PNG, GIF e WebP. Você também pode exportar imagens divididas nos formatos JPG, PNG, WebP ou BMP. Tamanho máximo de arquivo é 50MB com dimensões até 8192x8192 pixels para desempenho ideal."
     },
     "freeToUse": {
       "question": "Esta ferramenta é completamente gratuita?",
