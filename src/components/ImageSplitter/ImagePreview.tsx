@@ -8,7 +8,6 @@ const ImagePreview: React.FC<ImagePreviewProps> = ({
   splitImages,
   config,
   onDownloadSingle,
-  onReupload,
   fileInputRef
 }) => {
   const { t } = useTranslation('common')

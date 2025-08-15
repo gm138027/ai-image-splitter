@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useTranslation } from 'next-i18next'
-import { Upload, Grid3X3, Download, Zap, ArrowRight, ArrowLeft } from 'lucide-react'
+import { Upload, Grid3X3, Download, ArrowRight, ArrowLeft } from 'lucide-react'
 import Image from 'next/image'
 import FAQ from '@/components/FAQ'
 import type { HeroSectionProps } from '@/types'

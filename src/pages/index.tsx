@@ -1,17 +1,13 @@
-import type { NextPage, GetServerSideProps } from 'next'
+import type { NextPage, GetStaticProps } from 'next'
 import React, { useState } from 'react'
 import Head from 'next/head'
-import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useRouter } from 'next/router'
 import Layout from '@/components/Layout'
 import ImageSplitter from '@/components/ImageSplitter'
-import StructuredData from '@/components/SEO/StructuredData'
-import LanguageSEO from '@/components/SEO/LanguageSEO'
+import SEOHead from '@/components/SEO/SEOHead'
+import FAQStructuredData from '@/components/SEO/FAQStructuredData'
 
 const Home: NextPage = () => {
-  const { t } = useTranslation('common')
-  const router = useRouter()
   const [resetKey, setResetKey] = useState(0)
   const [isInToolMode, setIsInToolMode] = useState(false)
 
@@ -28,9 +24,12 @@ const Home: NextPage = () => {
 
   return (
     <>
-      {/* Use new LanguageSEO component to replace original basic SEO tags */}
-      <LanguageSEO />
-      
+      {/* Unified SEO component with structured data for homepage */}
+      <SEOHead includeStructuredData={true} />
+
+      {/* FAQ structured data - only for homepage */}
+      <FAQStructuredData />
+
       <Head>
         
         {/* Critical LCP image preload - key configuration to prevent layout shifts */}
@@ -57,14 +56,11 @@ const Home: NextPage = () => {
         <meta name="msapplication-TileImage" content="/android-chrome-512x512.png" />
         <meta name="msapplication-TileColor" content="#3b82f6" />
         
-        {/* Remove duplicate Open Graph and Twitter metadata - handled by LanguageSEO */}
-        
+        {/* Remove duplicate Open Graph and Twitter metadata - handled by SEOHead */}
+
         {/* Basic viewport */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
       </Head>
-      
-      {/* Structured data */}
-      <StructuredData locale={router.locale} />
       
       <Layout onLogoClick={handleLogoClick} isInToolMode={isInToolMode}>
         <ImageSplitter key={resetKey} onToolModeChange={handleToolModeChange} />
@@ -73,9 +69,7 @@ const Home: NextPage = () => {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  context.res.setHeader('Cache-Control', 'no-store');
-  const { locale } = context;
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
       ...(await serverSideTranslations(locale ?? 'en', ['common'])),

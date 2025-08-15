@@ -1,4 +1,4 @@
-import type { NextPage, GetServerSideProps } from 'next'
+import type { NextPage, GetStaticProps } from 'next'
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -9,7 +9,7 @@ import Layout from '@/components/Layout'
 import Image from 'next/image'
 import { Calendar, Clock, ArrowLeft, ExternalLink } from 'lucide-react'
 import DomainLink from '@/components/UI/DomainLink'
-import LanguageSEO from '@/components/SEO/LanguageSEO'
+import SEOHead from '@/components/SEO/SEOHead'
 
 // Function to parse {domainLink} placeholders in translation text
 const parseTextWithDomainLink = (text: string): React.ReactNode => {
@@ -33,8 +33,8 @@ const CompleteGuide: NextPage = () => {
 
   return (
     <>
-      {/* Use LanguageSEO component to replace basic SEO tags */}
-      <LanguageSEO 
+      {/* Use unified SEO component */}
+      <SEOHead
         title={`${t('blog:posts.complete-guide.title')} - AI Image Splitter`}
         description={t('blog:posts.complete-guide.description')}
         keywords={t('blog:posts.complete-guide.keywords')}
@@ -360,9 +360,7 @@ const CompleteGuide: NextPage = () => {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  context.res.setHeader('Cache-Control', 'no-store');
-  const { locale } = context;
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
       ...(await serverSideTranslations(locale ?? 'en', ['common', 'blog'])),

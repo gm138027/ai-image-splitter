@@ -27,8 +27,7 @@ const ImageSplitter: React.FC<ImageSplitterProps> = ({ onToolModeChange }) => {
     updateConfig,
     splitImage,
     downloadSingle,
-    downloadAll,
-    handleReupload
+    downloadAll
   } = useImageSplitter()
 
   // 监听上传图片状态变化，通知父组件工具模式状态
@@ -71,7 +70,6 @@ const ImageSplitter: React.FC<ImageSplitterProps> = ({ onToolModeChange }) => {
             splitImages={splitImages}
             config={config}
             onDownloadSingle={downloadSingle}
-            onReupload={handleReupload}
             fileInputRef={fileInputRef}
           />
         </div>

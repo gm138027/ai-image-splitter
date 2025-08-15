@@ -10,7 +10,9 @@
     "lint": "next lint",
     "type-check": "tsc --noEmit",
     "generate-sitemap": "node scripts/generate-sitemap.js",
-    "prebuild": "npm run generate-sitemap"
+    "validate-config": "node scripts/validate-config.js",
+    "validate-urls": "node scripts/validate-urls.js",
+    "prebuild": "npm run validate-config && npm run validate-urls && npm run generate-sitemap"
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",

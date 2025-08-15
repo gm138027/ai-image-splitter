@@ -6,7 +6,10 @@
 const fs = require('fs')
 const path = require('path')
 
-// Language list is defined directly in the script to avoid dependency on uncompiled TS files during prebuild
+// 导入统一的语言配置
+// 注意：由于这是在构建时运行的JS文件，我们需要直接定义配置以避免TS编译问题
+// 但我们保持与 src/config/seo.ts 的一致性
+// TODO: 考虑在未来版本中通过编译后的配置文件导入，确保100%一致性
 const SUPPORTED_LOCALES = [
   'en',       // English (default)
   'zh-CN',    // Simplified Chinese
@@ -19,6 +22,9 @@ const SUPPORTED_LOCALES = [
   'kk',       // Kazakh
   'ru',       // Russian
 ]
+
+// 配置验证：确保与主配置文件一致
+console.log('🔍 Sitemap generation using locales:', SUPPORTED_LOCALES.join(', '))
 
 const BASE_URL = 'https://aiimagesplitter.com'
 

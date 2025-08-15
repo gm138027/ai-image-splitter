@@ -1,4 +1,4 @@
-import type { NextPage, GetServerSideProps } from 'next'
+import type { NextPage, GetStaticProps } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
@@ -7,7 +7,7 @@ import { useRouter } from 'next/router'
 import Layout from '@/components/Layout'
 import Image from 'next/image'
 import { Calendar, Clock, ArrowRight } from 'lucide-react'
-import LanguageSEO from '@/components/SEO/LanguageSEO'
+import SEOHead from '@/components/SEO/SEOHead'
 
 interface BlogPost {
   id: string;
@@ -37,8 +37,8 @@ const BlogIndex: NextPage = () => {
 
   return (
     <>
-      {/* Use LanguageSEO component to replace basic SEO tags */}
-      <LanguageSEO 
+      {/* Use unified SEO component */}
+      <SEOHead
         title={`${t('blog:title')} - AI Image Splitter`}
         description={t('blog:description')}
         keywords="AI image splitter blog, tutorials, tips, Instagram grid, social media"
@@ -152,9 +152,7 @@ const BlogIndex: NextPage = () => {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  context.res.setHeader('Cache-Control', 'no-store');
-  const { locale } = context;
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
       ...(await serverSideTranslations(locale ?? 'en', ['common', 'blog'])),

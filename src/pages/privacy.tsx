@@ -1,4 +1,4 @@
-import type { NextPage, GetServerSideProps } from 'next'
+import type { NextPage, GetStaticProps } from 'next'
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -8,7 +8,7 @@ import { useRouter } from 'next/router'
 import { ArrowLeft, Shield, Lock, Eye, Users, Globe, FileText, Mail } from 'lucide-react'
 import Layout from '@/components/Layout'
 import DomainLink from '@/components/UI/DomainLink'
-import LanguageSEO from '@/components/SEO/LanguageSEO'
+import SEOHead from '@/components/SEO/SEOHead'
 
 const PrivacyPolicy: NextPage = () => {
   const { t } = useTranslation(['privacy', 'common'])
@@ -36,19 +36,15 @@ const PrivacyPolicy: NextPage = () => {
 
   return (
     <>
-      {/* Use LanguageSEO component to replace basic SEO tags */}
-      <LanguageSEO 
+      {/* Use unified SEO component */}
+      <SEOHead
         title={`${t('privacy:title')} - AI Image Splitter`}
         description={t('privacy:description')}
         keywords="privacy policy, data protection, AI image splitter"
       />
-      
+
       <Head>
-        {/* robots directive retained as LanguageSEO already includes more complete robots settings */}
-        
-        {/* Open Graph */}
-        <meta property="og:title" content={`${t('privacy:title')} - AI Image Splitter`} />
-        <meta property="og:description" content={t('privacy:description')} />
+        {/* Additional page-specific meta tags - basic SEO handled by SEOHead */}
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aiimagesplitter.com/privacy" />
         <meta property="og:site_name" content="AI Image Splitter" />
@@ -358,9 +354,7 @@ const PrivacyPolicy: NextPage = () => {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  context.res.setHeader('Cache-Control', 'no-store');
-  const { locale } = context;
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
       ...(await serverSideTranslations(locale ?? 'en', ['common', 'privacy'])),

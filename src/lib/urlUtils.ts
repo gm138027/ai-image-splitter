@@ -3,24 +3,17 @@
  * Resolves multilingual website URL generation inconsistencies
  */
 
-// Supported language configuration - Single source of truth
-export const SUPPORTED_LOCALES = [
-  'en',       // English (default)
-  'zh-CN',    // Simplified Chinese
-  'id',       // Indonesian
-  'pt',       // Portuguese
-  'tl',       // Tagalog (Filipino) - Note: Use tl consistently, not fil
-  'ms',       // Malay
-  'hi',       // Hindi
-  'vi',       // Vietnamese
-  'kk',       // Kazakh
-  'ru',       // Russian
-] as const
+// 导入统一的语言配置
+import {
+  SUPPORTED_LOCALES,
+  type SupportedLocale,
+  SEO_CONFIG,
+  isValidLocale,
+  normalizeLegacyLocale
+} from '@/config/seo'
 
-export type SupportedLocale = typeof SUPPORTED_LOCALES[number]
-
-// Base domain configuration
-const BASE_URL = 'https://aiimagesplitter.com'
+// Base domain configuration - 使用统一配置
+const BASE_URL = SEO_CONFIG.domain
 
 /**
  * URL Manager class - Unified URL generation logic
@@ -88,7 +81,7 @@ export class URLManager {
    * Validate if language code is supported
    */
   static isValidLocale(locale: string): locale is SupportedLocale {
-    return SUPPORTED_LOCALES.includes(locale as SupportedLocale)
+    return isValidLocale(locale) // 使用统一的验证函数
   }
 
   /**
@@ -123,18 +116,16 @@ export class URLManager {
  */
 export const usePageUrls = (router: any) => {
   const { pathname, query, locale: renderedLocale } = router
-  let lngParam = query.lng as string | undefined
+  const lngParam = query.lng as string | undefined
 
-  // BUG FIX: Handle specific known legacy aliases before validation.
-  if (lngParam === 'fil') {
-    lngParam = 'tl'; // Correct 'fil' to its official code 'tl'.
-  }
+  // BUG FIX: Handle legacy aliases using unified normalization
+  const normalizedLngParam = lngParam ? normalizeLegacyLocale(lngParam) : null
 
   // The "effective" locale must prioritize the `lng` query parameter to fix legacy SEO issues.
   // If `lng` exists and is valid, use it. Otherwise, fall back to the locale of the rendered page.
-  const effectiveLocale = (lngParam && URLManager.isValidLocale(lngParam))
-    ? lngParam
-    : renderedLocale || 'en'
+  const effectiveLocale = normalizedLngParam ||
+    (renderedLocale && URLManager.isValidLocale(renderedLocale) ? renderedLocale : null) ||
+    SEO_CONFIG.locales.default
 
   return {
     canonical: URLManager.getCanonicalUrl(pathname, effectiveLocale),

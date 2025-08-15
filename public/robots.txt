@@ -4,9 +4,17 @@ Allow: /
 # Block query parameter format multilingual URLs - Fix "alternate page" issue
 Disallow: /*?lng=*
 Disallow: /*?*lng=*
+Disallow: /*&lng=*
 
-# Block incorrect language code URLs
-Disallow: /fil
+# Block incorrect and legacy language code URLs
+Disallow: /fil*
+Disallow: /filipino*
+Disallow: /cn*
+Disallow: /zh/*
+
+# Block URLs with trailing slashes (except root)
+Disallow: /*/
+Disallow: /*/*/
 
 # Allow correct multilingual paths (no trailing slash)
 Allow: /zh-CN

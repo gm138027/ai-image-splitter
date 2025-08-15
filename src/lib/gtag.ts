@@ -1,6 +1,7 @@
 // Google Analytics configuration and utility functions
+import { SEO_CONFIG } from '@/config/seo'
 
-export const GA_TRACKING_ID = 'G-TRZWPW2BJL'
+export const GA_TRACKING_ID = SEO_CONFIG.analytics.googleAnalytics
 
 // Google Analytics page view tracking
 export const pageview = (url: string) => {

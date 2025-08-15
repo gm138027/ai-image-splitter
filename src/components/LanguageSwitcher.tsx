@@ -2,19 +2,14 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 import { Globe, ChevronDown } from 'lucide-react'
 import { useTranslation } from 'next-i18next'
+import { SUPPORTED_LOCALES, LOCALE_NAMES } from '@/config/seo'
 
-const languages = [
-  { code: 'en', name: 'English', flag: '🇺🇸' },
-  { code: 'zh-CN', name: '简体中文', flag: '🇨🇳' },
-  { code: 'id', name: 'Bahasa Indonesia', flag: '🇮🇩' },
-  { code: 'pt', name: 'Português', flag: '🇵🇹' },
-  { code: 'tl', name: 'Filipino', flag: '🇵🇭' },
-  { code: 'ms', name: 'Bahasa Melayu', flag: '🇲🇾' },
-  { code: 'hi', name: 'हिन्दी', flag: '🇮🇳' },
-  { code: 'vi', name: 'Tiếng Việt', flag: '🇻🇳' },
-  { code: 'kk', name: 'Қазақша', flag: '🇰🇿' },
-  { code: 'ru', name: 'Русский', flag: '🇷🇺' },
-]
+// 使用统一配置生成语言列表
+const languages = SUPPORTED_LOCALES.map(code => ({
+  code,
+  name: LOCALE_NAMES[code].nativeName,
+  flag: LOCALE_NAMES[code].flag
+}))
 
 const LanguageSwitcher: React.FC = () => {
   const { t } = useTranslation('common')

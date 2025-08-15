@@ -1,4 +1,4 @@
-import type { NextPage, GetServerSideProps } from 'next'
+import type { NextPage, GetStaticProps } from 'next'
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -7,7 +7,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useRouter } from 'next/router'
 import { ArrowLeft, Scale, FileText, Users, Shield, AlertTriangle, Globe, Settings, Phone } from 'lucide-react'
 import Layout from '@/components/Layout'
-import LanguageSEO from '@/components/SEO/LanguageSEO'
+import SEOHead from '@/components/SEO/SEOHead'
 
 const TermsOfService: NextPage = () => {
   const { t } = useTranslation(['terms', 'common'])
@@ -40,19 +40,15 @@ const TermsOfService: NextPage = () => {
 
   return (
     <>
-      {/* Use LanguageSEO component to replace basic SEO tags */}
-      <LanguageSEO 
+      {/* Use unified SEO component */}
+      <SEOHead
         title={`${t('terms:title')} - AI Image Splitter`}
         description={t('terms:description')}
         keywords="terms of service, user agreement, AI image splitter"
       />
-      
+
       <Head>
-        {/* robots directive retained as LanguageSEO already includes more complete robots settings */}
-        
-        {/* Open Graph */}
-        <meta property="og:title" content={`${t('terms:title')} - AI Image Splitter`} />
-        <meta property="og:description" content={t('terms:description')} />
+        {/* Additional page-specific meta tags - basic SEO handled by SEOHead */}
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aiimagesplitter.com/terms" />
         <meta property="og:site_name" content="AI Image Splitter" />
@@ -375,12 +371,10 @@ const TermsOfService: NextPage = () => {
 
 export default TermsOfService
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  context.res.setHeader('Cache-Control', 'no-store');
-  const { locale } = context;
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
       ...(await serverSideTranslations(locale ?? 'en', ['terms', 'common'])),
     },
   }
-} 
+}

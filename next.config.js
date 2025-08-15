@@ -16,6 +16,37 @@ const nextConfig = {
     dangerouslyAllowSVG: false,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
+  // URL重定向规则 - 解决URL重复问题
+  async redirects() {
+    return [
+      // 1. 重定向遗留语言代码
+      {
+        source: '/fil/:path*',
+        destination: '/tl/:path*',
+        permanent: true, // 301重定向
+      },
+      // 2. 重定向其他可能的遗留格式
+      {
+        source: '/filipino/:path*',
+        destination: '/tl/:path*',
+        permanent: true,
+      },
+      // 3. 处理常见的错误语言代码
+      {
+        source: '/cn/:path*',
+        destination: '/zh-CN/:path*',
+        permanent: true,
+      },
+      {
+        source: '/zh/:path*',
+        destination: '/zh-CN/:path*',
+        permanent: true,
+      },
+      // 4. 重定向带有查询参数的URL到正确格式
+      // 注意：这些将由middleware处理，这里作为备用
+    ]
+  },
+
   // 确保静态文件可以被正确服务
   async headers() {
     return [
@@ -25,6 +56,24 @@ const nextConfig = {
           {
             key: 'Cache-Control',
             value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      // 添加安全头
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'X-Frame-Options',
+            value: 'DENY',
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'strict-origin-when-cross-origin',
           },
         ],
       },

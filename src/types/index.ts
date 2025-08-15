@@ -45,7 +45,6 @@ export interface ImagePreviewProps {
   splitImages: SplitImage[]
   config: SplitConfig
   onDownloadSingle: (splitImage: SplitImage, index: number) => void
-  onReupload: () => void
   fileInputRef: React.RefObject<HTMLInputElement>
 }
 

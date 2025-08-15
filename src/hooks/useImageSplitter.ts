@@ -164,14 +164,7 @@ export const useImageSplitter = () => {
     }
   }, [state.splitImages, state.config.outputFormat, t])
 
-  // 重新上传 - 直接触发文件选择
-  const handleReupload = useCallback(() => {
-          // Clear previous file input value to ensure same file can be selected
-    if (fileInputRef.current) {
-      fileInputRef.current.value = ''
-      fileInputRef.current.click()
-    }
-  }, [])
+
 
   // 数值范围限制
   const clampValue = (value: number, min: number, max: number) => {
@@ -210,7 +203,6 @@ export const useImageSplitter = () => {
     updateCols,
     splitImage,
     downloadSingle,
-    downloadAll,
-    handleReupload
+    downloadAll
   }
 } 
