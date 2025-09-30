@@ -39,7 +39,7 @@
           "content": "Enter {domainLink} in your browser to access our homepage. You can upload images through these two methods:",
           "method1": "**Drag & Drop**: Directly drag image files to the upload area",
           "method2": "**Click Upload**: Click the 'Choose Image' button to select from your device",
-          "note": "Supports JPG, PNG, GIF and other mainstream formats, maximum file size 10MB"
+          "note": "Supports JPG, PNG, GIF and other mainstream formats, maximum file size 50MB"
         },
         
         "step2": {
@@ -130,7 +130,7 @@
         "title": "Frequently Asked Questions",
         "q1": {
           "question": "What image formats are supported?",
-          "answer": "Supports all mainstream image formats including JPG, PNG, GIF, WebP, BMP, with a maximum file size of 10MB."
+          "answer": "Supports all mainstream image formats including JPG, PNG, GIF, WebP, BMP, with a maximum file size of 50MB."
         },
         "q2": {
           "question": "Will the image quality decrease after splitting?",

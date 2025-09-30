@@ -39,7 +39,7 @@
           "content": "Masukkan {domainLink} di browser Anda untuk mengakses halaman utama kami. Anda dapat mengupload gambar melalui dua metode berikut:",
           "method1": "Drag & Drop: Langsung seret file gambar ke area upload",
           "method2": "Klik Upload: Klik tombol Pilih Gambar untuk memilih dari perangkat Anda",
-          "note": "Mendukung format JPG, PNG, GIF dan format mainstream lainnya, ukuran file maksimum 10MB"
+          "note": "Mendukung format JPG, PNG, GIF dan format mainstream lainnya, ukuran file maksimum 50MB"
         },
         
         "step2": {
@@ -130,7 +130,7 @@
         "title": "Pertanyaan yang Sering Diajukan",
         "q1": {
           "question": "Format gambar apa yang didukung?",
-          "answer": "Mendukung semua format gambar mainstream termasuk JPG, PNG, GIF, WebP, BMP, dengan ukuran file maksimum 10MB."
+          "answer": "Mendukung semua format gambar mainstream termasuk JPG, PNG, GIF, WebP, BMP, dengan ukuran file maksimum 50MB."
         },
         "q2": {
           "question": "Apakah kualitas gambar akan menurun setelah pemisahan?",

@@ -39,7 +39,7 @@
           "content": "Digite {domainLink} no seu navegador para acessar nossa página inicial. Você pode carregar imagens através destes dois métodos:",
           "method1": "Arrastar e Soltar: Arraste diretamente os arquivos de imagem para a área de upload",
           "method2": "Clique para Carregar: Clique no botão Escolher Imagem para selecionar do seu dispositivo",
-          "note": "Suporta formatos JPG, PNG, GIF e outros formatos principais, tamanho máximo de arquivo 10MB"
+          "note": "Suporta formatos JPG, PNG, GIF e outros formatos principais, tamanho máximo de arquivo 50MB"
         },
         
         "step2": {
@@ -130,7 +130,7 @@
         "title": "Perguntas Frequentes",
         "q1": {
           "question": "Quais formatos de imagem são suportados?",
-          "answer": "Suporta todos os formatos de imagem principais incluindo JPG, PNG, GIF, WebP, BMP, com tamanho máximo de arquivo de 10MB."
+          "answer": "Suporta todos os formatos de imagem principais incluindo JPG, PNG, GIF, WebP, BMP, com tamanho máximo de arquivo de 50MB."
         },
         "q2": {
           "question": "A qualidade da imagem diminuirá após a divisão?",

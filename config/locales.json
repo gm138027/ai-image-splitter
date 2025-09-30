@@ -1,0 +1,15 @@
+{
+    "defaultLocale":  "en",
+    "locales":  [
+                    "en",
+                    "zh-CN",
+                    "id",
+                    "pt",
+                    "tl",
+                    "ms",
+                    "hi",
+                    "vi",
+                    "kk",
+                    "ru"
+                ]
+}

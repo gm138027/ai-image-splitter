@@ -1,5 +1,4 @@
 import type { NextPage, GetStaticProps } from 'next'
-import Head from 'next/head'
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
@@ -43,20 +42,6 @@ const BlogIndex: NextPage = () => {
         description={t('blog:description')}
         keywords="AI image splitter blog, tutorials, tips, Instagram grid, social media"
       />
-      
-      <Head>
-        
-        {/* Open Graph */}
-        <meta property="og:title" content={`${t('blog:title')} - AI Image Splitter`} />
-        <meta property="og:description" content={t('blog:description')} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://aiimagesplitter.com/blog" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${t('blog:title')} - AI Image Splitter`} />
-        <meta name="twitter:description" content={t('blog:description')} />
-      </Head>
       
       <Layout>
         <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-primary-50/30">
@@ -136,7 +121,7 @@ const BlogIndex: NextPage = () => {
               ))}
             </div>
 
-            {/* 返回首页链接 */}
+            {/* Back to home link */}
             <div className="text-center mt-16">
               <Link 
                 href="/"

@@ -4,7 +4,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useRouter } from 'next/router'
 import Layout from '@/components/Layout'
 import Image from 'next/image'
 import { Calendar, Clock, ArrowLeft, ExternalLink } from 'lucide-react'
@@ -29,35 +28,20 @@ const parseTextWithDomainLink = (text: string): React.ReactNode => {
 
 const CompleteGuide: NextPage = () => {
   const { t } = useTranslation(['common', 'blog'])
-  const router = useRouter()
 
   return (
     <>
       {/* Use unified SEO component */}
       <SEOHead
+        ogType="article"
+        ogImagePath="/images/blog/complete-guide-cover.jpg"
         title={`${t('blog:posts.complete-guide.title')} - AI Image Splitter`}
         description={t('blog:posts.complete-guide.description')}
         keywords={t('blog:posts.complete-guide.keywords')}
       />
       
       <Head>
-        
-        {/* Open Graph */}
-        <meta property="og:title" content={`${t('blog:posts.complete-guide.title')} - AI Image Splitter`} />
-        <meta property="og:description" content={t('blog:posts.complete-guide.description')} />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://aiimagesplitter.com/blog/complete-guide" />
-        <meta property="og:image" content="https://aiimagesplitter.com/images/blog/complete-guide-cover.jpg" />
-        <meta property="og:site_name" content="AI Image Splitter" />
-        <meta property="og:locale" content={router.locale === 'zh-CN' ? 'zh_CN' : 'en_US'} />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${t('blog:posts.complete-guide.title')} - AI Image Splitter`} />
-        <meta name="twitter:description" content={t('blog:posts.complete-guide.description')} />
-        <meta name="twitter:image" content="https://aiimagesplitter.com/images/blog/complete-guide-cover.jpg" />
-        
-        {/* Structured data */}
+        {/* Page-specific structured data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

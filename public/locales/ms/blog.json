@@ -39,7 +39,7 @@
           "content": "Masukkan {domainLink} dalam pelayar anda untuk mengakses laman utama kami. Anda boleh memuat naik imej melalui dua kaedah ini:",
           "method1": "Seret & Lepas: Langsung seret fail imej ke kawasan muat naik",
           "method2": "Klik Muat Naik: Klik butang 'Pilih Imej' untuk memilih dari peranti anda",
-          "note": "Menyokong format JPG, PNG, GIF dan format arus perdana lain, saiz fail maksimum 10MB"
+          "note": "Menyokong format JPG, PNG, GIF dan format arus perdana lain, saiz fail maksimum 50MB"
         },
         
         "step2": {
@@ -130,7 +130,7 @@
         "title": "Soalan Lazim",
         "q1": {
           "question": "Format imej apakah yang disokong?",
-          "answer": "Menyokong semua format imej arus perdana termasuk JPG, PNG, GIF, WebP, BMP, dengan saiz fail maksimum 10MB."
+          "answer": "Menyokong semua format imej arus perdana termasuk JPG, PNG, GIF, WebP, BMP, dengan saiz fail maksimum 50MB."
         },
         "q2": {
           "question": "Adakah kualiti imej akan menurun selepas pemisahan?",

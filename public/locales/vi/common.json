@@ -19,7 +19,7 @@
     "description": "Chức năng tách ảnh nâng cao sẽ có sẵn tại đây sớm. Tải ảnh của bạn lên và tách thành lưới hoàn hảo cho mạng xã hội.",
     "uploadPrompt": "Kéo thả file vào đây hoặc click để tải lên",
     "uploadButton": "Chọn Ảnh",
-    "uploadSupport": "Hỗ trợ định dạng JPG, PNG, GIF, tối đa 10MB",
+    "uploadSupport": "Hỗ trợ định dạng JPG, PNG, GIF, tối đa 50MB",
     "controlPanelDescription": "Sử dụng bảng điều khiển bên trái để cấu hình tùy chọn tách",
     "splitModeTitle": "Chọn Chế Độ Tách Hình Ảnh",
     "splitModeDescription": "Tách dọc hoàn hảo cho bài đăng carousel, tách ngang cho hiển thị phong cảnh, và tách lưới cho bố cục lưới Instagram",
@@ -125,7 +125,7 @@
     },
     "howToSplitImage": {
       "question": "Làm thế nào để chia hình ảnh thành nhiều phần?",
-      "answer": "Rất đơn giản: 1) Tải lên hình ảnh của bạn (hỗ trợ JPG, PNG, GIF, v.v., tối đa 10MB), 2) Chọn chế độ chia ưa thích - chia dọc, chia ngang hoặc chia lưới, 3) Điều chỉnh số hàng và cột, 4) Nhấp vào nút chia hình ảnh, 5) Tải xuống từng phân đoạn riêng lẻ hoặc nhận gói ZIP."
+      "answer": "Rất đơn giản: 1) Tải lên hình ảnh của bạn (hỗ trợ JPG, PNG, GIF, v.v., tối đa 50MB), 2) Chọn chế độ chia ưa thích - chia dọc, chia ngang hoặc chia lưới, 3) Điều chỉnh số hàng và cột, 4) Nhấp vào nút chia hình ảnh, 5) Tải xuống từng phân đoạn riêng lẻ hoặc nhận gói ZIP."
     },
     "instagramGridMaker": {
       "question": "Tôi có thể sử dụng công cụ này để tạo bài đăng lưới Instagram không?",
@@ -137,7 +137,7 @@
     },
     "supportedFormats": {
       "question": "Những định dạng tệp nào được hỗ trợ?",
-      "answer": "Công cụ chia hình ảnh của chúng tôi hỗ trợ tất cả các định dạng hình ảnh phổ biến, bao gồm JPG, PNG, GIF và WebP. Bạn cũng có thể xuất hình ảnh đã chia dưới định dạng JPG, PNG, WebP hoặc BMP. Kích thước tệp tối đa là 10MB với kích thước lên đến 4096x4096 pixel để có hiệu suất tối ưu."
+      "answer": "Công cụ chia hình ảnh của chúng tôi hỗ trợ tất cả các định dạng hình ảnh phổ biến, bao gồm JPG, PNG, GIF và WebP. Bạn cũng có thể xuất hình ảnh đã chia dưới định dạng JPG, PNG, WebP hoặc BMP. Kích thước tệp tối đa là 50MB với kích thước lên đến 8192x8192 pixel để có hiệu suất tối ưu."
     },
     "freeToUse": {
       "question": "Công cụ này có hoàn toàn miễn phí không?",

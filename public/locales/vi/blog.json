@@ -39,7 +39,7 @@
           "content": "Nhập {domainLink} vào trình duyệt của bạn để truy cập trang chủ của chúng tôi. Bạn có thể tải hình ảnh lên thông qua hai phương pháp sau:",
           "method1": "Kéo & Thả: Kéo trực tiếp các tệp hình ảnh vào khu vực tải lên",
           "method2": "Nhấp để tải lên: Nhấp vào nút 'Chọn hình ảnh' để chọn từ thiết bị của bạn",
-          "note": "Hỗ trợ các định dạng JPG, PNG, GIF và các định dạng chính thống khác, kích thước tệp tối đa 10MB"
+          "note": "Hỗ trợ các định dạng JPG, PNG, GIF và các định dạng chính thống khác, kích thước tệp tối đa 50MB"
         },
         
         "step2": {
@@ -130,7 +130,7 @@
         "title": "Câu hỏi thường gặp",
         "q1": {
           "question": "Những định dạng hình ảnh nào được hỗ trợ?",
-          "answer": "Hỗ trợ tất cả các định dạng hình ảnh chính bao gồm JPG, PNG, GIF, WebP, BMP, với kích thước tệp tối đa 10MB."
+          "answer": "Hỗ trợ tất cả các định dạng hình ảnh chính bao gồm JPG, PNG, GIF, WebP, BMP, với kích thước tệp tối đa 50MB."
         },
         "q2": {
           "question": "Chất lượng hình ảnh có bị giảm sau khi chia không?",

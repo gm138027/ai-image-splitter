@@ -1,90 +1,84 @@
 /**
  * Dynamically generate sitemap.xml
- * Uses unified language configuration to ensure consistency with code configuration
+ * Pulls locale configuration from a shared JSON file to avoid duplication.
  */
 
 const fs = require('fs')
 const path = require('path')
+const localeConfig = require('../config/locales.json')
 
-// 导入统一的语言配置
-// 注意：由于这是在构建时运行的JS文件，我们需要直接定义配置以避免TS编译问题
-// 但我们保持与 src/config/seo.ts 的一致性
-// TODO: 考虑在未来版本中通过编译后的配置文件导入，确保100%一致性
-const SUPPORTED_LOCALES = [
-  'en',       // English (default)
-  'zh-CN',    // Simplified Chinese
-  'id',       // Indonesian
-  'pt',       // Portuguese
-  'tl',       // Tagalog (Filipino) - Note: Use tl consistently, not fil
-  'ms',       // Malay
-  'hi',       // Hindi
-  'vi',       // Vietnamese
-  'kk',       // Kazakh
-  'ru',       // Russian
-]
+const SUPPORTED_LOCALES = localeConfig.locales
+const DEFAULT_LOCALE = localeConfig.defaultLocale || 'en'
 
-// 配置验证：确保与主配置文件一致
-console.log('🔍 Sitemap generation using locales:', SUPPORTED_LOCALES.join(', '))
+console.log('Sitemap generation using locales:', SUPPORTED_LOCALES.join(', '))
 
 const BASE_URL = 'https://aiimagesplitter.com'
 
-// Add timestamps
-const now = new Date().toISOString()
-const today = now.split('T')[0]
+const today = new Date().toISOString().split('T')[0]
 
-// Priority configuration
 const priorities = {
   homepage: '1.0',
   mainPages: '0.8',
-  blogPosts: '0.6'
+  blogPosts: '0.6',
 }
 
-// Page configuration
-const PAGES = [
-  {
-    path: '',
-    priority: priorities.homepage,
-    changefreq: 'daily'
-  },
-  {
-    path: '/blog',
-    priority: priorities.mainPages,
-    changefreq: 'weekly'
-  },
-  {
-    path: '/privacy',
-    priority: priorities.mainPages,
-    changefreq: 'monthly'
-  },
-  {
-    path: '/terms',
-    priority: priorities.mainPages,
-    changefreq: 'monthly'
-  }
+const STATIC_PAGES = [
+  { path: '', priority: priorities.homepage, changefreq: 'daily' },
+  { path: '/blog', priority: priorities.mainPages, changefreq: 'weekly' },
+  { path: '/privacy', priority: priorities.mainPages, changefreq: 'monthly' },
+  { path: '/terms', priority: priorities.mainPages, changefreq: 'monthly' },
 ]
 
-/**
- * Generate URL list for specific page
- */
-function generatePageUrls(pagePath) {
-  const urls = []
-  
-  SUPPORTED_LOCALES.forEach(locale => {
-    if (locale === 'en') {
-      // Main URL (English version)
-      urls.push(`${BASE_URL}${pagePath}`)
-    } else {
-      // Generate hreflang links for all language versions
-      urls.push(`${BASE_URL}/${locale}${pagePath}`)
+function getBlogPostPaths() {
+  const blogDir = path.join(process.cwd(), 'src', 'pages', 'blog')
+
+  if (!fs.existsSync(blogDir)) {
+    console.warn('[sitemap] Blog directory not found - skipping blog entries')
+    return []
+  }
+
+  const entries = fs.readdirSync(blogDir, { withFileTypes: true })
+  const paths = new Set()
+
+  entries.forEach(entry => {
+    if (entry.isFile()) {
+      const ext = path.extname(entry.name).toLowerCase()
+      const validExt = ['.tsx', '.ts', '.jsx', '.js', '.mdx']
+      if (!validExt.includes(ext)) return
+
+      const name = path.basename(entry.name, ext)
+      if (name !== 'index') {
+        paths.add(`/blog/${name}`)
+      }
+    } else if (entry.isDirectory()) {
+      const possibleIndexFiles = ['index.tsx', 'index.ts', 'index.jsx', 'index.js', 'index.mdx']
+      const hasIndex = possibleIndexFiles.some(fileName => fs.existsSync(path.join(blogDir, entry.name, fileName)))
+      if (hasIndex) {
+        paths.add(`/blog/${entry.name}`)
+      }
     }
   })
-  
-  return urls
+
+  return Array.from(paths)
 }
 
-/**
- * Generate sitemap entry for single page
- */
+const BLOG_PAGES = getBlogPostPaths().map(pagePath => ({
+  path: pagePath,
+  priority: priorities.blogPosts,
+  changefreq: 'weekly',
+}))
+
+const PAGES = [...STATIC_PAGES, ...BLOG_PAGES]
+
+function generatePageUrls(pagePath) {
+  return SUPPORTED_LOCALES.map(locale => {
+    if (locale === DEFAULT_LOCALE) {
+      return `${BASE_URL}${pagePath}`
+    }
+    return `${BASE_URL}/${locale}${pagePath}`
+  })
+}
+
 function generateUrlEntry(url, priority, changefreq) {
   return `
   <url>
@@ -95,17 +89,12 @@ function generateUrlEntry(url, priority, changefreq) {
   </url>`
 }
 
-/**
- * Generate complete sitemap.xml
- */
 function generateSitemap() {
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`
 
   PAGES.forEach(page => {
-    const urls = generatePageUrls(page.path)
-    
-    urls.forEach(url => {
+    generatePageUrls(page.path).forEach(url => {
       sitemap += generateUrlEntry(url, page.priority, page.changefreq)
     })
   })
@@ -114,40 +103,37 @@ function generateSitemap() {
   return sitemap
 }
 
-/**
- * Main function
- */
 function main() {
-  console.log('🚀 Starting sitemap.xml generation...')
-  
+  console.log('[sitemap] Starting sitemap.xml generation...')
+
+  if (BLOG_PAGES.length > 0) {
+    console.log('[sitemap] Blog pages discovered:', BLOG_PAGES.map(page => page.path).join(', '))
+  }
+
   const sitemap = generateSitemap()
   const outputPath = path.join(__dirname, '..', 'public', 'sitemap.xml')
-  
+
   fs.writeFileSync(outputPath, sitemap, 'utf8')
-  
-  console.log('✅ sitemap.xml generated successfully!')
-  console.log(`📍 File location: ${outputPath}`)
-  console.log(`📊 Pages included: ${PAGES.length}`)
-  console.log(`🌍 Languages supported: ${SUPPORTED_LOCALES.length}`)
-  
-  // Validate generated file
-  if (fs.existsSync(outputPath)) {
-    const fileSize = fs.statSync(outputPath).size
-    console.log(`📁 File size: ${fileSize} bytes`)
-    
-    if (fileSize > 0) {
-      console.log('🎉 Sitemap generation completed successfully!')
-    } else {
-      console.error('❌ Generated file is empty!')
-      process.exit(1)
-    }
-  } else {
-    console.error('❌ File generation failed!')
+
+  console.log('[sitemap] sitemap.xml generated successfully')
+  console.log('[sitemap] File location:', outputPath)
+  console.log('[sitemap] Total logical pages:', PAGES.length)
+  console.log('[sitemap] Locales per page:', SUPPORTED_LOCALES.length)
+
+  if (!fs.existsSync(outputPath)) {
+    console.error('[sitemap] File generation failed')
+    process.exit(1)
+  }
+
+  const fileSize = fs.statSync(outputPath).size
+  console.log('[sitemap] Output file size:', fileSize, 'bytes')
+
+  if (fileSize <= 0) {
+    console.error('[sitemap] Generated file is empty')
     process.exit(1)
   }
 }
 
-// Run main function
 if (require.main === module) {
   main()
 }
@@ -156,5 +142,5 @@ module.exports = {
   generateSitemap,
   generatePageUrls,
   PAGES,
-  SUPPORTED_LOCALES
-} 
+  SUPPORTED_LOCALES,
+}

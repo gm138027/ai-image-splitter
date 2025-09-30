@@ -39,7 +39,7 @@
           "content": "在浏览器中输入 {domainLink}，进入我们的网站首页。您可以通过以下两种方式上传图片：",
           "method1": "拖拽上传：直接将图片文件拖拽到上传区域",
           "method2": "点击上传：点击选择图片按钮，从设备中选择图片",
-          "note": "支持 JPG、PNG、GIF 等主流格式，最大文件大小 10MB"
+          "note": "支持 JPG、PNG、GIF 等主流格式，最大文件大小 50MB"
         },
         
         "step2": {
@@ -130,7 +130,7 @@
         "title": "常见问题解答",
         "q1": {
           "question": "支持哪些图片格式？",
-          "answer": "支持JPG、PNG、GIF、WebP、BMP等所有主流图片格式，最大文件大小10MB。"
+          "answer": "支持JPG、PNG、GIF、WebP、BMP等所有主流图片格式，最大文件大小50MB。"
         },
         "q2": {
           "question": "分割后的图片质量会下降吗？",

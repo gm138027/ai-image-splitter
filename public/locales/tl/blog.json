@@ -39,7 +39,7 @@
           "content": "I-type ang {domainLink} sa inyong browser upang ma-access ang aming homepage. Maaari kayong mag-upload ng mga larawan sa pamamagitan ng dalawang paraan:",
           "method1": "Drag & Drop: Direktang i-drag ang mga image file sa upload area",
           "method2": "Click Upload: I-click ang 'Pumili ng Larawan' button upang pumili mula sa inyong device",
-          "note": "Sumusuporta sa JPG, PNG, GIF at iba pang mainstream formats, maximum file size na 10MB"
+          "note": "Sumusuporta sa JPG, PNG, GIF at iba pang mainstream formats, maximum file size na 50MB"
         },
         
         "step2": {
@@ -130,7 +130,7 @@
         "title": "Mga Madalas na Tanong",
         "q1": {
           "question": "Anong mga image format ang sinusuportahan?",
-          "answer": "Sinusuportahan ang lahat ng mainstream image formats kabilang ang JPG, PNG, GIF, WebP, BMP, na may maximum file size na 10MB."
+          "answer": "Sinusuportahan ang lahat ng mainstream image formats kabilang ang JPG, PNG, GIF, WebP, BMP, na may maximum file size na 50MB."
         },
         "q2": {
           "question": "Bababa ba ang kalidad ng larawan pagkatapos ng splitting?",

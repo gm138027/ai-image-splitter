@@ -9,9 +9,9 @@ const fs = require('fs')
 const path = require('path')
 
 // 模拟URLCleaner功能（避免TS编译问题）
-const SUPPORTED_LOCALES = [
-  'en', 'zh-CN', 'id', 'pt', 'tl', 'ms', 'hi', 'vi', 'kk', 'ru'
-]
+const localeConfig = require('../config/locales.json')
+const SUPPORTED_LOCALES = localeConfig.locales
+const DEFAULT_LOCALE = localeConfig.defaultLocale || 'en'
 
 const BASE_URL = 'https://aiimagesplitter.com'
 
@@ -36,7 +36,7 @@ const generateTestURLs = () => {
     urls.push(`${BASE_URL}${path}`)
     
     // 其他语言
-    SUPPORTED_LOCALES.slice(1).forEach(locale => {
+    SUPPORTED_LOCALES.filter(locale => locale !== DEFAULT_LOCALE).forEach(locale => {
       urls.push(`${BASE_URL}/${locale}${path}`)
     })
   })
@@ -45,7 +45,7 @@ const generateTestURLs = () => {
   basePaths.forEach(path => {
     // 查询参数格式
     SUPPORTED_LOCALES.forEach(locale => {
-      if (locale !== 'en') {
+      if (locale !== DEFAULT_LOCALE) {
         urls.push(`${BASE_URL}${path}?lng=${locale}`)
       }
     })
@@ -84,7 +84,7 @@ const analyzeURL = (url) => {
       analysis.isValid = false
       
       const normalizedLocale = lngParam === 'fil' ? 'tl' : lngParam
-      if (normalizedLocale === 'en') {
+      if (normalizedLocale === DEFAULT_LOCALE) {
         analysis.redirectTo = `${BASE_URL}${pathname}`
       } else {
         analysis.redirectTo = `${BASE_URL}/${normalizedLocale}${pathname}`
@@ -93,7 +93,7 @@ const analyzeURL = (url) => {
     
     // 检查路径
     const pathSegments = pathname.split('/').filter(Boolean)
-    let locale = 'en'
+    let locale = DEFAULT_LOCALE
     let contentPath = pathname
     
     if (pathSegments.length > 0) {
@@ -119,7 +119,7 @@ const analyzeURL = (url) => {
     }
     
     // 生成canonical URL
-    if (locale === 'en') {
+    if (locale === DEFAULT_LOCALE) {
       analysis.canonical = `${BASE_URL}${contentPath}`
     } else {
       analysis.canonical = `${BASE_URL}/${locale}${contentPath}`
@@ -260,3 +260,4 @@ console.log('   • robots.txt 阻止索引问题URL')
 
 // 不要因为发现预期的URL问题而失败构建
 process.exit(0)
+

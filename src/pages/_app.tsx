@@ -10,9 +10,6 @@ import '@/styles/globals.css'
 import { pageview } from '@/lib/gtag'
 import dynamic from 'next/dynamic'
 
-// Import the unified SEO component (replaces HreflangTags)
-import SEOHead from '@/components/SEO/SEOHead'
-
 // Dynamically import Google Analytics component to reduce initial bundle size
 const GoogleAnalytics = dynamic(() => import('@/components/Analytics/GoogleAnalytics'), {
   ssr: false,
@@ -61,14 +58,13 @@ class ErrorBoundary extends React.Component<
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
 
-  // Optimization: remove unnecessary route listeners and console.log
   useEffect(() => {
     const handleRouteChange = (url: string) => {
       pageview(url)
     }
-    
+
     router.events.on('routeChangeComplete', handleRouteChange)
-    
+
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange)
     }
@@ -78,13 +74,10 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ErrorBoundary>
       {/* Optimized Google Analytics component */}
       <GoogleAnalytics />
-      
-      {/* Unified SEO component for all pages - includes hreflang, canonical, basic meta tags */}
-      <SEOHead />
-      
+
       <Component {...pageProps} />
     </ErrorBoundary>
   )
 }
 
-export default appWithTranslation(MyApp, nextI18NextConfig) 
+export default appWithTranslation(MyApp, nextI18NextConfig)

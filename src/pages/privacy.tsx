@@ -4,7 +4,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useRouter } from 'next/router'
 import { ArrowLeft, Shield, Lock, Eye, Users, Globe, FileText, Mail } from 'lucide-react'
 import Layout from '@/components/Layout'
 import DomainLink from '@/components/UI/DomainLink'
@@ -12,7 +11,6 @@ import SEOHead from '@/components/SEO/SEOHead'
 
 const PrivacyPolicy: NextPage = () => {
   const { t } = useTranslation(['privacy', 'common'])
-  const router = useRouter()
 
   // Table of contents navigation items
   const tableOfContents = [
@@ -37,23 +35,15 @@ const PrivacyPolicy: NextPage = () => {
   return (
     <>
       {/* Use unified SEO component */}
-      <SEOHead
+      <SEOHead ogType="article" twitterCard="summary"
         title={`${t('privacy:title')} - AI Image Splitter`}
         description={t('privacy:description')}
         keywords="privacy policy, data protection, AI image splitter"
       />
 
       <Head>
-        {/* Additional page-specific meta tags - basic SEO handled by SEOHead */}
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://aiimagesplitter.com/privacy" />
-        <meta property="og:site_name" content="AI Image Splitter" />
-        <meta property="og:locale" content={router.locale === 'zh-CN' ? 'zh_CN' : 'en_US'} />
+        {/* Page-specific structured data */}
         
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content={`${t('privacy:title')} - AI Image Splitter`} />
-        <meta name="twitter:description" content={t('privacy:description')} />
         
         {/* Structured data */}
         <script

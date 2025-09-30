@@ -3,21 +3,16 @@
  * 单一数据源，避免配置分散和不一致问题
  */
 
-// 支持的语言配置 - 单一数据源
-export const SUPPORTED_LOCALES = [
-  'en',       // English (default)
-  'zh-CN',    // Simplified Chinese
-  'id',       // Indonesian
-  'pt',       // Portuguese
-  'tl',       // Tagalog (Filipino) - 注意：使用tl而不是fil
-  'ms',       // Malay
-  'hi',       // Hindi
-  'vi',       // Vietnamese
-  'kk',       // Kazakh
-  'ru',       // Russian
-] as const
+import localeConfigJson from '../../config/locales.json'
 
-export type SupportedLocale = typeof SUPPORTED_LOCALES[number]
+// 支持的语言配置 - 单一数据源
+const localeConfig = localeConfigJson as {
+  defaultLocale: string
+  locales: readonly string[]
+}
+
+export const SUPPORTED_LOCALES = localeConfig.locales
+export type SupportedLocale = (typeof SUPPORTED_LOCALES)[number]
 
 // 语言显示名称映射
 export const LOCALE_NAMES: Record<SupportedLocale, { name: string; nativeName: string; flag: string }> = {
@@ -69,7 +64,7 @@ export const SEO_CONFIG = {
   // 语言配置
   locales: {
     supported: SUPPORTED_LOCALES,
-    default: 'en' as SupportedLocale,
+    default: (localeConfig.defaultLocale as SupportedLocale) || 'en',
     names: LOCALE_NAMES,
     ogMapping: OG_LOCALE_MAPPING,
     regionMapping: REGION_MAPPING

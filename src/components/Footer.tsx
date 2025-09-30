@@ -10,14 +10,12 @@ const Footer: React.FC = () => {
   const handlePrivacyClick = (e: React.MouseEvent) => {
     e.preventDefault()
     e.stopPropagation()
-    console.log('隐私政策链接被点击')
     router.push('/privacy')
   }
 
   const handleTermsClick = (e: React.MouseEvent) => {
     e.preventDefault()
     e.stopPropagation()
-    console.log('条款链接被点击')
     router.push('/terms')
   }
 

@@ -38,8 +38,8 @@ const Home: NextPage = () => {
           as="image"
           href="/images/penguin-split.png"
           type="image/png"
-          imageSizes="192px"
-          imageSrcSet="/images/penguin-split.png"
+          imagesizes="192px"
+          imagesrcset="/images/penguin-split.png"
         />
         
         {/* Website icon configuration - solve browser tab display issue */}
@@ -58,8 +58,6 @@ const Home: NextPage = () => {
         
         {/* Remove duplicate Open Graph and Twitter metadata - handled by SEOHead */}
 
-        {/* Basic viewport */}
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
       </Head>
       
       <Layout onLogoClick={handleLogoClick} isInToolMode={isInToolMode}>

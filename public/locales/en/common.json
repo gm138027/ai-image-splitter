@@ -125,7 +125,7 @@
     },
     "howToSplitImage": {
       "question": "How do I split an image into multiple parts?",
-      "answer": "It's simple: 1) Upload your image (supports JPG, PNG, GIF, etc., max 10MB), 2) Choose your preferred splitting mode - vertical split, horizontal split, or grid split, 3) Adjust rows and columns, 4) Click the split image button, 5) Download individual segments or get a ZIP package."
+      "answer": "It's simple: 1) Upload your image (supports JPG, PNG, GIF, etc., max 50MB), 2) Choose your preferred splitting mode - vertical split, horizontal split, or grid split, 3) Adjust rows and columns, 4) Click the split image button, 5) Download individual segments or get a ZIP package."
     },
     "instagramGridMaker": {
       "question": "Can I use this tool to create Instagram grid posts?",
