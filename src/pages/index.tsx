@@ -38,8 +38,8 @@ const Home: NextPage = () => {
           as="image"
           href="/images/penguin-split.png"
           type="image/png"
-          imagesizes="192px"
-          imagesrcset="/images/penguin-split.png"
+          imageSizes="192px"
+          imageSrcSet="/images/penguin-split.png"
         />
         
         {/* Website icon configuration - solve browser tab display issue */}
