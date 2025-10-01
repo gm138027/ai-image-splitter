@@ -37,10 +37,10 @@
     "gridLineWidth": "分割线宽度",
     "outputFormat": "输出格式",
     "formats": {
-      "jpg": "JPG",
-      "png": "PNG",
-      "webp": "WebP",
-      "bmp": "BMP"
+      "jpg": "JPG（JPEG 格式）",
+      "png": "PNG（PNG 格式）",
+      "webp": "WebP（WebP 格式）",
+      "bmp": "BMP（BMP 格式）"
     },
     "buttons": {
       "split": "分割图片",

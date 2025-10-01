@@ -1,14 +1,12 @@
 {
-  "title": "Terms of Service",
+  "title": "Mga Tuntunin ng Serbisyo",
   "lastUpdated": "Huling Na-update: Hulyo 2, 2025",
   "description": "Ang mga Terms of Service na ito ay namamahala sa inyong paggamit ng AI Image Splitter. Pakibasa nang mabuti.",
-  
   "sections": {
     "agreement": {
       "title": "Kasunduan sa mga Tuntunin",
       "content": "Sa pag-access at paggamit ng AI Image Splitter (\"ang Serbisyo\"), tinatanggap ninyo at sumasang-ayon na maging tali sa mga tuntunin at probisyon ng kasunduang ito. Kung hindi kayo sumasang-ayon sa mga tuntunin na ito, hindi ninyo dapat gamitin ang serbisyong ito."
     },
-    
     "serviceDescription": {
       "title": "Paglalarawan ng Serbisyo",
       "content": "Ang AI Image Splitter ay isang libreng online tool na nagbibigay-daan sa mga user na hatiin ang mga larawan sa mga grid o segment para sa social media, lalo na para sa Instagram carousels at grid posts.",
@@ -18,11 +16,10 @@
         "Maraming grid sizes (3x3, 2x3, 4x4, custom)",
         "Walang watermarks sa output images",
         "Libreng access sa lahat ng features",
-        "Multi-language support",
+        "Suporta sa maraming wika",
         "Mobile at desktop compatibility"
       ]
     },
-    
     "userResponsibilities": {
       "title": "Mga Responsibilidad ng User",
       "content": "Sa paggamit ng aming serbisyo, sumasang-ayon kayo na:",
@@ -35,7 +32,6 @@
         "Sundin ang lahat ng applicable na batas at regulasyon"
       ]
     },
-    
     "intellectualProperty": {
       "title": "Mga Karapatan sa Intellectual Property",
       "ownership": {
@@ -47,7 +43,6 @@
         "content": "Ang AI Image Splitter website, design, software, at related materials ay protektado ng copyright at iba pang intellectual property laws. Hindi ninyo maaaring kopyahin, baguhin, o ipamahagi ang aming serbisyo nang walang pahintulot."
       }
     },
-    
     "prohibited": {
       "title": "Mga Bawal na Paggamit",
       "content": "Hindi ninyo maaaring gamitin ang aming serbisyo para sa:",
@@ -60,24 +55,21 @@
         "Paglabag sa anumang applicable na batas o regulasyon"
       ]
     },
-    
     "privacy": {
       "title": "Privacy at Data Protection",
       "content": "Mahalaga sa amin ang inyong privacy. Lahat ng image processing ay nangyayari sa client-side sa inyong browser, ibig sabihin hindi naalis sa inyong device ang inyong mga larawan. Pakitingnan ang aming Privacy Policy para sa detalyadong impormasyon tungkol sa kung paano namin hinahawakan ang inyong data."
     },
-    
     "serviceAvailability": {
       "title": "Availability ng Serbisyo",
       "content": "Sinisikap namin na panatilihin ang availability ng serbisyo, pero hindi namin ginagarantiya ang walang patid na access. Maaaring pansamantalang hindi available ang serbisyo dahil sa:",
       "reasons": [
-        "Scheduled maintenance",
-        "Technical difficulties",
-        "Server updates",
+        "Nakatakdang maintenance",
+        "Teknikal na problema",
+        "Pag-update ng server",
         "Mga pangyayaring labas sa aming kontrol"
       ],
       "disclaimer": "Hindi kami liable sa anumang pagkakalugi o pinsala na bunga ng service interruptions."
     },
-    
     "disclaimers": {
       "title": "Mga Disclaimer",
       "content": "Ang aming serbisyo ay ibinibigay \"as is\" nang walang anumang warranty. Tinatanggihan namin ang lahat ng warranties, express o implied, kasama pero hindi limitado sa:",
@@ -88,38 +80,32 @@
         "Walang patid o walang error na operasyon"
       ]
     },
-    
     "limitation": {
       "title": "Limitation ng Liability",
       "content": "Sa maximum extent na pinapahintulutan ng batas, hindi kami magiging liable sa anumang indirect, incidental, special, consequential, o punitive damages, kasama pero hindi limitado sa pagkalugi ng profits, data, o iba pang intangible losses na bunga ng inyong paggamit ng serbisyo."
     },
-    
     "termination": {
-      "title": "Termination",
+      "title": "Pagwawakas",
       "content": "Nireserba namin ang karapatan na wakasan o i-suspend ang access sa aming serbisyo kaagad, nang walang advance notice, para sa anumang dahilan, kasama ang paglabag sa mga tuntunin na ito. Pagkatapos ng termination, ang inyong karapatan na gamitin ang serbisyo ay tuluyang titigil."
     },
-    
     "modifications": {
       "title": "Mga Pagbabago sa Tuntunin",
       "content": "Nireserba namin ang karapatan na baguhin ang mga tuntunin na ito anumang oras. Ang mga pagbabago ay magiging epektibo kaagad pagkatapos ma-post sa page na ito. Ang inyong patuloy na paggamit ng serbisyo pagkatapos ng mga pagbabago ay nagbibigay-kahulugan ng pagtanggap sa mga bagong tuntunin.",
       "notification": "I-update namin ang \"Huling Na-update\" na petsa para ipakita ang mga pagbabago."
     },
-    
     "governingLaw": {
-      "title": "Governing Law",
+      "title": "Namamahalang Batas",
       "content": "Ang mga tuntunin na ito ay mamumuno at mauunawaan ayon sa mga applicable na international laws. Anumang disputes na bumangon mula sa mga tuntunin na ito o sa paggamit ng serbisyo ay marereso sa binding arbitration."
     },
-    
     "contact": {
-      "title": "Contact Information",
+      "title": "Impormasyon sa Pakikipag-ugnayan",
       "content": "Kung may mga tanong kayo tungkol sa mga Terms of Service na ito, makipag-ugnayan sa amin:",
-      "email": "Email: aiimagesplitter@proton.me",
+      "email": "Email ng suporta: aiimagesplitter@proton.me",
       "response": "Sasagutin namin ang inyong inquiry sa loob ng 48 hours."
     }
   },
-  
   "navigation": {
     "backToHome": "Balik sa Home",
-    "tableOfContents": "Table of Contents"
+    "tableOfContents": "Talaan ng Nilalaman"
   }
-} 
+}

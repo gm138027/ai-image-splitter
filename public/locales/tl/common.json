@@ -5,17 +5,17 @@
     "keywords": "image splitter, online image splitter, hatiin ang larawan, grid maker, instagram grid maker, image splitter instagram, social media, carousel"
   },
   "nav": {
-    "features": "Home",
+    "features": "Mga Tampok",
     "howItWorks": "Paano Ito Gumagana",
     "faq": "Mga Madalas na Itanong",
-    "about": "Blog"
+    "about": "Blog ng Amin"
   },
   "hero": {
     "title": "Online Image Splitter at Grid Maker",
     "description": "Kung naghahanap kayo ng \"paano hatiin ang isang larawan sa maraming larawan?\", nasa tamang lugar na kayo. Ang aming image splitter ay perpekto hindi lamang para sa online image splitting kundi pati na rin para sa Instagram grid creation, walang kinakailangang registration at lubos na libre."
   },
   "tool": {
-    "comingSoon": "Image Splitter Tool",
+    "comingSoon": "Papaparating na ang Image Splitter Tool",
     "description": "Ang advanced na functionality ng paghiwalay sa larawan ay magiging available dito sa lalong madaling panahon. I-upload ang inyong larawan at hatiin ito sa mga perpektong grid para sa social media.",
     "uploadPrompt": "I-drag ang mga file dito o i-click para mag-upload",
     "uploadButton": "Pumili ng Larawan",
@@ -23,24 +23,24 @@
     "controlPanelDescription": "Gamitin ang kaliwang control panel para sa pag-configure ng split options",
     "splitModeTitle": "Pumili ng Image Split Mode",
     "splitModeDescription": "Perfect ang vertical split para sa carousel posts, horizontal split para sa landscape displays, at grid split para sa Instagram grid layouts",
-    "gridLineWidthLabel": "Grid Line Width",
+    "gridLineWidthLabel": "Lapad ng Linya ng Grid",
     "gridLineWidthHint": "I-adjust ang spacing sa pagitan ng mga nahahating larawan",
     "splitModes": {
-      "vertical": "Vertical",
-      "horizontal": "Horizontal",
-      "grid": "Grid"
+      "vertical": "Pahaba (Vertical)",
+      "horizontal": "Pahalang (Horizontal)",
+      "grid": "Grid (Parisukat)"
     },
     "gridSettings": {
       "rows": "Mga Hilera",
       "columns": "Mga Kolum"
     },
-    "gridLineWidth": "Grid Line Width",
-    "outputFormat": "Output Format",
+    "gridLineWidth": "Lapad ng Linya ng Grid",
+    "outputFormat": "Format ng Output",
     "formats": {
-      "jpg": "JPG",
-      "png": "PNG",
-      "webp": "WebP",
-      "bmp": "BMP"
+      "jpg": "JPG (format JPEG)",
+      "png": "PNG (format PNG)",
+      "webp": "WebP (format WebP)",
+      "bmp": "BMP (format BMP)"
     },
     "buttons": {
       "split": "Hatiin ang Larawan",
@@ -53,7 +53,7 @@
       "reupload": "Mag-upload Ulit ng Larawan"
     },
     "preview": {
-      "title": "Preview Area",
+      "title": "Lugar ng Preview",
       "instruction": "I-click ang split image para makita ang split results"
     },
     "alerts": {
@@ -76,8 +76,8 @@
   "footer": {
     "madeWith": "Ginawa gamit ang",
     "forUsers": "para sa mga content creator sa buong mundo",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
+    "privacy": "Patakaran sa Privacy",
+    "terms": "Mga Tuntunin ng Serbisyo"
   },
   "advantages": {
     "title": "Mga Bentahe ng AI Image Splitter",
@@ -94,27 +94,27 @@
     "switchLanguage": "Palitan ang Wika"
   },
   "structuredData": {
-    "websiteName": "AI Image Splitter - Online Image Splitter Tool",
+    "websiteName": "AI Image Splitter - Online na Kasangkapan sa Paghiwa-hiwalay ng Larawan",
     "appName": "AI Image Splitter - Online Image Splitter Tool",
     "appDescription": "Libreng online image splitter tool para gumawa ng perpektong grids para sa Instagram, social media carousels at posts. Ang pinakamahusay na image splitter para sa Instagram grid maker pangangailangan - mabilis, madali, walang watermark.",
-    "creativeWorkName": "Image Splitter Tool",
+    "creativeWorkName": "Kasangkapan sa Paghiwa-hiwalay ng Larawan",
     "creativeWorkDescription": "Propesyonal na online image splitter tool na tumutulong sa mga user na hatiin ang mga larawan sa perpektong grid layout, na specially na dinisenyo para sa Instagram at social media content creation.",
     "features": {
       "splitImages": "Hatiin ang mga Larawan",
-      "instagramGrid": "Instagram Grid Maker",
-      "carouselCreation": "Carousel Image Creation",
-      "batchDownload": "Batch Download",
+      "instagramGrid": "Gumawa ng Instagram Grid",
+      "carouselCreation": "Paglikha ng Carousels",
+      "batchDownload": "Batch na Pag-download",
       "freeToUse": "Libre ang Paggamit"
     },
     "keywords": "image splitter, online image splitter, hatiin ang larawan, grid maker, instagram grid maker, image splitter instagram, social media, carousel",
-    "genre": "Image Processing Tool"
+    "genre": "Mga Digital na Kasangkapan"
   },
   "images": {
     "gridExampleAlt": "Instagram grid effect na ginawa gamit ang Image Splitter",
     "carouselExampleAlt": "Instagram carousel post effect na ginawa gamit ang Image Splitter",
     "originalPlaceholder": "Orihinal",
-    "gridEffectPlaceholder": "Grid Effect",
-    "carouselEffectPlaceholder": "Carousel Effect"
+    "gridEffectPlaceholder": "Epekto ng Grid",
+    "carouselEffectPlaceholder": "Epekto ng Carousels"
   },
   "faq": {
     "title": "Mga Madalas na Itanong",
@@ -169,4 +169,4 @@
       "button": "Simulan ang Paggawa Ngayon"
     }
   }
-} 
+}

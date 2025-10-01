@@ -2,13 +2,11 @@
   "title": "Termos de Serviço",
   "lastUpdated": "Última Atualização: 2 de Julho de 2025",
   "description": "Estes Termos de Serviço regem o uso do AI Image Splitter. Por favor, leia com atenção.",
-  
   "sections": {
     "agreement": {
       "title": "Acordo com os Termos",
       "content": "Ao acessar e usar o AI Image Splitter (\"o Serviço\"), você aceita e concorda em estar vinculado aos termos e disposições deste acordo. Se você não concordar com estes termos, não deve usar este serviço."
     },
-    
     "serviceDescription": {
       "title": "Descrição do Serviço",
       "content": "O AI Image Splitter é uma ferramenta online gratuita que permite aos usuários dividir imagens em grades ou segmentos para uso em redes sociais, particularmente para carrosséis do Instagram e posts em grade.",
@@ -22,7 +20,6 @@
         "Compatibilidade móvel e desktop"
       ]
     },
-    
     "userResponsibilities": {
       "title": "Responsabilidades do Usuário",
       "content": "Ao usar nosso serviço, você concorda em:",
@@ -35,7 +32,6 @@
         "Cumprir todas as leis e regulamentos aplicáveis"
       ]
     },
-    
     "intellectualProperty": {
       "title": "Direitos de Propriedade Intelectual",
       "ownership": {
@@ -47,7 +43,6 @@
         "content": "O site AI Image Splitter, design, software e materiais relacionados são protegidos por direitos autorais e outras leis de propriedade intelectual. Você não pode copiar, modificar ou distribuir nosso serviço sem permissão."
       }
     },
-    
     "prohibited": {
       "title": "Usos Proibidos",
       "content": "Você não pode usar nosso serviço para:",
@@ -60,12 +55,10 @@
         "Violar qualquer lei ou regulamento aplicável"
       ]
     },
-    
     "privacy": {
       "title": "Privacidade e Proteção de Dados",
       "content": "Sua privacidade é importante para nós. Todo o processamento de imagem ocorre do lado cliente em seu navegador, significando que suas imagens nunca saem do seu dispositivo. Por favor, consulte nossa Política de Privacidade para informações detalhadas sobre como lidamos com seus dados."
     },
-    
     "serviceAvailability": {
       "title": "Disponibilidade do Serviço",
       "content": "Nos esforçamos para manter a disponibilidade do serviço, mas não garantimos acesso ininterrupto. O serviço pode ficar temporariamente indisponível devido a:",
@@ -77,7 +70,6 @@
       ],
       "disclaimer": "Não somos responsáveis por qualquer perda ou dano resultante de interrupções do serviço."
     },
-    
     "disclaimers": {
       "title": "Isenções de Responsabilidade",
       "content": "Nosso serviço é fornecido \"como está\" sem garantias de qualquer tipo. Isentamo-nos de todas as garantias, expressas ou implícitas, incluindo, mas não limitado a:",
@@ -88,38 +80,32 @@
         "Operação ininterrupta ou livre de erros"
       ]
     },
-    
     "limitation": {
       "title": "Limitação de Responsabilidade",
       "content": "Na máxima extensão permitida por lei, não seremos responsáveis por quaisquer danos indiretos, incidentais, especiais, consequenciais ou punitivos, incluindo, mas não limitado à perda de lucros, dados ou outras perdas intangíveis resultantes do seu uso do serviço."
     },
-    
     "termination": {
       "title": "Rescisão",
       "content": "Reservamo-nos o direito de terminar ou suspender o acesso ao nosso serviço imediatamente, sem aviso prévio, por qualquer motivo, incluindo violação destes termos. Após a rescisão, seu direito de usar o serviço cessará imediatamente."
     },
-    
     "modifications": {
       "title": "Modificações dos Termos",
       "content": "Reservamo-nos o direito de modificar estes termos a qualquer momento. As alterações entrarão em vigor imediatamente após serem publicadas nesta página. Seu uso continuado do serviço após as alterações constitui aceitação dos novos termos.",
       "notification": "Atualizaremos a data \"Última Atualização\" para refletir as alterações."
     },
-    
     "governingLaw": {
       "title": "Lei Aplicável",
       "content": "Estes termos serão regidos e interpretados de acordo com as leis internacionais aplicáveis. Quaisquer disputas decorrentes destes termos ou do uso do serviço serão resolvidas através de arbitragem vinculativa."
     },
-    
     "contact": {
       "title": "Informações de Contato",
       "content": "Se você tiver alguma dúvida sobre estes Termos de Serviço, entre em contato conosco:",
-      "email": "Email: aiimagesplitter@proton.me",
+      "email": "E-mail: aiimagesplitter@proton.me",
       "response": "Responderemos à sua consulta dentro de 48 horas."
     }
   },
-  
   "navigation": {
     "backToHome": "Voltar ao Início",
     "tableOfContents": "Índice"
   }
-} 
+}

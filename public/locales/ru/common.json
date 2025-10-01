@@ -37,10 +37,10 @@
     "gridLineWidth": "Ширина линии сетки",
     "outputFormat": "Формат вывода",
     "formats": {
-      "jpg": "JPG",
-      "png": "PNG",
-      "webp": "WebP",
-      "bmp": "BMP"
+      "jpg": "JPG (формат JPEG)",
+      "png": "PNG (формат PNG)",
+      "webp": "WebP (формат WebP)",
+      "bmp": "BMP (формат BMP)"
     },
     "buttons": {
       "split": "Разделить изображение",
@@ -169,4 +169,4 @@
       "button": "Начать создание сейчас"
     }
   }
-} 
+}

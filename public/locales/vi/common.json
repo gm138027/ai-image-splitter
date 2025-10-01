@@ -8,7 +8,7 @@
     "features": "Trang Chủ",
     "howItWorks": "Cách hoạt động",
     "faq": "Câu Hỏi Thường Gặp",
-    "about": "Blog"
+    "about": "Blog của chúng tôi"
   },
   "hero": {
     "title": "Công cụ Tách Ảnh Online và Tạo Lưới",
@@ -37,10 +37,10 @@
     "gridLineWidth": "Độ Rộng Đường Lưới",
     "outputFormat": "Định Dạng Đầu Ra",
     "formats": {
-      "jpg": "JPG",
-      "png": "PNG",
-      "webp": "WebP",
-      "bmp": "BMP"
+      "jpg": "JPG (định dạng JPEG)",
+      "png": "PNG (định dạng PNG)",
+      "webp": "WebP (định dạng WebP)",
+      "bmp": "BMP (định dạng BMP)"
     },
     "buttons": {
       "split": "Tách Ảnh",

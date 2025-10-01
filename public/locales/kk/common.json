@@ -37,10 +37,10 @@
     "gridLineWidth": "Тор сызығының ені",
     "outputFormat": "Шығыс форматы",
     "formats": {
-      "jpg": "JPG",
-      "png": "PNG",
-      "webp": "WebP",
-      "bmp": "BMP"
+      "jpg": "JPG (JPEG форматы)",
+      "png": "PNG (PNG форматы)",
+      "webp": "WebP (WebP форматы)",
+      "bmp": "BMP (BMP форматы)"
     },
     "buttons": {
       "split": "Суретті бөлу",
@@ -169,4 +169,4 @@
       "button": "Қазір жасауды бастау"
     }
   }
-} 
+}

@@ -9,14 +9,13 @@
   "relatedPosts": "Pos Berkaitan",
   "shareThisPost": "Kongsi Pos Ini",
   "blogCoverPlaceholder": "Imej Kulit Tutorial",
-  "tipLabel": "Tip:",
+  "tipLabel": "Petua:",
   "startUsingTool": "Mula Gunakan AI Image Splitter Sekarang",
   "imageAlt": {
     "guideComplete": "Panduan Lengkap Operasi Pemisahan Imej",
     "thumbnailImage": "Thumbnail Panduan Lengkap Operasi Pemisahan Imej",
     "coverImage": "Cover Panduan Lengkap Operasi Pemisahan Imej"
   },
-  
   "posts": {
     "complete-guide": {
       "title": "Bagaimana membahagi satu imej kepada beberapa imej? Tutorial percuma membuat grid Instagram",
@@ -24,16 +23,13 @@
       "keywords": "bagaimana membahagi imej kepada beberapa,bahagi JPG kepada beberapa fail,pembelah foto percuma,pembuat grid Instagram,alat pembahagi imej dalam talian",
       "readingTime": "5 minit bacaan",
       "category": "Panduan Tutorial",
-      
       "intro": {
         "title": "Apakah AI Image Splitter?",
         "content": "AI Image Splitter adalah alat pemisah imej dalam talian profesional yang direka khas untuk pencipta kandungan media sosial. Sama ada anda ingin membuat susun atur grid Instagram, pos karusel Facebook, atau paparan multi-imej platform lain, alat kami membantu anda mencapainya dengan mudah."
       },
-      
       "stepByStep": {
         "title": "Langkah-Langkah Operasi Lengkap",
         "subtitle": "Ikuti panduan terperinci ini untuk menguasai pemisahan imej profesional dalam 5 minit",
-        
         "step1": {
           "title": "Langkah 1: Lawati Laman Web dan Muat Naik Imej",
           "content": "Masukkan {domainLink} dalam pelayar anda untuk mengakses laman utama kami. Anda boleh memuat naik imej melalui dua kaedah ini:",
@@ -41,7 +37,6 @@
           "method2": "Klik Muat Naik: Klik butang 'Pilih Imej' untuk memilih dari peranti anda",
           "note": "Menyokong format JPG, PNG, GIF dan format arus perdana lain, saiz fail maksimum 50MB"
         },
-        
         "step2": {
           "title": "Langkah 2: Pilih Mod Pemisahan",
           "content": "Pilih kaedah pemisahan yang sesuai berdasarkan keperluan anda:",
@@ -52,7 +47,7 @@
               "useCase": "Sempurna untuk paparan karusel Instagram dan Facebook"
             },
             "horizontal": {
-              "name": "Pemisahan Mendatar", 
+              "name": "Pemisahan Mendatar",
               "description": "Memisahkan imej secara mendatar, sesuai untuk keperluan paparan mendatar",
               "useCase": "Ideal untuk membuat kesan garis masa atau paparan langkah demi langkah"
             },
@@ -63,16 +58,14 @@
             }
           }
         },
-        
         "step3": {
           "title": "Langkah 3: Tetapkan Parameter Pemisahan",
           "content": "Laraskan parameter yang sepadan berdasarkan mod yang dipilih:",
           "setting1": "Pemisahan Menegak: Tetapkan bilangan lajur (disyorkan 3-6 lajur)",
-          "setting2": "Pemisahan Mendatar: Tetapkan bilangan baris (disyorkan 2-4 baris)", 
+          "setting2": "Pemisahan Mendatar: Tetapkan bilangan baris (disyorkan 2-4 baris)",
           "setting3": "Pemisahan Grid: Sesuaikan baris dan lajur (3×3 paling popular)",
           "preview": "Kawasan pratonton kanan memaparkan kesan pemisahan secara masa nyata, membantu anda melaraskan ke keadaan optimum"
         },
-        
         "step4": {
           "title": "Langkah 4: Laraskan Lebar Garis Pemisah",
           "content": "Gunakan peluncur lebar garis pemisah untuk melaraskan ketebalan garis grid:",
@@ -80,7 +73,6 @@
           "tip2": "Garis sederhana (3-4px): Kesan visual seimbang, sesuai untuk kebanyakan situasi",
           "tip3": "Garis tebal (5-6px): Menekankan kesan pemisahan, sesuai untuk penciptaan artistik"
         },
-        
         "step5": {
           "title": "Langkah 5: Pilih Format Output",
           "content": "Pilih format imej yang sesuai berdasarkan senario penggunaan:",
@@ -91,20 +83,17 @@
             "bmp": "Format tanpa kehilangan, sesuai untuk percetakan"
           }
         },
-        
         "step6": {
           "title": "Langkah 6: Muat Turun Hasil Pemisahan",
           "content": "Selepas melengkapkan pemisahan, anda mempunyai dua pilihan muat turun:",
           "option1": "Muat Turun Tunggal: Arahkan tetikus ke mana-mana grid dan klik butang muat turun untuk mendapatkan imej tunggal",
           "option2": "Muat Turun Berkelompok: Klik butang 'Muat Turun Imej' untuk memuat turun semua hasil pemisahan sebagai arkib ZIP"
         },
-        
         "step7": {
           "title": "Langkah 7: Muat Naik Semula atau Teruskan Pemprosesan",
           "content": "Untuk memproses imej lain, klik butang 'Muat Naik Semula Imej' untuk memulakan tugas pemisahan baru."
         }
       },
-      
       "bestPractices": {
         "title": "Tips Penggunaan Profesional",
         "subtitle": "Tingkatkan kualiti kandungan media sosial anda",
@@ -125,7 +114,6 @@
           "content": "Cuba kombinasi baris dan lajur yang berbeza untuk mencari kaedah pemisahan terbaik untuk imej anda"
         }
       },
-      
       "faq": {
         "title": "Soalan Lazim",
         "q1": {
@@ -145,11 +133,10 @@
           "answer": "Sudah tentu! Laman web kami menggunakan reka bentuk responsif dan berfungsi dengan sempurna pada telefon, tablet, dan komputer."
         }
       },
-      
       "conclusion": {
         "title": "Mulakan Mencipta Kandungan Profesional Anda",
         "content": "Kini anda telah menguasai penggunaan lengkap AI Image Splitter. Alat yang berkuasa ini akan membantu anda mencipta kandungan media sosial yang menarik perhatian, meningkatkan imej jenama dan penglibatan pengguna anda. Mulakan gunakan sekarang dan biarkan kreativiti anda berkembang!"
       }
     }
   }
-} 
+}

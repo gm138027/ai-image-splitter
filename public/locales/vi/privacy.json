@@ -2,13 +2,11 @@
   "title": "Chính Sách Bảo Mật",
   "lastUpdated": "Cập nhật lần cuối: 2 tháng 7, 2025",
   "description": "Chúng tôi coi trọng quyền riêng tư của bạn. Chính sách bảo mật này giải thích cách AI Image Splitter xử lý thông tin của bạn.",
-  
   "sections": {
     "introduction": {
       "title": "Giới thiệu",
       "content": "Chào mừng bạn đến với AI Image Splitter (\"chúng tôi,\" \"của chúng tôi,\" hoặc \"dịch vụ\"). Chúng tôi cam kết bảo vệ quyền riêng tư của bạn, và chính sách bảo mật này giải thích cách chúng tôi thu thập, sử dụng và bảo vệ thông tin của bạn khi bạn sử dụng trang web và dịch vụ của chúng tôi."
     },
-    
     "dataCollection": {
       "title": "Thông Tin Chúng Tôi Thu Thập",
       "overview": "Nguyên tắc cốt lõi của chúng tôi là tối đa hóa việc bảo vệ quyền riêng tư của bạn. Đây là cách chúng tôi xử lý dữ liệu:",
@@ -39,7 +37,6 @@
         }
       }
     },
-    
     "dataUsage": {
       "title": "Cách Chúng Tôi Sử Dụng Thông Tin",
       "content": "Dữ liệu ẩn danh hạn chế mà chúng tôi thu thập chỉ được sử dụng để:",
@@ -50,18 +47,16 @@
         "Đảm bảo bảo mật và ổn định dịch vụ"
       ]
     },
-    
     "dataSharing": {
       "title": "Chia Sẻ Thông Tin",
       "content": "Chúng tôi không bán, trao đổi hoặc chuyển thông tin của bạn cho bên thứ ba. Dịch vụ bên thứ ba duy nhất chúng tôi sử dụng là:",
       "thirdPartyServices": {
         "googleAnalytics": {
-          "title": "Google Analytics",
+          "title": "Dịch vụ Google Analytics",
           "content": "Chúng tôi sử dụng Google Analytics để hiểu việc sử dụng trang web. Dịch vụ này thu thập dữ liệu sử dụng ẩn danh để giúp chúng tôi cải thiện trang web. Bạn có thể chọn không tham gia bằng cách cài đặt tiện ích mở rộng trình duyệt opt-out của Google Analytics."
         }
       }
     },
-    
     "dataSecurity": {
       "title": "Bảo Mật Dữ Liệu",
       "content": "Chúng tôi thực hiện các biện pháp sau để bảo vệ quyền riêng tư của bạn:",
@@ -72,7 +67,6 @@
         "Cập nhật bảo mật thường xuyên để ngăn chặn các mối đe dọa tiềm ẩn"
       ]
     },
-    
     "cookies": {
       "title": "Cookie và Lưu Trữ Cục Bộ",
       "content": "Chúng tôi sử dụng cookie và lưu trữ cục bộ tối thiểu để:",
@@ -84,7 +78,6 @@
       "note": "Bạn có thể quản lý hoặc vô hiệu hóa cookie thông qua cài đặt trình duyệt của mình, nhưng điều này có thể ảnh hưởng đến hoạt động bình thường của một số tính năng.",
       "note_label": "Lưu ý:"
     },
-    
     "userRights": {
       "title": "Quyền Của Bạn",
       "content": "Vì chúng tôi không thu thập thông tin cá nhân, nên không có dữ liệu cá nhân nào cần xóa hoặc sửa đổi. Tuy nhiên, bạn luôn có những quyền sau:",
@@ -94,32 +87,27 @@
         "Liên hệ với chúng tôi về các câu hỏi liên quan đến quyền riêng tư"
       ]
     },
-    
     "minorProtection": {
       "title": "Bảo Vệ Quyền Riêng Tư Trẻ Em",
       "content": "Dịch vụ của chúng tôi không dành cho trẻ em dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin cá nhân từ trẻ em dưới 13 tuổi. Nếu bạn là cha mẹ hoặc người giám hộ và phát hiện rằng con bạn đã cung cấp thông tin cá nhân cho chúng tôi, vui lòng liên hệ với chúng tôi và chúng tôi sẽ ngay lập tức xóa thông tin đó."
     },
-    
     "internationalUsers": {
       "title": "Người Dùng Quốc Tế",
       "content": "AI Image Splitter có sẵn cho người dùng trên toàn thế giới. Do phương pháp xử lý phía máy khách của chúng tôi, dữ liệu của bạn không vượt qua biên giới. Chúng tôi tuân thủ các luật bảo vệ dữ liệu áp dụng, bao gồm GDPR, CCPA và các luật khác."
     },
-    
     "policyChanges": {
       "title": "Thay Đổi Chính Sách Bảo Mật",
       "content": "Chúng tôi có thể cập nhật chính sách bảo mật này theo thời gian. Bất kỳ thay đổi nào sẽ được đăng trên trang này và ngày \"Cập nhật lần cuối\" sẽ được cập nhật. Chúng tôi khuyến khích bạn xem xét chính sách này định kỳ để được thông báo về bất kỳ thay đổi nào."
     },
-    
     "contact": {
       "title": "Liên Hệ Với Chúng Tôi",
       "content": "Nếu bạn có bất kỳ câu hỏi hoặc mối quan tâm nào về chính sách bảo mật này, vui lòng liên hệ với chúng tôi:",
-      "email": "Email: aiimagesplitter@proton.me",
+      "email": "Email liên hệ: aiimagesplitter@proton.me",
       "response": "Chúng tôi sẽ trả lời yêu cầu của bạn trong vòng 48 giờ sau khi nhận được."
     }
   },
-  
   "navigation": {
     "backToHome": "Trở về Trang chủ",
     "tableOfContents": "Mục lục"
   }
-} 
+}

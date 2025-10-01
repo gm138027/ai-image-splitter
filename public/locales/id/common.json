@@ -8,7 +8,7 @@
     "features": "Beranda",
     "howItWorks": "Cara Kerja",
     "faq": "Pertanyaan yang Sering Diajukan",
-    "about": "Blog"
+    "about": "Blog Kami"
   },
   "hero": {
     "title": "Pemisah Gambar Online & Pembuat Grid",
@@ -25,8 +25,8 @@
     "gridLineWidthHint": "Sesuaikan jarak antar gambar yang terpisah",
     "splitModes": {
       "vertical": "Vertikal",
-      "horizontal": "Horizontal",
-      "grid": "Grid"
+      "horizontal": "Horizontal (Mendatar)",
+      "grid": "Grid (Kotak)"
     },
     "gridSettings": {
       "rows": "Baris",
@@ -35,10 +35,10 @@
     "gridLineWidth": "Lebar Garis Grid",
     "outputFormat": "Format Output",
     "formats": {
-      "jpg": "JPG",
-      "png": "PNG",
-      "webp": "WebP",
-      "bmp": "BMP"
+      "jpg": "JPG (format JPEG)",
+      "png": "PNG (format PNG)",
+      "webp": "WebP (format WebP)",
+      "bmp": "BMP (format BMP)"
     },
     "buttons": {
       "split": "Pisahkan Gambar",
@@ -60,7 +60,9 @@
       "fileTooLarge": "Ukuran file melebihi batas 50MB. Silakan pilih gambar yang lebih kecil",
       "imageTooLarge": "Dimensi gambar melebihi 8192x8192 piksel. Silakan pilih gambar yang lebih kecil",
       "downloadFailed": "Unduhan gagal. Silakan coba lagi"
-    }
+    },
+    "comingSoon": "Fitur Pembagi Gambar Segera Hadir",
+    "description": "Fitur pembagi gambar tingkat lanjut akan segera tersedia di sini. Unggah gambar Anda dan bagi menjadi grid sempurna untuk carousel media sosial."
   },
   "howItWorks": {
     "title": "Cara Kerja",
@@ -167,4 +169,4 @@
       "button": "Mulai Membuat Sekarang"
     }
   }
-} 
+}

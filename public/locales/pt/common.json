@@ -8,7 +8,7 @@
     "features": "Início",
     "howItWorks": "Como Funciona",
     "faq": "Perguntas Frequentes",
-    "about": "Blog"
+    "about": "Nosso Blog"
   },
   "hero": {
     "title": "Divisor de Imagem Online e Criador de Grade",
@@ -24,8 +24,8 @@
     "gridLineWidthLabel": "Largura da Linha de Grade",
     "gridLineWidthHint": "Ajuste o espaçamento entre as imagens divididas",
     "splitModes": {
-      "vertical": "Vertical",
-      "horizontal": "Horizontal",
+      "vertical": "Vertical (Retrato)",
+      "horizontal": "Horizontal (Paisagem)",
       "grid": "Grade"
     },
     "gridSettings": {
@@ -35,10 +35,10 @@
     "gridLineWidth": "Largura da Linha de Grade",
     "outputFormat": "Formato de Saída",
     "formats": {
-      "jpg": "JPG",
-      "png": "PNG",
-      "webp": "WebP",
-      "bmp": "BMP"
+      "jpg": "JPG (formato JPEG)",
+      "png": "PNG (formato PNG)",
+      "webp": "WebP (formato WebP)",
+      "bmp": "BMP (formato BMP)"
     },
     "buttons": {
       "split": "Dividir Imagem",
@@ -60,10 +60,12 @@
       "fileTooLarge": "O tamanho do arquivo excede o limite de 50MB. Por favor, escolha uma imagem menor",
       "imageTooLarge": "As dimensões da imagem excedem 8192x8192 pixels. Por favor, escolha uma imagem menor",
       "downloadFailed": "Falha no download. Por favor, tente novamente"
-    }
+    },
+    "comingSoon": "Ferramenta de divisão de imagens em breve",
+    "description": "Em breve você poderá usar nossa função avançada para dividir imagens. Faça upload agora e prepare grades perfeitas para carrosséis nas redes sociais."
   },
   "howItWorks": {
-    "title": "Como Funciona",  
+    "title": "Como Funciona",
     "step1Title": "1. Carregue Sua Imagem",
     "step1Description": "Selecione e carregue qualquer imagem do seu dispositivo. Suporta JPG, PNG e outros formatos comuns.",
     "step2Title": "2. Escolha o Tamanho da Grade",
@@ -110,7 +112,7 @@
   "images": {
     "gridExampleAlt": "Efeito de grade Instagram criado com Image Splitter",
     "carouselExampleAlt": "Efeito de post carrossel Instagram criado com Image Splitter",
-    "originalPlaceholder": "Original",
+    "originalPlaceholder": "Imagem original",
     "gridEffectPlaceholder": "Efeito Grade",
     "carouselEffectPlaceholder": "Efeito Carrossel"
   },
@@ -167,4 +169,4 @@
       "button": "Começar a Criar Agora"
     }
   }
-} 
+}

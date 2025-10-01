@@ -2,13 +2,11 @@
   "title": "Política de Privacidade",
   "lastUpdated": "Última Atualização: 2 de julho de 2025",
   "description": "Valorizamos sua privacidade. Esta política de privacidade explica como o AI Image Splitter lida com suas informações.",
-  
   "sections": {
     "introduction": {
       "title": "Introdução",
       "content": "Bem-vindo ao AI Image Splitter (\"nós,\" \"nosso,\" ou \"o serviço\"). Estamos comprometidos em proteger sua privacidade, e esta política de privacidade explica como coletamos, usamos e protegemos suas informações quando você usa nosso site e serviços."
     },
-    
     "dataCollection": {
       "title": "Informações que Coletamos",
       "overview": "Nosso princípio fundamental é maximizar a proteção de sua privacidade. Veja como lidamos com os dados:",
@@ -39,7 +37,6 @@
         }
       }
     },
-    
     "dataUsage": {
       "title": "Como Usamos as Informações",
       "content": "Os dados anônimos limitados que coletamos são usados exclusivamente para:",
@@ -50,18 +47,16 @@
         "Garantir segurança e estabilidade do serviço"
       ]
     },
-    
     "dataSharing": {
       "title": "Compartilhamento de Informações",
       "content": "Não vendemos, negociamos ou transferimos suas informações para terceiros. O único serviço de terceiros que usamos é:",
       "thirdPartyServices": {
         "googleAnalytics": {
-          "title": "Google Analytics",
+          "title": "Serviço Google Analytics",
           "content": "Usamos o Google Analytics para entender o uso do site. Este serviço coleta dados de uso anônimos para nos ajudar a melhorar o site. Você pode optar por não participar instalando o complemento de navegador de exclusão do Google Analytics."
         }
       }
     },
-    
     "dataSecurity": {
       "title": "Segurança de Dados",
       "content": "Implementamos as seguintes medidas para proteger sua privacidade:",
@@ -72,7 +67,6 @@
         "Atualizações regulares de segurança para prevenir ameaças potenciais"
       ]
     },
-    
     "cookies": {
       "title": "Cookies e Armazenamento Local",
       "content": "Usamos cookies e armazenamento local mínimos para:",
@@ -84,7 +78,6 @@
       "note": "Você pode gerenciar ou desabilitar cookies através das configurações do seu navegador, mas isso pode afetar o funcionamento normal de certas funcionalidades.",
       "note_label": "Nota:"
     },
-    
     "userRights": {
       "title": "Seus Direitos",
       "content": "Como não coletamos informações pessoais, não há dados pessoais para excluir ou modificar. No entanto, você sempre tem os seguintes direitos:",
@@ -94,32 +87,27 @@
         "Entrar em contato conosco com questões relacionadas à privacidade"
       ]
     },
-    
     "minorProtection": {
       "title": "Proteção da Privacidade de Crianças",
       "content": "Nosso serviço não é direcionado a crianças menores de 13 anos. Não coletamos conscientemente informações pessoais de crianças menores de 13 anos. Se você é pai ou responsável e descobriu que seu filho nos forneceu informações pessoais, entre em contato conosco, e excluiremos imediatamente essas informações."
     },
-    
     "internationalUsers": {
       "title": "Usuários Internacionais",
       "content": "O AI Image Splitter está disponível para usuários em todo o mundo. Devido à nossa abordagem de processamento no lado do cliente, seus dados não cruzam fronteiras. Cumprimos as leis de proteção de dados aplicáveis, incluindo GDPR, CCPA e outras."
     },
-    
     "policyChanges": {
       "title": "Alterações na Política de Privacidade",
       "content": "Podemos atualizar esta política de privacidade de tempos em tempos. Quaisquer alterações serão postadas nesta página e a data \"Última Atualização\" será atualizada. Encorajamos você a revisar esta política periodicamente para se manter informado sobre quaisquer alterações."
     },
-    
     "contact": {
       "title": "Entre em Contato",
       "content": "Se você tiver alguma dúvida ou preocupação sobre esta política de privacidade, entre em contato conosco:",
-      "email": "Email: aiimagesplitter@proton.me",
+      "email": "E-mail: aiimagesplitter@proton.me",
       "response": "Responderemos à sua consulta dentro de 48 horas após o recebimento."
     }
   },
-  
   "navigation": {
     "backToHome": "Voltar ao Início",
     "tableOfContents": "Índice"
   }
-} 
+}
