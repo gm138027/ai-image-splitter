@@ -1,8 +1,10 @@
 // Image splitting related type definitions
 export interface SplitImage {
   id: string
-  canvas: HTMLCanvasElement
   blob: Blob
+  objectUrl: string
+  width: number
+  height: number
 }
 
 export type SplitMode = 'vertical' | 'horizontal' | 'grid'

@@ -26,7 +26,9 @@ export const validateImageFile = (file: File): { isValid: boolean; error?: strin
 /**
  * Create image object from file
  */
-export const createImageFromFile = (file: File): Promise<HTMLImageElement> => {
+export const createImageFromFile = (
+  file: File
+): Promise<{ image: HTMLImageElement; objectUrl: string }> => {
   return new Promise((resolve, reject) => {
     // Only run in browser environment
     if (!isBrowser) {
@@ -41,17 +43,22 @@ export const createImageFromFile = (file: File): Promise<HTMLImageElement> => {
     }
 
     const img = new Image()
+    const objectUrl = URL.createObjectURL(file)
     img.onload = () => {
       // Check image dimensions (max 8192x8192)
       const maxDimension = 8192
       if (img.width > maxDimension || img.height > maxDimension) {
+        URL.revokeObjectURL(objectUrl)
         reject(new Error('imageTooLarge'))
         return
       }
-      resolve(img)
+      resolve({ image: img, objectUrl })
     }
-    img.onerror = () => reject(new Error('Failed to load image'))
-    img.src = URL.createObjectURL(file)
+    img.onerror = () => {
+      URL.revokeObjectURL(objectUrl)
+      reject(new Error('Failed to load image'))
+    }
+    img.src = objectUrl
   })
 }
 
@@ -158,8 +165,10 @@ export const createSplitImage = async (
 
   return {
     id: `split-${index}`,
-    canvas: tempCanvas,
-    blob
+    blob,
+    objectUrl: URL.createObjectURL(blob),
+    width: tempCanvas.width,
+    height: tempCanvas.height
   }
 }
 

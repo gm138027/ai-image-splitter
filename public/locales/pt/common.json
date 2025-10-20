@@ -52,7 +52,7 @@
     },
     "preview": {
       "title": "Área de Pré-visualização",
-      "instruction": "Clique dividir imagem para ver os resultados da divisão"
+      "instruction": "Clique em \"Dividir Imagem\" para visualizar o resultado."
     },
     "alerts": {
       "invalidFile": "Por favor, selecione um arquivo de imagem válido",
@@ -61,8 +61,8 @@
       "imageTooLarge": "As dimensões da imagem excedem 8192x8192 pixels. Por favor, escolha uma imagem menor",
       "downloadFailed": "Falha no download. Por favor, tente novamente"
     },
-    "comingSoon": "Ferramenta de divisão de imagens em breve",
-    "description": "Em breve você poderá usar nossa função avançada para dividir imagens. Faça upload agora e prepare grades perfeitas para carrosséis nas redes sociais."
+    "comingSoon": "Ferramenta de Divisão de Imagens",
+    "description": "Ferramenta avançada de divisão de imagens para quem precisa criar grades no Instagram. Envie sua imagem e divida-a em grades perfeitas para carrosséis nas redes sociais."
   },
   "howItWorks": {
     "title": "Como Funciona",
@@ -164,9 +164,9 @@
       "answer": "Claro! Além de predefinições populares como 3x3 e 2x3, você pode criar dimensões de grade personalizadas até 10x10. Simplesmente ajuste as linhas e colunas para atender suas necessidades específicas, seja para layouts únicos de mídia social ou projetos especiais."
     },
     "cta": {
-      "title": "Pronto para Criar Layouts de Grade Incríveis?",
-      "description": "Comece a dividir suas imagens e crie conteúdo envolvente para mídias sociais.",
-      "button": "Começar a Criar Agora"
+      "title": "Pronto para criar grades incríveis?",
+      "description": "Comece a dividir suas imagens e produza conteúdo envolvente para as redes sociais.",
+      "button": "Começar agora"
     }
   }
 }

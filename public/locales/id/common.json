@@ -52,7 +52,7 @@
     },
     "preview": {
       "title": "Area Pratinjau",
-      "instruction": "Klik pisahkan gambar untuk melihat hasil pemisahan"
+      "instruction": "Klik tombol \"Pisahkan Gambar\" untuk melihat hasil pemisahan."
     },
     "alerts": {
       "invalidFile": "Silakan pilih file gambar yang valid",
@@ -61,8 +61,8 @@
       "imageTooLarge": "Dimensi gambar melebihi 8192x8192 piksel. Silakan pilih gambar yang lebih kecil",
       "downloadFailed": "Unduhan gagal. Silakan coba lagi"
     },
-    "comingSoon": "Fitur Pembagi Gambar Segera Hadir",
-    "description": "Fitur pembagi gambar tingkat lanjut akan segera tersedia di sini. Unggah gambar Anda dan bagi menjadi grid sempurna untuk carousel media sosial."
+    "comingSoon": "Alat Pembagi Gambar",
+    "description": "Alat pemisah gambar online tingkat lanjut untuk kebutuhan pembuat grid Instagram. Unggah gambar Anda dan bagi menjadi grid yang sempurna untuk carousel media sosial."
   },
   "howItWorks": {
     "title": "Cara Kerja",
@@ -103,7 +103,7 @@
       "splitImages": "Pisahkan Gambar",
       "instagramGrid": "Pembuat Grid Instagram",
       "carouselCreation": "Pembuatan Carousel",
-      "batchDownload": "Download Batch",
+      "batchDownload": "Unduh Batch",
       "freeToUse": "Gratis Digunakan"
     },
     "keywords": "pemisah gambar, pemisah gambar online, pisahkan gambar, pembuat grid, pembuat grid instagram, pemisah gambar instagram, media sosial, carousel",
@@ -164,9 +164,9 @@
       "answer": "Tentu saja! Selain preset populer seperti 3x3 dan 2x3, Anda dapat membuat dimensi grid kustom hingga 10x10. Cukup sesuaikan baris dan kolom untuk memenuhi kebutuhan spesifik Anda, baik untuk layout media sosial yang unik atau proyek khusus."
     },
     "cta": {
-      "title": "Siap Membuat Layout Grid yang Menakjubkan?",
-      "description": "Mulai membagi gambar Anda dan buat konten media sosial yang menarik.",
-      "button": "Mulai Membuat Sekarang"
+      "title": "Siap membuat layout grid yang memukau?",
+      "description": "Mulai bagi gambar Anda dan ciptakan konten media sosial yang menarik dan konsisten.",
+      "button": "Mulai Sekarang"
     }
   }
 }

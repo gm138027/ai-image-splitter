@@ -162,7 +162,7 @@ const ImagePreview: React.FC<ImagePreviewProps> = ({
                     flexShrink: 0
                   }}>
                     <img
-                      src={img.canvas.toDataURL()}
+                      src={img.objectUrl}
                       alt={`Split ${imageIndex + 1}`}
                       style={{
                         width: '100%',

@@ -15,14 +15,14 @@
     "description": "Kung naghahanap kayo ng \"paano hatiin ang isang larawan sa maraming larawan?\", nasa tamang lugar na kayo. Ang aming image splitter ay perpekto hindi lamang para sa online image splitting kundi pati na rin para sa Instagram grid creation, walang kinakailangang registration at lubos na libre."
   },
   "tool": {
-    "comingSoon": "Papaparating na ang Image Splitter Tool",
-    "description": "Ang advanced na functionality ng paghiwalay sa larawan ay magiging available dito sa lalong madaling panahon. I-upload ang inyong larawan at hatiin ito sa mga perpektong grid para sa social media.",
+    "comingSoon": "Parating na ang aming advance image splitter",
+    "description": "Malapit nang ilunsad ang aming mas makapangyarihang paghahati ng larawan. I-upload ang iyong litrato at hatiin ito sa perpektong mga grid para sa social media carousels.",
     "uploadPrompt": "I-drag ang mga file dito o i-click para mag-upload",
     "uploadButton": "Pumili ng Larawan",
     "uploadSupport": "Sumusuporta sa JPG, PNG, GIF formats, hanggang 50MB",
     "controlPanelDescription": "Gamitin ang kaliwang control panel para sa pag-configure ng split options",
     "splitModeTitle": "Pumili ng Image Split Mode",
-    "splitModeDescription": "Perfect ang vertical split para sa carousel posts, horizontal split para sa landscape displays, at grid split para sa Instagram grid layouts",
+    "splitModeDescription": "Ang paghahati nang patayo ay mahusay para sa carousel posts, ang pahalang para sa mga landscape, at ang grid split para gumawa ng mga layout ng Instagram grids.",
     "gridLineWidthLabel": "Lapad ng Linya ng Grid",
     "gridLineWidthHint": "I-adjust ang spacing sa pagitan ng mga nahahating larawan",
     "splitModes": {
@@ -54,14 +54,14 @@
     },
     "preview": {
       "title": "Lugar ng Preview",
-      "instruction": "I-click ang split image para makita ang split results"
+      "instruction": "I-click ang “Hatiin ang Larawan” para makita kaagad ang resulta."
     },
     "alerts": {
       "invalidFile": "Pumili ng valid na image file",
       "invalidFileType": "Pumili ng valid na image file (JPG, PNG, GIF, WebP)",
       "fileTooLarge": "Ang laki ng file ay lumampas sa 50MB na limitasyon. Pumili ng mas maliit na larawan",
       "imageTooLarge": "Ang mga dimensyon ng larawan ay lumampas sa 8192x8192 pixels. Pumili ng mas maliit na larawan",
-      "downloadFailed": "Nabigo ang pag-download. Subukan ulit"
+      "downloadFailed": "Hindi nai-download ang file. Pakisubukang muli."
     }
   },
   "howItWorks": {
@@ -164,9 +164,9 @@
       "answer": "Oo naman! Bukod sa mga sikat na preset tulad ng 3x3 at 2x3, pwede kayong gumawa ng custom grid dimensions hanggang 10x10. I-adjust lang ang mga hilera at kolum upang matugunan ang inyong mga specific na pangangailangan, maging para sa mga natatanging social media layout o mga special na proyekto."
     },
     "cta": {
-      "title": "Handa na Bang Gumawa ng Kamangha-manghang Grid Layouts?",
-      "description": "Simulan ang paghahati ng inyong mga larawan at gumawa ng nakaakit na social media content.",
-      "button": "Simulan ang Paggawa Ngayon"
+      "title": "Handa ka na bang gumawa ng kakaibang grid?",
+      "description": "Simulan nang hatiin ang iyong mga litrato at gumawa ng mas nakakaengganyong content para sa social media.",
+      "button": "Magsimula Ngayon"
     }
   }
 }
