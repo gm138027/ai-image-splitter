@@ -37,6 +37,7 @@ Allow: /terms
 Allow: /images/
 Allow: /icons/
 Allow: /_next/static/
+Allow: /_next/image
 
 # Block indexing of directories
 Disallow: /_next/
