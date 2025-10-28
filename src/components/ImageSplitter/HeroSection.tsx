@@ -1,5 +1,6 @@
 import React from 'react'
-import { useTranslation } from 'next-i18next'
+import Link from 'next/link'
+import { Trans, useTranslation } from 'next-i18next'
 import { Upload, Grid3X3, Download, ArrowRight, ArrowLeft } from 'lucide-react'
 import Image from 'next/image'
 import FAQ from '@/components/FAQ'
@@ -32,7 +33,17 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </span>
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed">
-            {t('hero.description')}
+            <Trans
+              i18nKey="hero.description"
+              components={{
+                link: (
+                  <Link
+                    href="/blog/complete-guide"
+                    className="text-primary-600 hover:text-primary-700 font-semibold underline-offset-2 hover:underline"
+                  />
+                )
+              }}
+            />
           </p>
         </div>
 
