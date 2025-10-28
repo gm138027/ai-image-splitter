@@ -86,27 +86,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
       }
     }
 
-    const applicationData = {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": t('structuredData.appName'),
-      "description": t('structuredData.appDescription'),
-      "url": currentUrl,
-      "applicationCategory": "MultimediaApplication",
-      "isAccessibleForFree": true,
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "author": {
-        "@type": "Organization",
-        "name": "AI Image Splitter",
-        "url": baseUrl
-      }
-    }
-
-    return [organizationData, websiteData, applicationData]
+    return [organizationData, websiteData]
   }
 
   const structuredDataArray = getStructuredData()
