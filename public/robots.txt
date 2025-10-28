@@ -12,10 +12,6 @@ Disallow: /filipino*
 Disallow: /cn*
 Disallow: /zh/*
 
-# Block URLs with trailing slashes (except root)
-Disallow: /*/
-Disallow: /*/*/
-
 # Allow correct multilingual paths (no trailing slash)
 Allow: /zh-CN
 Allow: /id
