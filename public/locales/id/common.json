@@ -35,11 +35,11 @@
     "gridLineWidth": "Lebar Garis Grid",
     "outputFormat": "Format Output",
     "aspectRatio": {
-      "title": "Aspect Ratio",
-      "default": "Default",
-      "portrait45": "Portrait 4:5",
-      "portrait34": "Portrait 3:4",
-      "square": "Square 1:1"
+      "title": "Rasio Aspek",
+      "default": "Bawaan",
+      "portrait45": "Potret 4:5",
+      "portrait34": "Potret 3:4",
+      "square": "Persegi 1:1"
     },
     "formats": {
       "jpg": "JPG (format JPEG)",

@@ -37,11 +37,11 @@
     "gridLineWidth": "Lebar Garisan Grid",
     "outputFormat": "Format Output",
     "aspectRatio": {
-      "title": "Aspect Ratio",
-      "default": "Default",
-      "portrait45": "Portrait 4:5",
-      "portrait34": "Portrait 3:4",
-      "square": "Square 1:1"
+      "title": "Nisbah Aspek",
+      "default": "Lalai",
+      "portrait45": "Potret 4:5",
+      "portrait34": "Potret 3:4",
+      "square": "Segi empat sama 1:1"
     },
     "formats": {
       "jpg": "JPG (format JPEG)",

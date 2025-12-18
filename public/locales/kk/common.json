@@ -37,11 +37,11 @@
     "gridLineWidth": "Тор сызығының ені",
     "outputFormat": "Шығыс форматы",
     "aspectRatio": {
-      "title": "Aspect Ratio",
-      "default": "Default",
-      "portrait45": "Portrait 4:5",
-      "portrait34": "Portrait 3:4",
-      "square": "Square 1:1"
+      "title": "Пішім арақатынасы",
+      "default": "Әдепкі",
+      "portrait45": "Портрет 4:5",
+      "portrait34": "Портрет 3:4",
+      "square": "Шаршы 1:1"
     },
     "formats": {
       "jpg": "JPG (JPEG форматы)",

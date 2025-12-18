@@ -37,11 +37,11 @@
     "gridLineWidth": "Lapad ng Linya ng Grid",
     "outputFormat": "Format ng Output",
     "aspectRatio": {
-      "title": "Aspect Ratio",
+      "title": "Sukat ng Aspeto",
       "default": "Default",
-      "portrait45": "Portrait 4:5",
-      "portrait34": "Portrait 3:4",
-      "square": "Square 1:1"
+      "portrait45": "Patayo 4:5",
+      "portrait34": "Patayo 3:4",
+      "square": "Parisukat 1:1"
     },
     "formats": {
       "jpg": "JPG (format JPEG)",
