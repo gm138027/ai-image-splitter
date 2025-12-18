@@ -36,6 +36,13 @@
     },
     "gridLineWidth": "Lebar Garisan Grid",
     "outputFormat": "Format Output",
+    "aspectRatio": {
+      "title": "Aspect Ratio",
+      "default": "Default",
+      "portrait45": "Portrait 4:5",
+      "portrait34": "Portrait 3:4",
+      "square": "Square 1:1"
+    },
     "formats": {
       "jpg": "JPG (format JPEG)",
       "png": "PNG (format PNG)",

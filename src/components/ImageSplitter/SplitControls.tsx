@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'next-i18next'
 import { Minus, Plus } from 'lucide-react'
-import type { SplitControlsProps } from '@/types'
+import type { SplitControlsProps, SplitConfig } from '@/types'
 
 const SplitControls: React.FC<SplitControlsProps> = ({
   config,
@@ -12,6 +12,13 @@ const SplitControls: React.FC<SplitControlsProps> = ({
   hasSplitImages
 }) => {
   const { t } = useTranslation('common')
+
+  const aspectRatioOptions: Array<{ value: SplitConfig['aspectRatio']; label: string }> = [
+    { value: 'default', label: t('tool.aspectRatio.default') },
+    { value: '4:5', label: t('tool.aspectRatio.portrait45') },
+    { value: '3:4', label: t('tool.aspectRatio.portrait34') },
+    { value: '1:1', label: t('tool.aspectRatio.square') }
+  ]
 
   const handleModeChange = (mode: 'vertical' | 'horizontal' | 'grid') => {
     onConfigChange({ ...config, mode })
@@ -49,18 +56,43 @@ const SplitControls: React.FC<SplitControlsProps> = ({
     onConfigChange({ ...config, outputFormat })
   }
 
+  const handleAspectRatioChange = (ratio: SplitConfig['aspectRatio']) => {
+    onConfigChange({ ...config, aspectRatio: ratio })
+  }
+
   return (
     <div className="w-full lg:w-1/3 p-4 sm:p-6 border-r-0 lg:border-r border-gray-200 bg-gray-50">
+      {/* Aspect Ratio Selection */}
       <div className="mb-4 sm:mb-6">
-        <p className="text-sm text-gray-600 mb-4">
-          {t('tool.splitModeTitle')}：{t('tool.splitModeDescription')}。
+        <p className="text-sm font-medium text-gray-700 mb-2">
+          {t('tool.aspectRatio.title')}
         </p>
+        <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap">
+          {aspectRatioOptions.map((option) => (
+            <button
+              key={option.value}
+              type="button"
+              onClick={() => handleAspectRatioChange(option.value)}
+              className={`px-3 py-2 rounded-lg text-xs sm:text-sm font-medium transition-colors min-h-[2.5rem] flex items-center justify-center ${
+                config.aspectRatio === option.value
+                  ? 'bg-primary-600 text-white'
+                  : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-50'
+              }`}
+            >
+              {option.label}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Split Mode Selection */}
       <div className="mb-4 sm:mb-6">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mb-4">
+        <p className="text-sm text-gray-600 mb-3">
+          {t('tool.splitModeTitle')}
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 mb-2">
           <button
+            type="button"
             onClick={() => handleModeChange('vertical')}
             className={`px-3 py-2 rounded-lg text-xs sm:text-sm font-medium transition-colors text-center min-h-[2.5rem] flex items-center justify-center ${
               config.mode === 'vertical'
@@ -71,6 +103,7 @@ const SplitControls: React.FC<SplitControlsProps> = ({
             {t('tool.splitModes.vertical')}
           </button>
           <button
+            type="button"
             onClick={() => handleModeChange('horizontal')}
             className={`px-3 py-2 rounded-lg text-xs sm:text-sm font-medium transition-colors text-center min-h-[2.5rem] flex items-center justify-center ${
               config.mode === 'horizontal'
@@ -81,6 +114,7 @@ const SplitControls: React.FC<SplitControlsProps> = ({
             {t('tool.splitModes.horizontal')}
           </button>
           <button
+            type="button"
             onClick={() => handleModeChange('grid')}
             className={`px-3 py-2 rounded-lg text-xs sm:text-sm font-medium transition-colors text-center min-h-[2.5rem] flex items-center justify-center ${
               config.mode === 'grid'
@@ -91,6 +125,7 @@ const SplitControls: React.FC<SplitControlsProps> = ({
             {t('tool.splitModes.grid')}
           </button>
         </div>
+        <p className="text-xs text-gray-500">{t('tool.splitModeDescription')}</p>
       </div>
 
       {/* Grid Settings */}
@@ -102,11 +137,12 @@ const SplitControls: React.FC<SplitControlsProps> = ({
             </label>
             <div className="flex items-center space-x-2">
               <button
+                type="button"
                 onClick={() => handleRowsIncDecrement(-1)}
                 disabled={config.mode === 'vertical'}
                 className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${
-                  config.mode === 'vertical' 
-                    ? 'bg-gray-100 text-gray-400 cursor-not-allowed' 
+                  config.mode === 'vertical'
+                    ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
                     : 'bg-gray-200 hover:bg-gray-300'
                 }`}
               >
@@ -120,17 +156,18 @@ const SplitControls: React.FC<SplitControlsProps> = ({
                 onChange={handleRowsChange}
                 disabled={config.mode === 'vertical'}
                 className={`w-16 text-center font-medium border border-gray-300 rounded px-2 py-1 ${
-                  config.mode === 'vertical' 
-                    ? 'bg-gray-100 text-gray-400 cursor-not-allowed' 
+                  config.mode === 'vertical'
+                    ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
                     : ''
                 }`}
               />
               <button
+                type="button"
                 onClick={() => handleRowsIncDecrement(1)}
                 disabled={config.mode === 'vertical'}
                 className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${
-                  config.mode === 'vertical' 
-                    ? 'bg-gray-100 text-gray-400 cursor-not-allowed' 
+                  config.mode === 'vertical'
+                    ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
                     : 'bg-gray-200 hover:bg-gray-300'
                 }`}
               >
@@ -144,11 +181,12 @@ const SplitControls: React.FC<SplitControlsProps> = ({
             </label>
             <div className="flex items-center space-x-2">
               <button
+                type="button"
                 onClick={() => handleColsIncDecrement(-1)}
                 disabled={config.mode === 'horizontal'}
                 className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${
-                  config.mode === 'horizontal' 
-                    ? 'bg-gray-100 text-gray-400 cursor-not-allowed' 
+                  config.mode === 'horizontal'
+                    ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
                     : 'bg-gray-200 hover:bg-gray-300'
                 }`}
               >
@@ -162,17 +200,18 @@ const SplitControls: React.FC<SplitControlsProps> = ({
                 onChange={handleColsChange}
                 disabled={config.mode === 'horizontal'}
                 className={`w-16 text-center font-medium border border-gray-300 rounded px-2 py-1 ${
-                  config.mode === 'horizontal' 
-                    ? 'bg-gray-100 text-gray-400 cursor-not-allowed' 
+                  config.mode === 'horizontal'
+                    ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
                     : ''
                 }`}
               />
               <button
+                type="button"
                 onClick={() => handleColsIncDecrement(1)}
                 disabled={config.mode === 'horizontal'}
                 className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${
-                  config.mode === 'horizontal' 
-                    ? 'bg-gray-100 text-gray-400 cursor-not-allowed' 
+                  config.mode === 'horizontal'
+                    ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
                     : 'bg-gray-200 hover:bg-gray-300'
                 }`}
               >
@@ -225,7 +264,7 @@ const SplitControls: React.FC<SplitControlsProps> = ({
         >
           {isProcessing ? t('tool.buttons.splitting') : t('tool.buttons.split')}
         </button>
-        
+
         <button
           onClick={onDownloadAll}
           disabled={!hasSplitImages}
@@ -238,4 +277,4 @@ const SplitControls: React.FC<SplitControlsProps> = ({
   )
 }
 
-export default SplitControls 
+export default SplitControls

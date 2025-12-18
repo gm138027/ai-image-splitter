@@ -36,6 +36,13 @@
     },
     "gridLineWidth": "Độ Rộng Đường Lưới",
     "outputFormat": "Định Dạng Đầu Ra",
+    "aspectRatio": {
+      "title": "Tỷ lệ khung hình",
+      "default": "Mặc định",
+      "portrait45": "Dọc 4:5",
+      "portrait34": "Dọc 3:4",
+      "square": "Vuông 1:1"
+    },
     "formats": {
       "jpg": "JPG (định dạng JPEG)",
       "png": "PNG (định dạng PNG)",

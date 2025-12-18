@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 // Image splitting related type definitions
 export interface SplitImage {
   id: string
@@ -10,12 +12,23 @@ export interface SplitImage {
 export type SplitMode = 'vertical' | 'horizontal' | 'grid'
 export type OutputFormat = 'jpg' | 'png' | 'webp' | 'bmp'
 
+export type AspectRatioOption = 'default' | '4:5' | '3:4' | '1:1'
+
+export interface CropRegion {
+  x: number
+  y: number
+  width: number
+  height: number
+}
+
 export interface SplitConfig {
   mode: SplitMode
   rows: number
   cols: number
   gridLineWidth: number
   outputFormat: OutputFormat
+  aspectRatio: AspectRatioOption
+  cropRegion: CropRegion | null
 }
 
 export interface ImageSplitterState {
@@ -46,13 +59,18 @@ export interface ImagePreviewProps {
   uploadedImage: HTMLImageElement | null
   splitImages: SplitImage[]
   config: SplitConfig
+  cropRegion: CropRegion | null
+  cropAspectRatioValue: number | null
+  shouldShowCrop: boolean
+  onCropRegionCommit: (region: CropRegion | null) => void
+  previewRows: number
+  previewCols: number
   onDownloadSingle: (splitImage: SplitImage, index: number) => void
   fileInputRef: React.RefObject<HTMLInputElement>
 }
 
 export interface HeroSectionProps {
-  onFileUpload: (file: File) => void
   onDrop: (e: React.DragEvent) => void
   onFileInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void
   fileInputRef: React.RefObject<HTMLInputElement>
-} 
+}

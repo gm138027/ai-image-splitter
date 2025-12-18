@@ -7,7 +7,6 @@ import FAQ from '@/components/FAQ'
 import type { HeroSectionProps } from '@/types'
 
 const HeroSection: React.FC<HeroSectionProps> = ({
-  onFileUpload,
   onDrop,
   onFileInputChange,
   fileInputRef

@@ -1,4 +1,4 @@
-import type { SplitImage, SplitConfig } from '@/types'
+﻿import type { SplitImage, SplitConfig } from '@/types'
 
 /**
  * Check if we're running in browser environment
@@ -70,8 +70,11 @@ export const calculateSplitParams = (
   config: SplitConfig
 ) => {
   const { mode, rows, cols } = config
-  const imgWidth = image.width
-  const imgHeight = image.height
+  const { width: imgWidth, height: imgHeight, offsetX, offsetY } = getEffectiveDimensions(
+    image.width,
+    image.height,
+    config.cropRegion
+  )
 
   let splitCount = 0
   let splitWidth = 0
@@ -95,7 +98,7 @@ export const calculateSplitParams = (
       break
   }
 
-  return { splitCount, splitWidth, splitHeight }
+  return { splitCount, splitWidth, splitHeight, offsetX, offsetY }
 }
 
 /**
@@ -137,7 +140,9 @@ export const createSplitImage = async (
   index: number,
   config: SplitConfig,
   splitWidth: number,
-  splitHeight: number
+  splitHeight: number,
+  offsetX: number,
+  offsetY: number
 ): Promise<SplitImage> => {
   // Only run in browser environment
   if (!isBrowser) {
@@ -150,11 +155,13 @@ export const createSplitImage = async (
   const tempCtx = tempCanvas.getContext('2d')!
 
   const { sx, sy } = calculateSplitPosition(index, config, splitWidth, splitHeight)
+  const sourceX = offsetX + sx
+  const sourceY = offsetY + sy
 
   // Draw image
   tempCtx.drawImage(
     sourceImage,
-    sx, sy, splitWidth, splitHeight,
+    sourceX, sourceY, splitWidth, splitHeight,
     0, 0, splitWidth, splitHeight
   )
 
@@ -184,7 +191,10 @@ export const splitImage = async (
     throw new Error('This function can only run in browser environment')
   }
 
-  const { splitCount, splitWidth, splitHeight } = calculateSplitParams(sourceImage, config)
+  const { splitCount, splitWidth, splitHeight, offsetX, offsetY } = calculateSplitParams(
+    sourceImage,
+    config
+  )
   const splitImages: SplitImage[] = []
 
   for (let i = 0; i < splitCount; i++) {
@@ -193,7 +203,9 @@ export const splitImage = async (
       i,
       config,
       splitWidth,
-      splitHeight
+      splitHeight,
+      offsetX,
+      offsetY
     )
     splitImages.push(splitImg)
   }
@@ -267,4 +279,26 @@ export const downloadAllImages = async (
   setTimeout(() => {
     URL.revokeObjectURL(link.href)
   }, 100)
-} 
+}
+
+const getEffectiveDimensions = (
+  imageWidth: number,
+  imageHeight: number,
+  cropRegion: SplitConfig['cropRegion']
+) => {
+  if (!cropRegion) {
+    return {
+      width: imageWidth,
+      height: imageHeight,
+      offsetX: 0,
+      offsetY: 0
+    }
+  }
+
+  return {
+    width: cropRegion.width,
+    height: cropRegion.height,
+    offsetX: cropRegion.x,
+    offsetY: cropRegion.y
+  }
+}

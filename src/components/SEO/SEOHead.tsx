@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 import { usePageUrls } from '@/lib/urlUtils'
-import { SEO_CONFIG, getOGLocale, type SupportedLocale } from '@/config/seo'
+import { SEO_CONFIG, SUPPORTED_LOCALES, getOGLocale, type SupportedLocale } from '@/config/seo'
 
 interface SEOHeadProps {
   title?: string
@@ -45,6 +45,11 @@ const SEOHead: React.FC<SEOHeadProps> = ({
     ? (ogImagePath.startsWith('http') ? ogImagePath : `${baseUrl}${ogImagePath}`)
     : `${baseUrl}${DEFAULT_OG_IMAGE}`
 
+  const featureListData = t('structuredData.features', {
+    returnObjects: true,
+  }) as Record<string, string>
+  const featureList = featureListData ? Object.values(featureListData) : []
+
   const getStructuredData = () => {
     if (!includeStructuredData) return null
 
@@ -86,7 +91,30 @@ const SEOHead: React.FC<SEOHeadProps> = ({
       }
     }
 
-    return [organizationData, websiteData]
+    const webApplicationData = {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": t('structuredData.appName'),
+      "alternateName": t('structuredData.websiteName'),
+      "url": currentUrl,
+      "description": t('structuredData.appDescription'),
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "Web",
+      "inLanguage": SUPPORTED_LOCALES,
+      "featureList": featureList,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "potentialAction": {
+        "@type": "UseAction",
+        "target": currentUrl
+      }
+    }
+
+    return [organizationData, websiteData, webApplicationData]
   }
 
   const structuredDataArray = getStructuredData()
@@ -96,6 +124,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
       <title>{localizedTitle}</title>
       <meta name="description" content={localizedDescription} />
       <meta name="keywords" content={localizedKeywords} />
+      <meta name="application-name" content={SEO_CONFIG.site.name} />
 
       <meta name="robots" content={robots} />
       <meta name="googlebot" content={robots} />

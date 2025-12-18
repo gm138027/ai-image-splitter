@@ -1,4 +1,4 @@
-/// <reference lib="webworker" />
+﻿/// <reference lib="webworker" />
 
 import type { OutputFormat, SplitConfig } from '@/types'
 
@@ -43,28 +43,61 @@ const workerLog = (...args: unknown[]) => {
   console.log('[ImageSplitterWorker]', ...args)
 }
 
+const getEffectiveDimensions = (
+  imageWidth: number,
+  imageHeight: number,
+  cropRegion: SplitConfig['cropRegion']
+) => {
+  if (!cropRegion) {
+    return {
+      width: imageWidth,
+      height: imageHeight,
+      offsetX: 0,
+      offsetY: 0
+    }
+  }
+
+  return {
+    width: cropRegion.width,
+    height: cropRegion.height,
+    offsetX: cropRegion.x,
+    offsetY: cropRegion.y
+  }
+}
+
 const calculateSplitParams = (imageWidth: number, imageHeight: number, config: SplitConfig) => {
   const { mode, rows, cols } = config
+  const { width, height, offsetX, offsetY } = getEffectiveDimensions(
+    imageWidth,
+    imageHeight,
+    config.cropRegion
+  )
 
   switch (mode) {
     case 'vertical':
       return {
         splitCount: cols,
-        splitWidth: imageWidth / cols,
-        splitHeight: imageHeight
+        splitWidth: width / cols,
+        splitHeight: height,
+        offsetX,
+        offsetY
       }
     case 'horizontal':
       return {
         splitCount: rows,
-        splitWidth: imageWidth,
-        splitHeight: imageHeight / rows
+        splitWidth: width,
+        splitHeight: height / rows,
+        offsetX,
+        offsetY
       }
     case 'grid':
     default:
       return {
         splitCount: rows * cols,
-        splitWidth: imageWidth / cols,
-        splitHeight: imageHeight / rows
+        splitWidth: width / cols,
+        splitHeight: height / rows,
+        offsetX,
+        offsetY
       }
   }
 }
@@ -108,7 +141,7 @@ const splitBitmap = async (
     height: bitmap.height,
     config
   })
-  const { splitCount, splitWidth, splitHeight } = calculateSplitParams(
+  const { splitCount, splitWidth, splitHeight, offsetX, offsetY } = calculateSplitParams(
     bitmap.width,
     bitmap.height,
     config
@@ -132,8 +165,8 @@ const splitBitmap = async (
 
     context.drawImage(
       bitmap,
-      sx,
-      sy,
+      offsetX + sx,
+      offsetY + sy,
       splitWidth,
       splitHeight,
       0,

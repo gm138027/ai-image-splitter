@@ -36,6 +36,13 @@
     },
     "gridLineWidth": "ग्रिड लाइन चौड़ाई",
     "outputFormat": "आउटपुट फॉर्मेट",
+    "aspectRatio": {
+      "title": "Aspect Ratio",
+      "default": "Default",
+      "portrait45": "Portrait 4:5",
+      "portrait34": "Portrait 3:4",
+      "square": "Square 1:1"
+    },
     "formats": {
       "jpg": "JPG (जेपीजी प्रारूप)",
       "png": "PNG (पीएनजी प्रारूप)",

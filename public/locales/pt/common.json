@@ -34,6 +34,13 @@
     },
     "gridLineWidth": "Largura da Linha de Grade",
     "outputFormat": "Formato de Saída",
+    "aspectRatio": {
+      "title": "Proporção",
+      "default": "Padrão",
+      "portrait45": "Retrato 4:5",
+      "portrait34": "Retrato 3:4",
+      "square": "Quadrado 1:1"
+    },
     "formats": {
       "jpg": "JPG (formato JPEG)",
       "png": "PNG (formato PNG)",

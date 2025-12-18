@@ -36,6 +36,13 @@
     },
     "gridLineWidth": "分割线宽度",
     "outputFormat": "输出格式",
+    "aspectRatio": {
+      "title": "分割比例",
+      "default": "默认",
+      "portrait45": "竖版 4:5",
+      "portrait34": "竖版 3:4",
+      "square": "方形 1:1"
+    },
     "formats": {
       "jpg": "JPG（JPEG 格式）",
       "png": "PNG（PNG 格式）",

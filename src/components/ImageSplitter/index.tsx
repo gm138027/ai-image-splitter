@@ -5,26 +5,25 @@ import SplitControls from './SplitControls'
 import ImagePreview from './ImagePreview'
 
 interface ImageSplitterProps {
-  onToolModeChange?: (inToolMode: boolean) => void
+  // eslint-disable-next-line no-unused-vars
+  onToolModeChange?: (toolMode: boolean) => void
 }
 
 const ImageSplitter: React.FC<ImageSplitterProps> = ({ onToolModeChange }) => {
   const {
-    // 状态
     uploadedImage,
     splitImages,
     isProcessing,
     config,
-    
-    // Refs
     fileInputRef,
     canvasRef,
-    
-    // 方法
-    handleFileUpload,
     handleDrop,
     handleFileInputChange,
     updateConfig,
+    cropRegion,
+    cropAspectRatioValue,
+    shouldShowCrop,
+    onCropRegionCommit,
     splitImage,
     downloadSingle,
     downloadAll
@@ -41,7 +40,6 @@ const ImageSplitter: React.FC<ImageSplitterProps> = ({ onToolModeChange }) => {
   if (!uploadedImage) {
     return (
       <HeroSection
-        onFileUpload={handleFileUpload}
         onDrop={handleDrop}
         onFileInputChange={handleFileInputChange}
         fileInputRef={fileInputRef}
@@ -69,6 +67,16 @@ const ImageSplitter: React.FC<ImageSplitterProps> = ({ onToolModeChange }) => {
             uploadedImage={uploadedImage}
             splitImages={splitImages}
             config={config}
+            cropRegion={cropRegion}
+            cropAspectRatioValue={cropAspectRatioValue}
+            shouldShowCrop={shouldShowCrop}
+            onCropRegionCommit={onCropRegionCommit}
+            previewRows={
+              config.mode === 'horizontal' ? config.rows : config.mode === 'vertical' ? 1 : config.rows
+            }
+            previewCols={
+              config.mode === 'horizontal' ? 1 : config.mode === 'vertical' ? config.cols : config.cols
+            }
             onDownloadSingle={downloadSingle}
             fileInputRef={fileInputRef}
           />

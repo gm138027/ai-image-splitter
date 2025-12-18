@@ -36,6 +36,13 @@
     },
     "gridLineWidth": "Ширина линии сетки",
     "outputFormat": "Формат вывода",
+    "aspectRatio": {
+      "title": "Соотношение сторон",
+      "default": "По умолчанию",
+      "portrait45": "Портрет 4:5",
+      "portrait34": "Портрет 3:4",
+      "square": "Квадрат 1:1"
+    },
     "formats": {
       "jpg": "JPG (формат JPEG)",
       "png": "PNG (формат PNG)",

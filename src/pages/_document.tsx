@@ -11,8 +11,9 @@ export default function Document() {
         <meta name="format-detection" content="telephone=no" />
         
         {/* Critical CSS inlined - system fonts for optimized LCP */}
-        <style dangerouslySetInnerHTML={{
-          __html: `
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
             /* Font optimization - use system fonts to avoid external loading delays */
             body { 
               font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; 
@@ -55,12 +56,8 @@ export default function Document() {
               }
             }
           `
-        }} />
-        <style jsx global>{`
-          html, body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-          }
-        `}</style>
+          }}
+        />
       </Head>
       <body>
         <Main />
