@@ -14,6 +14,12 @@
     "title": "Online Image Splitter at Grid Maker",
     "description": "Kung naghahanap kayo ng <link>paano hatiin ang isang larawan sa maraming larawan</link>, nasa tamang lugar na kayo. Ang aming image splitter ay perpekto hindi lamang para sa online image splitting kundi pati na rin para sa Instagram grid creation, walang kinakailangang registration at lubos na libre."
   },
+  "aboutTool": {
+    "title": "Ano ang AI Image Splitter?",
+    "descriptionMain": "Ang AI Image Splitter ay isang libreng online na kasangkapan para maghati ng larawan at gumawa ng photo grid. Sa loob mismo ng browser mo nangyayari ang lahat kaya walang file na ina-upload o iniimbak. Gamitin ang mga nakahandang ratio (Default / 4:5 / 3:4 / 1:1), ang maaaring hilahin na crop box, nababagong mga setting ng row at column, at pag-download ng ZIP o indibiduwal na file sa JPG, PNG, WebP, o BMP para gumawa ng mga slice para sa Instagram, Facebook, Pinterest, TikTok, mga print na A4, o mahahabang collage.",
+    "descriptionLinkPrefix": "Kailangan mo ba ng Instagram grids na sumusunod sa 2025 feed update? Bisitahin ang aming sister site na ",
+    "descriptionLinkSuffix": " para sa nakalaang workflow na iyon."
+  },
   "tool": {
     "comingSoon": "Parating na ang aming advance image splitter",
     "description": "Malapit nang ilunsad ang aming mas makapangyarihang paghahati ng larawan. I-upload ang iyong litrato at hatiin ito sa perpektong mga grid para sa social media carousels.",
@@ -87,14 +93,38 @@
     "terms": "Mga Tuntunin ng Serbisyo"
   },
   "advantages": {
-    "title": "Mga Bentahe ng AI Image Splitter",
-    "freeOnline": {
-      "title": "Ganap na Libreng Online Image Splitter",
-      "description": "Gamitin ang aming online image splitter tool nang hindi na kailangan mag-download o mag-install ng anumang software. Bisitahin lang ang <a href=\"/\" class=\"text-primary-600 hover:text-primary-700 underline font-medium\">aiimagesplitter.com</a> sa inyong browser para hatiin ang mga larawan online. Ganap na libre, walang nakatagong bayad at walang kinakailangang account registration."
+    "title": "Mga Tampok ng AI Image Splitter",
+    "group1": {
+      "items": [
+        {
+          "title": "Ganap na libreng kasangkapan sa paghahati ng larawan",
+          "description": "Tunay na libreng solusyon para hatiin ang mga larawan sa internet — walang login, walang watermark, at walang bayad na pader."
+        },
+        {
+          "title": "Malayang pumili ng proporsyon",
+          "description": "May mga preset na proporsyon tulad ng karaniwang sukat, 4:5, 3:4 at 1:1 kasama ang suportang custom grid para manatiling perpekto ang layout sa Instagram, TikTok, Pinterest, Facebook at mga pahinang A4."
+        },
+        {
+          "title": "Handa para sa iba’t ibang gamit",
+          "description": "Mabilis na gumawa ng Instagram carousel, Pinterest collage, TikTok long post, o mag-export ng A4 na handa nang i-print at PDF na materyales."
+        }
+      ]
     },
-    "easyInstagram": {
-      "title": "Madaling Gumawa ng Instagram Grid at Carousel Posts",
-      "description": "Ang aming image splitter ay specially designed para sa mga social media professionals at e-commerce users. Gamitin ang aming libreng Instagram grid maker para makagawa ng perpektong Instagram grid layouts at carousel images sa isang click, na gagawing mas engaging ang inyong content."
+    "group2": {
+      "items": [
+        {
+          "title": "Proseso na madaling sundan ng baguhan",
+          "description": "Drag-and-drop na pag-upload, gabay na crop box at instant preview ang tumutulong para matapos ang propesyonal na grid sa loob ng isang minuto."
+        },
+        {
+          "title": "Seguridad na lokal sa browser",
+          "description": "Lahat ng pagpoproseso ay nangyayari sa inyong device kaya nananatiling pribado ang assets ng kliyente at mga personal na larawan."
+        },
+        {
+          "title": "Walang limitasyon at isang klik ang pag-export",
+          "description": "Hatiin ang anumang dami ng larawan, i-export bilang JPG/PNG/WebP/BMP at mag-download ng ZIP o indibiduwal na file sa isang pindot."
+        }
+      ]
     }
   },
   "language": {
@@ -124,56 +154,111 @@
     "carouselEffectPlaceholder": "Epekto ng Carousels"
   },
   "faq": {
-    "title": "Mga Madalas na Itanong",
-    "description": "Kumpletong gabay tungkol sa mga image splitter at Instagram grid maker.",
+    "title": "Mga Madalas Itanong",
+    "description": "Mga sagot sa pinakakaraniwang paghahanap tungkol sa online image splitter, Instagram grid maker at paghahati sa A4.",
     "whatIsImageSplitter": {
-      "question": "Ano ang image splitter at paano ito gumagana?",
-      "answer": "Ang image splitter ay isang digital na kasangkapan na naghahati-hati ng isang larawan sa ilang mas maliliit na bahagi. Ang aming web-based image splitter ay gumagamit ng mga advanced na algorithm upang hatiin ang inyong mga larawan sa mga perpektong grid o segment. Mag-upload lamang ng larawan, piliin ang inyong image splitting method, at i-download ang mga resulta. Lahat ng prosesong ito ay nangyayari mismo sa inyong browser, na nagsisiguro ng privacy at seguridad ng larawan."
+      "question": "Ano ang AI Image Splitter at bakit ito ang pinakamahusay na online image splitter?",
+      "answer": "Ang AI Image Splitter ay isang libreng tool na tumatakbo mismo sa browser. Maaari kang mag-upload ng JPG, PNG, GIF o WebP na hanggang 50MB at awtomatiko nitong hinahati ang larawan para sa Instagram, Facebook, Pinterest, TikTok o layout na pang-A4. Dahil lokal ang proseso, mabilis ito, hindi bumababa ang kalidad, at hindi ina-upload ang files mo kahit kailan."
     },
     "howToSplitImage": {
-      "question": "Paano hatiin ang larawan sa maraming bahagi?",
-      "answer": "Napakadaling gawin: 1) Mag-upload ng inyong larawan (sumusuporta sa JPG, PNG, GIF, atbp., maximum na 50MB), 2) Piliin ang gusto ninyong splitting mode - vertical split, horizontal split, o grid split, 3) I-adjust ang mga hilera at kolum, 4) I-click ang split image button, 5) I-download ang mga indibidwal na segment o kunin ang ZIP package."
+      "question": "Paano hatiin ang larawan online nang sunod-sunod?",
+      "answer": "Sundin ito: 1) i-upload ang larawan, 2) pumili ng Default, 4:5, 3:4 o 1:1 at itakda ang row/column, 3) ilipat ang naka-lock na crop box sa pinakamainam na bahagi, 4) i-click ang \"Split Image\", 5) i-download ang bawat piraso o isang ZIP file."
     },
     "instagramGridMaker": {
-      "question": "Pwede ko bang gamitin ang tool na ito para sa Instagram grid posts?",
-      "answer": "Oo naman! Ang aming image splitter ay perpekto para sa paggawa ng Instagram grid layouts at carousel posts. Kasama sa mga sikat na format ang 3x3 grids para sa feed puzzles, mga strip para sa carousel stories, at mga custom dimensions para sa mga natatanging layout. Ang output ay nagsisiguro ng perpektong compatibility sa mga requirement ng Instagram."
+      "question": "Pwede ba itong gamitin sa Instagram grid at carousel?",
+      "answer": "Oo. Gumagana ito bilang Instagram grid maker at carousel splitter—gumawa ng 3x3 puzzle, 1x3 strip para sa reels o mga vertical panel para sa stories at agad makakakuha ng ready-to-post na larawan. Kung kailangan mo ng mas propesyonal na grid para sa 2025 feed, bumisita sa aming sister site na <a href=\"https://igridmaker.com\" target=\"_blank\" rel=\"noopener\">igridmaker.com</a>."
     },
     "splitImage3x3": {
-      "question": "Paano gumawa ng 3x3 grid para sa Instagram?",
-      "answer": "Para gumawa ng perpektong 3x3 Instagram grid: 1) Mag-upload ng square na larawan para sa pinakamahusay na resulta, 2) Piliin ang 'Grid' mode sa mga options, 3) I-set ang parehong hilera at kolum sa 3, 4) Hatiin ang larawan. Gumagawa ito ng 9 pantay na segment na bumubuo ng kumpletong puzzle kapag na-post nang sunod-sunod sa Instagram."
+      "question": "Paano gumawa ng 3x3, 2x3 o puzzle-style na grid?",
+      "answer": "I-on ang \"Grid\" mode, itakda ang rows/columns sa 3x3, 2x3, 3x1 o hanggang 10x10 at ipwesto ang crop box sa subject. Kung gusto mong hatiin ang buong canvas, manatili sa Default at i-click agad ang \"Split Image\" pagkatapos mag-upload. Ang preview ang magpapakita kung tama ang pagkakaayos bago ka mag-post."
     },
     "supportedFormats": {
-      "question": "Anong mga file format ang sinusuportahan?",
-      "answer": "Sinusuportahan ng aming image splitter ang lahat ng karaniwang image format, kasama ang JPG, PNG, GIF, at WebP. Pwede din ninyong i-export ang mga split image sa JPG, PNG, WebP, o BMP format. Ang maximum file size ay 50MB na may dimension hanggang 8192x8192 pixels para sa optimal na performance."
+      "question": "Anong mga format ang puwedeng i-upload at i-download?",
+      "answer": "Suportado ang pag-upload ng JPG, PNG, GIF at WebP hanggang 50MB/8192×8192 px. Maaaring i-export bilang JPG, PNG, WebP o BMP, alinman sa paisa-isang file o naka-ZIP."
     },
     "freeToUse": {
-      "question": "Libre ba talaga ang tool na ito?",
-      "answer": "Oo, ang aming image splitter ay 100% libre nang walang mga nakatagong bayad. Walang watermark sa inyong mga larawan, hindi kailangan ang account registration, at walang mga limitasyon sa paggamit. Gamitin nang malaya para sa mga personal na proyekto, commercial content, o business purposes."
+      "question": "Libre ba ang AI Image Splitter at walang watermark?",
+      "answer": "Oo. Walang nakatagong bayad, walang sign-up, walang limitasyon at hindi kami naglalagay ng watermark—perpekto para sa personal o pang-negosyo na proyekto."
     },
     "imageQuality": {
-      "question": "Maapektuhan ba ang kalidad ng split image?",
-      "answer": "Hindi talaga! Ginagamit namin ang mga lossless processing technique upang panatilihin ang original na kalidad ng inyong larawan. Ang mga split image ay napapanatili ang parehong resolution at linaw tulad ng inyong source image, na nagsisiguro na ang inyong social media content ay mukhang propesyonal."
+      "question": "Nanatiling malinaw ba ang kalidad ng larawan pagkatapos hatiin?",
+      "answer": "Oo. Pinoprotektahan ng naka-lock na crop box ang napiling bahagi at pinananatili ng export pipeline ang orihinal na resolusyon kaya malinaw pa rin ang mga carousel, poster o Pinterest board."
     },
     "privacySecurity": {
-      "question": "Secure ba ang aking na-upload na content?",
-      "answer": "Ang inyong privacy ang aming pangunahing priyoridad. Gamit ang aming image splitter, lahat ng image processing ay nangyayari mismo sa inyong browser - walang na-upload sa aming mga server. Hindi kailanman umaalis ang inyong mga larawan sa inyong device, at hindi namin sine-store o ina-access ang anumang inyong content. Lubhang private at secure."
+      "question": "Gaano ka-secure ang files ko kapag naghahati ng larawan?",
+      "answer": "Lahat ng proseso ay sa browser lang nangyayari; walang file ang ina-upload o sine-save sa server. Kapag sinarado mo ang tab, nawawala ang temporary data kaya ligtas ang mga asset at personal na larawan."
     },
     "mobileFriendly": {
-      "question": "Gumagana ba ang tool na ito sa mga mobile device?",
-      "answer": "Oo naman! Ang aming image splitter ay fully responsive at gumagana nang perpekto sa mga smartphone at tablet. Pwede kayong mag-upload ng mga larawan mula sa inyong photo gallery, i-process ang mga ito, at i-download ang mga resulta direkta sa inyong device. Ang interface ay kusang nag-a-adapt sa lahat ng screen size para sa smooth na experience."
+      "question": "Gumagana ba ito sa telepono at tablet?",
+      "answer": "Gumagana. Responsive ang interface kaya puwede kang mag-upload mula sa iOS, Android o tablet, i-drag ang crop box gamit ang daliri at i-save ang slices sa gallery o cloud storage."
     },
     "batchProcessing": {
-      "question": "Pwede ko bang hatiin ang maraming larawan nang sabay-sabay?",
-      "answer": "Sa kasalukuyan, ang tool ay nag-process ng isang larawan sa isang pagkakataon upang masiguro ang optimal na performance at kalidad. Gayunpaman, mabilis ang processing - pwede kayong mabilis na maghati ng maraming larawan sa pamamagitan ng pag-uulit ng mga simpleng upload at process steps."
+      "question": "Maaari ko bang hatiin ang larawan para sa mga papel na A4 o mahahabang panel?",
+      "answer": "Oo. Piliin ang Default o 1:1 na ratio, itakda ang rows/columns ayon sa dami ng papel na kailangan mo at hatiin ang file. Bawat slice ay puwedeng i-print sa A4, buuin bilang poster o ilagay sa PDF—tugma ito sa mga paghahanap na tulad ng \"split image into A4 sheets\"."
     },
     "customDimensions": {
-      "question": "Pwede ko bang gumawa ng custom grid dimensions gamit ang inyong image splitter?",
-      "answer": "Oo naman! Bukod sa mga sikat na preset tulad ng 3x3 at 2x3, pwede kayong gumawa ng custom grid dimensions hanggang 10x10. I-adjust lang ang mga hilera at kolum upang matugunan ang inyong mga specific na pangangailangan, maging para sa mga natatanging social media layout o mga special na proyekto."
+      "question": "Puwede bang i-lock ang 4:5, 3:4, 1:1 at gumawa ng custom grid?",
+      "answer": "Oo. Sa \"Aspect Ratio\" button, pumili ng Default, 4:5, 3:4 o 1:1, tapos itakda ang grid mula 1×1 hanggang 10×10 (hal. 3×3, 2×3, 3×1). Sinusunod ng pag-split ang parehong ratio at grid kaya akma para sa Instagram, TikTok, Pinterest at A4 prints."
     },
     "cta": {
       "title": "Handa ka na bang gumawa ng kakaibang grid?",
       "description": "Simulan nang hatiin ang iyong mga litrato at gumawa ng mas nakakaengganyong content para sa social media.",
       "button": "Magsimula Ngayon"
     }
+  },
+  "useCases": {
+    "title": "Mga gamit ng AI Image Splitter",
+    "items": [
+      {
+        "title": "Mga social grid at carousel post",
+        "description": "Gamitin ang AI Image Splitter para sa Instagram grids, TikTok stories, o Pinterest carousels: hatiin ang larawan sa mga hiwa na 4:5 o 3:4 upang manatiling sunod-sunod ang bawat panel."
+      },
+      {
+        "title": "Mga Pinterest board at collage ng tindahan",
+        "description": "Hatiin ang mga moodboard, lookbook, o product banner sa maraming pin/tile/imaheng produkto upang maging pantay ang Etsy, Shopify, at Pinterest visuals."
+      },
+      {
+        "title": "Pag-print ng A4, PDF at training handouts",
+        "description": "Gupitin ang mga poster o infographics sa mga page na maaaring i-print, PDF deck, o handout upang masagot ang pangangailangang “split image into A4 sheets/PDF”."
+      },
+      {
+        "title": "Mga seksyon ng web at multi-screen display",
+        "description": "Gamitin ang grid splitter upang hatiin ang hero ng landing page o dashboard sa eksaktong module para sa maraming column, monitor, o LED wall."
+      },
+      {
+        "title": "Mahahabang kuwento at karanasan sa pag-scroll",
+        "description": "Pagsamahin ang mga artwork sa isang matangkad na collage, pagkatapos ay hatiin para sa TikTok stories, blog scroll o comic-style reels—perpekto para sa storytelling."
+      },
+      {
+        "title": "Tutorial at walkthrough ng team",
+        "description": "Magpatakbo ng tutorial na “upload → piliin ang ratio → hatiin” sa loob ng isang minuto upang ang mga estudyante o katrabaho ay agad makapag-export ng propesyonal na grid."
+      }
+    ]
+  },
+  "proTips": {
+    "title": "Paano makuha ang pinakamahusay na karanasan gamit ang AI Image Splitter",
+    "subtitle": "Mga pro tip para sa paghahati ng larawan online",
+    "items": [
+      {
+        "title": "Iayon ang ratio sa iyong platform",
+        "description": "Bago maghati, pumili ng preset na Default, 4:5, 3:4, 1:1 o gumawa ng custom grid na tumutugma sa grid/carousel ng Instagram, stories ng TikTok, mga board ng Pinterest o layout na pang-imprentang A4."
+      },
+      {
+        "title": "Ayusin ang crop box para hindi mawala ang subject",
+        "description": "Pagkatapos mag-upload, hilahin ang naka-lock na crop box para manatili ang produkto, skyline o teksto sa bawat slice; para sa mahahabang banner, panatilihing pantay ang kaliwa at kanang margin bago i-adjust ang mga hanay at kolum."
+      },
+      {
+        "title": "I-preview muna bago mag-export ng ZIP at indibidwal na file",
+        "description": "Gamitin ang instant preview upang pinohin ang bilang ng row at column, pagkatapos ay mag-download ng mga hiwalay na file at ZIP bundle para madaling mag-post o mag-archive."
+      },
+      {
+        "title": "Piliin ang tamang format ng output mula sa simula",
+        "description": "Ang JPG ay bagay sa social feed, ang PNG ay nagpapanatili ng transparency, samantalang ang WebP/BMP ay para sa mataas na kalidad na asset. Ang maagang pagpili ng format ay nakakatipid sa oras ng conversion."
+      },
+      {
+        "title": "Samantalahin ang privacy ng browser at multilingguwal na interface",
+        "description": "Lahat ng pagpoproseso ay nasa browser mo, at puwede kang magpalit ng wika tulad ng Ingles, Portuges o Filipino upang gabayan ang team sa parehong daloy na “upload → piliin ang ratio → hatiin → mag-download”."
+      }
+    ]
   }
 }

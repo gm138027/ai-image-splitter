@@ -6,12 +6,34 @@ import Image from 'next/image'
 import FAQ from '@/components/FAQ'
 import type { HeroSectionProps } from '@/types'
 
+interface AdvantageItem {
+  title: string
+  description: string
+}
+
+interface ProTipItem {
+  title: string
+  description: string
+}
+
 const HeroSection: React.FC<HeroSectionProps> = ({
   onDrop,
   onFileInputChange,
   fileInputRef
 }) => {
   const { t } = useTranslation('common')
+  const advantageGroup1 = t('advantages.group1.items', {
+    returnObjects: true
+  }) as AdvantageItem[]
+  const advantageGroup2 = t('advantages.group2.items', {
+    returnObjects: true
+  }) as AdvantageItem[]
+  const useCases = t('useCases.items', {
+    returnObjects: true
+  }) as AdvantageItem[]
+  const proTips = t('proTips.items', {
+    returnObjects: true
+  }) as ProTipItem[]
   
   // Simplified error handling - no complex state management needed
 
@@ -26,12 +48,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-20">
         {/* Hero Section - critical above-the-fold content */}
         <div className="text-center mb-8 sm:mb-16">
-          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-8">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
             <span className="bg-gradient-to-r from-gray-900 via-primary-600 to-secondary-600 bg-clip-text text-transparent">
               {t('hero.title')}
             </span>
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed">
             <Trans
               i18nKey="hero.description"
               components={{
@@ -120,6 +142,28 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           </div>
         </div>
 
+        {/* About AI Image Splitter */}
+        <div className="mt-20 sm:mt-24 mb-12 sm:mb-16 text-center px-4 sm:px-0">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-center mb-6 sm:mb-10">
+            <span className="bg-gradient-to-r from-gray-900 to-primary-600 bg-clip-text text-transparent">
+              {t('aboutTool.title')}
+            </span>
+          </h2>
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl sm:max-w-4xl mx-auto text-left md:text-center">
+            {t('aboutTool.descriptionMain')}{' '}
+            {t('aboutTool.descriptionLinkPrefix')}
+            <a
+              href="https://igridmaker.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-600 hover:text-primary-700 underline"
+            >
+              igridmaker.com
+            </a>
+            {t('aboutTool.descriptionLinkSuffix')}
+          </p>
+        </div>
+
         {/* Advantages Section - optimized image loading strategy */}
         <div className="mt-16 sm:mt-24" id="advantages">
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-16">
@@ -181,13 +225,16 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               
               {/* Right side - Text */}
               <div className="lg:w-1/2">
-                <h3 className="text-xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">
-                  {t('advantages.freeOnline.title')}
-                </h3>
-                <p 
-                  className="text-base sm:text-xl text-gray-600 leading-relaxed"
-                  dangerouslySetInnerHTML={{ __html: t('advantages.freeOnline.description') }}
-                />
+                {advantageGroup1.map((item, index) => (
+                  <div key={`advantage-1-${index}`} className="mb-6 last:mb-0">
+                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">
+                      {item.title}
+                    </h3>
+                    <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -244,15 +291,72 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
               
               {/* Left side - Text */}
-              <div className="lg:w-1/2">
-                <h3 className="text-xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">
-                  {t('advantages.easyInstagram.title')}
-                </h3>
-                <p className="text-base sm:text-xl text-gray-600 leading-relaxed">
-                  {t('advantages.easyInstagram.description')}
-                </p>
+              <div className="lg:w-1/2 lg:text-right">
+                {advantageGroup2.map((item, index) => (
+                  <div key={`advantage-2-${index}`} className="mb-6 last:mb-0">
+                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3 text-left lg:text-right">
+                      {item.title}
+                    </h3>
+                    <p className="text-base sm:text-lg text-gray-600 leading-relaxed text-left lg:text-right">
+                      {item.description}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Use Cases Section */}
+        <div className="mt-16 sm:mt-24" id="use-cases">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12">
+            <span className="bg-gradient-to-r from-gray-900 to-primary-600 bg-clip-text text-transparent">
+              {t('useCases.title')}
+            </span>
+          </h2>
+          <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
+            {useCases.map((item, index) => (
+              <div
+                key={`use-case-${index}`}
+                className="bg-white/80 backdrop-blur rounded-2xl border border-white/40 shadow-modern-lg p-6 sm:p-8 text-left"
+              >
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Pro Tips Section */}
+        <div className="mt-16 sm:mt-24" id="pro-tips">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4">
+              <span className="bg-gradient-to-r from-gray-900 to-primary-600 bg-clip-text text-transparent">
+                {t('proTips.title')}
+              </span>
+            </h2>
+            <p className="text-base sm:text-lg text-gray-600">
+              {t('proTips.subtitle')}
+            </p>
+          </div>
+          <div className="space-y-6">
+            {proTips.map((item, index) => (
+              <div
+                key={`pro-tip-${index}`}
+                className="bg-white/80 backdrop-blur rounded-2xl border border-white/40 shadow-modern-lg p-6 sm:p-8"
+              >
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
 

@@ -28,6 +28,14 @@
   .btn-outline {
     @apply border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 focus:ring-primary-500;
   }
+
+  .rich-text a {
+    @apply text-primary-600 underline font-medium transition-colors;
+  }
+
+  .rich-text a:hover {
+    @apply text-primary-700;
+  }
 }
 
 @layer utilities {

@@ -121,7 +121,7 @@ const FAQ: React.FC = () => {
               {openItems.includes(item.id) && (
                 <div className="px-6 pb-5">
                   <div 
-                    className="text-gray-700 leading-relaxed prose prose-primary max-w-none"
+                    className="text-gray-700 leading-relaxed prose prose-primary max-w-none rich-text"
                     dangerouslySetInnerHTML={{ __html: item.answer }}
                   />
                 </div>

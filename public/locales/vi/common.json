@@ -14,6 +14,12 @@
     "title": "Công cụ Tách Ảnh Online và Tạo Lưới",
     "description": "Nếu bạn đang tìm kiếm <link>cách chia một hình ảnh thành nhiều hình ảnh</link>, bạn đã đến đúng nơi. Công cụ tách ảnh của chúng tôi hoàn hảo không chỉ cho việc tách ảnh trực tuyến mà còn cho việc tạo lưới Instagram, không cần đăng ký và hoàn toàn miễn phí."
   },
+  "aboutTool": {
+    "title": "AI Image Splitter là gì?",
+    "descriptionMain": "AI Image Splitter là công cụ tách ảnh và tạo lưới ảnh trực tuyến miễn phí. Toàn bộ xử lý diễn ra ngay trong trình duyệt nên không có tệp nào được tải lên hoặc lưu trữ. Sử dụng các tỷ lệ dựng sẵn (Mặc định / 4:5 / 3:4 / 1:1), khung cắt kéo thả, thiết lập hàng và cột linh hoạt cùng khả năng tải về ZIP hoặc từng tệp JPG, PNG, WebP, BMP để tạo lát ảnh cho Instagram, Facebook, Pinterest, TikTok, bản in A4 hoặc collage dài.",
+    "descriptionLinkPrefix": "Cần những lưới Instagram riêng dành cho cập nhật feed 2025? Hãy truy cập trang chị em của chúng tôi ",
+    "descriptionLinkSuffix": " để có quy trình chuyên dụng đó."
+  },
   "tool": {
     "comingSoon": "Công Cụ Tách Ảnh",
     "description": "Chức năng tách ảnh nâng cao sẽ có sẵn tại đây sớm. Tải ảnh của bạn lên và tách thành lưới hoàn hảo cho mạng xã hội.",
@@ -87,14 +93,38 @@
     "terms": "Điều Khoản Dịch Vụ"
   },
   "advantages": {
-    "title": "Ưu Điểm Của AI Image Splitter",
-    "freeOnline": {
-      "title": "Công Cụ Tách Ảnh Online Hoàn Toàn Miễn Phí",
-      "description": "Sử dụng công cụ tách ảnh online của chúng tôi mà không cần tải xuống hoặc cài đặt phần mềm. Chỉ cần truy cập <a href=\"/\" class=\"text-primary-600 hover:text-primary-700 underline font-medium\">aiimagesplitter.com</a> trên trình duyệt để tách ảnh online. Hoàn toàn miễn phí, không có phí ẩn và không cần đăng ký tài khoản."
+    "title": "Tính Năng Của AI Image Splitter",
+    "group1": {
+      "items": [
+        {
+          "title": "Công cụ tách ảnh trực tuyến hoàn toàn miễn phí",
+          "description": "Giải pháp miễn phí thực sự để tách ảnh trên trình duyệt – không cần đăng nhập, không watermark, không paywall."
+        },
+        {
+          "title": "Tùy chọn tỷ lệ linh hoạt",
+          "description": "Các preset chuẩn như 4:5, 3:4, 1:1 cùng lưới tùy chỉnh giúp bố cục Instagram, TikTok, Pinterest, Facebook và trang in A4 luôn chính xác."
+        },
+        {
+          "title": "Bao phủ nhiều nhu cầu",
+          "description": "Tạo carousel Instagram, collage Pinterest, bài dài TikTok hoặc xuất trang A4 sẵn in và giáo trình PDF chỉ trong vài giây."
+        }
+      ]
     },
-    "easyInstagram": {
-      "title": "Dễ Dàng Tạo Lưới Instagram Và Bài Đăng Carousel",
-      "description": "Công cụ tách ảnh của chúng tôi được thiết kế đặc biệt cho các chuyên gia mạng xã hội và người dùng thương mại điện tử. Sử dụng công cụ tạo lưới Instagram miễn phí của chúng tôi để tạo ra bố cục lưới Instagram hoàn hảo và hình ảnh carousel chỉ với một cú nhấp chuột, làm cho nội dung của bạn hấp dẫn hơn."
+    "group2": {
+      "items": [
+        {
+          "title": "Quy trình thân thiện với người mới",
+          "description": "Kéo thả để tải lên, khung cắt có hướng dẫn và xem trước tức thì giúp bất kỳ ai hoàn thành grid chuyên nghiệp trong chưa đầy một phút."
+        },
+        {
+          "title": "Bảo mật ngay trên trình duyệt",
+          "description": "Toàn bộ quá trình xử lý diễn ra trên thiết bị, vì vậy dữ liệu khách hàng và ảnh cá nhân luôn được bảo vệ."
+        },
+        {
+          "title": "Tách ảnh không giới hạn, xuất nhanh",
+          "description": "Tách bao nhiêu ảnh tùy thích, xuất ra JPG/PNG/WebP/BMP và tải về gói ZIP hoặc từng file chỉ với một cú nhấp."
+        }
+      ]
     }
   },
   "language": {
@@ -124,56 +154,111 @@
     "carouselEffectPlaceholder": "Hiệu Ứng Carousel"
   },
   "faq": {
-    "title": "Câu Hỏi Thường Gặp",
-    "description": "Hướng dẫn đầy đủ về công cụ chia hình ảnh và tạo lưới Instagram.",
+    "title": "Câu hỏi thường gặp",
+    "description": "Giải đáp các truy vấn phổ biến về công cụ cắt ảnh online, tạo lưới Instagram và chia ảnh theo khổ A4.",
     "whatIsImageSplitter": {
-      "question": "Công cụ chia hình ảnh là gì và nó hoạt động như thế nào?",
-      "answer": "Công cụ chia hình ảnh là một công cụ kỹ thuật số chia một hình ảnh thành nhiều phần nhỏ hơn. Công cụ chia hình ảnh trên web của chúng tôi sử dụng thuật toán tiên tiến để chia hình ảnh của bạn thành lưới hoặc phân đoạn hoàn hảo. Chỉ cần tải lên hình ảnh của bạn, chọn phương pháp chia hình ảnh và tải xuống kết quả. Tất cả xử lý diễn ra trực tiếp trong trình duyệt của bạn, đảm bảo quyền riêng tư và bảo mật hình ảnh."
+      "question": "AI Image Splitter là gì và vì sao nó được xem là công cụ cắt ảnh online tốt nhất?",
+      "answer": "AI Image Splitter là công cụ cắt ảnh miễn phí chạy ngay trên trình duyệt. Bạn có thể tải lên JPG, PNG, GIF hoặc WebP tới 50MB và tách ảnh thành nhiều phần đều nhau cho Instagram, Facebook, Pinterest, TikTok hoặc bố cục in A4. Toàn bộ xử lý diễn ra cục bộ nên nhanh, giữ nguyên chất lượng và không tải dữ liệu lên máy chủ."
     },
     "howToSplitImage": {
-      "question": "Làm thế nào để chia hình ảnh thành nhiều phần?",
-      "answer": "Rất đơn giản: 1) Tải lên hình ảnh của bạn (hỗ trợ JPG, PNG, GIF, v.v., tối đa 50MB), 2) Chọn chế độ chia ưa thích - chia dọc, chia ngang hoặc chia lưới, 3) Điều chỉnh số hàng và cột, 4) Nhấp vào nút chia hình ảnh, 5) Tải xuống từng phân đoạn riêng lẻ hoặc nhận gói ZIP."
+      "question": "Cách chia ảnh online theo từng bước như thế nào?",
+      "answer": "Thực hiện lần lượt: 1) tải ảnh lên, 2) chọn tỷ lệ Default, 4:5, 3:4 hoặc 1:1 cùng số hàng/cột, 3) kéo khung cắt đã khóa tới vùng cần giữ, 4) bấm \"Split Image\", 5) tải về từng ảnh hoặc cả gói ZIP."
     },
     "instagramGridMaker": {
-      "question": "Tôi có thể sử dụng công cụ này để tạo bài đăng lưới Instagram không?",
-      "answer": "Hoàn toàn có thể! Công cụ chia hình ảnh của chúng tôi hoàn hảo để tạo bố cục lưới Instagram và bài đăng carousel. Các định dạng phổ biến bao gồm lưới 3x3 cho feed puzzle, dải cho carousel stories, và kích thước tùy chỉnh cho bố cục độc đáo. Đầu ra đảm bảo tương thích hoàn hảo với yêu cầu Instagram."
+      "question": "Công cụ có dùng để tạo lưới và carousel cho Instagram được không?",
+      "answer": "Được. Nó đóng vai trò vừa là Instagram grid maker vừa là carousel splitter: tạo lưới 3x3 cho feed, dải 1x3 cho reels hoặc panel dọc cho stories và xuất file sẵn sàng đăng. Nếu bạn cần lưới Instagram chuyên sâu cho bản cập nhật 2025, hãy truy cập trang chị em <a href=\"https://igridmaker.com\" target=\"_blank\" rel=\"noopener\">igridmaker.com</a>."
     },
     "splitImage3x3": {
-      "question": "Làm thế nào để tạo lưới 3x3 cho Instagram?",
-      "answer": "Để tạo lưới 3x3 Instagram hoàn hảo: 1) Tải lên hình ảnh vuông để có kết quả tốt nhất, 2) Chọn chế độ 'Lưới' từ các tùy chọn, 3) Đặt cả số hàng và cột thành 3, 4) Chia hình ảnh. Điều này tạo ra 9 phân đoạn bằng nhau tạo thành một puzzle hoàn chỉnh khi đăng tuần tự trên Instagram."
+      "question": "Làm thế nào để tạo lưới 3x3, 2x3 hoặc dạng puzzle?",
+      "answer": "Bật chế độ \"Grid\", đặt số hàng/cột thành 3x3, 2x3, 3x1 hoặc tối đa 10x10 rồi kéo khung cắt vào phần chủ đạo. Nếu muốn cắt toàn bộ khung hình, hãy để chế độ Default và nhấn \"Split Image\" ngay sau khi tải lên. Phần xem trước sẽ giúp bạn kiểm tra từng lát cắt trước khi đăng."
     },
     "supportedFormats": {
-      "question": "Những định dạng tệp nào được hỗ trợ?",
-      "answer": "Công cụ chia hình ảnh của chúng tôi hỗ trợ tất cả các định dạng hình ảnh phổ biến, bao gồm JPG, PNG, GIF và WebP. Bạn cũng có thể xuất hình ảnh đã chia dưới định dạng JPG, PNG, WebP hoặc BMP. Kích thước tệp tối đa là 50MB với kích thước lên đến 8192x8192 pixel để có hiệu suất tối ưu."
+      "question": "Những định dạng nào được hỗ trợ khi tải lên và tải xuống?",
+      "answer": "Hỗ trợ tải lên JPG, PNG, GIF, WebP tới 50MB/8192×8192 px. Bạn có thể xuất sang JPG, PNG, WebP hoặc BMP và tải xuống riêng lẻ hoặc dưới dạng ZIP."
     },
     "freeToUse": {
-      "question": "Công cụ này có hoàn toàn miễn phí không?",
-      "answer": "Có, công cụ chia hình ảnh của chúng tôi miễn phí 100% không có chi phí ẩn. Không có watermark trên hình ảnh của bạn, không cần đăng ký tài khoản, và không có giới hạn sử dụng. Sử dụng tự do cho các dự án cá nhân, nội dung thương mại hoặc mục đích kinh doanh."
+      "question": "AI Image Splitter có thực sự miễn phí và không đóng watermark không?",
+      "answer": "Hoàn toàn miễn phí. Không cần đăng ký, không giới hạn lượt dùng và chúng tôi không chèn watermark — phù hợp cho cả dự án cá nhân lẫn thương mại."
     },
     "imageQuality": {
-      "question": "Chất lượng hình ảnh đã chia có bị ảnh hưởng không?",
-      "answer": "Hoàn toàn không! Chúng tôi sử dụng kỹ thuật xử lý không mất dữ liệu để duy trì chất lượng hình ảnh gốc của bạn. Hình ảnh đã chia giữ nguyên độ phân giải và độ rõ nét như hình ảnh nguồn, đảm bảo nội dung mạng xã hội của bạn trông chuyên nghiệp."
+      "question": "Chất lượng ảnh có bị giảm sau khi cắt không?",
+      "answer": "Không. Khung cắt khóa cố định vùng bạn chọn và quy trình xuất giữ nguyên độ phân giải gốc, vì vậy các carousel, poster hay bảng Pinterest vẫn sắc nét như ảnh ban đầu."
     },
     "privacySecurity": {
-      "question": "Nội dung tải lên của tôi có an toàn không?",
-      "answer": "Quyền riêng tư của bạn là ưu tiên hàng đầu của chúng tôi. Sử dụng công cụ chia hình ảnh của chúng tôi, tất cả xử lý hình ảnh diễn ra trực tiếp trong trình duyệt của bạn - không có gì được tải lên máy chủ của chúng tôi. Hình ảnh của bạn không bao giờ rời khỏi thiết bị của bạn, và chúng tôi không lưu trữ hoặc truy cập bất kỳ nội dung nào của bạn. Hoàn toàn riêng tư và an toàn."
+      "question": "Dữ liệu của tôi có an toàn khi cắt ảnh online không?",
+      "answer": "Mọi xử lý đều diễn ra trong trình duyệt; chúng tôi không tải lên hoặc lưu trữ nội dung nào. Chỉ cần đóng tab là dữ liệu tạm thời sẽ biến mất, rất an toàn cho file khách hàng lẫn ảnh cá nhân."
     },
     "mobileFriendly": {
-      "question": "Công cụ này có hoạt động trên thiết bị di động không?",
-      "answer": "Hoàn toàn có thể! Công cụ chia hình ảnh của chúng tôi hoàn toàn responsive và hoạt động hoàn hảo trên smartphone và tablet. Bạn có thể tải lên hình ảnh từ thư viện ảnh, xử lý chúng và tải xuống kết quả trực tiếp về thiết bị của bạn. Giao diện tự động thích ứng với mọi kích thước màn hình để có trải nghiệm mượt mà."
+      "question": "Công cụ có hoạt động trên điện thoại và máy tính bảng không?",
+      "answer": "Có. Giao diện responsive nên bạn có thể tải ảnh từ iOS, Android hoặc tablet, chỉnh khung cắt bằng thao tác chạm và tải lát cắt về thư viện hay đám mây."
     },
     "batchProcessing": {
-      "question": "Tôi có thể chia nhiều hình ảnh cùng một lúc không?",
-      "answer": "Hiện tại, công cụ xử lý một hình ảnh mỗi lần để đảm bảo hiệu suất và chất lượng tối ưu. Tuy nhiên, xử lý rất nhanh - bạn có thể nhanh chóng chia nhiều hình ảnh bằng cách lặp lại các bước tải lên và xử lý đơn giản."
+      "question": "Tôi có thể chia ảnh thành nhiều trang A4 hoặc poster dài không?",
+      "answer": "Có. Chọn tỷ lệ thân thiện với A4 như Default hoặc 1:1, đặt số hàng/cột theo số trang bạn cần và tiến hành cắt. Mỗi phần có thể in ra giấy A4, ghép thành poster hoặc đưa vào PDF — đúng với nhu cầu \"chia ảnh thành tờ A4\"."
     },
     "customDimensions": {
-      "question": "Tôi có thể tạo kích thước lưới tùy chỉnh với công cụ chia hình ảnh của bạn không?",
-      "answer": "Hoàn toàn có thể! Ngoài các preset phổ biến như 3x3 và 2x3, bạn có thể tạo kích thước lưới tùy chỉnh lên đến 10x10. Chỉ cần điều chỉnh số hàng và cột để đáp ứng nhu cầu cụ thể của bạn, cho dù là cho bố cục mạng xã hội độc đáo hoặc các dự án đặc biệt."
+      "question": "Có thể khóa các tỷ lệ 4:5, 3:4, 1:1 và tạo lưới tùy chỉnh không?",
+      "answer": "Hãy dùng nút \"Aspect Ratio\" để chọn Default, 4:5, 3:4 hoặc 1:1, rồi thiết lập lưới từ 1×1 đến 10×10 (ví dụ 3×3, 2×3, 3×1). Tính năng cắt sẽ tuân theo cả tỷ lệ lẫn lưới nên phù hợp cho Instagram, TikTok, Pinterest và in A4."
     },
     "cta": {
       "title": "Sẵn Sàng Tạo Bố Cục Lưới Tuyệt Vời?",
       "description": "Bắt đầu chia hình ảnh của bạn và tạo nội dung mạng xã hội hấp dẫn.",
       "button": "Bắt Đầu Tạo Ngay"
     }
+  },
+  "useCases": {
+    "title": "Các tình huống dùng AI Image Splitter",
+    "items": [
+      {
+        "title": "Bài đăng lưới & carousel mạng xã hội",
+        "description": "Dùng AI Image Splitter cho Instagram grid, TikTok story hoặc carousel Pinterest: cắt ảnh thành các lát 4:5 hoặc 3:4 để mọi khung hình liền mạch."
+      },
+      {
+        "title": "Bảng Pinterest & collage cửa hàng",
+        "description": "Tách moodboard, lookbook hoặc banner sản phẩm thành nhiều pin/tile/hình sản phẩm để Etsy, Shopify và Pinterest luôn đồng nhất."
+      },
+      {
+        "title": "In A4, PDF và tài liệu đào tạo",
+        "description": "Chia poster hay infographic thành các trang A4 in được, slide PDF hoặc giáo trình để đáp ứng nhu cầu “split image into A4 sheets/PDF”."
+      },
+      {
+        "title": "Phần web & màn hình đa hiển thị",
+        "description": "Dùng grid splitter để chia hero landing page hoặc dashboard thành những mô-đun chính xác cho nhiều cột, màn hình hay tường LED."
+      },
+      {
+        "title": "Chuẩn bị truyện dài & trải nghiệm cuộn",
+        "description": "Ghép artwork thành một collage dọc rồi tách ra cho TikTok story, blog dạng cuộn hoặc reels phong cách truyện tranh—rất phù hợp cho storytelling."
+      },
+      {
+        "title": "Hướng dẫn & training đội nhóm",
+        "description": "Trình diễn quy trình “tải lên → chọn tỷ lệ → tách” dưới một phút để học viên hoặc đồng đội nhanh chóng xuất ra grid chuyên nghiệp."
+      }
+    ]
+  },
+  "proTips": {
+    "title": "Làm sao tận dụng AI Image Splitter hiệu quả nhất",
+    "subtitle": "Mẹo nâng cao để quá trình tách ảnh mượt mà hơn",
+    "items": [
+      {
+        "title": "Chọn tỷ lệ phù hợp với nền tảng",
+        "description": "Trước khi tách ảnh, hãy chọn preset mặc định, 4:5, 3:4, 1:1 hoặc một lưới tùy chỉnh tương ứng với lưới/carousel Instagram, story TikTok, bảng Pinterest hay bố cục in A4."
+      },
+      {
+        "title": "Kéo khung cắt để bảo toàn nội dung chính",
+        "description": "Sau khi tải lên, kéo khung cắt đã khóa để sản phẩm, chữ hoặc đường chân trời nằm gọn trong từng lát; với banner dài, giữ cân đối hai bên rồi tinh chỉnh hàng/cột."
+      },
+      {
+        "title": "Xem trước rồi xuất ZIP cộng từng tệp",
+        "description": "Tận dụng bản xem trước tức thì để chỉnh số hàng và cột, sau đó tải về cả tệp đơn lẫn gói ZIP để sẵn sàng đăng bài hoặc lưu trữ."
+      },
+      {
+        "title": "Quyết định định dạng xuất ngay từ đầu",
+        "description": "JPG phù hợp với mạng xã hội, PNG giữ nền trong suốt, còn WebP/BMP đảm bảo chất lượng cao. Chọn định dạng trước giúp tránh chuyển đổi nhiều lần."
+      },
+      {
+        "title": "Khai thác quyền riêng tư của trình duyệt và giao diện đa ngôn ngữ",
+        "description": "Toàn bộ xử lý diễn ra trên trình duyệt của bạn; có thể chuyển sang tiếng Anh, Bồ Đào Nha, Indonesia… để hướng dẫn đội nhóm theo luồng “tải lên → chọn tỷ lệ → tách → tải xuống”."
+      }
+    ]
   }
 }

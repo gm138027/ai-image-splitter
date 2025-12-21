@@ -14,6 +14,12 @@
     "title": "Divisor de Imagem Online e Criador de Grade",
     "description": "Se você está procurando <link>como dividir uma imagem em várias imagens</link>, você veio ao lugar certo. Nosso divisor de imagem é perfeito não apenas para divisão de imagem online, mas também para criação de grade do Instagram, sem necessidade de registro e completamente gratuito."
   },
+  "aboutTool": {
+    "title": "O que é o AI Image Splitter?",
+    "descriptionMain": "AI Image Splitter é um divisor de imagens online gratuito e criador de grades fotográficas. Todo o processamento acontece diretamente no navegador, portanto nada é enviado ou armazenado. Use presets de proporção (Padrão / 4:5 / 3:4 / 1:1), caixa de corte arrastável, configurações flexíveis de linhas e colunas e downloads em ZIP ou arquivos individuais nos formatos JPG, PNG, WebP ou BMP para gerar fatias para Instagram, Facebook, Pinterest, TikTok, impressões A4 ou colagens longas.",
+    "descriptionLinkPrefix": "Precisa de grades exclusivas para Instagram compatíveis com a atualização do feed de 2025? Visite nosso site parceiro ",
+    "descriptionLinkSuffix": " para esse fluxo dedicado."
+  },
   "tool": {
     "uploadPrompt": "Arraste arquivos aqui ou clique para carregar",
     "uploadButton": "Escolher Imagem",
@@ -87,15 +93,68 @@
     "terms": "Termos de Serviço"
   },
   "advantages": {
-    "title": "Vantagens do AI Image Splitter",
-    "freeOnline": {
-      "title": "Divisor de Imagem Online Completamente Gratuito",
-      "description": "Use nossa ferramenta divisor de imagem online sem baixar ou instalar qualquer software. Simplesmente visite <a href=\"/\" class=\"text-primary-600 hover:text-primary-700 underline font-medium\">aiimagesplitter.com</a> no seu navegador para dividir imagens online. Completamente gratuito, sem taxas ocultas e sem necessidade de registro de conta."
+    "title": "Recursos do AI Image Splitter",
+    "group1": {
+      "items": [
+        {
+          "title": "Divisor de imagem online totalmente gratuito",
+          "description": "Uma ferramenta realmente gratuita para dividir imagem online: sem login, sem marcas d'água e sem paywalls ocultos."
+        },
+        {
+          "title": "Presets de proporção flexíveis",
+          "description": "Presets Padrão/4:5/3:4/1:1 e grades personalizadas mantêm alinhados os layouts para Instagram, TikTok, Pinterest, Facebook e impressão A4."
+        },
+        {
+          "title": "Cobertura para múltiplos cenários",
+          "description": "Crie carrosséis no Instagram, colagens no Pinterest, posts longos no TikTok ou páginas prontas para impressão A4/PDF em segundos."
+        }
+      ]
     },
-    "easyInstagram": {
-      "title": "Crie Facilmente Grades Instagram e Posts de Carrossel",
-      "description": "Nosso divisor de imagem é projetado especificamente para profissionais de mídias sociais e usuários de e-commerce. Use nosso criador de grade Instagram gratuito para gerar layouts de grade Instagram perfeitos e imagens de carrossel com um clique, tornando seu conteúdo mais envolvente."
+    "group2": {
+      "items": [
+        {
+          "title": "Fluxo amigável para iniciantes",
+          "description": "Upload por arrastar e soltar, caixas de corte guiadas e pré-visualizações instantâneas permitem finalizar grades profissionais em menos de um minuto."
+        },
+        {
+          "title": "Segurança local no navegador",
+          "description": "Todo o processamento acontece no dispositivo; arquivos de clientes, fotos pessoais e materiais confidenciais nunca saem do seu navegador."
+        },
+        {
+          "title": "Divisões ilimitadas e exportação em um clique",
+          "description": "Divida quantas imagens quiser, gere JPG/PNG/WebP/BMP e baixe arquivos individuais ou pacotes ZIP com um único clique."
+        }
+      ]
     }
+  },
+  "useCases": {
+    "title": "Casos de uso do AI Image Splitter",
+    "items": [
+      {
+        "title": "Grades sociais e carrosséis",
+        "description": "Use o AI Image Splitter para criar grades e carrosséis no Instagram ou TikTok: divida uma foto em cortes 4:5 ou 3:4 e mantenha o feed alinhado."
+      },
+      {
+        "title": "Quadros do Pinterest e colagens de lojas",
+        "description": "Separe imagens online para quadros do Pinterest ou vitrines Etsy/Shopify, mantendo cada pin, tile ou banner de produto com o corte ideal."
+      },
+      {
+        "title": "Folhas A4, PDFs e materiais de treinamento",
+        "description": "Responda a buscas como 'dividir imagem em folhas A4' cortando pôsteres ou infográficos em páginas imprimíveis, PDFs e apostilas."
+      },
+      {
+        "title": "Seções web e painéis multitelas",
+        "description": "Use o divisor de grade para fragmentar a hero image de landing pages ou dashboards em módulos precisos que ocupam múltiplas colunas, monitores ou painéis LED."
+      },
+      {
+        "title": "Histórias longas e experiências de rolagem",
+        "description": "Monte colagens verticais e depois divida para stories do TikTok, blogs com rolagem contínua ou reels em estilo HQ—perfeito para storytelling."
+      },
+      {
+        "title": "Tutoriais e treinamentos em equipe",
+        "description": "Faça um tutorial 'upload → escolher proporção → dividir' em menos de um minuto e permita que alunos ou colegas exportem grades profissionais com um clique."
+      }
+    ]
   },
   "language": {
     "switchLanguage": "Mudar Idioma"
@@ -125,55 +184,81 @@
   },
   "faq": {
     "title": "Perguntas Frequentes",
-    "description": "Guia completo sobre divisores de imagem e criadores de grade do Instagram.",
+    "description": "Respostas para as buscas mais comuns sobre divisores de imagem online, grids do Instagram e impressões A4.",
     "whatIsImageSplitter": {
-      "question": "O que é um divisor de imagens e como funciona?",
-      "answer": "Um divisor de imagens é uma ferramenta digital que divide uma única imagem em várias partes menores. Nosso divisor de imagens baseado na web usa algoritmos avançados para dividir suas imagens em grades ou segmentos perfeitos. Basta fazer upload da sua imagem, escolher seu método de divisão de imagem e baixar os resultados. Todo processamento acontece diretamente no seu navegador, garantindo privacidade e segurança da imagem."
+      "question": "O que é o AI Image Splitter e por que ele é o melhor divisor de imagem online?",
+      "answer": "AI Image Splitter é um divisor de imagem online gratuito que roda 100% no navegador. Você faz upload de JPG, PNG, GIF ou WebP (até 50 MB) e ele divide a foto em partes iguais para Instagram, Facebook, Pinterest, TikTok ou impressões A4. Como tudo acontece localmente, o processo é rápido, mantém a qualidade e não envia nada para servidores externos."
     },
     "howToSplitImage": {
-      "question": "Como dividir uma imagem em várias partes?",
-      "answer": "É simples: 1) Faça upload da sua imagem (suporta JPG, PNG, GIF, etc., máximo 50MB), 2) Escolha seu modo de divisão preferido - divisão vertical, divisão horizontal ou divisão em grade, 3) Ajuste linhas e colunas, 4) Clique no botão dividir imagem, 5) Baixe segmentos individuais ou obtenha um pacote ZIP."
+      "question": "Como dividir imagem online passo a passo?",
+      "answer": "Siga o tutorial rápido: 1) faça upload da foto, 2) escolha o preset (Padrão, 4:5, 3:4 ou 1:1) e defina linhas/colunas, 3) arraste o quadro de corte para o melhor enquadramento, 4) clique em 'Dividir Imagem', 5) baixe os arquivos individuais ou o pacote ZIP."
     },
     "instagramGridMaker": {
-      "question": "Posso usar esta ferramenta para criar posts em grade do Instagram?",
-      "answer": "Claro! Nosso divisor de imagens é perfeito para criar layouts de grade do Instagram e posts em carrossel. Formatos populares incluem grades 3x3 para quebra-cabeças do feed, tiras para stories em carrossel e dimensões personalizadas para layouts únicos. A saída garante compatibilidade perfeita com os requisitos do Instagram."
+      "question": "Posso usar o divisor de imagem para grids e carrosséis do Instagram?",
+      "answer": "Sim. Ele funciona como grid maker e carousel splitter para Instagram. Gere puzzles 3x3, tiras 1x3 para reels ou painéis verticais para stories e baixe imagens prontas para postar. Precisa de grids profissionais para o feed 2025? Visite nossa irmã <a href=\"https://igridmaker.com\" target=\"_blank\" rel=\"noopener\">igridmaker.com</a>."
     },
     "splitImage3x3": {
-      "question": "Como criar uma grade 3x3 para o Instagram?",
-      "answer": "Para criar grades 3x3 perfeitas do Instagram: 1) Faça upload de uma imagem quadrada para melhores resultados, 2) Selecione o modo 'Grade' das opções, 3) Defina tanto linhas quanto colunas como 3, 4) Divida a imagem. Isso cria 9 segmentos iguais que formam um quebra-cabeça completo quando postados sequencialmente no Instagram."
+      "question": "Como dividir imagem em 3x3, 2x3 ou quebra-cabeças?",
+      "answer": "Ative o modo 'Grade', defina linhas/colunas (3x3, 2x3, 3x1 etc.) e posicione o quadro de corte sobre o assunto. Se quiser dividir a imagem inteira, deixe no modo Padrão e clique direto em 'Dividir Imagem'. A pré-visualização garante que cada bloco esteja correto antes de publicar."
     },
     "supportedFormats": {
-      "question": "Quais formatos de arquivo são suportados?",
-      "answer": "Nosso divisor de imagens suporta todos os formatos de imagem comuns, incluindo JPG, PNG, GIF e WebP. Você também pode exportar imagens divididas nos formatos JPG, PNG, WebP ou BMP. Tamanho máximo de arquivo é 50MB com dimensões até 8192x8192 pixels para desempenho ideal."
+      "question": "Quais formatos de arquivo posso enviar e baixar?",
+      "answer": "Upload: JPG, PNG, GIF e WebP até 50 MB ou 8192×8192 px. Download: JPG, PNG, WebP ou BMP, com opção de baixar arquivo por arquivo ou tudo em ZIP, ideal para carrossel, dividir imagem em folhas A4 ou criar PDF."
     },
     "freeToUse": {
-      "question": "Esta ferramenta é completamente gratuita?",
-      "answer": "Sim, nosso divisor de imagens é 100% gratuito sem custos ocultos. Não há marcas d'água nas suas imagens, não é necessário registro de conta e não há limites de uso. Use livremente para projetos pessoais, conteúdo comercial ou propósitos empresariais."
+      "question": "O AI Image Splitter é realmente gratuito e sem marca-d'água?",
+      "answer": "Totalmente. Não há paywall escondido, não precisa de cadastro, não existe limite de uso e nunca aplicamos marca-d'água — perfeito para projetos pessoais ou comerciais."
     },
     "imageQuality": {
-      "question": "A qualidade da imagem dividida será afetada?",
-      "answer": "De forma alguma! Usamos técnicas de processamento sem perdas para manter a qualidade original da sua imagem. Imagens divididas mantêm a mesma resolução e claridade da sua imagem fonte, garantindo que seu conteúdo de mídia social pareça profissional."
+      "question": "A qualidade das imagens divididas é preservada?",
+      "answer": "Sim. O quadro de corte trava o enquadramento e o pipeline mantém a resolução original, então carrosséis, pôsteres e painéis Pinterest continuam nítidos."
     },
     "privacySecurity": {
-      "question": "Meu conteúdo enviado é seguro?",
-      "answer": "Sua privacidade é nossa principal prioridade. Usando nosso divisor de imagens, todo processamento de imagem acontece diretamente no seu navegador - nada é enviado para nossos servidores. Suas imagens nunca deixam seu dispositivo, e não armazenamos ou acessamos qualquer do seu conteúdo. Completamente privado e seguro."
+      "question": "Meus arquivos ficam seguros?",
+      "answer": "Todo o processamento ocorre no navegador; nada é enviado ou armazenado. Fechou a aba, tudo desaparece — excelente para assets de clientes ou fotos confidenciais."
     },
     "mobileFriendly": {
-      "question": "Esta ferramenta funciona em dispositivos móveis?",
-      "answer": "Claro! Nosso divisor de imagens é totalmente responsivo e funciona perfeitamente em smartphones e tablets. Você pode fazer upload de imagens da sua galeria de fotos, processá-las e baixar resultados diretamente no seu dispositivo. A interface se adapta automaticamente a todos os tamanhos de tela para uma experiência suave."
+      "question": "Funciona em celular e tablet?",
+      "answer": "O site é responsivo: faça upload pelo iOS, Android ou tablet, ajuste o quadro com gestos e salve os cortes direto no rolo da câmera ou no drive."
     },
     "batchProcessing": {
-      "question": "Posso dividir várias imagens ao mesmo tempo?",
-      "answer": "Atualmente, a ferramenta processa uma imagem por vez para garantir desempenho e qualidade ideais. No entanto, o processamento é rápido - você pode dividir rapidamente várias imagens repetindo os passos simples de upload e processamento."
+      "question": "Consigo dividir imagem em folhas A4 ou várias páginas?",
+      "answer": "Sim. Escolha o preset Padrão ou 1:1, defina quantas linhas/colunas deseja e divida a arte. Cada fatia pode ser impressa em folha A4, montada como pôster ou inserida em PDF — ideal para buscas como 'dividir imagem em folhas A4'."
     },
     "customDimensions": {
-      "question": "Posso criar dimensões de grade personalizadas com seu divisor de imagens?",
-      "answer": "Claro! Além de predefinições populares como 3x3 e 2x3, você pode criar dimensões de grade personalizadas até 10x10. Simplesmente ajuste as linhas e colunas para atender suas necessidades específicas, seja para layouts únicos de mídia social ou projetos especiais."
+      "question": "Posso travar proporções 4:5, 3:4 ou 1:1 e criar grades personalizadas?",
+      "answer": "Use o botão 'Proporção' para selecionar Padrão, 4:5, 3:4 ou 1:1; depois configure de 1×1 até 10×10 (3×3, 2×3 etc.). O export respeita tanto a proporção quanto a grade, atendendo Instagram, TikTok, Pinterest e impressões A4."
     },
     "cta": {
       "title": "Pronto para criar grades incríveis?",
       "description": "Comece a dividir suas imagens e produza conteúdo envolvente para as redes sociais.",
       "button": "Começar agora"
     }
+  },
+  "proTips": {
+    "title": "Como aproveitar ao máximo o AI Image Splitter",
+    "subtitle": "Dicas avançadas para dividir imagem online",
+    "items": [
+      {
+        "title": "Escolha o preset certo antes de dividir",
+        "description": "Antes de dividir imagem online, selecione Padrão, 4:5, 3:4, 1:1 ou uma grade customizada conforme o destino (grade Instagram, carrossel TikTok, quadros Pinterest ou folhas A4 para impressão)."
+      },
+      {
+        "title": "Ajuste a caixa de corte para proteger o assunto",
+        "description": "Após o upload, arraste a caixa de corte para que produtos, textos ou skyline fiquem em cada fatia; em banners longos, mantenha margens equilibradas e ajuste filas/colunas."
+      },
+      {
+        "title": "Pré-visualize e exporte ZIP + arquivos individuais",
+        "description": "Use o preview instantâneo para refinar linhas e colunas, depois baixe arquivos unitários e o pacote ZIP para publicar ou arquivar sem refazer a divisão."
+      },
+      {
+        "title": "Defina o formato de saída com antecedência",
+        "description": "JPG funciona bem nas redes sociais, PNG mantém transparência, WebP/BMP servem para ativos sem perdas. Escolher o formato desde o início evita conversões extras."
+      },
+      {
+        "title": "Aproveite a privacidade no navegador e a interface multilíngue",
+        "description": "Todo o processamento ocorre localmente no navegador, e você pode alternar o idioma para guiar clientes ou colegas pelo fluxo “upload → proporção → dividir → download”."
+      }
+    ]
   }
 }

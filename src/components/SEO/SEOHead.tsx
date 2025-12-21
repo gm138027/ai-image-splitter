@@ -49,6 +49,26 @@ const SEOHead: React.FC<SEOHeadProps> = ({
     returnObjects: true,
   }) as Record<string, string>
   const featureList = featureListData ? Object.values(featureListData) : []
+  const useCaseItems = t('useCases.items', {
+    returnObjects: true
+  }) as { title: string; description: string }[]
+  const proTipItems = t('proTips.items', {
+    returnObjects: true
+  }) as { title: string; description: string }[]
+  const howItWorksItems = [
+    {
+      title: t('howItWorks.step1Title'),
+      description: t('howItWorks.step1Description')
+    },
+    {
+      title: t('howItWorks.step2Title'),
+      description: t('howItWorks.step2Description')
+    },
+    {
+      title: t('howItWorks.step3Title'),
+      description: t('howItWorks.step3Description')
+    }
+  ]
 
   const getStructuredData = () => {
     if (!includeStructuredData) return null
@@ -114,7 +134,61 @@ const SEOHead: React.FC<SEOHeadProps> = ({
       }
     }
 
-    return [organizationData, websiteData, webApplicationData]
+    const aboutSectionData = {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": t('aboutTool.title'),
+      "description": t('aboutTool.descriptionMain'),
+      "url": currentUrl
+    }
+
+    const useCasesSchema = useCaseItems.length
+      ? {
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "name": t('useCases.title'),
+          "itemListElement": useCaseItems.map((item, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "name": item.title,
+            "description": item.description
+          }))
+        }
+      : null
+
+    const proTipsSchema = proTipItems.length
+      ? {
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          "name": t('proTips.title'),
+          "description": t('proTips.subtitle'),
+          "step": proTipItems.map((item) => ({
+            "@type": "HowToStep",
+            "name": item.title,
+            "text": item.description
+          }))
+        }
+      : null
+    const howItWorksSchema = {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": t('howItWorks.title'),
+      "step": howItWorksItems.map((item) => ({
+        "@type": "HowToStep",
+        "name": item.title,
+        "text": item.description
+      }))
+    }
+
+    return [
+      organizationData,
+      websiteData,
+      webApplicationData,
+      aboutSectionData,
+      howItWorksSchema,
+      useCasesSchema,
+      proTipsSchema
+    ].filter(Boolean)
   }
 
   const structuredDataArray = getStructuredData()

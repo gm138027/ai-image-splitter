@@ -14,6 +14,12 @@
     "title": "Pembelah Imej Online dan Pembuat Grid",
     "description": "Jika anda sedang mencari <link>bagaimana membahagi satu imej kepada beberapa imej</link>, anda telah datang ke tempat yang betul. Pembelah imej kami sempurna bukan sahaja untuk pembahagian imej dalam talian malah juga untuk penciptaan grid Instagram, tanpa perlu pendaftaran dan sepenuhnya percuma."
   },
+  "aboutTool": {
+    "title": "Apakah AI Image Splitter?",
+    "descriptionMain": "AI Image Splitter ialah alat pembahagi imej dalam talian percuma dan pembuat grid foto. Semua pemprosesan berlaku dalam pelayar anda, jadi tiada fail dimuat naik atau disimpan. Gunakan pratetap nisbah terbina (Default / 4:5 / 3:4 / 1:1), kotak potong yang boleh diseret, tetapan baris dan lajur yang fleksibel serta muat turun ZIP atau fail tunggal dalam format JPG, PNG, WebP atau BMP untuk menghasilkan potongan bagi Instagram, Facebook, Pinterest, TikTok, cetakan A4 atau kolaj panjang.",
+    "descriptionLinkPrefix": "Perlu grid Instagram khusus yang mengikuti kemas kini feed 2025? Lawati laman saudara kami ",
+    "descriptionLinkSuffix": " untuk aliran kerja tersebut."
+  },
   "tool": {
     "comingSoon": "Alat Pemisah Imej",
     "description": "Fungsi pemisahan imej lanjutan akan tersedia di sini tidak lama lagi. Muat naik imej anda dan pisahkannya menjadi grid yang sempurna untuk media sosial.",
@@ -87,14 +93,38 @@
     "terms": "Syarat Perkhidmatan"
   },
   "advantages": {
-    "title": "Kelebihan AI Image Splitter",
-    "freeOnline": {
-      "title": "Pembelah Imej Online Percuma Sepenuhnya",
-      "description": "Gunakan alat pembelah imej online kami tanpa perlu memuat turun atau memasang sebarang perisian. Cuma layari <a href=\"/\" class=\"text-primary-600 hover:text-primary-700 underline font-medium\">aiimagesplitter.com</a> dalam pelayar anda untuk membelah imej secara online. Percuma sepenuhnya tanpa caj tersembunyi dan tiada pendaftaran akaun diperlukan."
+    "title": "Ciri-Ciri AI Image Splitter",
+    "group1": {
+      "items": [
+        {
+          "title": "Alat pembahagi imej dalam talian yang benar-benar percuma",
+          "description": "Penyelesaian percuma sepenuhnya untuk membahagi imej di dalam talian — tiada log masuk, tiada tera air dan tiada paywall."
+        },
+        {
+          "title": "Pratetap nisbah yang fleksibel",
+          "description": "Pratetap lalai seperti 4:5, 3:4 dan 1:1 bersama grid tersuai memastikan susun atur Instagram, TikTok, Pinterest, Facebook serta helaian A4 kekal kemas."
+        },
+        {
+          "title": "Menampung pelbagai senario",
+          "description": "Hasilkan karusel Instagram, kolaj Pinterest, siaran panjang TikTok atau halaman A4 siap cetak dan modul PDF dalam beberapa saat."
+        }
+      ]
     },
-    "easyInstagram": {
-      "title": "Mudah Cipta Grid Instagram Dan Siaran Carousel",
-      "description": "Pembelah imej kami direka khusus untuk profesional media sosial dan pengguna e-commerce. Gunakan pembuat grid Instagram percuma kami untuk menjana susun atur grid Instagram yang sempurna dan imej carousel dengan satu klik, menjadikan kandungan anda lebih menarik."
+    "group2": {
+      "items": [
+        {
+          "title": "Aliran kerja mesra pemula",
+          "description": "Muat naik tarik-lepas, kotak potong berpanduan dan pratonton segera membantu sesiapa sahaja menyiapkan grid profesional dalam masa kurang daripada seminit."
+        },
+        {
+          "title": "Keselamatan tempatan dalam pelayar",
+          "description": "Semua pemprosesan berlaku pada peranti anda, memastikan aset pelanggan dan foto peribadi kekal selamat."
+        },
+        {
+          "title": "Belah tanpa had & eksport sekali klik",
+          "description": "Belah seberapa banyak imej yang anda mahu, eksport ke JPG/PNG/WebP/BMP dan muat turun ZIP atau fail tunggal dengan satu klik."
+        }
+      ]
     }
   },
   "language": {
@@ -125,55 +155,110 @@
   },
   "faq": {
     "title": "Soalan Lazim",
-    "description": "Panduan lengkap tentang pemisah imej dan pencipta grid Instagram.",
+    "description": "Jawapan untuk carian popular tentang pemisah gambar online, pembuat grid Instagram dan pembahagian A4.",
     "whatIsImageSplitter": {
-      "question": "Apakah pemisah imej dan bagaimana ia berfungsi?",
-      "answer": "Pemisah imej adalah alat digital yang membahagikan satu imej kepada beberapa bahagian yang lebih kecil. Pemisah imej berasaskan web kami menggunakan algoritma canggih untuk memisahkan imej anda kepada grid atau segmen yang sempurna. Hanya muat naik imej anda, pilih kaedah pemisahan imej anda, dan muat turun hasilnya. Semua pemprosesan berlaku terus di pelayar anda, memastikan privasi dan keselamatan imej."
+      "question": "Apakah AI Image Splitter dan mengapa ia dianggap pemisah gambar online terbaik?",
+      "answer": "AI Image Splitter ialah pemisah gambar berasaskan pelayar yang percuma. Muat naik JPG, PNG, GIF atau WebP sehingga 50MB untuk dibahagi kepada kepingan sekata bagi Instagram, Facebook, Pinterest, TikTok atau cetakan A4. Semua pemprosesan berlaku secara lokal, jadi pantas, berkualiti dan tidak memuat naik fail anda."
     },
     "howToSplitImage": {
-      "question": "Bagaimana untuk memisahkan imej kepada beberapa bahagian?",
-      "answer": "Sangat mudah: 1) Muat naik imej anda (menyokong JPG, PNG, GIF, dll., maksimum 50MB), 2) Pilih mod pemisahan pilihan anda - pemisahan menegak, pemisahan mendatar, atau pemisahan grid, 3) Laraskan baris dan lajur, 4) Klik butang pisah imej, 5) Muat turun segmen individu atau dapatkan pakej ZIP."
+      "question": "Bagaimana cara membahagi gambar online langkah demi langkah?",
+      "answer": "Ikuti langkah ini: 1) muat naik gambar, 2) pilih nisbah Default, 4:5, 3:4 atau 1:1 serta baris/kolum, 3) seret kotak potong ke kawasan terbaik, 4) klik \"Split Image\", 5) muat turun kepingan satu persatu atau terus dalam ZIP."
     },
     "instagramGridMaker": {
-      "question": "Bolehkah saya menggunakan alat ini untuk mencipta pos grid Instagram?",
-      "answer": "Sudah tentu! Pemisah imej kami sempurna untuk mencipta susun atur grid Instagram dan pos karusel. Format popular termasuk grid 3x3 untuk teka-teki suapan, jalur untuk cerita karusel, dan dimensi tersuai untuk susun atur unik. Output memastikan keserasian sempurna dengan keperluan Instagram."
+      "question": "Bolehkah alat ini digunakan untuk grid dan carousel Instagram?",
+      "answer": "Ya. Ia berfungsi sebagai pembuat grid Instagram dan carousel splitter: hasilkan puzzle 3x3, jalur 1x3 untuk reels atau panel menegak untuk stories, kemudian muat turun imej sedia pos. Perlukan grid profesional untuk kemas kini feed 2025? Lawati laman saudara kami <a href=\"https://igridmaker.com\" target=\"_blank\" rel=\"noopener\">igridmaker.com</a>."
     },
     "splitImage3x3": {
-      "question": "Bagaimana untuk mencipta grid 3x3 untuk Instagram?",
-      "answer": "Untuk mencipta grid 3x3 Instagram yang sempurna: 1) Muat naik imej segi empat sama untuk hasil terbaik, 2) Pilih mod 'Grid' dari pilihan, 3) Tetapkan kedua-dua baris dan lajur kepada 3, 4) Pisahkan imej. Ini mencipta 9 segmen yang sama yang membentuk teka-teki lengkap apabila dipos secara berturut-turut di Instagram."
+      "question": "Bagaimana mencipta grid 3x3, 2x3 atau gaya puzzle?",
+      "answer": "Aktifkan mod \"Grid\", tetapkan baris/kolum kepada 3x3, 2x3, 3x1 atau sehingga 10x10 dan letakkan kotak potong pada subjek utama. Jika mahu membahagi seluruh kanvas, kekalkan mod Default dan klik \"Split Image\" sebaik sahaja dimuat naik. Pratonton memastikan setiap bahagian sudah selari sebelum diterbitkan."
     },
     "supportedFormats": {
-      "question": "Format fail apa yang disokong?",
-      "answer": "Pemisah imej kami menyokong semua format imej biasa, termasuk JPG, PNG, GIF, dan WebP. Anda juga boleh mengeksport imej yang dipisahkan dalam format JPG, PNG, WebP, atau BMP. Saiz fail maksimum ialah 50MB dengan dimensi sehingga 8192x8192 piksel untuk prestasi optimum."
+      "question": "Format apa yang boleh dimuat naik dan dimuat turun?",
+      "answer": "Muat naik menyokong JPG, PNG, GIF, WebP sehingga 50MB atau 8192×8192 piksel. Eksport boleh dibuat dalam JPG, PNG, WebP atau BMP, sama ada satu fail atau pakej ZIP."
     },
     "freeToUse": {
-      "question": "Adakah alat ini sepenuhnya percuma?",
-      "answer": "Ya, pemisah imej kami 100% percuma tanpa kos tersembunyi. Tiada tanda air pada imej anda, tiada pendaftaran akaun diperlukan, dan tiada had penggunaan. Gunakan dengan bebas untuk projek peribadi, kandungan komersial, atau tujuan perniagaan."
+      "question": "Adakah AI Image Splitter benar-benar percuma tanpa tera air?",
+      "answer": "Benar. Tiada caj tersembunyi, tidak perlu daftar masuk, tiada had penggunaan dan kami tidak menambah tera air — sesuai untuk projek peribadi atau komersial."
     },
     "imageQuality": {
-      "question": "Adakah kualiti imej yang dipisahkan akan terjejas?",
-      "answer": "Langsung tidak! Kami menggunakan teknik pemprosesan tanpa kehilangan untuk mengekalkan kualiti imej asal anda. Imej yang dipisahkan mengekalkan resolusi dan kejelasan yang sama seperti imej sumber anda, memastikan kandungan media sosial anda kelihatan profesional."
+      "question": "Adakah kualiti imej kekal tajam selepas dibahagi?",
+      "answer": "Ya. Kotak potong terkunci mengekalkan komposisi pilihan anda dan proses eksport mengekalkan resolusi asal, jadi carousel, poster atau papan Pinterest kekal jelas."
     },
     "privacySecurity": {
-      "question": "Adakah kandungan yang saya muat naik selamat?",
-      "answer": "Privasi anda adalah keutamaan utama kami. Menggunakan pemisah imej kami, semua pemprosesan imej berlaku terus di pelayar anda - tiada apa yang dimuat naik ke pelayan kami. Imej anda tidak pernah meninggalkan peranti anda, dan kami tidak menyimpan atau mengakses mana-mana kandungan anda. Sepenuhnya peribadi dan selamat."
+      "question": "Sejauh mana fail saya selamat ketika membahagi gambar?",
+      "answer": "Semua pemprosesan berlaku di pelayar anda; tiada fail dimuat naik atau disimpan. Menutup tab akan memadam data sementara, jadi bahan klien kekal peribadi."
     },
     "mobileFriendly": {
-      "question": "Adakah alat ini berfungsi pada peranti mudah alih?",
-      "answer": "Sudah tentu! Pemisah imej kami sepenuhnya responsif dan berfungsi dengan sempurna pada telefon pintar dan tablet. Anda boleh muat naik imej dari galeri foto anda, memprosesnya, dan muat turun hasil terus ke peranti anda. Antara muka secara automatik menyesuaikan dengan semua saiz skrin untuk pengalaman yang lancar."
+      "question": "Adakah ia berfungsi di telefon dan tablet?",
+      "answer": "Ya. Laman ini responsif sepenuhnya—muat naik dari iOS, Android atau tablet, laraskan kotak potong menggunakan sentuhan dan simpan kepingan terus ke galeri atau storan awan."
     },
     "batchProcessing": {
-      "question": "Bolehkah saya memisahkan beberapa imej sekaligus?",
-      "answer": "Pada masa ini, alat memproses satu imej pada satu masa untuk memastikan prestasi dan kualiti optimum. Walau bagaimanapun, pemprosesan adalah pantas - anda boleh memisahkan beberapa imej dengan cepat dengan mengulangi langkah muat naik dan proses yang mudah."
+      "question": "Bolehkah saya bahagikan gambar kepada helaian A4 atau beberapa panel cetakan?",
+      "answer": "Boleh. Pilih nisbah mesra A4 seperti Default atau 1:1, tetapkan baris/kolum mengikut jumlah helaian, kemudian bahagikan. Setiap kepingan boleh dicetak pada kertas A4, digabung menjadi poster atau dijadikan PDF—jawapan kepada carian seperti \"dividir imagem em folhas A4\" versi Melayu."
     },
     "customDimensions": {
-      "question": "Bolehkah saya mencipta dimensi grid tersuai dengan pemisah imej anda?",
-      "answer": "Sudah tentu! Selain preset popular seperti 3x3 dan 2x3, anda boleh mencipta dimensi grid tersuai sehingga 10x10. Hanya laraskan baris dan lajur untuk memenuhi keperluan khusus anda, sama ada untuk susun atur media sosial yang unik atau projek khas."
+      "question": "Bolehkah saya mengunci nisbah 4:5, 3:4, 1:1 dan membuat grid tersuai?",
+      "answer": "Gunakan butang \"Aspect Ratio\" untuk memilih Default, 4:5, 3:4 atau 1:1, kemudian tetapkan 1×1 hingga 10×10 termasuk 3×3, 2×3, 3×1. Fungsi split mematuhi nisbah dan grid tersebut agar sesuai untuk Instagram, TikTok, Pinterest atau cetakan A4."
     },
     "cta": {
       "title": "Bersedia untuk Mencipta Susun Atur Grid yang Menakjubkan?",
       "description": "Mula memisahkan imej anda dan cipta kandungan media sosial yang menarik.",
       "button": "Mula Mencipta Sekarang"
     }
+  },
+  "useCases": {
+    "title": "Penggunaan AI Image Splitter",
+    "items": [
+      {
+        "title": "Grid sosial & kiriman karusel",
+        "description": "Gunakan AI Image Splitter untuk grid Instagram, cerita TikTok atau karusel Pinterest; pecahkan foto kepada potongan 4:5 atau 3:4 supaya setiap panel selari."
+      },
+      {
+        "title": "Papan Pinterest & kolaj kedai",
+        "description": "Belah moodboard, lookbook atau banner produk untuk Pin, tile atau gambar produk Etsy/Shopify agar visual kekal seragam."
+      },
+      {
+        "title": "Cetakan A4, PDF dan bahan latihan",
+        "description": "Pisahkan poster atau infografik kepada helaian A4, slaid PDF atau modul latihan untuk memenuhi permintaan “split image into A4 sheets/PDF”."
+      },
+      {
+        "title": "Bahagian web & paparan berbilang skrin",
+        "description": "Gunakan grid splitter bagi memecah hero landing page atau dashboard menjadi modul tepat untuk beberapa kolum, monitor atau dinding LED."
+      },
+      {
+        "title": "Cerita panjang & pengalaman skrol",
+        "description": "Gabungkan hasil seni menjadi kolaj tinggi, kemudian belah untuk story TikTok, blog panjang atau reels gaya komik bagi storytelling yang memikat."
+      },
+      {
+        "title": "Tutorial & panduan pasukan",
+        "description": "Jalankan tutorial “muat naik → pilih nisbah → belah” dalam kurang satu minit supaya pelajar atau ahli pasukan boleh mengeksport grid profesional dengan segera."
+      }
+    ]
+  },
+  "proTips": {
+    "title": "Cara mendapatkan pengalaman terbaik dengan AI Image Splitter",
+    "subtitle": "Tip lanjutan untuk proses pembahagian imej",
+    "items": [
+      {
+        "title": "Padankan nisbah dengan platform sasaran",
+        "description": "Sebelum membahagi gambar, pilih preset lalai, 4:5, 3:4, 1:1 atau grid tersuai yang sesuai untuk grid atau karusel Instagram, cerita TikTok, papan Pinterest serta susun atur cetakan A4."
+      },
+      {
+        "title": "Seret kotak potong agar subjek utama kekal",
+        "description": "Selepas memuat naik, gerakkan kotak potong yang terkunci supaya produk, teks atau garisan langit kekal di setiap potongan; bagi banner panjang, seimbangkan margin kiri dan kanan sebelum melaras baris/ lajur."
+      },
+      {
+        "title": "Pratonton dahulu, kemudian eksport ZIP dan fail tunggal",
+        "description": "Gunakan pratonton segera untuk menghaluskan jumlah baris dan kolum, kemudian muat turun fail individu serta pakej ZIP supaya mudah diterbitkan atau diarkib."
+      },
+      {
+        "title": "Pilih format keluaran sejak awal",
+        "description": "JPG sesuai untuk media sosial, PNG mengekalkan latar lutsinar manakala WebP/BMP mengekalkan kualiti tanpa hilang maklumat. Menetapkan format di awal menjimatkan masa penukaran."
+      },
+      {
+        "title": "Manfaatkan privasi pelayar dan antara muka berbilang bahasa",
+        "description": "Segala pemprosesan berlaku dalam pelayar anda; tukar ke bahasa Inggeris, Portugis, Indonesia atau lain-lain untuk memandu pasukan melalui aliran “muat naik → pilih nisbah → belah → muat turun”."
+      }
+    ]
   }
 }
