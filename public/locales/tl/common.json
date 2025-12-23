@@ -260,5 +260,11 @@
         "description": "Lahat ng pagpoproseso ay nasa browser mo, at puwede kang magpalit ng wika tulad ng Ingles, Portuges o Filipino upang gabayan ang team sa parehong daloy na “upload → piliin ang ratio → hatiin → mag-download”."
       }
     ]
+  },
+  "blogCta": {
+    "title": "Kailangan mo ba ng kumpletong walkthrough?",
+    "description": "Basahin ang “How to Segment an Image Online” guide para sa mga tip sa ratio, sample grids, at FAQ, pagkatapos bumalik dito para agad na hatiin ang mga larawan.",
+    "button": "Basahin ang buong tutorial",
+    "href": "/blog/image-splitter-online"
   }
 }

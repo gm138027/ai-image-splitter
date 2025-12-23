@@ -1,0 +1,158 @@
+{
+  "seo": {
+    "title": "Cara segmentasi imej dalam talian: panduan pantas",
+    "description": "Pelajari cara membahagi imej secara dalam talian dengan AI Image Splitter: seret kotak potong, pilih nisbah 4:5 atau 3:4, dan eksport 3, 6, 9+ bahagian untuk media sosial secara percuma.",
+    "keywords": "cara bahagikan imej online,panduan segmentasi imej,pecahkan foto kepada 3 6 9 bahagian,tutorial image splitter online,nisbah 4:5 3:4"
+  },
+  "hero": {
+    "eyebrow": "Tutorial",
+    "title": "Cara segmentasi imej dalam talian: senario & panduan langkah demi langkah",
+    "subtitle": "Ikuti tutorial ini untuk membahagi foto secara online, mengunci nisbah Default / 4:5 / 3:4 / 1:1, menyeret kotak potong dan mengeksport 3, 6, 9+ bahagian tanpa memasang perisian.",
+    "meta": {
+      "readingTime": "Bacaan 6 min",
+      "updated": "Dikemas kini 20 Dis 2025"
+    },
+    "coverImage": "/images/blog/image-splitter-online-cover.jpg",
+    "coverAlt": "Ilustrasi tutorial dengan potongan imej dan preset nisbah"
+  },
+  "intro": {
+    "title": "Mengapa perlu belajar segmentasi imej dalam talian?",
+    "paragraphs": [
+      "Membahagi imej secara online membantu penulis blog, pendidik dan pereka mengawal masa muat, menyelaras naratif dan menyediakan fail sedia cetak tanpa membuka aplikasi desktop yang berat. Kunci nisbah, seret kotak potong dan alat akan menjana bahagian yang sama secara automatik.",
+      "Di bawah ini kami senaraikan sebab paling biasa untuk segmentasi imej online dan empat aliran kerja nisbah praktikal dalam AI Image Splitter. Semuanya berjalan secara tempatan di pelayar. Bila sudah sedia, buka AI Image Splitter dan mula membahagi imej dalam beberapa minit."
+    ],
+    "cta": {
+      "label": "Buka AI Image Splitter dan mula bahagikan imej online",
+      "href": "/"
+    }
+  },
+  "scenarios": {
+    "title": "Senario tipikal segmentasi imej online",
+    "items": [
+      {
+        "title": "Galeri web & blog",
+        "description": "Bahagikan gambar hero besar kepada bahagian kecil supaya setiap jubin dimuatkan berperingkat di artikel panjang."
+      },
+      {
+        "title": "Pembentangan produk",
+        "description": "Pisahkan poster atau rajah kepada beberapa slaid untuk PDF, dek PPT atau demo berbilang skrin."
+      },
+      {
+        "title": "Cetakan A4 & kolaj",
+        "description": "Tukar satu poster kepada helaian A4 yang boleh dicetak, dipotong dan digabungkan secara luar talian."
+      },
+      {
+        "title": "Cerita panjang atau pengalaman skrol",
+        "description": "Bahagikan karya menegak kepada seksyen sama rata untuk blog, komik atau kandungan gaya story."
+      }
+    ]
+  },
+  "cases": {
+    "title": "Tutorial: cara segmentasi imej online dengan empat nisbah",
+    "items": [
+      {
+        "id": "default",
+        "label": "Nisbah default",
+        "heading": "Segmentasi dalam nisbah default untuk galeri blog",
+        "description": "Kekalkan nisbah asal apabila anda hanya memerlukan potongan lebih ringan untuk blog atau dokumentasi.",
+        "steps": [
+          "Muat naik imej dan kekalkan nisbah pada Default.",
+          "Pilih grid (misalnya 2x3) dan seret kotak potong sehingga kadaran tepat.",
+          "Klik \"Split Image\" untuk membahagi fail secara online dan muat turun setiap bahagian (fail tunggal atau ZIP)."
+        ],
+        "image": "/images/blog/image-splitter-case-default.jpg",
+        "imageAlt": "Contoh pembahagian nisbah default"
+      },
+      {
+        "id": "ratio45",
+        "label": "Nisbah 4:5",
+        "heading": "Segmentasi cerita menegak dengan nisbah 4:5",
+        "description": "Kunci kanvas kepada 4:5 untuk pengalaman skrol, poster tinggi atau papan cerita menegak.",
+        "steps": [
+          "Muat naik karya dan pilih nisbah 4:5.",
+          "Tetapkan grid seperti 1x3 atau 1x4 mengikut bilangan bahagian bertindan yang anda perlukan.",
+          "Pratonton dan eksport. Jika anda perlukan susun atur khusus feed Instagram, lawati igridmaker.com."
+        ],
+        "image": "/images/blog/image-splitter-case-45.jpg",
+        "imageAlt": "Contoh pembahagian nisbah 4:5"
+      },
+      {
+        "id": "ratio34",
+        "label": "Nisbah 3:4",
+        "heading": "Segmentasi seimbang dengan nisbah 3:4",
+        "description": "3:4 sangat sesuai untuk slaid PDF atau PPT yang memerlukan bingkai yang seimbang.",
+        "steps": [
+          "Muat naik poster dan pilih nisbah 3:4.",
+          "Pilih grid (seperti 2x2) yang padan dengan jumlah slaid yang ingin ditunjukkan.",
+          "Bahagikan imej secara online dan masukkan setiap bahagian ke dalam dek atau dokumen."
+        ],
+        "image": "/images/blog/image-splitter-case-34.jpg",
+        "imageAlt": "Contoh pembahagian nisbah 3:4"
+      },
+      {
+        "id": "ratio11",
+        "label": "Nisbah 1:1",
+        "heading": "Potongan segi empat sama untuk kolaj dan susun atur Bento",
+        "description": "Gunakan 1:1 apabila anda memerlukan segi empat sama seragam untuk kolaj, grid Bento atau jubin cetak.",
+        "steps": [
+          "Muat naik imej asal dan pilih nisbah 1:1.",
+          "Tetapkan grid seperti 3x3 atau 4x4, seret kotak potong dan pratonton.",
+          "Muat turun segi empat sama untuk kolaj, susun atur Bento atau cetakan A4. Untuk puzzle Instagram khusus, pergi ke igridmaker.com."
+        ],
+        "image": "/images/blog/image-splitter-case-11.jpg",
+        "imageAlt": "Contoh pembahagian nisbah 1:1"
+      }
+    ]
+  },
+  "features": {
+    "title": "Mengapa gunakan AI Image Splitter untuk segmentasi imej online",
+    "items": [
+      {
+        "title": "Preset nisbah & potongan berpandu",
+        "description": "Tukar segera antara Default, 4:5, 3:4 dan 1:1 sambil mengekalkan subjek di tengah."
+      },
+      {
+        "title": "Gabungan grid fleksibel",
+        "description": "Tetapkan sebarang baris dan lajur (daripada 1x1 hingga 10x10+ bergantung resolusi) untuk jumlah potongan yang diinginkan."
+      },
+      {
+        "title": "Pratonton & eksport kelompok",
+        "description": "Pratonton setiap potongan sebelum mengeksport JPG, PNG, WebP atau BMP, kemudian muat turun fail tunggal atau pakej ZIP."
+      },
+      {
+        "title": "Peribadi dan percuma",
+        "description": "Seluruh proses berlaku dalam pelayar, tiada yang dimuat naik. Percuma, peribadi dan tanpa watermark."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Soalan lazim tentang segmentasi imej online",
+    "items": [
+      {
+        "question": "Perlukah saya memasang perisian untuk membahagi imej online?",
+        "answer": "Tidak. Muat naik melalui pelayar, pilih nisbah dan grid, klik \"Split Image\" dan muat turun potongan. 100% dalam talian dan percuma."
+      },
+      {
+        "question": "Adakah had jumlah potongan?",
+        "answer": "Anda boleh cipta sebanyak mana yang dibenarkan oleh resolusi imej. Laraskan kombinasi baris/lajur mengikut kegunaan."
+      },
+      {
+        "question": "Adakah kualiti imej akan menurun?",
+        "answer": "Tidak. Kotak potong hanya mengawal pembingkaian, jadi potongan eksport mengekalkan resolusi asal dan sedia dicetak."
+      },
+      {
+        "question": "Format apa yang boleh dieksport?",
+        "answer": "JPG, PNG, WebP dan BMP disokong. Muat turun fail individu atau pakej ZIP selepas siap."
+      },
+      {
+        "question": "Di mana membuat grid khusus feed Instagram?",
+        "answer": "Gunakan tutorial ini untuk segmentasi umum. Untuk puzzle atau susun atur feed khusus, lawati laman saudara kami igridmaker.com."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Sedia membahagi imej online?",
+    "description": "Muat naik foto, kunci nisbah Default / 4:5 / 3:4 / 1:1, tetapkan grid dan eksport 3/6/9+ potongan dalam kurang daripada satu minit tanpa daftar, tanpa muat turun, tanpa watermark. Mahu terus cuba aliran kerja ini? Buka AI Image Splitter dan ikut langkahnya sekarang.",
+    "button": "Buka AI Image Splitter"
+  }
+}

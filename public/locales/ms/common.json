@@ -260,5 +260,11 @@
         "description": "Segala pemprosesan berlaku dalam pelayar anda; tukar ke bahasa Inggeris, Portugis, Indonesia atau lain-lain untuk memandu pasukan melalui aliran “muat naik → pilih nisbah → belah → muat turun”."
       }
     ]
+  },
+  "blogCta": {
+    "title": "Perlu panduan lengkap?",
+    "description": "Baca panduan “Cara segmentasi imej dalam talian” untuk tip nisbah, contoh grid dan FAQ, kemudian kembali ke sini untuk terus membahagi imej.",
+    "button": "Baca tutorial penuh",
+    "href": "/blog/image-splitter-online"
   }
 }

@@ -1,0 +1,158 @@
+{
+  "seo": {
+    "title": "如何在线分割图片——快速图像切片指南",
+    "description": "学习如何在线分割图片：拖拽裁剪框、锁定 4:5 或 3:4 比例并导出 3/6/9 张切片，全程浏览器处理、完全免费。",
+    "keywords": "在线分割图片,图像分割教程,4:5 比例裁剪,3:4 比例切片,图片分割工具"
+  },
+  "hero": {
+    "eyebrow": "教程",
+    "title": "如何在线分割图片：使用场景与教程",
+    "subtitle": "跟随本教程在线分割图片，锁定默认 / 4:5 / 3:4 / 1:1 比例、拖拽裁剪框，一次导出 3、6、9 张以上切片，无需安装软件。",
+    "meta": {
+      "readingTime": "6 分钟阅读",
+      "updated": "更新于 2025-12-20"
+    },
+    "coverImage": "/images/blog/image-splitter-online-cover.jpg",
+    "coverAlt": "Image Splitter 通用教程封面插画"
+  },
+  "intro": {
+    "title": "为什么要学会如何在线分割图片？",
+    "paragraphs": [
+      "在线分割图片可以让博客作者、讲师、设计师控制加载速度、保持叙事节奏，并快速准备打印文件，而不必打开笨重的桌面软件。锁定比例、拖动裁剪框，工具就能自动生成等宽切片。",
+      "下面整理了在线分割图片的常见原因，以及在 AI Image Splitter 中对应的四种比例玩法。全部操作都在浏览器本地完成——随时打开 AI Image Splitter，几分钟内就能在线分割图片。"
+    ],
+    "cta": {
+      "label": "打开 AI Image Splitter 在线分割图片",
+      "href": "/"
+    }
+  },
+  "scenarios": {
+    "title": "在线分割图片的常见场景",
+    "items": [
+      {
+        "title": "网页与博客图集",
+        "description": "把整张首屏大图拆成多个切片，让长篇文章按模块渐进加载。"
+      },
+      {
+        "title": "产品讲解与演示文档",
+        "description": "把海报或流程图拆成多张幻灯片，用于 PDF、PPT 或多屏演示。"
+      },
+      {
+        "title": "A4 打印 / 拼贴",
+        "description": "把一张海报切成多张 A4 纸，打印后即可裁剪、重新拼贴。"
+      },
+      {
+        "title": "长图与故事滚动",
+        "description": "把长图或插画切成等份，用于博客、漫画或长滚动故事。"
+      }
+    ]
+  },
+  "cases": {
+    "title": "教程：四种比例教你在线分割图片",
+    "items": [
+      {
+        "id": "default",
+        "label": "默认比例",
+        "heading": "默认比例：在线分割博客或说明文档",
+        "description": "保持原始比例，只是把大图拆成更轻量的切片，适合博客、知识库或产品说明。",
+        "steps": [
+          "上传图片并保持“默认”比例。",
+          "选择网格（例如 2x3），拖动裁剪框让构图更精准。",
+          "点击“分割图像”即可在线完成切片，单图或 ZIP 均可下载。"
+        ],
+        "image": "/images/blog/image-splitter-case-default.jpg",
+        "imageAlt": "默认比例拆分示意"
+      },
+      {
+        "id": "ratio45",
+        "label": "4:5 比例",
+        "heading": "4:5 比例：垂直选图的在线分割",
+        "description": "锁定 4:5 用于长图、竖版海报或滚动式故事，让主题始终居中。",
+        "steps": [
+          "上传素材并选择 4:5 比例。",
+          "根据需要设置 1x3、1x4 等网格，并微调裁剪框。",
+          "预览后导出；如果需要 Instagram Feed 专用布局，请访问 igridmaker.com。"
+        ],
+        "image": "/images/blog/image-splitter-case-45.jpg",
+        "imageAlt": "4:5 比例拆分示意"
+      },
+      {
+        "id": "ratio34",
+        "label": "3:4 比例",
+        "heading": "3:4 比例：平衡型讲解内容",
+        "description": "3:4 适合 PDF、PPT 讲解页，让每个画面都保持相似的可视区域。",
+        "steps": [
+          "上传海报并选择 3:4 比例。",
+          "设置 2x2 等网格，与需要展示的页数保持一致。",
+          "在线分割后，把每张切片插入幻灯片或文档。"
+        ],
+        "image": "/images/blog/image-splitter-case-34.jpg",
+        "imageAlt": "3:4 比例拆分示意"
+      },
+      {
+        "id": "ratio11",
+        "label": "1:1 比例",
+        "heading": "1:1 比例：拼贴与 Bento 网格",
+        "description": "当你需要等宽正方形（拼贴、Bento 布局、A4 平铺）时选择 1:1。",
+        "steps": [
+          "上传原图并选择 1:1 比例。",
+          "设置 3x3、4x4 等网格并拖动裁剪框进行预览。",
+          "下载正方形切片，用于拼贴、Bento 布局或 A4 平铺；如果要制作 Instagram 专用拼图，请前往 igridmaker.com。"
+        ],
+        "image": "/images/blog/image-splitter-case-11.jpg",
+        "imageAlt": "1:1 比例拆分示意"
+      }
+    ]
+  },
+  "features": {
+    "title": "为什么用 AI Image Splitter 在线分割图片",
+    "items": [
+      {
+        "title": "比例预设 + 拖拽裁剪",
+        "description": "默认 / 4:5 / 3:4 / 1:1 一键切换，裁剪框自动锁定主体，方便在线分割。"
+      },
+      {
+        "title": "行列自由组合",
+        "description": "只要原图分辨率够高，就能自由设置 1x1 到 10x10+ 的网格，按需生成切片数量。"
+      },
+      {
+        "title": "预览与批量导出",
+        "description": "先预览再导出 JPG/PNG/WebP/BMP，可单张下载或打包 ZIP。"
+      },
+      {
+        "title": "隐私友好且完全免费",
+        "description": "全程浏览器本地处理，不上传服务器，0 元使用、无水印。"
+      }
+    ]
+  },
+  "faq": {
+    "title": "在线分割图片常见问答",
+    "items": [
+      {
+        "question": "在线分割图片需要安装软件吗？",
+        "answer": "不需要。直接在浏览器上传、选择比例和网格、点击“分割图像”并下载切片即可，全程在线且免费。"
+      },
+      {
+        "question": "在线分割图片有没有数量限制？",
+        "answer": "没有固定限制，只要原图分辨率足够，就可以通过调整行列组合生成任意数量的切片。"
+      },
+      {
+        "question": "在线分割会降低图片清晰度吗？",
+        "answer": "不会。裁剪框只决定取景范围，导出的切片会保留原始分辨率，可直接用于打印。"
+      },
+      {
+        "question": "在线分割完成后可以导出哪些格式？",
+        "answer": "支持 JPG、PNG、WebP、BMP，可选择单张下载或 ZIP 打包。"
+      },
+      {
+        "question": "在哪里制作 Instagram 专用网格？",
+        "answer": "本教程适用于通用拆分；如果你需要 Instagram Feed/拼图，请访问姊妹站 igridmaker.com 获取专门流程。"
+      }
+    ]
+  },
+  "cta": {
+    "title": "准备好在线分割图片了吗？",
+    "description": "上传图片，锁定默认 / 4:5 / 3:4 / 1:1 比例并设置网格，1 分钟内就能导出 3/6/9+ 切片，无需注册、无需下载、无水印。想立即按照本文流程操作吗？点击按钮马上返回 AI Image Splitter。",
+    "button": "跳转回 AI Image Splitter"
+  }
+}

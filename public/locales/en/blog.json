@@ -14,10 +14,19 @@
   "imageAlt": {
     "guideComplete": "Complete Image Splitting Operation Guide",
     "thumbnailImage": "Complete Image Splitting Operation Guide Thumbnail",
-    "coverImage": "Complete Image Splitting Operation Guide Cover"
+    "coverImage": "Complete Image Splitting Operation Guide Cover",
+    "imageSplitterOnline": "General Image Splitter tutorial cover placeholder"
   },
   
   "posts": {
+    "image-splitter-online": {
+      "title": "Image Splitter Tutorial: Ratio Presets & Online Use Cases",
+      "description": "Learn how to split images online for blogs, A4 printing, long scroll stories, and multi-screen layouts. This guide explains when to use Default, 4:5, 3:4, or 1:1 ratios and how to export 3, 6, 9+ slices for free.",
+      "keywords": "image splitter online,image splitter tutorial,split image free,4:5 image splitter,3:4 ratio crop,split long image,A4 printing tutorial",
+      "readingTime": "6 min read",
+      "category": "Tutorial Guide",
+      "coverImageAlt": "Image Splitter tutorial hero illustration"
+    },
     "complete-guide": {
       "title": "How to Split One Image into Multiple Images? Free Instagram Grid Tutorial",
       "description": "Complete tutorial: How to split JPG images into multiple files for free, create perfect Instagram grid layouts. Step-by-step guide using online tools to split photos into multiple images and boost your social media content.",

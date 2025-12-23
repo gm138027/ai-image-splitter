@@ -1,0 +1,158 @@
+{
+  "seo": {
+    "title": "How to Segment an Image Online: Quick Image Segmentation Guide",
+    "description": "Learn how to split image online with AI Image Splitter: drag the crop box, pick 4:5 or 3:4 ratios, and export 3, 6, 9+ slices for social platforms for free.",
+    "keywords": "how to split image online,image segmentation guide,split photo into 3 6 9 parts,online image splitter tutorial,ratio presets 4:5 3:4"
+  },
+  "hero": {
+    "eyebrow": "Tutorial",
+    "title": "How to Segment an Image Online: Use Cases & Step-by-Step Guide",
+    "subtitle": "Follow this tutorial to segment a photo online, lock Default / 4:5 / 3:4 / 1:1 ratios, drag the crop box, and export 3, 6, 9+ slices without installing software.",
+    "meta": {
+      "readingTime": "6 min read",
+      "updated": "Updated Dec 20, 2025"
+    },
+    "coverImage": "/images/blog/image-splitter-online-cover.jpg",
+    "coverAlt": "Tutorial hero showing image slices and ratio presets"
+  },
+  "intro": {
+    "title": "Why learn how to segment an image online?",
+    "paragraphs": [
+      "Segmenting an image online helps bloggers, educators, and designers control load speed, sync storytelling, and prepare print-ready files without opening heavy desktop apps. Lock a ratio, drag a crop box, and the tool generates equal slices automatically.",
+      "Below you'll find the most common reasons to segment an image online plus four practical ratio workflows inside AI Image Splitter. Everything runs locally in your browser. When you're ready, open AI Image Splitter and start segmenting an image online in minutes."
+    ],
+    "cta": {
+      "label": "Open AI Image Splitter and start segmenting images online",
+      "href": "/"
+    }
+  },
+  "scenarios": {
+    "title": "Typical scenarios for segmenting an image online",
+    "items": [
+      {
+        "title": "Web & blog galleries",
+        "description": "Segment a large hero into smaller slices so each tile loads progressively on long-form articles."
+      },
+      {
+        "title": "Product walkthroughs",
+        "description": "Segment posters or diagrams into multiple slides for PDF handouts, PPT decks, or multi-screen demos."
+      },
+      {
+        "title": "A4 printing & collage",
+        "description": "Segment a single poster into A4 sheets that can be printed, trimmed, and assembled offline."
+      },
+      {
+        "title": "Long story or scroll experience",
+        "description": "Segment tall artwork into equal sections for blogs, comics, or scroll-style stories."
+      }
+    ]
+  },
+  "cases": {
+    "title": "Tutorial: how to segment an image online with four ratios",
+    "items": [
+      {
+        "id": "default",
+        "label": "Default ratio",
+        "heading": "Segment images online in the Default ratio for blog galleries",
+        "description": "Keep the original aspect ratio when you simply need lighter slices for blogs or documentation.",
+        "steps": [
+          "Upload your image and keep the ratio on Default.",
+          "Choose the grid (for example 2x3) and drag the crop box until the framing feels right.",
+          "Click Split Image to segment the file online and download each slice (single files or a ZIP)."
+        ],
+        "image": "/images/blog/image-splitter-case-default.jpg",
+        "imageAlt": "Default ratio splitting example"
+      },
+      {
+        "id": "ratio45",
+        "label": "4:5 ratio",
+        "heading": "Segment vertical stories online with the 4:5 ratio",
+        "description": "Lock the canvas to 4:5 for scroll experiences, tall posters, or any vertical storyboard.",
+        "steps": [
+          "Upload the artwork and choose the 4:5 ratio.",
+          "Set a grid like 1x3 or 1x4 depending on how many stacked slices you need.",
+          "Preview and export. If you require Instagram feed-specific layouts, visit igridmaker.com."
+        ],
+        "image": "/images/blog/image-splitter-case-45.jpg",
+        "imageAlt": "4:5 ratio splitting example"
+      },
+      {
+        "id": "ratio34",
+        "label": "3:4 ratio",
+        "heading": "Segment balanced walkthroughs with the 3:4 ratio",
+        "description": "3:4 works well for PDF or PPT slides where you need evenly balanced frames.",
+        "steps": [
+          "Upload the poster and select the 3:4 ratio.",
+          "Pick a grid (such as 2x2) that matches the number of slides you want to showcase.",
+          "Split the image online and drop each slice into your deck or document."
+        ],
+        "image": "/images/blog/image-splitter-case-34.jpg",
+        "imageAlt": "3:4 ratio splitting example"
+      },
+      {
+        "id": "ratio11",
+        "label": "1:1 ratio",
+        "heading": "Segment square slices online for collages and Bento layouts",
+        "description": "Use 1:1 when you want perfectly even squares for collages, Bento grids, or printable tiles.",
+        "steps": [
+          "Upload the original image and pick the 1:1 ratio.",
+          "Set a grid such as 3x3 or 4x4, drag the crop box, and preview.",
+          "Download the squares for collages, Bento layouts, or A4 tile printing. For Instagram-specific puzzles, head to igridmaker.com."
+        ],
+        "image": "/images/blog/image-splitter-case-11.jpg",
+        "imageAlt": "1:1 ratio splitting example"
+      }
+    ]
+  },
+  "features": {
+    "title": "Why use AI Image Splitter to segment images online",
+    "items": [
+      {
+        "title": "Ratio presets & drag-to-adjust",
+        "description": "Switch between Default, 4:5, 3:4, and 1:1 instantly while the guided crop keeps subjects centered as you segment."
+      },
+      {
+        "title": "Flexible grid combinations",
+        "description": "Set any rows and columns (from 1x1 up to 10x10+, limited only by resolution) to match the number of slices you plan to segment."
+      },
+      {
+        "title": "Preview & batch export",
+        "description": "Preview every slice before exporting JPG, PNG, WebP, or BMP, then download single files or a ZIP batch."
+      },
+      {
+        "title": "Privacy-friendly & free",
+        "description": "The entire segmentation process happens in your browser, so nothing is uploaded. It's free, private, and watermark-free."
+      }
+    ]
+  },
+  "faq": {
+    "title": "FAQ about segmenting an image online",
+    "items": [
+      {
+        "question": "Do I need to install software to segment an image online?",
+        "answer": "No. Upload in the browser, pick a ratio and grid, click Split Image, and download the slices. It's 100% online and free."
+      },
+      {
+        "question": "Is there a limit to how many slices I can segment online?",
+        "answer": "You can create as many slices as your image resolution allows. Adjust the row/column combination to match your use case."
+      },
+      {
+        "question": "Will online segmentation reduce image quality?",
+        "answer": "No. The locked crop box only controls the framing, so exported slices keep the original resolution and stay print-ready."
+      },
+      {
+        "question": "Which formats can I export after segmenting images online?",
+        "answer": "JPG, PNG, WebP, and BMP are supported. Download individual files or a ZIP bundle when you finish segmenting."
+      },
+      {
+        "question": "Where can I build Instagram feed-specific grids?",
+        "answer": "Use this tutorial for general segmentation. For Instagram feed puzzles or grid layouts, visit our sister site igridmaker.com."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to segment an image online?",
+    "description": "Upload a photo, lock Default / 4:5 / 3:4 / 1:1 ratios, set your grid, and export 3/6/9+ slices in under a minute with no signup, no downloads, no watermark. Ready to try the workflow? Open AI Image Splitter and apply these steps instantly.",
+    "button": "Open AI Image Splitter"
+  }
+}

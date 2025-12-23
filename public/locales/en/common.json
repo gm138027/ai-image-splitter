@@ -156,6 +156,12 @@
       }
     ]
   },
+  "blogCta": {
+    "title": "Need a full walkthrough?",
+    "description": "Read the “How to Segment an Image Online” guide for ratio tips, sample grids, and FAQs, then come back here to split your images instantly.",
+    "button": "Read the full tutorial",
+    "href": "/blog/image-splitter-online"
+  },
   "language": {
     "switchLanguage": "Switch Language"
   },

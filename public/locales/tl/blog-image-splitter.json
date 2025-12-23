@@ -1,0 +1,158 @@
+{
+  "seo": {
+    "title": "Paano mag-segment ng imahe online: mabilis na gabay",
+    "description": "Alamin kung paano hatiin ang larawan online gamit ang AI Image Splitter: hilahin ang crop box, pumili ng 4:5 o 3:4 na ratio, at i-export ang 3, 6, 9+ na hiwa para sa social media nang libre.",
+    "keywords": "paano hatiin ang larawan online,gabay sa segmentation ng imahe,hatiin ang litrato sa 3 6 9 na bahagi,tutorial sa online image splitter,ratio 4:5 3:4"
+  },
+  "hero": {
+    "eyebrow": "Tutorial",
+    "title": "Paano mag-segment ng imahe online: mga gamit at hakbang-hakbang na gabay",
+    "subtitle": "Sundin ang tutorial na ito para hatiin ang larawan online, i-lock ang Default / 4:5 / 3:4 / 1:1 na ratio, hilahin ang crop box, at mag-export ng 3, 6, 9+ na hiwa nang hindi nag-i-install ng software.",
+    "meta": {
+      "readingTime": "6 minutong basa",
+      "updated": "In-update noong 20 Dis 2025"
+    },
+    "coverImage": "/images/blog/image-splitter-online-cover.jpg",
+    "coverAlt": "Ilustrasyong nagpapakita ng mga hiwang imahe at mga preset na ratio"
+  },
+  "intro": {
+    "title": "Bakit kailangang matutong mag-segment ng imahe online?",
+    "paragraphs": [
+      "Tumutulong ang online na segmentation sa mga blogger, guro, at designer na kontrolin ang bilis ng pag-load, panatilihing naka-sync ang kuwento, at maghanda ng mga file na handang i-print nang hindi nagbubukas ng mabibigat na desktop app. I-lock lang ang ratio, hilahin ang crop box, at awtomatikong gagawa ng pantay na hiwa ang tool.",
+      "Makikita sa ibaba ang pinakakaraniwang dahilan para mag-segment ng imahe online kasama ang apat na praktikal na daloy sa AI Image Splitter. Lahat ay tumatakbo nang lokal sa browser. Kapag handa ka na, buksan ang AI Image Splitter at magsimulang mag-segment ng larawan sa loob ng ilang minuto."
+    ],
+    "cta": {
+      "label": "Buksan ang AI Image Splitter at magsimulang mag-segment online",
+      "href": "/"
+    }
+  },
+  "scenarios": {
+    "title": "Karaniwang senaryo para sa online segmentation",
+    "items": [
+      {
+        "title": "Web at blog gallery",
+        "description": "Hatiin ang malaking hero image sa mas maliliit na hiwa upang paunti-unting mag-load ang bawat tile sa mahahabang artikulo."
+      },
+      {
+        "title": "Walkthrough ng produkto",
+        "description": "Hatiin ang mga poster o diagram sa maraming slide para sa PDF handout, deck ng PPT, o multi-screen demo."
+      },
+      {
+        "title": "Pagpi-print ng A4 at collage",
+        "description": "Gawing mga pahinang A4 ang isang poster upang mai-print, gupitin, at buuin offline."
+      },
+      {
+        "title": "Mahabang kuwento o karanasan sa pag-scroll",
+        "description": "Hatiin ang matataas na artwork sa magkakapantay na seksyon para sa blog, komiks, o mga story-style post."
+      }
+    ]
+  },
+  "cases": {
+    "title": "Tutorial: paano mag-segment ng imahe online gamit ang apat na ratio",
+    "items": [
+      {
+        "id": "default",
+        "label": "Default na ratio",
+        "heading": "Mag-segment gamit ang default ratio para sa gallery ng blog",
+        "description": "Panatilihin ang orihinal na aspect ratio kapag kailangan mo lang ng mas magagaan na hiwa para sa blog o dokumentasyon.",
+        "steps": [
+          "I-upload ang larawan at panatilihin sa Default ang ratio.",
+          "Piliin ang grid (halimbawa 2x3) at hilahin ang crop box hanggang maayos ang framing.",
+          "I-click ang \"Split Image\" para hatiin ang file online at i-download ang bawat hiwa (indibidwal o ZIP)."
+        ],
+        "image": "/images/blog/image-splitter-case-default.jpg",
+        "imageAlt": "Halimbawa ng paghahati gamit ang default na ratio"
+      },
+      {
+        "id": "ratio45",
+        "label": "Ratio na 4:5",
+        "heading": "Mag-segment ng patayong kuwento gamit ang ratio na 4:5",
+        "description": "I-lock ang canvas sa 4:5 para sa karanasan sa pag-scroll, matataas na poster o anumang patayong storyboard.",
+        "steps": [
+          "I-upload ang artwork at piliin ang ratio na 4:5.",
+          "Magtakda ng grid tulad ng 1x3 o 1x4 depende sa dami ng hiwang naka-stack na kailangan mo.",
+          "I-preview at i-export. Kung kailangan mo ng layout na nakalaan sa feed ng Instagram, pumunta sa igridmaker.com."
+        ],
+        "image": "/images/blog/image-splitter-case-45.jpg",
+        "imageAlt": "Halimbawa ng paghahati ratio 4:5"
+      },
+      {
+        "id": "ratio34",
+        "label": "Ratio na 3:4",
+        "heading": "Balanseng segmentation gamit ang ratio na 3:4",
+        "description": "Bagay ang 3:4 para sa mga slide ng PDF o PPT kung saan kailangan ng pare-parehong framing.",
+        "steps": [
+          "I-upload ang poster at piliin ang ratio na 3:4.",
+          "Pumili ng grid (hal. 2x2) na tumutugma sa dami ng slide na gusto mong ipakita.",
+          "Hatiin ang larawan online at ilagay ang bawat hiwa sa deck o dokumento."
+        ],
+        "image": "/images/blog/image-splitter-case-34.jpg",
+        "imageAlt": "Halimbawa ng paghahati ratio 3:4"
+      },
+      {
+        "id": "ratio11",
+        "label": "Ratio na 1:1",
+        "heading": "Mga parisukat para sa collage at Bento layout",
+        "description": "Gamitin ang 1:1 kapag kailangan mo ng perpektong magkakapantay na parisukat para sa collage, Bento grid o mga tile na pwedeng i-print.",
+        "steps": [
+          "I-upload ang orihinal na larawan at piliin ang ratio na 1:1.",
+          "Magtakda ng grid tulad ng 3x3 o 4x4, hilahin ang crop box at i-preview.",
+          "I-download ang mga parisukat para sa collage, Bento layout o pagpi-print ng A4. Para sa mga puzzle na dedikado sa Instagram, bumisita sa igridmaker.com."
+        ],
+        "image": "/images/blog/image-splitter-case-11.jpg",
+        "imageAlt": "Halimbawa ng paghahati ratio 1:1"
+      }
+    ]
+  },
+  "features": {
+    "title": "Bakit gamitin ang AI Image Splitter para sa online segmentation",
+    "items": [
+      {
+        "title": "Ratio presets at guided crop",
+        "description": "Lumipat agad sa pagitan ng Default, 4:5, 3:4 at 1:1 habang nananatiling nakasentro ang paksa."
+      },
+      {
+        "title": "Flexible na mga kombinasyon ng grid",
+        "description": "Itakda ang anumang bilang ng hanay at kolum (1x1 hanggang 10x10+, depende sa resolusyon) para makuha ang eksaktong bilang ng hiwa."
+      },
+      {
+        "title": "Preview at batch export",
+        "description": "I-preview ang bawat hiwa bago mag-export ng JPG, PNG, WebP o BMP, at mag-download ng indibidwal na file o ZIP batch."
+      },
+      {
+        "title": "Pribado at libre",
+        "description": "Sa browser lang nagaganap ang proseso kaya walang ina-upload. Libre, pribado at walang watermark."
+      }
+    ]
+  },
+  "faq": {
+    "title": "FAQ tungkol sa paghahati ng imahe online",
+    "items": [
+      {
+        "question": "Kailangan ko bang mag-install ng software para mag-segment ng imahe online?",
+        "answer": "Hindi. I-upload lang sa browser, pumili ng ratio at grid, i-click ang \"Split Image\" at i-download ang mga hiwa. 100% online at libre."
+      },
+      {
+        "question": "May limitasyon ba sa dami ng hiwa?",
+        "answer": "Wala. Maaari kang gumawa ng maraming hiwa ayon sa kaya ng resolusyon ng larawan sa pamamagitan ng pagsasaayos ng hanay at kolum."
+      },
+      {
+        "question": "Bababa ba ang kalidad ng imahe?",
+        "answer": "Hindi. Ang crop box ay para lang sa framing kaya nananatili ang orihinal na resolusyon ng bawat hiwa at handang i-print."
+      },
+      {
+        "question": "Anong mga format ang maaaring i-export?",
+        "answer": "Sinusuportahan ang JPG, PNG, WebP at BMP. Maaari kang mag-download ng mga indibidwal na file o ZIP batch kapag natapos."
+      },
+      {
+        "question": "Saan makakagawa ng grid na para talaga sa feed ng Instagram?",
+        "answer": "Gamitin ang tutorial na ito para sa pangkalahatang segmentation. Para sa mga puzzle o layout na nakalaan sa feed, bisitahin ang aming sister site na igridmaker.com."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Handa ka na bang mag-segment ng imahe online?",
+    "description": "I-upload ang larawan, i-lock ang Default / 4:5 / 3:4 / 1:1 na ratio, itakda ang grid, at mag-export ng 3/6/9+ hiwa sa loob ng isang minuto — walang signup, walang download, walang watermark. Gusto mo bang subukan agad ang workflow? Buksan ang AI Image Splitter at sundin ang mga hakbang ngayon.",
+    "button": "Buksan ang AI Image Splitter"
+  }
+}

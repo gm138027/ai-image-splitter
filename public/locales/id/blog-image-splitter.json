@@ -1,0 +1,158 @@
+{
+  "seo": {
+    "title": "Cara membagi gambar secara online: panduan cepat",
+    "description": "Pelajari cara membagi gambar online dengan AI Image Splitter: geser kotak crop, pilih rasio 4:5 atau 3:4, lalu ekspor 3, 6, 9+ potongan untuk media sosial secara gratis.",
+    "keywords": "cara membagi gambar online,panduan segmentasi gambar,memotong foto menjadi 3 6 9 bagian,tutorial image splitter online,rasio 4:5 3:4"
+  },
+  "hero": {
+    "eyebrow": "Tutorial",
+    "title": "Cara membagi gambar online: skenario dan langkah praktis",
+    "subtitle": "Ikuti tutorial ini untuk membagi foto online, mengunci rasio Default / 4:5 / 3:4 / 1:1, menyeret kotak crop, dan mengekspor 3, 6, 9+ potongan tanpa instalasi.",
+    "meta": {
+      "readingTime": "Baca 6 menit",
+      "updated": "Diperbarui 20 Des 2025"
+    },
+    "coverImage": "/images/blog/image-splitter-online-cover.jpg",
+    "coverAlt": "Ilustrasi tutorial dengan potongan gambar dan preset rasio"
+  },
+  "intro": {
+    "title": "Mengapa perlu belajar membagi gambar secara online?",
+    "paragraphs": [
+      "Membagi gambar online membantu blogger, pengajar, dan desainer mengontrol waktu muat, menjaga alur cerita, dan menyiapkan berkas siap cetak tanpa membuka aplikasi desktop berat. Kunci rasio, seret kotak crop, dan tool akan menghasilkan potongan sama rata secara otomatis.",
+      "Di bawah ini ada alasan paling umum untuk membagi gambar online serta empat alur rasio praktis di AI Image Splitter. Semuanya berjalan lokal di browser. Saat siap, buka AI Image Splitter dan mulai membagi gambar dalam hitungan menit."
+    ],
+    "cta": {
+      "label": "Buka AI Image Splitter dan mulai membagi gambar online",
+      "href": "/"
+    }
+  },
+  "scenarios": {
+    "title": "Skenario umum membagi gambar online",
+    "items": [
+      {
+        "title": "Galeri web & blog",
+        "description": "Bagi gambar hero besar menjadi potongan kecil agar tiap ubin termuat bertahap di artikel panjang."
+      },
+      {
+        "title": "Demo produk",
+        "description": "Pisahkan poster atau diagram menjadi beberapa slide untuk PDF, PPT, atau demo multi-layar."
+      },
+      {
+        "title": "Cetak A4 & kolase",
+        "description": "Ubah satu poster menjadi lembar A4 yang bisa dicetak, dipotong, dan dirakit offline."
+      },
+      {
+        "title": "Cerita panjang atau pengalaman scroll",
+        "description": "Bagi karya vertikal menjadi bagian seimbang untuk blog, komik, atau posting gaya story."
+      }
+    ]
+  },
+  "cases": {
+    "title": "Tutorial: cara membagi gambar online dengan empat rasio",
+    "items": [
+      {
+        "id": "default",
+        "label": "Rasio default",
+        "heading": "Membagi gambar dengan rasio default untuk galeri blog",
+        "description": "Pertahankan rasio asli saat hanya butuh potongan lebih ringan untuk blog atau dokumentasi.",
+        "steps": [
+          "Unggah gambar dan biarkan rasionya Default.",
+          "Pilih grid (misalnya 2x3) lalu seret kotak crop hingga framing terasa pas.",
+          "Klik 'Split Image' untuk membagi file secara online dan unduh tiap potongan (per berkas atau ZIP)."
+        ],
+        "image": "/images/blog/image-splitter-case-default.jpg",
+        "imageAlt": "Contoh pembagian rasio default"
+      },
+      {
+        "id": "ratio45",
+        "label": "Rasio 4:5",
+        "heading": "Membagi cerita vertikal dengan rasio 4:5",
+        "description": "Kunci kanvas ke 4:5 untuk pengalaman scroll, poster tinggi, atau storyboard vertikal.",
+        "steps": [
+          "Unggah karya dan pilih rasio 4:5.",
+          "Atur grid seperti 1x3 atau 1x4 sesuai jumlah potongan yang diperlukan.",
+          "Pratinjau dan ekspor. Jika butuh layout khusus feed Instagram, kunjungi igridmaker.com."
+        ],
+        "image": "/images/blog/image-splitter-case-45.jpg",
+        "imageAlt": "Contoh pembagian rasio 4:5"
+      },
+      {
+        "id": "ratio34",
+        "label": "Rasio 3:4",
+        "heading": "Pembagian seimbang dengan rasio 3:4",
+        "description": "Rasio 3:4 cocok untuk slide PDF atau PPT yang memerlukan frame seragam.",
+        "steps": [
+          "Unggah poster dan pilih rasio 3:4.",
+          "Pilih grid (contoh 2x2) yang sesuai jumlah slide yang ingin ditampilkan.",
+          "Bagi gambar online lalu letakkan tiap potongan ke presentasi atau dokumen."
+        ],
+        "image": "/images/blog/image-splitter-case-34.jpg",
+        "imageAlt": "Contoh pembagian rasio 3:4"
+      },
+      {
+        "id": "ratio11",
+        "label": "Rasio 1:1",
+        "heading": "Potongan persegi untuk kolase dan layout Bento",
+        "description": "Gunakan 1:1 ketika membutuhkan persegi seragam untuk kolase, grid Bento, atau ubin cetak.",
+        "steps": [
+          "Unggah gambar asli dan pilih rasio 1:1.",
+          "Atur grid seperti 3x3 atau 4x4, seret kotak crop, lalu pratinjau.",
+          "Unduh persegi untuk kolase, layout Bento, atau cetak A4. Untuk puzzle khusus Instagram, buka igridmaker.com."
+        ],
+        "image": "/images/blog/image-splitter-case-11.jpg",
+        "imageAlt": "Contoh pembagian rasio 1:1"
+      }
+    ]
+  },
+  "features": {
+    "title": "Mengapa memakai AI Image Splitter untuk membagi gambar online",
+    "items": [
+      {
+        "title": "Preset rasio & crop terarah",
+        "description": "Beralih cepat antara Default, 4:5, 3:4, dan 1:1 sambil menjaga subjek tetap di tengah."
+      },
+      {
+        "title": "Kombinasi grid fleksibel",
+        "description": "Atur baris dan kolom apa pun (dari 1x1 hingga 10x10+ tergantung resolusi) agar jumlah potongan sesuai kebutuhan."
+      },
+      {
+        "title": "Pratinjau & ekspor massal",
+        "description": "Pratinjau setiap potongan sebelum mengekspor JPG, PNG, WebP, atau BMP, kemudian unduh berkas tunggal atau paket ZIP."
+      },
+      {
+        "title": "Privat dan gratis",
+        "description": "Seluruh proses terjadi di browser, tidak ada yang diunggah. Gratis, privat, dan tanpa watermark."
+      }
+    ]
+  },
+  "faq": {
+    "title": "FAQ tentang membagi gambar online",
+    "items": [
+      {
+        "question": "Perlu instal software untuk membagi gambar online?",
+        "answer": "Tidak. Unggah lewat browser, pilih rasio dan grid, klik 'Split Image', lalu unduh potongannya. 100% online dan gratis."
+      },
+      {
+        "question": "Apakah ada batas jumlah potongan?",
+        "answer": "Tidak ada batas khusus; sesuaikan kombinasi baris/kolom selama resolusi gambar mendukung kebutuhanmu."
+      },
+      {
+        "question": "Apakah kualitas gambar turun?",
+        "answer": "Tidak. Kotak crop hanya mengatur framing sehingga potongan yang diekspor tetap mengikuti resolusi asli dan siap cetak."
+      },
+      {
+        "question": "Format apa saja yang bisa diekspor?",
+        "answer": "JPG, PNG, WebP, dan BMP tersedia. Kamu bisa mengunduh berkas satu per satu atau paket ZIP setelah selesai."
+      },
+      {
+        "question": "Di mana membuat grid khusus feed Instagram?",
+        "answer": "Gunakan tutorial ini untuk pembagian umum. Untuk puzzle atau layout khusus feed, kunjungi situs saudara kami igridmaker.com."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Siap membagi gambar online?",
+    "description": "Unggah foto, kunci rasio Default / 4:5 / 3:4 / 1:1, atur grid, dan ekspor 3/6/9+ potongan kurang dari satu menit tanpa daftar, unduhan, atau watermark. Siap mencoba alur ini? Buka AI Image Splitter dan terapkan langkah-langkahnya sekarang.",
+    "button": "Buka AI Image Splitter"
+  }
+}

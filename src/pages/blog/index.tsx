@@ -16,6 +16,8 @@ interface BlogPost {
   readingTime: string;
   category: string;
   href: string;
+  image: string;
+  imageAlt: string;
 }
 
 const BlogIndex: NextPage = () => {
@@ -24,13 +26,26 @@ const BlogIndex: NextPage = () => {
 
   const posts: BlogPost[] = [
     {
+      id: 'image-splitter-online',
+      title: t('blog:posts.image-splitter-online.title'),
+      description: t('blog:posts.image-splitter-online.description'),
+      publishedAt: '2025-12-20',
+      readingTime: t('blog:posts.image-splitter-online.readingTime'),
+      category: t('blog:posts.image-splitter-online.category'),
+      href: '/blog/image-splitter-online',
+      image: '/images/blog/image-splitter-online-thumb.jpg',
+      imageAlt: t('blog:imageAlt.imageSplitterOnline')
+    },
+    {
       id: 'complete-guide',
       title: t('blog:posts.complete-guide.title'),
       description: t('blog:posts.complete-guide.description'),
       publishedAt: '2025-06-27',
       readingTime: t('blog:posts.complete-guide.readingTime'),
       category: t('blog:posts.complete-guide.category'),
-      href: '/blog/complete-guide'
+      href: '/blog/complete-guide',
+      image: '/images/blog/complete-guide-thumb.jpg',
+      imageAlt: t('blog:imageAlt.guideComplete')
     }
   ]
 
@@ -70,8 +85,8 @@ const BlogIndex: NextPage = () => {
                     <div className="lg:w-2/5">
                       <div className="h-64 lg:h-full relative overflow-hidden">
                         <Image
-                          src="/images/blog/complete-guide-thumb.jpg"
-                          alt={t('blog:imageAlt.guideComplete')}
+                          src={post.image}
+                          alt={post.imageAlt}
                           fill
                           className="object-cover group-hover:scale-105 transition-transform duration-500"
                           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 33vw"

@@ -1,0 +1,158 @@
+{
+  "seo": {
+    "title": "Cách tách ảnh trực tuyến: hướng dẫn nhanh",
+    "description": "Tìm hiểu cách tách ảnh online bằng AI Image Splitter: kéo khung cắt, chọn tỉ lệ 4:5 hoặc 3:4 và xuất 3, 6, 9+ lát ảnh miễn phí cho mạng xã hội.",
+    "keywords": "cách tách ảnh online,hướng dẫn segment ảnh,chia ảnh thành 3 6 9 phần,tutorial image splitter online,tỉ lệ 4:5 3:4"
+  },
+  "hero": {
+    "eyebrow": "Hướng dẫn",
+    "title": "Cách tách ảnh trực tuyến: tình huống sử dụng & các bước thực hành",
+    "subtitle": "Làm theo hướng dẫn này để tách ảnh online, khóa tỉ lệ Default / 4:5 / 3:4 / 1:1, kéo khung cắt và xuất 3, 6, 9+ lát ảnh mà không cần cài phần mềm.",
+    "meta": {
+      "readingTime": "6 phút đọc",
+      "updated": "Cập nhật 20/12/2025"
+    },
+    "coverImage": "/images/blog/image-splitter-online-cover.jpg",
+    "coverAlt": "Minh họa hướng dẫn hiển thị các lát ảnh và preset tỉ lệ"
+  },
+  "intro": {
+    "title": "Vì sao nên học cách tách ảnh trực tuyến?",
+    "paragraphs": [
+      "Tách ảnh online giúp blogger, giáo viên và nhà thiết kế kiểm soát tốc độ tải, giữ nhịp kể chuyện và chuẩn bị file sẵn sàng in ấn mà không cần mở phần mềm nặng. Chỉ cần khóa tỉ lệ, kéo khung cắt và công cụ sẽ tạo lát bằng nhau tự động.",
+      "Bên dưới là những lý do phổ biến nhất để tách ảnh online cùng bốn quy trình tỉ lệ trong AI Image Splitter. Mọi thứ đều chạy cục bộ trên trình duyệt. Khi sẵn sàng, mở AI Image Splitter và bắt đầu tách ảnh chỉ trong vài phút."
+    ],
+    "cta": {
+      "label": "Mở AI Image Splitter và tách ảnh online ngay",
+      "href": "/"
+    }
+  },
+  "scenarios": {
+    "title": "Những tình huống thường gặp khi tách ảnh online",
+    "items": [
+      {
+        "title": "Bộ sưu tập web & blog",
+        "description": "Chia ảnh hero lớn thành lát nhỏ để từng ô tải dần trong các bài viết dài."
+      },
+      {
+        "title": "Giới thiệu sản phẩm",
+        "description": "Tách poster hoặc sơ đồ thành nhiều slide cho PDF, PPT hoặc trình diễn đa màn hình."
+      },
+      {
+        "title": "In A4 và ghép ảnh",
+        "description": "Biến một poster thành các tờ A4 có thể in, cắt và ghép ngoại tuyến."
+      },
+      {
+        "title": "Câu chuyện dài hoặc trải nghiệm cuộn",
+        "description": "Chia tác phẩm cao thành các phần bằng nhau cho blog, truyện tranh hoặc nội dung dạng story."
+      }
+    ]
+  },
+  "cases": {
+    "title": "Hướng dẫn: tách ảnh online với bốn tỉ lệ",
+    "items": [
+      {
+        "id": "default",
+        "label": "Tỉ lệ mặc định",
+        "heading": "Tách ảnh với tỉ lệ mặc định cho thư viện blog",
+        "description": "Giữ nguyên tỉ lệ gốc khi bạn chỉ cần lát ảnh nhẹ hơn cho blog hoặc tài liệu.",
+        "steps": [
+          "Tải ảnh lên và giữ tỉ lệ ở Default.",
+          "Chọn lưới (ví dụ 2x3) rồi kéo khung cắt cho tới khi khung hình hợp lý.",
+          "Nhấn \"Split Image\" để tách file online và tải từng lát ảnh (file lẻ hoặc ZIP)."
+        ],
+        "image": "/images/blog/image-splitter-case-default.jpg",
+        "imageAlt": "Ví dụ tách ảnh với tỉ lệ mặc định"
+      },
+      {
+        "id": "ratio45",
+        "label": "Tỉ lệ 4:5",
+        "heading": "Tách câu chuyện dọc bằng tỉ lệ 4:5",
+        "description": "Khóa canvas 4:5 cho trải nghiệm cuộn, poster cao hoặc storyboard dọc.",
+        "steps": [
+          "Tải tác phẩm lên và chọn tỉ lệ 4:5.",
+          "Đặt lưới 1x3 hoặc 1x4 tùy số lát xếp chồng bạn cần.",
+          "Xem trước và xuất. Nếu cần layout riêng cho feed Instagram, hãy truy cập igridmaker.com."
+        ],
+        "image": "/images/blog/image-splitter-case-45.jpg",
+        "imageAlt": "Ví dụ tách ảnh tỉ lệ 4:5"
+      },
+      {
+        "id": "ratio34",
+        "label": "Tỉ lệ 3:4",
+        "heading": "Tách nội dung cân bằng với tỉ lệ 3:4",
+        "description": "Tỉ lệ 3:4 phù hợp với slide PDF/PPT cần khung hình đồng đều.",
+        "steps": [
+          "Tải poster và chọn tỉ lệ 3:4.",
+          "Chọn lưới (như 2x2) khớp số slide muốn trình bày.",
+          "Tách ảnh online rồi đặt từng lát vào deck hoặc tài liệu."
+        ],
+        "image": "/images/blog/image-splitter-case-34.jpg",
+        "imageAlt": "Ví dụ tách ảnh tỉ lệ 3:4"
+      },
+      {
+        "id": "ratio11",
+        "label": "Tỉ lệ 1:1",
+        "heading": "Lát vuông cho ghép ảnh và bố cục Bento",
+        "description": "Dùng 1:1 khi cần các ô vuông bằng nhau cho collage, grid Bento hoặc gạch in.",
+        "steps": [
+          "Tải ảnh gốc và chọn tỉ lệ 1:1.",
+          "Đặt lưới 3x3 hoặc 4x4, kéo khung cắt và xem trước.",
+          "Tải các ô vuông về cho collage, bố cục Bento hoặc in A4. Nếu muốn puzzle chuyên cho Instagram, hãy đến igridmaker.com."
+        ],
+        "image": "/images/blog/image-splitter-case-11.jpg",
+        "imageAlt": "Ví dụ tách ảnh tỉ lệ 1:1"
+      }
+    ]
+  },
+  "features": {
+    "title": "Vì sao nên dùng AI Image Splitter để tách ảnh online",
+    "items": [
+      {
+        "title": "Preset tỉ lệ & khung cắt dẫn hướng",
+        "description": "Chuyển nhanh giữa Default, 4:5, 3:4, 1:1 và giữ chủ thể ở trung tâm trong suốt quá trình tách."
+      },
+      {
+        "title": "Kết hợp lưới linh hoạt",
+        "description": "Thiết lập bất kỳ số hàng/cột nào (từ 1x1 tới 10x10+, phụ thuộc độ phân giải) để có đúng số lát bạn cần."
+      },
+      {
+        "title": "Xem trước & xuất hàng loạt",
+        "description": "Xem trước từng lát trước khi xuất JPG, PNG, WebP hoặc BMP rồi tải file lẻ hoặc gói ZIP."
+      },
+      {
+        "title": "Riêng tư và miễn phí",
+        "description": "Toàn bộ quy trình diễn ra trong trình duyệt nên không tải lên đâu cả. Miễn phí, riêng tư và không watermark."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Câu hỏi thường gặp về tách ảnh online",
+    "items": [
+      {
+        "question": "Có cần cài phần mềm để tách ảnh online không?",
+        "answer": "Không. Chỉ việc tải ảnh trong trình duyệt, chọn tỉ lệ và lưới, nhấn \"Split Image\" rồi tải các lát ảnh. 100% online và miễn phí."
+      },
+      {
+        "question": "Có giới hạn số lát ảnh không?",
+        "answer": "Không có giới hạn cố định; bạn có thể tạo bao nhiêu lát tùy theo độ phân giải ảnh bằng cách chỉnh số hàng/cột."
+      },
+      {
+        "question": "Tách ảnh online có làm giảm chất lượng không?",
+        "answer": "Không. Khung cắt chỉ quyết định bố cục nên lát xuất ra giữ nguyên độ phân giải gốc và sẵn sàng in ấn."
+      },
+      {
+        "question": "Có thể xuất định dạng nào?",
+        "answer": "Hỗ trợ JPG, PNG, WebP và BMP. Có thể tải từng file hoặc gói ZIP khi hoàn tất."
+      },
+      {
+        "question": "Ở đâu tạo grid riêng cho feed Instagram?",
+        "answer": "Dùng hướng dẫn này cho nhu cầu chung. Với puzzle/feed chuyên dụng, hãy truy cập trang chị em igridmaker.com."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Sẵn sàng tách ảnh online chứ?",
+    "description": "Tải ảnh lên, khóa tỉ lệ Default / 4:5 / 3:4 / 1:1, đặt lưới và xuất 3/6/9+ lát ảnh trong chưa tới một phút, không cần đăng ký, không tải phần mềm, không watermark. Muốn áp dụng ngay quy trình này? Mở AI Image Splitter và làm theo các bước vừa học.",
+    "button": "Mở AI Image Splitter"
+  }
+}
