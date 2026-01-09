@@ -279,7 +279,7 @@ const CropOverlay: React.FC<CropOverlayProps> = ({
     <div className="absolute inset-0 pointer-events-none">
       <div
         ref={overlayRef}
-        className="absolute border-2 border-white shadow-[0_0_0_9999px_rgba(0,0,0,0.55)] pointer-events-auto"
+        className="absolute border-2 border-white pointer-events-auto"
         style={{ touchAction: 'none', cursor: 'move' }}
         onPointerDown={(event) => {
           if (event.target === overlayRef.current) {

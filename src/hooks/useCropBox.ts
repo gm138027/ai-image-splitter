@@ -7,25 +7,40 @@ const ratioMap: Record<Exclude<AspectRatioOption, 'default'>, number> = {
   '1:1': 1
 }
 
+type GridDimensions = {
+  rows: number
+  cols: number
+}
+
 const getRatioValue = (aspectRatio: AspectRatioOption): number | null => {
   if (aspectRatio === 'default') return null
   return ratioMap[aspectRatio]
 }
 
+const clampGridValue = (value: number | undefined) => {
+  if (!value || value <= 0) return 1
+  return value
+}
+
 const calculateCenteredRegion = (
   width: number,
   height: number,
-  aspectRatio: AspectRatioOption
+  aspectRatio: AspectRatioOption,
+  grid: GridDimensions
 ): CropRegion | null => {
   const ratio = getRatioValue(aspectRatio)
   if (!ratio) return null
 
+  const safeRows = clampGridValue(grid.rows)
+  const safeCols = clampGridValue(grid.cols)
+  const overallRatio = ratio * (safeCols / safeRows)
+
   let regionWidth = width
-  let regionHeight = regionWidth / ratio
+  let regionHeight = regionWidth / overallRatio
 
   if (regionHeight > height) {
     regionHeight = height
-    regionWidth = regionHeight * ratio
+    regionWidth = regionHeight * overallRatio
   }
 
   return {
@@ -36,8 +51,15 @@ const calculateCenteredRegion = (
   }
 }
 
-export const useCropBox = (initialAspect: AspectRatioOption = 'default') => {
+export const useCropBox = (
+  initialAspect: AspectRatioOption = 'default',
+  initialGrid: GridDimensions = { rows: 1, cols: 1 }
+) => {
   const imageDimensionsRef = useRef<{ width: number; height: number } | null>(null)
+  const gridDimensionsRef = useRef<GridDimensions>({
+    rows: clampGridValue(initialGrid.rows),
+    cols: clampGridValue(initialGrid.cols)
+  })
   const regionRef = useRef<CropRegion | null>(null)
   const [aspectRatio, setAspectRatio] = useState<AspectRatioOption>(initialAspect)
   const [regionSnapshot, setRegionSnapshot] = useState<CropRegion | null>(null)
@@ -47,18 +69,34 @@ export const useCropBox = (initialAspect: AspectRatioOption = 'default') => {
     setRegionSnapshot(region)
   }, [])
 
+  const recalculateRegion = useCallback(
+    (nextRatio: AspectRatioOption, dimensions?: { width: number; height: number } | null) => {
+      const dims = dimensions || imageDimensionsRef.current
+      if (!dims) {
+        return
+      }
+      if (nextRatio === 'default') {
+        syncRegion(null)
+        return
+      }
+      const nextRegion = calculateCenteredRegion(
+        dims.width,
+        dims.height,
+        nextRatio,
+        gridDimensionsRef.current
+      )
+      syncRegion(nextRegion)
+    },
+    [syncRegion]
+  )
+
   const initialiseForImage = useCallback(
     (image: HTMLImageElement, ratio: AspectRatioOption) => {
       imageDimensionsRef.current = { width: image.width, height: image.height }
       setAspectRatio(ratio)
-      if (ratio === 'default') {
-        syncRegion(null)
-        return
-      }
-      const nextRegion = calculateCenteredRegion(image.width, image.height, ratio)
-      syncRegion(nextRegion)
+      recalculateRegion(ratio, { width: image.width, height: image.height })
     },
-    [syncRegion]
+    [recalculateRegion]
   )
 
   const updateAspectRatio = useCallback(
@@ -67,15 +105,9 @@ export const useCropBox = (initialAspect: AspectRatioOption = 'default') => {
         imageDimensionsRef.current = { width: image.width, height: image.height }
       }
       setAspectRatio(ratio)
-      const dims = imageDimensionsRef.current
-      if (!dims || ratio === 'default') {
-        syncRegion(null)
-        return
-      }
-      const nextRegion = calculateCenteredRegion(dims.width, dims.height, ratio)
-      syncRegion(nextRegion)
+      recalculateRegion(ratio, image ? { width: image.width, height: image.height } : null)
     },
-    [syncRegion]
+    [recalculateRegion]
   )
 
   const commitRegion = useCallback(
@@ -89,6 +121,25 @@ export const useCropBox = (initialAspect: AspectRatioOption = 'default') => {
     return regionRef.current
   }, [])
 
+  const updateGridDimensions = useCallback(
+    (rows: number, cols: number, image?: HTMLImageElement | null) => {
+      gridDimensionsRef.current = {
+        rows: clampGridValue(rows),
+        cols: clampGridValue(cols)
+      }
+      if (aspectRatio === 'default') {
+        return
+      }
+      recalculateRegion(
+        aspectRatio,
+        image
+          ? { width: image.width, height: image.height }
+          : imageDimensionsRef.current
+      )
+    },
+    [aspectRatio, recalculateRegion]
+  )
+
   const aspectRatioValue = useMemo(() => getRatioValue(aspectRatio), [aspectRatio])
   const shouldRender = aspectRatio !== 'default' && !!regionSnapshot
 
@@ -99,9 +150,9 @@ export const useCropBox = (initialAspect: AspectRatioOption = 'default') => {
     shouldRender,
     initialiseForImage,
     updateAspectRatio,
+    updateGridDimensions,
     commitRegion,
     getRegionForSplit,
     imageDimensions: imageDimensionsRef.current
   }
 }
-

@@ -34,9 +34,13 @@ export const useImageSplitter = () => {
     shouldRender: shouldShowCrop,
     initialiseForImage,
     updateAspectRatio: syncAspectRatio,
+    updateGridDimensions,
     commitRegion,
     getRegionForSplit
-  } = useCropBox(defaultConfig.aspectRatio)
+  } = useCropBox(defaultConfig.aspectRatio, {
+    rows: defaultConfig.rows,
+    cols: defaultConfig.cols
+  })
 
   const handleAspectRatioChange = useCallback(
     (nextRatio: SplitConfig['aspectRatio']) => {
@@ -65,6 +69,10 @@ export const useImageSplitter = () => {
   const { fileInputRef, canvasRef, handleDrop, handleFileInputChange } = useUploadedImage({
     onImageLoaded: handleImageLoaded
   })
+
+  useEffect(() => {
+    updateGridDimensions(config.rows, config.cols, uploadedImage)
+  }, [config.rows, config.cols, updateGridDimensions, uploadedImage])
 
   const { generateSplitImages, releaseSplitImages, splitImagesRef } = useSplitExecutor()
 
@@ -154,4 +162,3 @@ export const useImageSplitter = () => {
     downloadAll
   }
 }
-
