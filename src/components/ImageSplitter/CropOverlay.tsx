@@ -45,6 +45,12 @@ const CropOverlay: React.FC<CropOverlayProps> = ({
     width: 0,
     height: 0
   })
+  const liveRegionRef = useRef<DisplayRegion>({
+    x: 0,
+    y: 0,
+    width: 0,
+    height: 0
+  })
   const interactionRef = useRef<{
     type: 'move' | 'resize'
     handle?: ResizeHandle
@@ -62,7 +68,7 @@ const CropOverlay: React.FC<CropOverlayProps> = ({
     if (!overlayRef.current) return
     overlayRef.current.style.width = `${region.width}px`
     overlayRef.current.style.height = `${region.height}px`
-    overlayRef.current.style.transform = `translate(${region.x}px, ${region.y}px)`
+    overlayRef.current.style.transform = `translate3d(${region.x}px, ${region.y}px, 0)`
   }, [])
 
   useEffect(() => {
@@ -73,6 +79,7 @@ const CropOverlay: React.FC<CropOverlayProps> = ({
       height: cropRegion.height * scaleY
     }
     displayRegionRef.current = nextDisplayRegion
+    liveRegionRef.current = nextDisplayRegion
     applyDisplayRegion(nextDisplayRegion)
   }, [applyDisplayRegion, cropRegion, scaleX, scaleY])
 
@@ -163,7 +170,7 @@ const CropOverlay: React.FC<CropOverlayProps> = ({
             width: interaction.initialDisplayRegion.width,
             height: interaction.initialDisplayRegion.height
           }
-          displayRegionRef.current = next
+          liveRegionRef.current = next
           applyDisplayRegion(next)
           return
         }
@@ -195,7 +202,7 @@ const CropOverlay: React.FC<CropOverlayProps> = ({
           }
           next.x = clampValue(next.x, 0, displayWidth - next.width)
           next.y = clampValue(next.y, 0, displayHeight - next.height)
-          displayRegionRef.current = next
+          liveRegionRef.current = next
           applyDisplayRegion(next)
         }
       })
@@ -209,15 +216,26 @@ const CropOverlay: React.FC<CropOverlayProps> = ({
       rafRef.current = null
     }
     const displayRegion = displayRegionRef.current
+    const liveRegion = liveRegionRef.current
+    const regionToCommit = liveRegion.width > 0 ? liveRegion : displayRegion
     const candidate: CropRegion = {
-      x: displayRegion.x / scaleX,
-      y: displayRegion.y / scaleY,
-      width: displayRegion.width / scaleX,
-      height: displayRegion.height / scaleY
+      x: regionToCommit.x / scaleX,
+      y: regionToCommit.y / scaleY,
+      width: regionToCommit.width / scaleX,
+      height: regionToCommit.height / scaleY
     }
     const committed = clampRegionToImage(candidate)
     onCropRegionCommit(committed)
 
+    const committedDisplayRegion = {
+      x: committed.x * scaleX,
+      y: committed.y * scaleY,
+      width: committed.width * scaleX,
+      height: committed.height * scaleY
+    }
+    displayRegionRef.current = committedDisplayRegion
+    liveRegionRef.current = committedDisplayRegion
+    applyDisplayRegion(committedDisplayRegion)
     const aligned: DisplayRegion = {
       x: committed.x * scaleX,
       y: committed.y * scaleY,

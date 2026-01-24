@@ -12,6 +12,11 @@ const path = require('path')
 const localeConfig = require('../config/locales.json')
 const SUPPORTED_LOCALES = localeConfig.locales
 const DEFAULT_LOCALE = localeConfig.defaultLocale || 'en'
+const RETIRED_LOCALES = new Set(['hi', 'ms', 'tl'])
+const RETIRED_LOCALE_ALIASES = new Set(['fil', 'filipino'])
+const RETIRED_LOCALE_LIST = [...RETIRED_LOCALES, ...RETIRED_LOCALE_ALIASES]
+
+const isRetiredLocale = (locale) => RETIRED_LOCALES.has(locale) || RETIRED_LOCALE_ALIASES.has(locale)
 
 const BASE_URL = 'https://aiimagesplitter.com'
 
@@ -50,8 +55,15 @@ const generateTestURLs = () => {
       }
     })
     
-    // 遗留语言代码
-    urls.push(`${BASE_URL}/fil${path}`)
+    // Retired locale query params (expected 410)
+    RETIRED_LOCALE_LIST.forEach(locale => {
+      urls.push(`${BASE_URL}${path}?lng=${locale}`)
+    })
+
+    // Retired locale paths (expected 410)
+    RETIRED_LOCALE_LIST.forEach(locale => {
+      urls.push(`${BASE_URL}/${locale}${path}`)
+    })
     
     // 尾部斜杠问题
     if (path !== '/') {
@@ -80,14 +92,19 @@ const analyzeURL = (url) => {
     // 检查查询参数
     const lngParam = searchParams.get('lng')
     if (lngParam) {
-      analysis.issues.push('使用查询参数格式的语言切换')
+      const lngParamClean = lngParam.trim()
+      const lngParamLower = lngParamClean.toLowerCase()
+      analysis.issues.push('Uses query parameter locale format (lng=)')
       analysis.isValid = false
       
-      const normalizedLocale = lngParam === 'fil' ? 'tl' : lngParam
-      if (normalizedLocale === DEFAULT_LOCALE) {
+      if (isRetiredLocale(lngParamLower)) {
+        analysis.issues.push('Retired locale should return 410')
+      } else if (lngParamClean === DEFAULT_LOCALE) {
         analysis.redirectTo = `${BASE_URL}${pathname}`
+      } else if (SUPPORTED_LOCALES.includes(lngParamClean)) {
+        analysis.redirectTo = `${BASE_URL}/${lngParamClean}${pathname === '/' ? '' : pathname}`
       } else {
-        analysis.redirectTo = `${BASE_URL}/${normalizedLocale}${pathname}`
+        analysis.issues.push('Unsupported locale in query parameter')
       }
     }
     
@@ -98,11 +115,12 @@ const analyzeURL = (url) => {
     
     if (pathSegments.length > 0) {
       const firstSegment = pathSegments[0]
+      const firstSegmentLower = firstSegment.toLowerCase()
       
-      if (firstSegment === 'fil') {
-        analysis.issues.push('使用遗留语言代码 "fil"')
+      if (isRetiredLocale(firstSegmentLower)) {
+        analysis.issues.push('Retired locale path should return 410')
         analysis.isValid = false
-        analysis.redirectTo = `${BASE_URL}/tl${pathname.substring(4)}`
+        analysis.redirectTo = null
       } else if (SUPPORTED_LOCALES.includes(firstSegment)) {
         locale = firstSegment
         contentPath = '/' + pathSegments.slice(1).join('/')

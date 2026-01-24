@@ -58,9 +58,6 @@ try {
     console.log('[ok] robots.txt includes Allow directives for all locales')
   }
 
-  if (!robotsContent.includes('Disallow: /fil')) {
-    console.log('[warn] robots.txt is missing Disallow rule for legacy /fil path')
-  }
 } catch (error) {
   console.log('[error] Failed to read public/robots.txt: ' + error.message)
   hasErrors = true

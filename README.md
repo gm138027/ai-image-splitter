@@ -8,7 +8,7 @@ Transform your images into stunning carousels and grids for Instagram, Facebook,
 
 ## 🌟 Features
 
-- ✅ **Multi-language Support**: Available in 10 languages
+- ✅ **Multi-language Support**: Available in 7 languages
 - ✅ **No Watermarks**: Clean, professional output
 - ✅ **Multiple Grid Sizes**: 3x3, 2x3, 4x4, and custom dimensions
 - ✅ **Fast Processing**: Client-side processing for privacy & security
@@ -23,9 +23,6 @@ Transform your images into stunning carousels and grids for Instagram, Facebook,
 - 🇨🇳 简体中文 (Simplified Chinese)
 - 🇮🇩 Bahasa Indonesia
 - 🇵🇹 Português
-- 🇵🇭 Filipino
-- 🇲🇾 Bahasa Melayu
-- 🇮🇳 हिन्दी (Hindi)
 - 🇻🇳 Tiếng Việt
 - 🇰🇿 Қазақша (Kazakh)
 - 🇷🇺 Русский
@@ -34,7 +31,7 @@ Transform your images into stunning carousels and grids for Instagram, Facebook,
 
 - **Framework**: Next.js 14 with TypeScript
 - **Styling**: Tailwind CSS
-- **Internationalization**: next-i18next (10 languages)
+- **Internationalization**: next-i18next (7 languages)
 - **Icons**: Lucide React
 - **Image Processing**: HTML5 Canvas API (client-side)
 - **SEO**: Next.js Head, structured data, sitemap
@@ -90,7 +87,7 @@ ai-image-splitter/
 │   │   └── Layout/        # Layout components
 │   └── styles/         # Global styles
 ├── public/
-│   ├── locales/        # Translation files (10 languages)
+│   ├── locales/        # Translation files (7 languages)
 │   ├── images/         # Static images
 │   ├── icons/          # Favicon and app icons
 │   └── sitemap.xml     # Auto-generated sitemap
@@ -113,7 +110,10 @@ This project is deployed on **Vercel** at [aiimagesplitter.com](https://aiimages
 
 ### Environment Variables
 
-Currently, no environment variables are required as the app runs entirely client-side.
+Optional environment variables:
+
+- `NEXT_PUBLIC_DOMAIN` (defaults to `https://aiimagesplitter.com`)
+- `NEXT_PUBLIC_GA_ID` (Google Analytics measurement ID)
 
 ## 🔍 SEO & Performance
 

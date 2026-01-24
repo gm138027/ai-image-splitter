@@ -1,4 +1,4 @@
-/** @type {import('next').NextConfig} */
+﻿/** @type {import('next').NextConfig} */
 const { i18n } = require('./next-i18next.config.js');
 
 const nextConfig = {
@@ -7,31 +7,18 @@ const nextConfig = {
   trailingSlash: false,
   i18n,
   images: {
-    // 启用自动图片优化，支持WebP和AVIF格式
+    // 鍚敤鑷姩鍥剧墖浼樺寲锛屾敮鎸乄ebP鍜孉VIF鏍煎紡
     formats: ['image/webp', 'image/avif'],
     domains: [],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    minimumCacheTTL: 31536000, // 1年缓存
+    minimumCacheTTL: 31536000, // 1骞寸紦瀛?
     dangerouslyAllowSVG: false,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
-  // URL重定向规则 - 解决URL重复问题
+  // URL閲嶅畾鍚戣鍒?- 瑙ｅ喅URL閲嶅闂
   async redirects() {
     return [
-      // 1. 重定向遗留语言代码
-      {
-        source: '/fil/:path*',
-        destination: '/tl/:path*',
-        permanent: true, // 301重定向
-      },
-      // 2. 重定向其他可能的遗留格式
-      {
-        source: '/filipino/:path*',
-        destination: '/tl/:path*',
-        permanent: true,
-      },
-      // 3. 处理常见的错误语言代码
       {
         source: '/cn/:path*',
         destination: '/zh-CN/:path*',
@@ -42,12 +29,10 @@ const nextConfig = {
         destination: '/zh-CN/:path*',
         permanent: true,
       },
-      // 4. 重定向带有查询参数的URL到正确格式
-      // 注意：这些将由middleware处理，这里作为备用
     ]
   },
 
-  // 确保静态文件可以被正确服务
+  // 纭繚闈欐€佹枃浠跺彲浠ヨ姝ｇ‘鏈嶅姟
   async headers() {
     return [
       {
@@ -59,7 +44,7 @@ const nextConfig = {
           },
         ],
       },
-      // 添加安全头
+      // 娣诲姞瀹夊叏澶?
       {
         source: '/(.*)',
         headers: [
@@ -82,13 +67,13 @@ const nextConfig = {
   experimental: {
     optimizeCss: true,
   },
-  // 优化生产构建
+  // 浼樺寲鐢熶骇鏋勫缓
   compiler: {
-    removeConsole: process.env.NODE_ENV === 'production', // 生产环境移除console.log
+    removeConsole: process.env.NODE_ENV === 'production', // 鐢熶骇鐜绉婚櫎console.log
   },
-  // 简化代码分割配置 - 减少网络请求
+  // 绠€鍖栦唬鐮佸垎鍓查厤缃?- 鍑忓皯缃戠粶璇锋眰
   webpack: (config, { isServer }) => {
-    // 只在客户端构建时进行基础优化
+    // 鍙湪瀹㈡埛绔瀯寤烘椂杩涜鍩虹浼樺寲
     if (!isServer) {
       config.optimization.splitChunks = {
         chunks: 'all',
@@ -109,8 +94,7 @@ const nextConfig = {
     }
     return config
   },
-  // 处理图片和静态资源
-  assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
+  // 澶勭悊鍥剧墖鍜岄潤鎬佽祫婧?  assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
 }
 
 module.exports = nextConfig 

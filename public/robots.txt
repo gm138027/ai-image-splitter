@@ -6,9 +6,7 @@ Disallow: /*?lng=*
 Disallow: /*?*lng=*
 Disallow: /*&lng=*
 
-# Block incorrect and legacy language code URLs
-Disallow: /fil*
-Disallow: /filipino*
+# Block incorrect language code URLs
 Disallow: /cn*
 Disallow: /zh/*
 
@@ -16,9 +14,6 @@ Disallow: /zh/*
 Allow: /zh-CN
 Allow: /id
 Allow: /pt
-Allow: /tl
-Allow: /ms
-Allow: /hi
 Allow: /vi
 Allow: /kk
 Allow: /ru

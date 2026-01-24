@@ -90,7 +90,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
         "@type": "ContactPoint",
         "contactType": "customer service",
         "url": baseUrl,
-        "availableLanguage": ["en", "zh-CN", "vi", "ru", "pt", "ms", "kk", "id", "hi", "tl"]
+        "availableLanguage": SUPPORTED_LOCALES
       }
     }
 
