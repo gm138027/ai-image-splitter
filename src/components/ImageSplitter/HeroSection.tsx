@@ -210,7 +210,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                     <ArrowRight className="w-5 h-5 sm:w-7 sm:h-7 text-white" />
                   </div>
                   
-                  {/* Split grid image (large, right side) - 这是LCP元素，需要最高优先级 */}
+                  {/* Split grid image (large, right side) */}
                   <div className="relative">
                     <div className="w-32 h-32 sm:w-48 sm:h-48 bg-gradient-to-br from-blue-200 to-blue-400 shadow-lg overflow-hidden relative">
                       <Image
@@ -219,10 +219,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                         width={192}
                         height={192}
                         className="object-cover w-full h-full"
-                        priority={true}
                         quality={80}
                         sizes="(max-width: 640px) 128px, 192px"
-                        fetchPriority="high"
                         placeholder="blur"
                         blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                       />
