@@ -15,7 +15,6 @@ Allow: /zh-CN
 Allow: /id
 Allow: /pt
 Allow: /vi
-Allow: /kk
 Allow: /ru
 
 # Standard blocks

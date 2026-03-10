@@ -16,7 +16,6 @@ export const LOCALE_NAMES: Record<SupportedLocale, { name: string; nativeName: s
   'id': { name: 'Indonesian', nativeName: 'Bahasa Indonesia', flag: '🇮🇩' },
   'pt': { name: 'Portuguese', nativeName: 'Português', flag: '🇵🇹' },
   'vi': { name: 'Vietnamese', nativeName: 'Tiếng Việt', flag: '🇻🇳' },
-  'kk': { name: 'Kazakh', nativeName: 'Қазақша', flag: '🇰🇿' },
   'ru': { name: 'Russian', nativeName: 'Русский', flag: '🇷🇺' },
 }
 
@@ -27,7 +26,6 @@ export const OG_LOCALE_MAPPING: Record<SupportedLocale, string> = {
   'id': 'id_ID',
   'pt': 'pt_PT',
   'vi': 'vi_VN',
-  'kk': 'kk_KZ',
   'ru': 'ru_RU'
 }
 
@@ -38,7 +36,6 @@ export const REGION_MAPPING: Record<SupportedLocale, { region: string; place: st
   'id': { region: 'ID', place: 'Indonesia' },
   'pt': { region: 'PT', place: 'Portugal' },
   'vi': { region: 'VN', place: 'Vietnam' },
-  'kk': { region: 'KZ', place: 'Kazakhstan' },
   'ru': { region: 'RU', place: 'Russia' },
 }
 

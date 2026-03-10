@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { SUPPORTED_LOCALES, SEO_CONFIG, normalizeLegacyLocale } from './config/seo'
 
-const RETIRED_LOCALES = new Set(['hi', 'ms', 'tl'])
-const RETIRED_LOCALE_ALIASES = new Set(['fil', 'filipino'])
+const RETIRED_LOCALES = new Set(['hi', 'ms', 'tl', 'kk'])
+const RETIRED_LOCALE_ALIASES = new Set(['fil', 'filipino', 'kz'])
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl

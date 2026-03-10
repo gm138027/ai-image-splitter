@@ -6,7 +6,7 @@ AI Image Splitter is a free online image splitter and Instagram grid maker. It s
 ## Key Features
 - Online image splitting (supports 3x3, 2x3, 4x4, and custom grids)
 - Ready for Instagram, Facebook, and other social platforms
-- Multi-language support (7 languages)
+- Multi-language support (6 languages)
 - 100% free, no ads, no watermark
 - Mobile-friendly, fully responsive design
 

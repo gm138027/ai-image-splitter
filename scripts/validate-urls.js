@@ -12,8 +12,8 @@ const path = require('path')
 const localeConfig = require('../config/locales.json')
 const SUPPORTED_LOCALES = localeConfig.locales
 const DEFAULT_LOCALE = localeConfig.defaultLocale || 'en'
-const RETIRED_LOCALES = new Set(['hi', 'ms', 'tl'])
-const RETIRED_LOCALE_ALIASES = new Set(['fil', 'filipino'])
+const RETIRED_LOCALES = new Set(['hi', 'ms', 'tl', 'kk'])
+const RETIRED_LOCALE_ALIASES = new Set(['fil', 'filipino', 'kz'])
 const RETIRED_LOCALE_LIST = [...RETIRED_LOCALES, ...RETIRED_LOCALE_ALIASES]
 
 const isRetiredLocale = (locale) => RETIRED_LOCALES.has(locale) || RETIRED_LOCALE_ALIASES.has(locale)
