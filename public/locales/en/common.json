@@ -8,7 +8,8 @@
     "features": "Home",
     "howItWorks": "How It Works",
     "faq": "FAQ",
-    "about": "Blog"
+    "about": "Blog",
+    "backToHome": "Back to Home"
   },
   "hero": {
     "title": "Free Online Image Splitter & Photo Grid Maker Tool — AI Image Splitter",
@@ -75,7 +76,8 @@
       "fileTooLarge": "File size exceeds 50MB limit. Please choose a smaller image",
       "imageTooLarge": "Image dimensions exceed 8192x8192 pixels. Please choose a smaller image",
       "downloadFailed": "Download failed. Please try again"
-    }
+    },
+    "uploadImageFirst": "Please upload an image first"
   },
   "howItWorks": {
     "title": "How to Use the Image Splitter",

@@ -14,9 +14,9 @@
   "imageAlt": {
     "guideComplete": "Panduan Lengkap Operasi Pemisahan Gambar",
     "thumbnailImage": "Thumbnail Panduan Lengkap Operasi Pemisahan Gambar",
-    "coverImage": "Cover Panduan Lengkap Operasi Pemisahan Gambar"
+    "coverImage": "Cover Panduan Lengkap Operasi Pemisahan Gambar",
+    "imageSplitterOnline": "Placeholder sampul tutorial Image Splitter umum"
   },
-  
   "posts": {
     "complete-guide": {
       "title": "Bagaimana cara membagi satu gambar menjadi beberapa gambar? Tutorial gratis membuat grid Instagram",
@@ -24,16 +24,13 @@
       "keywords": "cara membagi gambar menjadi beberapa,bagi JPG menjadi beberapa file,pemisah foto gratis,pembuat grid Instagram,alat pemisah gambar online",
       "readingTime": "5 menit baca",
       "category": "Panduan Tutorial",
-      
       "intro": {
         "title": "Apa itu AI Image Splitter?",
         "content": "AI Image Splitter adalah alat pemisah gambar online profesional yang dirancang khusus untuk kreator konten media sosial. Baik Anda ingin membuat layout grid Instagram, postingan carousel Facebook, atau tampilan multi-gambar platform lain, alat kami membantu Anda mencapainya dengan mudah."
       },
-      
       "stepByStep": {
         "title": "Langkah-Langkah Operasi Lengkap",
         "subtitle": "Ikuti panduan detail ini untuk menguasai pemisahan gambar profesional dalam 5 menit",
-        
         "step1": {
           "title": "Langkah 1: Kunjungi Website dan Upload Gambar",
           "content": "Masukkan {domainLink} di browser Anda untuk mengakses halaman utama kami. Anda dapat mengupload gambar melalui dua metode berikut:",
@@ -41,7 +38,6 @@
           "method2": "Klik Upload: Klik tombol Pilih Gambar untuk memilih dari perangkat Anda",
           "note": "Mendukung format JPG, PNG, GIF dan format mainstream lainnya, ukuran file maksimum 50MB"
         },
-        
         "step2": {
           "title": "Langkah 2: Pilih Mode Pemisahan",
           "content": "Pilih metode pemisahan yang sesuai berdasarkan kebutuhan Anda:",
@@ -52,7 +48,7 @@
               "useCase": "Sempurna untuk tampilan carousel Instagram dan Facebook"
             },
             "horizontal": {
-              "name": "Pemisahan Horizontal", 
+              "name": "Pemisahan Horizontal",
               "description": "Memisahkan gambar secara horizontal, cocok untuk kebutuhan tampilan horizontal",
               "useCase": "Ideal untuk membuat efek timeline atau tampilan langkah demi langkah"
             },
@@ -63,16 +59,14 @@
             }
           }
         },
-        
         "step3": {
           "title": "Langkah 3: Atur Parameter Pemisahan",
           "content": "Sesuaikan parameter yang sesuai berdasarkan mode yang dipilih:",
           "setting1": "Pemisahan Vertikal: Atur jumlah kolom (disarankan 3-6 kolom)",
-          "setting2": "Pemisahan Horizontal: Atur jumlah baris (disarankan 2-4 baris)", 
+          "setting2": "Pemisahan Horizontal: Atur jumlah baris (disarankan 2-4 baris)",
           "setting3": "Pemisahan Grid: Kustomisasi baris dan kolom (3×3 paling populer)",
           "preview": "Area preview kanan menampilkan efek pemisahan secara real-time, membantu Anda menyesuaikan ke kondisi optimal"
         },
-        
         "step4": {
           "title": "Langkah 4: Sesuaikan Lebar Garis Pemisah",
           "content": "Gunakan slider lebar garis pemisah untuk menyesuaikan ketebalan garis grid:",
@@ -80,7 +74,6 @@
           "tip2": "Garis sedang (3-4px): Efek visual seimbang, cocok untuk sebagian besar situasi",
           "tip3": "Garis tebal (5-6px): Menekankan efek pemisahan, cocok untuk kreasi artistik"
         },
-        
         "step5": {
           "title": "Langkah 5: Pilih Format Output",
           "content": "Pilih format gambar yang sesuai berdasarkan skenario penggunaan:",
@@ -91,20 +84,17 @@
             "bmp": "Format lossless, cocok untuk pencetakan"
           }
         },
-        
         "step6": {
           "title": "Langkah 6: Download Hasil Pemisahan",
           "content": "Setelah menyelesaikan pemisahan, Anda memiliki dua opsi download:",
           "option1": "Download Tunggal: Arahkan kursor ke grid mana pun dan klik tombol download untuk mendapatkan gambar tunggal",
           "option2": "Download Batch: Klik tombol Download Gambar untuk mendownload semua hasil pemisahan sebagai arsip ZIP"
         },
-        
         "step7": {
           "title": "Langkah 7: Upload Ulang atau Lanjutkan Pemrosesan",
           "content": "Untuk memproses gambar lain, klik tombol Upload Ulang Gambar untuk memulai tugas pemisahan baru."
         }
       },
-      
       "bestPractices": {
         "title": "Tips Penggunaan Profesional",
         "subtitle": "Tingkatkan kualitas konten media sosial Anda",
@@ -125,7 +115,6 @@
           "content": "Coba kombinasi baris dan kolom yang berbeda untuk menemukan metode pemisahan terbaik untuk gambar Anda"
         }
       },
-      
       "faq": {
         "title": "Pertanyaan yang Sering Diajukan",
         "q1": {
@@ -145,11 +134,18 @@
           "answer": "Tentu saja! Website kami menggunakan desain responsif dan bekerja sempurna di ponsel, tablet, dan komputer."
         }
       },
-      
       "conclusion": {
         "title": "Mulai Membuat Konten Profesional Anda",
         "content": "Sekarang Anda telah menguasai penggunaan lengkap AI Image Splitter. Alat yang kuat ini akan membantu Anda membuat konten media sosial yang menarik perhatian, meningkatkan citra merek dan keterlibatan pengguna Anda. Mulai gunakan sekarang dan biarkan kreativitas Anda berkembang!"
       }
+    },
+    "image-splitter-online": {
+      "title": "Tutorial Image Splitter: Preset Rasio & Skenario Penggunaan Online",
+      "description": "Pelajari cara membagi gambar online untuk blog, cetak A4, cerita gulir panjang, dan tata letak multi-layar. Panduan ini menjelaskan kapan memakai rasio Default, 4:5, 3:4, atau 1:1 dan cara mengekspor 3, 6, 9+ potongan secara gratis.",
+      "keywords": "tutorial image splitter,image splitter online,bagi gambar gratis,image splitter 4:5,crop rasio 3:4,bagi gambar panjang,tutorial cetak A4",
+      "readingTime": "6 menit baca",
+      "category": "Panduan Tutorial",
+      "coverImageAlt": "Ilustrasi utama tutorial Image Splitter"
     }
   }
-} 
+}

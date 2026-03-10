@@ -8,7 +8,8 @@
     "features": "首页",
     "howItWorks": "使用方法",
     "faq": "常见问题",
-    "about": "博客"
+    "about": "博客",
+    "backToHome": "返回首页"
   },
   "hero": {
     "title": "免费在线图像分割器与照片网格制作工具——AI Image Splitter",
@@ -75,7 +76,8 @@
       "fileTooLarge": "文件大小超过50MB限制，请选择更小的图片",
       "imageTooLarge": "图片尺寸超过8192x8192像素，请选择更小的图片",
       "downloadFailed": "下载失败，请重试"
-    }
+    },
+    "uploadImageFirst": "请先上传图片"
   },
   "howItWorks": {
     "title": "如何使用图像分割器",

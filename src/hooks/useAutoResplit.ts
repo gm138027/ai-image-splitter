@@ -33,6 +33,10 @@ export const useAutoResplit = ({
 
   useEffect(() => {
     if (!hasEverSplitRef.current || !uploadedImage || isProcessing) {
+      // Reset baseline when user has not completed a split yet.
+      if (!hasEverSplitRef.current) {
+        lastParamsRef.current = null
+      }
       return
     }
 
@@ -44,8 +48,13 @@ export const useAutoResplit = ({
       aspectRatio: config.aspectRatio
     }
     const previousParams = lastParamsRef.current
+    if (!previousParams) {
+      // Treat the first post-split render as baseline to avoid duplicate split.
+      lastParamsRef.current = currentParams
+      return
+    }
+
     const shouldResplit =
-      !previousParams ||
       previousParams.mode !== currentParams.mode ||
       previousParams.rows !== currentParams.rows ||
       previousParams.cols !== currentParams.cols ||

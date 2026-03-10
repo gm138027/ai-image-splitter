@@ -8,7 +8,8 @@
     "features": "Trang Chủ",
     "howItWorks": "Cách hoạt động",
     "faq": "Câu Hỏi Thường Gặp",
-    "about": "Blog của chúng tôi"
+    "about": "Blog của chúng tôi",
+    "backToHome": "Quay về Trang chủ"
   },
   "hero": {
     "title": "Công cụ Tách Ảnh Online và Tạo Lưới",
@@ -75,7 +76,8 @@
       "fileTooLarge": "Kích thước file vượt quá giới hạn 50MB. Vui lòng chọn ảnh nhỏ hơn",
       "imageTooLarge": "Kích thước ảnh vượt quá 8192x8192 pixel. Vui lòng chọn ảnh nhỏ hơn",
       "downloadFailed": "Tải về thất bại. Vui lòng thử lại"
-    }
+    },
+    "uploadImageFirst": "Vui lòng tải ảnh lên trước"
   },
   "howItWorks": {
     "title": "Cách Hoạt Động",

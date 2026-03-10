@@ -65,68 +65,86 @@ const getEffectiveDimensions = (
   }
 }
 
+type GridShape = {
+  rowCount: number
+  colCount: number
+}
+
+type AxisSegment = {
+  sourceStart: number
+  sourceSize: number
+  outputSize: number
+}
+
+const getGridShape = (config: SplitConfig): GridShape => {
+  switch (config.mode) {
+    case 'vertical':
+      return { rowCount: 1, colCount: config.cols }
+    case 'horizontal':
+      return { rowCount: config.rows, colCount: 1 }
+    case 'grid':
+    default:
+      return { rowCount: config.rows, colCount: config.cols }
+  }
+}
+
+const createAxisSegments = (length: number, count: number): AxisSegment[] => {
+  const safeCount = Math.max(1, Math.floor(count))
+  const sourceLength = Math.max(1, length)
+  const outputLength = Math.max(safeCount, Math.round(sourceLength))
+  const segments: AxisSegment[] = []
+
+  let previousOutputEnd = 0
+
+  for (let index = 0; index < safeCount; index++) {
+    const sourceStart = (sourceLength * index) / safeCount
+    const sourceEnd = (sourceLength * (index + 1)) / safeCount
+    const outputEnd = Math.round((outputLength * (index + 1)) / safeCount)
+
+    segments.push({
+      sourceStart,
+      sourceSize: sourceEnd - sourceStart,
+      outputSize: Math.max(1, outputEnd - previousOutputEnd)
+    })
+
+    previousOutputEnd = outputEnd
+  }
+
+  return segments
+}
+
+const getSliceIndices = (index: number, config: SplitConfig, colCount: number) => {
+  if (config.mode === 'vertical') {
+    return { rowIndex: 0, colIndex: index }
+  }
+
+  if (config.mode === 'horizontal') {
+    return { rowIndex: index, colIndex: 0 }
+  }
+
+  return {
+    rowIndex: Math.floor(index / colCount),
+    colIndex: index % colCount
+  }
+}
+
 const calculateSplitParams = (imageWidth: number, imageHeight: number, config: SplitConfig) => {
-  const { mode, rows, cols } = config
+  const { rowCount, colCount } = getGridShape(config)
   const { width, height, offsetX, offsetY } = getEffectiveDimensions(
     imageWidth,
     imageHeight,
     config.cropRegion
   )
 
-  switch (mode) {
-    case 'vertical':
-      return {
-        splitCount: cols,
-        splitWidth: width / cols,
-        splitHeight: height,
-        offsetX,
-        offsetY
-      }
-    case 'horizontal':
-      return {
-        splitCount: rows,
-        splitWidth: width,
-        splitHeight: height / rows,
-        offsetX,
-        offsetY
-      }
-    case 'grid':
-    default:
-      return {
-        splitCount: rows * cols,
-        splitWidth: width / cols,
-        splitHeight: height / rows,
-        offsetX,
-        offsetY
-      }
-  }
-}
-
-const calculateSplitPosition = (
-  index: number,
-  config: SplitConfig,
-  splitWidth: number,
-  splitHeight: number
-) => {
-  const { mode, cols } = config
-
-  if (mode === 'vertical') {
-    return { sx: (index % cols) * splitWidth, sy: 0 }
-  }
-
-  if (mode === 'horizontal') {
-    return { sx: 0, sy: index * splitHeight }
-  }
-
   return {
-    sx: (index % cols) * splitWidth,
-    sy: Math.floor(index / cols) * splitHeight
+    splitCount: rowCount * colCount,
+    rowCount,
+    colCount,
+    width,
+    height,
+    offsetX,
+    offsetY
   }
-}
-
-const toUintDimension = (value: number) => {
-  const rounded = Math.max(1, Math.floor(value))
-  return rounded
 }
 
 const JPEG_QUALITY = 0.85
@@ -141,20 +159,29 @@ const splitBitmap = async (
     height: bitmap.height,
     config
   })
-  const { splitCount, splitWidth, splitHeight, offsetX, offsetY } = calculateSplitParams(
+  const { splitCount, rowCount, colCount, width, height, offsetX, offsetY } = calculateSplitParams(
     bitmap.width,
     bitmap.height,
     config
   )
+  const xSegments = createAxisSegments(width, colCount)
+  const ySegments = createAxisSegments(height, rowCount)
 
   const splitPromises: Array<Promise<SplitSuccessMessage['splits'][number]>> = []
   const startIndex = range ? range.start : 0
   const endIndex = range ? range.end : splitCount
 
   for (let index = startIndex; index < endIndex; index++) {
-    const { sx, sy } = calculateSplitPosition(index, config, splitWidth, splitHeight)
-    const width = toUintDimension(splitWidth)
-    const height = toUintDimension(splitHeight)
+    const { rowIndex, colIndex } = getSliceIndices(index, config, colCount)
+    const xSegment = xSegments[colIndex]
+    const ySegment = ySegments[rowIndex]
+
+    if (!xSegment || !ySegment) {
+      throw new Error('无法计算切片分段')
+    }
+
+    const width = xSegment.outputSize
+    const height = ySegment.outputSize
 
     const canvas = new OffscreenCanvas(width, height)
     const context = canvas.getContext('2d')
@@ -165,10 +192,10 @@ const splitBitmap = async (
 
     context.drawImage(
       bitmap,
-      offsetX + sx,
-      offsetY + sy,
-      splitWidth,
-      splitHeight,
+      offsetX + xSegment.sourceStart,
+      offsetY + ySegment.sourceStart,
+      xSegment.sourceSize,
+      ySegment.sourceSize,
       0,
       0,
       width,

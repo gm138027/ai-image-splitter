@@ -5,6 +5,76 @@
  */
 const isBrowser = typeof window !== 'undefined' && typeof document !== 'undefined'
 
+const getCanvasMimeType = (format: SplitConfig['outputFormat']) => {
+  if (format === 'jpg') {
+    return 'image/jpeg'
+  }
+  return `image/${format}`
+}
+
+type GridShape = {
+  rowCount: number
+  colCount: number
+}
+
+type AxisSegment = {
+  sourceStart: number
+  sourceSize: number
+  outputSize: number
+}
+
+const getGridShape = (config: SplitConfig): GridShape => {
+  switch (config.mode) {
+    case 'vertical':
+      return { rowCount: 1, colCount: config.cols }
+    case 'horizontal':
+      return { rowCount: config.rows, colCount: 1 }
+    case 'grid':
+    default:
+      return { rowCount: config.rows, colCount: config.cols }
+  }
+}
+
+const createAxisSegments = (length: number, count: number): AxisSegment[] => {
+  const safeCount = Math.max(1, Math.floor(count))
+  const sourceLength = Math.max(1, length)
+  const outputLength = Math.max(safeCount, Math.round(sourceLength))
+  const segments: AxisSegment[] = []
+
+  let previousOutputEnd = 0
+
+  for (let index = 0; index < safeCount; index++) {
+    const sourceStart = (sourceLength * index) / safeCount
+    const sourceEnd = (sourceLength * (index + 1)) / safeCount
+    const outputEnd = Math.round((outputLength * (index + 1)) / safeCount)
+
+    segments.push({
+      sourceStart,
+      sourceSize: sourceEnd - sourceStart,
+      outputSize: Math.max(1, outputEnd - previousOutputEnd)
+    })
+
+    previousOutputEnd = outputEnd
+  }
+
+  return segments
+}
+
+const getSliceIndices = (index: number, config: SplitConfig, colCount: number) => {
+  if (config.mode === 'vertical') {
+    return { rowIndex: 0, colIndex: index }
+  }
+
+  if (config.mode === 'horizontal') {
+    return { rowIndex: index, colIndex: 0 }
+  }
+
+  return {
+    rowIndex: Math.floor(index / colCount),
+    colIndex: index % colCount
+  }
+}
+
 /**
  * Validate if file is a valid image file
  */
@@ -69,67 +139,18 @@ export const calculateSplitParams = (
   image: HTMLImageElement,
   config: SplitConfig
 ) => {
-  const { mode, rows, cols } = config
+  const { rowCount, colCount } = getGridShape(config)
   const { width: imgWidth, height: imgHeight, offsetX, offsetY } = getEffectiveDimensions(
     image.width,
     image.height,
     config.cropRegion
   )
 
-  let splitCount = 0
-  let splitWidth = 0
-  let splitHeight = 0
-
-  switch (mode) {
-    case 'vertical':
-      splitCount = cols
-      splitWidth = imgWidth / cols
-      splitHeight = imgHeight
-      break
-    case 'horizontal':
-      splitCount = rows
-      splitWidth = imgWidth
-      splitHeight = imgHeight / rows
-      break
-    case 'grid':
-      splitCount = rows * cols
-      splitWidth = imgWidth / cols
-      splitHeight = imgHeight / rows
-      break
-  }
+  const splitCount = rowCount * colCount
+  const splitWidth = imgWidth / colCount
+  const splitHeight = imgHeight / rowCount
 
   return { splitCount, splitWidth, splitHeight, offsetX, offsetY }
-}
-
-/**
- * Calculate split position
- */
-export const calculateSplitPosition = (
-  index: number,
-  config: SplitConfig,
-  splitWidth: number,
-  splitHeight: number
-) => {
-  const { mode, cols } = config
-  let sx = 0
-  let sy = 0
-
-  switch (mode) {
-    case 'vertical':
-      sx = (index % cols) * splitWidth
-      sy = 0
-      break
-    case 'horizontal':
-      sx = 0
-      sy = index * splitHeight
-      break
-    case 'grid':
-      sx = (index % cols) * splitWidth
-      sy = Math.floor(index / cols) * splitHeight
-      break
-  }
-
-  return { sx, sy }
 }
 
 /**
@@ -138,36 +159,47 @@ export const calculateSplitPosition = (
 export const createSplitImage = async (
   sourceImage: HTMLImageElement,
   index: number,
-  config: SplitConfig,
-  splitWidth: number,
-  splitHeight: number,
-  offsetX: number,
-  offsetY: number
+  config: SplitConfig
 ): Promise<SplitImage> => {
   // Only run in browser environment
   if (!isBrowser) {
     throw new Error('This function can only run in browser environment')
   }
 
-  const tempCanvas = document.createElement('canvas')
-  tempCanvas.width = splitWidth
-  tempCanvas.height = splitHeight
-  const tempCtx = tempCanvas.getContext('2d')!
+  const { width: effectiveWidth, height: effectiveHeight, offsetX, offsetY } = getEffectiveDimensions(
+    sourceImage.width,
+    sourceImage.height,
+    config.cropRegion
+  )
+  const { rowCount, colCount } = getGridShape(config)
+  const { rowIndex, colIndex } = getSliceIndices(index, config, colCount)
+  const xSegment = createAxisSegments(effectiveWidth, colCount)[colIndex]
+  const ySegment = createAxisSegments(effectiveHeight, rowCount)[rowIndex]
+  if (!xSegment || !ySegment) {
+    throw new Error('Failed to calculate split segment')
+  }
 
-  const { sx, sy } = calculateSplitPosition(index, config, splitWidth, splitHeight)
-  const sourceX = offsetX + sx
-  const sourceY = offsetY + sy
+  const tempCanvas = document.createElement('canvas')
+  tempCanvas.width = xSegment.outputSize
+  tempCanvas.height = ySegment.outputSize
+  const tempCtx = tempCanvas.getContext('2d')!
 
   // Draw image
   tempCtx.drawImage(
     sourceImage,
-    sourceX, sourceY, splitWidth, splitHeight,
-    0, 0, splitWidth, splitHeight
+    offsetX + xSegment.sourceStart,
+    offsetY + ySegment.sourceStart,
+    xSegment.sourceSize,
+    ySegment.sourceSize,
+    0,
+    0,
+    xSegment.outputSize,
+    ySegment.outputSize
   )
 
   // Convert to Blob
   const blob = await new Promise<Blob>((resolve) => {
-    tempCanvas.toBlob((blob) => resolve(blob!), `image/${config.outputFormat}`)
+    tempCanvas.toBlob((blob) => resolve(blob!), getCanvasMimeType(config.outputFormat))
   })
 
   return {
@@ -191,7 +223,7 @@ export const splitImage = async (
     throw new Error('This function can only run in browser environment')
   }
 
-  const { splitCount, splitWidth, splitHeight, offsetX, offsetY } = calculateSplitParams(
+  const { splitCount } = calculateSplitParams(
     sourceImage,
     config
   )
@@ -201,11 +233,7 @@ export const splitImage = async (
     const splitImg = await createSplitImage(
       sourceImage,
       i,
-      config,
-      splitWidth,
-      splitHeight,
-      offsetX,
-      offsetY
+      config
     )
     splitImages.push(splitImg)
   }

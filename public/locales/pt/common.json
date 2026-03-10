@@ -8,7 +8,8 @@
     "features": "Início",
     "howItWorks": "Como Funciona",
     "faq": "Perguntas Frequentes",
-    "about": "Nosso Blog"
+    "about": "Nosso Blog",
+    "backToHome": "Voltar ao Início"
   },
   "hero": {
     "title": "Divisor de Imagem Online e Criador de Grade",
@@ -75,7 +76,8 @@
       "downloadFailed": "Falha no download. Por favor, tente novamente"
     },
     "comingSoon": "Ferramenta de Divisão de Imagens",
-    "description": "Ferramenta avançada de divisão de imagens para quem precisa criar grades no Instagram. Envie sua imagem e divida-a em grades perfeitas para carrosséis nas redes sociais."
+    "description": "Ferramenta avançada de divisão de imagens para quem precisa criar grades no Instagram. Envie sua imagem e divida-a em grades perfeitas para carrosséis nas redes sociais.",
+    "uploadImageFirst": "Envie uma imagem primeiro"
   },
   "howItWorks": {
     "title": "Como Funciona",

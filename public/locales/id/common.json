@@ -8,7 +8,8 @@
     "features": "Beranda",
     "howItWorks": "Cara Kerja",
     "faq": "Pertanyaan yang Sering Diajukan",
-    "about": "Blog Kami"
+    "about": "Blog Kami",
+    "backToHome": "Kembali ke Beranda"
   },
   "hero": {
     "title": "Pemisah Gambar Online & Pembuat Grid",
@@ -75,7 +76,8 @@
       "downloadFailed": "Unduhan gagal. Silakan coba lagi"
     },
     "comingSoon": "Alat Pembagi Gambar",
-    "description": "Alat pemisah gambar online tingkat lanjut untuk kebutuhan pembuat grid Instagram. Unggah gambar Anda dan bagi menjadi grid yang sempurna untuk carousel media sosial."
+    "description": "Alat pemisah gambar online tingkat lanjut untuk kebutuhan pembuat grid Instagram. Unggah gambar Anda dan bagi menjadi grid yang sempurna untuk carousel media sosial.",
+    "uploadImageFirst": "Silakan unggah gambar terlebih dahulu"
   },
   "howItWorks": {
     "title": "Cara Kerja",

@@ -32,17 +32,6 @@ const Home: NextPage = () => {
       <FAQStructuredData />
 
       <Head>
-        
-        {/* Critical LCP image preload - key configuration to prevent layout shifts */}
-        <link
-          rel="preload"
-          as="image"
-          href="/images/penguin-split.png"
-          type="image/png"
-          imageSizes="192px"
-          imageSrcSet="/images/penguin-split.png"
-        />
-        
         {/* Website icon configuration - solve browser tab display issue */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
