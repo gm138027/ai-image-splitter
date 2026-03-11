@@ -1,25 +1,53 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { SUPPORTED_LOCALES } from './config/seo'
 
 const RETIRED_LOCALES = new Set(['hi', 'ms', 'tl', 'kk'])
 const RETIRED_LOCALE_ALIASES = new Set(['fil', 'filipino', 'kz'])
 
 export function middleware(request: NextRequest) {
-  const pathname = request.nextUrl.pathname
+  const { pathname } = request.nextUrl
   const url = request.nextUrl.clone()
-  const pathSegments = pathname.split('/').filter(Boolean)
-  const firstSegmentLower = pathSegments[0]?.toLowerCase()
-
-  if (firstSegmentLower && (RETIRED_LOCALES.has(firstSegmentLower) || RETIRED_LOCALE_ALIASES.has(firstSegmentLower))) {
-    // Retired locales return 410 to speed deindexing.
-    return new NextResponse('Gone', { status: 410 })
-  }
 
   if (url.searchParams.has('lng')) {
     url.searchParams.delete('lng')
     return NextResponse.redirect(url, 301)
   }
 
-  return NextResponse.next()
+  const pathSegments = pathname.split('/').filter(Boolean)
+  if (pathSegments.length > 0) {
+    const firstSegment = pathSegments[0]
+    const firstSegmentLower = firstSegment.toLowerCase()
+
+    // Retired locales return 410 to speed deindexing.
+    if (RETIRED_LOCALES.has(firstSegmentLower) || RETIRED_LOCALE_ALIASES.has(firstSegmentLower)) {
+      return new NextResponse('Gone', { status: 410 })
+    }
+
+    if (firstSegment.length === 2 || firstSegment.includes('-')) {
+      if (!SUPPORTED_LOCALES.includes(firstSegment as any)) {
+        const restPath = pathSegments.slice(1).join('/')
+        url.pathname = restPath ? `/${restPath}` : '/'
+        return NextResponse.redirect(url, 301)
+      }
+    }
+  }
+
+  if (pathname !== '/' && pathname.endsWith('/')) {
+    url.pathname = pathname.slice(0, -1)
+    return NextResponse.redirect(url, 301)
+  }
+
+  const response = NextResponse.next()
+
+  response.headers.set('X-Frame-Options', 'DENY')
+  response.headers.set('X-Content-Type-Options', 'nosniff')
+  response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin')
+
+  if (pathname.startsWith('/_next/static/') || pathname.startsWith('/images/')) {
+    response.headers.set('Cache-Control', 'public, max-age=31536000, immutable')
+  }
+
+  return response
 }
 
 export const config = {
