@@ -55,7 +55,7 @@ const generateTestURLs = () => {
       }
     })
     
-    // Retired locale query params (expected 410)
+    // Retired locale query params (should be stripped from URL)
     RETIRED_LOCALE_LIST.forEach(locale => {
       urls.push(`${BASE_URL}${path}?lng=${locale}`)
     })
@@ -94,16 +94,17 @@ const analyzeURL = (url) => {
     if (lngParam) {
       const lngParamClean = lngParam.trim()
       const lngParamLower = lngParamClean.toLowerCase()
-      analysis.issues.push('Uses query parameter locale format (lng=)')
+      analysis.issues.push('Uses legacy locale query parameter (lng=)')
       analysis.isValid = false
-      
+
+      // Query-based locale is deprecated. Always canonicalize to path-based URL.
+      analysis.redirectTo = `${BASE_URL}${pathname}`
       if (isRetiredLocale(lngParamLower)) {
-        analysis.issues.push('Retired locale should return 410')
-      } else if (lngParamClean === DEFAULT_LOCALE) {
-        analysis.redirectTo = `${BASE_URL}${pathname}`
-      } else if (SUPPORTED_LOCALES.includes(lngParamClean)) {
-        analysis.redirectTo = `${BASE_URL}/${lngParamClean}${pathname === '/' ? '' : pathname}`
-      } else {
+        analysis.issues.push('Retired locale query should be removed from URL')
+      } else if (
+        lngParamClean !== DEFAULT_LOCALE &&
+        !SUPPORTED_LOCALES.includes(lngParamClean)
+      ) {
         analysis.issues.push('Unsupported locale in query parameter')
       }
     }
@@ -255,25 +256,24 @@ if (invalidURLs.length === 0) {
   console.log('🎉 所有URL都符合标准！')
 } else {
   console.log('💡 建议的修复措施:')
-  console.log('1. 部署middleware.ts处理URL重定向')
-  console.log('2. 更新next.config.js添加重定向规则')
+  console.log('1. 在入口层统一移除lng查询参数（推荐middleware）')
+  console.log('2. 仅保留路径前缀作为多语言URL规范')
   console.log('3. 在robots.txt中禁止问题URL格式')
   console.log('4. 监控Google Search Console的"备用网页"状态')
 }
 
 console.log('')
 console.log('🔧 相关文件:')
-console.log('- src/middleware.ts (URL重定向处理)')
-console.log('- next.config.js (重定向规则)')
+console.log('- src/middleware.ts (入口层URL清理)')
 console.log('- public/robots.txt (搜索引擎指令)')
-console.log('- src/utils/urlCleaner.ts (URL清理工具)')
+console.log('- src/lib/urlUtils.ts (canonical/hreflang生成)')
 
 // 注意：URL验证发现问题是正常的，因为我们故意测试了问题URL
 // 这些问题将通过middleware和重定向规则自动修复
 console.log('')
 console.log('ℹ️  注意: 发现的URL问题是预期的，将通过以下机制自动修复:')
-console.log('   • middleware.ts 自动重定向')
-console.log('   • next.config.js 重定向规则')
+console.log('   • middleware 在入口层移除lng参数')
+console.log('   • canonical/hreflang仅输出路径前缀URL')
 console.log('   • robots.txt 阻止索引问题URL')
 
 // 不要因为发现预期的URL问题而失败构建

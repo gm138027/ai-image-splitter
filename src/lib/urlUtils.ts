@@ -8,8 +8,7 @@ import {
   SUPPORTED_LOCALES,
   type SupportedLocale,
   SEO_CONFIG,
-  isValidLocale,
-  normalizeLegacyLocale
+  isValidLocale
 } from '@/config/seo'
 
 // Base domain configuration - 使用统一配置
@@ -115,15 +114,9 @@ export class URLManager {
  * React Hook: Get current page URL information
  */
 export const usePageUrls = (router: any) => {
-  const { pathname, query, locale: renderedLocale } = router
-  const lngParam = query.lng as string | undefined
+  const { pathname, locale: renderedLocale } = router
 
-  // BUG FIX: Handle legacy aliases using unified normalization
-  const normalizedLngParam = lngParam ? normalizeLegacyLocale(lngParam) : null
-
-  // The "effective" locale must prioritize the `lng` query parameter to fix legacy SEO issues.
-  // If `lng` exists and is valid, use it. Otherwise, fall back to the locale of the rendered page.
-  const effectiveLocale = normalizedLngParam ||
+  const effectiveLocale =
     (renderedLocale && URLManager.isValidLocale(renderedLocale) ? renderedLocale : null) ||
     SEO_CONFIG.locales.default
 
