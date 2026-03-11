@@ -1,25 +1,10 @@
 import React from 'react'
-import { useRouter } from 'next/router'
+import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import { Heart } from 'lucide-react'
 
 const Footer: React.FC = () => {
   const { t } = useTranslation('common')
-  const router = useRouter()
-
-  const handlePrivacyClick = (e: React.MouseEvent) => {
-    e.preventDefault()
-    e.stopPropagation()
-    router.push('/privacy')
-  }
-
-  const handleTermsClick = (e: React.MouseEvent) => {
-    e.preventDefault()
-    e.stopPropagation()
-    router.push('/terms')
-  }
-
-
 
   return (
     <footer className="bg-white border-t border-gray-200 relative z-50">
@@ -35,18 +20,18 @@ const Footer: React.FC = () => {
 
           {/* Links */}
           <div className="flex items-center space-x-6 mt-4 md:mt-0 relative z-10">
-            <button
-              onClick={handlePrivacyClick}
-              className="text-gray-600 hover:text-blue-600 text-sm transition-colors cursor-pointer bg-transparent border-none p-0"
+            <Link
+              href="/privacy"
+              className="text-gray-600 hover:text-blue-600 text-sm transition-colors"
             >
               {t('footer.privacy')}
-            </button>
-            <button
-              onClick={handleTermsClick}
-              className="text-gray-600 hover:text-blue-600 text-sm transition-colors cursor-pointer bg-transparent border-none p-0"
+            </Link>
+            <Link
+              href="/terms"
+              className="text-gray-600 hover:text-blue-600 text-sm transition-colors"
             >
               {t('footer.terms')}
-            </button>
+            </Link>
           </div>
         </div>
       </div>
