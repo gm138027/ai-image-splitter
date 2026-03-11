@@ -29,6 +29,11 @@ const buildLegacyLocaleRedirectRules = () => {
         permanent: true,
       },
       {
+        source: `/${source}/`,
+        destination: getLocaleDestination(target, false),
+        permanent: true,
+      },
+      {
         source: `/${source}/:path+`,
         destination: getLocaleDestination(target, true),
         permanent: true,

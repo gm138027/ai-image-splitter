@@ -6,6 +6,7 @@ const path = require('path')
 const localeConfig = require('../config/locales.json')
 const EXPECTED_LOCALES = localeConfig.locales
 const DEFAULT_LOCALE = localeConfig.defaultLocale || 'en'
+const SUPPORTED_LOCALES_LOWER = new Set(EXPECTED_LOCALES.map(locale => locale.toLowerCase()))
 
 const logSection = (title) => {
   console.log('\n[validate-config] ' + title)
@@ -20,6 +21,24 @@ const reportMismatch = (context, missing) => {
   }
   console.log('[error] ' + context + ' is missing locales: ' + missing.join(', '))
   hasErrors = true
+}
+
+const isNonEmptyString = (value) => typeof value === 'string' && value.trim().length > 0
+
+const findCaseInsensitiveDuplicates = (values) => {
+  const seen = new Set()
+  const duplicates = new Set()
+
+  values.forEach(value => {
+    const normalized = value.toLowerCase()
+    if (seen.has(normalized)) {
+      duplicates.add(normalized)
+    } else {
+      seen.add(normalized)
+    }
+  })
+
+  return Array.from(duplicates)
 }
 
 logSection('Checking next-i18next configuration')
@@ -60,6 +79,94 @@ try {
 
 } catch (error) {
   console.log('[error] Failed to read public/robots.txt: ' + error.message)
+  hasErrors = true
+}
+
+logSection('Checking locale governance fields')
+try {
+  const retiredLocales = localeConfig.retiredLocales || []
+  const retiredLocaleAliases = localeConfig.retiredLocaleAliases || []
+  const legacyLocaleRedirects = localeConfig.legacyLocaleRedirects || {}
+  const deprecatedQueryLocaleParam = localeConfig.deprecatedQueryLocaleParam
+
+  if (!Array.isArray(retiredLocales)) {
+    console.log('[error] retiredLocales must be an array')
+    hasErrors = true
+  }
+  if (!Array.isArray(retiredLocaleAliases)) {
+    console.log('[error] retiredLocaleAliases must be an array')
+    hasErrors = true
+  }
+  if (typeof legacyLocaleRedirects !== 'object' || legacyLocaleRedirects === null || Array.isArray(legacyLocaleRedirects)) {
+    console.log('[error] legacyLocaleRedirects must be an object map')
+    hasErrors = true
+  }
+  if (!isNonEmptyString(deprecatedQueryLocaleParam)) {
+    console.log('[error] deprecatedQueryLocaleParam must be a non-empty string')
+    hasErrors = true
+  }
+
+  const retiredTokens = [...retiredLocales, ...retiredLocaleAliases]
+  const nonStringRetired = retiredTokens.filter(token => !isNonEmptyString(token))
+  if (nonStringRetired.length > 0) {
+    console.log('[error] retiredLocales/retiredLocaleAliases contain invalid values')
+    hasErrors = true
+  }
+
+  const normalizedRetiredTokens = retiredTokens
+    .filter(isNonEmptyString)
+    .map(token => token.trim().toLowerCase())
+
+  const retiredDuplicates = findCaseInsensitiveDuplicates(normalizedRetiredTokens)
+  if (retiredDuplicates.length > 0) {
+    console.log('[error] duplicate retired locale tokens found: ' + retiredDuplicates.join(', '))
+    hasErrors = true
+  }
+
+  const conflictsWithSupported = normalizedRetiredTokens.filter(token => SUPPORTED_LOCALES_LOWER.has(token))
+  if (conflictsWithSupported.length > 0) {
+    console.log('[error] retired locale tokens conflict with supported locales: ' + Array.from(new Set(conflictsWithSupported)).join(', '))
+    hasErrors = true
+  }
+
+  Object.entries(legacyLocaleRedirects).forEach(([rawSource, rawTarget]) => {
+    const source = String(rawSource || '').trim()
+    const sourceLower = source.toLowerCase()
+    const target = String(rawTarget || '').trim()
+    const targetLower = target.toLowerCase()
+
+    if (!isNonEmptyString(source) || !isNonEmptyString(target)) {
+      console.log('[error] legacyLocaleRedirects contains empty source/target')
+      hasErrors = true
+      return
+    }
+
+    if (source !== sourceLower) {
+      console.log('[error] legacyLocaleRedirects source key must be lowercase: ' + source)
+      hasErrors = true
+    }
+
+    if (!EXPECTED_LOCALES.includes(target)) {
+      console.log('[error] legacyLocaleRedirects target must be a supported locale: ' + source + ' -> ' + target)
+      hasErrors = true
+    }
+
+    if (SUPPORTED_LOCALES_LOWER.has(sourceLower)) {
+      console.log('[error] legacyLocaleRedirects source should not be a supported locale: ' + source)
+      hasErrors = true
+    }
+
+    if (sourceLower === targetLower) {
+      console.log('[error] legacyLocaleRedirects contains self-redirect: ' + source + ' -> ' + target)
+      hasErrors = true
+    }
+  })
+
+  if (!hasErrors) {
+    console.log('[ok] locale governance fields are valid')
+  }
+} catch (error) {
+  console.log('[error] Failed to validate locale governance fields: ' + error.message)
   hasErrors = true
 }
 
