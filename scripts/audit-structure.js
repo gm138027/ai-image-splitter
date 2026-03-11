@@ -348,7 +348,12 @@ const checkLegalLinks = async (options) => {
 const checkCanonicalAndHreflang = async (options) => {
   const failures = []
   const evidence = []
-  const baseHost = new URL(options.baseUrl).host
+  const baseUrl = new URL(options.baseUrl)
+  const baseHost = baseUrl.host
+  const isLoopbackBase =
+    baseUrl.hostname === 'localhost' ||
+    baseUrl.hostname === '127.0.0.1' ||
+    baseUrl.hostname === '::1'
 
   for (const route of CHECK_ROUTES) {
     const page = await requestWithRedirects({
@@ -382,7 +387,9 @@ const checkCanonicalAndHreflang = async (options) => {
       continue
     }
 
-    if (canonicalUrl.host !== baseHost) {
+    // In CI/local loopback runs, canonical often points to production domain.
+    // Keep host strict only for non-loopback audits.
+    if (!isLoopbackBase && canonicalUrl.host !== baseHost) {
       failures.push(`${route} canonical 主机不一致: ${canonical.href}`)
     }
     if (canonicalUrl.search || canonicalUrl.hash) {
@@ -400,7 +407,9 @@ const checkCanonicalAndHreflang = async (options) => {
       failures.push(`${route} hreflang 数量不足，当前 ${alternates.length}`)
     }
 
-    evidence.push(`${route}: canonical=${canonical.href}, hreflang=${alternates.length}`)
+    evidence.push(
+      `${route}: canonical=${canonical.href}, hreflang=${alternates.length}${isLoopbackBase ? ', host-check=relaxed(loopback)' : ''}`
+    )
   }
 
   return createCheck(

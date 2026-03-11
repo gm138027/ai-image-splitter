@@ -47,13 +47,13 @@ jobs:
           trap cleanup EXIT
 
           for i in {1..60}; do
-            if curl -fsS http://127.0.0.1:3000 >/dev/null; then
+            if curl -fsS http://127.0.0.1:3000 >/dev/null 2>&1; then
               break
             fi
             sleep 2
           done
 
-          if ! curl -fsS http://127.0.0.1:3000 >/dev/null; then
+          if ! curl -fsS http://127.0.0.1:3000 >/dev/null 2>&1; then
             echo "Server did not become ready in time."
             cat /tmp/next-start.log
             exit 1
