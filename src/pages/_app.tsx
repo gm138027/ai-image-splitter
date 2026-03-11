@@ -1,5 +1,6 @@
 import type { AppProps } from 'next/app'
 import React from 'react'
+import Head from 'next/head'
 import { appWithTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
@@ -72,6 +73,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ErrorBoundary>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+      </Head>
+
       {/* Optimized Google Analytics component */}
       <GoogleAnalytics />
 
