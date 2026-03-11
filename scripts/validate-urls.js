@@ -12,11 +12,21 @@ const path = require('path')
 const localeConfig = require('../config/locales.json')
 const SUPPORTED_LOCALES = localeConfig.locales
 const DEFAULT_LOCALE = localeConfig.defaultLocale || 'en'
-const RETIRED_LOCALES = new Set(['hi', 'ms', 'tl', 'kk'])
-const RETIRED_LOCALE_ALIASES = new Set(['fil', 'filipino', 'kz'])
-const RETIRED_LOCALE_LIST = [...RETIRED_LOCALES, ...RETIRED_LOCALE_ALIASES]
+const RETIRED_LOCALES = new Set((localeConfig.retiredLocales || []).map(locale => locale.toLowerCase()))
+const RETIRED_LOCALE_ALIASES = new Set((localeConfig.retiredLocaleAliases || []).map(locale => locale.toLowerCase()))
+const LEGACY_LOCALE_REDIRECTS = Object.fromEntries(
+  Object.entries(localeConfig.legacyLocaleRedirects || {}).map(([from, to]) => [from.toLowerCase(), to])
+)
+const DEPRECATED_QUERY_LOCALE_PARAM = (localeConfig.deprecatedQueryLocaleParam || 'lng').trim() || 'lng'
+const RETIRED_LOCALE_LIST = Array.from(new Set([...RETIRED_LOCALES, ...RETIRED_LOCALE_ALIASES]))
 
 const isRetiredLocale = (locale) => RETIRED_LOCALES.has(locale) || RETIRED_LOCALE_ALIASES.has(locale)
+const getLocalizedUrl = (locale, contentPath) => {
+  if (locale === DEFAULT_LOCALE) {
+    return `${BASE_URL}${contentPath}`
+  }
+  return `${BASE_URL}/${locale}${contentPath}`
+}
 
 const BASE_URL = 'https://aiimagesplitter.com'
 
@@ -51,13 +61,23 @@ const generateTestURLs = () => {
     // 查询参数格式
     SUPPORTED_LOCALES.forEach(locale => {
       if (locale !== DEFAULT_LOCALE) {
-        urls.push(`${BASE_URL}${path}?lng=${locale}`)
+        urls.push(`${BASE_URL}${path}?${DEPRECATED_QUERY_LOCALE_PARAM}=${locale}`)
       }
+    })
+
+    // Legacy locale redirects in query params.
+    Object.keys(LEGACY_LOCALE_REDIRECTS).forEach(locale => {
+      urls.push(`${BASE_URL}${path}?${DEPRECATED_QUERY_LOCALE_PARAM}=${locale}`)
     })
     
     // Retired locale query params (should be stripped from URL)
     RETIRED_LOCALE_LIST.forEach(locale => {
-      urls.push(`${BASE_URL}${path}?lng=${locale}`)
+      urls.push(`${BASE_URL}${path}?${DEPRECATED_QUERY_LOCALE_PARAM}=${locale}`)
+    })
+
+    // Legacy locale paths (expected redirect)
+    Object.keys(LEGACY_LOCALE_REDIRECTS).forEach(locale => {
+      urls.push(`${BASE_URL}/${locale}${path}`)
     })
 
     // Retired locale paths (expected 410)
@@ -90,20 +110,22 @@ const analyzeURL = (url) => {
     const { pathname, searchParams } = urlObj
     
     // 检查查询参数
-    const lngParam = searchParams.get('lng')
-    if (lngParam) {
-      const lngParamClean = lngParam.trim()
-      const lngParamLower = lngParamClean.toLowerCase()
-      analysis.issues.push('Uses legacy locale query parameter (lng=)')
+    const deprecatedLocaleParam = searchParams.get(DEPRECATED_QUERY_LOCALE_PARAM)
+    if (deprecatedLocaleParam) {
+      const localeParamClean = deprecatedLocaleParam.trim()
+      const localeParamLower = localeParamClean.toLowerCase()
+      analysis.issues.push(`Uses legacy locale query parameter (${DEPRECATED_QUERY_LOCALE_PARAM}=)`)
       analysis.isValid = false
 
       // Query-based locale is deprecated. Always canonicalize to path-based URL.
       analysis.redirectTo = `${BASE_URL}${pathname}`
-      if (isRetiredLocale(lngParamLower)) {
+      if (isRetiredLocale(localeParamLower)) {
         analysis.issues.push('Retired locale query should be removed from URL')
+      } else if (LEGACY_LOCALE_REDIRECTS[localeParamLower]) {
+        analysis.issues.push('Legacy locale query should be normalized to canonical locale')
       } else if (
-        lngParamClean !== DEFAULT_LOCALE &&
-        !SUPPORTED_LOCALES.includes(lngParamClean)
+        localeParamClean !== DEFAULT_LOCALE &&
+        !SUPPORTED_LOCALES.includes(localeParamClean)
       ) {
         analysis.issues.push('Unsupported locale in query parameter')
       }
@@ -122,6 +144,15 @@ const analyzeURL = (url) => {
         analysis.issues.push('Retired locale path should return 410')
         analysis.isValid = false
         analysis.redirectTo = null
+      } else if (LEGACY_LOCALE_REDIRECTS[firstSegmentLower]) {
+        const redirectedLocale = LEGACY_LOCALE_REDIRECTS[firstSegmentLower]
+        const redirectedPath = '/' + pathSegments.slice(1).join('/')
+
+        analysis.issues.push('Legacy locale path should redirect to canonical locale path')
+        analysis.isValid = false
+        analysis.redirectTo = getLocalizedUrl(redirectedLocale, redirectedPath === '/' ? '/' : redirectedPath)
+        locale = redirectedLocale
+        contentPath = redirectedPath === '/' ? '/' : redirectedPath
       } else if (SUPPORTED_LOCALES.includes(firstSegment)) {
         locale = firstSegment
         contentPath = '/' + pathSegments.slice(1).join('/')
@@ -256,7 +287,7 @@ if (invalidURLs.length === 0) {
   console.log('🎉 所有URL都符合标准！')
 } else {
   console.log('💡 建议的修复措施:')
-  console.log('1. 在入口层统一移除lng查询参数（推荐middleware）')
+  console.log(`1. 在入口层统一移除${DEPRECATED_QUERY_LOCALE_PARAM}查询参数（推荐middleware）`)
   console.log('2. 仅保留路径前缀作为多语言URL规范')
   console.log('3. 在robots.txt中禁止问题URL格式')
   console.log('4. 监控Google Search Console的"备用网页"状态')
@@ -272,7 +303,7 @@ console.log('- src/lib/urlUtils.ts (canonical/hreflang生成)')
 // 这些问题将通过middleware和重定向规则自动修复
 console.log('')
 console.log('ℹ️  注意: 发现的URL问题是预期的，将通过以下机制自动修复:')
-console.log('   • middleware 在入口层移除lng参数')
+console.log(`   • middleware 在入口层移除${DEPRECATED_QUERY_LOCALE_PARAM}参数`)
 console.log('   • canonical/hreflang仅输出路径前缀URL')
 console.log('   • robots.txt 阻止索引问题URL')
 

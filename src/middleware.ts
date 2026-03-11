@@ -1,14 +1,25 @@
 import { NextRequest, NextResponse } from 'next/server'
+import localeConfigJson from '../config/locales.json'
 
-const RETIRED_LOCALES = new Set(['hi', 'ms', 'tl', 'kk'])
-const RETIRED_LOCALE_ALIASES = new Set(['fil', 'filipino', 'kz'])
+const localeConfig = localeConfigJson as {
+  retiredLocales?: readonly string[]
+  retiredLocaleAliases?: readonly string[]
+  deprecatedQueryLocaleParam?: string
+}
+
+const DEPRECATED_QUERY_LOCALE_PARAM = localeConfig.deprecatedQueryLocaleParam?.trim() || 'lng'
+const RETIRED_LOCALE_TOKENS = new Set(
+  [...(localeConfig.retiredLocales || []), ...(localeConfig.retiredLocaleAliases || [])].map(locale =>
+    locale.toLowerCase()
+  )
+)
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
   const url = request.nextUrl.clone()
 
-  if (url.searchParams.has('lng')) {
-    url.searchParams.delete('lng')
+  if (url.searchParams.has(DEPRECATED_QUERY_LOCALE_PARAM)) {
+    url.searchParams.delete(DEPRECATED_QUERY_LOCALE_PARAM)
     return NextResponse.redirect(url, 301)
   }
 
@@ -17,7 +28,7 @@ export function middleware(request: NextRequest) {
     const firstSegmentLower = pathSegments[0].toLowerCase()
 
     // Retired locales return 410 to speed deindexing.
-    if (RETIRED_LOCALES.has(firstSegmentLower) || RETIRED_LOCALE_ALIASES.has(firstSegmentLower)) {
+    if (RETIRED_LOCALE_TOKENS.has(firstSegmentLower)) {
       return new NextResponse('Gone', { status: 410 })
     }
 

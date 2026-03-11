@@ -1,11 +1,27 @@
 {
-    "defaultLocale":  "en",
-    "locales":  [
-                    "en",
-                    "zh-CN",
-                    "id",
-                    "pt",
-                    "vi",
-                    "ru"
-                ]
+  "defaultLocale": "en",
+  "locales": [
+    "en",
+    "zh-CN",
+    "id",
+    "pt",
+    "vi",
+    "ru"
+  ],
+  "retiredLocales": [
+    "hi",
+    "ms",
+    "tl",
+    "kk"
+  ],
+  "retiredLocaleAliases": [
+    "fil",
+    "filipino",
+    "kz"
+  ],
+  "legacyLocaleRedirects": {
+    "zh": "zh-CN",
+    "cn": "zh-CN"
+  },
+  "deprecatedQueryLocaleParam": "lng"
 }

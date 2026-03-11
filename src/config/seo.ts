@@ -4,7 +4,20 @@
 const localeConfig = localeConfigJson as {
   defaultLocale: string
   locales: readonly string[]
+  retiredLocales?: readonly string[]
+  retiredLocaleAliases?: readonly string[]
+  legacyLocaleRedirects?: Record<string, string>
 }
+
+const RETIRED_LOCALE_SET = new Set(
+  [...(localeConfig.retiredLocales || []), ...(localeConfig.retiredLocaleAliases || [])].map(locale =>
+    locale.toLowerCase()
+  )
+)
+
+const LEGACY_LOCALE_REDIRECTS = Object.fromEntries(
+  Object.entries(localeConfig.legacyLocaleRedirects || {}).map(([from, to]) => [from.toLowerCase(), to])
+) as Record<string, string>
 
 export const SUPPORTED_LOCALES = localeConfig.locales
 export type SupportedLocale = (typeof SUPPORTED_LOCALES)[number]
@@ -103,14 +116,19 @@ export const getRegionInfo = (locale: SupportedLocale) => {
 
 // Helpers: normalize legacy locale codes.
 export const normalizeLegacyLocale = (locale: string): SupportedLocale => {
-  const legacyMapping: Record<string, SupportedLocale> = {
-    'fil': SEO_CONFIG.locales.default, // Legacy Filipino code.
+  const localeLower = locale.toLowerCase()
+  const supportedLocaleMatch = SUPPORTED_LOCALES.find(candidate => candidate.toLowerCase() === localeLower)
+  if (supportedLocaleMatch) {
+    return supportedLocaleMatch
   }
 
-  const normalized = legacyMapping[locale] || locale
+  const legacyRedirectLocale = LEGACY_LOCALE_REDIRECTS[localeLower]
+  if (legacyRedirectLocale && isValidLocale(legacyRedirectLocale)) {
+    return legacyRedirectLocale
+  }
 
-  if (isValidLocale(normalized)) {
-    return normalized
+  if (RETIRED_LOCALE_SET.has(localeLower)) {
+    return SEO_CONFIG.locales.default
   }
 
   return SEO_CONFIG.locales.default
