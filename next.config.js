@@ -20,14 +20,28 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/cn/:path*',
-        destination: '/zh-CN/:path*',
+        source: '/cn',
+        destination: '/zh-CN',
         permanent: true,
+        locale: false,
       },
       {
-        source: '/zh/:path*',
-        destination: '/zh-CN/:path*',
+        source: '/cn/:path+',
+        destination: '/zh-CN/:path+',
         permanent: true,
+        locale: false,
+      },
+      {
+        source: '/zh',
+        destination: '/zh-CN',
+        permanent: true,
+        locale: false,
+      },
+      {
+        source: '/zh/:path+',
+        destination: '/zh-CN/:path+',
+        permanent: true,
+        locale: false,
       },
     ]
   },
@@ -37,6 +51,7 @@ const nextConfig = {
     return [
       {
         source: '/images/:path*',
+        locale: false,
         headers: [
           {
             key: 'Cache-Control',
@@ -47,6 +62,7 @@ const nextConfig = {
       // 娣诲姞瀹夊叏澶?
       {
         source: '/(.*)',
+        locale: false,
         headers: [
           {
             key: 'X-Frame-Options',
