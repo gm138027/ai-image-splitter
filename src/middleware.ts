@@ -37,17 +37,7 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(url, 301)
   }
 
-  const response = NextResponse.next()
-
-  response.headers.set('X-Frame-Options', 'DENY')
-  response.headers.set('X-Content-Type-Options', 'nosniff')
-  response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin')
-
-  if (pathname.startsWith('/_next/static/') || pathname.startsWith('/images/')) {
-    response.headers.set('Cache-Control', 'public, max-age=31536000, immutable')
-  }
-
-  return response
+  return NextResponse.next()
 }
 
 export const config = {
