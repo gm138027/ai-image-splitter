@@ -32,11 +32,6 @@ export function middleware(request: NextRequest) {
     }
   }
 
-  if (pathname !== '/' && pathname.endsWith('/')) {
-    url.pathname = pathname.slice(0, -1)
-    return NextResponse.redirect(url, 301)
-  }
-
   return NextResponse.next()
 }
 

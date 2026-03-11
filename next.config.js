@@ -20,13 +20,23 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/cn/:path*',
-        destination: '/zh-CN/:path*',
+        source: '/cn',
+        destination: '/zh-CN',
         permanent: true,
       },
       {
-        source: '/zh/:path*',
-        destination: '/zh-CN/:path*',
+        source: '/cn/:path+',
+        destination: '/zh-CN/:path+',
+        permanent: true,
+      },
+      {
+        source: '/zh',
+        destination: '/zh-CN',
+        permanent: true,
+      },
+      {
+        source: '/zh/:path+',
+        destination: '/zh-CN/:path+',
         permanent: true,
       },
     ]
