@@ -70,6 +70,21 @@ npm run dev
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
 - `npm run type-check` - Run TypeScript type checking
+- `npm run audit:structure` - Run site-structure technical risk audit
+
+## 📊 Structure Audit
+
+### Site-structure technical audit
+
+```bash
+npm run audit:structure
+```
+
+Optional arguments:
+
+```bash
+node scripts/audit-structure.js --base=https://aiimagesplitter.com --timeout=15000 --max-redirects=5 --report=reports/performance/structure-audit-local.json
+```
 
 ## 🏗️ Project Structure
 
