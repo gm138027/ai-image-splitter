@@ -18,6 +18,39 @@ const DEPRECATED_QUERY_LOCALE_PARAM = (localeConfig.deprecatedQueryLocaleParam |
 const CORE_ROUTES = ['/', '/privacy', '/terms', '/zh-CN', '/zh-CN/privacy', '/zh-CN/terms']
 const CHECK_ROUTES = ['/', '/privacy', '/terms']
 
+const BLOG_SUNSET_ROUTES = (() => {
+  const routes = [
+    '/blog',
+    '/blog/',
+    '/blog/complete-guide',
+    '/blog/image-splitter-online',
+    '/blog/__sunset_probe__'
+  ]
+  const nonDefaultLocales = SUPPORTED_LOCALES.filter((locale) => locale !== DEFAULT_LOCALE)
+
+  nonDefaultLocales.forEach((locale) => {
+    routes.push(`/${locale}/blog`)
+    routes.push(`/${locale}/blog/complete-guide`)
+    routes.push(`/${locale}/blog/image-splitter-online`)
+    routes.push(`/${locale}/blog/__sunset_probe__`)
+  })
+
+  // Keep legacy default-locale path probes to prevent accidental route resurrection.
+  routes.push(`/${DEFAULT_LOCALE}/blog`)
+  routes.push(`/${DEFAULT_LOCALE}/blog/complete-guide`)
+  routes.push(`/${DEFAULT_LOCALE}/blog/image-splitter-online`)
+  routes.push(`/${DEFAULT_LOCALE}/blog/__sunset_probe__`)
+
+  const firstLocale = nonDefaultLocales[0]
+  const secondLocale = nonDefaultLocales[1] || firstLocale
+  if (firstLocale && secondLocale) {
+    routes.push(`/blog?${encodeURIComponent(DEPRECATED_QUERY_LOCALE_PARAM)}=${encodeURIComponent(firstLocale)}`)
+    routes.push(`/${firstLocale}/blog?${encodeURIComponent(DEPRECATED_QUERY_LOCALE_PARAM)}=${encodeURIComponent(secondLocale)}`)
+  }
+
+  return Array.from(new Set(routes))
+})()
+
 const parseArgs = (argv) => {
   const options = {
     baseUrl: DEFAULT_BASE_URL,
@@ -345,6 +378,39 @@ const checkLegalLinks = async (options) => {
   )
 }
 
+const checkBlogSunsetRoutes = async (options) => {
+  const failures = []
+  const evidence = []
+
+  for (const route of BLOG_SUNSET_ROUTES) {
+    const url = `${options.baseUrl}${route}`
+    const res = await requestWithRedirects({
+      url,
+      timeoutMs: options.timeoutMs,
+      maxRedirects: options.maxRedirects
+    })
+
+    if (!res.ok) {
+      failures.push(`${route} 请求失败: ${res.error}`)
+      continue
+    }
+
+    evidence.push(`${route} => ${fmtHistory(res.history)}`)
+    if (res.finalStatus !== 410) {
+      failures.push(`${route} 预期最终 410，实际 ${res.finalStatus}`)
+    }
+  }
+
+  return createCheck(
+    '博客下线路由状态（/blog* 最终 410）',
+    failures.length === 0,
+    failures.length === 0
+      ? summarize(evidence.join(' || '), 460)
+      : summarize(failures.join('；'), 460),
+    '对已下线博客路由维持永久 410（允许中间 301/308），并保持 sitemap/内链不再暴露这些 URL。'
+  )
+}
+
 const checkCanonicalAndHreflang = async (options) => {
   const failures = []
   const evidence = []
@@ -595,6 +661,7 @@ const run = async () => {
 
   const checks = []
   checks.push(await checkCoreRoutes(options))
+  checks.push(await checkBlogSunsetRoutes(options))
   checks.push(await checkLegalLinks(options))
   checks.push(await checkCanonicalAndHreflang(options))
   checks.push(await checkInternalLinks(options))

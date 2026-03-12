@@ -33,7 +33,7 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Start app and run structure audit
+      - name: Start app and run structure audit (includes blog-sunset 410 gate)
         shell: bash
         run: |
           npm run start -- --hostname 127.0.0.1 --port 3000 > /tmp/next-start.log 2>&1 &
