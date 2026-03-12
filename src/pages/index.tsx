@@ -4,7 +4,6 @@ import Head from 'next/head'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Layout from '@/components/Layout'
 import ImageSplitter from '@/components/ImageSplitter'
-import HiddenToolSnapshot from '@/components/ImageSplitter/HiddenToolSnapshot'
 import SEOHead from '@/components/SEO/SEOHead'
 import FAQStructuredData from '@/components/SEO/FAQStructuredData'
 
@@ -52,7 +51,6 @@ const Home: NextPage = () => {
       
       <Layout onLogoClick={handleLogoClick} isInToolMode={isInToolMode}>
         <ImageSplitter key={resetKey} onToolModeChange={handleToolModeChange} />
-        <HiddenToolSnapshot />
       </Layout>
     </>
   )
