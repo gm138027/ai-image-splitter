@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import localeConfigJson from '../config/locales.json'
 
 const localeConfig = localeConfigJson as {
+  locales?: readonly string[]
   retiredLocales?: readonly string[]
   retiredLocaleAliases?: readonly string[]
   deprecatedQueryLocaleParam?: string
@@ -13,6 +14,7 @@ const RETIRED_LOCALE_TOKENS = new Set(
     locale.toLowerCase()
   )
 )
+const SUPPORTED_LOCALE_TOKENS = new Set((localeConfig.locales || []).map(locale => locale.toLowerCase()))
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
@@ -26,6 +28,15 @@ export function middleware(request: NextRequest) {
   const pathSegments = pathname.split('/').filter(Boolean)
   if (pathSegments.length > 0) {
     const firstSegmentLower = pathSegments[0].toLowerCase()
+    const secondSegmentLower = pathSegments[1]?.toLowerCase()
+
+    // Blog section is permanently retired.
+    if (firstSegmentLower === 'blog') {
+      return new NextResponse('Gone', { status: 410 })
+    }
+    if (SUPPORTED_LOCALE_TOKENS.has(firstSegmentLower) && secondSegmentLower === 'blog') {
+      return new NextResponse('Gone', { status: 410 })
+    }
 
     // Retired locales return 410 to speed deindexing.
     if (RETIRED_LOCALE_TOKENS.has(firstSegmentLower)) {

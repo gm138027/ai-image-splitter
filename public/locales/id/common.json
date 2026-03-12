@@ -8,7 +8,7 @@
     "features": "Beranda",
     "howItWorks": "Cara Kerja",
     "faq": "Pertanyaan yang Sering Diajukan",
-    "about": "Blog Kami",
+    "about": "Tentang",
     "backToHome": "Kembali ke Beranda"
   },
   "hero": {
@@ -262,11 +262,5 @@
         "description": "Seluruh proses berlangsung di peramban Anda; ubah ke bahasa Inggris, Portugis, Indonesia, dan lainnya untuk memandu tim melewati alur \"unggah → pilih rasio → bagi → unduh\"."
       }
     ]
-  },
-  "blogCta": {
-    "title": "Butuh panduan lengkap?",
-    "description": "Baca panduan “Cara membagi gambar online” untuk memahami tips rasio, contoh grid, dan FAQ, lalu kembali ke sini untuk langsung membagi gambar.",
-    "button": "Baca tutorial lengkap",
-    "href": "/blog/image-splitter-online"
   }
 }

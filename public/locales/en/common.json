@@ -1,14 +1,14 @@
 {
   "seo": {
     "title": "AI Image Splitter — Split Images Online for Free & Photo Grids",
-    "description": "AI Image Splitter is a free online tool that offers ratio presets such as 4:5 and 3:4, letting you easily split images into 3, 6, 9, or more parts.100% free.",
+    "description": "AI Image Splitter is a free online tool that offers ratio presets such as 4:5 and 3:4, letting you easily split images into 3, 6, 9, or more parts. 100% free.",
     "keywords": "image splitter, image splitter online, split image, split image online, photo grid maker, split image for instagram, split photo, social media, carousel"
   },
   "nav": {
     "features": "Home",
     "howItWorks": "How It Works",
     "faq": "FAQ",
-    "about": "Blog",
+    "about": "About",
     "backToHome": "Back to Home"
   },
   "hero": {
@@ -157,12 +157,6 @@
         "description": "Run an image splitter tutorial in under a minute: upload, pick a ratio, split, and let students or teammates export professional grids instantly."
       }
     ]
-  },
-  "blogCta": {
-    "title": "Need a full walkthrough?",
-    "description": "Read the “How to Segment an Image Online” guide for ratio tips, sample grids, and FAQs, then come back here to split your images instantly.",
-    "button": "Read the full tutorial",
-    "href": "/blog/image-splitter-online"
   },
   "language": {
     "switchLanguage": "Switch Language"

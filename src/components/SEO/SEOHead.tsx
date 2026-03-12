@@ -23,7 +23,6 @@ const DEFAULT_TWITTER_CARD = 'summary_large_image'
 const SEOHead: React.FC<SEOHeadProps> = ({
   title,
   description,
-  keywords,
   includeStructuredData = false,
   ogType = DEFAULT_OG_TYPE,
   ogImagePath,
@@ -39,7 +38,6 @@ const SEOHead: React.FC<SEOHeadProps> = ({
 
   const localizedTitle = title || t('seo.title')
   const localizedDescription = description || t('seo.description')
-  const localizedKeywords = keywords || t('seo.keywords')
   const ogLocale = getOGLocale(currentLocale)
   const ogImage = ogImagePath
     ? (ogImagePath.startsWith('http') ? ogImagePath : `${baseUrl}${ogImagePath}`)
@@ -197,7 +195,6 @@ const SEOHead: React.FC<SEOHeadProps> = ({
     <Head>
       <title>{localizedTitle}</title>
       <meta name="description" content={localizedDescription} />
-      <meta name="keywords" content={localizedKeywords} />
       <meta name="application-name" content={SEO_CONFIG.site.name} />
 
       <meta name="robots" content={robots} />

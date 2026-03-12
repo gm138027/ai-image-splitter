@@ -8,7 +8,7 @@
     "features": "Trang Chủ",
     "howItWorks": "Cách hoạt động",
     "faq": "Câu Hỏi Thường Gặp",
-    "about": "Blog của chúng tôi",
+    "about": "Giới thiệu",
     "backToHome": "Quay về Trang chủ"
   },
   "hero": {
@@ -262,11 +262,5 @@
         "description": "Toàn bộ xử lý diễn ra trên trình duyệt của bạn; có thể chuyển sang tiếng Anh, Bồ Đào Nha, Indonesia… để hướng dẫn đội nhóm theo luồng “tải lên → chọn tỷ lệ → tách → tải xuống”."
       }
     ]
-  },
-  "blogCta": {
-    "title": "Cần hướng dẫn chi tiết?",
-    "description": "Đọc bài “Cách tách ảnh trực tuyến” để biết mẹo tỉ lệ, ví dụ lưới và các câu hỏi thường gặp, sau đó quay lại đây để tách ảnh ngay.",
-    "button": "Xem hướng dẫn đầy đủ",
-    "href": "/blog/image-splitter-online"
   }
 }

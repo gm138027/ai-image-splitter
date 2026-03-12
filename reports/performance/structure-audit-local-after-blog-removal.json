@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-03-11T13:30:18.396Z",
+  "baseUrl": "http://127.0.0.1:3005",
+  "timeoutMs": 15000,
+  "maxRedirects": 5,
+  "summary": {
+    "total": 5,
+    "passed": 5,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "item": "核心路由/重定向/退役语言状态",
+      "result": "通过",
+      "passed": true,
+      "evidence": "/ => 200 (200:http://127.0.0.1:3005/) || /privacy => 200 (200:http://127.0.0.1:3005/privacy) || /terms => 200 (200:http://127.0.0.1:3005/terms) || /zh-CN => 200 (200:http://127.0.0.1:3005/zh-CN) || /zh-CN/privacy => 200 (200:http://127.0.0.1:3005/zh-CN/privacy) || /zh-CN/terms => 200 (200:http://127.0.0.1:3005/zh-CN/terms) || /lng=zh-CN => 301:http://127.0.0.1:3005/?lng=zh-CN -> http://localhost:3005/ | 200:http://localhost:3005/ || /hi => 410:http://12...",
+      "fix": "修复路由规则与 middleware：确保核心页 200、遗留 lng 参数 301 清理、退役语言 410、www 回收到主域。"
+    },
+    {
+      "item": "首页隐私/条款可抓取锚链接",
+      "result": "通过",
+      "passed": true,
+      "evidence": "privacy=true, terms=true, homepage=http://127.0.0.1:3005/",
+      "fix": "将按钮跳转改为可抓取 <a> 锚链接，避免仅依赖 JS onClick/router.push。"
+    },
+    {
+      "item": "canonical 与 hreflang 结构",
+      "result": "通过",
+      "passed": true,
+      "evidence": "/: canonical=https://aiimagesplitter.com, hreflang=7, host-check=relaxed(loopback) || /privacy: canonical=https://aiimagesplitter.com/privacy, hreflang=7, host-check=relaxed(loopback) || /terms: canonical=https://aiimagesplitter.com/terms, hreflang=7, host-check=relaxed(loopback)",
+      "fix": "每个可索引页保留唯一 canonical（绝对 URL，无 query/hash），并输出完整 hreflang + x-default。"
+    },
+    {
+      "item": "核心页面内部链接健康度",
+      "result": "通过",
+      "passed": true,
+      "evidence": "共检查 3 条内部链接，均可达",
+      "fix": "修复 4xx/5xx 内链、错误重定向与多余路径；至少保证首页/隐私/条款中所有可抓取内链可达。"
+    },
+    {
+      "item": "robots/sitemap 可抓取性 + 安全响应头基线",
+      "result": "通过",
+      "passed": true,
+      "evidence": "x-frame-options=DENY || x-content-type-options=nosniff || referrer-policy=strict-origin-when-cross-origin || robots sitemap=true, block-deprecated-param=true || sitemap urlset=true, loc-count=18",
+      "fix": "确保 robots/sitemap 始终 200 且内容完整；在全站返回安全响应头（X-Frame-Options、X-Content-Type-Options、Referrer-Policy）。"
+    }
+  ]
+}

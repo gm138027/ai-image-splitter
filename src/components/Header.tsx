@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
-import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
 import Image from 'next/image'
 import LanguageSwitcher from './LanguageSwitcher'
@@ -31,10 +30,6 @@ const Header: React.FC<HeaderProps> = ({ onLogoClick, isInToolMode = false }) =>
   const handleHomeClick = async () => {
     setIsMobileMenuOpen(false) // 关闭移动端菜单
     await NavigationUtils.navigateToHome(router, onLogoClick, isInToolMode)
-  }
-
-  const handleBlogClick = () => {
-    setIsMobileMenuOpen(false) // 关闭移动端菜单
   }
 
   return (
@@ -86,13 +81,13 @@ const Header: React.FC<HeaderProps> = ({ onLogoClick, isInToolMode = false }) =>
             >
               {t('nav.faq')}
             </button>
-            <Link 
-              href="/blog" 
+            <button
+              onClick={() => handleSmartNavigation('advantages')}
               className="text-gray-600 hover:text-primary-600 transition-colors focus:outline-none focus:text-primary-600"
-              onClick={handleBlogClick}
+              type="button"
             >
               {t('nav.about')}
-            </Link>
+            </button>
           </nav>
 
           {/* Mobile menu button & Language Switcher */}
@@ -140,13 +135,13 @@ const Header: React.FC<HeaderProps> = ({ onLogoClick, isInToolMode = false }) =>
               >
                 {t('nav.faq')}
               </button>
-              <Link 
-                href="/blog" 
-                className="block px-3 py-2 rounded-md text-gray-600 hover:text-primary-600 hover:bg-gray-50 transition-colors"
-                onClick={handleBlogClick}
+              <button
+                onClick={() => handleSmartNavigation('advantages')}
+                className="block w-full text-left px-3 py-2 rounded-md text-gray-600 hover:text-primary-600 hover:bg-gray-50 transition-colors"
+                type="button"
               >
                 {t('nav.about')}
-              </Link>
+              </button>
             </div>
           </div>
         )}

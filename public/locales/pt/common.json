@@ -8,7 +8,7 @@
     "features": "Início",
     "howItWorks": "Como Funciona",
     "faq": "Perguntas Frequentes",
-    "about": "Nosso Blog",
+    "about": "Sobre",
     "backToHome": "Voltar ao Início"
   },
   "hero": {
@@ -262,11 +262,5 @@
         "description": "Todo o processamento ocorre localmente no navegador, e você pode alternar o idioma para guiar clientes ou colegas pelo fluxo “upload → proporção → dividir → download”."
       }
     ]
-  },
-  "blogCta": {
-    "title": "Precisa de um passo a passo completo?",
-    "description": "Leia o guia “Como segmentar uma imagem online” para ver dicas de proporção, exemplos de grades e perguntas frequentes, depois volte aqui e divida suas imagens na hora.",
-    "button": "Ler o tutorial completo",
-    "href": "/blog/image-splitter-online"
   }
 }

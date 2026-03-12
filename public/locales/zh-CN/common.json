@@ -8,7 +8,7 @@
     "features": "首页",
     "howItWorks": "使用方法",
     "faq": "常见问题",
-    "about": "博客",
+    "about": "关于工具",
     "backToHome": "返回首页"
   },
   "hero": {
@@ -262,11 +262,5 @@
         "description": "AI Image Splitter 全程在浏览器端处理，文件不会上传；如需与海外成员协作，可切换为英语、葡语、印尼语等语言，统一操作流程。"
       }
     ]
-  },
-  "blogCta": {
-    "title": "想要更系统的使用教程吗？",
-    "description": "阅读《如何在线分割图片》专题，了解比例技巧、案例和常见问题，然后立刻返回工具继续操作。",
-    "button": "查看完整教程",
-    "href": "/blog/image-splitter-online"
   }
 }

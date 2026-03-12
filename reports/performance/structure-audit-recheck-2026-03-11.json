@@ -1,0 +1,128 @@
+{
+  "generatedAt": "2026-03-11T11:24:48.607Z",
+  "base": "https://aiimagesplitter.com",
+  "total": 17,
+  "passed": 17,
+  "failed": 0,
+  "rows": [
+    {
+      "item": "主域首页可访问",
+      "result": "通过",
+      "pass": true,
+      "evidence": "final=200, chain=200:https://aiimagesplitter.com/",
+      "fix": "确保主域首页始终返回 200。"
+    },
+    {
+      "item": "www 回收至主域",
+      "result": "通过",
+      "pass": true,
+      "evidence": "final=https://aiimagesplitter.com/, chain=301:https://www.aiimagesplitter.com/ -> https://aiimagesplitter.com/ | 200:https://aiimagesplitter.com/",
+      "fix": "在 DNS/平台配置中保持 www -> apex 的 301。"
+    },
+    {
+      "item": "HTTP 强制跳转 HTTPS",
+      "result": "通过",
+      "pass": true,
+      "evidence": "apex=308:http://aiimagesplitter.com/ -> https://aiimagesplitter.com/ | 200:https://aiimagesplitter.com/ || www=308:http://www.aiimagesplitter.com/ -> https://www.aiimagesplitter.com/ | 301:https://www.aiimagesplitter.com/ -> https://aiimagesplitter.com/ | 200:https://aiimagesplitter.com/",
+      "fix": "开启全站 HTTPS 强制跳转，避免协议重复索引。"
+    },
+    {
+      "item": "核心页面状态码",
+      "result": "通过",
+      "pass": true,
+      "evidence": "抽检 9 个页面均为 200",
+      "fix": "修复核心页面返回码，避免 4xx/5xx。"
+    },
+    {
+      "item": "遗留 lng 参数清理",
+      "result": "通过",
+      "pass": true,
+      "evidence": "301:https://aiimagesplitter.com/?lng=zh-CN -> / | 200:https://aiimagesplitter.com/",
+      "fix": "入口层继续清理 lng 查询参数并 301 到规范 URL。"
+    },
+    {
+      "item": "遗留语言路径重定向",
+      "result": "通过",
+      "pass": true,
+      "evidence": "308:https://aiimagesplitter.com/cn/privacy -> /zh-CN/privacy | 200:https://aiimagesplitter.com/zh-CN/privacy",
+      "fix": "保留 cn/zh 到 zh-CN 的永久重定向。"
+    },
+    {
+      "item": "退役语言返回 410",
+      "result": "通过",
+      "pass": true,
+      "evidence": "410:https://aiimagesplitter.com/hi",
+      "fix": "退役语言继续返回 410，加速去索引。"
+    },
+    {
+      "item": "尾斜杠规范化",
+      "result": "通过",
+      "pass": true,
+      "evidence": "308:https://aiimagesplitter.com/privacy/ -> /privacy | 200:https://aiimagesplitter.com/privacy",
+      "fix": "维持无尾斜杠规范并重定向到 canonical。"
+    },
+    {
+      "item": "不存在路径返回 404",
+      "result": "通过",
+      "pass": true,
+      "evidence": "final=404",
+      "fix": "确保未知路径稳定返回 404。"
+    },
+    {
+      "item": "隐私/条款为可抓取锚链接",
+      "result": "通过",
+      "pass": true,
+      "evidence": "privacy=true, terms=true",
+      "fix": "保持 <a href=\"/privacy\"> 与 <a href=\"/terms\">，不要改为 JS 按钮跳转。"
+    },
+    {
+      "item": "canonical 规范性",
+      "result": "通过",
+      "pass": true,
+      "evidence": "抽检 9 页均正常",
+      "fix": "保持绝对 canonical，主机统一为主域，且无 query/hash。"
+    },
+    {
+      "item": "hreflang 完整性",
+      "result": "通过",
+      "pass": true,
+      "evidence": "抽检 9 页均含 6 语言 + x-default",
+      "fix": "每页输出全量语言 hreflang 与 x-default。"
+    },
+    {
+      "item": "安全响应头基线",
+      "result": "通过",
+      "pass": true,
+      "evidence": "首页/隐私/条款安全头均存在且值正确",
+      "fix": "全站保持 X-Frame-Options=DENY、X-Content-Type-Options=nosniff、Referrer-Policy。"
+    },
+    {
+      "item": "robots.txt 可访问且规则完整",
+      "result": "通过",
+      "pass": true,
+      "evidence": "status=200, hasSitemap=true, hasLngBlock=true",
+      "fix": "保持 robots 可访问，并保留 sitemap 声明与 lng 规则。"
+    },
+    {
+      "item": "sitemap.xml 可访问且有有效 URL 列表",
+      "result": "通过",
+      "pass": true,
+      "evidence": "status=200, urlCount=36",
+      "fix": "保持 sitemap 200，且包含完整可索引页面 URL。"
+    },
+    {
+      "item": "sitemap 页面可达性",
+      "result": "通过",
+      "pass": true,
+      "evidence": "共检查 36 个 sitemap URL，全部可达",
+      "fix": "移除 sitemap 中不可达 URL，确保 loc 全部可抓取。"
+    },
+    {
+      "item": "核心页面内链健康度",
+      "result": "通过",
+      "pass": true,
+      "evidence": "抽取 6 条内链，全部可达",
+      "fix": "修复核心页面中的失效内链或异常重定向。"
+    }
+  ]
+}

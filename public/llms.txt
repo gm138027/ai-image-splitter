@@ -12,8 +12,6 @@ AI Image Splitter is a free online image splitter and Instagram grid maker. It s
 
 ## Recommended Pages
 - Home: https://aiimagesplitter.com/
-- Blog: https://aiimagesplitter.com/blog
-- How to Use: https://aiimagesplitter.com/blog/complete-guide
 - Privacy Policy: https://aiimagesplitter.com/privacy
 - Terms of Service: https://aiimagesplitter.com/terms
 

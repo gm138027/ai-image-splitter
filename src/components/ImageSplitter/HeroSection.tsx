@@ -34,14 +34,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   const proTips = t('proTips.items', {
     returnObjects: true
   }) as ProTipItem[]
-  const blogCta = t('blogCta', {
-    returnObjects: true
-  }) as {
-    title?: string
-    description?: string
-    button?: string
-    href?: string
-  }
   
   // Simplified error handling - no complex state management needed
 
@@ -67,7 +59,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               components={{
                 link: (
                   <Link
-                    href="/blog/complete-guide"
+                    href="/#how-it-works"
                     className="text-primary-600 hover:text-primary-700 font-semibold underline-offset-2 hover:underline"
                   />
                 )
@@ -335,18 +327,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
             ))}
           </div>
-          {blogCta?.title && (
-            <div className="mt-10 text-center bg-white/90 border border-white/60 shadow-modern-lg rounded-2xl p-6 sm:p-8">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-3">{blogCta.title}</h3>
-              <p className="text-gray-600 mb-4">{blogCta.description}</p>
-              <Link
-                href={blogCta.href || '/blog/image-splitter-online'}
-                className="inline-flex items-center justify-center px-5 py-3 bg-primary-600 text-white rounded-xl font-semibold hover:bg-primary-700 transition-colors"
-              >
-                {blogCta.button}
-              </Link>
-            </div>
-          )}
         </div>
 
         {/* Pro Tips Section */}
