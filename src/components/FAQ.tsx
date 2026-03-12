@@ -96,38 +96,47 @@ const FAQ: React.FC = () => {
 
         {/* FAQ Items */}
         <div className="space-y-6 mb-16">
-          {faqData.map((item) => (
-            <div 
-              key={item.id}
-              className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300"
-            >
-              <button
-                onClick={() => toggleItem(item.id)}
-                className="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
-                aria-expanded={openItems.includes(item.id)}
+          {faqData.map((item) => {
+            const isOpen = openItems.includes(item.id)
+            const answerId = `faq-answer-${item.id}`
+
+            return (
+              <div 
+                key={item.id}
+                className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-shadow duration-300"
               >
-                <h3 className="text-lg font-semibold text-gray-900 pr-4">
-                  {item.question}
-                </h3>
-                <div className="flex-shrink-0">
-                  {openItems.includes(item.id) ? (
-                    <ChevronUp className="w-5 h-5 text-primary-600" />
-                  ) : (
-                    <ChevronDown className="w-5 h-5 text-gray-400" />
-                  )}
-                </div>
-              </button>
-              
-              {openItems.includes(item.id) && (
-                <div className="px-6 pb-5">
+                <button
+                  onClick={() => toggleItem(item.id)}
+                  className="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                  aria-expanded={isOpen}
+                  aria-controls={answerId}
+                >
+                  <h3 className="text-lg font-semibold text-gray-900 pr-4">
+                    {item.question}
+                  </h3>
+                  <div className="flex-shrink-0">
+                    {isOpen ? (
+                      <ChevronUp className="w-5 h-5 text-primary-600" />
+                    ) : (
+                      <ChevronDown className="w-5 h-5 text-gray-400" />
+                    )}
+                  </div>
+                </button>
+                
+                <div
+                  id={answerId}
+                  className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${
+                    isOpen ? 'max-h-[1000px] pb-5 opacity-100' : 'max-h-0 pb-0 opacity-0'
+                  }`}
+                >
                   <div 
                     className="text-gray-700 leading-relaxed prose prose-primary max-w-none rich-text"
                     dangerouslySetInnerHTML={{ __html: item.answer }}
                   />
                 </div>
-              )}
-            </div>
-          ))}
+              </div>
+            )
+          })}
         </div>
 
         {/* CTA Section */}
