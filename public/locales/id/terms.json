@@ -1,23 +1,23 @@
 {
   "title": "Syarat Layanan",
-  "lastUpdated": "Terakhir Diperbarui: 2 Juli 2025",
-  "description": "Syarat Layanan ini mengatur penggunaan Anda terhadap AI Image Splitter. Harap baca dengan cermat.",
+  "lastUpdated": "Terakhir Diperbarui: 13 Maret 2026",
+  "description": "Syarat Layanan ini mengatur penggunaan AI Image Splitter oleh Anda. Harap baca dengan saksama.",
   "sections": {
     "agreement": {
-      "title": "Persetujuan Syarat",
-      "content": "Dengan mengakses dan menggunakan AI Image Splitter (\"Layanan\"), Anda menerima dan setuju untuk terikat dengan syarat dan ketentuan perjanjian ini. Jika Anda tidak setuju dengan syarat-syarat ini, Anda tidak boleh menggunakan layanan ini."
+      "title": "Persetujuan atas Syarat",
+      "content": "Dengan mengakses dan menggunakan AI Image Splitter (\"Layanan\"), Anda menyetujui syarat dan ketentuan dalam perjanjian ini. Jika Anda tidak setuju dengan syarat-syarat tersebut, jangan gunakan layanan ini."
     },
     "serviceDescription": {
       "title": "Deskripsi Layanan",
-      "content": "AI Image Splitter adalah alat online gratis yang memungkinkan pengguna membagi gambar menjadi grid atau segmen untuk penggunaan media sosial, khususnya untuk carousel Instagram dan postingan grid.",
+      "content": "AI Image Splitter adalah alat online gratis yang memungkinkan pengguna membagi gambar menjadi grid atau beberapa bagian untuk penggunaan di media sosial, khususnya untuk posting carousel dan tata letak grid di Instagram.",
       "features_title": "Fitur Utama",
       "features": [
-        "Pemrosesan gambar sisi klien untuk perlindungan privasi",
-        "Berbagai ukuran grid (3x3, 2x3, 4x4, kustom)",
-        "Tidak ada watermark pada gambar output",
+        "Pemrosesan gambar langsung di browser untuk melindungi privasi",
+        "Berbagai ukuran grid (3x3, 2x3, 4x4, dan kustom)",
+        "Hasil gambar tanpa watermark",
         "Akses gratis ke semua fitur",
-        "Dukungan multi-bahasa",
-        "Kompatibilitas mobile dan desktop"
+        "Mendukung banyak bahasa",
+        "Kompatibel di perangkat seluler dan desktop"
       ]
     },
     "userResponsibilities": {
@@ -57,7 +57,7 @@
     },
     "privacy": {
       "title": "Privasi dan Perlindungan Data",
-      "content": "Privasi Anda penting bagi kami. Semua pemrosesan gambar terjadi di sisi klien di browser Anda, yang berarti gambar Anda tidak pernah meninggalkan perangkat Anda. Silakan merujuk ke Kebijakan Privasi kami untuk informasi detail tentang bagaimana kami menangani data Anda."
+      "content": "Privasi Anda penting bagi kami. Semua pemrosesan gambar dilakukan langsung di browser Anda, yang berarti gambar Anda tidak pernah meninggalkan perangkat Anda. Silakan lihat Kebijakan Privasi kami untuk informasi lebih rinci tentang bagaimana kami menangani data Anda."
     },
     "serviceAvailability": {
       "title": "Ketersediaan Layanan",
@@ -75,7 +75,7 @@
       "content": "Layanan kami disediakan \"sebagaimana adanya\" tanpa jaminan apa pun. Kami menafikan semua jaminan, tersurat atau tersirat, termasuk tetapi tidak terbatas pada:",
       "items": [
         "Kelayakan komersial dan kesesuaian untuk tujuan tertentu",
-        "Non-pelanggaran hak pihak ketiga",
+        "Tidak melanggar hak pihak ketiga",
         "Akurasi, kelengkapan, atau keandalan layanan",
         "Operasi tanpa gangguan atau bebas kesalahan"
       ]
@@ -89,13 +89,13 @@
       "content": "Kami berhak untuk menghentikan atau menangguhkan akses ke layanan kami segera, tanpa pemberitahuan sebelumnya, untuk alasan apa pun, termasuk pelanggaran syarat-syarat ini. Setelah penghentian, hak Anda untuk menggunakan layanan akan segera berhenti."
     },
     "modifications": {
-      "title": "Modifikasi Syarat",
-      "content": "Kami berhak untuk memodifikasi syarat-syarat ini kapan saja. Perubahan akan berlaku segera setelah diposting di halaman ini. Penggunaan layanan yang berkelanjutan setelah perubahan merupakan penerimaan syarat-syarat baru.",
+      "title": "Perubahan Syarat",
+      "content": "Kami berhak mengubah syarat-syarat ini kapan saja. Perubahan akan berlaku segera setelah dipublikasikan di halaman ini. Penggunaan layanan secara berkelanjutan setelah perubahan berarti Anda menerima syarat-syarat yang baru.",
       "notification": "Kami akan memperbarui tanggal \"Terakhir Diperbarui\" untuk mencerminkan perubahan."
     },
     "governingLaw": {
       "title": "Hukum yang Berlaku",
-      "content": "Syarat-syarat ini diatur dan ditafsirkan sesuai dengan hukum internasional yang berlaku. Setiap sengketa yang timbul dari syarat-syarat ini atau penggunaan layanan akan diselesaikan melalui arbitrase yang mengikat."
+      "content": "Syarat-syarat ini diatur dan ditafsirkan sesuai dengan hukum yang berlaku. Setiap sengketa yang timbul dari syarat-syarat ini atau penggunaan layanan oleh Anda akan ditangani sesuai dengan prosedur hukum yang berlaku."
     },
     "contact": {
       "title": "Informasi Kontak",

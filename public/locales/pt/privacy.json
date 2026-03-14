@@ -1,6 +1,6 @@
 {
   "title": "Política de Privacidade",
-  "lastUpdated": "Última Atualização: 2 de julho de 2025",
+  "lastUpdated": "Última Atualização: 13 de março de 2026",
   "description": "Valorizamos sua privacidade. Esta política de privacidade explica como o AI Image Splitter lida com suas informações.",
   "sections": {
     "introduction": {
@@ -17,22 +17,21 @@
         },
         "technicalData": {
           "title": "Dados Técnicos",
-          "content": "Para melhorar nosso serviço, podemos coletar informações técnicas anônimas, incluindo:",
+          "content": "Para medir o tráfego, entender como o site é usado e melhorar o desempenho, podemos coletar dados técnicos e de uso em quantidade limitada por meio de ferramentas como o Google Analytics.",
           "items": [
-            "Tipo e versão do navegador",
-            "Informações do sistema operacional",
-            "Estatísticas de visitas às páginas (via Google Analytics)",
-            "Logs básicos de erro (não contendo informações pessoais)"
+            "Informações sobre navegador e dispositivo",
+            "Localização aproximada derivada de informações relacionadas ao IP",
+            "Visualizações de página, eventos de engajamento e estatísticas semelhantes de uso do site por meio do Google Analytics"
           ]
         },
         "noPersonalData": {
-          "title": "Não Coletamos Informações Pessoais",
-          "content": "Não coletamos, armazenamos ou processamos informações pessoalmente identificáveis, incluindo mas não limitado a:",
+          "title": "Não Coletamos Informações de Identificação Direta",
+          "content": "Não exigimos cadastro para usar a ferramenta de dividir imagens e não coletamos intencionalmente informações que identifiquem você diretamente, como:",
           "items": [
-            "Nomes, endereços de e-mail ou informações de contato",
-            "Informações de conta (já que não exigimos registro)",
-            "Informações de pagamento (já que nosso serviço é completamente gratuito)",
-            "Suas imagens carregadas ou conteúdo de arquivos"
+            "Nomes, endereços de e-mail ou dados de contato exigidos para usar a ferramenta",
+            "Credenciais de conta ou informações de perfil",
+            "Informações de pagamento, porque o serviço atualmente é gratuito",
+            "Arquivos de imagem enviados ou conteúdo dos arquivos para divisão, já que o processamento acontece no navegador"
           ]
         }
       }
@@ -49,11 +48,11 @@
     },
     "dataSharing": {
       "title": "Compartilhamento de Informações",
-      "content": "Não vendemos, negociamos ou transferimos suas informações para terceiros. O único serviço de terceiros que usamos é:",
+      "content": "Não vendemos as imagens nem o conteúdo dos arquivos que você envia. Podemos compartilhar dados técnicos e de uso limitados com prestadores de serviços terceirizados que nos ajudam a operar, medir, proteger e melhorar o site. No momento, nosso principal provedor terceirizado de medição é o Google Analytics. Se produtos de publicidade do Google forem ativados neste site no futuro, o Google e seus parceiros também poderão processar dados conforme descrito abaixo.",
       "thirdPartyServices": {
         "googleAnalytics": {
-          "title": "Serviço Google Analytics",
-          "content": "Usamos o Google Analytics para entender o uso do site. Este serviço coleta dados de uso anônimos para nos ajudar a melhorar o site. Você pode optar por não participar instalando o complemento de navegador de exclusão do Google Analytics."
+          "title": "Serviços do Google",
+          "content": "Usamos o Google Analytics para entender como os visitantes utilizam o site. O Google Analytics pode usar cookies primários e coletar informações sobre navegador e dispositivo, localização aproximada derivada de informações relacionadas ao IP e dados de interação no site, como visualizações de página e eventos de engajamento. Se anúncios do Google forem exibidos neste site no futuro, o Google e seus parceiros também poderão usar cookies, beacons da web, endereços IP e outros identificadores para veicular, medir e, quando permitido por lei, personalizar anúncios. Você pode saber mais sobre como o Google usa dados por meio das próprias políticas e ferramentas do Google."
         }
       }
     },
@@ -69,22 +68,24 @@
     },
     "cookies": {
       "title": "Cookies e Armazenamento Local",
-      "content": "Usamos cookies e armazenamento local mínimos para:",
+      "content": "Usamos cookies e tecnologias semelhantes do navegador para funções essenciais do site, preferências de idioma e região quando aplicável, análise de uso, segurança e, se ativada no futuro, publicidade.",
       "items": [
-        "Lembrar suas preferências de idioma",
-        "Salvar configurações básicas da interface do usuário",
-        "Suportar estatísticas anônimas do Google Analytics"
+        "Dar suporte ao funcionamento essencial do site e ao tratamento de idioma ou região",
+        "Medir tráfego e uso por meio do Google Analytics",
+        "Ajudar a proteger o site, evitar abusos e manter a confiabilidade",
+        "Se anúncios forem ativados no futuro, dar suporte à veiculação de anúncios, controle de frequência, medição e, quando permitido, personalização de anúncios pelo Google e seus parceiros"
       ],
-      "note": "Você pode gerenciar ou desabilitar cookies através das configurações do seu navegador, mas isso pode afetar o funcionamento normal de certas funcionalidades.",
+      "note": "Você pode controlar cookies pelas configurações do seu navegador. Se você estiver no EEE, no Reino Unido ou na Suíça, poderemos solicitar consentimento para cookies ou outro armazenamento local quando isso for exigido por lei.",
       "note_label": "Nota:"
     },
     "userRights": {
       "title": "Seus Direitos",
-      "content": "Como não coletamos informações pessoais, não há dados pessoais para excluir ou modificar. No entanto, você sempre tem os seguintes direitos:",
+      "content": "Dependendo de onde você mora, você pode ter direitos para solicitar acesso, exclusão, restrição de tratamento ou objeção em relação a determinados dados pessoais processados por nós ou por nossos prestadores de serviço. Como não exigimos contas de usuário e não enviamos seus arquivos de imagem para nossos servidores para divisão, os dados de identificação direta que controlamos são limitados.",
       "rights": [
         "Parar de usar nosso serviço a qualquer momento",
-        "Controlar cookies através das configurações do navegador",
-        "Entrar em contato conosco com questões relacionadas à privacidade"
+        "Controlar cookies pelas configurações do navegador",
+        "Usar as ferramentas de privacidade ou de desativação disponibilizadas pelo Google, quando aplicável",
+        "Entrar em contato conosco com dúvidas ou solicitações relacionadas à privacidade"
       ]
     },
     "minorProtection": {
@@ -93,7 +94,7 @@
     },
     "internationalUsers": {
       "title": "Usuários Internacionais",
-      "content": "O AI Image Splitter está disponível para usuários em todo o mundo. Devido à nossa abordagem de processamento no lado do cliente, seus dados não cruzam fronteiras. Cumprimos as leis de proteção de dados aplicáveis, incluindo GDPR, CCPA e outras."
+      "content": "O AI Image Splitter está disponível para usuários em todo o mundo. Dependendo dos serviços usados no site, dados técnicos e de uso limitados podem ser processados em países diferentes do seu. Quando o Google Analytics ou produtos de publicidade do Google são usados, o Google pode processar dados de acordo com suas próprias políticas e exigências legais aplicáveis. Os arquivos de imagem que você envia são processados localmente no seu navegador e não são enviados aos nossos servidores para divisão."
     },
     "policyChanges": {
       "title": "Alterações na Política de Privacidade",

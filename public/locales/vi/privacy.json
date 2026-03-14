@@ -1,6 +1,6 @@
 {
-  "title": "Chính Sách Bảo Mật",
-  "lastUpdated": "Cập nhật lần cuối: 2 tháng 7, 2025",
+  "title": "Chính sách bảo mật",
+  "lastUpdated": "Cập nhật lần cuối: 13 tháng 3, 2026",
   "description": "Chúng tôi coi trọng quyền riêng tư của bạn. Chính sách bảo mật này giải thích cách AI Image Splitter xử lý thông tin của bạn.",
   "sections": {
     "introduction": {
@@ -8,37 +8,36 @@
       "content": "Chào mừng bạn đến với AI Image Splitter (\"chúng tôi,\" \"của chúng tôi,\" hoặc \"dịch vụ\"). Chúng tôi cam kết bảo vệ quyền riêng tư của bạn, và chính sách bảo mật này giải thích cách chúng tôi thu thập, sử dụng và bảo vệ thông tin của bạn khi bạn sử dụng trang web và dịch vụ của chúng tôi."
     },
     "dataCollection": {
-      "title": "Thông Tin Chúng Tôi Thu Thập",
+      "title": "Thông tin chúng tôi thu thập",
       "overview": "Nguyên tắc cốt lõi của chúng tôi là tối đa hóa việc bảo vệ quyền riêng tư của bạn. Đây là cách chúng tôi xử lý dữ liệu:",
       "subsections": {
         "imageProcessing": {
-          "title": "Xử Lý Hình Ảnh",
+          "title": "Xử lý hình ảnh",
           "content": "Tất cả hình ảnh bạn tải lên AI Image Splitter được xử lý cục bộ trong trình duyệt của bạn. Điều này có nghĩa là hình ảnh của bạn không bao giờ được tải lên máy chủ của chúng tôi hoặc rời khỏi thiết bị của bạn. Chúng tôi không thể truy cập, xem hoặc lưu trữ bất kỳ nội dung hình ảnh nào của bạn."
         },
         "technicalData": {
-          "title": "Dữ Liệu Kỹ Thuật",
-          "content": "Để cải thiện dịch vụ của chúng tôi, chúng tôi có thể thu thập thông tin kỹ thuật ẩn danh, bao gồm:",
+          "title": "Dữ liệu kỹ thuật",
+          "content": "Để đo lường lưu lượng truy cập, hiểu cách trang web được sử dụng và cải thiện hiệu suất, chúng tôi có thể thu thập một lượng giới hạn dữ liệu kỹ thuật và dữ liệu sử dụng thông qua các công cụ như Google Analytics.",
           "items": [
-            "Loại và phiên bản trình duyệt",
-            "Thông tin hệ điều hành",
-            "Thống kê truy cập trang (qua Google Analytics)",
-            "Nhật ký lỗi cơ bản (không chứa thông tin cá nhân)"
+            "Thông tin về trình duyệt và thiết bị",
+            "Vị trí gần đúng được suy ra từ thông tin liên quan đến IP",
+            "Lượt xem trang, sự kiện tương tác và các số liệu sử dụng trang web tương tự thông qua Google Analytics"
           ]
         },
         "noPersonalData": {
-          "title": "Không Thu Thập Thông Tin Cá Nhân",
-          "content": "Chúng tôi không thu thập, lưu trữ hoặc xử lý bất kỳ thông tin cá nhân có thể nhận dạng nào, bao gồm nhưng không giới hạn:",
+          "title": "Không thu thập thông tin nhận diện trực tiếp",
+          "content": "Bạn không cần đăng ký tài khoản để sử dụng công cụ chia ảnh, và chúng tôi không cố ý thu thập thông tin có thể nhận diện trực tiếp bạn, chẳng hạn như:",
           "items": [
-            "Tên, địa chỉ email hoặc thông tin liên hệ",
-            "Thông tin tài khoản (vì chúng tôi không yêu cầu đăng ký)",
-            "Thông tin thanh toán (vì dịch vụ của chúng tôi hoàn toàn miễn phí)",
-            "Hình ảnh tải lên hoặc nội dung tệp của bạn"
+            "Tên, địa chỉ email hoặc thông tin liên hệ bắt buộc để sử dụng công cụ",
+            "Thông tin đăng nhập tài khoản hoặc hồ sơ cá nhân",
+            "Thông tin thanh toán, vì dịch vụ hiện đang được cung cấp miễn phí",
+            "Tệp hình ảnh được tải lên hoặc nội dung tệp dùng cho việc chia ảnh, vì toàn bộ quá trình xử lý diễn ra trong trình duyệt"
           ]
         }
       }
     },
     "dataUsage": {
-      "title": "Cách Chúng Tôi Sử Dụng Thông Tin",
+      "title": "Cách chúng tôi sử dụng thông tin",
       "content": "Dữ liệu ẩn danh hạn chế mà chúng tôi thu thập chỉ được sử dụng để:",
       "items": [
         "Cải thiện hiệu suất trang web và trải nghiệm người dùng",
@@ -48,17 +47,17 @@
       ]
     },
     "dataSharing": {
-      "title": "Chia Sẻ Thông Tin",
-      "content": "Chúng tôi không bán, trao đổi hoặc chuyển thông tin của bạn cho bên thứ ba. Dịch vụ bên thứ ba duy nhất chúng tôi sử dụng là:",
+      "title": "Chia sẻ thông tin",
+      "content": "Chúng tôi không bán hình ảnh bạn tải lên hoặc nội dung tệp của bạn. Chúng tôi có thể chia sẻ một lượng giới hạn dữ liệu kỹ thuật và dữ liệu sử dụng với các nhà cung cấp dịch vụ bên thứ ba giúp chúng tôi vận hành, đo lường, bảo vệ và cải thiện trang web. Hiện tại, nhà cung cấp dịch vụ đo lường bên thứ ba chính của chúng tôi là Google Analytics. Nếu các sản phẩm quảng cáo của Google được bật trên trang web này trong tương lai, Google và các đối tác của họ cũng có thể xử lý dữ liệu như mô tả bên dưới.",
       "thirdPartyServices": {
         "googleAnalytics": {
-          "title": "Dịch vụ Google Analytics",
-          "content": "Chúng tôi sử dụng Google Analytics để hiểu việc sử dụng trang web. Dịch vụ này thu thập dữ liệu sử dụng ẩn danh để giúp chúng tôi cải thiện trang web. Bạn có thể chọn không tham gia bằng cách cài đặt tiện ích mở rộng trình duyệt opt-out của Google Analytics."
+          "title": "Dịch vụ của Google",
+          "content": "Chúng tôi sử dụng Google Analytics để hiểu cách khách truy cập sử dụng trang web. Google Analytics có thể sử dụng cookie bên thứ nhất và thu thập thông tin về trình duyệt và thiết bị, vị trí gần đúng được suy ra từ thông tin liên quan đến IP, cũng như dữ liệu tương tác trên trang web như lượt xem trang và các sự kiện tương tác. Nếu quảng cáo của Google được hiển thị trên trang web này trong tương lai, Google và các đối tác của họ cũng có thể sử dụng cookie, tín hiệu web, địa chỉ IP và các mã nhận dạng khác để phân phát, đo lường và, khi pháp luật cho phép, cá nhân hóa quảng cáo. Bạn có thể tìm hiểu thêm về cách Google sử dụng dữ liệu thông qua các chính sách và công cụ riêng của Google."
         }
       }
     },
     "dataSecurity": {
-      "title": "Bảo Mật Dữ Liệu",
+      "title": "Bảo mật dữ liệu",
       "content": "Chúng tôi thực hiện các biện pháp sau để bảo vệ quyền riêng tư của bạn:",
       "measures": [
         "Tất cả xử lý hình ảnh diễn ra ở phía máy khách, không bao giờ tải lên máy chủ",
@@ -68,39 +67,41 @@
       ]
     },
     "cookies": {
-      "title": "Cookie và Lưu Trữ Cục Bộ",
-      "content": "Chúng tôi sử dụng cookie và lưu trữ cục bộ tối thiểu để:",
+      "title": "Cookie và lưu trữ cục bộ",
+      "content": "Chúng tôi sử dụng cookie và các công nghệ trình duyệt tương tự cho các chức năng thiết yếu của trang web, tùy chọn ngôn ngữ và khu vực khi phù hợp, phân tích, bảo mật và, nếu được bật trong tương lai, quảng cáo.",
       "items": [
-        "Ghi nhớ tùy chọn ngôn ngữ của bạn",
-        "Lưu cài đặt giao diện người dùng cơ bản",
-        "Hỗ trợ thống kê ẩn danh của Google Analytics"
+        "Hỗ trợ các chức năng thiết yếu của trang web và việc xử lý ngôn ngữ hoặc khu vực",
+        "Đo lường lưu lượng truy cập và mức độ sử dụng thông qua Google Analytics",
+        "Giúp bảo vệ trang web, ngăn chặn hành vi lạm dụng và duy trì độ ổn định",
+        "Nếu quảng cáo được bật trong tương lai, hỗ trợ phân phát quảng cáo, giới hạn tần suất, đo lường và, khi được pháp luật cho phép, cá nhân hóa quảng cáo bởi Google và các đối tác của họ"
       ],
-      "note": "Bạn có thể quản lý hoặc vô hiệu hóa cookie thông qua cài đặt trình duyệt của mình, nhưng điều này có thể ảnh hưởng đến hoạt động bình thường của một số tính năng.",
+      "note": "Bạn có thể kiểm soát cookie thông qua cài đặt trình duyệt. Nếu bạn ở Khu vực Kinh tế Châu Âu (EEA), Vương quốc Anh hoặc Thụy Sĩ, chúng tôi có thể xin sự đồng ý đối với cookie hoặc hình thức lưu trữ cục bộ khác khi pháp luật yêu cầu.",
       "note_label": "Lưu ý:"
     },
     "userRights": {
-      "title": "Quyền Của Bạn",
-      "content": "Vì chúng tôi không thu thập thông tin cá nhân, nên không có dữ liệu cá nhân nào cần xóa hoặc sửa đổi. Tuy nhiên, bạn luôn có những quyền sau:",
+      "title": "Quyền của bạn",
+      "content": "Tùy thuộc vào nơi bạn sinh sống, bạn có thể có quyền yêu cầu truy cập, xóa, hạn chế xử lý hoặc phản đối việc xử lý một số dữ liệu cá nhân nhất định do chúng tôi hoặc các nhà cung cấp dịch vụ của chúng tôi xử lý. Vì chúng tôi không yêu cầu tài khoản người dùng và không tải tệp hình ảnh của bạn lên máy chủ của chúng tôi để chia ảnh, nên lượng dữ liệu nhận diện trực tiếp mà chúng tôi kiểm soát là rất hạn chế.",
       "rights": [
         "Ngừng sử dụng dịch vụ của chúng tôi bất cứ lúc nào",
         "Kiểm soát cookie thông qua cài đặt trình duyệt",
-        "Liên hệ với chúng tôi về các câu hỏi liên quan đến quyền riêng tư"
+        "Sử dụng các công cụ quyền riêng tư hoặc từ chối theo dõi do Google cung cấp khi phù hợp",
+        "Liên hệ với chúng tôi về các câu hỏi hoặc yêu cầu liên quan đến quyền riêng tư"
       ]
     },
     "minorProtection": {
-      "title": "Bảo Vệ Quyền Riêng Tư Trẻ Em",
+      "title": "Bảo vệ quyền riêng tư của trẻ em",
       "content": "Dịch vụ của chúng tôi không dành cho trẻ em dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin cá nhân từ trẻ em dưới 13 tuổi. Nếu bạn là cha mẹ hoặc người giám hộ và phát hiện rằng con bạn đã cung cấp thông tin cá nhân cho chúng tôi, vui lòng liên hệ với chúng tôi và chúng tôi sẽ ngay lập tức xóa thông tin đó."
     },
     "internationalUsers": {
-      "title": "Người Dùng Quốc Tế",
-      "content": "AI Image Splitter có sẵn cho người dùng trên toàn thế giới. Do phương pháp xử lý phía máy khách của chúng tôi, dữ liệu của bạn không vượt qua biên giới. Chúng tôi tuân thủ các luật bảo vệ dữ liệu áp dụng, bao gồm GDPR, CCPA và các luật khác."
+      "title": "Người dùng quốc tế",
+      "content": "AI Image Splitter được cung cấp cho người dùng trên toàn thế giới. Tùy vào các dịch vụ được sử dụng trên trang web, một lượng giới hạn dữ liệu kỹ thuật và dữ liệu sử dụng có thể được xử lý tại các quốc gia khác ngoài quốc gia của bạn. Khi Google Analytics hoặc các sản phẩm quảng cáo của Google được sử dụng, Google có thể xử lý dữ liệu theo các chính sách riêng và các yêu cầu pháp lý hiện hành. Các tệp hình ảnh bạn tải lên được xử lý cục bộ trong trình duyệt và không được tải lên máy chủ của chúng tôi để phục vụ việc chia ảnh."
     },
     "policyChanges": {
-      "title": "Thay Đổi Chính Sách Bảo Mật",
+      "title": "Thay đổi chính sách bảo mật",
       "content": "Chúng tôi có thể cập nhật chính sách bảo mật này theo thời gian. Bất kỳ thay đổi nào sẽ được đăng trên trang này và ngày \"Cập nhật lần cuối\" sẽ được cập nhật. Chúng tôi khuyến khích bạn xem xét chính sách này định kỳ để được thông báo về bất kỳ thay đổi nào."
     },
     "contact": {
-      "title": "Liên Hệ Với Chúng Tôi",
+      "title": "Liên hệ với chúng tôi",
       "content": "Nếu bạn có bất kỳ câu hỏi hoặc mối quan tâm nào về chính sách bảo mật này, vui lòng liên hệ với chúng tôi:",
       "email": "Email liên hệ: aiimagesplitter@proton.me",
       "response": "Chúng tôi sẽ trả lời yêu cầu của bạn trong vòng 48 giờ sau khi nhận được."

@@ -1,6 +1,6 @@
 {
   "title": "Kebijakan Privasi",
-  "lastUpdated": "Terakhir Diperbarui: 2 Juli 2025",
+  "lastUpdated": "Terakhir Diperbarui: 13 Maret 2026",
   "description": "Kami sangat menghargai privasi Anda. Kebijakan privasi ini menjelaskan bagaimana AI Image Splitter menangani informasi Anda.",
   "sections": {
     "introduction": {
@@ -17,22 +17,21 @@
         },
         "technicalData": {
           "title": "Data Teknis",
-          "content": "Untuk meningkatkan layanan kami, kami mungkin mengumpulkan informasi teknis anonim, termasuk:",
+          "content": "Untuk mengukur trafik, memahami penggunaan situs, dan meningkatkan performa, kami dapat mengumpulkan data teknis dan data penggunaan dalam lingkup terbatas melalui alat seperti Google Analytics.",
           "items": [
-            "Jenis dan versi browser",
-            "Informasi sistem operasi",
-            "Statistik kunjungan halaman (melalui Google Analytics)",
-            "Log kesalahan dasar (tidak mengandung informasi pribadi)"
+            "Informasi browser dan perangkat",
+            "Perkiraan lokasi geografis yang diturunkan dari informasi terkait IP",
+            "Tampilan halaman, peristiwa interaksi, dan statistik penggunaan situs serupa melalui Google Analytics"
           ]
         },
         "noPersonalData": {
-          "title": "Tidak Mengumpulkan Informasi Pribadi",
-          "content": "Kami tidak mengumpulkan, menyimpan, atau memproses informasi yang dapat mengidentifikasi pribadi, termasuk namun tidak terbatas pada:",
+          "title": "Tidak Mengumpulkan Informasi yang Dapat Mengidentifikasi Anda Secara Langsung",
+          "content": "Kami tidak mewajibkan pendaftaran akun untuk menggunakan alat pemisah gambar, dan kami tidak secara sengaja mengumpulkan informasi yang dapat mengidentifikasi Anda secara langsung, seperti:",
           "items": [
-            "Nama, alamat email, atau informasi kontak",
-            "Informasi akun (karena kami tidak memerlukan pendaftaran)",
-            "Informasi pembayaran (karena layanan kami sepenuhnya gratis)",
-            "Gambar atau konten file yang Anda unggah"
+            "Nama, alamat email, atau detail kontak yang diwajibkan untuk menggunakan alat ini",
+            "Kredensial akun atau informasi profil",
+            "Informasi pembayaran, karena layanan ini saat ini gratis untuk digunakan",
+            "File gambar yang diunggah atau isi file untuk proses pemisahan, karena pemrosesan gambar tetap berlangsung di browser"
           ]
         }
       }
@@ -49,11 +48,11 @@
     },
     "dataSharing": {
       "title": "Berbagi Informasi",
-      "content": "Kami tidak menjual, memperdagangkan, atau mentransfer informasi Anda kepada pihak ketiga. Satu-satunya layanan pihak ketiga yang kami gunakan adalah:",
+      "content": "Kami tidak menjual gambar yang Anda unggah atau isi file Anda. Kami dapat membagikan data teknis dan data penggunaan dalam lingkup terbatas kepada penyedia layanan pihak ketiga yang membantu kami mengoperasikan, mengukur, mengamankan, dan meningkatkan situs. Saat ini, penyedia pengukuran pihak ketiga utama kami adalah Google Analytics. Jika produk periklanan Google diaktifkan di situs ini di masa mendatang, Google dan mitranya juga dapat memproses data sebagaimana dijelaskan di bawah ini.",
       "thirdPartyServices": {
         "googleAnalytics": {
-          "title": "Layanan Google Analytics",
-          "content": "Kami menggunakan Google Analytics untuk memahami penggunaan situs web. Layanan ini mengumpulkan data penggunaan anonim untuk membantu kami meningkatkan situs web. Anda dapat memilih keluar dengan menginstal add-on browser opt-out Google Analytics."
+          "title": "Layanan Google",
+          "content": "Kami menggunakan Google Analytics untuk memahami cara pengunjung menggunakan situs ini. Google Analytics dapat menggunakan cookie pihak pertama dan mengumpulkan informasi browser dan perangkat, perkiraan lokasi yang diturunkan dari informasi terkait IP, serta data interaksi di situs seperti tampilan halaman dan peristiwa keterlibatan. Jika iklan Google ditampilkan di situs ini di masa mendatang, Google dan mitranya juga dapat menggunakan cookie, penanda web, alamat IP, dan pengenal lainnya untuk menayangkan, mengukur, dan, jika diizinkan oleh hukum, mempersonalisasi iklan. Anda dapat mempelajari lebih lanjut tentang cara Google menggunakan data melalui kebijakan dan alat yang disediakan Google."
         }
       }
     },
@@ -69,22 +68,24 @@
     },
     "cookies": {
       "title": "Cookie dan Penyimpanan Lokal",
-      "content": "Kami menggunakan cookie dan penyimpanan lokal minimal untuk:",
+      "content": "Kami menggunakan cookie dan teknologi browser serupa untuk fungsi situs yang penting, preferensi bahasa dan wilayah jika berlaku, analitik, keamanan, dan, jika diaktifkan di masa mendatang, periklanan.",
       "items": [
-        "Mengingat preferensi bahasa Anda",
-        "Menyimpan pengaturan antarmuka pengguna dasar",
-        "Mendukung statistik anonim Google Analytics"
+        "Mendukung fungsi inti situs serta penanganan bahasa atau wilayah",
+        "Mengukur trafik dan penggunaan melalui Google Analytics",
+        "Membantu melindungi situs, mencegah penyalahgunaan, dan menjaga keandalan",
+        "Jika iklan diaktifkan di masa mendatang, mendukung penayangan iklan, pembatasan frekuensi, pengukuran, dan, jika diizinkan, personalisasi iklan oleh Google dan mitranya"
       ],
-      "note": "Anda dapat mengelola atau menonaktifkan cookie melalui pengaturan browser, tetapi ini mungkin mempengaruhi pengoperasian normal fitur tertentu.",
+      "note": "Anda dapat mengatur cookie melalui setelan browser Anda. Jika Anda berada di Wilayah Ekonomi Eropa (EEA), Inggris Raya, atau Swiss, kami dapat meminta persetujuan untuk cookie atau penyimpanan lokal lainnya jika diwajibkan oleh hukum.",
       "note_label": "Catatan:"
     },
     "userRights": {
       "title": "Hak Anda",
-      "content": "Karena kami tidak mengumpulkan informasi pribadi, tidak ada data pribadi yang perlu dihapus atau dimodifikasi. Namun, Anda selalu memiliki hak berikut:",
+      "content": "Bergantung pada tempat tinggal Anda, Anda mungkin memiliki hak untuk meminta akses ke, penghapusan, pembatasan, atau keberatan atas data pribadi tertentu yang diproses oleh kami atau penyedia layanan kami. Karena kami tidak mewajibkan akun pengguna dan tidak mengunggah file gambar Anda ke server kami untuk proses pemisahan, data yang secara langsung dapat mengidentifikasi dan kami kendalikan jumlahnya terbatas.",
       "rights": [
         "Berhenti menggunakan layanan kami kapan saja",
         "Mengontrol cookie melalui pengaturan browser",
-        "Menghubungi kami dengan pertanyaan terkait privasi"
+        "Menggunakan alat privasi atau opsi penolakan yang disediakan Google jika berlaku",
+        "Menghubungi kami untuk pertanyaan atau permintaan terkait privasi"
       ]
     },
     "minorProtection": {
@@ -93,7 +94,7 @@
     },
     "internationalUsers": {
       "title": "Pengguna Internasional",
-      "content": "AI Image Splitter tersedia untuk pengguna di seluruh dunia. Karena pendekatan pemrosesan sisi klien kami, data Anda tidak melewati batas negara. Kami mematuhi undang-undang perlindungan data yang berlaku, termasuk GDPR, CCPA, dan lainnya."
+      "content": "AI Image Splitter tersedia bagi pengguna di seluruh dunia. Bergantung pada layanan yang digunakan di situs ini, data teknis dan data penggunaan dalam lingkup terbatas dapat diproses di negara lain di luar negara Anda. Saat Google Analytics atau produk iklan Google digunakan, Google dapat memproses data sesuai kebijakan mereka sendiri dan persyaratan hukum yang berlaku. File gambar yang Anda unggah diproses secara lokal di browser Anda dan tidak diunggah ke server kami untuk proses pemisahan."
     },
     "policyChanges": {
       "title": "Perubahan Kebijakan Privasi",

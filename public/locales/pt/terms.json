@@ -1,22 +1,22 @@
 {
   "title": "Termos de Serviço",
-  "lastUpdated": "Última Atualização: 2 de Julho de 2025",
-  "description": "Estes Termos de Serviço regem o uso do AI Image Splitter. Por favor, leia com atenção.",
+  "lastUpdated": "Última Atualização: 13 de março de 2026",
+  "description": "Estes Termos de Serviço regem o uso do AI Image Splitter. Leia com atenção.",
   "sections": {
     "agreement": {
-      "title": "Acordo com os Termos",
-      "content": "Ao acessar e usar o AI Image Splitter (\"o Serviço\"), você aceita e concorda em estar vinculado aos termos e disposições deste acordo. Se você não concordar com estes termos, não deve usar este serviço."
+      "title": "Aceitação dos termos",
+      "content": "Ao acessar e usar o AI Image Splitter (\"Serviço\"), você aceita estes termos e concorda em cumpri-los. Se não concordar com eles, não use o serviço."
     },
     "serviceDescription": {
       "title": "Descrição do Serviço",
-      "content": "O AI Image Splitter é uma ferramenta online gratuita que permite aos usuários dividir imagens em grades ou segmentos para uso em redes sociais, particularmente para carrosséis do Instagram e posts em grade.",
-      "features_title": "Características Principais",
+      "content": "O AI Image Splitter é uma ferramenta online gratuita que permite dividir imagens em grades ou partes para uso em redes sociais, especialmente em carrosséis e layouts em grade no Instagram.",
+      "features_title": "Principais características",
       "features": [
-        "Processamento de imagem no lado do cliente para proteção de privacidade",
-        "Múltiplos tamanhos de grade (3x3, 2x3, 4x4, personalizado)",
+        "Processamento de imagens no navegador para proteger a privacidade",
+        "Vários tamanhos de grade (3x3, 2x3, 4x4 e opções personalizadas)",
         "Sem marcas d'água nas imagens de saída",
         "Acesso gratuito a todos os recursos",
-        "Suporte multi-idioma",
+        "Suporte a vários idiomas",
         "Compatibilidade móvel e desktop"
       ]
     },
@@ -57,7 +57,7 @@
     },
     "privacy": {
       "title": "Privacidade e Proteção de Dados",
-      "content": "Sua privacidade é importante para nós. Todo o processamento de imagem ocorre do lado cliente em seu navegador, significando que suas imagens nunca saem do seu dispositivo. Por favor, consulte nossa Política de Privacidade para informações detalhadas sobre como lidamos com seus dados."
+      "content": "Sua privacidade é importante para nós. Todo o processamento de imagens acontece no seu navegador, o que significa que suas imagens nunca saem do seu dispositivo. Consulte nossa Política de Privacidade para informações detalhadas sobre como lidamos com seus dados."
     },
     "serviceAvailability": {
       "title": "Disponibilidade do Serviço",
@@ -72,17 +72,17 @@
     },
     "disclaimers": {
       "title": "Isenções de Responsabilidade",
-      "content": "Nosso serviço é fornecido \"como está\" sem garantias de qualquer tipo. Isentamo-nos de todas as garantias, expressas ou implícitas, incluindo, mas não limitado a:",
+      "content": "Nosso serviço é fornecido \"como está\", sem garantias de qualquer tipo. Isentamo-nos de todas as garantias, expressas ou implícitas, incluindo, entre outras:",
       "items": [
         "Comercialização e adequação para um propósito específico",
-        "Não violação de direitos de terceiros",
+        "Ausência de violação de direitos de terceiros",
         "Precisão, integridade ou confiabilidade do serviço",
         "Operação ininterrupta ou livre de erros"
       ]
     },
     "limitation": {
       "title": "Limitação de Responsabilidade",
-      "content": "Na máxima extensão permitida por lei, não seremos responsáveis por quaisquer danos indiretos, incidentais, especiais, consequenciais ou punitivos, incluindo, mas não limitado à perda de lucros, dados ou outras perdas intangíveis resultantes do seu uso do serviço."
+      "content": "Na máxima medida permitida por lei, não seremos responsáveis por quaisquer danos indiretos, incidentais, especiais, consequenciais ou punitivos, incluindo, entre outros, perda de lucros, perda de dados ou outras perdas intangíveis resultantes do uso do serviço."
     },
     "termination": {
       "title": "Rescisão",
@@ -95,7 +95,7 @@
     },
     "governingLaw": {
       "title": "Lei Aplicável",
-      "content": "Estes termos serão regidos e interpretados de acordo com as leis internacionais aplicáveis. Quaisquer disputas decorrentes destes termos ou do uso do serviço serão resolvidas através de arbitragem vinculativa."
+      "content": "Estes termos serão regidos e interpretados de acordo com a legislação aplicável. Quaisquer disputas decorrentes destes termos ou do uso do serviço serão tratadas de acordo com os procedimentos legais cabíveis."
     },
     "contact": {
       "title": "Informações de Contato",
