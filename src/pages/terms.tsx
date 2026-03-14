@@ -2,14 +2,19 @@ import type { NextPage, GetStaticProps } from 'next'
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { ArrowLeft, Scale, FileText, Users, Shield, AlertTriangle, Globe, Settings, Phone } from 'lucide-react'
 import Layout from '@/components/Layout'
 import SEOHead from '@/components/SEO/SEOHead'
+import { usePageUrls } from '@/lib/urlUtils'
+import { SEO_CONFIG } from '@/config/seo'
 
 const TermsOfService: NextPage = () => {
+  const router = useRouter()
   const { t } = useTranslation(['terms', 'common'])
+  const { currentUrl } = usePageUrls(router)
 
   // Table of contents navigation items
   const tableOfContents = [
@@ -58,13 +63,13 @@ const TermsOfService: NextPage = () => {
               "@type": "WebPage",
               "name": t('terms:title'),
               "description": t('terms:description'),
-              "url": "https://aiimagesplitter.com/terms",
+              "url": currentUrl,
               "isPartOf": {
                 "@type": "WebSite",
                 "name": "AI Image Splitter",
-                "url": "https://aiimagesplitter.com"
+                "url": SEO_CONFIG.domain
               },
-              "lastReviewed": "2025-07-02T12:00:00Z",
+              "lastReviewed": SEO_CONFIG.legal.lastReviewed,
               "reviewedBy": {
                 "@type": "Organization",
                 "name": "AI Image Splitter"

@@ -92,7 +92,7 @@ const ImagePreview: React.FC<ImagePreviewProps> = ({
         >
           <img
             src={uploadedImage.src}
-            alt="Upload preview"
+            alt={t('images.uploadPreviewAlt', { defaultValue: 'Uploaded image preview' })}
             style={{
               width: '100%',
               height: '100%',
@@ -196,7 +196,10 @@ const ImagePreview: React.FC<ImagePreviewProps> = ({
                   >
                     <img
                       src={img.objectUrl}
-                      alt={`Split ${imageIndex + 1}`}
+                      alt={t('images.splitResultAlt', {
+                        index: imageIndex + 1,
+                        defaultValue: 'Split result {{index}}'
+                      })}
                       style={{
                         width: '100%',
                         height: '100%',

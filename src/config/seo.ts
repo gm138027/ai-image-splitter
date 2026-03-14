@@ -79,6 +79,10 @@ export const SEO_CONFIG = {
     logo: '/android-chrome-512x512.png',
     favicon: '/favicon.ico'
   },
+
+  legal: {
+    lastReviewed: '2026-03-13T12:00:00Z'
+  },
   
   sitemap: {
     changefreq: {

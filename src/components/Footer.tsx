@@ -11,11 +11,16 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Copyright */}
-          <div className="flex items-center space-x-2 text-gray-600 text-sm">
-            <span>© 2025 AI Image Splitter.</span>
-            <span className="flex items-center">
-              {t('footer.madeWith')} <Heart className="w-4 h-4 text-red-500 mx-1" /> {t('footer.forUsers')}
-            </span>
+          <div className="flex flex-col items-center md:items-start text-gray-600 text-sm text-center md:text-left">
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-2">
+              <span>© 2026 AI Image Splitter.</span>
+              <span className="flex items-center">
+                {t('footer.madeWith')} <Heart className="w-4 h-4 text-red-500 mx-1" /> {t('footer.forUsers')}
+              </span>
+            </div>
+            <p className="mt-2 text-xs text-gray-500 max-w-2xl">
+              {t('footer.brandNameNote')}
+            </p>
           </div>
 
           {/* Links */}

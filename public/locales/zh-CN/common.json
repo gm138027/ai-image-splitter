@@ -1,8 +1,8 @@
 {
   "seo": {
-    "title": "AI Image Splitter —— 免费在线图像分割与照片网格工具",
-    "description": "AI Image Splitter 是一款免费在线工具，提供 4:5、3:4 等分割预设，让你轻松将图像拆分成 3、6、9 甚至更多部分。100% 免费，无需注册、无需下载。",
-    "keywords": "图片分割器, 在线图像分割器, 分割图片, 网格制作器, Instagram网格制作器, Instagram图片分割器, 社交媒体, 轮播图, 在线工具"
+    "title": "AI Image Splitter - 免费在线分割图像",
+    "description": "在线将图像分割为 2、3、6、9 或更多相等部分，支持 4:5、3:4、1:1 预设。可下载单个图像或 ZIP 文件。免费，无需注册。",
+    "keywords": "图像分割器, 在线图像分割器, 在线分割图像, 图像等分, 网格分割, 轮播图像分割"
   },
   "nav": {
     "features": "首页",
@@ -12,85 +12,84 @@
     "backToHome": "返回首页"
   },
   "hero": {
-    "title": "免费在线图像分割器与照片网格制作工具——AI Image Splitter",
-    "description": "使用这款免费在线图像分割工具，可将图片拆分用于 Instagram、Facebook、Pinterest、TikTok 或 A4 / 打印排版，内置默认、4:5、3:4、1:1 等固定比例选项；100% 免费，无需注册、无需下载、无使用次数限制，全部操作都在浏览器端完成，安全私密。"
+    "title": "在线图像分割器",
+    "description": "一键将图像分割成 2、3、6、9 个或更多相等的部分。支持 3:4、4:5、1:1 等预设宽高比，操作过程实时预览每个切片，支持下载单个图像和 ZIP 打包下载。无需注册，无需安装软件，也无任何隐藏费用。"
   },
   "aboutTool": {
     "title": "什么是 AI Image Splitter？",
-    "descriptionMain": "AI Image Splitter 是一款免费在线图像分割器和照片网格制作工具，所有处理都在浏览器端完成，不会上传或存储任何图片。它提供默认 / 4:5 / 3:4 / 1:1 等比例预设、可拖拽和缩放的裁剪框、灵活的行列设置，以及 ZIP / 单图下载和 JPG / PNG / WebP / BMP 输出格式，帮助你快速生成用于 Instagram、Facebook、Pinterest、TikTok、A4 打印或长图拼接的切片。",
-    "descriptionLinkPrefix": "如果你需要 Instagram 专用的网格制作工具（支持 Instagram 2025 年更新后的网格尺寸），请访问我们的姊妹站 ",
-    "descriptionLinkSuffix": " 获取更细分的工作流。"
+    "descriptionMain": "AI Image Splitter 是一款浏览器端图片分割工具，可将一张图像分割为多个相等部分。它内置 3:4、4:5、1:1 等宽高比预设，以及垂直、水平、网格 3 种分割模式。无论您是用于社交媒体发布、A4 打印排版还是图像拼贴，都可以快速完成设置并立即导出。所有处理都在您的设备本地完成，图像不会上传到服务器。您可以选择宽高比预设、分割模式，设置行列，调整分割范围选择框，并将结果按单张或 ZIP 方式导出为 JPG、PNG、WebP、BMP。"
   },
   "tool": {
     "comingSoon": "图片分割工具",
-    "description": "专业的在线图像分割器和Instagram网格制作器。上传您的图片，轻松分割图片为适合社交媒体轮播的完美网格布局。",
-    "uploadPrompt": "拖拽文件到此处或点击上传",
+    "description": "简单的在线图像分割工具，可导出分割结果。",
+    "uploadPrompt": "拖拽图像到此处，或点击上传",
     "uploadButton": "选择图片",
-    "uploadSupport": "支持 JPG, PNG, GIF 格式，最大 50MB",
-    "controlPanelDescription": "使用左侧控制面板配置分割选项",
-    "splitModeTitle": "选择分割图像方式",
-    "splitModeDescription": "垂直分割适用于轮播帖子，水平分割适用于横向展示，网格分割适用于Instagram网格布局",
-    "gridLineWidthLabel": "分割线宽度",
-    "gridLineWidthHint": "调节分割后图片之间的间距",
+    "uploadSupport": "支持 JPG、PNG、GIF、WebP，最大 50 MB。",
+    "controlPanelDescription": "使用左侧控制面板设置分割选项",
+    "splitModeTitle": "选择分割模式",
+    "splitModeDescription": "垂直适合轮播内容，水平适合横向布局，网格适合网格式排布。",
+    "gridLineWidthLabel": "网格线宽度",
+    "gridLineWidthHint": "调整分割图像之间的间距",
     "splitModes": {
-      "vertical": "垂直分割",
-      "horizontal": "水平分割",
-      "grid": "网格分割"
+      "vertical": "垂直",
+      "horizontal": "水平",
+      "grid": "网格"
     },
     "gridSettings": {
       "rows": "行",
       "columns": "列"
     },
-    "gridLineWidth": "分割线宽度",
-    "outputFormat": "输出格式",
+    "gridLineWidth": "网格线宽度",
+    "outputFormat": "导出格式",
     "aspectRatio": {
-      "title": "分割比例",
+      "title": "宽高比",
       "default": "默认",
-      "portrait45": "竖版 4:5",
-      "portrait34": "竖版 3:4",
+      "portrait45": "竖向 4:5",
+      "portrait34": "竖向 3:4",
       "square": "方形 1:1"
     },
     "formats": {
-      "jpg": "JPG（JPEG 格式）",
-      "png": "PNG（PNG 格式）",
-      "webp": "WebP（WebP 格式）",
-      "bmp": "BMP（BMP 格式）"
+      "jpg": "JPG",
+      "png": "PNG",
+      "webp": "WebP",
+      "bmp": "BMP"
     },
     "buttons": {
-      "split": "分割图片",
+      "split": "分割图像",
       "splitting": "分割中...",
       "download": "下载",
-      "downloadAll": "下载图片",
-      "reset": "重新选择图片",
+      "downloadAll": "全部下载",
+      "reset": "重置选区",
       "selectImage": "选择图片",
       "reuploadImage": "重新上传图片",
       "reupload": "重新上传图片"
     },
     "preview": {
       "title": "预览区域",
-      "instruction": "点击分割图片查看分割效果"
+      "instruction": "点击“分割图像”查看结果。"
     },
     "alerts": {
-      "invalidFile": "请选择有效的图片文件",
-      "invalidFileType": "请选择有效的图片文件 (JPG, PNG, GIF, WebP)",
-      "fileTooLarge": "文件大小超过50MB限制，请选择更小的图片",
-      "imageTooLarge": "图片尺寸超过8192x8192像素，请选择更小的图片",
+      "invalidFile": "请选择有效的图像文件",
+      "invalidFileType": "请选择有效的图像文件（JPG、PNG、GIF 或 WebP）",
+      "fileTooLarge": "文件大小超过 50 MB，请选择更小的图像",
+      "imageTooLarge": "图像尺寸超过 8192x8192 像素，请选择更小的图像",
       "downloadFailed": "下载失败，请重试"
     },
-    "uploadImageFirst": "请先上传图片"
+    "uploadImageFirst": "请先上传图像"
   },
   "howItWorks": {
     "title": "如何使用图像分割器",
-    "step1Title": "1. 上传并保持私密",
-    "step1Description": "上传 JPG、PNG、GIF 或 WebP（≤50MB），所有处理都在浏览器端完成，文件不会离开设备。",
-    "step2Title": "2. 选择比例与分割方式",
-    "step2Description": "选择分割比例（默认 / 4:5 / 3:4 / 1:1）及行列，再拖动锁定比例的裁剪框，定位到最佳分割区域。",
-    "step3Title": "3. 一键分割并下载",
-    "step3Description": "即时生成网格或长图切片，支持逐张保存或 ZIP 打包，可导出 JPG、PNG、WebP、BMP 等格式。"
+    "step1Title": "1. 上传图像",
+    "step1Description": "上传 JPG、PNG、GIF 或 WebP 图像（最大 50 MB）。所有处理都在浏览器本地完成，文件不会离开您的设备。",
+    "step2Title": "2. 分割设置",
+    "step2Description": "选择宽高比预设（默认、4:5、3:4、1:1）和分割模式（垂直、水平、网格），然后调整分割范围选择框以确定分割区域。",
+    "step3Title": "3. 下载结果",
+    "step3Description": "预览分割结果后，可下载单张图像，或将全部结果导出为 ZIP 文件。支持 JPG、PNG、WebP、BMP 格式。"
   },
   "footer": {
     "madeWith": "用",
     "forUsers": "为全世界的内容创作者制作",
+    "brandNameNote": "说明：“AI”仅为品牌名称。本工具未使用 AI 模型，所有图像处理均在您的浏览器本地完成。",
     "privacy": "隐私政策",
     "terms": "服务条款"
   },
@@ -99,62 +98,62 @@
     "group1": {
       "items": [
         {
-          "title": "完全免费的在线图像分割器",
-          "description": "真正意义上的免费在线图像分割工具，无需登录、无水印、无付费墙，打开浏览器即可无限次拆分图片。"
+          "title": "免费且易用",
+          "description": "无需注册、无水印、无隐藏费用、无使用次数限制，打开浏览器即可使用完整功能。"
         },
         {
-          "title": "分割比例随心选",
-          "description": "内置默认/4:5/3:4/1:1 等比例预设并支持自定义网格，适配 Instagram、TikTok、Pinterest、Facebook 与 A4 打印/长图布局。"
+          "title": "分割设置灵活",
+          "description": "支持将图像分割为 2、3、4 或更多相等部分，并提供宽高比预设、分割模式和自定义网格设置。"
         },
         {
-          "title": "多用途场景覆盖",
-          "description": "制作 Instagram Carousel、Pinterest 拼贴、TikTok 长图，或导出 A4 打印页、演示文稿、PDF 教材都能秒级完成。"
+          "title": "覆盖常见使用场景",
+          "description": "适合用于 Instagram、TikTok 网格发布、轮播帖子、A4 打印排版、图像拼贴、课堂资料及日常导出场景。"
         }
       ]
     },
     "group2": {
       "items": [
         {
-          "title": "操作简单，新手友好",
-          "description": "拖拽上传、裁剪框引导、即时预览，让任何新手 1 分钟内完成专业级网格。"
+          "title": "界面操作简单",
+          "description": "上传、设置、预览、导出流程清晰，通常在短时间内即可完成。"
         },
         {
-          "title": "本地浏览器级安全",
-          "description": "所有处理都在浏览器本地完成，客户素材、个人照片和机密文件无需离开设备。"
+          "title": "本地处理",
+          "description": "所有处理都在浏览器本地运行，图像不会上传到服务器。"
         },
         {
-          "title": "不限次数，一键导出",
-          "description": "不限次数拆分图片，输出 JPG/PNG/WebP/BMP，并支持 ZIP 或单张文件一键下载。"
+          "title": "导出方式高效",
+          "description": "支持单张下载，也可将全部结果打包为 ZIP，便于发布和整理。"
         }
       ]
     }
   },
   "useCases": {
-    "title": "AI Image Splitter 的使用场景",
+    "title": "AI Image Splitter 的常见使用场景",
     "items": [
       {
-        "title": "社交网格与 Carousel",
-        "description": "利用 AI Image Splitter 将图片拆成 4:5 或 3:4 的连续切片，适用于 Instagram 网格、TikTok 长故事或 Pinterest Carousel，让整条动态保持连贯。"
+        "title": "社交媒体网格与轮播发布",
+        "description": "将一张图像分割为多个相等的块，适用于 Instagram、TikTok、Pinterest 等平台的网格和轮播内容。"
       },
       {
-        "title": "Pinterest 板块与店铺拼贴",
-        "description": "在线拆分情绪板、产品横幅或店铺海报，生成多张 Pin、tile 或商品图，确保 Etsy、Shopify、Pinterest 等平台的视觉统一。"
+        "title": "店铺展示与拼贴排版",
+        "description": "用于商品图拼贴、视觉看板和宣传素材组合，帮助保持版面统一和视觉对齐。"
       },
       {
-        "title": "A4 打印、PDF 与培训资料",
-        "description": "把海报、信息图拆成可打印的 A4 页面或 PDF 幻灯片，满足课堂培训、办公室资料等拆分 A4/PDF 的需求。"
+        "title": "A4 打印与文档分割",
+        "description": "将大图分割为适合 A4 打印或 PDF 文档插入的部分，便于教学、汇报和线下使用。"
       },
       {
-        "title": "网页区块与多屏展示",
-        "description": "通过网格分割功能，把落地页主视觉或控制室仪表盘拆成精确模块，适配网页多列布局、监视器或 LED 拼接屏。"
+        "title": "网页与多区域展示素材",
+        "description": "将图像拆分为多个模块，便于在网页分区或多区域展示中进行灵活排版。"
       },
       {
-        "title": "长图故事与滚动体验",
-        "description": "先将素材合成长图再拆分，用于 TikTok 长故事、博客滚动页面或漫画式 Reels，打造沉浸式叙事内容。"
+        "title": "长图内容拆分",
+        "description": "将长图拆分为更易发布和阅读的多个部分，适合分步展示与连续内容呈现。"
       },
       {
-        "title": "教程教学与团队演示",
-        "description": "在课堂或团队培训里展示“上传→选比例→一键拆分”的流程，1 分钟内即可让新手导出专业网格。"
+        "title": "教学与团队协作流程",
+        "description": "统一上传、设置、预览、导出流程，便于课堂演示、团队协作和日常内容生产。"
       }
     ]
   },
@@ -162,104 +161,106 @@
     "switchLanguage": "切换语言"
   },
   "structuredData": {
-    "websiteName": "AI Image Splitter - 在线图像分割器",
-    "appName": "免费在线图像分割器和Instagram网格制作器",
-    "appDescription": "AI Image Splitter是一款免费在线图像分割器，您可以使用它将图像分割成大小相等的碎块，支持批量下载，无水印无限制。",
+    "websiteName": "AI Image Splitter - 在线图像分割工具",
+    "appName": "免费在线图像分割器与 Instagram 网格工具",
+    "appDescription": "AI Image Splitter 是一款免费的在线工具，可将一张图像分割为相等部分。支持将所有结果一次性下载为 ZIP，不添加水印，也无需注册。",
     "creativeWorkName": "图像分割工具",
-    "creativeWorkDescription": "专业的在线图像分割器，帮助用户将图片分割成完美的网格布局，特别适用于Instagram和社交媒体内容创作。",
+    "creativeWorkDescription": "用于创建社交媒体发布、轮播内容和打印材料整齐网格布局的在线图像分割工具。",
     "features": {
-      "splitImages": "图片分割",
-      "instagramGrid": "Instagram网格制作",
-      "carouselCreation": "轮播图制作",
+      "splitImages": "图像分割",
+      "instagramGrid": "创建 Instagram 网格",
+      "carouselCreation": "创建轮播图像",
       "batchDownload": "批量下载",
       "freeToUse": "免费使用"
     },
-    "keywords": "图片分割器, 在线图像分割器, 分割图片, 网格制作器, Instagram网格制作器, Instagram图片分割器, 社交媒体, 轮播图, 在线工具",
+    "keywords": "图像分割器,在线图像分割器,在线分割图像,图像等分,网格分割,轮播图像分割",
     "genre": "图像处理工具"
   },
   "images": {
-    "gridExampleAlt": "使用Image Splitter创建Instagram网格效果图",
-    "carouselExampleAlt": "使用Image Splitter创建Instagram轮播帖子效果图",
+    "gridExampleAlt": "图像网格分割示例",
+    "carouselExampleAlt": "图像轮播分割示例",
+    "uploadPreviewAlt": "已上传图像预览",
+    "splitResultAlt": "分割结果 {{index}}",
     "originalPlaceholder": "原图",
     "gridEffectPlaceholder": "网格效果",
     "carouselEffectPlaceholder": "轮播效果"
   },
   "faq": {
     "title": "常见问题",
-    "description": "围绕在线图像分割、Instagram 网格和 A4 打印的热门问题解答。",
+    "description": "关于格式支持、隐私处理、下载方式和分割设置的常见问题解答。",
     "whatIsImageSplitter": {
-      "question": "什么是 AI Image Splitter？为什么说它是一款优秀的在线图像分割器？",
-      "answer": "AI Image Splitter 是免费的浏览器端图像分割器和照片网格工具，可上传 50MB 以内的 JPG、PNG、GIF、WebP，并立即把图片拆成适合 Instagram、TikTok、Pinterest、Facebook 或 A4 打印的等分切片。所有运算都在浏览器本地完成，速度快、画质稳定，也不会上传任何素材。"
+      "question": "AI Image Splitter 可以做什么？",
+      "answer": "它可以将一张图像分割为多个相等的部分，并支持预览后下载。您可以上传 JPG、PNG、GIF、WebP 图像，设置分割参数后导出单张文件或 ZIP 打包文件。"
     },
     "howToSplitImage": {
-      "question": "如何在线分割图像？",
-      "answer": "按照这个快速教程即可完成在线图像分割：1）上传图片；2）选择默认、4:5、3:4 或 1:1 比例并设置行列；3）把锁定比例的裁剪框拖到最佳区域；4）点击\"分割图像\"生成预览；5）下载单张切片或 ZIP 压缩包。"
+      "question": "如何一步步完成图像分割？",
+      "answer": "上传图像后，先选择宽高比和分割模式，再设置行列并调整分割范围选择框。确认预览效果后，下载单张结果或 ZIP 打包文件。"
     },
     "instagramGridMaker": {
-      "question": "这款图像分割器可以用来制作 Instagram 网格或轮播吗？",
-      "answer": "可以。它既是 Instagram 网格制作工具，也是轮播切片工具，能够生成 3x3 拼图、1x3 长条或竖版故事面板，并导出即刻发布的图片，让说明文字和滑动体验都保持对齐。如果你需要创作更专业的 Instagram 主页网格（支持 2025 年更新后的尺寸），请访问我们的姊妹站 <a href=\"https://igridmaker.com\" target=\"_blank\" rel=\"noopener\">igridmaker.com</a> 获取专用流程。"
+      "question": "可以用于 Instagram 网格和轮播帖子吗？",
+      "answer": "可以。您可以生成适用于网格发布和轮播帖子的分割结果，并按顺序下载后用于发布。"
     },
     "splitImage3x3": {
-      "question": "如何制作 3x3、2x3 或拼图式网格？",
-      "answer": "切换到「网格」模式，将行列设置为 3x3、2x3、3x1 或任意组合，再把裁剪框拖到主体位置并调整分割范围即可；如果保持默认分割方式，上传后直接点击「分割图像」即可生成切片。预览会帮助你确认每一块切片的排布是否正确，然后再发布。"
+      "question": "如何将图像分割为 2、3、4 部分或 3x3、2x3 网格？",
+      "answer": "选择分割模式后，设置行列数即可生成 2、3、4 或更多部分，也可以使用 3x3、2x3、3x1 等网格布局。"
     },
     "supportedFormats": {
-      "question": "支持哪些图像格式和下载方式？",
-      "answer": "上传端支持 JPG、PNG、GIF、WebP，最大 50MB、8192×8192 像素；导出端可选择 JPG、PNG、WebP、BMP，并支持单图下载或 ZIP 打包加速发布。"
+      "question": "支持哪些上传与导出格式？",
+      "answer": "上传支持 JPG、PNG、GIF、WebP（最大 50MB，建议尺寸不超过 8192×8192）。导出支持 JPG、PNG、WebP、BMP，并支持单张下载或 ZIP 打包下载。"
     },
     "freeToUse": {
-      "question": "AI Image Splitter 是否完全免费、无限制且无水印？",
-      "answer": "是的。这款在线图像分割器 100% 免费，无需注册、无暗扣、无水印，也没有使用次数限制，个人或商业项目都能放心使用。"
+      "question": "这款工具真的免费吗？",
+      "answer": "是的。无需注册、无水印、无隐藏费用，且没有使用次数限制（在支持的格式与大小范围内）。"
     },
     "imageQuality": {
-      "question": "分割后的图片清晰度会下降吗？",
-      "answer": "不会。裁剪框会锁定你选定的区域，导出流程也会沿用原图分辨率，因此即使是大尺寸轮播、海报或 Pinterest 面板也能保持与源文件一致的清晰度。"
+      "question": "图像分割后画质会下降吗？",
+      "answer": "在原图质量足够的前提下，分割结果通常可保持良好清晰度。建议使用清晰原图，并在导出前先查看预览效果。"
     },
     "privacySecurity": {
-      "question": "在线分割图片时，我的素材安全吗？",
-      "answer": "全部处理都发生在浏览器端，文件不会被上传、存储或被任何服务器查看。关闭页面即可清空所有临时数据。"
+      "question": "图像会上传到服务器吗？",
+      "answer": "不会。处理过程在浏览器本地完成，图像不会上传到服务器。"
     },
     "mobileFriendly": {
-      "question": "它能在手机或平板上使用吗？",
-      "answer": "可以。AI Image Splitter 对 iOS、Android 与平板设备完全自适应，你可以直接用手势拖动裁剪框，并把切片下载到相册或云空间。"
+      "question": "手机和平板可以使用吗？",
+      "answer": "可以。页面已适配常见移动设备，您可以在手机或平板上完成上传、设置和下载。"
     },
     "batchProcessing": {
-      "question": "可以把单张图片拆成 A4 或多页打印面板吗？",
-      "answer": "可以。选择更适合 A4 的默认或 1:1 比例，设置行列匹配你的打印页数，然后执行分割。每张切片都能直接打印在 A4 纸上、拼成大型海报，或收纳到 PDF 手册中。"
+      "question": "可以用于 A4 打印或多页排版吗？",
+      "answer": "可以。您可以通过行列设置将大图拆分为适合 A4 打印或多页排版的多个部分，也可用于 PDF 文档插入。"
     },
     "customDimensions": {
-      "question": "可以锁定 4:5、3:4、1:1 等比例并自定义网格吗？",
-      "answer": "可以通过「分割比例」按钮选择默认、4:5、3:4 或 1:1 的裁剪框，再设置 1×1、3×3、2×3、3×1 或任意行列组合。分割结果会同时遵循比例与网格，方便满足 Instagram、TikTok、Pinterest 或 A4 打印规格。"
+      "question": "如何将图像分割为 4:5？",
+      "answer": "先选择 4:5 的宽高比预设，再设置分割模式、行和列。确认预览无误后，可下载单张结果或 ZIP 打包文件。"
     },
     "cta": {
-      "title": "准备好开始拆分你的图片了吗？",
-      "description": "立即分割图像，快速制作吸引人的社交媒体内容。",
-      "button": "立刻开始创作"
+      "title": "准备开始分割图像了吗？",
+      "description": "上传图像，选择分割模式和网格设置，预览结果，然后下载单张文件或 ZIP 打包文件。",
+      "button": "开始分割"
     }
   },
   "proTips": {
-    "title": "使用 AI Image Splitter 如何获得最佳体验",
-    "subtitle": "分割图片的高级技巧",
+    "title": "如何更高效地使用 AI Image Splitter",
+    "subtitle": "提高分割质量与导出效率的实用建议",
     "items": [
       {
-        "title": "先根据用途选择比例",
-        "description": "在拆分图片前，优先选择默认、4:5、3:4、1:1 或自定义网格，以适配 Instagram 网格/Carousel、TikTok 故事、Pinterest 看板或 A4 打印布局。"
+        "title": "请使用高质量的图像",
+        "description": "尽量使用清晰、分辨率较高的原图，可显著提升分割后每个部分的显示效果。"
       },
       {
-        "title": "拖动裁剪框，让主体保持居中",
-        "description": "上传后可随时拖拽锁定比例的裁剪框，让产品、城市线或文字都留在每张切片里；对于长横幅，建议左右留白一致，再微调行列。"
+        "title": "选择合适的宽高比和分割模式",
+        "description": "在开始分割前，按照分割用途和原图特点，先选择合适的宽高比预设和分割模式，可减少后续重复调整。"
       },
       {
-        "title": "先预览再导出 ZIP + 单图",
-        "description": "通过即时预览反复调整行列/比例，再同时导出单张图片和 ZIP 打包，方便直接发帖或备份归档。"
+        "title": "优先保证主体区域完整",
+        "description": "调整分割范围选择框时，确保主体内容尽量完整地保留在每个分割结果中。"
       },
       {
-        "title": "提前选好输出格式",
-        "description": "JPG 适合社交平台，PNG 保留透明背景，WebP/BMP 适合无损素材。预先确定格式可避免重复转换。"
+        "title": "先预览再导出",
+        "description": "先检查行列设置与分割边界，然后通过实时预览确认无误后，再进行单张下载或 ZIP 打包导出，可避免返工。"
       },
       {
-        "title": "利用浏览器隐私与多语言界面",
-        "description": "AI Image Splitter 全程在浏览器端处理，文件不会上传；如需与海外成员协作，可切换为英语、葡语、印尼语等语言，统一操作流程。"
+        "title": "按用途选择输出格式",
+        "description": "社交平台优先考虑文件体积（比如：JPG），透明背景或细节保留场景优先选择合适格式（比如 PNG），网页优先选择 WebP。"
       }
     ]
   }

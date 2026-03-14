@@ -150,17 +150,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             </span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl sm:max-w-4xl mx-auto text-left md:text-center">
-            {t('aboutTool.descriptionMain')}{' '}
-            {t('aboutTool.descriptionLinkPrefix')}
-            <a
-              href="https://igridmaker.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary-600 hover:text-primary-700 underline"
-            >
-              igridmaker.com
-            </a>
-            {t('aboutTool.descriptionLinkSuffix')}
+            {t('aboutTool.descriptionMain')}
           </p>
         </div>
 

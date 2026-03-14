@@ -1,7 +1,7 @@
 {
   "seo": {
-    "title": "AI Image Splitter — Split Images Online for Free & Photo Grids",
-    "description": "AI Image Splitter is a free online tool that offers ratio presets such as 4:5 and 3:4, letting you easily split images into 3, 6, 9, or more parts. 100% free.",
+    "title": "AI Image Splitter - Split Images Online for Free",
+    "description": "Split images online into 2, 3, 6, 9, or more equal parts with 4:5, 3:4, and 1:1 presets. Download individual images or a ZIP file. Free, no sign-up needed.",
     "keywords": "image splitter, image splitter online, split image, split image online, photo grid maker, split image for instagram, split photo, social media, carousel"
   },
   "nav": {
@@ -12,24 +12,22 @@
     "backToHome": "Back to Home"
   },
   "hero": {
-    "title": "Free Online Image Splitter & Photo Grid Maker Tool — AI Image Splitter",
-    "description": "Use this free online image splitter tool to split images for Instagram, Facebook, Pinterest, TikTok, or A4/print layouts with built-in ratio presets (Default • 4:5 • 3:4 • 1:1) — 100% free, no signup, no downloads, and no usage limits because everything runs privately in your browser."
+    "title": "Online Image Splitter",
+    "description": "Split images into 2, 3, 6, 9, or more equal parts in one click. Use built-in 3:4, 4:5, and 1:1 aspect ratio presets, preview every slice in real time, and download individual images or a ZIP file. No sign-up, no software to install, and no hidden fees."
   },
   "aboutTool": {
     "title": "What is AI Image Splitter?",
-    "descriptionMain": "AI Image Splitter is a free online image splitter and photo grid maker. All processing stays inside your browser, so nothing is uploaded or stored. Use built-in ratio presets (Default / 4:5 / 3:4 / 1:1), a draggable crop box, flexible row and column settings, plus ZIP or single-image downloads in JPG, PNG, WebP, or BMP to create slices for Instagram, Facebook, Pinterest, TikTok, A4 printouts, or long collages.",
-    "descriptionLinkPrefix": "Need Instagram-only grids that follow the 2025 feed update? Visit our sister site ",
-    "descriptionLinkSuffix": " for that dedicated workflow."
+    "descriptionMain": "AI Image Splitter is a browser-based image splitting tool that divides one image into multiple equal parts. It includes aspect ratio presets like 3:4, 4:5, and 1:1, plus three split modes: Vertical, Horizontal, and Grid. Whether you are creating social media posts, preparing A4 print layouts, or building image collages, you can set everything up quickly and export right away. All processing happens locally on your device, and your images are never uploaded to a server. You can choose the aspect ratio and split mode, set rows and columns, adjust the selection box to define the split area, and export results as individual files or a ZIP in JPG, PNG, WebP, or BMP."
   },
   "tool": {
     "comingSoon": "Image Splitter Tool",
-    "description": "Advanced image splitter online tool for Instagram grid maker needs. Upload your image and split images into perfect grids for social media carousels.",
+    "description": "A simple online image splitter for Instagram grids and carousel posts.",
     "uploadPrompt": "Drag files here or click to upload",
     "uploadButton": "Choose Image",
-    "uploadSupport": "Supports JPG, PNG, GIF formats, up to 50MB",
+    "uploadSupport": "Supports JPG, PNG, GIF, and WebP files up to 50 MB.",
     "controlPanelDescription": "Use the left control panel to configure split options",
-    "splitModeTitle": "Choose Split Image Mode",
-    "splitModeDescription": "Vertical split is perfect for carousel posts, horizontal split for landscape displays, and grid split for Instagram grid layouts",
+    "splitModeTitle": "Choose a Split Mode",
+    "splitModeDescription": "Use Vertical for carousel posts, Horizontal for landscape layouts, and Grid for grid-based posts.",
     "gridLineWidthLabel": "Grid Line Width",
     "gridLineWidthHint": "Adjust the spacing between split images",
     "splitModes": {
@@ -60,7 +58,7 @@
       "split": "Split Image",
       "splitting": "Splitting...",
       "download": "Download",
-      "downloadAll": "Download Images",
+      "downloadAll": "Download All",
       "reset": "Reset Selection",
       "selectImage": "Select Image",
       "reuploadImage": "Re-upload Image",
@@ -68,12 +66,12 @@
     },
     "preview": {
       "title": "Preview Area",
-      "instruction": "Click split image to see the split results"
+      "instruction": "Click \"Split Image\" to preview your results."
     },
     "alerts": {
       "invalidFile": "Please select a valid image file",
       "invalidFileType": "Please select a valid image file (JPG, PNG, GIF, WebP)",
-      "fileTooLarge": "File size exceeds 50MB limit. Please choose a smaller image",
+      "fileTooLarge": "File size exceeds the 50 MB limit. Please choose a smaller image",
       "imageTooLarge": "Image dimensions exceed 8192x8192 pixels. Please choose a smaller image",
       "downloadFailed": "Download failed. Please try again"
     },
@@ -81,80 +79,81 @@
   },
   "howItWorks": {
     "title": "How to Use the Image Splitter",
-    "step1Title": "1. Upload Privately",
-    "step1Description": "Add any JPG, PNG, GIF, or WebP (up to 50MB). Everything processes in your browser, so files never leave your device.",
-    "step2Title": "2. Pick Ratio & Layout",
-    "step2Description": "Choose split ratios (Default, 4:5, 3:4, 1:1) plus rows and columns, then drag the locked crop box to the best area.",
-    "step3Title": "3. Split & Download",
-    "step3Description": "Generate perfect grids or long panels instantly, download single slices or a ZIP, and export as JPG, PNG, WebP, or BMP."
+    "step1Title": "1. Upload an Image",
+    "step1Description": "Upload a JPG, PNG, GIF, or WebP image (up to 50 MB). Everything is processed in your browser, so your file never leaves your device.",
+    "step2Title": "2. Set Split Options",
+    "step2Description": "Choose an aspect ratio preset (Default, 4:5, 3:4, or 1:1) and a split mode (Vertical, Horizontal, or Grid), then adjust the selection box to define the split area.",
+    "step3Title": "3. Download Results",
+    "step3Description": "Preview the split result, then download individual images or export everything as a ZIP file. Output formats include JPG, PNG, WebP, and BMP."
   },
   "footer": {
     "madeWith": "Made with",
     "forUsers": "for content creators worldwide",
+    "brandNameNote": "Note: \"AI\" is part of our brand name. This tool does not use AI models, and all image processing runs locally in your browser.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
   "advantages": {
-    "title": "AI Image Splitter Features",
+    "title": "What Makes AI Image Splitter Stand Out",
     "group1": {
       "items": [
         {
-          "title": "Completely free online image splitter",
-          "description": "A genuinely free online image splitter tool: split image online without logins, watermarks, or paywalls."
+          "title": "Free and Easy to Use",
+          "description": "No sign-up, no watermarks, no hidden fees, and no usage limits. Open your browser and use the full tool right away."
         },
         {
-          "title": "Flexible ratio presets",
-          "description": "Built-in Default/4:5/3:4/1:1 ratios plus custom grids keep Instagram, TikTok, Pinterest, Facebook, and A4 print layouts perfectly aligned."
+          "title": "Flexible Image Splitting Settings",
+          "description": "Split images into 2, 3, 4, or more equal parts with aspect ratio presets, split modes, and custom grid settings."
         },
         {
-          "title": "Multi-use coverage",
-          "description": "Create Instagram carousels, Pinterest collages, TikTok long posts, or export A4-ready print pages and PDF workbooks in seconds."
+          "title": "Covers Common Use Cases",
+          "description": "Great for Instagram and TikTok grid posts, carousel posts, A4 print layouts, image collages, classroom materials, and everyday exports."
         }
       ]
     },
     "group2": {
       "items": [
         {
-          "title": "Beginner-friendly workflow",
-          "description": "Drag-and-drop upload, guided crop boxes, and instant split previews help any beginner finish professional grids in under a minute."
+          "title": "Simple Interface",
+          "description": "The upload, setup, preview, and export flow is straightforward and usually takes only a short time."
         },
         {
-          "title": "Local browser security",
-          "description": "All processing stays on your device, so client assets, personal photos, and confidential files never leave your browser."
+          "title": "Local Processing",
+          "description": "All processing runs locally in your browser, and images are never uploaded to a server."
         },
         {
-          "title": "Unlimited splits & one-click export",
-          "description": "Split as many images as you like, export JPG/PNG/WebP/BMP, and download ZIP bundles or single slices with one click."
+          "title": "Efficient Export Options",
+          "description": "Download individual files or package all results into a ZIP for faster publishing and organization."
         }
       ]
     }
   },
   "useCases": {
-    "title": "AI Image Splitter Use Cases",
+    "title": "Common Use Cases for AI Image Splitter",
     "items": [
       {
-        "title": "Social grid & carousel posts",
-        "description": "Use the AI Image Splitter for Instagram grids, TikTok stories, or Pinterest carousels: split one photo into 4:5 or 3:4 slices so every panel flows seamlessly."
+        "title": "Social Media Grids and Carousel Posts",
+        "description": "Split one image into multiple equal parts for grid and carousel content on Instagram, TikTok, Pinterest, and similar platforms."
       },
       {
-        "title": "Pinterest boards & shop collages",
-        "description": "Split images online for Pinterest boards or Etsy/Shopify storefront collages, keeping every pin, tile, or product banner perfectly aligned."
+        "title": "Storefront Displays and Collage Layouts",
+        "description": "Use it for product collages, visual boards, and promotional asset layouts while keeping alignment clean and consistent."
       },
       {
-        "title": "A4 print, PDF, and workshop handouts",
-        "description": "Answer the request to split images into A4 sheets or PDFs by slicing posters or infographics into printable handouts for workshops, classrooms, and offices."
+        "title": "A4 Print and Document Splits",
+        "description": "Split large images into sections that work for A4 printing or PDF document inserts, making them easier to use for classes, reports, and offline materials."
+      },
+        {
+          "title": "Web and Multi-Section Display Assets",
+          "description": "Split an image into sections for web layouts and multi-panel displays, with flexible placement control."
+        },
+        {
+          "title": "Splitting Long Images",
+        "description": "Split long visuals into smaller sections that are easier to publish, view, and present in sequence."
       },
       {
-        "title": "Web sections & multi-screen displays",
-        "description": "Use the grid splitter to break landing-page hero images or dashboards into precise modules that span multiple columns, monitors, or LED walls."
-      },
-      {
-        "title": "Long-story prep & scroll experiences",
-        "description": "Prepare long scrolls by combining artwork into a tall collage and splitting it for TikTok story posts, blog scrolls, or comic-style reels—ideal for storytelling."
-      },
-      {
-        "title": "Tutorials & team walkthroughs",
-        "description": "Run an image splitter tutorial in under a minute: upload, pick a ratio, split, and let students or teammates export professional grids instantly."
+        "title": "Classroom and Team Workflows",
+        "description": "Follow one consistent workflow for uploading, setting options, previewing, and exporting in classrooms, team projects, and day-to-day content production."
       }
     ]
   },
@@ -164,9 +163,9 @@
   "structuredData": {
     "websiteName": "AI Image Splitter - Online Image Splitter Tool",
     "appName": "Free Online Image Splitter & Instagram Grid Maker",
-    "appDescription": "AI Image Splitter is a free online image splitter that allows you to split images into equal-sized pieces, supports batch download, no watermarks, unlimited use.",
+    "appDescription": "AI Image Splitter is a free online tool that splits one image into equal parts. It supports batch ZIP downloads, adds no watermarks, and requires no sign-up.",
     "creativeWorkName": "Image Splitter Tool",
-    "creativeWorkDescription": "Professional online image splitter tool that helps users split images into perfect grid layouts, especially designed for Instagram and social media content creation.",
+    "creativeWorkDescription": "An online image splitting tool for creating clean grid layouts for social posts, carousels, and print-ready content.",
     "features": {
       "splitImages": "Split Images",
       "instagramGrid": "Instagram Grid Maker",
@@ -180,86 +179,88 @@
   "images": {
     "gridExampleAlt": "Instagram grid effect created with Image Splitter",
     "carouselExampleAlt": "Instagram carousel post effect created with Image Splitter",
+    "uploadPreviewAlt": "Uploaded image preview",
+    "splitResultAlt": "Split result {{index}}",
     "originalPlaceholder": "Original",
     "gridEffectPlaceholder": "Grid Effect",
     "carouselEffectPlaceholder": "Carousel Effect"
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "description": "Answers to the most searched queries about online image splitters, Instagram grid makers, and printable A4 dividers.",
+    "description": "Answers to common questions about supported formats, privacy, download options, and split settings.",
     "whatIsImageSplitter": {
-      "question": "What is AI Image Splitter and why is it the best online image splitter?",
-      "answer": "AI Image Splitter is a free browser-based image splitter and photo grid maker. Upload any JPG, PNG, GIF, or WebP up to 50MB and it instantly divides the file into equal slices for Instagram, TikTok, Pinterest, Facebook, or printable A4 layouts. Because everything runs locally in your browser, it works fast, preserves quality, and never uploads your content."
+      "question": "What can AI Image Splitter do?",
+      "answer": "It can split one image into multiple equal parts and lets you preview results before downloading. You can upload JPG, PNG, GIF, or WebP images, choose your split settings, and export individual files or a ZIP package."
     },
     "howToSplitImage": {
-      "question": "How do I split an image online step by step?",
-      "answer": "Follow this quick image splitter tutorial: 1) upload your image, 2) choose Default, 4:5, 3:4, or 1:1 plus rows and columns, 3) drag the locked crop box to the area you want, 4) click Split Image to generate previews, 5) download single slices or a ZIP package."
+      "question": "How do I split an image step by step?",
+      "answer": "After uploading your image, choose an aspect ratio and split mode, then set rows and columns and adjust the selection box for the split area. Once the preview looks right, download individual results or a ZIP package."
     },
     "instagramGridMaker": {
-      "question": "Can I use this image splitter for Instagram grids and carousel posts?",
-      "answer": "Yes. The tool doubles as an Instagram grid maker and Instagram carousel splitter. Create 3x3 feed puzzles, 1x3 strips for reels, or portrait panels for stories, then download ready-to-post images that keep captions and swipe experiences aligned. Need pro-grade Instagram homepage grids that support the 2025 update? Visit our sister site <a href=\"https://igridmaker.com\" target=\"_blank\" rel=\"noopener\">igridmaker.com</a> for that dedicated workflow."
+      "question": "Can I use it for Instagram grids and carousel posts?",
+      "answer": "Yes. You can create split results for grid and carousel posts, then download them in order for publishing."
     },
     "splitImage3x3": {
-      "question": "How do I create 3x3, 2x3, or puzzle grids for Instagram?",
-      "answer": "Switch to Grid mode, set rows and columns to 3x3, 2x3, 3x1, or any combo up to 10x10, then drag the crop box so the focal point stays inside every tile. If you leave the ratio on Default, you can simply click \"Split Image\" after upload to slice the full canvas. The preview confirms each tile before you publish."
+      "question": "How do I split an image into 2, 3, or 4 parts, or into 3x3 or 2x3 grids?",
+      "answer": "Choose a split mode, then set rows and columns to create 2, 3, 4, or more parts. You can also use layouts like 3x3, 2x3, and 3x1."
     },
     "supportedFormats": {
-      "question": "Which image formats and downloads are supported?",
-      "answer": "You can upload JPG, PNG, GIF, or WebP files up to 50MB and 8192×8192 pixels. Export the split images as JPG, PNG, WebP, or BMP and grab either individual files or a ZIP download for faster publishing."
+      "question": "What upload and export formats are supported?",
+      "answer": "Uploads support JPG, PNG, GIF, and WebP (up to 50 MB, with recommended dimensions up to 8192x8192). Exports support JPG, PNG, WebP, and BMP, with individual downloads or ZIP packages."
     },
     "freeToUse": {
-      "question": "Is AI Image Splitter free, unlimited, and watermark-free?",
-      "answer": "Absolutely. This online image splitter is 100% free, has no hidden paywalls, requires no sign-up, adds no watermarks, and lets you split unlimited images for personal or commercial projects."
+      "question": "Is this tool really free?",
+      "answer": "Yes. No sign-up, no watermarks, no hidden fees, and no usage limits, as long as your files stay within supported formats and size limits."
     },
     "imageQuality": {
-      "question": "Will the split image quality stay sharp after exporting?",
-      "answer": "Yes. The crop box locks your chosen area and the export pipeline keeps the original resolution, so even large carousels, posters, or Pinterest boards look as crisp as the source file."
+      "question": "Will image quality drop after splitting?",
+      "answer": "If the source image quality is good, split results usually stay clear. We recommend using a high-quality source image and checking the preview before exporting."
     },
     "privacySecurity": {
-      "question": "Is my content private when I split images online?",
-      "answer": "Your files never leave your browser. All processing happens locally, so the tool never uploads, stores, or inspects any image. Close the tab and everything disappears instantly."
+      "question": "Will my images be uploaded to a server?",
+      "answer": "No. Processing happens locally in your browser, and your images are not uploaded to a server."
     },
     "mobileFriendly": {
-      "question": "Does this tool work on phones and tablets?",
-      "answer": "AI Image Splitter is fully responsive, so you can upload from iOS, Android, or tablets, adjust the crop box with gestures, and download slices straight to your camera roll or cloud storage."
+      "question": "Can I use it on a phone or tablet?",
+      "answer": "Yes. The site is optimized for mobile devices, so you can upload, configure, and download from your phone or tablet."
     },
     "batchProcessing": {
-      "question": "Can I split an image into A4 sheets or multi-page prints?",
-      "answer": "Yes. Choose an A4-friendly ratio (Default or 1:1), set rows/columns to match how many sheets you need, and split the file. Each slice can then be printed on A4 paper, tiled across posters, or combined inside PDFs to match the popular \"divide image into A4 sheets\" workflows."
+      "question": "Can I use it for A4 printing or multi-page layouts?",
+      "answer": "Yes. You can split large images into multiple parts using rows and columns for A4 printing or multi-page layouts, and you can also use the results in PDF documents."
     },
     "customDimensions": {
-      "question": "Can I lock 4:5, 3:4, or 1:1 ratios or set custom grids?",
-      "answer": "Use the Aspect Ratio buttons (Default, 4:5, 3:4, 1:1) to lock the crop box, then dial in 1×1, 3×3, 2×3, 3×1, or any custom rows/columns up to 10×10. The split function honors both the ratio and the grid so every export meets Instagram, TikTok, Pinterest, or A4 print specs."
+      "question": "How do I split an image in a 4:5 ratio?",
+      "answer": "Choose the 4:5 aspect ratio preset first, then select a split mode and set rows and columns. After confirming the preview, you can download individual results or a ZIP package."
     },
     "cta": {
-      "title": "Ready to Create Amazing Grid Layouts?",
-      "description": "Start splitting your images and create engaging social media content.",
-      "button": "Start Creating Now"
+      "title": "Ready to Split Your Image?",
+      "description": "Upload your image, choose a split mode and grid settings, preview the results, then download individual files or a ZIP package.",
+      "button": "Start Splitting"
     }
   },
   "proTips": {
-    "title": "How to Get the Best Experience with AI Image Splitter",
-    "subtitle": "Pro tips for split image online workflows",
+    "title": "How to Get Better Results with AI Image Splitter",
+    "subtitle": "Practical tips to improve split quality and export efficiency",
     "items": [
       {
-        "title": "Match ratios to your platform",
-        "description": "Before you split images online, pick Default, 4:5, 3:4, 1:1, or a custom grid that fits Instagram grids/carousels, TikTok stories, Pinterest boards, or A4 print layouts."
+        "title": "Use High-Quality Images",
+        "description": "Use a clear, high-resolution source image whenever possible. It can significantly improve clarity and overall visual quality in each split section."
       },
       {
-        "title": "Drag the crop box to protect key subjects",
-        "description": "After upload, reposition the locked crop box so your product, skyline, or text stays inside every slice; for banners or long stories, keep margins even across rows and columns."
+        "title": "Choose the Right Aspect Ratio and Split Mode",
+        "description": "Before splitting, choose the right aspect ratio preset and split mode based on your use case and the source image. This helps reduce repeated adjustments later."
       },
       {
-        "title": "Preview, then export ZIP + single slices",
-        "description": "Use the instant preview to fine-tune rows and columns, then export both single files and a ZIP bundle so you can publish or archive without re-splitting."
+        "title": "Keep the Main Subject Intact",
+        "description": "When adjusting the selection box, keep the main subject as complete as possible in each split result."
       },
       {
-        "title": "Choose the right output format upfront",
-        "description": "JPG works for social feeds, PNG keeps transparency, WebP/BMP suit lossless assets. Picking the format now saves conversion time later."
+        "title": "Preview Before Exporting",
+        "description": "Check rows, columns, and split boundaries first. After confirming the real-time preview looks correct, export individual files or a ZIP to avoid rework."
       },
       {
-        "title": "Leverage browser privacy and multilingual UI",
-        "description": "All processing stays inside your browser, and you can switch languages (English, Portuguese, Indonesian, etc.) to guide teammates through the same 'upload → ratio → split → download' flow."
+        "title": "Choose Output Format by Use Case",
+        "description": "For social platforms, prioritize smaller file sizes (e.g., JPG). For transparency or fine detail retention, choose PNG. For web use, WebP is usually the best choice."
       }
     ]
   }
