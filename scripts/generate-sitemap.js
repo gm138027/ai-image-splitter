@@ -23,11 +23,16 @@ const priorities = {
 
 const PAGES = [
   { path: '', priority: priorities.homepage, changefreq: 'daily' },
+  { path: '/contact', priority: priorities.mainPages, changefreq: 'monthly' },
   { path: '/privacy', priority: priorities.mainPages, changefreq: 'monthly' },
   { path: '/terms', priority: priorities.mainPages, changefreq: 'monthly' },
 ]
 
-function generatePageUrls(pagePath) {
+function generatePageUrls(pagePath, localize = true) {
+  if (!localize) {
+    return [`${BASE_URL}${pagePath}`]
+  }
+
   return SUPPORTED_LOCALES.map(locale => {
     if (locale === DEFAULT_LOCALE) {
       return `${BASE_URL}${pagePath}`
@@ -51,7 +56,7 @@ function generateSitemap() {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`
 
   PAGES.forEach(page => {
-    generatePageUrls(page.path).forEach(url => {
+    generatePageUrls(page.path, page.localize !== false).forEach(url => {
       sitemap += generateUrlEntry(url, page.priority, page.changefreq)
     })
   })

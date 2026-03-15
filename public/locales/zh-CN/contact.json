@@ -1,0 +1,53 @@
+{
+  "title": "联系方式",
+  "description": "如果您对 AI Image Splitter 有任何问题、反馈、版权相关事宜或合规请求，可以通过电子邮件联系我们。我们通常会在 48 小时内回复。",
+  "sections": {
+    "intro": {
+      "title": "联系我们",
+      "content": "电子邮件是目前联系我们的唯一方式。我们会人工查看每一封邮件，并尽快回复使用问题、版权相关事宜、合规请求和一般反馈。"
+    },
+    "email": {
+      "title": "电子邮件",
+      "label": "联系邮箱",
+      "value": "aiimagesplitter@proton.me"
+    },
+    "topics": {
+      "title": "您可以联系我们处理哪些事项",
+      "content": "您可以通过邮件联系我们处理以下事项：",
+      "items": [
+        "工具使用问题或功能反馈",
+        "隐私政策或服务条款相关问题",
+        "版权、合规或内容相关投诉",
+        "网站错误、兼容性或访问问题",
+        "其他与 AI Image Splitter 相关的请求"
+      ]
+    },
+    "responseTime": {
+      "title": "回复时间",
+      "content": "我们通常会在收到您的邮件后 48 小时内回复。"
+    },
+    "includeInfo": {
+      "title": "联系时建议提供的信息",
+      "content": "为了帮助我们更高效地处理您的请求，建议您在邮件中尽量提供：",
+      "items": [
+        "您访问的页面或使用的功能",
+        "问题或请求的简要说明",
+        "所使用的设备、浏览器或操作系统（如适用）",
+        "相关截图或错误提示（如有）"
+      ]
+    },
+    "additionalNote": {
+      "title": "补充说明",
+      "contentBeforePrivacyLink": "AI Image Splitter 是一款浏览器端图像分割工具。图像处理默认在您的设备本地完成，因此我们无法查看您在浏览器中本地处理的图像内容。如果您的问题涉及数据处理，可以查看我们的",
+      "privacyLinkText": "隐私政策",
+      "contentAfterPrivacyLink": "。",
+      "contentBeforeTermsLink": "如果您想了解服务使用规则，也可以查看我们的",
+      "termsLinkText": "服务条款",
+      "contentAfterTermsLink": "。"
+    }
+  },
+  "navigation": {
+    "backToHome": "返回首页",
+    "tableOfContents": "本页内容"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "title": "Contact",
+  "description": "If you have questions, feedback, copyright concerns, or compliance-related requests about AI Image Splitter, contact us by email. We usually reply within 48 hours.",
+  "sections": {
+    "intro": {
+      "title": "Get in Touch",
+      "content": "Email is currently the only way to reach us. We review every message manually and respond to support questions, copyright concerns, compliance requests, and general feedback as quickly as possible."
+    },
+    "email": {
+      "title": "Email",
+      "label": "Contact email",
+      "value": "aiimagesplitter@proton.me"
+    },
+    "topics": {
+      "title": "What You Can Contact Us About",
+      "content": "You can email us about:",
+      "items": [
+        "Questions about using the tool or feedback on features",
+        "Privacy Policy or Terms of Service questions",
+        "Copyright, compliance, or content-related concerns",
+        "Site errors, compatibility issues, or access problems",
+        "Other requests related to AI Image Splitter"
+      ]
+    },
+    "responseTime": {
+      "title": "Response Time",
+      "content": "We usually reply within 48 hours after receiving your email."
+    },
+    "includeInfo": {
+      "title": "What to Include in Your Message",
+      "content": "To help us review your request more efficiently, please include:",
+      "items": [
+        "The page or feature you were using",
+        "A short description of the issue or request",
+        "Your device, browser, or operating system if relevant",
+        "A screenshot or error message if one is available"
+      ]
+    },
+    "additionalNote": {
+      "title": "Additional Note",
+      "contentBeforePrivacyLink": "AI Image Splitter is a browser-based image splitting tool. Image processing happens locally on your device by default, so we cannot view images processed in your browser. If your request involves data handling, you can review our",
+      "privacyLinkText": "Privacy Policy",
+      "contentAfterPrivacyLink": ".",
+      "contentBeforeTermsLink": "If you want to understand the rules for using the service, you can also review our",
+      "termsLinkText": "Terms of Service",
+      "contentAfterTermsLink": "."
+    }
+  },
+  "navigation": {
+    "backToHome": "Back to Home",
+    "tableOfContents": "On This Page"
+  }
+}

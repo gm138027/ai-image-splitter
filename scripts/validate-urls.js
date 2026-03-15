@@ -35,6 +35,7 @@ console.log('🔍 开始URL验证和清理分析...\n')
 // 1. 定义基础页面路径
 const basePaths = [
   '/',
+  '/contact',
   '/privacy',
   '/terms'
 ]

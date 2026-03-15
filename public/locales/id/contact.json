@@ -1,0 +1,53 @@
+{
+  "title": "Kontak",
+  "description": "Jika Anda memiliki pertanyaan, masukan, masalah hak cipta, atau permintaan terkait kepatuhan mengenai AI Image Splitter, hubungi kami melalui email. Kami biasanya merespons dalam 48 jam.",
+  "sections": {
+    "intro": {
+      "title": "Hubungi Kami",
+      "content": "Email saat ini adalah satu-satunya cara untuk menghubungi kami. Kami meninjau setiap pesan secara manual dan menanggapi pertanyaan dukungan, masalah hak cipta, permintaan terkait kepatuhan, dan masukan umum secepat mungkin."
+    },
+    "email": {
+      "title": "Email",
+      "label": "Alamat email kontak",
+      "value": "aiimagesplitter@proton.me"
+    },
+    "topics": {
+      "title": "Anda dapat menghubungi kami untuk hal-hal berikut",
+      "content": "Anda dapat mengirim email kepada kami untuk hal-hal berikut:",
+      "items": [
+        "Pertanyaan tentang cara menggunakan alat atau masukan fitur",
+        "Pertanyaan tentang Kebijakan Privasi atau Syarat Layanan",
+        "Masalah hak cipta, kepatuhan, atau konten",
+        "Masalah pada situs, kendala kompatibilitas, atau gangguan akses",
+        "Permintaan lain yang berkaitan dengan AI Image Splitter"
+      ]
+    },
+    "responseTime": {
+      "title": "Waktu Respons",
+      "content": "Kami biasanya membalas dalam 48 jam setelah menerima email Anda."
+    },
+    "includeInfo": {
+      "title": "Informasi yang Sebaiknya Disertakan",
+      "content": "Agar kami bisa meninjau permintaan Anda dengan lebih cepat, mohon sertakan jika memungkinkan:",
+      "items": [
+        "Halaman atau fitur yang sedang Anda gunakan",
+        "Penjelasan singkat tentang masalah atau permintaan Anda",
+        "Perangkat, browser, atau sistem operasi yang Anda gunakan jika relevan",
+        "Tangkapan layar atau pesan error jika tersedia"
+      ]
+    },
+    "additionalNote": {
+      "title": "Catatan Tambahan",
+      "contentBeforePrivacyLink": "AI Image Splitter adalah alat pemisah gambar berbasis browser. Secara default, semua pemrosesan gambar dilakukan secara lokal di perangkat Anda, jadi kami tidak dapat melihat gambar yang diproses di browser Anda. Jika permintaan Anda berkaitan dengan penanganan data, Anda dapat melihat",
+      "privacyLinkText": "Kebijakan Privasi",
+      "contentAfterPrivacyLink": ".",
+      "contentBeforeTermsLink": "Jika Anda ingin memahami aturan penggunaan layanan, Anda juga dapat melihat",
+      "termsLinkText": "Syarat Layanan",
+      "contentAfterTermsLink": "."
+    }
+  },
+  "navigation": {
+    "backToHome": "Kembali ke Beranda",
+    "tableOfContents": "Isi Halaman Ini"
+  }
+}

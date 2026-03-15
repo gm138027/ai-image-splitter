@@ -1,0 +1,53 @@
+{
+  "title": "Liên hệ",
+  "description": "Nếu bạn có câu hỏi, góp ý, vấn đề bản quyền hoặc yêu cầu tuân thủ liên quan đến AI Image Splitter, hãy liên hệ với chúng tôi qua email. Chúng tôi thường phản hồi trong vòng 48 giờ.",
+  "sections": {
+    "intro": {
+      "title": "Liên hệ với chúng tôi",
+      "content": "Email hiện là cách liên hệ duy nhất với chúng tôi. Chúng tôi đọc thủ công từng thư và phản hồi sớm nhất có thể đối với các câu hỏi hỗ trợ, vấn đề bản quyền, yêu cầu tuân thủ và góp ý chung."
+    },
+    "email": {
+      "title": "Email",
+      "label": "Email liên hệ",
+      "value": "aiimagesplitter@proton.me"
+    },
+    "topics": {
+      "title": "Bạn có thể liên hệ với chúng tôi về những vấn đề sau",
+      "content": "Bạn có thể gửi email cho chúng tôi về các vấn đề sau:",
+      "items": [
+        "Câu hỏi về cách sử dụng công cụ hoặc góp ý về tính năng",
+        "Câu hỏi về Chính sách bảo mật hoặc Điều khoản dịch vụ",
+        "Vấn đề liên quan đến bản quyền, tuân thủ hoặc nội dung",
+        "Lỗi trang web, vấn đề tương thích hoặc sự cố truy cập",
+        "Các yêu cầu khác liên quan đến AI Image Splitter"
+      ]
+    },
+    "responseTime": {
+      "title": "Thời gian phản hồi",
+      "content": "Chúng tôi thường phản hồi trong vòng 48 giờ sau khi nhận được email của bạn."
+    },
+    "includeInfo": {
+      "title": "Nên cung cấp gì trong email",
+      "content": "Để chúng tôi xem xét yêu cầu của bạn nhanh hơn, vui lòng cung cấp nếu có thể:",
+      "items": [
+        "Trang hoặc tính năng bạn đang sử dụng",
+        "Mô tả ngắn về vấn đề hoặc yêu cầu của bạn",
+        "Thiết bị, trình duyệt hoặc hệ điều hành của bạn nếu có liên quan",
+        "Ảnh chụp màn hình hoặc thông báo lỗi nếu có"
+      ]
+    },
+    "additionalNote": {
+      "title": "Lưu ý thêm",
+      "contentBeforePrivacyLink": "AI Image Splitter là công cụ chia ảnh chạy trên trình duyệt. Theo mặc định, mọi xử lý hình ảnh đều diễn ra cục bộ trên thiết bị của bạn, vì vậy chúng tôi không thể xem những hình ảnh được xử lý trong trình duyệt của bạn. Nếu yêu cầu của bạn liên quan đến việc xử lý dữ liệu, bạn có thể xem",
+      "privacyLinkText": "Chính sách bảo mật",
+      "contentAfterPrivacyLink": ".",
+      "contentBeforeTermsLink": "Nếu bạn muốn tìm hiểu các quy định khi sử dụng dịch vụ, bạn cũng có thể xem",
+      "termsLinkText": "Điều khoản dịch vụ",
+      "contentAfterTermsLink": "."
+    }
+  },
+  "navigation": {
+    "backToHome": "Quay lại trang chủ",
+    "tableOfContents": "Trên trang này"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "title": "Contato",
+  "description": "Se você tiver dúvidas, feedback, questões de direitos autorais ou solicitações de conformidade relacionadas ao AI Image Splitter, fale conosco por e-mail. Normalmente respondemos em até 48 horas.",
+  "sections": {
+    "intro": {
+      "title": "Fale Conosco",
+      "content": "No momento, o e-mail é a única forma de falar conosco. Analisamos cada mensagem manualmente e respondemos o mais rápido possível a dúvidas de suporte, questões de direitos autorais, solicitações de conformidade e feedback geral."
+    },
+    "email": {
+      "title": "E-mail",
+      "label": "E-mail de contato",
+      "value": "aiimagesplitter@proton.me"
+    },
+    "topics": {
+      "title": "Você pode falar conosco sobre estes assuntos",
+      "content": "Você pode nos enviar um e-mail sobre:",
+      "items": [
+        "Dúvidas sobre como usar a ferramenta ou feedback sobre recursos",
+        "Perguntas sobre a Política de Privacidade ou os Termos de Serviço",
+        "Questões de direitos autorais, conformidade ou conteúdo",
+        "Erros no site, problemas de compatibilidade ou falhas de acesso",
+        "Outras solicitações relacionadas ao AI Image Splitter"
+      ]
+    },
+    "responseTime": {
+      "title": "Tempo de Resposta",
+      "content": "Normalmente respondemos em até 48 horas após receber seu e-mail."
+    },
+    "includeInfo": {
+      "title": "O que incluir na mensagem",
+      "content": "Para ajudar a analisar sua solicitação com mais rapidez, inclua, se possível:",
+      "items": [
+        "A página ou o recurso que você estava usando",
+        "Uma descrição curta do problema ou da solicitação",
+        "Seu dispositivo, navegador ou sistema operacional, se isso for relevante",
+        "Uma captura de tela ou mensagem de erro, se houver"
+      ]
+    },
+    "additionalNote": {
+      "title": "Observação Adicional",
+      "contentBeforePrivacyLink": "AI Image Splitter é uma ferramenta de divisão de imagens que roda no navegador. O processamento de imagens acontece localmente no seu dispositivo por padrão, então não podemos ver imagens processadas no seu navegador. Se sua solicitação envolver tratamento de dados, você pode consultar nossa",
+      "privacyLinkText": "Política de Privacidade",
+      "contentAfterPrivacyLink": ".",
+      "contentBeforeTermsLink": "Se quiser entender as regras de uso do serviço, você também pode consultar nossos",
+      "termsLinkText": "Termos de Serviço",
+      "contentAfterTermsLink": "."
+    }
+  },
+  "navigation": {
+    "backToHome": "Voltar ao Início",
+    "tableOfContents": "Nesta Página"
+  }
+}

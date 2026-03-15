@@ -26,6 +26,12 @@ const Footer: React.FC = () => {
           {/* Links */}
           <div className="flex items-center space-x-6 mt-4 md:mt-0 relative z-10">
             <Link
+              href="/contact"
+              className="text-gray-600 hover:text-blue-600 text-sm transition-colors"
+            >
+              {t('footer.contact', { defaultValue: 'Contact' })}
+            </Link>
+            <Link
               href="/privacy"
               className="text-gray-600 hover:text-blue-600 text-sm transition-colors"
             >

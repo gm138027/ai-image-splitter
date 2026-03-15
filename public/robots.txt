@@ -23,6 +23,7 @@ Disallow: /_next/
 Disallow: /admin/
 
 # Main pages
+Allow: /contact
 Allow: /privacy
 Allow: /terms
 

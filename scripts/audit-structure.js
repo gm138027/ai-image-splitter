@@ -15,8 +15,8 @@ const SUPPORTED_LOCALES = localeConfig.locales || []
 const RETIRED_LOCALES = localeConfig.retiredLocales || []
 const DEPRECATED_QUERY_LOCALE_PARAM = (localeConfig.deprecatedQueryLocaleParam || 'lng').trim() || 'lng'
 
-const CORE_ROUTES = ['/', '/privacy', '/terms', '/zh-CN', '/zh-CN/privacy', '/zh-CN/terms']
-const CHECK_ROUTES = ['/', '/privacy', '/terms']
+const CORE_ROUTES = ['/', '/contact', '/privacy', '/terms', '/zh-CN', '/zh-CN/contact', '/zh-CN/privacy', '/zh-CN/terms']
+const CHECK_ROUTES = ['/', '/contact', '/privacy', '/terms']
 
 const BLOG_SUNSET_ROUTES = (() => {
   const routes = [
@@ -353,10 +353,10 @@ const checkLegalLinks = async (options) => {
   })
   if (!res.ok || res.finalStatus >= 400) {
     return createCheck(
-      '首页隐私/条款可抓取锚链接',
+      '首页联系方式/隐私/条款可抓取锚链接',
       false,
       `首页抓取失败：${res.ok ? `HTTP ${res.finalStatus}` : res.error}`,
-      '先确保首页可访问，再检查 Footer 是否输出 <a href=\"/privacy\"> 与 <a href=\"/terms\">。'
+      '先确保首页可访问，再检查 Footer 是否输出 <a href=\"/contact\">、<a href=\"/privacy\"> 与 <a href=\"/terms\">。'
     )
   }
 
@@ -367,13 +367,14 @@ const checkLegalLinks = async (options) => {
     .filter(Boolean)
   const internalPaths = new Set(internalUrls.map((url) => new URL(url).pathname))
 
+  const hasContact = Array.from(internalPaths).some((pathname) => pathname === '/contact' || pathname.endsWith('/contact'))
   const hasPrivacy = Array.from(internalPaths).some((pathname) => pathname === '/privacy' || pathname.endsWith('/privacy'))
   const hasTerms = Array.from(internalPaths).some((pathname) => pathname === '/terms' || pathname.endsWith('/terms'))
 
   return createCheck(
-    '首页隐私/条款可抓取锚链接',
-    hasPrivacy && hasTerms,
-    `privacy=${hasPrivacy}, terms=${hasTerms}, homepage=${res.finalUrl}`,
+    '首页联系方式/隐私/条款可抓取锚链接',
+    hasContact && hasPrivacy && hasTerms,
+    `contact=${hasContact}, privacy=${hasPrivacy}, terms=${hasTerms}, homepage=${res.finalUrl}`,
     '将按钮跳转改为可抓取 <a> 锚链接，避免仅依赖 JS onClick/router.push。'
   )
 }
@@ -603,6 +604,7 @@ const checkCrawlFilesAndSecurityHeaders = async (options) => {
     const hasUrlset = sitemapRes.body.includes('<urlset')
     const locMatches = sitemapRes.body.match(/<loc>(.*?)<\/loc>/g) || []
     const urls = locMatches.map((loc) => loc.replace('<loc>', '').replace('</loc>', ''))
+    const hasContact = urls.some((entry) => entry.endsWith('/contact'))
     const hasPrivacy = urls.some((entry) => entry.endsWith('/privacy'))
     const hasTerms = urls.some((entry) => entry.endsWith('/terms'))
 
@@ -610,8 +612,8 @@ const checkCrawlFilesAndSecurityHeaders = async (options) => {
     if (!hasUrlset || urls.length === 0) {
       failures.push('sitemap.xml 结构异常或无 URL')
     }
-    if (!hasPrivacy || !hasTerms) {
-      failures.push('sitemap 缺少隐私或条款 URL')
+    if (!hasContact || !hasPrivacy || !hasTerms) {
+      failures.push('sitemap 缺少联系方式、隐私或条款 URL')
     }
   }
 
