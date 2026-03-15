@@ -1,8 +1,7 @@
 {
   "seo": {
     "title": "AI Image Splitter - Chia ảnh online miễn phí",
-    "description": "Chia ảnh online thành 2, 3, 6, 9 hoặc nhiều phần bằng nhau với các tỷ lệ 4:5, 3:4 và 1:1 có sẵn. Tải từng ảnh hoặc file ZIP. Miễn phí, không cần đăng ký.",
-    "keywords": "tách ảnh, công cụ tách ảnh online, tạo lưới, tạo lưới instagram, tách ảnh instagram, mạng xã hội, carousel"
+    "description": "Chia ảnh online thành 2, 3, 6, 9 hoặc nhiều phần bằng nhau với các tỷ lệ 4:5, 3:4 và 1:1 có sẵn. Tải từng ảnh hoặc file ZIP. Miễn phí, không cần đăng ký."
   },
   "nav": {
     "features": "Trang chủ",
@@ -134,18 +133,17 @@
   },
   "structuredData": {
     "websiteName": "AI Image Splitter - Công cụ chia ảnh online",
-    "appName": "Công cụ chia ảnh online miễn phí và tạo lưới Instagram",
+    "appName": "Công cụ chia ảnh online miễn phí",
     "appDescription": "AI Image Splitter là công cụ online miễn phí giúp chia một ảnh thành các phần bằng nhau. Công cụ hỗ trợ tải toàn bộ kết quả dưới dạng file ZIP, không thêm watermark và không yêu cầu đăng ký.",
     "creativeWorkName": "Công cụ chia ảnh",
     "creativeWorkDescription": "Công cụ chia ảnh online giúp tạo bố cục lưới gọn gàng cho bài đăng mạng xã hội, carousel và nội dung sẵn sàng để in.",
     "features": {
       "splitImages": "Chia ảnh",
-      "instagramGrid": "Tạo lưới Instagram",
+      "instagramGrid": "Hỗ trợ bố cục lưới",
       "carouselCreation": "Tạo ảnh cho carousel",
       "batchDownload": "Tải hàng loạt",
       "freeToUse": "Miễn phí"
     },
-    "keywords": "chia ảnh, chia ảnh online, công cụ chia ảnh, chia ảnh thành nhiều phần, tạo lưới Instagram, carousel",
     "genre": "Công cụ xử lý hình ảnh"
   },
   "images": {

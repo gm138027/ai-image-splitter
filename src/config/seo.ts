@@ -73,8 +73,7 @@ export const SEO_CONFIG = {
   
   site: {
     name: 'AI Image Splitter',
-    description: 'Free Online Image Splitter & Instagram Grid Maker',
-    keywords: 'image splitter, instagram grid maker, social media tools',
+    description: 'Free Online Image Splitter',
     author: 'AI Image Splitter',
     logo: '/android-chrome-512x512.png',
     favicon: '/favicon.ico'

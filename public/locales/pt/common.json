@@ -1,8 +1,7 @@
 {
   "seo": {
     "title": "AI Image Splitter - Divisor de Imagem Online Grátis",
-    "description": "Divida imagens online em 2, 3, 6, 9 ou mais partes iguais com proporções 4:5, 3:4 e 1:1. Baixe imagens separadas ou um arquivo ZIP. Grátis, sem cadastro.",
-    "keywords": "divisor de imagem, divisor de imagem online, dividir imagem, dividir imagem online, dividir imagem em partes, dividir imagem em partes iguais, divisor de imagem a4, carrossel"
+    "description": "Divida imagens online em 2, 3, 6, 9 ou mais partes iguais com proporções 4:5, 3:4 e 1:1. Baixe imagens separadas ou um arquivo ZIP. Grátis, sem cadastro."
   },
   "nav": {
     "features": "Início",
@@ -163,18 +162,17 @@
   },
   "structuredData": {
     "websiteName": "AI Image Splitter - Ferramenta Online para Dividir Imagens",
-    "appName": "Divisor de Imagem Online Grátis e Criador de Grid para Instagram",
+    "appName": "Divisor de Imagem Online Grátis",
     "appDescription": "AI Image Splitter é uma ferramenta online grátis que divide uma imagem em partes iguais. Suporta download em ZIP, não adiciona marca d'água e não exige cadastro.",
     "creativeWorkName": "Ferramenta para Dividir Imagens",
     "creativeWorkDescription": "Ferramenta online para dividir imagens e criar layouts organizados para posts, carrosséis e materiais prontos para impressão.",
     "features": {
       "splitImages": "Dividir Imagens",
-      "instagramGrid": "Criador de Grid para Instagram",
+      "instagramGrid": "Suporte a Layouts em Grade",
       "carouselCreation": "Criação de Imagens para Carrossel",
       "batchDownload": "Download em Lote",
       "freeToUse": "Grátis para Usar"
     },
-    "keywords": "divisor de imagem, divisor de imagem online, dividir imagem, dividir imagem online, dividir imagem em partes, dividir imagem em partes iguais, divisor de imagem a4, dividir imagem em folhas a4, carrossel",
     "genre": "Ferramenta de Processamento de Imagem"
   },
   "images": {

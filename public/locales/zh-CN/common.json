@@ -1,8 +1,7 @@
 {
   "seo": {
     "title": "AI Image Splitter - 免费在线分割图像",
-    "description": "在线将图像分割为 2、3、6、9 或更多相等部分，支持 4:5、3:4、1:1 预设。可下载单个图像或 ZIP 文件。免费，无需注册。",
-    "keywords": "图像分割器, 在线图像分割器, 在线分割图像, 图像等分, 网格分割, 轮播图像分割"
+    "description": "在线将图像分割为 2、3、6、9 或更多相等部分，支持 4:5、3:4、1:1 预设。可下载单个图像或 ZIP 文件。免费，无需注册。"
   },
   "nav": {
     "features": "首页",
@@ -163,18 +162,17 @@
   },
   "structuredData": {
     "websiteName": "AI Image Splitter - 在线图像分割工具",
-    "appName": "免费在线图像分割器与 Instagram 网格工具",
+    "appName": "免费在线图像分割器",
     "appDescription": "AI Image Splitter 是一款免费的在线工具，可将一张图像分割为相等部分。支持将所有结果一次性下载为 ZIP，不添加水印，也无需注册。",
     "creativeWorkName": "图像分割工具",
     "creativeWorkDescription": "用于创建社交媒体发布、轮播内容和打印材料整齐网格布局的在线图像分割工具。",
     "features": {
       "splitImages": "图像分割",
-      "instagramGrid": "创建 Instagram 网格",
+      "instagramGrid": "支持网格布局",
       "carouselCreation": "创建轮播图像",
       "batchDownload": "批量下载",
       "freeToUse": "免费使用"
     },
-    "keywords": "图像分割器,在线图像分割器,在线分割图像,图像等分,网格分割,轮播图像分割",
     "genre": "图像处理工具"
   },
   "images": {

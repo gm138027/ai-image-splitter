@@ -1,8 +1,7 @@
 {
   "seo": {
     "title": "AI Image Splitter - Split Images Online for Free",
-    "description": "Split images online into 2, 3, 6, 9, or more equal parts with 4:5, 3:4, and 1:1 presets. Download individual images or a ZIP file. Free, no sign-up needed.",
-    "keywords": "image splitter, image splitter online, split image, split image online, photo grid maker, split image for instagram, split photo, social media, carousel"
+    "description": "Split images online into 2, 3, 6, 9, or more equal parts with 4:5, 3:4, and 1:1 presets. Download individual images or a ZIP file. Free, no sign-up needed."
   },
   "nav": {
     "features": "Home",
@@ -163,18 +162,17 @@
   },
   "structuredData": {
     "websiteName": "AI Image Splitter - Online Image Splitter Tool",
-    "appName": "Free Online Image Splitter & Instagram Grid Maker",
+    "appName": "Free Online Image Splitter",
     "appDescription": "AI Image Splitter is a free online tool that splits one image into equal parts. It supports batch ZIP downloads, adds no watermarks, and requires no sign-up.",
     "creativeWorkName": "Image Splitter Tool",
     "creativeWorkDescription": "An online image splitting tool for creating clean grid layouts for social posts, carousels, and print-ready content.",
     "features": {
       "splitImages": "Split Images",
-      "instagramGrid": "Instagram Grid Maker",
+      "instagramGrid": "Grid Layout Support",
       "carouselCreation": "Carousel Image Creation",
       "batchDownload": "Batch Download",
       "freeToUse": "Free to Use"
     },
-    "keywords": "image splitter, image splitter online, split image, split image online, grid maker, instagram grid maker, image splitter instagram, image splitter for instagram, social media, carousel",
     "genre": "Image Processing Tool"
   },
   "images": {

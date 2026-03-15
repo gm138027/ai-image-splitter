@@ -1,8 +1,7 @@
 {
   "seo": {
     "title": "AI Image Splitter - Bagi Foto Online Gratis",
-    "description": "Bagi foto online jadi 2, 3, 6, 9, atau lebih banyak bagian sama besar dengan preset rasio 4:5, 3:4, dan 1:1. Unduh satu per satu atau ZIP. Gratis, tanpa daftar.",
-    "keywords": "pemisah gambar, pemisah gambar online, pisahkan gambar, pembuat grid, pembuat grid instagram, pemisah gambar instagram, media sosial, carousel"
+    "description": "Bagi foto online jadi 2, 3, 6, 9, atau lebih banyak bagian sama besar dengan preset rasio 4:5, 3:4, dan 1:1. Unduh satu per satu atau ZIP. Gratis, tanpa daftar."
   },
   "nav": {
     "features": "Beranda",
@@ -134,18 +133,17 @@
   },
   "structuredData": {
     "websiteName": "AI Image Splitter - Alat Pemisah Gambar Online",
-    "appName": "Pemisah Gambar Online Gratis & Pembuat Grid Instagram",
+    "appName": "Pemisah Gambar Online Gratis",
     "appDescription": "AI Image Splitter adalah alat online gratis untuk membagi satu gambar menjadi bagian-bagian yang sama besar. Mendukung unduhan ZIP untuk semua hasil, tanpa watermark, dan tanpa perlu daftar.",
     "creativeWorkName": "Alat Pemisah Gambar",
     "creativeWorkDescription": "Alat pemisah gambar online untuk membuat tata letak grid yang rapi untuk posting media sosial, carousel, dan materi siap cetak.",
     "features": {
       "splitImages": "Pisahkan Gambar",
-      "instagramGrid": "Pembuat Grid Instagram",
+      "instagramGrid": "Dukungan Tata Letak Grid",
       "carouselCreation": "Pembuatan Gambar Carousel",
       "batchDownload": "Unduhan Batch",
       "freeToUse": "Gratis Digunakan"
     },
-    "keywords": "pemisah foto, pemisah gambar, bagi foto online, potong foto jadi 2, potong grid instagram, pemisah foto instagram, pembagi foto, carousel, media sosial",
     "genre": "Alat Pengolahan Gambar"
   },
   "images": {
