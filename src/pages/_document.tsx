@@ -27,6 +27,11 @@ class MyDocument extends Document<MyDocumentProps> {
       <Html lang={lang}>
         <Head>
           <meta charSet="utf-8" />
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9027033456343227"
+            crossOrigin="anonymous"
+          />
           
           <meta name="theme-color" content="#3b82f6" />
           <meta name="format-detection" content="telephone=no" />
