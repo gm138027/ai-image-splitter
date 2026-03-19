@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'next-i18next'
+import { OUTPUT_FORMATS } from '@/types'
 
 /**
  * Hidden snapshot of the tool UI for SEO crawlers.
@@ -52,10 +53,9 @@ const HiddenToolSnapshot: React.FC = () => {
           <label className="flex flex-col">
             <span>{t('tool.outputFormat')}</span>
             <select>
-              <option>{t('tool.formats.jpg')}</option>
-              <option>{t('tool.formats.png')}</option>
-              <option>{t('tool.formats.webp')}</option>
-              <option>{t('tool.formats.bmp')}</option>
+              {OUTPUT_FORMATS.map((format) => (
+                <option key={format}>{t(`tool.formats.${format}`)}</option>
+              ))}
             </select>
           </label>
         </div>

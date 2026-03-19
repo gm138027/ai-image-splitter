@@ -16,7 +16,7 @@
   },
   "aboutTool": {
     "title": "What is AI Image Splitter?",
-    "descriptionMain": "AI Image Splitter is a browser-based image splitting tool that divides one image into multiple equal parts. It includes aspect ratio presets like 3:4, 4:5, and 1:1, plus three split modes: Vertical, Horizontal, and Grid. Whether you are creating social media posts, preparing A4 print layouts, or building image collages, you can set everything up quickly and export right away. All processing happens locally on your device, and your images are never uploaded to a server. You can choose the aspect ratio and split mode, set rows and columns, adjust the selection box to define the split area, and export results as individual files or a ZIP in JPG, PNG, WebP, or BMP."
+    "descriptionMain": "AI Image Splitter is a browser-based image splitting tool that divides one image into multiple equal parts. It includes aspect ratio presets like 3:4, 4:5, and 1:1, plus three split modes: Vertical, Horizontal, and Grid. Whether you are creating social media posts, preparing A4 print layouts, or building image collages, you can set everything up quickly and export right away. All processing happens locally on your device, and your images are never uploaded to a server. You can choose the aspect ratio and split mode, set rows and columns, adjust the selection box to define the split area, and export results as individual files or a ZIP in JPG, PNG, or WebP."
   },
   "tool": {
     "comingSoon": "Image Splitter Tool",
@@ -50,8 +50,7 @@
     "formats": {
       "jpg": "JPG",
       "png": "PNG",
-      "webp": "WebP",
-      "bmp": "BMP"
+      "webp": "WebP"
     },
     "buttons": {
       "split": "Split Image",
@@ -83,7 +82,7 @@
     "step2Title": "2. Set Split Options",
     "step2Description": "Choose an aspect ratio preset (Default, 4:5, 3:4, or 1:1) and a split mode (Vertical, Horizontal, or Grid), then adjust the selection box to define the split area.",
     "step3Title": "3. Download Results",
-    "step3Description": "Preview the split result, then download individual images or export everything as a ZIP file. Output formats include JPG, PNG, WebP, and BMP."
+    "step3Description": "Preview the split result, then download individual images or export everything as a ZIP file. Output formats include JPG, PNG, and WebP."
   },
   "footer": {
     "madeWith": "Made with",
@@ -205,7 +204,7 @@
     },
     "supportedFormats": {
       "question": "What upload and export formats are supported?",
-      "answer": "Uploads support JPG, PNG, and WebP (up to 50 MB, with recommended dimensions up to 8192x8192). Exports support JPG, PNG, WebP, and BMP, with individual downloads or ZIP packages."
+      "answer": "Uploads support JPG, PNG, and WebP (up to 50 MB, with recommended dimensions up to 8192x8192). Exports support JPG, PNG, and WebP, with individual downloads or ZIP packages."
     },
     "freeToUse": {
       "question": "Is this tool really free?",

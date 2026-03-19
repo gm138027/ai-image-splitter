@@ -148,6 +148,11 @@ const calculateSplitParams = (imageWidth: number, imageHeight: number, config: S
 }
 
 const JPEG_QUALITY = 0.85
+const OUTPUT_FORMAT_EXPORT_OPTIONS: Record<OutputFormat, { type: string; quality?: number }> = {
+  jpg: { type: 'image/jpeg', quality: JPEG_QUALITY },
+  png: { type: 'image/png' },
+  webp: { type: 'image/webp', quality: JPEG_QUALITY }
+}
 
 const splitBitmap = async (
   bitmap: ImageBitmap,
@@ -202,17 +207,10 @@ const splitBitmap = async (
       height
     )
 
-    let blobType = `image/${config.outputFormat}`
-    let quality: number | undefined
-    if (config.outputFormat === 'jpg') {
-      blobType = 'image/jpeg'
-      quality = JPEG_QUALITY
-    } else if (config.outputFormat === 'webp') {
-      quality = JPEG_QUALITY
-    }
+    const exportOptions = OUTPUT_FORMAT_EXPORT_OPTIONS[config.outputFormat]
 
     const blobPromise = canvas
-      .convertToBlob(quality !== undefined ? { type: blobType, quality } : { type: blobType })
+      .convertToBlob(exportOptions)
       .then((blob) => {
         if (!blob) {
           throw new Error('Failed to generate blob')

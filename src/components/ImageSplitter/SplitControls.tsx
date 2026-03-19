@@ -1,7 +1,8 @@
 import React from 'react'
 import { useTranslation } from 'next-i18next'
 import { Minus, Plus } from 'lucide-react'
-import type { SplitControlsProps, SplitConfig } from '@/types'
+import { OUTPUT_FORMATS } from '@/types'
+import type { OutputFormat, SplitControlsProps, SplitConfig } from '@/types'
 
 const SplitControls: React.FC<SplitControlsProps> = ({
   config,
@@ -52,8 +53,11 @@ const SplitControls: React.FC<SplitControlsProps> = ({
   }
 
   const handleOutputFormatChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const outputFormat = e.target.value as 'jpg' | 'png' | 'webp' | 'bmp'
-    onConfigChange({ ...config, outputFormat })
+    const outputFormat = e.target.value
+    if (!OUTPUT_FORMATS.includes(outputFormat as OutputFormat)) {
+      return
+    }
+    onConfigChange({ ...config, outputFormat: outputFormat as OutputFormat })
   }
 
   const handleAspectRatioChange = (ratio: SplitConfig['aspectRatio']) => {
@@ -248,10 +252,11 @@ const SplitControls: React.FC<SplitControlsProps> = ({
           onChange={handleOutputFormatChange}
           className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
         >
-          <option value="jpg">{t('tool.formats.jpg')}</option>
-          <option value="png">{t('tool.formats.png')}</option>
-          <option value="webp">{t('tool.formats.webp')}</option>
-          <option value="bmp">{t('tool.formats.bmp')}</option>
+          {OUTPUT_FORMATS.map((format) => (
+            <option key={format} value={format}>
+              {t(`tool.formats.${format}`)}
+            </option>
+          ))}
         </select>
       </div>
 

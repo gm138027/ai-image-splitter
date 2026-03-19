@@ -10,7 +10,8 @@ export interface SplitImage {
 }
 
 export type SplitMode = 'vertical' | 'horizontal' | 'grid'
-export type OutputFormat = 'jpg' | 'png' | 'webp' | 'bmp'
+export const OUTPUT_FORMATS = ['jpg', 'png', 'webp'] as const
+export type OutputFormat = (typeof OUTPUT_FORMATS)[number]
 
 export type AspectRatioOption = 'default' | '4:5' | '3:4' | '1:1'
 

@@ -16,7 +16,7 @@
   },
   "aboutTool": {
     "title": "Apa itu AI Image Splitter?",
-    "descriptionMain": "AI Image Splitter adalah alat pemisah foto berbasis browser yang membagi satu gambar menjadi beberapa bagian dengan ukuran sama. Tersedia preset rasio 3:4, 4:5, dan 1:1, serta tiga mode pemisahan: Vertikal, Horizontal, dan Grid. Untuk posting media sosial, tata letak cetak A4, atau kolase gambar, Anda bisa menyiapkan semuanya dengan cepat lalu langsung mengekspor hasilnya. Semua proses berjalan lokal di perangkat Anda, dan gambar tidak pernah diunggah ke server. Anda bisa memilih rasio dan mode, mengatur baris dan kolom, menyesuaikan kotak seleksi untuk menentukan area pemisahan, lalu mengekspor hasil sebagai file terpisah atau ZIP dalam format JPG, PNG, WebP, atau BMP."
+    "descriptionMain": "AI Image Splitter adalah alat pemisah foto berbasis browser yang membagi satu gambar menjadi beberapa bagian dengan ukuran sama. Tersedia preset rasio 3:4, 4:5, dan 1:1, serta tiga mode pemisahan: Vertikal, Horizontal, dan Grid. Untuk posting media sosial, tata letak cetak A4, atau kolase gambar, Anda bisa menyiapkan semuanya dengan cepat lalu langsung mengekspor hasilnya. Semua proses berjalan lokal di perangkat Anda, dan gambar tidak pernah diunggah ke server. Anda bisa memilih rasio dan mode, mengatur baris dan kolom, menyesuaikan kotak seleksi untuk menentukan area pemisahan, lalu mengekspor hasil sebagai file terpisah atau ZIP dalam format JPG, PNG, atau WebP."
   },
   "tool": {
     "uploadPrompt": "Seret file ke sini atau klik untuk mengunggah",
@@ -48,8 +48,7 @@
     "formats": {
       "jpg": "JPG",
       "png": "PNG",
-      "webp": "WebP",
-      "bmp": "BMP"
+      "webp": "WebP"
     },
     "buttons": {
       "split": "Pisahkan Gambar",
@@ -83,7 +82,7 @@
     "step2Title": "2. Atur Opsi Pemisahan",
     "step2Description": "Pilih preset rasio (Default, 4:5, 3:4, atau 1:1) dan mode pemisahan (Vertikal, Horizontal, atau Grid), lalu sesuaikan kotak seleksi untuk menentukan area pemisahan.",
     "step3Title": "3. Unduh Hasil",
-    "step3Description": "Pratinjau hasil pemisahan, lalu unduh gambar satu per satu atau ekspor semuanya sebagai file ZIP. Format output mencakup JPG, PNG, WebP, dan BMP."
+    "step3Description": "Pratinjau hasil pemisahan, lalu unduh gambar satu per satu atau ekspor semuanya sebagai file ZIP. Format output mencakup JPG, PNG, dan WebP."
   },
   "footer": {
     "madeWith": "Dibuat dengan",
@@ -176,7 +175,7 @@
     },
     "supportedFormats": {
       "question": "Format unggah dan ekspor apa saja yang didukung?",
-      "answer": "Unggahan mendukung JPG, PNG, dan WebP (hingga 50 MB, dengan dimensi yang disarankan hingga 8192x8192). Ekspor mendukung JPG, PNG, WebP, dan BMP, dengan opsi unduh satu per satu atau paket ZIP."
+      "answer": "Unggahan mendukung JPG, PNG, dan WebP (hingga 50 MB, dengan dimensi yang disarankan hingga 8192x8192). Ekspor mendukung JPG, PNG, dan WebP, dengan opsi unduh satu per satu atau paket ZIP."
     },
     "freeToUse": {
       "question": "Apakah alat ini benar-benar gratis?",

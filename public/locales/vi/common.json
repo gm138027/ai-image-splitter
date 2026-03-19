@@ -16,7 +16,7 @@
   },
   "aboutTool": {
     "title": "AI Image Splitter là gì?",
-    "descriptionMain": "AI Image Splitter là công cụ chia ảnh chạy trên trình duyệt, giúp chia một ảnh thành nhiều phần bằng nhau. Công cụ có sẵn các tỷ lệ khung hình như 3:4, 4:5 và 1:1, cùng ba chế độ chia là Dọc, Ngang và Lưới. Dù bạn đang chuẩn bị bài đăng mạng xã hội, bố cục in khổ A4 hay ảnh ghép, bạn đều có thể thiết lập nhanh và xuất file ngay. Mọi xử lý đều diễn ra cục bộ trên thiết bị của bạn và ảnh sẽ không được tải lên máy chủ. Bạn có thể chọn tỷ lệ khung hình và chế độ chia, đặt số hàng và cột, điều chỉnh khung chọn để xác định vùng chia ảnh, rồi xuất kết quả dưới dạng từng tệp riêng lẻ hoặc file ZIP ở các định dạng JPG, PNG, WebP và BMP."
+    "descriptionMain": "AI Image Splitter là công cụ chia ảnh chạy trên trình duyệt, giúp chia một ảnh thành nhiều phần bằng nhau. Công cụ có sẵn các tỷ lệ khung hình như 3:4, 4:5 và 1:1, cùng ba chế độ chia là Dọc, Ngang và Lưới. Dù bạn đang chuẩn bị bài đăng mạng xã hội, bố cục in khổ A4 hay ảnh ghép, bạn đều có thể thiết lập nhanh và xuất file ngay. Mọi xử lý đều diễn ra cục bộ trên thiết bị của bạn và ảnh sẽ không được tải lên máy chủ. Bạn có thể chọn tỷ lệ khung hình và chế độ chia, đặt số hàng và cột, điều chỉnh khung chọn để xác định vùng chia ảnh, rồi xuất kết quả dưới dạng từng tệp riêng lẻ hoặc file ZIP ở các định dạng JPG, PNG và WebP."
   },
   "tool": {
     "comingSoon": "Công cụ chia ảnh",
@@ -50,8 +50,7 @@
     "formats": {
       "jpg": "JPG",
       "png": "PNG",
-      "webp": "WebP",
-      "bmp": "BMP"
+      "webp": "WebP"
     },
     "buttons": {
       "split": "Chia ảnh",
@@ -83,7 +82,7 @@
     "step2Title": "2. Thiết lập tùy chọn chia",
     "step2Description": "Chọn tỷ lệ khung hình có sẵn (Mặc định, 4:5, 3:4 hoặc 1:1) và chế độ chia (Dọc, Ngang hoặc Lưới), sau đó điều chỉnh khung chọn để xác định vùng cần chia.",
     "step3Title": "3. Tải kết quả xuống",
-    "step3Description": "Xem trước kết quả chia, rồi tải từng ảnh riêng lẻ hoặc xuất toàn bộ dưới dạng file ZIP. Hỗ trợ định dạng JPG, PNG, WebP và BMP."
+    "step3Description": "Xem trước kết quả chia, rồi tải từng ảnh riêng lẻ hoặc xuất toàn bộ dưới dạng file ZIP. Hỗ trợ định dạng JPG, PNG và WebP."
   },
   "footer": {
     "madeWith": "Được tạo với",
@@ -176,7 +175,7 @@
     },
     "supportedFormats": {
       "question": "Hỗ trợ những định dạng nào khi tải lên và xuất file?",
-      "answer": "Tải lên hỗ trợ JPG, PNG và WebP với dung lượng tối đa 50 MB, kích thước ảnh khuyến nghị tối đa 8192x8192. Xuất file hỗ trợ JPG, PNG, WebP và BMP, với tùy chọn tải từng tệp hoặc file ZIP."
+      "answer": "Tải lên hỗ trợ JPG, PNG và WebP với dung lượng tối đa 50 MB, kích thước ảnh khuyến nghị tối đa 8192x8192. Xuất file hỗ trợ JPG, PNG và WebP, với tùy chọn tải từng tệp hoặc file ZIP."
     },
     "freeToUse": {
       "question": "Công cụ này có thực sự miễn phí không?",

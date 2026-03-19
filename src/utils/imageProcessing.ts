@@ -16,11 +16,14 @@ const SUPPORTED_UPLOAD_MIME_TYPES = new Set([
 
 export const SUPPORTED_IMAGE_INPUT_ACCEPT = '.jpg,.jpeg,.png,.webp'
 
+const OUTPUT_FORMAT_MIME_TYPES: Record<SplitConfig['outputFormat'], string> = {
+  jpg: 'image/jpeg',
+  png: 'image/png',
+  webp: 'image/webp'
+}
+
 const getCanvasMimeType = (format: SplitConfig['outputFormat']) => {
-  if (format === 'jpg') {
-    return 'image/jpeg'
-  }
-  return `image/${format}`
+  return OUTPUT_FORMAT_MIME_TYPES[format]
 }
 
 type GridShape = {

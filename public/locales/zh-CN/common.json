@@ -16,7 +16,7 @@
   },
   "aboutTool": {
     "title": "什么是 AI Image Splitter？",
-    "descriptionMain": "AI Image Splitter 是一款浏览器端图片分割工具，可将一张图像分割为多个相等部分。它内置 3:4、4:5、1:1 等宽高比预设，以及垂直、水平、网格 3 种分割模式。无论您是用于社交媒体发布、A4 打印排版还是图像拼贴，都可以快速完成设置并立即导出。所有处理都在您的设备本地完成，图像不会上传到服务器。您可以选择宽高比预设、分割模式，设置行列，调整分割范围选择框，并将结果按单张或 ZIP 方式导出为 JPG、PNG、WebP、BMP。"
+    "descriptionMain": "AI Image Splitter 是一款浏览器端图片分割工具，可将一张图像分割为多个相等部分。它内置 3:4、4:5、1:1 等宽高比预设，以及垂直、水平、网格 3 种分割模式。无论您是用于社交媒体发布、A4 打印排版还是图像拼贴，都可以快速完成设置并立即导出。所有处理都在您的设备本地完成，图像不会上传到服务器。您可以选择宽高比预设、分割模式，设置行列，调整分割范围选择框，并将结果按单张或 ZIP 方式导出为 JPG、PNG、WebP。"
   },
   "tool": {
     "comingSoon": "图片分割工具",
@@ -50,8 +50,7 @@
     "formats": {
       "jpg": "JPG",
       "png": "PNG",
-      "webp": "WebP",
-      "bmp": "BMP"
+      "webp": "WebP"
     },
     "buttons": {
       "split": "分割图像",
@@ -83,7 +82,7 @@
     "step2Title": "2. 分割设置",
     "step2Description": "选择宽高比预设（默认、4:5、3:4、1:1）和分割模式（垂直、水平、网格），然后调整分割范围选择框以确定分割区域。",
     "step3Title": "3. 下载结果",
-    "step3Description": "预览分割结果后，可下载单张图像，或将全部结果导出为 ZIP 文件。支持 JPG、PNG、WebP、BMP 格式。"
+    "step3Description": "预览分割结果后，可下载单张图像，或将全部结果导出为 ZIP 文件。支持 JPG、PNG、WebP 格式。"
   },
   "footer": {
     "madeWith": "用",
@@ -205,7 +204,7 @@
     },
     "supportedFormats": {
       "question": "支持哪些上传与导出格式？",
-      "answer": "上传支持 JPG、PNG、WebP（最大 50MB，建议尺寸不超过 8192×8192）。导出支持 JPG、PNG、WebP、BMP，并支持单张下载或 ZIP 打包下载。"
+      "answer": "上传支持 JPG、PNG、WebP（最大 50MB，建议尺寸不超过 8192×8192）。导出支持 JPG、PNG、WebP，并支持单张下载或 ZIP 打包下载。"
     },
     "freeToUse": {
       "question": "这款工具真的免费吗？",

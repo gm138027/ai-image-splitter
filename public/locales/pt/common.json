@@ -16,7 +16,7 @@
   },
   "aboutTool": {
     "title": "O que é o AI Image Splitter?",
-    "descriptionMain": "AI Image Splitter é uma ferramenta de divisão de imagens que roda no navegador e divide uma imagem em várias partes iguais. Ela inclui proporções predefinidas como 3:4, 4:5 e 1:1, além de três modos de divisão: Vertical, Horizontal e Grid. Seja para criar posts em redes sociais, preparar layouts para impressão em A4 ou montar colagens de imagens, você pode configurar tudo rapidamente e exportar na hora. Todo o processamento acontece localmente no seu dispositivo, e suas imagens nunca são enviadas para um servidor. Você pode escolher a proporção e o modo de divisão, definir linhas e colunas, ajustar o quadro de seleção para marcar a área da divisão e exportar os resultados como arquivos separados ou em ZIP nos formatos JPG, PNG, WebP ou BMP."
+    "descriptionMain": "AI Image Splitter é uma ferramenta de divisão de imagens que roda no navegador e divide uma imagem em várias partes iguais. Ela inclui proporções predefinidas como 3:4, 4:5 e 1:1, além de três modos de divisão: Vertical, Horizontal e Grid. Seja para criar posts em redes sociais, preparar layouts para impressão em A4 ou montar colagens de imagens, você pode configurar tudo rapidamente e exportar na hora. Todo o processamento acontece localmente no seu dispositivo, e suas imagens nunca são enviadas para um servidor. Você pode escolher a proporção e o modo de divisão, definir linhas e colunas, ajustar o quadro de seleção para marcar a área da divisão e exportar os resultados como arquivos separados ou em ZIP nos formatos JPG, PNG ou WebP."
   },
   "tool": {
     "uploadPrompt": "Arraste os arquivos aqui ou clique para enviar",
@@ -48,8 +48,7 @@
     "formats": {
       "jpg": "JPG",
       "png": "PNG",
-      "webp": "WebP",
-      "bmp": "BMP"
+      "webp": "WebP"
     },
     "buttons": {
       "split": "Dividir Imagem",
@@ -83,7 +82,7 @@
     "step2Title": "2. Configure a divisão",
     "step2Description": "Escolha uma proporção predefinida (Padrão, 4:5, 3:4 ou 1:1) e um modo de divisão (Vertical, Horizontal ou Grid). Depois, ajuste o quadro de seleção para definir a área da divisão.",
     "step3Title": "3. Baixe os resultados",
-    "step3Description": "Visualize o resultado da divisão e depois baixe imagens separadas ou exporte tudo em um arquivo ZIP. Os formatos de saída incluem JPG, PNG, WebP e BMP."
+    "step3Description": "Visualize o resultado da divisão e depois baixe imagens separadas ou exporte tudo em um arquivo ZIP. Os formatos de saída incluem JPG, PNG e WebP."
   },
   "footer": {
     "madeWith": "Feito com",
@@ -205,7 +204,7 @@
     },
     "supportedFormats": {
       "question": "Quais formatos de envio e exportação são compatíveis?",
-      "answer": "O envio é compatível com JPG, PNG e WebP (até 50 MB, com tamanho recomendado de até 8192x8192). A exportação é compatível com JPG, PNG, WebP e BMP, com opção de baixar arquivos separados ou um pacote ZIP."
+      "answer": "O envio é compatível com JPG, PNG e WebP (até 50 MB, com tamanho recomendado de até 8192x8192). A exportação é compatível com JPG, PNG e WebP, com opção de baixar arquivos separados ou um pacote ZIP."
     },
     "freeToUse": {
       "question": "Essa ferramenta é realmente grátis?",
