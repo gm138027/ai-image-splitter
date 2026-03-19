@@ -5,6 +5,7 @@ import { Upload, Grid3X3, Download, ArrowRight, ArrowLeft } from 'lucide-react'
 import Image from 'next/image'
 import FAQ from '@/components/FAQ'
 import type { HeroSectionProps } from '@/types'
+import { SUPPORTED_IMAGE_INPUT_ACCEPT } from '@/utils/imageProcessing'
 
 interface AdvantageItem {
   title: string
@@ -92,7 +93,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <input
             ref={fileInputRef}
             type="file"
-            accept="image/*"
+            accept={SUPPORTED_IMAGE_INPUT_ACCEPT}
             onChange={onFileInputChange}
             className="hidden"
           />

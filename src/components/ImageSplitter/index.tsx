@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useImageSplitter } from '@/hooks/useImageSplitter'
+import { SUPPORTED_IMAGE_INPUT_ACCEPT } from '@/utils/imageProcessing'
 import HeroSection from './HeroSection'
 import SplitControls from './SplitControls'
 import ImagePreview from './ImagePreview'
@@ -90,7 +91,7 @@ const ImageSplitter: React.FC<ImageSplitterProps> = ({ onToolModeChange }) => {
       <input
         ref={fileInputRef}
         type="file"
-        accept="image/*"
+        accept={SUPPORTED_IMAGE_INPUT_ACCEPT}
         onChange={handleFileInputChange}
         className="hidden"
       />

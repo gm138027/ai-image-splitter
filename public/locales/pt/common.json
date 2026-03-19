@@ -21,7 +21,7 @@
   "tool": {
     "uploadPrompt": "Arraste os arquivos aqui ou clique para enviar",
     "uploadButton": "Escolher Imagem",
-    "uploadSupport": "Suporta arquivos JPG, PNG, GIF e WebP de até 50 MB.",
+    "uploadSupport": "Suporta arquivos JPG, PNG e WebP de até 50 MB.",
     "controlPanelDescription": "Use o painel de controle esquerdo para configurar opções de divisão",
     "splitModeTitle": "Escolha um modo de divisão",
     "splitModeDescription": "Use Vertical para posts em carrossel, Horizontal para layouts em paisagem e Grid para posts em grid.",
@@ -67,7 +67,7 @@
     },
     "alerts": {
       "invalidFile": "Por favor, selecione um arquivo de imagem válido",
-      "invalidFileType": "Por favor, selecione um arquivo de imagem válido (JPG, PNG, GIF, WebP)",
+      "invalidFileType": "Por favor, selecione um arquivo de imagem válido (JPG, PNG ou WebP)",
       "fileTooLarge": "O arquivo excede o limite de 50 MB. Escolha uma imagem menor.",
       "imageTooLarge": "As dimensões da imagem excedem 8192x8192 pixels. Por favor, escolha uma imagem menor",
       "downloadFailed": "Falha no download. Por favor, tente novamente"
@@ -79,7 +79,7 @@
   "howItWorks": {
     "title": "Como Usar o Divisor de Imagem",
     "step1Title": "1. Envie uma imagem",
-    "step1Description": "Envie uma imagem JPG, PNG, GIF ou WebP de até 50 MB. Tudo é processado no navegador, então o arquivo não sai do seu dispositivo.",
+    "step1Description": "Envie uma imagem JPG, PNG ou WebP de até 50 MB. Tudo é processado no navegador, então o arquivo não sai do seu dispositivo.",
     "step2Title": "2. Configure a divisão",
     "step2Description": "Escolha uma proporção predefinida (Padrão, 4:5, 3:4 ou 1:1) e um modo de divisão (Vertical, Horizontal ou Grid). Depois, ajuste o quadro de seleção para definir a área da divisão.",
     "step3Title": "3. Baixe os resultados",
@@ -189,7 +189,7 @@
     "description": "Respostas para dúvidas comuns sobre formatos compatíveis, privacidade, downloads e configurações de divisão.",
     "whatIsImageSplitter": {
       "question": "O que o AI Image Splitter faz?",
-      "answer": "Ele divide uma imagem em várias partes iguais e permite visualizar o resultado antes de baixar. Você pode enviar imagens JPG, PNG, GIF ou WebP, escolher as configurações de divisão e exportar arquivos separados ou um pacote ZIP."
+      "answer": "Ele divide uma imagem em várias partes iguais e permite visualizar o resultado antes de baixar. Você pode enviar imagens JPG, PNG ou WebP, escolher as configurações de divisão e exportar arquivos separados ou um pacote ZIP."
     },
     "howToSplitImage": {
       "question": "Como dividir uma imagem passo a passo?",
@@ -205,7 +205,7 @@
     },
     "supportedFormats": {
       "question": "Quais formatos de envio e exportação são compatíveis?",
-      "answer": "O envio é compatível com JPG, PNG, GIF e WebP (até 50 MB, com tamanho recomendado de até 8192x8192). A exportação é compatível com JPG, PNG, WebP e BMP, com opção de baixar arquivos separados ou um pacote ZIP."
+      "answer": "O envio é compatível com JPG, PNG e WebP (até 50 MB, com tamanho recomendado de até 8192x8192). A exportação é compatível com JPG, PNG, WebP e BMP, com opção de baixar arquivos separados ou um pacote ZIP."
     },
     "freeToUse": {
       "question": "Essa ferramenta é realmente grátis?",

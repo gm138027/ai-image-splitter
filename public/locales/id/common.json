@@ -21,7 +21,7 @@
   "tool": {
     "uploadPrompt": "Seret file ke sini atau klik untuk mengunggah",
     "uploadButton": "Pilih Gambar",
-    "uploadSupport": "Mendukung file JPG, PNG, GIF, dan WebP hingga 50 MB.",
+    "uploadSupport": "Mendukung file JPG, PNG, dan WebP hingga 50 MB.",
     "controlPanelDescription": "Gunakan panel kiri untuk mengatur opsi pemisahan.",
     "splitModeTitle": "Pilih Mode Pemisahan",
     "splitModeDescription": "Gunakan Vertikal untuk postingan carousel, Horizontal untuk tata letak lanskap, dan Grid untuk postingan grid.",
@@ -67,7 +67,7 @@
     },
     "alerts": {
       "invalidFile": "Silakan pilih file gambar yang valid",
-      "invalidFileType": "Silakan pilih file gambar yang valid (JPG, PNG, GIF, WebP)",
+      "invalidFileType": "Silakan pilih file gambar yang valid (JPG, PNG, atau WebP)",
       "fileTooLarge": "Ukuran file melebihi batas 50 MB. Silakan pilih gambar yang lebih kecil.",
       "imageTooLarge": "Dimensi gambar melebihi 8192x8192 piksel. Silakan pilih gambar yang lebih kecil",
       "downloadFailed": "Unduhan gagal. Silakan coba lagi"
@@ -79,7 +79,7 @@
   "howItWorks": {
     "title": "Cara Menggunakan Pemisah Foto",
     "step1Title": "1. Unggah Foto",
-    "step1Description": "Unggah foto JPG, PNG, GIF, atau WebP (hingga 50 MB). Semua proses berjalan di browser, jadi file Anda tidak pernah meninggalkan perangkat.",
+    "step1Description": "Unggah foto JPG, PNG, atau WebP (hingga 50 MB). Semua proses berjalan di browser, jadi file Anda tidak pernah meninggalkan perangkat.",
     "step2Title": "2. Atur Opsi Pemisahan",
     "step2Description": "Pilih preset rasio (Default, 4:5, 3:4, atau 1:1) dan mode pemisahan (Vertikal, Horizontal, atau Grid), lalu sesuaikan kotak seleksi untuk menentukan area pemisahan.",
     "step3Title": "3. Unduh Hasil",
@@ -160,7 +160,7 @@
     "description": "Jawaban atas pertanyaan umum tentang format yang didukung, privasi, opsi unduhan, dan pengaturan pemisahan.",
     "whatIsImageSplitter": {
       "question": "Apa yang bisa dilakukan AI Image Splitter?",
-      "answer": "Alat ini dapat membagi satu gambar menjadi beberapa bagian yang sama besar dan memungkinkan Anda melihat pratinjau sebelum mengunduh. Anda bisa mengunggah JPG, PNG, GIF, atau WebP, memilih pengaturan pemisahan, lalu mengekspor file satu per satu atau dalam paket ZIP."
+      "answer": "Alat ini dapat membagi satu gambar menjadi beberapa bagian yang sama besar dan memungkinkan Anda melihat pratinjau sebelum mengunduh. Anda bisa mengunggah JPG, PNG, atau WebP, memilih pengaturan pemisahan, lalu mengekspor file satu per satu atau dalam paket ZIP."
     },
     "howToSplitImage": {
       "question": "Bagaimana cara memisahkan gambar langkah demi langkah?",
@@ -176,7 +176,7 @@
     },
     "supportedFormats": {
       "question": "Format unggah dan ekspor apa saja yang didukung?",
-      "answer": "Unggahan mendukung JPG, PNG, GIF, dan WebP (hingga 50 MB, dengan dimensi yang disarankan hingga 8192x8192). Ekspor mendukung JPG, PNG, WebP, dan BMP, dengan opsi unduh satu per satu atau paket ZIP."
+      "answer": "Unggahan mendukung JPG, PNG, dan WebP (hingga 50 MB, dengan dimensi yang disarankan hingga 8192x8192). Ekspor mendukung JPG, PNG, WebP, dan BMP, dengan opsi unduh satu per satu atau paket ZIP."
     },
     "freeToUse": {
       "question": "Apakah alat ini benar-benar gratis?",

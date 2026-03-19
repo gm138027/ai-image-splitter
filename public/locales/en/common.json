@@ -23,7 +23,7 @@
     "description": "A simple online image splitter for Instagram grids and carousel posts.",
     "uploadPrompt": "Drag files here or click to upload",
     "uploadButton": "Choose Image",
-    "uploadSupport": "Supports JPG, PNG, GIF, and WebP files up to 50 MB.",
+    "uploadSupport": "Supports JPG, PNG, and WebP files up to 50 MB.",
     "controlPanelDescription": "Use the left control panel to configure split options",
     "splitModeTitle": "Choose a Split Mode",
     "splitModeDescription": "Use Vertical for carousel posts, Horizontal for landscape layouts, and Grid for grid-based posts.",
@@ -69,7 +69,7 @@
     },
     "alerts": {
       "invalidFile": "Please select a valid image file",
-      "invalidFileType": "Please select a valid image file (JPG, PNG, GIF, WebP)",
+      "invalidFileType": "Please select a valid image file (JPG, PNG, or WebP)",
       "fileTooLarge": "File size exceeds the 50 MB limit. Please choose a smaller image",
       "imageTooLarge": "Image dimensions exceed 8192x8192 pixels. Please choose a smaller image",
       "downloadFailed": "Download failed. Please try again"
@@ -79,7 +79,7 @@
   "howItWorks": {
     "title": "How to Use the Image Splitter",
     "step1Title": "1. Upload an Image",
-    "step1Description": "Upload a JPG, PNG, GIF, or WebP image (up to 50 MB). Everything is processed in your browser, so your file never leaves your device.",
+    "step1Description": "Upload a JPG, PNG, or WebP image (up to 50 MB). Everything is processed in your browser, so your file never leaves your device.",
     "step2Title": "2. Set Split Options",
     "step2Description": "Choose an aspect ratio preset (Default, 4:5, 3:4, or 1:1) and a split mode (Vertical, Horizontal, or Grid), then adjust the selection box to define the split area.",
     "step3Title": "3. Download Results",
@@ -189,7 +189,7 @@
     "description": "Answers to common questions about supported formats, privacy, download options, and split settings.",
     "whatIsImageSplitter": {
       "question": "What can AI Image Splitter do?",
-      "answer": "It can split one image into multiple equal parts and lets you preview results before downloading. You can upload JPG, PNG, GIF, or WebP images, choose your split settings, and export individual files or a ZIP package."
+      "answer": "It can split one image into multiple equal parts and lets you preview results before downloading. You can upload JPG, PNG, or WebP images, choose your split settings, and export individual files or a ZIP package."
     },
     "howToSplitImage": {
       "question": "How do I split an image step by step?",
@@ -205,7 +205,7 @@
     },
     "supportedFormats": {
       "question": "What upload and export formats are supported?",
-      "answer": "Uploads support JPG, PNG, GIF, and WebP (up to 50 MB, with recommended dimensions up to 8192x8192). Exports support JPG, PNG, WebP, and BMP, with individual downloads or ZIP packages."
+      "answer": "Uploads support JPG, PNG, and WebP (up to 50 MB, with recommended dimensions up to 8192x8192). Exports support JPG, PNG, WebP, and BMP, with individual downloads or ZIP packages."
     },
     "freeToUse": {
       "question": "Is this tool really free?",

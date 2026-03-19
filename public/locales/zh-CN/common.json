@@ -23,7 +23,7 @@
     "description": "简单的在线图像分割工具，可导出分割结果。",
     "uploadPrompt": "拖拽图像到此处，或点击上传",
     "uploadButton": "选择图片",
-    "uploadSupport": "支持 JPG、PNG、GIF、WebP，最大 50 MB。",
+    "uploadSupport": "支持 JPG、PNG、WebP，最大 50 MB。",
     "controlPanelDescription": "使用左侧控制面板设置分割选项",
     "splitModeTitle": "选择分割模式",
     "splitModeDescription": "垂直适合轮播内容，水平适合横向布局，网格适合网格式排布。",
@@ -69,7 +69,7 @@
     },
     "alerts": {
       "invalidFile": "请选择有效的图像文件",
-      "invalidFileType": "请选择有效的图像文件（JPG、PNG、GIF 或 WebP）",
+      "invalidFileType": "请选择有效的图像文件（JPG、PNG 或 WebP）",
       "fileTooLarge": "文件大小超过 50 MB，请选择更小的图像",
       "imageTooLarge": "图像尺寸超过 8192x8192 像素，请选择更小的图像",
       "downloadFailed": "下载失败，请重试"
@@ -79,7 +79,7 @@
   "howItWorks": {
     "title": "如何使用图像分割器",
     "step1Title": "1. 上传图像",
-    "step1Description": "上传 JPG、PNG、GIF 或 WebP 图像（最大 50 MB）。所有处理都在浏览器本地完成，文件不会离开您的设备。",
+    "step1Description": "上传 JPG、PNG 或 WebP 图像（最大 50 MB）。所有处理都在浏览器本地完成，文件不会离开您的设备。",
     "step2Title": "2. 分割设置",
     "step2Description": "选择宽高比预设（默认、4:5、3:4、1:1）和分割模式（垂直、水平、网格），然后调整分割范围选择框以确定分割区域。",
     "step3Title": "3. 下载结果",
@@ -189,7 +189,7 @@
     "description": "关于格式支持、隐私处理、下载方式和分割设置的常见问题解答。",
     "whatIsImageSplitter": {
       "question": "AI Image Splitter 可以做什么？",
-      "answer": "它可以将一张图像分割为多个相等的部分，并支持预览后下载。您可以上传 JPG、PNG、GIF、WebP 图像，设置分割参数后导出单张文件或 ZIP 打包文件。"
+      "answer": "它可以将一张图像分割为多个相等的部分，并支持预览后下载。您可以上传 JPG、PNG、WebP 图像，设置分割参数后导出单张文件或 ZIP 打包文件。"
     },
     "howToSplitImage": {
       "question": "如何一步步完成图像分割？",
@@ -205,7 +205,7 @@
     },
     "supportedFormats": {
       "question": "支持哪些上传与导出格式？",
-      "answer": "上传支持 JPG、PNG、GIF、WebP（最大 50MB，建议尺寸不超过 8192×8192）。导出支持 JPG、PNG、WebP、BMP，并支持单张下载或 ZIP 打包下载。"
+      "answer": "上传支持 JPG、PNG、WebP（最大 50MB，建议尺寸不超过 8192×8192）。导出支持 JPG、PNG、WebP、BMP，并支持单张下载或 ZIP 打包下载。"
     },
     "freeToUse": {
       "question": "这款工具真的免费吗？",

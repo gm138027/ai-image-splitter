@@ -5,6 +5,17 @@
  */
 const isBrowser = typeof window !== 'undefined' && typeof document !== 'undefined'
 
+const SUPPORTED_UPLOAD_MIME_TYPES = new Set([
+  'image/jpeg',
+  'image/jpg',
+  'image/pjpeg',
+  'image/png',
+  'image/x-png',
+  'image/webp'
+])
+
+export const SUPPORTED_IMAGE_INPUT_ACCEPT = '.jpg,.jpeg,.png,.webp'
+
 const getCanvasMimeType = (format: SplitConfig['outputFormat']) => {
   if (format === 'jpg') {
     return 'image/jpeg'
@@ -79,8 +90,10 @@ const getSliceIndices = (index: number, config: SplitConfig, colCount: number) =
  * Validate if file is a valid image file
  */
 export const validateImageFile = (file: File): { isValid: boolean; error?: string } => {
+  const normalizedFileType = (file.type || '').toLowerCase()
+
   // Check file type
-  if (!file.type.startsWith('image/')) {
+  if (!SUPPORTED_UPLOAD_MIME_TYPES.has(normalizedFileType)) {
     return { isValid: false, error: 'invalidFileType' }
   }
   
